@@ -1,0 +1,39 @@
+#!/bin/sh
+# @(#)77 1.13 src/pdwas/com/tivoli/pdwas/migrate/migrateEAR, amemb.jacc.was, amemb610, 090612a 09/06/11 21:59:31 @(#)
+#
+# Licensed Materials - Property of IBM
+# 5724-C0814
+# (c) Copyright International Business Machines Corp. 2001
+# All Rights Reserved
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
+
+binDir=`dirname $0`
+. $binDir/setupCmdLine.sh
+
+UNAME_S="`/bin/uname -s`"
+if [ "$UNAME_S" != "OS/390" ] ; then
+  JAVA_CMD=$JAVA_HOME/jre/bin/java
+  export JAVA_CMD
+else
+  # For ascii, switch next two lines to uncomment the -Dws.output.encoding=CP1047 parameter
+  #JVMARGS="-Dfile.encoding=ISO8859-1 -Dws.output.encoding=CP1047 -Xnoargsconversion -Dpd.cfg.home=$JAVA_HOME/jre"
+  JVMARGS="-Dfile.encoding=ISO8859-1 -Xnoargsconversion -Dpd.cfg.home=$JAVA_HOME/jre"
+  JAVA_CMD="$JAVA_HOME"/bin/java
+fi
+
+#PDWAS_HOME=$WAS_HOME
+#J2EE_JAR=$WAS_HOME/lib/j2ee.jar
+#XML_PARSER=$WAS_HOME/lib/xerces.jar
+#PDWAS_JAR=$WAS_HOME/lib/migrate.jar
+#DDPARSER_JAR=$WAS_HOME/lib/DDParser5.jar
+#RBPF_JAR=$WAS_HOME/lib/rbpf.jar
+#ADMIN_JAR=$WAS_HOME/lib/admin.jar
+#WSEXC_JAR=$WAS_HOME/lib/wsexception.jar
+#CLASSPATH=$XML_PARSER:$PDWAS_JAR:$DDPARSER_JAR:$RBPF_JAR:$J2EE_JAR:$JAVA_HOME/jre/lib/ext/PD.jar:$ADMIN_JAR:$WSEXC_JAR
+CLASSPATH="$WAS_HOME/plugins/com.ibm.ws.runtime.jar:$WAS_HOME/plugins/com.ibm.ws.admin.core.jar:$WAS_HOME/plugins/com.ibm.ws.admin.services.jar:$WAS_HOME/plugins/com.tivoli.pd.amwas.core_6.1.0.jar:$JAVA_HOME/jre/lib/ext/PD.jar"
+
+export XML_PARSER PDWAS_JAR CLASSPATH
+
+
+$JAVA_CMD $JVMARGS -Dpdwas.lang.home=$WAS_HOME/lib:$WAS_HOME/nls/java -Dpdwas.home=$WAS_HOME -cp $CLASSPATH com.tivoli.pdwas.migrate.Migrate "$@"

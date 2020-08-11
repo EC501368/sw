@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Colección de nodos" />
+<meta name="abstract" content="Utilice esta página para gestionar los nodos del entorno WebSphere Application Server. Los nodos agrupan servidores gestionados." />
+<meta name="description" content="Utilice esta página para gestionar los nodos del entorno WebSphere Application Server. Los nodos agrupan servidores gestionados." />
+<meta name="DC.Coverage" content="help-top" />
+<meta name="DC.Coverage" content="help-env" />
+<meta name="DC.Coverage" content="web-console" />
+<meta name="DC.Coverage" content="field-help" />
+<meta name="DC.Coverage" content="admin-process" />
+<meta name="DC.Relation" scheme="URI" content="uagt_rnode_inst.dita" />
+<meta name="DC.Relation" scheme="URI" content="uagt_rnode_winserv.dita" />
+<meta name="DC.Relation" scheme="URI" content="cagt_node.dita" />
+<meta name="DC.Relation" scheme="URI" content="tagt_svr_conf_nodes.dita" />
+<meta name="copyright" content="IBM Corporation 2002, 2003, 2004, 2005" type="primary" />
+<meta name="DC.Rights.Owner" content="IBM Corporation 2002, 2003, 2004, 2005" type="primary" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="urun_rnodes" />
+<meta name="DC.Language" content="es-es" />
+<!-- All rights reserved. Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link href="../was_style_help.css" type="text/css" rel="stylesheet" />
+<title>Colección de nodos</title>
+</head>
+<body class="field-help" id="urun_rnodes"><a name="urun_rnodes"><!-- --></a>
+
+<h1 class="topictitle1">Colección de nodos</h1>
+<div><p>Utilice esta página para gestionar los nodos del entorno WebSphere Application Server. Los nodos agrupan servidores gestionados.</p>
+<p>Para ver esta página de la consola administrativa, pulse <b>Administración del sistema
+&gt; Nodos</b>.</p>
+</div>
+<div>
+<blockquote>
+<div class="help"><b><a href="uagt_rnode_inst.html">uagt_rnode_inst.html</a></b><br />
+</div>
+<div class="help"><b><a href="uagt_rnode_winserv.html">uagt_rnode_winserv.html</a></b><br />
+</div>
+</blockquote>
+<p><b class="relconceptshd">Conceptos relacionados</b><br />
+<a class="" href="cagt_node.html" title="">cagt_node.html</a><br />
+</p>
+<p><b class="reltaskshd">Tareas relacionadas</b><br />
+<a class="" href="tagt_svr_conf_nodes.html" title="">tagt_svr_conf_nodes.html</a><br />
+</p>
+</div><div class="field-help" id="Node_name_description"><a name="Node_name_description"><!-- --></a><h2 class="topictitle2">Nombre</h2>
+<div><p>Especifica un nombre para el nodo que es único en la celda.</p>
+<p>Un nodo corresponde a un sistema físico con una dirección de host IP
+distinta. Generalmente, el nombre del nodo es el mismo que el nombre de host del sistema.</p>
+<p>Ahora WebSphere Application Server admite el protocolo Internet versión 4 (IPv4) y el
+protocolo Internet versión 6 (IPv6), pero hay algunas limitaciones en cuanto al uso de
+ambos protocolos en la misma celda. Cuando se añade un nodo en una celda, el formato en
+el que se especifica el nombre se basa en la versión de IP que utilizará el nodo. </p>
+</div>
+</div>
+<div class="field-help" id="node_version__description"><a name="node_version__description"><!-- --></a><h2 class="topictitle2">Versión</h2>
+<div><p>Especifica la versión de producto del nodo.</p>
+<p>La versión de producto es la versión de un WebSphere Application Server
+para nodos gestionados. Para nodos no gestionados, en los que pueden definirse servidores Web,
+la versión se muestra como desconocida.</p>
+</div>
+</div>
+<div class="field-help" id="Node_discovery_protocol_description"><a name="Node_discovery_protocol_description"><!-- --></a><h2 class="topictitle2">Protocolo de descubrimiento</h2>
+<div><p>Especifica el protocolo que utilizan los servidores para descubrir la presencia de otros
+servidores en el nodo.</p>
+<p>Las opciones de protocolo posibles son:</p>
+<dl><dt class="bold"><b>UDP</b></dt>
+<dd>Protocolo de datagrama de usuario (UDP)</dd>
+<dt class="bold"><b>TCP</b></dt>
+<dd>Protocolo de control de transmisión (TCP)</dd>
+</dl>
+</div>
+</div>
+<div class="field-help" id="status_description"><a name="status_description"><!-- --></a><h2 class="topictitle2">Estado</h2>
+<div><p>Indica el estado del nodo.</p>
+<p>El estado puede ser <b>Iniciado</b>, <b>Detenido</b>, <b>No disponible</b>, <b>Desconocido</b>,
+<b>Inicio parcial</b>, <b>Parada parcial</b>, <b>No aplicable</b>, <b>Sincronizado</b>
+o <b>No sincronizado</b>.</p>
+</div>
+</div>
+<div class="nested1" id="maintenancemode"><a name="maintenancemode"><!-- --></a><h2 class="topictitle2">Modalidad de mantenimiento</h2>
+<div><p>Indica si el nodo se encuentra en modalidad de mantenimiento. </p>
+<div class="p">Puede llevar a cabo las acciones siguientes: <ul><li>Establecer el
+mantenimiento con parada total para que un nodo quede fuera de línea, a la vez que se
+detienen todos los procesos del nodo para realizar tareas de mantenimiento, resolución de
+problemas o configuración de un nodo de copia de seguridad.
+ </li>
+<li>Establecer el mantenimiento para que un nodo quede fuera de línea, sin detener todos
+los procesos del nodo, para realizar tareas de mantenimiento, resolución de problemas o
+configuración de un nodo de copia de seguridad. </li>
+<li>Anular la especificación del mantenimiento para que el nodo esté de nuevo en línea. Si el agente de nodo está
+detenido, reinícielo manualmente. </li>
+</ul>
+ </div>
+</div>
+</div>
+
+</body>
+</html>

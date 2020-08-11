@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Todas las aplicaciones" />
+<meta name="abstract" content="Utilice esta página para ver y gestionar todas las aplicaciones de su entorno. Las aplicaciones pueden incluir tanto aplicaciones Java EE (Java Platform, Enterprise Edition) como tipos de aplicación que se ejecutan en otros tipos de servidor." />
+<meta name="description" content="Utilice esta página para ver y gestionar todas las aplicaciones de su entorno. Las aplicaciones pueden incluir tanto aplicaciones Java EE (Java Platform, Enterprise Edition) como tipos de aplicación que se ejecutan en otros tipos de servidor." />
+<meta name="DC.Relation" scheme="URI" content="middlewareapps_detail_new.html" />
+<meta name="DC.Relation" scheme="URI" content="middlewareapps_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="middlewareapps_detail_rule.html" />
+<meta name="DC.Relation" scheme="URI" content="middlewareapps_detail_unmg.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="middlewareapps_collection" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Todas las aplicaciones</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="middlewareapps_collection">
+<h1 class="title topictitle1">Todas las aplicaciones</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para ver y gestionar todas las aplicaciones de su entorno. Las aplicaciones pueden incluir tanto aplicaciones Java EE (Java Platform, Enterprise Edition) como tipos de aplicación que se ejecutan en otros tipos de servidor.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Aplicaciones </span> &gt; <span class="ph uicontrol">Todas las aplicaciones</span></span>.</p>
+<div class="p">Si desea gestionar una aplicación de middleware instalada, habilite el recuadro de selección <span class="ph uicontrol">Seleccionar</span> en la lista y pulse un botón:<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 1. Botones de aplicación</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d65e41">Botón</th>
+<th class="entry" valign="bottom" id="d65e43">Acción resultante</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" char="." valign="top" headers="d65e41 "><span class="ph uicontrol">Añadir...
+</span></td>
+<td class="entry" char="." valign="top" headers="d65e43 ">Se abre un asistente que ayuda a desplegar una aplicación o un módulo, como los archivos <samp class="ph tt">.jar</samp>, <samp class="ph tt">.zip</samp> , <samp class="ph tt">.tar</samp>, <samp class="ph tt">.ear</samp>, <samp class="ph tt">.war</samp>, <samp class="ph tt">.rar</samp>, <samp class="ph tt">tar.gz</samp>, <samp class="ph tt">tar.tgz</samp> o <samp class="ph tt">.gzip</samp> en un destino de despliegue. Existe la posibilidad de especificar scripts de configuración para ejecutarlos después que la aplicación esté instalada, o un script de limpieza para ejecutarlo después de la aplicación de desinstalación. <p class="p">En el caso de servidores de perfiles Liberty, Tomcat, JBoss, Weblogic y Geronimo, se puede añadir una representación de la aplicación para el entorno administrativo. Hay que desplegar la aplicación fuera de la consola administrativa.</p>
+</td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d65e41 "><span class="ph uicontrol">Eliminar
+</span></td>
+<td class="entry" char="." valign="top" headers="d65e43 ">Suprime la aplicación o la representación de la aplicación del depósito de configuración y suprime los binarios de la aplicación del sistema de archivos de todos los nodos en que están instalados los módulos de aplicación después de que la configuración esté guardada y sincronizada con los nodos.</td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d65e41 "><span class="ph uicontrol">Someter acción</span></td>
+<td class="entry" char="." valign="top" headers="d65e43 ">Realiza la acción seleccionada para una aplicación en concreto. Habilite el recuadro de selección <span class="ph uicontrol">Seleccionar</span> en cada aplicación de middleware en que desee realizar la acción, seleccione la <span class="ph uicontrol">Acción</span> que corresponda y pulse <span class="ph uicontrol">Someter acción</span>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="name"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre de la aplicación instalada o desplegada.
+El nombre de aplicación debe ser único entre todas las aplicaciones dentro de una célula. No se puede especificar el mismo nombre a dos aplicaciones distintas, incluso si corresponden a tipos de aplicación distintos. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="edition"><h2 class="title topictitle2">Edición</h2>
+<div class="body"><p class="shortdesc">Especifica la edición actual de la aplicación.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="editionstate"><h2 class="title topictitle2">Estado de edición</h2>
+<div class="body"><p class="shortdesc">Especifica si la edición de la aplicación está activa.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="type"><h2 class="title topictitle2">Tipo</h2>
+<div class="body"><p class="shortdesc">Especifica el tipo de aplicación que está desplegado.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 2. Tipos de aplicación</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d65e160">Categoría</th>
+<th class="entry" valign="bottom" id="d65e162">Tipos de aplicación</th>
+<th class="entry" valign="bottom" id="d65e164">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d65e160 ">Aplicaciones middleware gestionadas</td>
+<td class="entry" valign="top" headers="d65e162 "><div class="p">Entre las aplicaciones gestionadas de middleware se incluyen:<ul class="ul"><li class="li">PHP</li>
+<li class="li">WebSphere® Application
+Server Community Edition</li>
+</ul>
+</div>
+</td>
+<td class="entry" valign="top" headers="d65e164 "><p class="p">Algunas aplicaciones de middleware, como las aplicaciones PHP, están formadas por un archivo archivador y scripts de configuración o limpieza opcionales. Entre los tipos de archivadores soportados se incluyen: <samp class="ph tt">.jar</samp>, <samp class="ph tt">.tar</samp>, <samp class="ph tt">.tgz</samp>, <samp class="ph tt">.tar.gz</samp> o <samp class="ph tt">.zip</samp>. Los scripts de configuración o limpieza están para ser ejecutados en cada servidor en que se despliega la aplicación. El script de configuración se ejecuta después de instalar la aplicación y antes de iniciar la aplicación. Se llama al script de limpieza al desinstalar la aplicación para eliminar todos los elementos residuales de la aplicación. Las acciones que se pueden incluir en un script incluyen el establecer permisos de archivos o creación y supresión de directorios.</p>
+<p class="p">Las aplicaciones de WebSphere Application
+Server Community Edition están formadas por planes de despliegue externos en lugar de scripts de configuración o limpieza. Entre los tipos de archivadores soportados se incluyen: <samp class="ph tt">.car</samp>, <samp class="ph tt">.ear</samp> , <samp class="ph tt">.jar</samp>, <samp class="ph tt">.rar</samp>o <samp class="ph tt">.war</samp>. Un plan de despliegue externo es un artefacto de Apache Geronimo y WebSphere Application
+Server Community Edition. Estos planes de despliegue se definen de la misma manera que se definen los planes de despliegue en un entorno autónomo de WebSphere
+Application Server Community Edition.</p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d65e160 ">Aplicaciones Java EE no gestionadas</td>
+<td class="entry" valign="top" headers="d65e162 ">Aplicaciones Java EE que se ejecutan en los siguientes servidores: <ul class="ul"><li class="li">Apache Tomcat</li>
+<li class="li">BEA WebLogic</li>
+<li class="li">Apache Geronimo</li>
+<li class="li">Servidor de perfiles Liberty</li>
+</ul>
+</td>
+<td class="entry" valign="top" headers="d65e164 "> El ODR puede direccionar peticiones a estos servidores, pero los gestores autónomos no gestionan en forma alguna los ciclos de vida de las aplicaciones Java EE no gestionadas.
+Sólo es posible añadir una representación de la aplicación en la consola administrativa. Hay que desplegar la aplicación fuera de la consola administrativa. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d65e160 ">Aplicaciones Java EE gestionadas</td>
+<td class="entry" valign="top" headers="d65e162 ">Aplicaciones Java EE que se ejecutan en servidores de aplicaciones WebSphere Application
+Server, incluidos los siguientes tipos de aplicaciones: <ul class="ul"><li class="li">Cualquier aplicación Java EE típica.</li>
+</ul>
+</td>
+<td class="entry" valign="top" headers="d65e164 ">Estas aplicaciones se instalan con el asistente existente de instalación Java EE.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="applicationstatus"><h2 class="title topictitle2">Estado</h2>
+<div class="body"><p class="shortdesc">Indica si la aplicación desplegada en el servidor de middleware está iniciada, detenida o no está disponible.</p>
+<div class="p"><div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="cols" frame="border" border="1"><caption><span class="tablecap">Tabla 3. Estado</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="5.902777777777778%" id="d65e288">Icono</th>
+<th class="entry" valign="bottom" width="23.61111111111111%" id="d65e290">Estado</th>
+<th class="entry" valign="bottom" width="70.48611111111111%" id="d65e292">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e288 "><img class="image" src="images/running.gif" alt="Iniciado" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e290 ">Iniciado</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e292 ">La aplicación está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e288 "><img class="image" src="images/part_start.gif" alt="Inicio parcial" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e290 ">Parcialmente iniciada</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e292 ">La aplicación está en el proceso de cambiar de un estado de <em class="ph i">Detenida</em> a un estado de <em class="ph i">Iniciada</em>. Se está comenzando a ejecutar la aplicación pero todavía no lo está haciendo en su totalidad. La aplicación no se puede iniciar en su totalidad porque un servidor correlacionado con uno o más módulos de aplicación está detenido.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e288 "><img class="image" src="images/stop.gif" alt="Detenido" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e290 ">Detenido</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e292 ">La aplicación no está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e288 "><img class="image" src="images/part_stop.gif" alt="Parada parcial" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e290 ">Parada parcial</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e292 ">La aplicación está en el proceso de cambiar de un estado de <em class="ph i">Iniciada</em> a un estado de <em class="ph i">Detenida</em>. La aplicación todavía no se ha detenido.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e288 "><img class="image" src="images/unavail.gif" alt="No disponible" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e290 ">No disponible</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e292 ">No se puede determinar el estado.<p class="p">Una aplicación con un estado de no disponible podría, de hecho, estar en ejecución pero tener un estado de no disponible porque el servidor que ejecuta la consola administrativa no se pudiese comunicar con el servidor en que la aplicación está en ejecución.</p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e288 "><img class="image" src="images/unknown.gif" alt="Desconocido" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e290 ">No aplicable</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e292 ">La aplicación no proporciona información sobre si el servidor está en ejecución.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="p">Únicamente para otras aplicaciones de middleware, la siguiente tabla indica el estado de despliegue general de una aplicación sólo cuando hay un problema.<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="cols" frame="border" border="1"><caption><span class="tablecap">Tabla 4. Estado de la aplicación de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="5.902777777777778%" id="d65e362">Icono</th>
+<th class="entry" valign="bottom" width="23.61111111111111%" id="d65e364">Estado</th>
+<th class="entry" valign="bottom" width="70.48611111111111%" id="d65e366">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e362 "><img class="image" src="images/Warning.gif" alt="Desplegada parcialmente" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e364 ">Desplegado parcialmente</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e366 ">La aplicación se ha desplegado en al menos uno de los servidores, sin embargo, como mínimo se desconoce el estado de uno de los servidores.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e362 "><img class="image" src="images/Error.gif" alt="Error de despliegue parcial" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e364 ">Error de despliegue parcial</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e366 ">La aplicación no se desplegó en al menos uno de los servidores de forma satisfactoria. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e362 "><img class="image" src="images/Error.gif" alt="Error de despliegue" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e364 ">Error de despliegue</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e366 ">La aplicación no se desplegó en ninguno de los servidores de forma satisfactoria.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.902777777777778%" headers="d65e362 "><img class="image" src="images/unavail.gif" alt="Despliegue desconocido" /></td>
+<td class="entry" valign="top" width="23.61111111111111%" headers="d65e364 ">Despliegue desconocido</td>
+<td class="entry" valign="top" width="70.48611111111111%" headers="d65e366 ">No se puede determinar el estado en ninguno de los servidores.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="action"><h2 class="title topictitle2">Acción</h2>
+<div class="body"><p class="shortdesc">Especifica la acción específica a realizar en la aplicación de middleware seleccionada.</p>
+<p class="p">Se pueden realizar las siguientes acciones: </p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 5. Acciones de la aplicación de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d65e413">Acción</th>
+<th class="entry" valign="bottom" id="d65e415">Resultado</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d65e413 ">Iniciar</td>
+<td class="entry" valign="top" headers="d65e415 ">Inicia el servidor en que la aplicación está desplegada.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d65e413 ">Detener</td>
+<td class="entry" valign="top" headers="d65e415 ">Detiene el servidor en que la aplicación está desplegada.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="middlewareapps_detail_new.html" title="Utilice estos paneles para instalar una nueva aplicación de middleware.">Creación de una nueva aplicación de middleware</a></div>
+<div><a class="link help" href="middlewareapps_detail_main.html" title="Utilice esta página para ver configuraciones de aplicaciones de middleware que ya existan.">Valores de una aplicación de middleware</a></div>
+<div><a class="link help" href="middlewareapps_detail_rule.html" title="Utilice esta página para asignar los tipos de solicitud de los módulos de aplicación a las clases de trabajo. Este paso define los protocolos HTTP (Hypertext Transfer Protocol), los EJB (enterprise beans), los servicios web o los buses para la clase de trabajo, que utiliza el direccionador On demand para dar prioridad las políticas de servicio. Las solicitudes soportadas incluyen HTTP, IIOP (Internet InterORB Protocol), SOAP (Simple Object Access Protocol) y JMS (Java Message Service). Con las aplicaciones de middleware, únicamente se da porte a clases de trabajo HTTP.">Definir normas y pertenencias a una clase de trabajo</a></div>
+<div><a class="link help" href="middlewareapps_detail_unmg.html" title="Este asistente sirve para instalar aplicaciones web no gestionadas.">Instalación de aplicaciones web no gestionadas</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: middlewareapps_collection.html</span></body>
+</html>

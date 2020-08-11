@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2012" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2012" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Creación de una política de salud: definir las propiedades de la condición de salud" />
+<meta name="abstract" content="Utilice esta página para definir el comportamiento específico de la política de salud." />
+<meta name="description" content="Utilice esta página para definir el comportamiento específico de la política de salud." />
+<meta name="DC.Relation" scheme="URI" content="hc_condition_subex.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_appservers_detail_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_action_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_custom_action.html" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="hc_condition_detail_new" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Creación de una política de salud: definir las propiedades de la condición de salud</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="hc_condition_detail_new">
+<h1 class="title topictitle1">Creación de una política de salud: definir las propiedades de la condición de salud</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para definir el comportamiento específico de la política de salud.</p>
+<p class="p"> Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Políticas de salud</span> &gt; <span class="ph uicontrol">Nueva</span></span>. </p>
+<p class="p">Los privilegios en relación a las políticas de salud dependen del rol administrativo del usuario.  Los roles incluyen los del supervisor, el operador, el configurador y el administrador.  Si está utilizando un rol de operador o supervisor, sólo puede ver la información de la política de salud.  Si está utilizando un rol de configurador o administrador, tiene todos los privilegios de configuración en relación a las políticas de salud.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="genTopProcId4"><h2 class="title topictitle2">Propiedades de la condición de salud</h2>
+<div class="body"><p class="shortdesc">Especifica las propiedades específicas para la condición de salud. </p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 1. Propiedades de condición basadas en la antigüedad</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d3420e75">Valor</th>
+<th class="entry" valign="bottom" id="d3420e77">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d3420e75 "><span class="ph uicontrol">Antigüedad máxima
+</span></td>
+<td class="entry" valign="top" headers="d3420e77 "><p class="p">Este campo está disponible para la política basada en antigüedad. Los valores aceptables son números enteros positivos en días u horas entre <samp class="ph tt">1</samp> hora y <samp class="ph tt">365</samp> días. Para entrar un valor como <samp class="ph tt">1,2</samp> días, utilice <samp class="ph tt">36</samp> horas, puesto que no se da soporte a números decimales.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 2. Propiedades de condición de tiempo de espera de solicitud excesivo</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d3420e107">Valor</th>
+<th class="entry" valign="bottom" id="d3420e109">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d3420e107 "><span class="ph uicontrol">Solicitudes con tiempo de espera excedido
+</span></td>
+<td class="entry" valign="top" headers="d3420e109 "><p class="p">Este campo está disponible para la condición de utilización de memoria excesiva. La condición de tiempo de espera de petición excesivo detecta, para cada servidor miembro de la política, el porcentaje de peticiones dirigidas al servidor cuyo tiempo de espera ha excedido (periodo de más de <samp class="ph tt">60</samp> segundos) después de ser direccionado desde el direccionador on demand. Los valores aceptables para este campo son números enteros entre <samp class="ph tt">1</samp> y <samp class="ph tt">99</samp>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 3. Propiedades de condición de tiempo de respuesta excesivo</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d3420e136">Valor</th>
+<th class="entry" valign="bottom" id="d3420e138">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d3420e136 "><span class="ph uicontrol">Tiempo de respuesta
+</span></td>
+<td class="entry" valign="top" headers="d3420e138 "><p class="p">Este campo está disponible para la política de condición de tiempo de respuesta excesivo. La condición de tiempo de respuesta excesivo se infringe cuando el promedio del
+tiempo de respuesta de las solicitudes supera un intervalo de tiempo específico. Los valores aceptables para este campo están entre <samp class="ph tt">1</samp> milisegundo y <samp class="ph tt">60</samp> minutos. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 4. Condición de memoria: propiedades de uso de memoria excesivo</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d3420e162">Valor</th>
+<th class="entry" valign="bottom" id="d3420e164">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d3420e162 "><span class="ph uicontrol">Tamaño de almacenamiento dinámico de JVM
+</span></td>
+<td class="entry" valign="top" headers="d3420e164 "><p class="p">La política de condición de exceso de utilización de memoria se infringe cuando el uso de memoria supera un porcentaje del
+tamaño del almacenamiento dinámico durante un periodo de tiempo. El porcentaje del total de memoria utilizada se combina con el valor de tiempo por encima del umbral para determinar cuándo se han de reiniciar los miembros.
+Los valores aceptables para este campo son números enteros entre <samp class="ph tt">1</samp> y <samp class="ph tt">99</samp>. </p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d3420e162 "><span class="ph uicontrol">Período de tiempo infractor
+</span></td>
+<td class="entry" valign="top" headers="d3420e164 "><p class="p">Este campo está disponible para la política de condición de utilización de memoria excesiva. La política de condición de exceso de utilización de memoria se infringe cuando el uso de memoria supera un porcentaje del
+tamaño del almacenamiento dinámico durante un periodo de tiempo. Los valores aceptables para este campo son entre <samp class="ph tt">1</samp> segundo y <samp class="ph tt">60</samp> minutos. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 5. Condición de memoria: propiedades de condición de pérdida de memoria</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d3420e201">Valor</th>
+<th class="entry" valign="bottom" id="d3420e203">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d3420e201 "><span class="ph uicontrol">Nivel de detección
+</span></td>
+<td class="entry" valign="top" headers="d3420e203 "><div class="p">Se puede elegir entre los siguientes niveles de detección. En cada nivel hay un compromiso entre la velocidad y la precisión para detectar probables pérdidas de memoria. <ul class="ul"><li class="li"><strong class="ph b">Detección más rápida, mayor probabilidad de falsas alarmas:</strong> un nivel de detección más rápido detecta pérdidas de memoria potenciales con mayor rapidez, sin embargo, este nivel de detección tiene una mayor probabilidad de identificar falsamente una pérdida de memoria que una política de detección más lenta puesto que el análisis se realiza antes que el almacenamiento dinámico Java se amplíe a su tamaño configurado máximo. </li>
+<li class="li"><strong class="ph b">Detección estándar, probabilidad estándar de falsas alarmas:</strong> un nivel de detección estándar es más preciso que uno más rápido, pero no es tan rápido a la hora de identificar una pérdida de memoria potencial. Los valores estándar y más rápido precisan la misma cantidad de datos históricos, sin embargo, el valor estándar realiza el análisis después de que el almacenamiento dinámico Java se haya ampliado a su tamaño configurado máximo. </li>
+<li class="li"><strong class="ph b">Detección más lenta, menor probabilidad de falsas alarmas:</strong> un nivel de detección más lento es el más preciso, sin embargo, este nivel de detección no detecta una pérdida de memoria potencial tan rápidamente como lo hace el nivel de detección más rápido. Este valor más lento es el que necesita más datos históricos.</li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 6.  Propiedades de la condición de reducción de saturación</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d3420e240">Valor</th>
+<th class="entry" valign="bottom" id="d3420e242">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d3420e240 "><span class="ph uicontrol">Nivel de detección
+</span></td>
+<td class="entry" valign="top" headers="d3420e242 "><ul class="ul"><li class="li"><strong class="ph b">Detección estándar, probabilidad normal de falsas alarmas</strong>: una política de detección estándar es menos precisa que una más lenta, pero más rápida para identificar una reducción de saturación potencial. <p class="p">Este nivel utiliza menos muestras (N=10) tanto para los tiempos de respuesta como para los pesos del gestor de carga de trabajo dinámica y detecta un punto de cambio en cada una de las métricas en base al conjunto de muestras. Como resultado, esta política llega a una conclusión con mayor rapidez puesto que espera a 20 muestras, 10 para la media izquierda y 10 para la media derecha, para calcular una diferencia de medias y buscar un máximo local. Las muestras se recogen a intervalos de 15 segundos.
+Por lo tanto, una reducción de saturación se detecta dentro de los 5 minutos de su aparición. Sin embargo, puesto que el número de muestras es menor, si las muestras tiene picos o descargadas transitorias, hay una probabilidad alta de falsas alarmas. </p>
+</li>
+<li class="li"><strong class="ph b">Detección más lenta, menor probabilidad de falsas alarmas</strong>: una política de detección más lenta es la más precisa, sin embargo, no detecta una reducción de saturación potencial con tanta rapidez que una política de detección estándar.<p class="p">Este nivel utiliza más muestras (N=15) tanto para los tiempos de respuesta como para los pesos del gestor de carga de trabajo dinámica. Como resultado, esta política llega a una conclusión con menor rapidez puesto que tiene que esperar 30 muestras (15 para la media izquierda y 15 para la media derecha) para calcular una diferencia de medias. El tiempo de detección es de siete minutos y treinta segundos. Sin embargo, puesto que se utilizan más muestras, la presencia de muestras con bajadas o picos transitorios no afecta tanto a los valores de las medias. Por lo tanto, la probabilidad de falsas alarmas es menor. </p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 7. Propiedades de condición de tiempo de carga de trabajo</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d3420e271">Valor</th>
+<th class="entry" valign="bottom" id="d3420e273">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d3420e271 "><span class="ph uicontrol">Total de solicitudes
+</span></td>
+<td class="entry" valign="top" headers="d3420e273 "><p class="p">La política de condición de carga de trabajo se infringe cuando se ha dado servicio a un número determinado de peticiones definido por el usuario. Un valor de solicitud debe ser un número entero superior a <span class="keyword option">1000</span>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 8.  Propiedades de la condición del porcentaje de recogida de basura</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d3420e294">Valor</th>
+<th class="entry" valign="bottom" id="d3420e296">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d3420e294 "><span class="ph uicontrol">Porcentaje de tiempo empleado en la recogida de basura
+</span></td>
+<td class="entry" valign="top" headers="d3420e296 "><p class="p">La política de porcentaje de tiempo empleado en la recogida de basura supervisa una JVM (Java Virtual Machine) o un conjunto de JVM para determinar si está empleando un porcentaje de tiempo mayor en la recogida de basura durante un periodo de tiempo especificado. Las unidades son porcentajes. El valor predeterminado es 10. Los valores aceptables para este campo son números enteros entre <span class="keyword option">1</span> y <span class="keyword option">99</span>. </p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d3420e294 "><span class="ph uicontrol">Período de tiempo de muestreo
+</span></td>
+<td class="entry" valign="top" headers="d3420e296 "><p class="p">Este campo especifica el periodo de tiempo durante el que se recopilan los datos de recogida de basura. El porcentaje de tiempo empleado en la recogida de basura durante el periodo de muestreo debe estar por encima del valor del umbral antes de que se lleve a cabo la acción correctiva. Las unidades son minutos y horas. El valor predeterminado es de <span class="keyword option">2</span> minutos.
+Los valores aceptables para este campo están entre <span class="keyword option">1</span> minuto y <span class="keyword option">24</span> horas. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 9. Propiedades de condición personalizada</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d3420e339">Valor</th>
+<th class="entry" valign="bottom" id="d3420e341">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d3420e339 "><span class="ph uicontrol">Ejecutar plan de reacción cuando</span></td>
+<td class="entry" valign="top" headers="d3420e341 ">Especifica una subexpresión que representa las métricas que se evalúan en la condición personalizada. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" id="genTopProcId5"><h2 class="title topictitle2">Reacción del supervisor de gestión de salud</h2>
+<div class="body"><p class="shortdesc">Especifica cómo <span class="ph">Intelligent Management</span> se comporta cuando se alcanza una condición de salud definida.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="genTopProcId6"><h2 class="title topictitle2">Modalidad de reacción</h2>
+<div class="body"><p class="shortdesc">Especifica la modalidad de reacción que define el comportamiento de la política de salud. La modalidad de reacción puede ser <span class="ph uicontrol">Supervisada</span> o <span class="ph uicontrol">Automática</span>.</p>
+<ul class="ul"><li class="li">Cuando una modalidad de reacción se establece en <span class="ph uicontrol">Supervisada</span>, las políticas de seguridad están activas y las recomendaciones sobre las acciones se envían al administrador con una tarea de tiempo de ejecución. El administrador puede seguir las recomendaciones. Si el administrador aprueba una recomendación, de forma automática se toman las acciones para mejorar la condición de salud.</li>
+<li class="li">Cuando la modalidad de reacción se establece en <span class="ph uicontrol">Automática</span>, las políticas de salud anotan cronológicamente datos de forma activa, y el producto de forma automática toma las acciones para mejorar las condiciones de salud, sin la aprobación del administrador.</li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="genTopProcId7"><h2 class="title topictitle2">Realizar las siguientes acciones cuando se incumple la condición de salud</h2>
+<div class="body"><p class="shortdesc">Existe la posibilidad de definir un conjunto específico de acciones a realizar cuando se incumple la condición de salud. Estas acciones pueden ser acciones por omisión existentes, o pueden ser acciones personalizadas definidas por el usuario para ejecutar un archivo ejecutable.</p>
+<p class="p">Una lista de acciones muestra el orden en que se ejecutan cuando se incumple la condición de salud. Para añadir una acción, pulse <span class="ph uicontrol">Añadir acción...</span>. Se puede elegir una acción de política de salud por omisión que ya exista, una acción personalizada que se haya creado, o se puede crear una nueva acción personalizada.</p>
+<p class="p">Para eliminar un paso, selecciónelo y pulse <span class="ph uicontrol">Acción Eliminar</span>.
+Si desea cambiar el orden de los pasos, seleccione un paso y pulse <span class="ph uicontrol">Subir</span> o <span class="ph uicontrol">Bajar</span>.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link build" href="hc_condition_subex.html" title="El generador de subexpresiones de condición de salud permite definir una condición de salud personalizada para su política de salud. La utilidad de generación de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de subexpresiones valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados y operadores lógicos a los que no se les da soporte.">Generador de subexpresiones de condición de salud personalizada</a></div>
+<div><a class="link build" href="hc_collection.html" title="Utilice esta página para crear y modificar políticas de salud. Las políticas de salud dan soporte a dos aproximaciones básicas para mantener un entorno saludable: la detección y la prevención.">Colección de políticas de salud</a></div>
+<div><a class="link build" href="hc_detail_main.html" title="Utilice esta página para modificar políticas de salud que ya existen. Las políticas de salud permiten mantener un entorno saludable mediante la utilización de metodologías de detección y prevención.">Valores de política de salud</a></div>
+<div><a class="link build" href="hc_detail_main_new.html" title="Utilice esta página para crear políticas de salud, utilizadas para realizar una gran variedad de cálculos basados en salud sobre los clústeres, clústeres dinámicos e instancias de servidores de aplicaciones que se ejecutan en los nodos.">Creación de una política de salud: definir las propiedades generales de la política de salud</a></div>
+<div><a class="link build" href="hc_appservers_detail_new.html" title="Utilice esta página para asignar propiedades de pertenencia a políticas de salud.">Creación de una política de salud: especificar los miembros a supervisar</a></div>
+<div><a class="link build" href="hc_action_collection.html" title="Por omisión, se puede definir una política de salud para ejecutar cualquiera de las acciones de salud predefinidas, como reiniciar servidores cuando se incumple una política de salud. Configure una acción personalizada cuando desee que el entorno realice una acción distinta a la especificada por omisión.">Colección de acciones personalizadas</a></div>
+<div><a class="link build" href="hc_custom_action.html" title="Permite especificar detalles para las acciones personalizada de Java y las que no lo son.">Valores de acciones personalizadas</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: hc_condition_detail_new.html</span></body>
+</html>

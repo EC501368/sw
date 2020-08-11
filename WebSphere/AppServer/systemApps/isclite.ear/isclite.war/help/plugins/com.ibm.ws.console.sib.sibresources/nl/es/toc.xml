@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Recursos de integración de servicios" topic="index.html">
+   <topic label="Añadir un transporte a la lista de transportes permitidos [Valores]"
+          href="ae/SIBPermittedTransports_DetailForm.html"/>
+   <topic label="Añadir un usuario o grupo al rol de conector de bus [Valores]"
+          href="ae/SIBusConnector_DetailForm.html"/>
+   <topic label="Aliasdestination [Valores]"
+          href="ae/SIBDestinationAlias_DetailForm.html"/>
+   <topic label="Recursos de aplicación para este destino"
+          href="ae/AppsFromSIBRefs_DetailForm.html"/>
+   <topic label="Miembros de la rutina de carga [Colección]"
+          href="ae/SIBBootstrapMember_CollectionForm.html"/>
+   <topic label="Suscripciones de perfil de intermediario [Colección]"
+          href="ae/SIBPSBSubscriptions_CollectionForm.html"/>
+   <topic label="Buses [Colección]" href="ae/SIBus_CollectionForm.html"/>
+   <topic label="Buses [Valores]" href="ae/SIBus_DetailForm.html"/>
+   <topic label="Miembros de bus [Colección]" href="ae/BusMember_CollectionForm.html"/>
+   <topic label="Miembros de bus [Valores]" href="ae/BusMember_DetailForm.html"/>
+   <topic label="Conexiones del cliente [Colección]"
+          href="ae/SIBMQClientLinkClientConnection_CollectionForm.html"/>
+   <topic label="Propiedades de contexto [Colección]"
+          href="ae/SIBContextInfo_CollectionForm.html"/>
+   <topic label="Propiedades de contexto [Valores]"
+          href="ae/SIBContextInfo_DetailForm.html"/>
+   <topic label="Propiedades personalizadas [Colección]"
+          href="ae/SIBusProperty_CollectionForm.html"/>
+   <topic label="Propiedades personalizadas [Colección]"
+          href="ae/SIBMessagingEngineProperty_CollectionForm.html"/>
+   <topic label="Almacén de datos [Valores]" href="ae/SIBDatastore_DetailForm.html"/>
+   <topic label="Roles de acceso predeterminados [Valores]"
+          href="ae/SIBDefaultAuth_DetailForm.html"/>
+   <topic label="Valores predeterminados de destino [Valores]"
+          href="ae/SIBDestinationDefault_DetailForm.html"/>
+   <topic label="Destinos [Colección]" href="ae/SIBDestination_CollectionForm.html"/>
+   <topic label="Roles de acceso de Destinos [Colección]"
+          href="ae/SIBDestinationAuth_CollectionForm.html"/>
+   <topic label="Roles de acceso de Destinos [Valores]"
+          href="ae/SIBDestinationAuth_DetailForm.html"/>
+   <topic label="Almacén de archivos [Valores]" href="ae/SIBFilestore_DetailForm.html"/>
+   <topic label="Bus foráneo [Valores]" href="ae/SIBForeignBusAuth_DetailForm.html"/>
+   <topic label="Conexiones de bus foráneo [Colección]"
+          href="ae/SIBForeignBus_CollectionForm.html"/>
+   <topic label="Conexiones de bus foráneo [Valores]"
+          href="ae/SIBForeignBus_DetailForm.html"/>
+   <topic label="Foráneodestination [Valores]"
+          href="ae/SIBDestinationForeign_DetailForm.html"/>
+   <topic label="Mensajes de entrada [Colección]"
+          href="ae/SIBMessagePointInboundMessageStream_CollectionForm.html"/>
+   <topic label="Propiedades de direccionamiento indirecto [Valores]"
+          href="ae/SIBNextHopBus_DetailForm.html"/>
+   <topic label="Canal de entrada JFAP [Valores]"
+          href="ae/JFAPInboundChannel_DetailForm.html"/>
+   <topic label="Corrientes de entrada del transmisor de enlace conocido [Colección]"
+          href="ae/SIBMQLinkKnownLinkTransmitterStream_CollectionForm.html"/>
+   <topic label="Transmisores de enlace conocido [Colección]"
+          href="ae/SIBMQLinkKnownLinkTransmitter_CollectionForm.html"/>
+   <topic label="Mensajes de corrientes del transmisor de enlace conocido [Colección]"
+          href="ae/SIBMQLinkKnownLinkTransmitterMessage_CollectionForm.html"/>
+   <topic label="Puntos de publicación remotos conocidos [Colección]"
+          href="ae/SIBPublicationPointRemotePP_CollectionForm.html"/>
+   <topic label="Puntos de publicación remotos conocidos [Valores]"
+          href="ae/SIBPublicationPointRemotePP_DetailForm.html"/>
+   <topic label="Puntos de cola remotos conocidos [Colección]"
+          href="ae/SIBQueuePointRemoteQP_CollectionForm.html"/>
+   <topic label="Puntos de cola remotos conocidos [Valores]"
+          href="ae/SIBQueuePointRemoteQP_DetailForm.html"/>
+   <topic label="Puntos de suscripción remotos conocidos [Colección]"
+          href="ae/SIBSubscriptionPointRemoteSP_CollectionForm.html"/>
+   <topic label="Puntos de suscripción remotos conocidos [Valores]"
+          href="ae/SIBSubscriptionPointRemoteSP_DetailForm.html"/>
+   <topic label="Receptores de enlace [Colección]"
+          href="ae/SIBLinkReceiver_CollectionForm.html"/>
+   <topic label="Mensajes de corrientes del receptor de enlace [Colección]"
+          href="ae/SIBLinkReceiverMessage_CollectionForm.html"/>
+   <topic label="Corrientes del receptor de enlace [Colección]"
+          href="ae/SIBLinkReceiverStream_CollectionForm.html"/>
+   <topic label="Transmisores de enlace [Colección]"
+          href="ae/SIBLinkTransmitter_CollectionForm.html"/>
+   <topic label="Mensajes de corrientes del transmisor de enlace [Colección]"
+          href="ae/SIBLinkTransmitterMessage_CollectionForm.html"/>
+   <topic label="Corrientes del transmisor de enlace [Colección]"
+          href="ae/SIBLinkTransmitterStream_CollectionForm.html"/>
+   <topic label="Gestionar roles de acceso de bus foráneo [Colección]"
+          href="ae/SIBForeignBusAuth_CollectionForm.html"/>
+   <topic label="Puntos de ejecución de mediación [Colección]"
+          href="ae/SIBMQMediationExecutionPoint_CollectionForm.html"/>
+   <topic label="Puntos de mediación [Colección]"
+          href="ae/SIBMediationLocalizationPoint_CollectionForm.html"/>
+   <topic label="Puntos de mediación [Colección]"
+          href="ae/SIBRuntimeMediationLocalizationPoint_CollectionForm.html"/>
+   <topic label="Puntos de mediación [Colección]"
+          href="ae/SIBRuntimeMQMediationExecutionPoint_CollectionForm.html"/>
+   <topic label="Puntos de mediación [Valores]"
+          href="ae/SIBMediationLocalizationPoint_DetailForm.html"/>
+   <topic label="Puntos de mediación [Valores]"
+          href="ae/SIBMQMediationExecutionPoint_DetailForm.html"/>
+   <topic label="Mediaciones [Colección]"
+          href="ae/SIBDestinationMediation_CollectionForm.html"/>
+   <topic label="Mediaciones [Valores]" href="ae/SIBDestinationMediation_DetailForm.html"/>
+   <topic label="Agrupación de hebras de mediación [Valores]"
+          href="ae/SIBMediationThreadPool_DetailForm.html"/>
+   <topic label="Cuerpo del mensaje [Valores]" href="ae/SIBMessageBody_DetailForm.html"/>
+   <topic label="Puntos de mensaje [Colección]"
+          href="ae/SIBLocalizationPoint_CollectionForm.html"/>
+   <topic label="Solicitudes de mensaje [Colección]"
+          href="ae/SIBMessagePointMessageRequest_CollectionForm.html"/>
+   <topic label="Solicitudes de mensaje [Colección]"
+          href="ae/SIBRemoteMessageRequests_CollectionForm.html"/>
+   <topic label="Mensajes [Colección]"
+          href="ae/SIBRemoteOutboundMessage_CollectionForm.html"/>
+   <topic label="Mensajes [Colección]"
+          href="ae/SIBRemoteOutboundMessagePublicationPoint_CollectionForm.html"/>
+   <topic label="Mensajes [Colección]" href="ae/SIBMessages_CollectionForm.html"/>
+   <topic label="Mensajes [Valores]" href="ae/SIBMessages_DetailForm.html"/>
+   <topic label="Mensajes [Valores]" href="ae/SIBMessagesJMS_DetailForm.html"/>
+   <topic label="Mensajes [Valores]" href="ae/SIBMessagesSDO_DetailForm.html"/>
+   <topic label="Mantenimiento de la política del motor de mensajería [Colección]"
+          href="ae/MECoreGroupPolicy_CollectionForm.html"/>
+   <topic label="Motores de mensajería [Colección]"
+          href="ae/SIBMessagingEngine_CollectionForm.html"/>
+   <topic label="Motores de mensajería [Valores]"
+          href="ae/SIBMessagingEngine_DetailForm.html"/>
+   <topic label="Recursos de mensajería para esta aplicación"
+          href="ae/AppToSIBRefs_DetailForm.html"/>
+   <topic label="Mensajes de salida [Colección]"
+          href="ae/SIBRemoteOutboundMessageStreams_CollectionForm.html"/>
+   <topic label="Transportes permitidos [Colección]"
+          href="ae/SIBPermittedTransports_CollectionForm.html"/>
+   <topic label="Puerto [Valores]" href="ae/SIBPort_DetailForm.html"/>
+   <topic label="Propiedades personalizadas [Valores]"
+          href="ae/SIBMessagingEngineProperty_DetailForm.html"/>
+   <topic label="Propiedad [Valores]" href="ae/SIBusProperty_DetailForm.html"/>
+   <topic label="Puntos de publicación [Colección]"
+          href="ae/SIBTopicSpaceLocalizationPoint_CollectionForm.html"/>
+   <topic label="Puntos de publicación [Colección]"
+          href="ae/SIBRuntimeTopicSpaceLocalizationPoint_CollectionForm.html"/>
+   <topic label="Puntos de publicación [Valores]"
+          href="ae/SIBTopicSpaceLocalizationPoint_DetailForm.html"/>
+   <topic label="Perfiles de intermediario de publicación/suscripción [Colección]"
+          href="ae/SIBPSBBrokerProfile_CollectionForm.html"/>
+   <topic label="Perfiles de intermediario de publicación/suscripción [Valores]"
+          href="ae/SIBPSBBrokerProfile_DetailForm.html"/>
+   <topic label="Cola [Valores]" href="ae/SIBQueue_DetailForm.html"/>
+   <topic label="Puntos de cola [Colección]"
+          href="ae/SIBQueueLocalizationPoint_CollectionForm.html"/>
+   <topic label="Puntos de cola [Colección]"
+          href="ae/SIBRuntimeQueueLocalizationPoint_CollectionForm.html"/>
+   <topic label="Puntos de cola [Valores]"
+          href="ae/SIBQueueLocalizationPoint_DetailForm.html"/>
+   <topic label="Políticas de grupo principal redundantes [Colección]"
+          href="ae/MaroonedMEPolicy_CollectionForm.html"/>
+   <topic label="Puntos de mediación remotos [Colección]"
+          href="ae/SIBRemoteMediationPoint_CollectionForm.html"/>
+   <topic label="Puntos de mediación remotos [Valores]"
+          href="ae/SIBRemoteMediationPoint_DetailForm.html"/>
+   <topic label="Puntos de publicación remotos [Colección]"
+          href="ae/SIBRemotePublicationPoint_CollectionForm.html"/>
+   <topic label="Puntos de publicación remotos [Valores]"
+          href="ae/SIBRemotePublicationPoint_DetailForm.html"/>
+   <topic label="Puntos de cola remotos [Colección]"
+          href="ae/SIBRemoteQueuePoint_CollectionForm.html"/>
+   <topic label="Puntos de cola remotos [Valores]"
+          href="ae/SIBRemoteQueuePoint_DetailForm.html"/>
+   <topic label="Suscripción remota [Colección]"
+          href="ae/SIBRemoteSubscriptions_CollectionForm.html"/>
+   <topic label="Suscripción remota [Valores]"
+          href="ae/SIBRemoteSubscriptions_DetailForm.html"/>
+   <topic label="Configuración del dominio de seguridad. [Valores]"
+          href="ae/SIBusSecurityDomain_DetailForm.html"/>
+   <topic label="Seguridad para el bus nombre_bus [Valores]"
+          href="ae/SIBusSecurity_DetailForm.html"/>
+   <topic label="Transmisores de canal emisor [Colección]"
+          href="ae/SIBMQLinkSenderChannelTransmitter_CollectionForm.html"/>
+   <topic label="Propiedades de direccionamiento del enlace de bus de integración de servicios [Valores]"
+          href="ae/SIBVirtualGatewayLink_DetailForm.html"/>
+   <topic label="Enlaces de bus de integración de servicios [Colección]"
+          href="ae/SIBGatewayLink_CollectionForm.html"/>
+   <topic label="Enlaces de bus de integración de servicios [Valores]"
+          href="ae/SIBGatewayLink_DetailForm.html"/>
+   <topic label="Suscripciones [Colección]" href="ae/SIBSubscription_CollectionForm.html"/>
+   <topic label="Suscripciones [Valores]" href="ae/SIBSubscription_DetailForm.html"/>
+   <topic label="Prefijos de destino temporal [Colección]"
+          href="ae/SIBTempDestPrefixAuth_CollectionForm.html"/>
+   <topic label="Prefijos de destino temporal [Valores]"
+          href="ae/SIBTempDestPrefixAuth_DetailForm.html"/>
+   <topic label="Tema [Valores]" href="ae/SIBTopicAuth_DetailForm.html"/>
+   <topic label="Correlación de temas [Colección]"
+          href="ae/SIBPSBTopicMapping_CollectionForm.html"/>
+   <topic label="Correlación de temas [Valores]"
+          href="ae/SIBPSBTopicMapping_DetailForm.html"/>
+   <topic label="Temas [Colección]" href="ae/SIBTopicAuth_CollectionForm.html"/>
+   <topic label="Temas [Colección]" href="ae/SIBViewOutboundTopics_CollectionForm.html"/>
+   <topic label="Espacio de temas [Valores]" href="ae/SIBTopicSpace_DetailForm.html"/>
+   <topic label="Entradas de correlación de espacio de tema [Colección]"
+          href="ae/SIBTopicSpaceMapEntry_CollectionForm.html"/>
+   <topic label="Entradas de correlación de espacio de tema [Valores]"
+          href="ae/SIBTopicSpaceMapEntry_DetailForm.html"/>
+   <topic label="Correlación de espacio de tema [Valores]"
+          href="ae/SIBTopicSpaceMapping_DetailForm.html"/>
+   <topic label="Espacios de temas [Colección]"
+          href="ae/SIBTopicspaceAuth_CollectionForm.html"/>
+   <topic label="Usuario o grupo desconocido [Valores]"
+          href="ae/SIBIdentityAuth_DetailForm.html"/>
+   <topic label="Usuarios y grupos desconocidos [Colección]"
+          href="ae/SIBIdentityAuth_CollectionForm.html"/>
+   <topic label="Usuarios y grupos del rol de conector de bus [Colección]"
+          href="ae/SIBusConnector_CollectionForm.html"/>
+   <topic label="Servicio Web [Valores]" href="ae/SIBWebService_DetailForm.html"/>
+   <topic label="Conexión de cliente de WebSphere MQ [Valores]"
+          href="ae/SIBMQClientLinkClientConnection_DetailForm.html"/>
+   <topic label="Enlace cliente de WebSphere MQ [Valores]"
+          href="ae/SIBMQClientLink_DetailForm.html"/>
+   <topic label="Propiedades avanzadas del enlace de cliente de WebSphere MQ [Valores]"
+          href="ae/SIBMQClientLinkAdvancedProperties_DetailForm.html"/>
+   <topic label="Enlaces cliente de WebSphere MQ [Colección]"
+          href="ae/SIBMQClientLink_CollectionForm.html"/>
+   <topic label="Enlace WebSphere MQ [Valores]" href="ae/SIBMQLink_DetailForm.html"/>
+   <topic label="Enlace WebSphere MQCanal de entrada MQFAP [Valores]"
+          href="ae/MQFAPInboundChannel_DetailForm.html"/>
+   <topic label="Canal receptor del enlace WebSphere MQ [Colección]"
+          href="ae/SIBMQLinkReceiverChannel_CollectionForm.html"/>
+   <topic label="Canal receptor del enlace WebSphere MQ [Valores]"
+          href="ae/SIBMQLinkReceiverChannel_DetailForm.html"/>
+   <topic label="Conexiones del canal receptor del enlace WebSphere MQ [Colección]"
+          href="ae/SIBMQLinkReceiverChannelConnection_CollectionForm.html"/>
+   <topic label="Conexiones del canal receptor del enlace WebSphere MQ [Valores]"
+          href="ae/SIBMQLinkReceiverChannelConnection_DetailForm.html"/>
+   <topic label="Propiedades de direccionamiento de enlace WebSphere MQ [Valores]"
+          href="ae/SIBVirtualMQLink_DetailForm.html"/>
+   <topic label="Enlaces WebSphere MQ [Colección]"
+          href="ae/SIBMQLink_CollectionForm.html"/>
+   <topic label="Canal emisor del enlace WebSphere MQ [Colección]"
+          href="ae/SIBMQLinkSenderChannel_CollectionForm.html"/>
+   <topic label="Canal emisor del enlace WebSphere MQ [Valores]"
+          href="ae/SIBMQLinkSenderChannel_DetailForm.html"/>
+   <topic label="Mensajes de transmisor del canal emisor del enlace WebSphere MQ [Colección]"
+          href="ae/SIBMQLinkSenderChannelTransmitterMessage_CollectionForm.html"/>
+   <topic label="Puntos de mediación WebSphere MQ [Colección]"
+          href="ae/SIBMQMediationLocalizationPoint_CollectionForm.html"/>
+   <topic label="Puntos de mediación WebSphere MQ [Valores]"
+          href="ae/SIBMQMediationLocalizationPoint_DetailForm.html"/>
+   <topic label="Puntos de cola de WebSphere MQ [Colección]"
+          href="ae/SIBMQQueueLocalizationPoint_CollectionForm.html"/>
+   <topic label="Puntos de cola de WebSphere MQ [Valores]"
+          href="ae/SIBMQQueueLocalizationPoint_DetailForm.html"/>
+   <topic label="Estado guardado de lotes del canal receptor de WebSphere MQ [Colección]"
+          href="ae/SIBMQLinkReceiverSavedBatchStatus_CollectionForm.html"/>
+   <topic label="Estado guardado de lotes del canal emisor de WebSphere MQ [Colección]"
+          href="ae/SIBMQLinkSenderSavedBatchStatus_CollectionForm.html"/>
+   <topic label="Servidor WebSphere MQ [Valores]" href="ae/SIBMQServer_DetailForm.html"/>
+   <topic label="Miembro de bus del servidor WebSphere MQ [Valores]"
+          href="ae/SIBMQServerBusMember_DetailForm.html"/>
+   <topic label="Servidores WebSphere MQ [Colección]"
+          href="ae/SIBMQServer_CollectionForm.html"/>
+</toc>

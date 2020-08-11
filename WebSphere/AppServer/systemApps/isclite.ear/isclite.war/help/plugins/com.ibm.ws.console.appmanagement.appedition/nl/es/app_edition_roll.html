@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores de despliegue de la edición" />
+<meta name="abstract" content="Utilice esta página para configurar los valores de despliegue de edición." />
+<meta name="description" content="Utilice esta página para configurar los valores de despliegue de edición." />
+<meta name="DC.Relation" scheme="URI" content="app_edition_details.html" />
+<meta name="DC.Relation" scheme="URI" content="edition_control_center.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="app_edition_roll" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores de despliegue de la edición</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="app_edition_roll">
+<h1 class="title topictitle1">Valores de despliegue de la edición</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para configurar los valores de despliegue de edición.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse<span class="ph menucascade"><span class="ph uicontrol">Aplicaciones</span> &gt; <span class="ph uicontrol">Centro de control de ediciones</span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_aplicación</var></span> &gt; <span class="ph uicontrol"><var class="keyword varname">Seleccionar edición</var></span> &gt; <span class="ph uicontrol">Desplegar</span></span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="http"><h2 class="title topictitle2">Valores de despliegue de Java Platform, Enterprise Edition (Java EE)</h2>
+<div class="body"><p class="shortdesc">Se pueden utilizar los valores siguientes para aplicaciones Java:</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="rolloutstrategy"><h2 class="title topictitle2">Estrategia de despliegue</h2>
+<div class="body"><p class="shortdesc">Especifica la estrategia que se utilizará al desplegar una edición de una aplicación. La estrategia de despliegue por omisión es agrupada. </p>
+<div class="p">Utilice la opción de despliegue atómico para dar servicio a todas las peticiones de usuario con una edición coherente de la aplicación. Esta opción provoca que el clúster se ejecute a la mitad de su capacidad. Si el clúster es muy grande, es posible que el despliegue de grupo se adapte mejor a sus necesidades.<ul class="ul"><li class="li"><strong class="ph b">Atómico</strong>: despliega la mitad del clúster de una vez. Se da servicio a la edición anterior hasta que la primera mitad del clúster queda disponible para dar servicio a la nueva edición.  En ese momento, la versión antigua pasa a estar fuera de línea y se despliega en la mitad restante del clúster.  El clúster da servicio a las peticiones de los usuarios desde una edición u otra.</li>
+<li class="li"><strong class="ph b">Agrupada</strong>: especifica realizar el despliegue a lo largo de los clústeres en grupos de servidores, <em class="ph i">n</em> servidores a la vez, donde 1 &lt;= <em class="ph i">n</em> &lt;= tamaño del clúster.  La siguiente edición sustituye a la edición anterior en <em class="ph i">n</em> servidores cada vez.  Si se especifica un valor de <em class="ph i">n</em> tal que <em class="ph i">n</em> &gt;= tamaño del clúster, el tamaño del clúster se redimensiona internamente a <samp class="ph codeph">(tamaño de clúster) -1</samp>.  Durante este periodo, las dos ediciones de la aplicación, la anterior y la nueva, están disponibles para dar servicio hasta que se complete el despliegue.  El tamaño de grupo predeterminado es <samp class="ph codeph">1</samp>. </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="resetstrategy"><h2 class="title topictitle2">Estrategia de restablecimiento</h2>
+<div class="body"><p class="shortdesc">Especifica la forma en que reiniciar la aplicación. La estrategia de restablecimiento por omisión es restablecimiento suave. </p>
+<ul class="ul"><li class="li"><strong class="ph b">Restablecimiento suave</strong>: Restablece la aplicación reiniciándola. </li>
+<li class="li"><strong class="ph b">Restablecimiento drástico</strong>: Restablece la aplicación reiniciando el servidor. </li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="drainageinterval"><h2 class="title topictitle2">Intervalo de drenaje</h2>
+<div class="body"><p class="shortdesc">Especifica el número de segundos que se esperará a que se completen las peticiones HTTP (Hypertext Transfer
+Protocol) antes de iniciar la estrategia de restablecer.
+ El valor predeterminado es de <samp class="ph tt">30</samp> segundos.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="sip"><h2 class="title topictitle2">Valores de despliegue de protocolo SIP (Session Initiation Protocol)</h2>
+<div class="body"><p class="shortdesc">Se puede utilizar los valores siguientes para aplicaciones SIP:</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="quiesceoptions"><h2 class="title topictitle2">Opciones de inmovilización</h2>
+<div class="body"><p class="shortdesc">Especifica la edad que los miembros de clústeres o servidores que alojan la edición actual deben tener para eliminarlos. Este valor no afecta a la nueva edición que se está desplegando.</p>
+<ul class="ul"><li class="li"><strong class="ph b">Inmoviliza miembros de clústeres o servidores después de que se hayan completado todos los diálogos o las sesiones activas</strong>: elimina el miembro de clúster o servidor cuando se completan todos los diálogos y sesiones activas de dicho miembro de clúster o servidor.</li>
+<li class="li"><strong class="ph b">Inmoviliza miembros de clústeres o servidores después de un intervalo especificado</strong>: elimina el miembro de clúster o servidor después del periodo de tiempo que se especifica.
+Especifica un tiempo en segundos, minutos u horas.</li>
+</ul>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="app_edition_details.html" title="La página Gestionar ediciones muestra detalles de cada una de las ediciones de una aplicación. Con esta página puede gestionar el ciclo de vida de una edición. Las acciones relacionadas son: activación, validación, despliegue y desactivación.">Gestionar ediciones</a></div>
+<div><a class="link help" href="edition_control_center.html" title="El Centro de control de ediciones proporciona una visión general de todas las aplicaciones de empresa y sus ediciones actuales.">Centro de control de ediciones</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: app_edition_roll.html</span></body>
+</html>

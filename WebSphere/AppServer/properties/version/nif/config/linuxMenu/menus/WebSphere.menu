@@ -1,0 +1,29 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+  <Name>IBM WebSphere</Name>
+
+  <AppDir>${WAS_HOME}/properties/version/nif/config/linuxMenu/</AppDir>
+  <DirectoryDir>${WAS_HOME}/properties/version/nif/config/linuxMenu/directories/</DirectoryDir>
+
+  <Directory>WebSphere.directory</Directory>
+
+  <!-- Stuff in the toplevel -->
+  <Include>
+    <And>
+	<Category>WebSphere</Category>
+       <Not>
+          <Category>AppServer</Category>
+       </Not>
+    </And>
+  </Include>
+  <Menu>
+    <Name>ApplicationServerMenu</Name>
+    <MergeFile>${WAS_HOME}/properties/version/nif/config/linuxMenu/menus/ApplicationServer.menu</MergeFile>
+   </Menu>
+   </Menu>
+</Menu>
+

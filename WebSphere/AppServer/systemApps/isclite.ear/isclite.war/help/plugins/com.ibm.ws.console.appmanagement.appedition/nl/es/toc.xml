@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestor de ediciones de aplicación" topic="index.html">
+   <topic label="Centro de control de ediciones" href="edition_control_center.html"/>
+   <topic label="Valores de despliegue de la edición" href="app_edition_roll.html"/>
+   <topic label="Gestionar ediciones" href="app_edition_details.html"/>
+</toc>

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=${MIGRATIONWIZARD}
+Comment=${MIGRATIONWIZARD}
+Categories=WebSphere${NUMBER};AppServer;
+Icon=${WAS_HOME}/properties/version/nif/config/linuxMenu/images/ws16x16.png
+Exec=${WAS_HOME}/bin/migration.sh
+StartupNotify=true
+Type=Application
+Terminal=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.9

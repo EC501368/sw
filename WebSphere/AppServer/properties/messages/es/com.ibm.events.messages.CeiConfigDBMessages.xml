@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+ 
+<!--
+******************************************************************************
+* Translation Notes:
+*
+* To translate this XML file, first change the xml:lang variable
+* in TMSSource to the correct locale for the translation.  Then follow
+* these simple rules.
+*
+* #PCDATA:
+*
+* When translating XML, any text between <Tag> and </Tag> entries
+* should be translated.  For example, "File not found" in the following
+* phrase:
+*
+* <MsgText>File not found</MsgText>...
+*
+* The only exception to this rule is the Text between <Copyright> and
+* </Copyright> tags.
+*
+* Attributes:
+*
+* Verbage in attributes should not be translated.  For example, the "don't
+* translate me" phrase in the following should not be changed:
+*
+* <MsgText terseText="don't translate me">File not found</MsgText>...
+*
+* Comments:
+*
+* Verbage in comments should not be translated.  This note is an example
+* of a comment.  End-users will never see it.
+*
+*****************************************************************************
+-->
+<TMSSource name="CeiInstallDBMessages" tmsVersion="1.0" xml:lang="es">
+<Copyright>    Licensed Materials - Property of IBM (C)Copyright IBM Corporation 2004, 2005. All Rights Reserved US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</Copyright>
+<!--
+  *********************************************************************
+  * The above copyright notice applies to this XML file as well
+  *  as any other source/text files generated from this file.
+  *********************************************************************
+-->
+<!-- ============================================================== -->
+<!-- Message creation/maintenance process:                      -->
+<!--                                                            -->
+<!-- In a comment above each message, include                   -->
+<!-- the message number and one of these four status values:    -->
+<!--                                                            -->
+<!-- MSG_WORKING: Development is still working on the message.  -->
+<!--              It is not ready for review by ID.             -->
+<!--                                                            -->
+<!-- MSG_REVIEW_ID: Development has completed work on the       -->
+<!--                message. It is ready to be reviewed by ID.  -->
+<!--                                                            -->
+<!-- MSG_REVIEW_DEV: ID has updated the message.                -->
+<!--                 It is ready to be reviewed by Development. -->
+<!--                                                            -->
+<!-- MSG_COMPLETE: The message has been reviewed by all parties -->
+<!--               and is complete.                             -->
+<!--                                                            -->
+<!-- Also, if Development must update a message that is in the  -->
+<!-- MSG_COMPLETE state, Development must open a defect for ID  -->
+<!-- to review the message again.                               -->
+<!-- ========================================================== -->
+<!-- ============================================================== -->
+<!--  CEIIN0700E  MSG_COMPLETE                                    -->
+<!-- ============================================================== -->
+<Message ID="CEIIN0700E" prefix="yes">
+<MsgText pgmKey="CEIIN0700E" varFormat="Java">La combinación especificada de los parámetros de nombre de clúster, nombre de nodo y nombre de servidor no es válida.</MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido finalizar porque la combinación de parámetros especificada no es válida. Especifique un nombre de clúster o bien un nombre de nodo y un nombre de servidor.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con los parámetros correctos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ============================================================== -->
+<!--  CEIIN0701E  MSG_COMPLETE                                    -->
+<!-- ============================================================== -->
+<Message ID="CEIIN0701E" prefix="yes">
+<MsgText pgmKey="CEIIN0701E" varFormat="Java">El parámetro <Variable formatSpec="{0}">parameter_name</Variable> contiene el valor
+         <Variable formatSpec="{1}">value</Variable>, que no es válido.
+Los valores válidos son:
+         <Variable formatSpec="{2}">valid_values</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración ha fallado porque el parámetro especificado no era uno de los valores válidos.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Corrija el parámetro especificado y vuelva a ejecutar el mandato.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ============================================================== -->
+<!--  CEIIN0702E  MSG_COMPLETE                                    -->
+<!-- ============================================================== -->
+<Message ID="CEIIN0702E" prefix="yes">
+<MsgText pgmKey="CEIIN0702E" varFormat="Java">Se necesita el parámetro <Variable
+formatSpec="{0}">parameter_name</Variable>. </MsgText>
+<Explanation>
+<p>El mandato de administración ha fallado porque se ha omitido el parámetro necesario especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de administración de nuevo especificando todos los parámetros necesarios.</p>
+</ProgrammerResponse>
+</Message>
+<!-- =============================================================== -->
+<!--  CEIIN0703E    MSG_COMPLETE                                   -->
+<!-- =============================================================== -->
+<Message ID="CEIIN0703E" prefix="yes">
+<MsgText pgmKey="CEIIN0703E" varFormat="Java">La eliminación de la base de datos de sucesos <Variable formatSpec="{0}">database_type</Variable> ha fallado debido a un error inesperado. <Variable formatSpec="{1}">errors</Variable></MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado una excepción al intentar eliminar la base de datos de sucesos.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- =============================================================== -->
+<!--  CEIIN0704I    MSG_COMPLETE                                     -->
+<!-- =============================================================== -->
+<Message ID="CEIIN0704I" prefix="yes">
+<MsgText pgmKey="CEIIN0704I" varFormat="Java">La base de datos de sucesos en <Variable
+formatSpec="{0}">database_type</Variable> se ha eliminado correctamente.</MsgText>
+<NoHelp/></Message>
+<!-- =============================================================== -->
+<!--  CEIIN0705I    MSG_COMPLETE                                     -->
+<!-- =============================================================== -->
+<Message ID="CEIIN0705I" prefix="yes">
+<MsgText pgmKey="CEIIN0705I" varFormat="Java">El origen de datos <Variable formatSpec="{0}">db_type</Variable> para el servicio de sucesos se ha creado correctamente.</MsgText>
+<NoHelp/></Message>
+<!-- =============================================================== -->
+<!--  CEIIN0706I    MSG_COMPLETE                                     -->
+<!-- =============================================================== -->
+<Message ID="CEIIN0706I" prefix="yes">
+<MsgText pgmKey="CEIIN0706I" varFormat="Java">El origen de datos <Variable formatSpec="{0}">db_type</Variable> para el servicio de sucesos se ha eliminado correctamente.</MsgText>
+<NoHelp/></Message>
+<!-- =============================================================== -->
+<!--  CEIIN0707E    MSG_COMPLETE                                   -->
+<!-- =============================================================== -->
+<Message ID="CEIIN0707E" prefix="yes">
+<MsgText pgmKey="CEIIN0707E" varFormat="Java">Los scripts de base de datos del servicio de sucesos y del origen de datos para <Variable formatSpec="{0}">database_type</Variable> no se han podido crear debido a errores.</MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado uno o más errores al intentar crear los scripts de configuración de la base de datos de sucesos y del origen de datos para el entorno de base de datos especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el archivo de registro wsadmin.traceout para determinar la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- =============================================================== -->
+<!--  CEIIN0709E    MSG_COMPLETE                                   -->
+<!-- =============================================================== -->
+<Message ID="CEIIN0709E" prefix="yes">
+<MsgText pgmKey="CEIIN0709E" varFormat="Java">No se ha encontrado el proveedor de JDBC <Variable
+formatSpec="{0}">jdbc_provider</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración no ha encontrado el proveedor de JDBC especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo especificando el proveedor de JDBC correcto.</p>
+</ProgrammerResponse>
+</Message>
+<!-- =============================================================== -->
+<!--  CEIIN0710E    MSG_COMPLETE                                   -->
+<!-- =============================================================== -->
+<Message ID="CEIIN0710E" prefix="yes">
+<MsgText pgmKey="CEIIN0710E" varFormat="Java">No se ha encontrado el origen de datos <Variable formatSpec="{0}">datasource</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración no ha encontrado el origen de datos especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo especificando el origen de datos correcto.</p>
+</ProgrammerResponse>
+</Message>
+<!-- =============================================================== -->
+<!--  CEIIN0711E    MSG_COMPLETE                                   -->
+<!-- =============================================================== -->
+<Message ID="CEIIN0711E" prefix="yes">
+<MsgText pgmKey="CEIIN0711E" varFormat="Java">El nombre de nodo <Variable formatSpec="{0}">node_name</Variable> no es válido.</MsgText>
+<Explanation>
+<p>El nombre de nodo especificado no hace referencia a un nodo válido.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de administración de nuevo especificando el nombre de nodo correcto.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0712E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0712E" prefix="yes">
+<MsgText pgmKey="CEIIN0712E" varFormat="Java">El nombre de nodo <Variable formatSpec="{0}">node_name</Variable> y el nombre de servidor <Variable formatSpec="{1}">server_name</Variable> no son una combinación válida.</MsgText>
+<Explanation>
+<p>El nombre de servidor especificado no es válido para el nodo especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de administración de nuevo especificando el nombre de nodo y de servidor correctos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0713E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0713E" prefix="yes">
+<MsgText pgmKey="CEIIN0713E" varFormat="Java">El nombre de clúster <Variable formatSpec="{0}">cluster_name</Variable> no es válido.</MsgText>
+<Explanation>
+<p>El nombre de clúster especificado no hace referencia a un clúster válido.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de administración de nuevo especificando el nombre de clúster correcto.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0714E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0714E" prefix="yes">
+<MsgText pgmKey="CEIIN0714E" varFormat="Java">El nombre de servidor <Variable formatSpec="{0}">server_name</Variable> no es válido.</MsgText>
+<Explanation>
+<p>El nombre de servidor especificado no hace referencia a un servidor válido.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de administración de nuevo especificando el nombre de servidor correcto.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0715E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0715E" prefix="yes">
+<MsgText pgmKey="CEIIN0715E" varFormat="Java">No se ha encontrado la plantilla <Variable formatSpec="{0}">template_name</Variable>.</MsgText>
+<Explanation>
+<p>La plantilla con el nombre especificado no existe en el repositorio de configuración.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con el nombre de plantilla correcto.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0716E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0716E" prefix="yes">
+<MsgText pgmKey="CEIIN0716E" varFormat="Java">No se ha encontrado el directorio <Variable formatSpec="{0}">directory_name</Variable>.</MsgText>
+<Explanation>
+<p>El directorio especificado no existe o es inaccesible.</p>
+</Explanation>
+<AdminResponse>
+<p> Consulte el archivo de registro wsadmin.traceout para determinar la causa del problema.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0717E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0717E" prefix="yes">
+<MsgText pgmKey="CEIIN0717E" varFormat="Java">El valor del parámetro
+         <Variable
+formatSpec="{0}">parameter_name</Variable>
+         es
+         <Variable formatSpec="{1}">parameter_value</Variable>, que no es válido.</MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido finalizar porque el valor del parámetro especificado no es un entero positivo.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando un valor válido para el parámetro especificado.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0718E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0718E" prefix="yes">
+<MsgText pgmKey="CEIIN0718E" varFormat="Java">El valor del parámetro
+         <Variable
+formatSpec="{0}">parameter_name</Variable>
+         es
+         <Variable formatSpec="{1}">parameter_value</Variable>, que no es válido.</MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido finalizar porque el valor del parámetro especificado no es un número positivo.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando un valor válido para el parámetro especificado.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0719E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0719E" prefix="yes">
+<MsgText pgmKey="CEIIN0719E" varFormat="Java">No se ha encontrado el archivo <Variable
+formatSpec="{0}">file_name</Variable>.</MsgText>
+<Explanation>
+<p>El archivo especificado no existe o es inaccesible.</p>
+</Explanation>
+<AdminResponse>
+<p> Consulte el archivo de registro wsadmin.traceout para determinar la causa del problema.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0720I    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0720I" prefix="yes">
+<MsgText pgmKey="CEIIN0720I" varFormat="Java">La base de datos de sucesos en <Variable formatSpec="{0}">database_type</Variable> se ha creado correctamente.</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIIN0721E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0721E" prefix="yes">
+<MsgText pgmKey="CEIIN0721E" varFormat="Java">La base de datos de sucesos en <Variable formatSpec="{0}">database_type</Variable> no se ha creado correctamente debido a errores.
+<Variable formatSpec="{1}">errors</Variable></MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado uno o más errores al intentar crear la base de datos de sucesos utilizando el entorno de base de datos especificado.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el archivo de registro wsadmin.traceout para determinar la causa del problema.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0722E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0722E" prefix="yes">
+<MsgText pgmKey="CEIIN0722E" varFormat="Java">No se ha podido crear la base de datos de sucesos <Variable
+formatSpec="{0}">dbname</Variable> porque ya existe una base de datos con el mismo nombre.</MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido crear la base de datos de sucesos utilizando el nombre especificado porque ya existe una base de datos con ese nombre. Es posible que se trate de una base de datos que pertenece a una instalación anterior del servicio de sucesos o que se trate de una base de datos que pertenece a otra aplicación.</p>
+</Explanation>
+<AdminResponse>
+<p>Elimine cualquier base de datos innecesaria y asegúrese de que la base de datos de sucesos no esté en conflicto con cualquier otra aplicación. A continuación, ejecute el mandato de nuevo para crear la base de datos de sucesos.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0723I    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0723I" prefix="yes">
+<MsgText pgmKey="CEIIN0723I" varFormat="Java">La base de datos de sucesos de DB2 no puede crearse automáticamente en un sistema z/OS. Utilice los scripts de base de datos del directorio <Variable formatSpec="{0}">directory_name</Variable> para crear la base de datos de sucesos.</MsgText>
+<Explanation>
+<p>El mandato de administración no puede crear automáticamente una base de datos de sucesos de DB2 en un sistema z/OS. En su lugar, se proporcionan scripts en el directorio especificado para realizar la creación de la base de datos de forma manual.</p>
+</Explanation>
+<AdminResponse>
+<p>Utilice los scripts adecuados de la ubicación especificada para finalizar la configuración de la base de datos. Para obtener más información, consulte la documentación de WebSphere Application Server.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0724I    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0724I" prefix="yes">
+<MsgText pgmKey="CEIIN0724I" varFormat="Java">La base de datos de sucesos de DB2 no puede eliminarse automáticamente en un sistema z/OS. Utilice los scripts de base de datos del directorio <Variable
+formatSpec="{0}">directory_name</Variable> para eliminar la base de datos de sucesos.</MsgText>
+<Explanation>
+<p>El mandato de administración no puede eliminar automáticamente una base de datos de sucesos de DB2 de un sistema z/OS. En su lugar, se proporcionan scripts en el directorio especificado para realizar la eliminación de la base de datos.</p>
+</Explanation>
+<AdminResponse>
+<p>Utilice los scripts adecuados de la ubicación especificada para finalizar la eliminación de la base de datos. Para obtener más información, consulte la documentación de WebSphere Application Server.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0725E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0725E" prefix="yes">
+<MsgText pgmKey="CEIIN0725E" varFormat="Java">No se ha podido crear la base de datos de sucesos de Derby porque ya existe una base de datos con el mismo nombre en el directorio especificado.<br/>Nombre de base de datos: <Variable formatSpec="{0}">rdbms_name</Variable><br/>Directorio:
+         <Variable
+formatSpec="{1}">path</Variable></MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido crear la base de datos de sucesos de Derby porque ya existe una base de datos con el mismo nombre y la misma vía de acceso. Es posible que esta base de datos pertenezca a una instalación anterior del servicio de sucesos o a otra aplicación.</p>
+</Explanation>
+<AdminResponse>
+<p>Elimine cualquier base de datos innecesaria y asegúrese de que la base de datos de sucesos no esté en conflicto con cualquier otra aplicación. A continuación, ejecute el mandato de nuevo para crear la base de datos de sucesos.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0726E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0726E" prefix="yes">
+<MsgText pgmKey="CEIIN0726E" varFormat="Java">No se ha podido leer un archivo en formato EBCDIC debido a un error inesperado.<br/>Mensaje de excepción:
+            <Variable formatSpec="{0}">exception_message</Variable> </MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado una excepción al intentar leer un archivo en formato EBCDIC.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte la información de la excepción para obtener información adicional.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0727E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0727E" prefix="yes">
+<MsgText pgmKey="CEIIN0727E" varFormat="Java">No se ha podido suprimir el archivo <Variable formatSpec="{0}">file_name</Variable>.</MsgText>
+<Explanation>
+<p>El archivo especificado no se ha podido suprimir porque está bloqueado o es inaccesible.</p>
+</Explanation>
+<AdminResponse>
+<p>Suprima el archivo manualmente.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0728W    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0728W" prefix="yes">
+<MsgText pgmKey="CEIIN0728W" varFormat="Java">No se ha podido suprimir el directorio <Variable formatSpec="{0}">directory</Variable>.</MsgText>
+<Explanation>
+<p>El directorio especificado no se ha podido suprimir porque está bloqueado o es inaccesible.</p>
+</Explanation>
+<AdminResponse>
+<p>Suprima manualmente el directorio especificado.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0729E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0729E" prefix="yes">
+<MsgText pgmKey="CEIIN0729E" varFormat="Java">No se ha podido crear el archivo <Variable formatSpec="{0}">file_name</Variable> debido a errores.<br/>Mensaje de excepción: <Variable formatSpec="{1}">exception_message</Variable></MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado una excepción al intentar crear el archivo especificado.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el archivo de registro wsadmin.traceout para determinar la causa del problema.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0730E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0730E" prefix="yes">
+<MsgText pgmKey="CEIIN0730E" varFormat="Java">La configuración de la base de datos de sucesos no ha podido finalizar porque se han especificado tanto el parámetro <Variable formatSpec="{0}">toolbox_classpath</Variable> como el parámetro <Variable
+formatSpec="{0}">native_classpath</Variable>. Especifique sólo una vía de acceso de clases del controlador JDBC.</MsgText>
+<Explanation>
+<p>Para configurar la base de datos de sucesos, debe especificar la vía de acceso de clases del controlador JDBC Toolbox for Java o del controlador JDBC nativo, pero no ambos.
+La vía de acceso debe indicar la ubicación del controlador, pero no debe incluir el nombre del archivo jar o zip.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando la vía de acceso de clases del controlador JDBC adecuado.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0731E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0731E" prefix="yes">
+<MsgText pgmKey="CEIIN0731E" varFormat="Java">La configuración de la base de datos de sucesos no ha podido finalizar porque no se han especificado el nombre de host y el número de puerto del origen de datos en red de Derby.</MsgText>
+<Explanation>
+<p>Para configurar una base de datos de sucesos de Derby mediante el controlador JDBC Toolbox for Java, debe especificar un nombre de host y un número de puerto para el origen de datos en red.
+Estos parámetros no son necesarios para un origen de datos local.</p>
+</Explanation>
+<AdminResponse>
+<p>Si necesita configurar un origen de datos en red, especifique los parámetros -dbHostName y -dbPort. Si necesita configurar un origen de datos local, utilice el controlador JDBC nativo en lugar del controlador Toolbox for Java.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0732E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0732E" prefix="yes">
+<MsgText pgmKey="CEIIN0732E" varFormat="Java">El valor <Variable formatSpec="{0}">value</Variable> del parámetro <Variable formatSpec="{1}">parameter</Variable> excede el límite de <Variable formatSpec="{2}">num_characters</Variable> caracteres de longitud.</MsgText>
+<Explanation>
+<p>El mandato de administración ha fallado porque el parámetro especificado excede la longitud máxima permitida.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de nuevo especificando un valor de parámetro válido.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0733E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0733E" prefix="yes">
+<MsgText pgmKey="CEIIN0733E" varFormat="Java">La configuración de la base de datos ha fallado porque el parámetro -createDB está establecido en true, que no es válido para la plataforma especificada.</MsgText>
+<Explanation>
+<p>El parámetro -createDB sólo puede establecerse en true si está configurando la base de datos de sucesos en una plataforma OS/400 nativa. En el resto de las plataformas, este parámetro debe estar establecido en false.</p>
+</Explanation>
+<AdminResponse>
+<p>Corrija los parámetros y vuelva a ejecutar el mandato de administración.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0734E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0734E" prefix="yes">
+<MsgText pgmKey="CEIIN0734E" varFormat="Java">El mandato de administración no ha podido finalizar porque la herramienta wsadmin está ejecutándose en modalidad local en un nodo federado o en un gestor de despliegue.</MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido finalizar porque se ha especificado el parámetro <strong>-conntype none</strong> de wsadmin, que indica la utilización de la modalidad local. Esta modalidad sólo puede utilizarse en un nodo autónomo, no en un nodo federado ni gestor de despliegue.</p>
+</Explanation>
+<AdminResponse>
+<p>Inicie la herramienta wsadmin utilizando el tipo de conexión adecuado y, a continuación, ejecute el mandato de administración de nuevo.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0735E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0735E" prefix="yes">
+<MsgText pgmKey="CEIIN0735E" varFormat="Java">La creación del origen de datos <Variable formatSpec="{0}">database_type</Variable> para el servicio de sucesos ha fallado.</MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado uno o más errores al intentar crear el origen de datos para el servicio de sucesos.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el archivo de registro wsadmin.traceout para determinar la causa del problema.
+Corrija el problema y vuelva a ejecutar el mandato de administración.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0736E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0736E" prefix="yes">
+<MsgText pgmKey="CEIIN0736E" varFormat="Java">El nombre de agrupación de almacenamiento intermedio <Variable
+formatSpec="{0}">bufferpool</Variable> no es válido.</MsgText>
+<Explanation>
+<p>El nombre de agrupación de almacenamiento intermedio especificado no es uno de los valores válidos. Los nombres de agrupación de almacenamiento válidos son:</p>
+<ul>
+<li>Agrupaciones de almacenamiento intermedio de página de 4 KB: BP0, BP1, ..., BP49</li>
+<li>Agrupaciones de almacenamiento intermedio de página de 8 KB: BP8K0, BP8K1, ..., BP8K9</li>
+<li>Agrupaciones de almacenamiento intermedio de página de 16 KB: BP16K0, BP16K1, ..., BP16K9</li>
+</ul>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando un nombre de agrupación de almacenamiento intermedio válido.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0737E    MSG_REVIEW_DEV                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0737E" prefix="yes">
+<MsgText pgmKey="CEIIN0737E" varFormat="Java">El nombre de la base de datos de sucesos <Variable
+formatSpec="{0}">dbName</Variable> no es un nombre de base de datos de DB2 válido.</MsgText>
+<Explanation>
+<p>El nombre de base de datos especificado no cumple las reglas de sintaxis de un nombre de base de datos de DB2. Un nombre de base de datos de DB2 no puede tener más de 8 caracteres de longitud y todos los caracteres deben pertenecer al mismo conjunto de caracteres básico del gestor de bases de datos.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando un nombre de base de datos de DB2 válido para la base de datos de sucesos.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0738E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0738E" prefix="yes">
+<MsgText pgmKey="CEIIN0738E" varFormat="Java">No se ha encontrado el directorio de inicio de Oracle <Variable formatSpec="{0}">dirname</Variable>.</MsgText>
+<Explanation>
+<p>La ubicación especificada para el directorio de inicio de Oracle no existe o es inaccesible.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando el directorio de inicio de Oracle correcto.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0739E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0739E" prefix="yes">
+<MsgText pgmKey="CEIIN0739E" varFormat="Java">No se ha especificado ningún valor para el parámetro <Variable
+formatSpec="{0}">parameter</Variable>.</MsgText>
+<Explanation>
+<p>El parámetro especificado es necesario.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando todos los parámetros necesarios.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<?Pub Caret?>
+<!--  CEIIN0741E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0741E" prefix="yes">
+<MsgText pgmKey="CEIIN0741E" varFormat="Java">El valor del parámetro <Variable
+formatSpec="{0}">parameter</Variable> no es válido. Este valor debe ser igual a o mayor que <Variable formatSpec="{1}">value</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido finalizar porque el parámetro especificado no se encuentra dentro del rango válido.</p>
+</Explanation>
+<AdminResponse>
+<p>Asegúrese de que los valores de todos los parámetros sean válidos y ejecute el mandato de administración de nuevo.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0742E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0742E" prefix="yes">
+<MsgText pgmKey="CEIIN0742E" varFormat="Java">El valor del parámetro
+         <Variable formatSpec="{0}">parameter</Variable>
+         es
+         <Variable formatSpec="{1}">value</Variable>, que no es válido.</MsgText>
+<Explanation>
+<p>El parámetro especificado no cumple las reglas de sintaxis del mandato de administración.</p>
+</Explanation>
+<AdminResponse>
+<p>Acceda a la ayuda en línea escribiendo el mandato siguiente:<code>$AdminTask
+help -commandGroups nombre_mandato</code>Asegúrese de que los valores de todos los parámetros sean válidos y ejecute el mandato de administración de nuevo.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0743E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0743E" prefix="yes">
+<MsgText pgmKey="CEIIN0743E" varFormat="Java">La contraseña de Sybase especificada en el parámetro <Variable formatSpec="{0}">parameter</Variable> no es válida. Este valor debe tener como mínimo 6 caracteres de longitud.</MsgText>
+<Explanation>
+<p>El valor del parámetro especificado no cumple los requisitos de contraseña de Sybase.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando una contraseña de Sybase válida.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0744E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0744E" prefix="yes">
+<MsgText pgmKey="CEIIN0744E" varFormat="Java">El nombre <Variable formatSpec="{0}">dbnodename</Variable> no es un nombre de nodo de DB2 válido. El nombre de nodo de DB2 no puede tener más de 8 caracteres de longitud.</MsgText>
+<Explanation>
+<p>El nombre especificado no cumple las reglas de sintaxis de un nombre de nodo de DB2.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando un nombre de nodo de DB2 válido.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0745E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0745E" prefix="yes">
+<MsgText pgmKey="CEIIN0745E" varFormat="Java">No se ha podido crear el directorio de salida del script de base de datos <Variable formatSpec="{0}">dirname</Variable> porque ya existe.</MsgText>
+<Explanation>
+<p>El mandato de administración crea un directorio de salida en la ubicación especificada en los scripts de configuración de base de datos generados. Sin embargo, el directorio especificado ya existe.</p>
+</Explanation>
+<AdminResponse>
+<p>Si no necesita el directorio existente, elimínelo y ejecute el mandato de administración de nuevo. De lo contrario, ejecute el mandato de nuevo especificando un directorio de salida distinto.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0746E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0746E" prefix="yes">
+<MsgText pgmKey="CEIIN0746E" varFormat="Java">No se ha podido crear el directorio <Variable formatSpec="{0}">dirname</Variable> debido a errores.</MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado uno o más errores al intentar crear la el directorio especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Determine la causa del problema, active las opciones de rastreo de la herramienta wsadmin en el archivo de propiedades profile/properties/wsadmin.properties. A continuación, ejecute el mandato de administración de nuevo y examine el archivo de rastreo profile/log/wsadmin.traceout en busca de mensajes que indiquen la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+
+<!-- ================================================================= -->
+<!--  CEIIN0749E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0749E" prefix="yes">
+<MsgText pgmKey="CEIIN0749E" varFormat="Java">No se ha podido instalar la aplicación <Variable formatSpec="{0}">application_name</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al instalar la aplicación especificada.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0750E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0750E" prefix="yes">
+<MsgText pgmKey="CEIIN0750E" varFormat="Java">No se ha podido eliminar la aplicación <Variable formatSpec="{0}">application_name</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al eliminar la aplicación.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0751E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0751E" prefix="yes">
+<MsgText pgmKey="CEIIN0751E" varFormat="Java">
+El mandato ha encontrado un origen de datos existente
+<Variable formatSpec="{0}">existing_datasource</Variable> del servicio de sucesos
+que no es compatible con la base de datos <Variable formatSpec="{1}">new_db_name</Variable>.
+Para crear el origen de datos <Variable formatSpec="{2}">new_datasource</Variable> del servicio de sucesos,
+vuelva a ejecutar el mandato con el parámetro overrideDataSource establecido en true.
+</MsgText>
+<Explanation>
+   <p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+Ejecute el mandato de nuevo con el parámetro overrideDataSource establecido en true.
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0752E    MSG_WORKING                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0752E" prefix="yes">
+<MsgText pgmKey="CEIIN0752E" varFormat="Java">No se ha podido eliminar la base de datos
+<Variable formatSpec="{0}">database_name</Variable>
+porque no se ha encontrado el script de mandatos
+<Variable formatSpec="{1}">file_name</Variable>.
+</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p> Consulte el archivo de registro wsadmin.traceout para determinar la causa del problema.
+</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0753E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0753E" prefix="yes">
+<MsgText pgmKey="CEIIN0753E" varFormat="Java">
+La configuración de la base de datos de sucesos no ha podido finalizar porque no se ha especificado el parámetro <Variable formatSpec="{0}">toolbox_classpath</Variable> ni el parámetro <Variable formatSpec="{1}">native_classpath</Variable>. </MsgText>
+<Explanation>
+<p>Para configurar la base de datos de sucesos, debe especificar la vía de acceso de clases del controlador JDBC Toolbox for Java o del controlador JDBC nativo, pero no ambos.
+La vía de acceso debe indicar la ubicación del controlador, pero no debe incluir el nombre del archivo jar o zip.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de administración de nuevo especificando la vía de acceso de clases del controlador JDBC adecuado.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0754E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0754E" prefix="yes">
+<MsgText pgmKey="CEIIN0754E" varFormat="Java">No se ha podido actualizar el módulo de aplicación
+<Variable formatSpec="{0}">module_name</Variable>
+debido a un error inesperado.
+<Variable formatSpec="{1}">error</Variable>
+</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al actualizar el módulo de aplicación especificado-</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0755E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0755E" prefix="yes">
+<MsgText pgmKey="CEIIN0755E" varFormat="Java">No se han especificado los parámetros necesarios.
+</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo y especifique los parámetros necesarios. </p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0756E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0756E" prefix="yes">
+<MsgText pgmKey="CEIIN0756E" varFormat="Java">No se ha podido crear la base de datos del servicio de sucesos para <Variable formatSpec="{0}">db_type</Variable> porque ya existe. </MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido crear la base de datos de sucesos utilizando el nombre especificado porque ya existe una base de datos con ese nombre. Es posible que se trate de una base de datos que pertenece a una instalación anterior del servicio de sucesos o que se trate de una base de datos que pertenece a otra aplicación.</p>
+</Explanation>
+<AdminResponse>
+<p>Elimine cualquier base de datos innecesaria y asegúrese de que la base de datos de sucesos no esté en conflicto con cualquier otra aplicación. A continuación, ejecute el mandato de nuevo para crear la base de datos de sucesos.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0758E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0758E" prefix="yes">
+<MsgText pgmKey="CEIIN0758E" varFormat="Java">No se encuentra el directorio de inicio de Oracle. </MsgText>
+<Explanation>
+<p>El directorio especificado como directorio de inicio de Oracle no existe. </p>
+</Explanation>
+<AdminResponse>
+<p>Compruebe si existe el directorio suministrado. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0759E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0759E" prefix="yes">
+<MsgText pgmKey="CEIIN0759E" varFormat="Java">No se ha podido conectar con la base de datos de Oracle.
+<Variable formatSpec="{0}">cmdOutput</Variable>
+</MsgText>
+<Explanation>
+<p>El mandato administrativo no puede conectarse con SID de Oracle especificado mediante el nombre de usuario sys y la contraseña proporcionados. </p>
+</Explanation>
+<AdminResponse>
+<p>Compruebe si existe el SID de Oracle especificado y verifique si el nombre de usuario sys y la contraseña son válidos. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0760E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0760E" prefix="yes">
+<MsgText pgmKey="CEIIN0760E" varFormat="Java">No se ha podido crear el espacio de tablas de la base de datos.
+<Variable formatSpec="{0}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido crear los espacios de tablas de la base de datos de sucesos. Esto puede ser debido a que existe un espacio de tablas con el mismo nombre o que no hay suficiente espacio disponible en el disco. </p>
+</Explanation>
+<AdminResponse>
+<p>Elimine los espacios de tablas existentes y/o libere espacio en disco suficiente. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0761E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0761E" prefix="yes">
+<MsgText pgmKey="CEIIN0761E" varFormat="Java">No se han podido crear las tablas de la base de datos.
+<Variable formatSpec="{0}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido crear las tablas de la base de datos de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0762E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0762E" prefix="yes">
+<MsgText pgmKey="CEIIN0762E" varFormat="Java">No se han podido insertar los metadatos de la base de datos.
+<Variable formatSpec="{0}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido insertar información vital en las tablas de la base de datos del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0763E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0763E" prefix="yes">
+<MsgText pgmKey="CEIIN0763E" varFormat="Java">No se ha popido crear el <Variable formatSpec="{0}">esquema</Variable> del usuario.
+<Variable formatSpec="{1}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido crear el usuario especificado. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0764E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0764E" prefix="yes">
+<MsgText pgmKey="CEIIN0764E" varFormat="Java">No se ha podido otorgar acceso al <Variable formatSpec="{0}">esquema</Variable> del usuario.
+<Variable formatSpec="{1}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido otorgar los derechos de acceso necesarios para el usuario especificado. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0765E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0765E" prefix="yes">
+<MsgText pgmKey="CEIIN0765E" varFormat="Java">No se ha podido crear el perfil y el rol de usuario.
+<Variable formatSpec="{0}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido crear el peril y el rol de usuario especificados. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0766E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0766E" prefix="yes">
+<MsgText pgmKey="CEIIN0766E" varFormat="Java">No se ha podido crear el espacio de tablas del catálogo de sucesos.
+<Variable formatSpec="{0}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido crear el espacio de tablas del catálogo de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0767E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0767E" prefix="yes">
+<MsgText pgmKey="CEIIN0767E" varFormat="Java">No se han podido crear las tablas del catálogo de sucesos.
+<Variable formatSpec="{0}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido crear las tablas del catálogo de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0768E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0768E" prefix="yes">
+<MsgText pgmKey="CEIIN0768E" varFormat="Java">No se han podido insertar datos en las tablas del catálogo de sucesos.
+<Variable formatSpec="{0}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido insertar información vital en las tablas del catálogo del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0769E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0769E" prefix="yes">
+<MsgText pgmKey="CEIIN0769E" varFormat="Java">No se ha podido crear el procedimiento almacenado.
+<Variable formatSpec="{0}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido crear el procedimiento almacenado de depuración rápida. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0770E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0770E" prefix="yes">
+<MsgText pgmKey="CEIIN0770E" varFormat="Java">No se ha podido terminar las sesiones de base de datos que son propiedad del usuario del servicio de sucesos. La base de datos del servicio de sucesos está activa. Detenga WebSphere Application Server y vuelva a ejecutar el script.
+<Variable formatSpec="{0}">cmdOutput</Variable>
+</MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido terminar la sesión de base de datos del usuario del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0771E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0771E" prefix="yes">
+<MsgText pgmKey="CEIIN0771E" varFormat="Java">No se ha podido eliminar la base de datos del servicio de sucesos porque no existe.
+<Variable formatSpec="{0}">cmdOutput</Variable></MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido eliminar la base de datos del servicio de sucesos porque no existe. Es posible que alguien la haya eliminado anteriormente o que nunca se haya instalado.</p>
+</Explanation>
+<AdminResponse>
+<p>Con las herramientas de la base de datos, compruebe si la base de datos todavía existe. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0772W    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0772W" prefix="yes">
+<MsgText pgmKey="CEIIN0772W" varFormat="Java">No se ha podido obtener una lista de archivos del espacio de tablas. </MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido recuperar la lista de archivos del espacio de tablas de la base de datos del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0773W    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0773W" prefix="yes">
+<MsgText pgmKey="CEIIN0773W" varFormat="Java">No se han podido eliminar las tablas de la base de datos. </MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido eliminar las tablas de la base de datos del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0774W    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0774W" prefix="yes">
+<MsgText pgmKey="CEIIN0774W" varFormat="Java">No se han podido eliminar las tablas del catálogo de sucesos.
+</MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido eliminar las tablas del catálogo del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0775W    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0775W" prefix="yes">
+<MsgText pgmKey="CEIIN0775W" varFormat="Java">No se ha podido eliminar el espacio de tablas de la base de datos. </MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido eliminar el espacio de tablas de la base de datos del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0776W    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0776W" prefix="yes">
+<MsgText pgmKey="CEIIN0776W" varFormat="Java">No se ha podido eliminar el espacio de tablas del catálogo de sucesos. </MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido eliminar el espacio de tablas del catálogo del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0777W    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0777W" prefix="yes">
+<MsgText pgmKey="CEIIN0777W" varFormat="Java">No se ha podido eliminar el procedimiento almacenado. </MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido eliminar el procedimiento almacenado de depuración rápida del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0778W    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0778W" prefix="yes">
+<MsgText pgmKey="CEIIN0778W" varFormat="Java">No se ha podido eliminar el perfil de la base de datos. </MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido eliminar el perfil de la base de datos del servicio de sucesos. </p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el sistema de ayuda de la base de datos para obtener más información sobre códigos de error determinados. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0779E    MSG_WORKING                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0779E" prefix="yes">
+<MsgText pgmKey="CEIIN0779E" varFormat="Java">La base de datos Derby <Variable formatSpec="{0}">dir_sistema</Variable> no existe. </MsgText>
+<Explanation>
+<p>El mandato administrativo no ha podido encontrar el directorio del sistema de la base de datos del servicio de sucesos Derby. </p>
+</Explanation>
+<AdminResponse>
+<p>Compruebe si el directorio especificado existe y es accesible. </p>
+</AdminResponse>
+</Message>
+
+<!-- ================================================================= -->
+<!--  CEIIN0780E    MSG_WORKING                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0780E" prefix="yes">
+<MsgText pgmKey="CEIIN0780E" varFormat="Java">La base de datos de Derby
+<Variable formatSpec="{0}">rdbms_name</Variable> no existe en el directorio
+<Variable
+formatSpec="{1}">path</Variable> especificado.</MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido encontrar la base de datos de sucesos
+de Derby en la vía de acceso especificada. La base de datos debe existir para
+poder crear la tablas de Common Event Infrastructure en ella.</p>
+</Explanation>
+<AdminResponse>
+<p>Compruebe si el directorio especificado contiene una base de datos con el nombre indicado. 
+En caso contrario, asegúrese de especificar una base de datos de Derby
+existente o no especifique el parámetro dbPath y cree una nueva base de datos.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIIN0781E    MSG_WORKING                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIIN0781E" prefix="yes">
+<MsgText pgmKey="CEIIN0781E" varFormat="Java">El parámetro
+<Variable formatSpec="{0}">dbPath</Variable> sólo se puede especificar cuando se especifica
+<Variable formatSpec="{1}">dbHostName</Variable> y <Variable formatSpec="{2}">dbPort</Variable>.</MsgText>
+<Explanation>
+<p>Este parámetro sólo se utiliza con Derby Network Server. Para poder utilizar
+el controlador de red de Derby deberá especificar un nombre de host y el puerto
+donde se ejecuta el servidor de bases de datos.</p>
+</Explanation>
+<AdminResponse>
+<p>Especifique los parámetros de nombre de host y puerto y vuelva a intentarlo, o no utilice estos parámetros.</p>
+</AdminResponse>
+</Message>
+
+</TMSSource>

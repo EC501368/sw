@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es" lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corp. 2013" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corp. 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores del servicio de correlaciones local" />
+<meta name="abstract" content="Un servicio de correlaciones local define el punto de intercepción entre un cliente de servicios y un proveedor de servicios. Utilice este panel para establecer las propiedades de un servicio de correlaciones local específico." />
+<meta name="Description" content="Un servicio de correlaciones local define el punto de intercepción entre un cliente de servicios y un proveedor de servicios. Utilice este panel para establecer las propiedades de un servicio de correlaciones local específico." />
+<meta name="DC.Relation" scheme="URI" content="index.html" />
+<meta name="DC.Date" scheme="iso8601" content="2013-03-25" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="LocalMappingServices_DetailForm" />
+<meta name="DC.Language" content="es-es" />
+<meta name="IBM.Country" content="ZZ" />
+<link rel="stylesheet" type="text/css" href="ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="swg_info_common.css" />
+<link rel="Start" href="index.html" />
+<title>Valores del servicio de correlaciones local</title>
+</head>
+<body role="main" id="LocalMappingServices_DetailForm">
+<img src="ng_v8550.gif" alt="Versión 8550" /> <h1 class="title topictitle1">Valores del servicio de correlaciones local</h1>
+<div class="body"><p class="shortdesc">Un servicio de correlaciones local define el punto de intercepción entre un cliente de servicios y un proveedor de servicios. 
+Utilice este panel para establecer las propiedades de un servicio de correlaciones local específico.</p>
+<div class="section panel_intro"> <p class="p"><span class="ph">Para ver este panel en la consola administrativa, pulse</span> <span class="ph"><span class="ph"><span class="ph"><span class="ph"><span class="ph menucascade"><span class="ph uicontrol">Integración de servicios</span></span></span><span class="ph menucascade"><span class="ph uicontrol"> </span> &gt; <span class="ph uicontrol">Correlación de servicios</span></span></span><span class="ph menucascade"><span class="ph uicontrol"> </span> &gt; <span class="ph uicontrol">Servicios de correlaciones locales</span></span></span><span class="ph menucascade"><span class="ph uicontrol"> </span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_definición_servicio_correlaciones_locales</var></span></span></span></p>
+ </div>
+<div class="section"><p class="p">Este panel muestra las siguientes propiedades: </p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Propiedades generales</h2><dl class="dl"><dt class="dt dlterm">Nombre</dt>
+<dd class="dd">Nombre exclusivo de este servicio de correlaciones local. <div class="note note"><span class="notetitle">Nota:</span> Los nombres deben ser exclusivos dentro de una célula y no pueden contener caracteres no admitidos. No están soportados los caracteres siguientes: <ul class="ul"><li class="li"><samp class="ph msgph">/\,#$@:;"*?&lt;&gt;|=+&amp;%'</samp></li>
+<li class="li">(espacio)</li>
+<li class="li">la combinación de caracteres <samp class="ph msgph">]]&gt;</samp></li>
+</ul>
+</div>
+</dd>
+<dt class="dt dlterm">Descripción </dt>
+<dd class="dd"> Descripción de este servicio de correlaciones local. Este campo es opcional.</dd>
+</dl>
+</div>
+<div class="section"><h2 class="title sectiontitle">Propiedades de servicio</h2><dl class="dl"><dt class="dt dlterm">Dirección de punto final</dt>
+<dd class="dd"> Dirección de punto final del proveedor de servicios utilizado por la solicitud de servicio web que intercepta el servicio de correlaciones local.</dd>
+</dl>
+<div class="p" id="LocalMappingServices_DetailForm__serviceproperties"><dl class="dl"><dt class="dt dlterm">Tipo de puerto</dt>
+<dd class="dd">Tipo de puerto asociado con la  solicitud de servicio interceptada por el servicio de correlaciones local. Este campo es opcional.</dd>
+<dt class="dt dlterm">Espacio de nombres</dt>
+<dd class="dd"> Espacio de nombres del servicio y puerto.</dd>
+<dt class="dt dlterm">Nombre de servicio</dt>
+<dd class="dd">Nombre de la solicitud de servicio web interceptada por el servicio de correlaciones local.</dd>
+<dt class="dt dlterm">Nombre de puerto</dt>
+<dd class="dd">Nombre de puerto asociado con la solicitud de servicio web interceptada por el servicio de correlaciones local.</dd>
+</dl>
+</div>
+<div class="note note"><span class="notetitle">Nota:</span> Los valores de los campos en este panel deben
+coincidir con los valores de la correlación de servicios que está conectada con
+el servicio de correlaciones local.</div>
+</div>
+<div class="section"><h2 class="title sectiontitle">Correlaciones de servicios</h2><dl class="dl"><dt class="dt dlterm">Correlación de servicios conectada</dt>
+<dd class="dd">La correlación de servicios que está conectada con este servicio de correlaciones local, que se muestra en un menú desplegable. 
+El menú puede utilizarse para seleccionar una correlación de servicios
+instalada diferente para conectarse con este servicio de correlaciones local. El menú sólo muestra si se ha instalado al menos una correlación de servicios. Si no se han instalado correlaciones de servicios, aparece un mensaje informativo. <p class="p">Si se ha conectado una correlación de servicios al
+servicio de correlaciones local
+seleccionado y selecciona una correlación de servicios en este menú distinta de
+la que está conectada, la correlación de servicios original se desconecta
+cuando se conecta la nueva correlación de servicios.</p>
+<div class="note note"><span class="notetitle">Nota:</span> Sólo se puede conectar una
+correlación de servicios a un servicio de correlaciones local. Sin embargo,
+una correlación de servicios pueden conectarse a varios servicios de correlaciones locales.</div>
+</dd>
+</dl>
+</div>
+<div class="section buttons"><h2 class="title sectiontitle"><span class="keyword">Botones </span></h2><table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletable"><tr class="sthead"><th valign="bottom" align="left" id="d6588e123" class="stentry"><span class="keyword">Etiqueta </span></th>
+<th valign="bottom" align="left" id="d6588e126" class="stentry"><span class="keyword">Acción</span></th>
+</tr>
+<tr class="strow"><td valign="top" headers="d6588e123" class="stentry">Aplicar </td>
+<td valign="top" headers="d6588e126" class="stentry">Confirmar los cambios y ver los resultados en este panel. </td>
+</tr>
+<tr class="strow"><td valign="top" headers="d6588e123" class="stentry">Aceptar</td>
+<td valign="top" headers="d6588e126" class="stentry">Confirmar los cambios y volver al panel anterior.</td>
+</tr>
+<tr class="strow"><td valign="top" headers="d6588e123" class="stentry">Restablecer</td>
+<td valign="top" headers="d6588e126" class="stentry">Cancelar los cambios realizados. El panel revierte a los valores de la última vez que guardó el panel. </td>
+</tr>
+<tr class="strow"><td valign="top" headers="d6588e123" class="stentry"><span class="keyword">Cancelar</span></td>
+<td valign="top" headers="d6588e126" class="stentry"><span class="ph">Cancelar los cambios realizados y, a continuación, volver al panel anterior.</span></td>
+</tr>
+</table>
+ </div>
+</div>
+<hr align="left" /><p>Los enlaces marcados (en línea) requieren acceso a Internet. 
+Cada enlace inicia una búsqueda del tema en el Information Center. Cuando se listen los
+resultados de la búsqueda, seleccione el tema que se ajuste mejor a la configuración.</p><p><a target="_blank" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-mp&amp;topic=LocalMappingServices_DetailForm">Compruebe si hay actualizaciones para este tema </a> (en línea)
+</p><div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Tema principal:</strong> <a class="link" href="index.html" title="Puede utilizar estos paneles de la consola administrativa para gestionar los recursos de la correlación de servicios.">Paneles de la consola administrativa de la correlación de servicios</a></div>
+</div>
+</div><hr align="left" /><br /><div class="runningfooter">
+<br />
+Nombre de archivo: LocalMappingServices_DetailForm.html</div></body>
+</html>

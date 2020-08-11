@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Kits de instalación del gestor de instalación" topic="index.html">
+   <topic label="Cómo añadir kits de instalación de Installation Manager"
+          href="ae/uins_cim_add_installkit.html"/>
+   <topic label="Kits de instalación de Installation Manager"
+          href="ae/uins_cim_installkit.html"/>
+</toc>

@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<cheatsheet title="Direccionar las peticiones de un servidor Web hacia un servidor de aplicaciones">
+<intro 
+		href="webserver_intro.htm">
+<description>
+Esta hoja de apuntes le ayudará a configurar el plug-in del servidor Web para direccionar las peticiones de contenido dinámico, como los servlets, hacia un servidor de aplicaciones.  
+Se presupone que el servidor el servidor Web es "remoto" respecto del servidor de aplicaciones en tanto que el servidor Web y el servidor de aplicaciones están en máquinas distintas. También se presupone que está instalado el software del servidor Web.
+
+&lt;br/&gt;
+                &lt;br/&gt;
+
+Para continuar, pulse &lt;strong&gt;Iniciar&lt;/strong&gt;.
+        </description>
+	
+</intro>
+
+
+<item
+    href=""
+    title="Instalar el plug-in del servidor Web">
+    <action
+        class=""/>
+    <description>
+&lt;A HREF="javascript:showHideList('othersWeb')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="othersWebImg" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+Distribuido y zOS
+&lt;br/&gt;
+&lt;TABLE id="othersWebList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+
+Instale el módulo plug-in binario utilizando el Asistente de instalación de plug-ins. 
+El Asistente de instalación de plug-ins instala el módulo de plug-in y configura el
+servidor Web para que se comunique con el servidor de aplicaciones. Siga estos pasos:
+
+&lt;ol&gt;
+&lt;li&gt;
+Detenga el servidor Web mientras configura el plug-in para trabajar con él.
+&lt;/li&gt;
+&lt;li&gt;
+En la máquina en que está instalado el servidor Web, seleccione el Asistente de instalación de plug-ins en el Launchpad o cámbiese al directorio plugin del disco del producto. También puede emitir el mandato &lt;b&gt;install&lt;/b&gt; con la imagen de instalación descargada.
+&lt;/li&gt;
+&lt;li&gt;
+Siga las instrucciones del Asistente de instalación de plug-ins y seleccione la opción &lt;strong&gt; Máquina servidor Web (remota)&lt;/strong&gt;.
+&lt;/li&gt;
+                &lt;/ol&gt;
+
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;br/&gt;
+&lt;A HREF="javascript:showHideList('OS/400Web')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="OS/400WebImg" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+i5/OS
+&lt;br/&gt;
+&lt;TABLE id="OS/400WebList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+
+Instale la característica Plug-ins del servidor Web. El CD de instalación de WebSphere Application Server V6.1 para i5/OS le permite instalar sólo Plug-ins del servidor Web. Siga los pasos indicados a continuación para instalar sólo la característica Plug-ins del servidor Web:
+&lt;br/&gt;
+&lt;br/&gt;
+
+&lt;b&gt;Instalación remota desde una estación de trabajo Windows&lt;/b&gt;
+&lt;br/&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+Asegúrese de que los servidores de host se han iniciado en el servidor i5:
+STRHOSTSVR *ALL
+&lt;/li&gt;
+
+&lt;li&gt;
+Detenga el servidor Web o el servidor Domino mientras configura el plug-in para trabajar con él. 
+Para los servidores Web IHS, utilice: ENDTCPSVR SERVER(*HTTP) HTTPSVR(nombre_servidor_Web). 
+Para los servidores DOMINO, utilice: ENDDOMSVR SERVER(nombre_servidor_Domino). 
+El usuario puede utilizar la GUI de administración Web de i5 para llevar a cabo o anterior.
+&lt;/li&gt;
+
+&lt;li&gt;
+Inserte el CD de instalación en la unidad de CD-ROM de la estación de trabajo Windows. 
+Nota: Si no está habilitada la reproducción automática, vaya al directorio unidad_cd:\plugin y ejecute install.exe.
+&lt;/li&gt;
+
+&lt;li&gt;
+Se muestra la pantalla de inicio de sesión. Entre un ID de usuario y contraseña válidos para el servidor i5 donde desea instalar. El ID de usuario debe tener las autoridades especiales *ALLOBJ y *SECADM
+&lt;/li&gt;
+
+&lt;li&gt;
+Siga las instrucciones del asistente de instalación. 
+&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;/ol&gt;
+
+&lt;b&gt;Instalación local desde Qshell&lt;/b&gt;
+
+&lt;ol&gt;
+
+&lt;li&gt;
+Asegúrese de que los servidores de host se han iniciado en el servidor i5:
+STRHOSTSVR *ALL
+&lt;/li&gt;
+
+&lt;li&gt;
+Detenga el servidor Web o el servidor Domino mientras configura el plug-in para trabajar con él. 
+Para los servidores Web IHS, utilice: ENDTCPSVR SERVER(*HTTP) HTTPSVR(nombre_servidor_Web). 
+Para los servidores DOMINO, utilice: ENDDOMSVR SERVER(nombre_servidor_Domino). 
+El usuario puede utilizar la GUI de administración Web de i5 para llevar a cabo o anterior.
+&lt;/li&gt;
+
+&lt;li&gt;
+Inserte el CD de instalación de plug-ins en la unidad de CD-ROM del servidor i5.
+&lt;/li&gt;
+
+&lt;li&gt;
+Copie el archivo RESPONSEFILE situado bajo el directorio /QOPT/WEBSPHERE/PLUGIN en un directorio IFS. Por ejemplo,
+&lt;br&gt;
+CPY OBJ('/QOPT/WEBSPHERE/PLUGIN/RESPONSEFILE.TXT') TODIR('/tmp')
+&lt;/li&gt;
+
+&lt;li&gt;
+Edite la copia de RESPONSEFILE.TXT (por ejemplo, utilizando el mandato EDTF) y realice los cambios siguientes:
+
+&lt;ol&gt;
+
+&lt;li&gt;
+Cambie el valor de la propiedad -OPT silentInstallLicenseAcceptance.value por true. 
+&lt;/li&gt;
+
+&lt;li&gt;
+Cambie otros parámetros opcionales según corresponda.
+&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;li&gt;
+Inicie una sesión Qshell:
+&lt;br&gt;
+STRQSH
+&lt;/li&gt;
+
+&lt;li&gt;
+Vaya al directorio /QOPT/WEBSPHERE/PLUGIN
+&lt;br&gt;
+cd /QOPT/WEBSPHERE/PLUGIN
+&lt;/li&gt;
+
+&lt;li&gt;
+Invoque el mandato "install" como se indica a continuación:
+&lt;br&gt;
+INSTALL -options path/RESPONSEFILE.TXT
+&lt;br&gt;
+For example,
+&lt;br&gt;
+INSTALL -options /tmp/RESPONSEFILE.TXT
+&lt;/li&gt;
+
+
+&lt;/ol&gt;
+
+
+&lt;/li&gt;
+                &lt;/ol&gt;
+
+
+
+Para obtener más información, consulte
+&lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-express-iseries&amp;topic=tins_webplugins"&gt;Instalación de un plug-in de servidor web para i5/OS&lt;/a&gt;
+&lt;br/&gt;
+
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+
+&lt;br/&gt;
+                &lt;br/&gt;
+
+
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+
+    </description>
+</item>
+
+
+<item
+    href=""
+    title="Ejecutar el script de configuración del servidor Web">
+    <action
+        class=""/>
+    <description>
+
+
+&lt;A HREF="javascript:showHideList('distWeb')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="distWebImg" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+Distribuido
+&lt;br/&gt;
+&lt;TABLE id="distWebList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+
+El asistente de instalación de plug-ins crea un archivo de script con el nombre &lt;i&gt;configureWeb_server_{nombre del servidor Web}&lt;/i&gt; (de proceso por lotes o de shell, en función del sistema operativo de la máquina) en el directorio &lt;i&gt;raíz_instalación_plug-ins&lt;/i&gt;/bin/ de la máquina en la que se instale el plug-in. 
+
+&lt;ol&gt;
+&lt;li&gt;
+Copie el proceso por lotes o script de shell &lt;i&gt;configure{nombre del servidor Web}&lt;/i&gt; desde la máquina del servidor Web al directorio &lt;i&gt;raíz_instalación_was&lt;/i&gt;/bin de la máquina del servidor de aplicaciones. 
+&lt;/li&gt;
+&lt;li&gt;
+Inicie el servidor de aplicaciones. 
+&lt;/li&gt;
+&lt;li&gt;
+En la máquina del servidor de aplicaciones, ejecute el script de proceso por lotes o de shell para crear la definición del servidor Web en la configuración del servidor de aplicaciones.  
+&lt;/li&gt;
+&lt;li&gt;
+En la máquina del servidor Web, inicie el servicio del servidor Web siguiendo las instrucciones que acompañan a la instalación del servidor Web.   
+&lt;/li&gt;
+                &lt;/ol&gt;
+
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/li&gt;
+
+&lt;br/&gt;
+
+&lt;A HREF="javascript:showHideList('OS/4001Web')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="OS/4001WebImg" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+i5/OS
+&lt;br/&gt;
+&lt;TABLE id="OS/4001WebList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+
+En la información siguiente, se utilizan los siguientes términos:&lt;BR&gt;
+&lt;b&gt;raíz_instalación_plugins&lt;/b&gt;:  hace referencia al directorio IFS en el que se han instalado los plugins del servidor Web. El valor por omisión es /QIBM/ProdData/WebSphere/Plugins/V61/webserver. 
+&lt;BR&gt;
+&lt;b&gt;raíz_perfil_servidor_aplic&lt;/b&gt;: hace referencia a la ubicación del perfil de WebSphere Application Server. Para la instalación por omisión de
+WebSphere Application Server, el directorio raíz del perfil miPerfil es /QIBM/UserData/WebSphere/AppServer/V61/&lt;i&gt;edition&lt;/i&gt;/profiles/miPerfil, donde &lt;i&gt;edition&lt;/i&gt; es Express,
+Base o ND.
+&lt;BR&gt;
+&lt;b&gt;raíz_perfil_http&lt;/b&gt;: hace referencia a la ubicación del perfil http. Para la instalación de plugins del servidor Web por omisión,
+el directorio &lt;i&gt;raíz_perfil_http&lt;/i&gt; es /QIBM/UserData/WebSphere/Plugins/V61/webserver/profiles/http.
+&lt;BR&gt;
+&lt;b&gt;biblioteca_producto&lt;/b&gt;: hace referencia a la biblioteca del producto que contiene los objetos de programa de servicio para los plugins de servidor Web. Para la instalación de plugins del servidor Web por omisión, es QWAS61A. Si instala los plugins del servidor Web, varias veces, la &lt;i&gt;biblioteca_producto&lt;/i&gt; es QWAS61c donde c es B, C, D, .... El directorio &lt;i&gt;raíz_instalación_plugins&lt;/i&gt;/properties/product.properties contiene
+el valor de la biblioteca del producto.
+
+&lt;ol&gt;
+
+&lt;li&gt;
+Cree un perfil HTTP en i5/OS:
+&lt;br&gt;
+Tenga en cuenta que cuando se instala la característica de plug-ins del servidor Web en i5/OS, se crea un perfil HTTP por omisión con el nombre &lt;i&gt;http&lt;/i&gt;. Si elige utilizar el perfil HTTP por omisión, siga en el paso 2.
+&lt;br&gt;
+&lt;br&gt;
+Ejecute el mandato manageprofiles de Qshell para crear un perfil HTTP. (Nota: Los perfiles HTTP son los equivalentes de 6.1 de las instancias remotas 5.0/5.1). Por ejemplo, ejecute este mandatos desde Qshell:
+&lt;br&gt;
+&lt;i&gt;raíz_instalación_plugins&lt;/i&gt;/bin/manageprofiles -create -profileName miPerfilHttp -templatePath http
+&lt;br&gt;
+donde miPerfilHttp es el nombre del perfil HTTP.
+&lt;br&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+Cree una instancia del servidor Web.  Para obtener detalles, consulte la documentación del servidor Web o la de WebSphere Application Server. 
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;(IHS)&lt;/b&gt; 
+
+&lt;ol&gt;
+&lt;li&gt;
+Haga que el navegador señale a "http://nombreHost:2001", donde nombreHost es la máquina del servidor Web, y pulse el enlace "IBM Web Administration para iSeries". 
+&lt;/li&gt;
+&lt;li&gt;
+Pulse la pestaña Servidores HTTP y en el recuadro desplegable "Servidor" seleccione la instancia del servidor Web del paso 2. 
+&lt;/li&gt;
+&lt;li&gt;
+Pulse el enlace "WebSphere Application Server" en la barra lateral izquierda y, a continuación, selección el botón de selección "WebSphere Application Server, V6.1". 
+&lt;/li&gt;
+&lt;li&gt;
+En el menú desplegable seleccione el perfil HTTP del paso 1 y pulse Aceptar. 
+&lt;/li&gt;
+                &lt;/ol&gt;
+
+&lt;br&gt;
+
+&lt;b&gt;(DOMINO)&lt;/b&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+Ejecute el script configureOs400WebServerDefinition en el perfil HTTP del paso 1, por ejemplo:
+&lt;br&gt;
+configureOs400WebServerDefinition -profileName miPerfilHttp -webserver.name DOMSRV01
+  -webserver.type DOMINO -webserver.port 80
+&lt;/li&gt;
+
+&lt;li&gt;
+Mediante el mandato WRKDOMSVR para actualizar el archivo notes.ini del servidor Domino, inserte la directiva siguiente:
+&lt;br&gt;
+WebSphereInit=&lt;i&gt;raíz_perfil_http&lt;/i&gt;/config/&lt;i&gt;nombreServidorWeb&lt;/i&gt;/plugin-cfg.xml
+&lt;/li&gt;
+
+&lt;li&gt;
+Desde el cliente Lotus Notes conectado con el servidor Domino, pulse la pestaña de protocolos de Internet
+y, a continuación, pulse la pestaña HTTP. Bajo los nombres de filtro DSAPI, añada lo siguiente:
+&lt;br&gt;
+/QSYS.LIB/&lt;i&gt;biblioteca_producto&lt;/i&gt;/LIBDOMINO.SRVPGM
+&lt;/li&gt;
+
+&lt;li&gt;
+Guarde los cambios y reinicie el servidor Domino. 
+&lt;/li&gt;
+
+
+&lt;/ol&gt;
+
+&lt;/li&gt;
+
+&lt;li&gt;
+Copie el script denominado &lt;i&gt;raíz_perfil_http&lt;/i&gt;/config/&lt;i&gt;nombreServidorWeb&lt;/i&gt;/configure&lt;i&gt;nombreServidorWeb&lt;/i&gt; en el directorio &lt;i&gt;raíz_perfil_servidor_aplic&lt;/i&gt;/bin en la máquina del servidor de aplicaciones utilizando el método que desee, como FTP o unidades correlacionadas.
+&lt;/li&gt;
+
+&lt;li&gt;
+Inicie el servidor de aplicaciones y ejecute el script que ha copiado en el paso anterior. Por ejemplo, ejecute los siguientes mandatos desde Qshell:
+&lt;ol&gt;
+&lt;li&gt;
+&lt;i&gt;raíz_perfil_servidor_aplic&lt;/i&gt;/bin/startServer
+&lt;/li&gt;
+&lt;li&gt;
+cd &lt;i&gt;raíz_perfil_servidor_aplic&lt;/i&gt;/bin
+&lt;/li&gt;
+&lt;li&gt;
+./configure&lt;i&gt;nombreServidorWeb&lt;/i&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+
+&lt;b&gt;(IHS)&lt;/b&gt; Para habilitar la propagación automática del archivo plugin-cfg.xml así como otras características, actualice el ID de usuario y la contraseña del servidor de administración remoto IHS en la configuración del servidor Web:
+
+
+&lt;ol&gt;
+&lt;li&gt;
+Abra la consola administrativa para su perfil was en la máquina del servidor de aplicaciones. 
+&lt;/li&gt;
+&lt;li&gt;
+Expanda Servidores --> Servidores Web. 
+&lt;/li&gt;
+&lt;li&gt;
+Pulse la definición del servidor Web para ver la pantalla de detalles. 
+&lt;/li&gt;
+&lt;li&gt;
+Pulse el enlace "Gestión del servidor Web remoto". 
+&lt;/li&gt;
+&lt;li&gt;
+Entre el ID de usuario y la contraseña para autenticarse en la máquina del servidor Web. Las autoridades que necesita este perfil son las mismas que las que necesita para acceder a la GUI de administración Web de i5. 
+&lt;/li&gt;
+                &lt;/ol&gt;
+
+&lt;br/&gt;
+
+&lt;b&gt;(DOMINO)&lt;/b&gt; Copie el archivo plugin-cfg.xml de la máquina del servidor de aplicaciones en el directorio &lt;i&gt;raíz_perfil_http&lt;/i&gt;/config/&lt;i&gt;nombreServidorWeb&lt;/i&gt; de la máquina del servidor Web. El archivo plugin-cfg.xml se genera en el directorio denominado &lt;i&gt;raíz_perfil_servidor_aplic&lt;/i&gt;/config/cells/&lt;i&gt;nombre_célula&lt;/i&gt;/nodes/&lt;i&gt;nombre_nodo&lt;/i&gt;/servers/&lt;i&gt;nombreServidorWeb&lt;/i&gt; de la página del servidor de aplicaciones.
+&lt;br&gt;
+&lt;/li&gt;
+
+
+
+&lt;/ol&gt;
+
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+
+&lt;br/&gt;
+
+	&lt;A HREF="javascript:showHideList('zOSWeb')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="zOSWebImg" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+zOS
+&lt;br/&gt;
+&lt;TABLE id="zOSWebList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+
+Hay un diálogo de personalización que consulta la información del sistema. Una vez recopilada la información, se genera una serie de trabajos y un conjunto de instrucciones.  Estas instrucciones proporcionan información sobre cada trabajo y el orden en el que ejecutarlos.  Uno de los trabajos generados es para configurar el plug-in del servidor Web, y se puede ejecutar en un momento determinado del proceso de configuración.
+
+&lt;ol&gt;
+&lt;li&gt;
+Efectúe los pasos de personalización necesarios del artículo titulado, &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-zos&amp;topic=tins_configpostinstallz"&gt;Configuración del producto después de la instalación&lt;/a&gt; del Information Center.
+
+&lt;/li&gt;
+&lt;li&gt;
+Ejecute el trabajo para configurar el plug-in del servidor Web en el orden correcto, según el conjunto de instrucciones generadas.
+&lt;/li&gt;
+                &lt;/ol&gt;
+
+&lt;/li&gt;
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/li&gt;
+
+&lt;br/&gt;
+
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+
+    </description>
+</item>
+
+
+
+	<item
+		href=""
+		title="Correlacionar los módulos de aplicación con los servidores">
+		<action
+			class="navigatorCmd.do?forwardName=ApplicationDeployment.content.main"/>
+		<description>
+En la Consola de administración de WebSphere Application Server, puede correlacionar una aplicación o los módulos con el servidor Web una vez que esté instalada la aplicación o durante la instalación de la aplicación.  
+&lt;dl&gt;
+&lt;li&gt; Cuando ya esté instalada la aplicación, siga estos pasos:
+&lt;ol&gt;
+
+    &lt;li&gt;Seleccione &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar el panel de la colección de aplicaciones&lt;/li&gt;.
+	&lt;li&gt;Pulse el nombre de la aplicación que va a correlacionar con el servidor Web.&lt;/li&gt;
+        &lt;li&gt;En &lt;strong&gt;Módulos&lt;/strong&gt;, pulse &lt;strong&gt;Módulos gestionados&lt;/strong&gt;. &lt;/li&gt;
+        &lt;li&gt;Seleccione los clústeres y servidores adecuados en la lista, seleccione el recuadro de selección del módulo de aplicación
+que desee destinar a esos servidores y pulse &lt;strong&gt;Aplicar.&lt;/strong&gt;&lt;/li&gt;
+        &lt;li&gt;Cuando termine de destinar todos los módulos de aplicación, pulse &lt;strong&gt;Aceptar&lt;/strong&gt;.
+	&lt;li&gt;Pulse &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar el
+panel de la colección de aplicaciones&lt;/li&gt;.
+	&lt;li&gt;Pulse el nombre de la aplicación que se ha correlacionado con el servidor Web.&lt;/li&gt;
+        &lt;li&gt;En &lt;strong&gt;Propiedades detalladas&lt;/strong&gt;, pulse &lt;strong&gt;Estado de la aplicación específica del destino&lt;/strong&gt; y
+verá el servidor de aplicaciones, clúster y servidor Web a los que va destinada la aplicación. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt; 
+
+ &lt;li&gt;Para correlacionar la aplicación con el servidor Web durante la instalación de la aplicación,
+seleccione los clústeres y servidores adecuados durante el paso &lt;strong&gt;Gestionar módulos&lt;/strong&gt;. &lt;/li&gt;
+        Seleccione el recuadro de selección del módulo de aplicación que desee destinar a estos servidores
+        y pulse &lt;strong&gt;Aplicar.&lt;/strong&gt;&lt;/li&gt;
+
+&lt;/dl&gt;
+Para continuar, pulse &lt;strong&gt;Paso siguiente&lt;/strong&gt;.
+
+
+		</description>
+	</item>
+
+	<item
+		href=""
+		title="Guardar y sincronizar la configuración">
+		<action
+			class=""/>
+		<description>
+Pulse &lt;strong&gt;Guardar&lt;/strong&gt; en el mensaje de la parte superior del panel de la consola para actualizar la configuración en el repositorio maestro.
+
+&lt;br/&gt;
+                &lt;br/&gt;
+
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+		</description>
+	</item>
+
+
+	<item
+		href="com.ibm.ws.console.web/guidedactivity/cheatsheets/nl/lang/webserver_generate_plugin.htm"
+		title="Generar la configuración del plug-in">
+
+		<action
+        class="navigatorCmd.do?forwardName=WebServer.content.main"/>
+		<description>
+El servicio de configuración del servidor Web supervisa los cambios en la configuración del producto y
+vuelve a generar el archivo del plug-in automáticamente una vez efectuados los cambios que afectan al plug-in. Este servicio está habilitado por omisión, así que normalmente puede saltarse este paso.     
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;A HREF="javascript:showHideList('pluginserviceconditions')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="pluginserviceconditionsImg" ALIGN="left" BORDER="0"/&gt;
+&lt;/A&gt;
+¿Cuándo vuelve a generar el plug-in el servicio de configuración del plug-in?
+&lt;br/&gt;
+&lt;TABLE id="pluginserviceconditionsList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+Cuanto está habilitado el servicio de configuración del servidor Web y se da alguna de las condiciones siguientes, el archivo de configuración del plug-in se genera automáticamente:
+&lt;dl&gt;
+			&lt;li&gt;Si se ha creado o guardado el servidor Web&lt;/li&gt;
+			&lt;li&gt;Si se ha instalado una aplicación&lt;/li&gt;
+			&lt;li&gt;Si se ha desinstalado una aplicación &lt;/li&gt;
+			&lt;li&gt;Si se ha actualizado la definición de host virtual &lt;/li&gt;
+&lt;/dl&gt;
+
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+
+&lt;br/&gt;
+
+
+&lt;A HREF="javascript:showHideList('pluginserviceenabled')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="pluginserviceenabledImg" ALIGN="left" BORDER="0"/&gt;
+&lt;/A&gt;
+¿Debo mantener habilitado el servicio de configuración del plug-in o debo inhabilitarlo?
+&lt;br/&gt;
+&lt;TABLE id="pluginserviceenabledList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+Considere la habilitación de este servicio si se aplica alguna de estas condiciones:
+&lt;dl&gt;
+&lt;li&gt;Espera instalaciones o desinstalaciones de aplicaciones poco frecuentes. Por ejemplo, esta situación podría ser aplicable en un entorno de producción.&lt;/li&gt;
+&lt;li&gt;Se puede tolerar el impacto sobre el rendimiento de generar y distribuir el archivo de configuración del plug-in cada vez que se produzca una de las condiciones mencionadas anteriormente.&lt;/li&gt;
+&lt;/dl&gt;
+&lt;/br&gt;&lt;br/&gt;
+Si va a realizar una serie de cambios simultáneos, como instalar numerosas aplicaciones, entonces quizá sea recomendable inhabilitar el servicio de configuración hasta
+que realice el último cambio.
+&lt;/br&gt;
+&lt;/br&gt;
+Para inhabilitar el servicio,
+pulse &lt;strong&gt;Servidores de aplicaciones > {nombre del servidor} > Servicios de administración > Servicio de configuración del plug-in del servidor Web&lt;/strong&gt; y deseleccione la opción
+ &lt;strong&gt;Habilitar proceso automático de configuración del servidor Web&lt;/strong&gt;. 
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+
+&lt;br/&gt;
+Para generar manualmente el archivo del plug-in
+&lt;ol&gt;
+    &lt;li&gt;Seleccione &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar el panel con la lista de servidores Web.&lt;/li&gt;
+	&lt;li&gt;Seleccione el servidor Web en la lista. &lt;/li&gt;
+	&lt;li&gt;Pulse &lt;strong&gt;Generar plug-in&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+</description>
+ 	</item>
+
+    <item
+       href="com.ibm.ws.console.web/guidedactivity/cheatsheets/nl/lang/webserver_propogate_plugin.htm"
+       title="Propagar la configuración del plug-in">
+       <action
+       class="navigatorCmd.do?forwardName=WebServer.content.main"/>
+       <description>
+El archivo de configuración del plug-in (&lt;code&gt;plugin-cfg.xml&lt;/code&gt;) se puede propagar automáticamente al servidor Web
+si está habilitado el servicio de configuración del plug-in del Web y si se cumple una de las condiciones siguientes:
+
+&lt;dl&gt;
+			&lt;li&gt;Está utilizando un servidor Web local, es decir, hay un servidor de aplicaciones en el mismo sistema que el del servidor Web.&lt;/li&gt;
+			&lt;li&gt;Está utilizando un IBM HTTP Server (IHS) Versión 6 o posterior remoto con un servidor administrativo IHS en ejecución.&lt;/li&gt;
+&lt;/dl&gt;
+
+En esta hoja de apuntes, se presupone que el servidor Web es remoto.  Por tanto, si el servidor Web no es IBM HTTP Server (IHS) Versión 6 o posterior, debe copiar manualmente el archivo &lt;code&gt;plugin-cfg.xml&lt;/code&gt; en la ubicación de instalación del servidor Web remoto.  
+&lt;br/&gt;
+                &lt;br/&gt;
+
+Para propagar el archivo del plug-in
+&lt;ol&gt;
+&lt;li&gt;Cree un ID de usuario y contraseña para IHS Admin Server. Websphere Application Server utiliza este ID de usuario y contraseña para administrar remotamente el servidor Web. Para crear un ID de usuario y una contraseña en el archivo &lt;code&gt;IHS_HOME\conf\admin.passwd&lt;/code&gt;, ejecute el mandato siguiente: &lt;code&gt;IHS_HOME\bin\htpasswd -cb IHS_HOME\conf\admin.passwd usuarioAdmin contraseñaAdmin&lt;/code&gt;, donde usuarioAdmin es un ID de usuario del sistema y contraseñaAdmin es la contraseña de usuarioAdmin. &lt;/li&gt;
+&lt;li&gt;Inicie IHS Admin Server.  En Windows inicie el servicio 'IBM HTTP Administration 6.1' en la máquina IHS. En Linux o UNIX, ejecute el mandato siguiente: &lt;code&gt;IHS_HOME/bin/adminctl start&lt;/code&gt;. &lt;/li&gt;
+&lt;li&gt;Seleccione &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar el panel con la lista de servidores Web.&lt;/li&gt;
+&lt;li&gt;Seleccione el nombre del servidor Web y pulse el enlace &lt;strong&gt;Gestión del servidor Web remoto&lt;/strong&gt;. &lt;/li&gt; &lt;li&gt;Entre 8008 para Puerto, en ID de usuario el usuarioAdmin de
+las instrucciones anteriores y en Contraseña la contraseñaAdmin de las instrucciones
+anteriores.&lt;/li&gt; &lt;li&gt;Pulse &lt;strong&gt;Aplicar&lt;/strong&gt; y guarde
+los cambios.&lt;/li&gt;
+&lt;li&gt;Establezca los permisos correctos de lectura/grabación para el archivo
+httpd.conf y el archivo plugin-cfg.xml en la máquina del servidor Web.
+&lt;/li&gt; &lt;li&gt;Seleccione &lt;strong&gt;Pulsar para
+actuar&lt;/strong&gt; para cargar de nuevo el panel con la lista de servidores
+Web.&lt;/li&gt; &lt;li&gt;Seleccione el recuadro junto al nombre del servidor Web y
+pulse &lt;strong&gt;Propagar plug-in&lt;/strong&gt;.&lt;/li&gt;
+
+&lt;br/&gt;
+&lt;br/&gt;
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+       </description>
+   </item>
+
+
+    <item
+       href=""
+       title="Verificar el direccionamiento de peticiones del servidor Web">
+       <action
+       class=""/>
+       <description>
+
+
+    Abra un navegador y especifique el URL del servlet snoop (por ejemplo, http://Nombre_host_de_máquina_del_servidor_Web/snoop) para verificar la capacidad del servidor Web de recuperar una aplicación del servidor de aplicaciones. 
+&lt;br/&gt;
+&lt;br/&gt;
+
+Si la prueba anterior no es satisfactoria, consulte el artículo del Information Center denominada, &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=tins_webplugins"&gt;Resolución de problemas de instalación y eliminación de plug-ins de servidor Web&lt;/a&gt; para obtener más información.
+
+
+
+
+       </description>
+   </item>
+
+
+
+
+</cheatsheet>

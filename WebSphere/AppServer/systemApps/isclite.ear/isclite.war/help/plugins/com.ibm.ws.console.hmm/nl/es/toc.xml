@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión y supervisión de salud" topic="index.html">
+   <topic label="Parámetros globales del controlador de salud" href="hmm_detail_main.html"/>
+</toc>

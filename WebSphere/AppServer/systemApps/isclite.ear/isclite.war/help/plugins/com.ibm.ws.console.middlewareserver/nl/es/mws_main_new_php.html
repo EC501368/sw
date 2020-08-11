@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es-es" xml:lang="es-es">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="public" name="security" />
+<meta content="index,follow" name="Robots" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta content="topic" name="DC.Type" />
+<meta name="DC.Title" content="Creación de un servidor de middleware PHP" />
+<meta name="abstract" content="Esta página sirve para crear un nuevo servidor de middleware PHP. " />
+<meta name="description" content="Esta página sirve para crear un nuevo servidor de middleware PHP. " />
+<meta scheme="URI" name="DC.Relation" content="mws_collection.html" />
+<meta scheme="URI" name="DC.Relation" content="servertemplate_settings.html" />
+<meta scheme="URI" name="DC.Relation" content="servertemplate_collection.html" />
+<meta scheme="URI" name="DC.Relation" content="phpserver_settings.html" />
+<meta scheme="URI" name="DC.Relation" content="tomcatserver_settings.html" />
+<meta scheme="URI" name="DC.Relation" content="mws_main_new_odr.html" />
+<meta scheme="URI" name="DC.Relation" content="mws_other_detail.html" />
+<meta scheme="URI" name="DC.Relation" content="mws_detail_editor.html" />
+<meta scheme="URI" name="DC.Relation" content="mws_detail_viewfile.html" />
+<meta scheme="URI" name="DC.Relation" content="mws_detail_logsrv.html" />
+<meta scheme="URI" name="DC.Relation" content="mws_detail_configsrv.html" />
+<meta name="copyright" content="IBM Corporation 2004, 2006" />
+<meta name="DC.Rights.Owner" content="IBM Corporation 2004, 2006" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="phpserver" name="DC.Identifier" />
+<meta content="es-es" name="DC.Language" />
+<!-- All rights reserved. Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link href="/ibm/help/topic/com.ibm.ws.console.core/ibmdita.css" type="text/css" rel="stylesheet" />
+<link href="/ibm/help/topic/com.ibm.ws.console.core/swg_info_common.css" type="text/css" rel="stylesheet" />
+<link href="/ibm/help/topic/com.ibm.ws.console.core/monospace.css" type="text/css" rel="stylesheet" disabled="" />
+<title>Creación de un servidor de middleware PHP</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body id="phpserver"><a name="phpserver"><!-- --></a>
+<h1 class="topictitle1">Creación de un servidor de middleware PHP</h1>
+<div><p>Esta página sirve para crear un nuevo servidor de middleware PHP.
+</p>
+
+<p>Pulse <strong>Servidores &gt; Servidores de middleware &gt; Nuevo &gt;<em> Crear una nueva instancia de servidor &gt; Servidor PHP</em></strong> para ver esta página de la consola administrativa.
+</p>
+
+</div>
+<dl><dt class="dlterm" id="createanewserverinstance"><a name="createanewserverinstance"><!-- --></a>Crear una nueva instancia de servidor o Añadir un servidor existente</dt><dd class="ddexpand" id="createanewserverinstance"><a name="createanewserverinstance"><!-- --></a><div>
+<p>Este panel del asistente sirve para crear una nueva instancia de servidor, o para añadir un servidor existente al entorno de WebSphere Extended Deployment. Al crear una nueva instancia de servidor creará un nuevo servidor, mientras que añadir a un servidor existente añade un servidor de aplicaciones existente que no es de WebSphere al entorno de WebSphere Application Server. </p>
+
+</div>
+</dd><dt class="dlterm" xml:lang="es-es" id="addaserver"><a name="addaserver"><!-- --></a>Paso 1: Añadir un servidor</dt><dd class="ddexpand" xml:lang="es-es" id="addaserver"><a name="addaserver"><!-- --></a><div>
+<dl>
+<dt class="dlterm">Crea una nueva instancia de servidor que es exclusiva en la célula. </dt>
+
+<dd>Elija un servidor PHP de la lista:<div class="p"><ul>
+<li>Aplicación
+</li>
+
+<li>Genérico
+</li>
+
+<li>Direccionador On Demand</li>
+
+<li>PHP
+</li>
+
+<li>Proxy
+</li>
+
+<li>Web</li>
+
+</ul>
+</div>
+</dd>
+
+
+<dt class="dlterm">Añadir un servidor existente en la célula:
+</dt>
+
+<dd>Elija un tipo de servidor de la lista:
+<div class="p"><ul>
+<li>CustomHTTP</li>
+
+<li>BEA Weblogic Server</li>
+
+<li>JBoss</li>
+
+<li>PHP</li>
+
+<li>Apache Tomcat</li>
+
+<li>WASCE </li>
+
+</ul>
+ </div>
+</dd>
+
+</dl>
+
+</div>
+</dd><dt class="dlterm" xml:lang="es-es" id="step2"><a name="step2"><!-- --></a>Paso 2: Seleccionar un nodo</dt><dd class="ddexpand" xml:lang="es-es" id="step2"><a name="step2"><!-- --></a><div><p>Seleccione un nodo que corresponda al servidor que desea crear y defina un nombre de servidor.
+</p>
+</div>
+</dd><dt class="dlterm" xml:lang="es-es" id="step3"><a name="step3"><!-- --></a>Paso 3: Seleccionar un entorno de tiempo de ejecución Apache</dt><dd class="ddexpand" xml:lang="es-es" id="step3"><a name="step3"><!-- --></a><div><p>Seleccione un entorno de tiempo ejecución Apache para su servidor PHP. </p>
+
+<p>Debajo de cada versión se mostrarán las correspondientes vías de acceso. </p>
+
+</div>
+</dd><dt class="dlterm" xml:lang="es-es" id="step4"><a name="step4"><!-- --></a>Paso 4: Seleccionar un entorno de tiempo de ejecución PHP</dt><dd class="ddexpand" xml:lang="es-es" id="step4"><a name="step4"><!-- --></a><div><p>Seleccione un entorno de tiempo de ejecución PHP para el servidor.
+</p>
+
+<p>Debajo de cada versión se mostrarán las correspondientes vías de acceso. </p>
+
+</div>
+</dd><dt class="dlterm" xml:lang="es-es" id="step5"><a name="step5"><!-- --></a>Paso 5: Seleccionar una plantilla PHP</dt><dd class="ddexpand" xml:lang="es-es" id="step5"><a name="step5"><!-- --></a><div><p>Seleccione una plantilla para el servidor PHP. </p>
+
+<p>Elija una plantilla por omisión de la lista. La plantilla PHP incluye la plantilla tanto para las versiones PHP como Apache que especificó en el paso anterior. </p>
+
+</div>
+</dd><dt class="dlterm" xml:lang="es-es" id="step6"><a name="step6"><!-- --></a> Paso 6: Confirmar nuevo servidor PHP</dt><dd class="ddexpand" xml:lang="es-es" id="step6"><a name="step6"><!-- --></a><div><p>Pulse <strong>Finalizar</strong> para crear el nuevo servidor PHP. </p>
+
+<p>El campo de resumen de acciones describe las elecciones realizadas con el asistente. </p>
+
+</div>
+</dd></dl>
+<br /><br /><hr align="left" /><div>
+<div class="relinfo"><strong>Información relacionada</strong><br />
+<div><a class="field-help" href="mws_collection.html">Colección de servidores de middleware</a></div>
+<div><a href="servertemplate_settings.html">Valores de plantilla de servidor de middleware</a></div>
+<div><a href="servertemplate_collection.html">Colección de plantillas de servidor de middleware</a></div>
+<div><a class="field-help" href="phpserver_settings.html">Valores de servidor PHP</a></div>
+<div><a href="tomcatserver_settings.html">Valores de servidor Apache TomCat</a></div>
+<div><a class="field-help" href="mws_main_new_odr.html">Creación de un servidor de middleware direccionador On Demand</a></div>
+<div><a class="field-help" href="mws_other_detail.html">Valores de detalle de servidor</a></div>
+<div><a class="field-help" href="mws_detail_editor.html">Configuración externa</a></div>
+<div><a href="mws_detail_viewfile.html">Visor de registro de anotaciones cronológicas</a></div>
+<div><a href="mws_detail_logsrv.html">Servicio de visor de anotaciones cronológicas externas</a></div>
+<div><a href="mws_detail_configsrv.html">Servicio de configuración externo</a></div>
+</div>
+</div>
+<br /><span class="stealth">mws_main_new_php</span></body>
+</html>

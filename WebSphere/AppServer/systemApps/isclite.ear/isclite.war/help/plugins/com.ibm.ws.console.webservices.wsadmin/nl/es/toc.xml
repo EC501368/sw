@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Administración de servicios web" topic="index.html">
+   <topic label="Colección de clientes de servicio a nivel de célula"
+          href="ae/uwbs_serviceclient1.html"/>
+   <topic label="Conjunto de políticas de cliente de servicios y colección de enlaces"
+          href="ae/uwbs_clientpsbindings.html"/>
+   <topic label="Colección de clientes de servicio a nivel de aplicación"
+          href="ae/uwbs_serviceclientapp1.html"/>
+   <topic label="Valores de cliente de servicio" href="ae/uwbs_serviceclient2.html"/>
+   <topic label="Colección de conjuntos de políticas de proveedor de servicios y enlaces"
+          href="ae/uwbs_psbindings.html"/>
+   <topic label="Colección de proveedores de servicios a nivel de aplicación"
+          href="ae/uwbs_jaxwsapp.html"/>
+   <topic label="Colección de proveedores de servicio a nivel de célula"
+          href="ae/uwbs_jaxwscell.html"/>
+   <topic label="Valores del proveedor de servicios" href="ae/uwbs_jaxws.html"/>
+   <topic label="Valores de referencia de servicio"
+          href="ae/uwbs_serviceclient3servref.html"/>
+   <topic label="Valores de Cliente de servicio WS-Notification"
+          href="ae/WSNClientWSAdminDetail_DetailForm.html"/>
+</toc>

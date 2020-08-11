@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de aplicaciones empresariales" topic="index.html">
+   <topic label="Colección de perfiles de aplicación"
+          href="webui_pme/ui/ueac_appprofile.html"/>
+   <topic label="Valores de perfil de aplicación"
+          href="webui_pme/ui/ueac_appprofilesettings.html"/>
+   <topic label="Valores de extensión de soporte de último participante"
+          href="webui_pme/ui/ueac_laoextensionsettings.html"/>
+   <topic label="Colección de tareas" href="webui_pme/ui/ueac_task.html"/>
+   <topic label="Valores de tareas" href="webui_pme/ui/ueac_tasksettings.html"/>
+</toc>

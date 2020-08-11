@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores de detalle de servidor de middleware" />
+<meta name="abstract" content="Esta página sirve para ver la configuración de los servidores de middleware." />
+<meta name="description" content="Esta página sirve para ver la configuración de los servidores de middleware." />
+<meta name="DC.Relation" scheme="URI" content="mws_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="servertemplate_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="servertemplate_settings.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_srvoperations.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_srvoperations_detail.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_editor.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_viewfile.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_logsrv.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_configsrv.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2007" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2007" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="mws_other_detail" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores de detalle de servidor de middleware</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="mws_other_detail">
+<h1 class="title topictitle1">Valores de detalle de servidor de middleware</h1>
+<div class="body"><p class="shortdesc">Esta página sirve para ver la configuración de los servidores de middleware. </p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Todos los servidores</span> &gt; <span class="ph uicontrol"><var class="keyword varname">servidor_middleware</var></span></span>, o seleccione <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidor</span> &gt; <span class="ph uicontrol"><var class="keyword varname">tipo_servidor_middleware</var></span> &gt; <span class="ph uicontrol"><var class="keyword varname">servidor_middleware</var></span></span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="name"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica un nombre para el servidor.
+El nombre para un servidor debe ser exclusivo en la célula.</p>
+<p class="p" id="name__mws_name">El campo
+de nombre no puede contener los caracteres siguientes: <strong class="ph b"><kbd class="ph userinput"> #   \  / , :  ;  "  *  ?  &lt;  &gt;  |  =  +  &amp;  %  '</kbd></strong> .
+El nombre definido debe ser exclusivo entre grupos de servidores y no puede comenzar por un punto <strong class="ph b">(<kbd class="ph userinput">.</kbd>)</strong> o un espacio. Un espacio no genera un error, pero los espacios al principio o al final se eliminan automáticamente. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="nodename"><h2 class="title topictitle2">Nombre del nodo</h2>
+<div class="body"><p class="shortdesc"><span class="ph">Especifica el nombre de nodo asociado con el servidor. Normalmente, un nombre de nodo es el mismo que el nombre de host del sistema. Sin embargo, existe la posibilidad de elegirlo. Se puede hacer que el nombre de nodo sea distinto del nombre de host. </span></p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="httpconnector"><h2 class="title topictitle2">Conector HTTP</h2>
+<div class="body"><p class="shortdesc">Especifica las propiedades específicas del servidor, incluidos el número de puerto y la habilitación. </p>
+<p class="p">Según sea el tipo de servidor, se pueden mostrar otros campos. Por ejemplo, los servidores PHP tienen campos para PHP. Los conectores de HTPP y HTTPS no se muestran con todos los tipos de servidor. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="httpsconnector"><h2 class="title topictitle2">Conector HTTPS</h2>
+<div class="body"><p class="shortdesc">Especifica las propiedades específicas del servidor, incluidos el número de puerto, la habilitación y la seguridad. </p>
+<p class="p">Los conectores de HTPP y HTTPS no se muestran con todos los tipos de servidor.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="serverconfiguration"><h2 class="title topictitle2">Configuración del servidor</h2>
+<div class="body"><p class="shortdesc">Especifica propiedades adicionales de los servidores de WebSphere Application Server Community Edition.</p>
+<dl class="dl"><dt class="dt dlterm">Depósito de aplicaciones</dt>
+<dd class="dd">Especifica la ubicación del depósito de aplicaciones que utiliza el servidor de WebSphere Application Server Community Edition. En esta vía de acceso se pueden especificar variables como, por ejemplo, <samp class="ph tt">${GERONIMO_HOME}</samp> para indicar la primera parte de la vía de acceso de la instalación. Para crear nuevas variables y modificar variables que ya existan, pulse <span class="ph menucascade"><span class="ph uicontrol">Entorno</span> &gt; <span class="ph uicontrol">Variables de WebSphere</span></span>.</dd>
+<dt class="dt dlterm">Carpeta de configuración de servidor</dt>
+<dd class="dd">Especifica la carpeta que contiene los archivos de configuración para el servidor. En esta vía de acceso se pueden especificar variables como, por ejemplo, <samp class="ph tt">${GERONIMO_HOME}</samp> para indicar la primera parte de la vía de acceso de la instalación. Para crear nuevas variables y modificar variables que ya existan, pulse <span class="ph menucascade"><span class="ph uicontrol">Entorno</span> &gt; <span class="ph uicontrol">Variables de WebSphere</span></span>.</dd>
+<dt class="dt dlterm">Versión WebSphere Application Server Community Edition</dt>
+<dd class="dd">Especifica la versión de WebSphere Application Server Community Edition que está en ejecución en el servidor. Especifique el número de versión con puntos como, por ejemplo, <samp class="ph tt">2.0</samp>.</dd>
+<dt class="dt dlterm">Desplazamiento de puerto</dt>
+<dd class="dd">Especifique un desplazamiento de puerto para evitar conflictos de puertos. El desplazamiento de puerto se utiliza al apilar servidores de WebSphere Application Community Edition e incrementa los valores de puerto. Por ejemplo, para la instancia de servidor por omisión, los valores de puerto podrían ser <samp class="ph tt">8085</samp> para HTTP y <samp class="ph tt">8443</samp> para HTTPS. Si se especifica un desplazamiento de puerto de <samp class="ph tt">5</samp>, cuando se cree un nuevo servidor, el valor del puerto HTTP será <samp class="ph tt">8090</samp> y el valor del puerto HTTPS será <samp class="ph tt">8448</samp>. De crearse un tercer servidor, entonces los valores de puerto serían <samp class="ph tt">8095</samp> para HTTP y <samp class="ph tt">8453</samp> para HTTPS.</dd>
+<dt class="dt dlterm">La seguridad JMX está habilitada</dt>
+<dd class="dd">Especifica si la seguridad de JMX (Java Management Extensions) está habilitada en un servidor de WebSphere Application Server Community Edition Versión 2.1 o posterior.</dd>
+</dl>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="mws_collection.html" title="Utilice esta página para ver y gestionar servidores de middleware. Los servidores de middleware son servidores genéricos del nivel de middleware que alojan aplicaciones o sus datos.">Colección de servidores de middleware</a></div>
+<div><a class="link help" href="mws_detail_main_new.html" title="Esta página sirve para crear un servidor de middleware. Los servidores de middleware son servidores del nivel de middleware que alojan aplicaciones o sus datos.">Creación de un servidor de middleware</a></div>
+<div><a class="link help" href="servertemplate_collection.html" title="Esta página sirve para crear una nueva plantilla de servidor. Las plantillas de servidor definen valores de configuración al crear servidores de middleware.">Colección de plantillas de servidor de middleware</a></div>
+<div><a class="link help" href="servertemplate_settings.html" title="Esta página sirve para configurar los valores de una nueva plantilla de servidor que haya creado. Los tipos de servidor que existen para crear una plantilla incluyen a servidor de aplicaciones, genérico, direccionador On Demand, proxy o servidor web. También se pueden crear o añadir plantillas de servidor para un servidor de middleware que ya exista en su entorno como, por ejemplo, PHP, servidor HTTP personalizado o WebSphere Application Server Community Edition.">Valores de plantilla de servidor de middleware</a></div>
+<div><a class="link help" href="mws_srvoperations.html" title="Esta página permite añadir, editar y suprimir operaciones de servidor.">Operaciones de servidor</a></div>
+<div><a class="link help" href="mws_srvoperations_detail.html" title="Esta página sirve para configurar operaciones para servidores de middleware. Puede utilizar las operaciones de servidor para ejecutar archivos ejecutables en los servidores de middleware desde la consola administrativa.">Valores de operaciones de servidor de middleware</a></div>
+<div><a class="link help" href="mws_detail_editor.html" title="Esta página sirve para editar un archivo de configuración para un servidor de middleware.">Configuración externa</a></div>
+<div><a class="link help" href="mws_detail_viewfile.html" title="Esta página sirve para ver los archivos de anotaciones cronológicas de los servidores de middleware.">Visor de anotaciones cronológicas</a></div>
+<div><a class="link help" href="mws_detail_logsrv.html" title="Esta página sirve para acceder a los archivos de anotaciones cronológicas de los servidores de middleware.">Servicio de anotaciones cronológicas externas</a></div>
+<div><a class="link help" href="mws_detail_configsrv.html" title="Esta página sirve para habilitar o inhabilitar archivos de configuración asociados con un servidor de middleware.">Servicio de configuración externo</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: mws_other_detail.html</span></body>
+</html>

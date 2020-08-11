@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es" lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corp. 2013" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corp. 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Colección de servicios de correlaciones locales" />
+<meta name="abstract" content="Un servicio de correlaciones local define el punto de intercepción entre un cliente de servicios y un proveedor de servicios." />
+<meta name="Description" content="Un servicio de correlaciones local define el punto de intercepción entre un cliente de servicios y un proveedor de servicios." />
+<meta name="DC.Relation" scheme="URI" content="index.html" />
+<meta name="DC.Date" scheme="iso8601" content="2013-03-25" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="LocalMappingServices_CollectionForm" />
+<meta name="DC.Language" content="es-es" />
+<meta name="IBM.Country" content="ZZ" />
+<link rel="stylesheet" type="text/css" href="ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="swg_info_common.css" />
+<link rel="Start" href="index.html" />
+<title>Colección de servicios de correlaciones locales</title>
+</head>
+<body role="main" id="LocalMappingServices_CollectionForm">
+<img src="ng_v8550.gif" alt="Versión 8550" /> <h1 class="title topictitle1">Colección de servicios de correlaciones locales</h1>
+<div class="body"><p class="shortdesc">Un servicio de correlaciones local define el punto de intercepción entre un cliente de servicios y un proveedor de servicios.</p>
+<div class="section panel_intro"> <p class="p"><span class="ph">Para ver este panel en la consola administrativa, pulse</span> <span class="ph"><span class="ph"><span class="ph"><span class="ph menucascade"><span class="ph uicontrol">Integración de servicios</span></span></span><span class="ph menucascade"><span class="ph uicontrol"> </span> &gt; <span class="ph uicontrol">Correlación de servicios</span></span></span><span class="ph menucascade"><span class="ph uicontrol"> </span> &gt; <span class="ph uicontrol">Servicios de correlaciones locales</span></span></span></p>
+<div class="p"><ul class="ul"><li class="li"><span class="ph">Para examinar las propiedades de un servicio de correlaciones local, seleccione su nombre en la lista.</span></li>
+<li class="li"><span class="ph">Para actuar sobre uno o varios de los servicios de correlaciones locales, pulse los
+recuadros de selección que aparecen junto a los nombres de los elementos sobre los que
+desea actuar y, a continuación, utilice el botón que se proporciona.</span></li>
+<li class="li"><span class="ph">Para cambiar los servicios de correlaciones locales que se enumeran, o para cambiar el nivel de detalle que se muestra para dichas entradas, utilice los valores de <span class="ph uicontrol">Filtro</span>.</span></li>
+<li class="li"><span class="ph">Para crear un nuevo servicio de correlaciones local, pulse <span class="ph uicontrol">Nuevo</span>.</span></li>
+</ul>
+</div>
+<p class="p">Este panel muestra las siguientes propiedades: </p>
+</div>
+<div class="section general_properties"> <dl class="dl" id="LocalMappingServices_CollectionForm__general_property_list"><dt class="dt dlterm">Nombre</dt>
+<dd class="dd">Nombre exclusivo de este servicio de correlaciones local.</dd>
+<dt class="dt dlterm"> Descripción </dt>
+<dd class="dd">Descripción de este servicio de correlaciones local.</dd>
+<dt class="dt dlterm">Correlación de servicios conectada</dt>
+<dd class="dd">La correlación de servicios que utiliza el servicio de correlaciones local.</dd>
+<dt class="dt dlterm">Estado</dt>
+<dd class="dd">El estado del servicio de correlaciones local: <var class="keyword varname">Iniciado</var>,
+representado por una flecha verde (<img class="image" src="images/running.gif" alt="Icono de Iniciado" />), <var class="keyword varname">Detenido</var>,
+representado por una cruz roja (<img class="image" src="images/stop.gif" alt="Icono de Detenido" />) o <var class="keyword varname">Desconocido</var>,
+representado por una interrogación (<samp class="ph systemoutput">?</samp>).<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="En la tabla se muestran los distintos estados que puede tener un servicio de correlaciones local, y sus patrones de comportamiento asociados, dependiendo de si se ha conectado una correlación de servicios." class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 1. Estado y comportamiento de <span class="keyword">un servicio de correlaciones local</span></span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="26.400000000000002%" id="d3123e120">Estado de <span class="keyword">Servicio de correlaciones local</span></th>
+<th class="entry" valign="bottom" width="26.400000000000002%" id="d3123e124">¿Conectado a <span class="keyword">una correlación de servicios</span>? Sí/No</th>
+<th class="entry" valign="bottom" width="47.199999999999996%" id="d3123e129">Comportamiento</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="26.400000000000002%" headers="d3123e120 ">Iniciado </td>
+<td class="entry" valign="top" width="26.400000000000002%" headers="d3123e124 ">No</td>
+<td class="entry" valign="top" width="47.199999999999996%" headers="d3123e129 ">La solicitud se direcciona al servicio de destino original
+especificado por el <span class="keyword">cliente de servicio</span>. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="26.400000000000002%" headers="d3123e120 ">Detenido</td>
+<td class="entry" valign="top" width="26.400000000000002%" headers="d3123e124 ">No</td>
+<td class="entry" valign="top" width="47.199999999999996%" headers="d3123e129 ">El servicio no está disponible. Se devuelve un error.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="26.400000000000002%" headers="d3123e120 ">Iniciado </td>
+<td class="entry" valign="top" width="26.400000000000002%" headers="d3123e124 ">Sí</td>
+<td class="entry" valign="top" width="47.199999999999996%" headers="d3123e129 ">Se aplica la
+<span class="keyword">correlación de servicios</span>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="26.400000000000002%" headers="d3123e120 ">Detenido</td>
+<td class="entry" valign="top" width="26.400000000000002%" headers="d3123e124 ">Sí</td>
+<td class="entry" valign="top" width="47.199999999999996%" headers="d3123e129 ">El servicio no está disponible. Se devuelve un error.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+</dl>
+</div>
+<div class="section buttons"><h2 class="title sectiontitle"><span class="keyword">Botones </span></h2><table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletable"><tr class="sthead"><th valign="bottom" align="left" id="d3123e172" class="stentry"><span class="keyword">Etiqueta </span></th>
+<th valign="bottom" align="left" id="d3123e175" class="stentry"><span class="keyword">Acción</span></th>
+</tr>
+<tr class="strow"><td valign="top" headers="d3123e172" class="stentry"><span class="keyword">Nuevo</span></td>
+<td valign="top" headers="d3123e175" class="stentry">Crear un servicio de correlaciones local.</td>
+</tr>
+<tr class="strow"><td valign="top" headers="d3123e172" class="stentry"><span class="keyword">Suprimir</span></td>
+<td valign="top" headers="d3123e175" class="stentry">Suprimir uno o varios servicios de correlaciones local. Puede
+suprimir un servicio de correlaciones local
+sólo si no está conectado a una correlación de servicios.</td>
+</tr>
+<tr class="strow"><td valign="top" headers="d3123e172" class="stentry">Conectar</td>
+<td valign="top" headers="d3123e175" class="stentry">Conectar el servicio de correlaciones local seleccionado a una correlación de servicios.</td>
+</tr>
+<tr class="strow"><td valign="top" headers="d3123e172" class="stentry">Desconectar</td>
+<td valign="top" headers="d3123e175" class="stentry">Desconectar uno o varios servicios de correlaciones locales de una correlación de servicios.</td>
+</tr>
+<tr class="strow"><td valign="top" headers="d3123e172" class="stentry"><span class="keyword">Iniciar</span></td>
+<td valign="top" headers="d3123e175" class="stentry">Iniciar uno o varios servicios de correlaciones locales.</td>
+</tr>
+<tr class="strow"><td valign="top" headers="d3123e172" class="stentry"><span class="keyword">Detener</span></td>
+<td valign="top" headers="d3123e175" class="stentry">Detener uno o varios servicios de correlaciones locales.</td>
+</tr>
+</table>
+ </div>
+</div>
+<hr align="left" /><p>Los enlaces marcados (en línea) requieren acceso a Internet. 
+Cada enlace inicia una búsqueda del tema en el Information Center. Cuando se listen los
+resultados de la búsqueda, seleccione el tema que se ajuste mejor a la configuración.</p><p><a target="_blank" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-mp&amp;topic=LocalMappingServices_CollectionForm">Compruebe si hay actualizaciones para este tema </a> (en línea)
+</p><div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Tema principal:</strong> <a class="link" href="index.html" title="Puede utilizar estos paneles de la consola administrativa para gestionar los recursos de la correlación de servicios.">Paneles de la consola administrativa de la correlación de servicios</a></div>
+</div>
+</div><hr align="left" /><br /><div class="runningfooter">
+<br />
+Nombre de archivo: LocalMappingServices_CollectionForm.html</div></body>
+</html>

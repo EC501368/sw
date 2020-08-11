@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Alta disponibilidad" topic="index.html">
+   <topic label="Colección de grupos principales" href="ae/urun_ha_cgcollection.html"/>
+   <topic label="Políticas de grupo principal" href="ae/urun_ha_policy.html"/>
+   <topic label="Valores de políticas del grupo principal"
+          href="ae/urun_ha_policysetting.html"/>
+   <topic label="Opciones de mover servidor a grupo principal"
+          href="ae/urun_ha_cgservermove.html"/>
+   <topic label="Colección de servidores del grupo principal"
+          href="ae/urun_ha_cgserver.html"/>
+   <topic label="Valores de servidor de grupo principal"
+          href="ae/urun_ha_cgserverdetail.html"/>
+   <topic label="Valores del servicio de grupo principal"
+          href="ae/urun_ha_cgservice.html"/>
+   <topic label="Valores de grupo principal" href="ae/urun_ha_cgdetail.html"/>
+   <topic label="Valores de descubrimiento y detección de errores"
+          href="ae/urun_ha_discov_fail.html"/>
+   <topic label="Colección de miembros del grupo de alta disponibilidad"
+          href="ae/urun_ha_hagroup_member.html"/>
+   <topic label="Colección de grupos de alta disponibilidad"
+          href="ae/urun_ha_hagroup.html"/>
+   <topic label="Colección de criterios de coincidencia"
+          href="ae/urun_ha_simpcriteria.html"/>
+   <topic label="Valores de los criterios de coincidencia"
+          href="ae/urun_ha_simpcriteriadetail.html"/>
+   <topic label="Definición de una nueva política del grupo principal"
+          href="ae/urun_ha_oneofn.html"/>
+   <topic label="Valores de servidores de coordinador preferidos"
+          href="ae/urun_ha_prefcoorserver.html"/>
+   <topic label="Servidores preferidos" href="ae/urun_ha_prefserver.html"/>
+   <topic label="Colección de servidores con miembros activos"
+          href="ae/urun_ha_showsvr.html"/>
+   <topic label="Colección de servidores del grupo estático"
+          href="ae/urun_ha_staticgroup.html"/>
+</toc>

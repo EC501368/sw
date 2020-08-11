@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+ 
+<!--
+	******************************************************************************
+	* Translation Notes:
+	*
+	* To translate this XML file, first change the xml:lang variable
+	* in TMSSource to the correct locale for the translation.  Then follow
+	* these simple rules.
+	*
+	* #PCDATA:
+	*
+	* When translating XML, any text between <Tag> and </Tag> entries
+	* should be translated.  For example, "File not found" in the following
+	* phrase:
+	*
+	* <MsgText>File not found</MsgText>...
+	*
+	* The only exception to this rule is the Text between <Copyright> and
+	* </Copyright> tags.
+	*
+	* Attributes:
+	*
+	* Verbage in attributes should not be translated.  For example, the "don't
+	* translate me" phrase in the following should not be changed:
+	*
+	* <MsgText terseText="don't translate me">File not found</MsgText>...
+	*
+	* Comments:
+	*
+	* Verbage in comments should not be translated.  This note is an example
+	* of a comment.  End-users will never see it.
+	*
+	*****************************************************************************
+-->
+<TMSSource name="DefaultDataStoreMessages" tmsVersion="1.0" xml:lang="es">
+<Copyright>Licensed Materials - Property of IBM (C)Copyright IBM Corporation 2004, 2005. All Rights Reserved US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</Copyright>
+<!--
+		*********************************************************************
+		* The above copyright notice applies to this XML file as well
+		*  as any other source/text files generated from this file.
+		*********************************************************************
+	-->
+<!-- ============================================================== -->
+<!-- Message creation/maintenance process:                      -->
+<!--                                                            -->
+<!-- In a comment above each message, include                   -->
+<!-- the message number and one of these four status values:    -->
+<!--                                                            -->
+<!-- MSG_WORKING: Development is still working on the message.  -->
+<!--              It is not ready for review by ID.             -->
+<!--                                                            -->
+<!-- MSG_REVIEW_ID: Development has completed work on the       -->
+<!--                message. It is ready to be reviewed by ID.  -->
+<!--                                                            -->
+<!-- MSG_REVIEW_DEV: ID has updated the message.                -->
+<!--                 It is ready to be reviewed by Development. -->
+<!--                                                            -->
+<!-- MSG_COMPLETE: The message has been reviewed by all parties -->
+<!--               and is complete.                             -->
+<!--                                                            -->
+<!-- Also, if Development must update a message that is in the  -->
+<!-- MSG_COMPLETE state, Development must open a defect for ID  -->
+<!-- to review the message again.                               -->
+<!-- ============================================================== -->
+<!-- ================================================================= -->
+<!--  CEIDS0001E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0001E" prefix="yes">
+<MsgText pgmKey="CEIDS0001" varFormat="Java"> 			No se da soporte al sistema de gestión de bases de datos relacionales especificado.<br/> 			Base de datos:
+			<Variable formatSpec="{0}">rdbms_name</Variable>
+			<br/>
+			Versión:
+			<Variable formatSpec="{1}">rdbms_version</Variable>
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Vuelva a configurar el origen de datos de Common Event Infrastructure para especificar que utilice un sistema de gestión de bases de datos relacionales soportado.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0002E    MSG_COMPLETE                                      -->
+<!--  This message is used when the database vendor and version may    -->
+<!--  not be known. CEIDS0036E is used when the database vendor and    -->
+<!--  version is known.                                                -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0002E" prefix="yes">
+<MsgText pgmKey="CEIDS0002" varFormat="Java"> 			El sistema de gestión de bases de datos relacionales ha informado sobre el siguiente error.<br/> 			Referencia al recurso del origen de datos:
+			<Variable formatSpec="{0}">data_source</Variable>
+			<br/>
+			Estado de SQL:
+			<Variable formatSpec="{1}">sql_state</Variable>
+			<br/>
+			Código de proveedor:
+			<Variable formatSpec="{2}">vendor_code</Variable>
+			<br/>
+			Mensaje:
+			<Variable formatSpec="{3}">message</Variable>
+		</MsgText>
+<Explanation>
+<p>El estado de SQL es el código de error JDBC estándar para el problema notificado.
+El código de proveedor es el código de error específico del proveedor de la base de datos. El parámetro de mensaje es el mensaje de error traducido devuelto por el sistema de gestión de bases de datos relacionales.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte la documentación de la base de datos relacional adecuada para obtener información sobre el estado de SQL, el código de proveedor y el mensaje de error.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0003E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0003E" prefix="yes">
+<MsgText pgmKey="CEIDS0003" varFormat="Java"> 			No se ha encontrado la correlación de un elemento o atributo de Common Base Event con tablas y columnas de la base de datos.
+			<br/> 			Atributo:
+			<Variable formatSpec="{0}">attribute_name</Variable>
+		</MsgText>
+<Explanation>
+<p>El almacén de datos almacena metadatos en su base de datos. Esta información de metadatos especifica la forma en que los elementos y atributos de Common Base Event se correlacionan con las tablas y columnas de la base de datos. Se ha producido un error al instalar la base de datos de sucesos o la información de la tabla de metadatos está dañada.</p>
+</Explanation>
+<AdminResponse>
+<p>Vuelva a instalar la base de datos de sucesos.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0004I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0004I" prefix="yes">
+<MsgText pgmKey="CEIDS0004" varFormat="Java"> 			El almacén de datos se está conectando al sistema de gestión de bases de datos relacionales especificado.<br/> 			Base de datos:
+			<Variable formatSpec="{0}">rdbms_name</Variable>
+			<br/>
+			Versión:
+			<Variable formatSpec="{1}">rdbms_version</Variable>
+		</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIDS0005E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0005E" prefix="yes">
+<MsgText pgmKey="CEIDS0005" varFormat="Java"> 			Se ha excedido el tamaño máximo de la transacción de depuración de <Variable formatSpec="{0}">purge_threshold</Variable>.
+Se ha detenido la operación de depuración, se ha deshecho la transacción y no se ha depurado ningún suceso.
+		</MsgText>
+<Explanation>
+<p>Una operación de depuración de sucesos ha intentado suprimir un gran número de sucesos.
+Puesto que esta acción puede afectar negativamente al rendimiento del sistema y a la capacidad de proceso de sucesos, se ha detenido la operación de depuración.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Para reducir el número de sucesos que se deben depurar en una única transacción, realice una de las siguientes acciones o todas:</p>
+<ul>
+<li>Agregue filtros adicionales a la expresión del selector de sucesos.</li>
+<li>Establezca el tamaño máximo de la transacción de depuración en un valor más bajo.</li>
+</ul>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0006E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0006E" prefix="yes">
+<MsgText pgmKey="CEIDS0006" varFormat="Java"> 			Se ha excedido el umbral de consulta de
+			<Variable formatSpec="{0}">query_threshold</Variable>. Se ha detenido la operación de consulta y no se ha devuelto ningún suceso.
+		</MsgText>
+<Explanation>
+<p>Una consulta de sucesos ha intentado devolver un número muy elevado de sucesos. Puesto que esta acción puede afectar negativamente al rendimiento del sistema y a la capacidad de proceso de sucesos, se ha detenido la operación de consulta.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Para reducir el número de sucesos que se deben devolver, realice una o más de las siguientes acciones:</p>
+<ul>
+<li>Agregue filtros adicionales a la expresión del selector de sucesos para la consulta.</li>
+<li>Especifique el número máximo de sucesos que se deben devolver.</li>
+<li>Si dispone de suficientes recursos del sistema, aumente el valor del umbral de consulta.</li>
+</ul>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0007E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0007E" prefix="yes">
+<MsgText pgmKey="CEIDS0007" varFormat="Java"> 			Ya existe un suceso con el identificador de instancia global <Variable formatSpec="{0}">global_id</Variable> en la base de datos. El suceso no se ha almacenado en la base de datos.
+			<br/> 			Suceso ya existente:
+			<Variable formatSpec="{1}">old_event</Variable>
+			<br/>
+			Nuevo suceso:
+			<Variable formatSpec="{2}">new_event</Variable>
+		</MsgText>
+<Explanation>
+<p>Cada instancia de suceso debe tener un identificador de instancia global exclusivo.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Cree el suceso con un identificador de instancia global exclusivo.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0008E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0008E" prefix="yes">
+<MsgText pgmKey="CEIDS0008" varFormat="Java"> 			El sistema de agrupación de conexiones de WebSphere Application Server ha devuelto una conexión de base de datos que ya no es válida.<br/> 			Referencia al recurso del origen de datos:
+			<Variable formatSpec="{0}">data_source</Variable>
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Intente la operación de nuevo.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0009E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0009E" prefix="yes">
+<MsgText pgmKey="CEIDS0009" varFormat="Java"> 			No se ha podido obtener una conexión de base de datos desde la agrupación de conexiones tras <Variable formatSpec="{0}">maximum_retries</Variable> intentos de obtener una conexión.<br/> 			Referencia al recurso del origen de datos:
+			<Variable formatSpec="{1}">data_source</Variable>
+		</MsgText>
+<Explanation>
+<p>El sistema de agrupación de conexiones de WebSphere Application Server no ha podido devolver una conexión de base de datos utilizando la configuración actual de la agrupación de conexiones y el número de reintentos configurado.</p>
+</Explanation>
+<AdminResponse>
+<p>Realice una o más de las siguientes acciones:</p>
+<ul>
+<li>Vuelva a configurar el origen de datos aumentando el número máximo de conexiones.
+Esta opción mejora el rendimiento y la capacidad de proceso de sucesos.</li>
+<li>Vuelva a configurar el origen de datos aumentando el valor de tiempo de espera de conexión.</li>
+<li>En el perfil de almacén de datos, aumente el número de reintentos.</li>
+</ul>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0010E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0010I" prefix="yes">
+<MsgText pgmKey="CEIDS0010" varFormat="Java"> 			El parámetro de configuración maxCacheEntries debe ser mayor que o igual a <Variable formatSpec="{0}">minimum_cache_entries</Variable>.
+Sin embargo, se ha especificado <Variable formatSpec="{1}">maximum_cache_entries</Variable>. El valor de maxCacheEntries se ha establecido en <Variable formatSpec="{2}">new_cache_entries</Variable>.
+		</MsgText>
+<Explanation>
+<p>El parámetro de configuración maxCacheEntries especifica el número de expresiones convertidas del selector de sucesos que el almacén de datos puede almacenar en memoria caché. El almacenamiento en memoria caché de las expresiones convertidas del selector de sucesos mejora el rendimiento de la consulta y depuración de sucesos, ya que las expresiones del selector de sucesos almacenadas en memoria caché no se deben analizar ni convertir en SQL.</p>
+<p>Cuando el parámetro maxCacheEntries está establecido en cero (0), las expresiones convertidas del selector de sucesos no se almacenan en memoria caché. Por lo tanto, cada expresión del selector de sucesos especificada en una llamada a los métodos de consulta y depuración de sucesos debe analizarse y convertirse en una expresión SQL válida.</p>
+</Explanation>
+<AdminResponse>
+<p>En el perfil de almacén de datos, establezca el valor de maxCacheEntries en cero (0) o en un número mayor.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0011E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0011E" prefix="yes">
+<MsgText pgmKey="CEIDS0011" varFormat="Java"> 			El almacén de datos no puede encontrar la referencia al recurso en JNDI.<br/> 			Referencia al recurso:
+			<Variable formatSpec="{0}">resource_reference_name</Variable>
+		</MsgText>
+<Explanation>
+<p>El almacén de datos utiliza referencias a recursos para obtener el origen de datos que se utiliza para obtener conexiones a la base de datos y para el objeto que contiene la configuración del origen de datos. La información de referencia a recursos especificada durante la instalación no es válida. Por ejemplo, se ha especificado un nombre JNDI que no es válido para la referencia al recurso.</p>
+<p>Si el nombre de la referencia al recurso especificado es java:comp/env/DefaultDataStoreProfileReference, el almacén de datos no puede acceder a sus datos de configuración. Si el nombre de la referencia al recurso especificado es java:comp/env/EventDataSourceReference, el almacén de datos no puede acceder a su origen de datos.Si el nombre de la referencia al recurso especificado es java:comp/env/ejb/DataStoreHelperEJB, el almacén de datos no puede acceder al enterprise java bean de asistente de almacén de datos. 
+		</p>
+</Explanation>
+<AdminResponse>
+<p>En la Consola administrativa de WebSphere, vuelva a configurar la referencia al recurso especificada de forma que corresponda a un recurso JNDI válido.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0013E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0013E" prefix="yes">
+<MsgText pgmKey="CEIDS0013" varFormat="Java"> 			No se da soporte al atributo o elemento
+			<Variable formatSpec="{0}">name</Variable>
+			especificado en la expresión del selector de sucesos
+			<Variable formatSpec="{1}">expression</Variable>.
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique una expresión del selector de sucesos que contenga sólo atributos y elementos soportados.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0014E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0014E" prefix="yes">
+<MsgText pgmKey="CEIDS0014" varFormat="Java"> 			La expresión de predicado especificada en la expresión del selector de sucesos <Variable formatSpec="{0}">expression</Variable> no es válida y no se ha podido convertir en una expresión SQL válida.
+		</MsgText>
+<Explanation>
+<p>La causa más probable de este problema es la especificación de un único valor constante como predicado en una expresión.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique una expresión del selector de sucesos con una expresión de predicado válida.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0015E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0015E" prefix="yes">
+<MsgText pgmKey="CEIDS0015" varFormat="Java"> 			La función <Variable formatSpec="{1}">function</Variable> utilizada en la expresión del selector de sucesos <Variable formatSpec="{2}">expression</Variable> tiene un argumento que no es válido. El primer argumento de la función debe ser una constante de serie o una vía de acceso de ubicación que se pueda convertir en una columna en el almacén de datos de sucesos. El segundo argumento de la función debe ser una constante de serie.<br/> 			Argumento:
+			<Variable formatSpec="{0}">argument</Variable>
+		</MsgText>
+<Explanation>
+<p>El primer argumento de la función debe ser una constante de serie o una vía de acceso de ubicación que se pueda convertir en una columna en el almacén de datos de sucesos. </p>
+<p>El segundo argumento de la función debe ser una constante de serie. El equivalente en SQL de esta función, la función LIKE, requiere que el primer argumento sea una columna de tabla o una constante de serie y que el segundo argumento sea una constante de serie.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique una constante de serie o una vía de acceso de ubicación que se correlacione con una columna de tabla en la base de datos de sucesos como primer argumento de la función utilizada en la expresión del selector de sucesos.  Especifique una constante de serie como segundo argumento de la función que se utiliza en la expresión del selector de sucesos.</p>
+<p>En este ejemplo se muestra una expresión del selector de sucesos válida utilizando la función starts-with (empieza por).</p>
+<example>
+<p>CommonBaseEvent[starts-with(@msg,'Mi mensaje')]</p>
+</example>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0019E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0019E" prefix="yes">
+<MsgText pgmKey="CEIDS0019" varFormat="Java"> 			No se ha especificado ningún argumento para una función utilizada en la expresión del selector de sucesos.<br/>Expresión del selector de sucesos:
+			<Variable formatSpec="{1}">expression</Variable><br/>
+			Función:
+			<Variable formatSpec="{0}">function</Variable>
+		</MsgText>
+<Explanation>
+<p>Debe especificar un argumento para esta función.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique un argumento para la función.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0020E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0020E" prefix="yes">
+<MsgText pgmKey="CEIDS0020" varFormat="Java"> 			No se da soporte a la función utilizada en la expresión del selector de sucesos.<br/>Expresión del selector de sucesos:
+			<Variable formatSpec="{1}">expression</Variable><br/>
+			Función:
+			<Variable formatSpec="{0}">function</Variable>
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Especifique una expresión del selector de sucesos que utilice una función soportada.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0021E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0021E" prefix="yes">
+<MsgText pgmKey="CEIDS0021" varFormat="Java"> 			No se da soporte al tipo de expresión XPath especificado en la expresión del selector de sucesos.<br/>Tipo de expresión: <Variable formatSpec="{0}">expression_type</Variable><br/>Expresión del selector de sucesos: <Variable formatSpec="{1}">expression</Variable></MsgText>
+<Explanation>
+<p>Este release da soporte a los siguientes tipos de expresiones:</p>
+<ul>
+<li> 					Constante
+					<pre>1,2,'thisString'</pre> 				</li>
+<li> 					Vía de acceso de ubicación
+					<pre>CommonBaseEvent[@severity=10]</pre> 				</li>
+<li> 					Operación
+					<pre>@severity+10=20</pre> 				</li>
+<li> 					Función
+					<pre>contains(@msg)</pre> 				</li>
+</ul>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique una expresión XPath que utilice un tipo de expresión soportado.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0022E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0022E" prefix="yes">
+<MsgText pgmKey="CEIDS0022" varFormat="Java"> 			La expresión del selector de sucesos
+			<Variable formatSpec="{0}">expression</Variable>
+			no es válida. La herramienta de análisis del selector de sucesos ha devuelto el siguiente mensaje: 			<Variable formatSpec="{1}">message</Variable>
+		</MsgText>
+<Explanation>
+<p>Las siguientes son posibles causas de esta excepción:</p>
+<ul>
+<li>No se ha cerrado un corchete de predicado. Por ejemplo, en CommonBaseEvent[@severity='10 falta un corchete de cierre y debería especificarse como CommonBaseEvent[@severity='10'].</li>
+<li>Una función tiene un número incorrecto de argumentos. Por ejemplo, las funciones starts-with (empieza por) y contains (contiene) requieren dos argumentos.</li>
+<li>Falta una comilla de cierre en una constante de serie. Por ejemplo, en CommonBaseEvent[@severity='10] falta una comilla de cierre, y debería especificarse como CommonBaseEvent[@severity='10'].</li>
+<li>Falta un paréntesis de cierre. Por ejemplo, en CommonBaseEvent[(@severity+10=20] falta un paréntesis de cierre, y debería especificarse como CommonBaseEvent[(@severity+10)=20].</li>
+<li>Una constante de serie no tiene comillas. Por ejemplo, en CommonBaseEvent[@creationTime=2003-12-31T12:00:00Z] faltan las comillas al inicio y final de la serie de fecha y hora, y debería especificarse como CommonBaseEvent[@creationTime='2003-12-31T12:00:00Z'].</li>
+</ul>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique una expresión del selector de sucesos válida.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0023E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0023E" prefix="yes">
+<MsgText pgmKey="CEIDS0023" varFormat="Java"> 			La expresión del selector de sucesos
+			<Variable formatSpec="{0}">expression</Variable>
+			no es válida. El elemento CommonBaseEvent no tiene un predicado asociado.
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique una expresión del selector de sucesos con un predicado asociado al elemento de CommonBaseEvent.</p>
+<p>Por ejemplo, la siguiente expresión del selector de sucesos devuelve una expresión SQL que selecciona todos los sucesos de la base de datos de sucesos. Por ejemplo,
+			CommonBaseEvent[@globalInstanceId]</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0024E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0024E" prefix="yes">
+<MsgText pgmKey="CEIDS0024" varFormat="Java"> 			La función <Variable formatSpec="{0}">function</Variable> utilizada en la expresión del selector de sucesos <Variable formatSpec="{1}">expression</Variable> se ha especificado con un número incorrecto de argumentos.  La función debería especificarse con <Variable formatSpec="{2}">number_of_arguments</Variable> argumentos.
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique la función con un número válido de argumentos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0025E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0025E" prefix="yes">
+<MsgText pgmKey="CEIDS0025" varFormat="Java"> 			La operación aritmética contiene un operando que no es un valor numérico.<br/> 			Operación:
+			<Variable formatSpec="{0}">operation</Variable>
+		</MsgText>
+<Explanation>
+<p>Los siguientes operandos aritméticos sólo dan soporte a operandos numéricos: +, -, *, div, mod, &lt;, &gt;, &lt;=, &gt;=</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique dos valores numéricos para esta operación.</p>
+<p>En el siguiente ejemplo se muestra una expresión del selector de sucesos válida utilizando la operación de suma.</p>
+<example>
+<p>CommonBaseEvent[@severity = 10 + 1]</p>
+</example>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0026E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0026E" prefix="yes">
+<MsgText pgmKey="CEIDS0026" varFormat="Java"> 			La operación contiene operandos que no son compatibles.<br/> 			Operación:
+			<Variable formatSpec="{0}">operation</Variable>
+		</MsgText>
+<Explanation>
+<p>La causa más probable de este problema es la utilización de un valor numérico para un operando y un valor de serie que no puede convertirse en un valor numérico para el otro operando.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique operandos de tipos compatibles.</p>
+<p>En el siguiente ejemplo se muestra una expresión del selector de sucesos válida utilizando la operación de igual a.</p>
+<example>
+<p>CommonBaseEvent[@severity = '10']</p>
+</example>
+<p>Puesto que el valor de la serie 10 puede convertirse en el valor numérico 10, la operación es válida y los tipos son compatibles.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0027E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0027E" prefix="yes">
+<MsgText pgmKey="CEIDS0027" varFormat="Java"> 			Se ha producido un error al escribir un elemento CommonBaseEvent en la base de datos. Se ha detenido la operación.
+			<br/>			
+			Suceso:
+			<Variable formatSpec="{0}">event</Variable>
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el mensaje.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0028E     MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0028E" prefix="yes">
+<MsgText pgmKey="CEIDS0028" varFormat="Java"> 			Se ha producido un error al leer un elemento CommonBaseEvent desde la base de datos. Se ha detenido la operación.
+			<br/>			Identificador de instancia global:
+			<Variable formatSpec="{0}">global_id</Variable>
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el mensaje.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0029E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0029E" prefix="yes">
+<MsgText pgmKey="CEIDS0029" varFormat="Java"> 			Se ha producido un error al escribir un elemento de datos ampliados CommonBaseEvent con tipo de datos hexBinary en la base de datos. Se ha detenido la operación.<br/> 			Suceso:
+			<Variable formatSpec="{0}">event</Variable>
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el mensaje.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0030E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0030E" prefix="yes">
+<MsgText pgmKey="CEIDS0030" varFormat="Java"> 			Se ha producido un error al leer un elemento de datos ampliados CommonBaseEvent con tipo de datos hexBinary desde la base de datos. Se ha detenido la operación.<br/> 			Identificador de instancia global:
+			<Variable formatSpec="{0}">global_id</Variable>
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el mensaje.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0031W    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0031W" prefix="yes">
+<MsgText pgmKey="CEIDS0031" varFormat="Java"> 			El valor de configuración de los reintentos de conexión <Variable formatSpec="{0}">connection_retries_old_value</Variable> no es válido. El valor se ha cambiado por <Variable formatSpec="{1}">connection_retries_new_value</Variable>.
+		</MsgText>
+<Explanation>
+<p>El valor de configuración de reintentos de conexión especifica el número de veces que el almacén de datos intenta obtener una conexión de base de datos desde la agrupación de conexiones. Si no se puede obtener una conexión en el número de reintentos especificado, el almacén de datos genera una excepción. Un valor de 0 especifica que el almacén de datos no volverá a intentar la operación.</p>
+</Explanation>
+<AdminResponse>
+<p>En el perfil de almacén de datos, establezca el valor de los reintentos de conexión en 0 o más.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0032W    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0032W" prefix="yes">
+<MsgText pgmKey="CEIDS0032" varFormat="Java"> 			El valor de configuración del umbral de consulta <Variable formatSpec="{0}">query_threshold_old_value</Variable> no es válido. El valor se ha cambiado por <Variable formatSpec="{1}">query_threshold_new_value</Variable>.
+		</MsgText>
+<Explanation>
+<p>El valor de configuración del umbral de consulta especifica el número máximo de sucesos que los métodos queryEvents pueden devolver. Este valor debe ser 1 o más.</p>
+</Explanation>
+<AdminResponse>
+<p>En el perfil de almacén de datos, establezca el valor del umbral de consulta en 1 o más.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0033I    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0033W" prefix="yes">
+<MsgText pgmKey="CEIDS0033" varFormat="Java"> 			El tamaño máximo de la transacción de depuración <Variable formatSpec="{0}">purge_threshold_old_value</Variable> no es válido. El valor se ha cambiado por <Variable formatSpec="{1}">purge_threshold_new_value</Variable>.
+		</MsgText>
+<Explanation>
+<p>El valor de configuración del tamaño máximo de la transacción de depuración especifica el número máximo de sucesos que se pueden suprimir en una sola llamada purgeEvents.
+Este valor debe ser 1 o más.</p>
+</Explanation>
+<AdminResponse>
+<p>En el perfil de almacén de datos, establezca el valor del tamaño máximo de la transacción de depuración en 1 o más.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0034E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0034E" prefix="yes">
+<MsgText pgmKey="CEIDS0034" varFormat="Java"> 			No se da soporte al operador utilizado en la operación de la expresión del selector de sucesos <Variable formatSpec="{0}">operation</Variable>.
+		</MsgText>
+<Explanation>
+<p>Se da soporte a los siguientes operadores de expresión del selector de sucesos:</p>
+<ul>
+<li>+,-,*, div, mod</li>
+<li>=, !=, &lt;, &gt;, &lt;=, &gt;=</li>
+<li>and, or</li>
+</ul>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique una expresión del selector de sucesos que utilice un operador soportado.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0035E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0035E" prefix="yes">
+<MsgText pgmKey="CEIDS0035" varFormat="Java"> 			No se puede cargar la clase de implementación que da soporte al sistema de base de datos relacional configurado.
+			<br/> 			Nombre de clase de implementación:
+			<Variable formatSpec="{0}">class_name</Variable>
+			<br/>
+			Nombre de base de datos relacional:
+			<Variable formatSpec="{1}">rdbms_name</Variable>
+			<br/>
+			Versión de base de datos:
+			<Variable formatSpec="{2}">rdbms_version</Variable>			
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Asegúrese de que la clase de implementación especificada esté incluida en la variable CLASSPATH.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0036E    MSG_COMPLETE                                      -->
+<!--  This message is used when the database vendor and version are    -->
+<!--  known.                                                           -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0036E" prefix="yes">
+<MsgText pgmKey="CEIDS0036" varFormat="Java"> 			El sistema de gestión de bases de datos relacionales ha informado sobre el siguiente error.<br/> 			Referencia al recurso del origen de datos:
+			<Variable formatSpec="{0}">data_source</Variable>
+			<br/>
+			Producto de base de datos:
+			<Variable formatSpec="{1}">rdbms_name</Variable>
+			<br/>
+			Versión de base de datos:
+			<Variable formatSpec="{2}">rdbms_version</Variable>
+			<br/>
+			Estado de SQL:
+			<Variable formatSpec="{3}">sql_state</Variable>
+			<br/>
+			Código de proveedor:
+			<Variable formatSpec="{4}">vendor_code</Variable>
+			<br/>
+			Mensaje:
+			<Variable formatSpec="{5}">message</Variable>
+		</MsgText>
+<Explanation>
+<p>El estado de SQL es el código de error JDBC estándar para el problema notificado.
+El código de proveedor es el código de error específico del proveedor de la base de datos. El parámetro de mensaje es el mensaje de error traducido devuelto por el sistema de gestión de bases de datos relacionales.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte la documentación de la base de datos relacional adecuada para obtener información sobre el estado de SQL, el código de proveedor y el mensaje de error.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0037E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0037E" prefix="yes">
+<MsgText pgmKey="CEIDS0037" varFormat="Java"> 			La expresión del selector de sucesos <Variable formatSpec="{0}">expression</Variable> especificada hace referencia al elemento values sin especificar el tipo de elemento de datos ampliados correspondiente.
+		</MsgText>
+<Explanation>
+<p>Cuando se especifica el elemento values en una expresión del selector de sucesos, también se debe especificar el tipo de selector de sucesos correspondiente.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Identifique el tipo de selector de sucesos del elemento values especificado en la expresión del selector de sucesos utilizando el operador <em>and</em>.</p>
+<p>Una expresión del selector de sucesos válida que haga referencia al elemento values puede ser similar al ejemplo siguiente.</p>
+<example>
+<p>CommonBaseEvent[extendedDataElements[values=1 and @type='intArray' ]]</p>
+</example>
+<p>La operación <em>and</em> en las expresiones del elemento values y del atributo type deben estar situadas dentro de la expresión de predicado de un elemento extendedDataElements.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0038E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0038E" prefix="yes">
+<MsgText pgmKey="CEIDS0038" varFormat="Java">No se da soporte al carácter comodín <Variable formatSpec="{1}">character</Variable> de XPath que se utiliza en la expresión del selector de sucesos <Variable formatSpec="{0}">expression</Variable> especificada.
+		</MsgText>
+<Explanation>
+<p>No se da soporte a los caracteres comodín de XPath.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique la expresión XPath sin utilizar ningún carácter comodín de XPath.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0039E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0039E" prefix="yes">
+<MsgText pgmKey="CEIDS0039" varFormat="Java"> 			El atributo type utilizado en la expresión del selector de sucesos <Variable formatSpec="{0}">expression</Variable> está en conflicto con otro atributo type ya especificado.
+ </MsgText>
+<Explanation>
+<p>Los atributos type de elemento de datos ampliados no se pueden especificar conjuntamente con otros utilizando el operador <em>and</em>.
+		</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique la expresión del selector de sucesos sin utilizar dos atributos type de elemento de datos ampliados que estén en conflicto.</p>
+<p>Por ejemplo, la siguiente expresión del selector de sucesos no es válida porque los atributos type están en conflicto.</p>
+<example>
+<p>CommonBaseEvent[extendedDataElements[values=1 and @type='intArray'  and @type='float']]</p>
+</example>
+<p>Esta expresión se puede reescribir correctamente de la siguiente forma:</p>
+<example>
+<p>CommonBaseEvent[extendedDataElements[values=1 and @type='intArray'] and extendedDataElements[@type='float']]</p>
+</example>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0040E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0040E" prefix="yes">
+<MsgText pgmKey="CEIDS0040" varFormat="Java"> 			La expresión del selector de sucesos <Variable formatSpec="{0}">expression</Variable> está especificada con predicados apilados.
+ No se da soporte a predicados apilados.
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique la expresión del selector de sucesos sin utilizar predicados apilados. </p>
+<p>Por ejemplo, la siguiente expresión del selector de sucesos no es válida porque existen varios predicados en el elemento CommonBaseEvent.</p>
+<example>
+<p>CommonBaseEvent[@severity=10][@priority=10]</p>
+</example>
+<p>Esta expresión se puede reescribir correctamente de la siguiente forma:</p>
+<example>
+<p>CommonBaseEvent[@severity=10 and @priority=10]</p>
+</example>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0041E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0041E" prefix="yes">
+<MsgText pgmKey="CEIDS0041" varFormat="Java"> 			El valor del parámetro
+			<Variable formatSpec="{0}">function_parameter</Variable>
+			especificado para la función
+			<Variable formatSpec="{1}">xpath_function</Variable> en la
+			expresión del selector de sucesos
+			<Variable formatSpec="{2}">expression</Variable>
+			no coincide con ningún tipo de elemento de datos ampliados conocido.
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique un valor para la función que coincida con al menos un tipo de elemento de datos ampliados.</p>
+<p>Por ejemplo, la siguiente expresión del selector de sucesos es válida porque la función starts-with (empieza por) coincide con los tipos de elemento de datos ampliados int e intArray.</p>
+<example>
+<p>CommonBaseEvent[extendedDataElements[starts-with(@type,'int')]]</p>
+</example>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0042I    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0042I" prefix="yes">
+<MsgText pgmKey="CEIDS0042" varFormat="Java">             Se está cambiando el depósito actual
+<Variable formatSpec="{0}">old_bucket</Variable>
+			por el depósito
+			<Variable formatSpec="{1}">new_bucket</Variable>.
+		</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIDS0043E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0043E" prefix="yes">
+<MsgText pgmKey="CEIDS0043" varFormat="Java"> 			El valor
+			<Variable formatSpec="{0}">property_value</Variable>
+			para la propiedad
+			<Variable formatSpec="{1}">property_name</Variable>
+			no se puede convertir en un entero. Se utilizará el valor predeterminado <Variable formatSpec="{2}">default_value</Variable>.
+		</MsgText>
+<Explanation>
+<p>El valor de la propiedad especificado se está leyendo de la tabla cei_t_properties. El valor almacenado en la columna property_value, que es una serie, no se puede convertir en un valor entero. Se puede restablecer el contenido de la tabla cei_t_properties a los valores predeterminados ejecutando el script ins_metadata.</p>
+</Explanation>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0044E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0044E" prefix="yes">
+<MsgText pgmKey="CEIDS0044" varFormat="Java"> 			El valor
+			<Variable formatSpec="{0}">property_value</Variable>
+			de la propiedad
+			<Variable formatSpec="{1}">property_name</Variable>
+			es mayor que el valor máximo permitido:
+			<Variable formatSpec="{2}">maximum_value</Variable>.
+			Se utilizará el valor predeterminado <Variable formatSpec="{3}">default_value</Variable>.
+		</MsgText>
+<Explanation>
+<p>El valor de la propiedad especificado se está leyendo de la tabla cei_t_properties. El valor almacenado en la columna property_value, que es una serie, se puede convertir en un valor entero, pero el valor es superior al valor máximo permitido. Se puede restablecer el contenido de la tabla cei_t_properties a los valores predeterminados ejecutando el script ins_metadata.</p>
+</Explanation>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0045E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0045E" prefix="yes">
+<MsgText pgmKey="CEIDS0045" varFormat="Java"> 			El valor
+			<Variable formatSpec="{0}">property_value</Variable>
+			de la propiedad
+			<Variable formatSpec="{1}">property_name</Variable>
+			es menor que el valor mínimo permitido:
+			<Variable formatSpec="{2}">minimum_value</Variable>. Se utilizará el valor predeterminado <Variable formatSpec="{3}">default_value</Variable>.
+		</MsgText>
+<Explanation>
+<p>El valor de la propiedad especificado se está leyendo de la tabla cei_t_properties. El valor almacenado en la columna property_value, que es una serie, se puede convertir en un valor entero, pero el valor es inferior al valor mínimo permitido. Se puede restablecer el contenido de la tabla cei_t_properties a los valores predeterminados ejecutando el script ins_metadata.</p>
+</Explanation>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0046I   MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0046I" prefix="yes">
+<MsgText pgmKey="CEIDS0046" varFormat="Java">             No se ha encontrado la propiedad <Variable formatSpec="{0}">property_name</Variable>. Se utilizará el valor predeterminado <Variable formatSpec="{1}">default_value</Variable>.
+		</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIDS0047I    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0047I" prefix="yes">
+<MsgText pgmKey="CEIDS0047" varFormat="Java">             Hay una depuración rápida en curso. Sólo se accederá al depósito activo. El depósito activo es <Variable formatSpec="{0}">active_bucket</Variable>.
+		</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIDS0048I    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0048I" prefix="yes">
+<MsgText pgmKey="CEIDS0048" varFormat="Java">             Se está consultando la base de datos para encontrar el suceso con ID
+            <Variable formatSpec="{0}">global_id</Variable> del depósito <Variable formatSpec="{1}">search_bucket</Variable>. El depósito se omite porque hay una depuración rápida en curso. 	 
+  </MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIDS0049E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0049E" prefix="yes">
+<MsgText pgmKey="CEIDS0049" varFormat="Java"> El atributo de gravedad del suceso con ID de instancia global
+			<Variable formatSpec="{0}">global_id</Variable>
+			no se puede establecer en
+			<Variable formatSpec="{1}">new_severity_value</Variable>
+			porque ya está establecido en
+			<Variable formatSpec="{2}">old_severity_value</Variable>.
+		</MsgText>
+<Explanation>
+<p>El esquema CommonBaseEvent no permite cambiar el atributo de gravedad una vez que ya se ha establecido. Se ha enviado una solicitud de actualización de un evento que pretendía establecer el atributo de gravedad en un suceso que ya tenía un valor de gravedad.
+La aplicación emisora de la llamada debería modificarse para que no intente establecer el atributo de gravedad en el suceso especificado.</p>
+</Explanation>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0050I    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0050I" prefix="yes">
+<MsgText pgmKey="CEIDS0050" varFormat="Java">          Los sucesos no se pueden insertar en el depósito <Variable formatSpec="{0}">bucket_number</Variable> porque no está activo. Los sucesos se insertan en el depósito activo. El depósito activo es <Variable formatSpec="{1}">active_bucket</Variable>.
+		</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIDS0051E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0051E" prefix="yes">
+<MsgText pgmKey="CEIDS0051" varFormat="Java"> 			No se puede actualizar el suceso con el ID de instancia global <Variable formatSpec="{0}">global_id</Variable> porque no existe en la base de datos.</MsgText>
+<Explanation>
+<p>Una solicitud de actualización de un suceso especificó un suceso que ya no existe en la base de datos. Esto puede ocurrir si se lleva a cabo una depuración de sucesos.</p>
+</Explanation>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0052E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0052E" prefix="yes">
+<MsgText pgmKey="CEIDS0052" varFormat="Java"> 			El depósito activo actual <Variable formatSpec="{0}">active_bucket</Variable> no puede cambiarse por el depósito <Variable formatSpec="{1}">new_bucket</Variable> porque el depósito <Variable formatSpec="{2}">new_bucket</Variable> todavía contiene datos de sucesos.</MsgText>
+<Explanation>
+<p>Todos los sucesos del depósito inactivo deben depurarse antes de poder cambiar el depósito activo. Utilice la depuración rápida para depurar todos los sucesos del depósito inactivo.</p>
+</Explanation>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0053E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0053E" prefix="yes">
+<MsgText pgmKey="CEIDS0053" varFormat="Java"> 			La base de datos de sucesos está configurada para utilizar un único depósito. No se puede modificar el depósito activo actual.</MsgText>
+<Explanation>
+<p>La base de datos de sucesos sólo contiene un conjunto de tablas, un depósito, para almacenar los datos de sucesos. De modo que sólo hay un depósito activo. No se puede utilizar el script eventbucket.jacl para modificar el depósito activo.</p>
+</Explanation>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0054I    MSG_COMPLETE                                    -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0054I" prefix="yes">
+<MsgText pgmKey="CEIDS0054" varFormat="Java">                         Número de depósitos:
+			<Variable formatSpec="{0}">number_buckets</Variable>
+			<br/>
+            Depósito actual:
+            <Variable formatSpec="{1}">active_bucket</Variable>
+            <br/>
+            Intervalo de comprobación del depósito (segundos):
+            <Variable formatSpec="{2}">bucket_check_interval</Variable>
+		</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIDS0055E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0055E" prefix="yes">
+<MsgText pgmKey="CEIDS0055" varFormat="Java"> 		El esquema de la base de datos no es compatible con el almacén de datos predeterminado. La versión del esquema de la base de datos es <Variable formatSpec="{0}">actual_schema_version</Variable>.
+		La versión necesaria es <Variable formatSpec="{1}">required_schema_version</Variable>.
+		</MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0056I    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0056I" prefix="yes">
+<MsgText pgmKey="CEIDS0056" varFormat="Java">             La versión del esquema de la base de datos es <Variable formatSpec="{0}">actual_schema_version</Variable>.
+ 		</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIDS0057E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0057E" prefix="yes">
+<MsgText pgmKey="CEIDS0057" varFormat="Java">               La vía de acceso de ubicación principal <Variable formatSpec="{0}">parent_location_xpath</Variable> de la solicitud de actualización del suceso para el suceso con ID de instancia global <Variable formatSpec="{1}">global_id</Variable> no hace referencia a ninguna instancia de elemento de datos ampliados del suceso. No se puede llevar a cabo la solicitud de actualización del suceso.		  		</MsgText>
+<Explanation>
+<p>La expresión Xpath para el elemento de datos ampliados principal es una expresión Xpath válida y no hace referencia a ninguna instancia de elemento de datos ampliados existente. La aplicación emisora de la llamada debe modificarse para que la expresión Xpath haga referencia a, como mínimo, un elemento de datos ampliados del suceso.</p>
+</Explanation>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0058E    MSG_REVIEW_DEV                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0058E" prefix="yes">
+<MsgText pgmKey="CEIDS0058" varFormat="Java">La tabla de base de datos <Variable formatSpec="{0}">table_name</Variable> no existe para el esquema <Variable formatSpec="{1}">schema_name</Variable>. El almacén de datos predeterminado no puede iniciarse. <br/>Referencia al recurso del origen de datos: <Variable
+formatSpec="{2}">data_source</Variable></MsgText>
+<Explanation>
+<p>No se ha encontrado una tabla de base de datos necesaria utilizando el nombre de tabla SQL completo, que incluye el UD de usuario utilizado para conectar a la base de datos. Esto indica que se ha utilizado un ID de usuario distinto para crear la base de datos de sucesos y, como consecuencia, el nombre de tabla completo es distinto. </p>
+</Explanation>
+<AdminResponse>
+<p>El ID de usuario utilizado para conectarse a la base de datos durante la ejecución debe ser el mismo que el ID de usuario que se utilizó para crear la base de datos. Cambie la información de conexión en el origen de datos, de forma que indique el ID de usuario correcto.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0059E    MSG_REVIEW_DEV                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0059E" prefix="yes">
+<MsgText pgmKey="CEIDS0059" varFormat="Java">La tabla de base de datos			 			<Variable
+formatSpec="{0}">table_name</Variable> no existe. El almacén de datos predeterminado no puede iniciarse. <br/>Referencia al recurso del origen de datos: <Variable formatSpec="{1}">data_source</Variable></MsgText>
+<Explanation>
+<p>No se ha encontrado una tabla de base de datos necesaria utilizando el nombre de tabla SQL completo, que incluye el UD de usuario utilizado para conectar a la base de datos. Esto indica que se ha utilizado un ID de usuario distinto para crear la base de datos de sucesos y, como consecuencia, el nombre de tabla completo es distinto. </p>
+</Explanation>
+<AdminResponse>
+<p>El ID de usuario utilizado para conectarse a la base de datos durante la ejecución debe ser el mismo que el ID de usuario que se utilizó para crear la base de datos. Cambie la información de conexión en el origen de datos, de forma que indique el ID de usuario correcto.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0060E    MSG_REVIEW_DEV                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0060E" prefix="yes">
+<MsgText pgmKey="CEIDS0060" varFormat="Java">La tabla de metadatos <Variable formatSpec="{0}">table_name</Variable> en el esquema
+<Variable formatSpec="{1}">schema_name</Variable> está vacía. El almacén de datos predeterminado no puede iniciarse.               <br/>Referencia al recurso del origen de datos: <Variable
+formatSpec="{2}">data_source</Variable></MsgText>
+<Explanation>
+<p>La tabla de metadatos especificada correlaciona los elementos y atributos de Common Base Event con las tablas y columnas de la base de datos. Estos metadatos son necesarios para que el almacén de datos predeterminado pueda funcionar. </p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el script ins_metadata para crear la tabla de metadatos necesaria. Este
+script se utiliza para llenar la tabla de metadatos al crearse la base de datos de sucesos, y puede ejecutarse varias veces sin ningún riesgo. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0061E    MSG_REVIEW_DEV                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIDS0061E" prefix="yes">
+<MsgText pgmKey="CEIDS0061" varFormat="Java">La tabla de metadatos <Variable formatSpec="{0}">table_name</Variable> está vacía. El almacén de datos predeterminado no puede iniciarse.               <br/>Referencia al recurso del origen de datos: <Variable formatSpec="{1}">data_source</Variable></MsgText>
+<Explanation>
+<p>La tabla de metadatos especificada correlaciona los elementos y atributos de Common Base Event con las tablas y columnas de la base de datos. Estos metadatos son necesarios para que el almacén de datos predeterminado pueda funcionar. </p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el script ins_metadata para crear la tabla de metadatos necesaria. Este
+script se utiliza para llenar la tabla de metadatos al crearse la base de datos de sucesos, y puede ejecutarse varias veces sin ningún riesgo. </p>
+</AdminResponse>
+</Message>
+</TMSSource>

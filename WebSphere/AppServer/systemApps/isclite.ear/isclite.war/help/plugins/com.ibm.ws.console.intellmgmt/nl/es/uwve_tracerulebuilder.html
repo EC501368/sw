@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores del generador de subexpresiones" />
+<meta name="abstract" content="El generador de subexpresiones sirve para generar condiciones complejas de normas a partir de una subexpresión utilizando AND, OR, NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados u operadores lógicos a los que no se les da soporte." />
+<meta name="description" content="El generador de subexpresiones sirve para generar condiciones complejas de normas a partir de una subexpresión utilizando AND, OR, NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados u operadores lógicos a los que no se les da soporte." />
+<meta name="DC.Relation" scheme="URI" content="uwve_implugin.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_imtracespec.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_impluginprops.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_impluginpropscol.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_imremotecell.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2013" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2013" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="tracerulebuilder" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores del generador de subexpresiones</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="tracerulebuilder">
+<h1 class="title topictitle1">Valores del generador de subexpresiones</h1>
+<div class="body"><p class="shortdesc">El generador de subexpresiones sirve para generar
+condiciones complejas de normas a partir de una subexpresión utilizando AND, OR, NOT así
+como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados u operadores lógicos a los que no se les da soporte. </p>
+<p class="p"> Para ver esta página, pulse
+<span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt;
+<span class="ph uicontrol">Tipo de servidor</span> &gt; <span class="ph uicontrol">
+Servidores web</span> &gt;
+<span class="ph uicontrol"><var class="keyword varname">nombre_servidor_web</var></span>
+&gt; <span class="ph uicontrol"> Intelligent Management</span> &gt;
+<span class="ph uicontrol"> Especificación de rastreo</span> &gt; <span class="ph uicontrol">
+Generador de subexpresiones</span></span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es" id="logicaloperator"><h2 class="title topictitle2">Operador lógico</h2>
+<div class="body"><p class="shortdesc">La lista que se muestra a continuación incluye
+opciones de operadores lógicos: </p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla
+1. Operador lógico de rastreo</span></caption><thead class="thead" align="left"><tr class="row"><th class="entry" valign="top" width="28.28282828282828%" id="d18125e85">Operador</th>
+<th class="entry" valign="top" width="71.71717171717171%" id="d18125e87">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e85 "><samp class="ph codeph">OR</samp></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e87 ">Operador
+lógico <samp class="ph codeph">OR</samp>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e85 "><samp class="ph codeph">AND</samp></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e87 ">Operador
+lógico <samp class="ph codeph">AND</samp>. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e85 "><samp class="ph codeph">NOT</samp></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e87 ">Operador
+lógico <samp class="ph codeph">NOT</samp>. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es" id="selectoperand"><h2 class="title topictitle2">Seleccionar operando</h2>
+<div class="body"><p class="p">El operando forma parte de la regla de clasificación que
+utiliza el tiempo de ejecución para emparejar una regla con un trabajo. Por ejemplo, si
+especifica un tipo de protocolo igual a <kbd class="ph userinput">HTTP</kbd>, el tiempo
+de ejecución busca un trabajo que tenga un tipo de protocolo de <kbd class="ph userinput">HTTP</kbd>. 
+La lista que se muestra a continuación incluye opciones de operandos: </p>
+<div class="p"><div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla
+2. Operandos de solicitud HTTP</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="12.285714285714286%" id="d18125e139">Operando</th>
+<th class="entry" valign="bottom" width="24%" id="d18125e141">Sintaxis</th>
+<th class="entry" valign="bottom" width="63.714285714285715%" id="d18125e143">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">Host virtual</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">virtualhost</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 "><p class="p">Destino
+de host virtual de la solicitud, que se utiliza para configurar aplicaciones web en
+un nombre de host determinado.</p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">Puerto virtual
+</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">numeric</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 "><p class="p">
+Destino de puerto virtual de la solicitud, que se utiliza para configurar aplicaciones
+web en un puerto determinado.</p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">URI
+</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">uri</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 "><p class="p">Identificador
+universal de recursos</p>
+<p class="p">Ayuda a identificar la vía de acceso de la solicitud: si el URL es <span class="ph filepath">http://host:port/path?p1=v1</span>,
+la vía de acceso es <samp class="ph codeph">path</samp>.</p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">ID de usuario
+</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">userid</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">Devuelve
+el ID de usuario para el usuario autenticado que ha enviado la solicitud.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">ID de grupo
+</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">groupingid</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">Devuelve
+una lista de nombres de grupo para el usuario autenticado que ha enviado la solicitud.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">
+Nombre de parámetro de consulta de solicitud
+</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">queryparm$&lt;<var class="keyword varname">nombre</var>&gt;</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">Un valor y nombre de cabecera. <div class="p">Por ejemplo, la expresión <samp class="ph tt">queryparm$timezone='EST'</samp> comprueba una solicitud para ver si la solicitud contiene un parámetro de consulta HTTP con el nombre
+<samp class="ph codeph"><em class="ph i">timezone</em></samp> y un valor <samp class="ph codeph"><em class="ph i">EST</em></samp>.  Para comprobar si existe o no un parámetro de consulta, utilice uno de los siguientes formatos: <pre class="pre codeblock"><code>queryparm$timezone IS NOT NULL
+queryparm$timezone IS NULL</code></pre>
+</div>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">
+Nombre de cabecera de solicitud</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">header$&lt;<var class="keyword varname">nombre</var>&gt;</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">Un valor y nombre de cabecera. <div class="p">Por ejemplo, la expresión <samp class="ph tt">header$Host='localhost'</samp> comprueba si una solicitud contiene la cabecera de host HTTP con un valor de <samp class="ph codeph"><em class="ph i">localhost</em></samp>.
+ Para comprobar si falta o no la cabecera de host, utilice una de las siguientes expresiones: <pre class="pre codeblock"><code>header$Host IS NOT NULL
+header$Host IS NULL</code></pre>
+</div>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">
+Nombre de cabecera de cookie</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">cookie$&lt;<em class="ph i">nombre</em>&gt;</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">Un nombre de cookie. <div class="p">
+Por ejemplo, la expresión
+<samp class="ph tt">cookie$My_Cookie_Name='My_Cookie_Value'</samp> comprueba una
+solicitud para ver si contiene un cookie denominado
+<samp class="ph codeph"><em class="ph i">My_Cookie_Name</em></samp> con un valor de
+<samp class="ph codeph"><em class="ph i">My_Cookie_Value</em></samp>. Para comprobar si falta o no un cookie determinado, utilice una de las siguientes expresiones: <pre class="pre codeblock"><code>cookie$<em class="ph i">MyCookieName</em> IS NOT NULL
+cookie$<em class="ph i">MyCookieName</em> IS NULL</code></pre>
+</div>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">
+Método HTTP</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">HTTPMethod</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">El método HTTP para la solicitud. Los valores posibles son POST, GET, PUT y DELETE.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">Host de cliente</p>
+		</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">clienthost</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">Nombre
+de host de cliente completo. Éste es el valor del nombre del host de mandatos de
+protocolo de Internet (IP). Este operando no admite los operadores numéricos como <samp class="ph codeph">&gt;, &gt;=, &lt;, &lt;=</samp>. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 ">		<p class="p">Cliente
+IPV4</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">clientipv4</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">Dirección IP de cliente que utiliza el tipo de dirección de cuatro elementos con puntos
+del Protocolo Internet de versión 4 (IPv4)
+<em class="ph i"><samp class="ph tt">n.n.n.n</samp></em>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 ">		<p class="p">Cliente
+IPV6</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">clientipv6</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">El tipo de dirección de 128 bits <em class="ph i"><samp class="ph tt">x:x:x:x:x:x:x:x</samp></em> de Internet Protocol versión 6 (IPv6) que sigue a la solicitud de comentarios 1924 (RFC 1924) del sistema cliente.  </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 ">		<p class="p">
+Host del servidor</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">serverhost</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">Nombre de host completo del servidor. 
+Este operando no admite los operadores numéricos como <samp class="ph codeph"> &gt;,
+&gt;=, &lt;, &lt;=</samp>. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 ">		<p class="p">
+Servidor IPV4</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">serveripv4</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">La dirección IP del sistema servidor utilizando el tipo de dirección cuádruple con puntos IPv4 <samp class="ph tt"><em class="ph i">n.n.n.n</em></samp>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 ">	<p class="p">
+Servidor IPV6</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">serveripv6</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">El tipo de dirección de 128 bits de IPv6 <em class="ph i"> <samp class="ph tt">x:x:x:x:x:x:x:x</samp></em> después de RFC 1924 del sistema servidor.  </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">Puerto
+</p>
+		</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">port</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">El puerto de escucha en el que se ha recibido la solicitud.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 ">	 	<p class="p">
+Protocolo</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">protocol</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">El protocolo de comunicaciones que transmite la solicitud. Los protocolos soportados actualmente son HTTP, HTTPS, SOAP y SOAPS.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">
+Hora</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 ">
+<samp class="ph codeph">time</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 "><p class="p">
+Se utiliza para definir la fecha y la hora del día en que debe satisfacerse una solicitud
+específica. Los dos campos opcionales son <samp class="ph codeph">StartTime</samp> (Hora
+de inicio) y <samp class="ph codeph">EndTime</samp> (Hora de finalización).
+Si se recibe una solicitud fuera de la ventana definida, la solicitud no se procesa. </p>
+<p class="p">Los campos Hora de inicio y Hora de finalización tienen el siguiente formato:
+<samp class="ph tt">díadelasemana/díadelmes/mes/año::hora:minuto:segundo</samp>. </p>
+<p class="p">Por ejemplo, Jueves, 11 de abril, año 2007 a las 13:03:45 se especifica tal como se indica a continuación:</p>
+<p class="p">Jue/11/Abr/2007::13:03:45</p>
+<p class="p">Cualquier campo puede utilizar un comodín con el valor *. </p>
+<p class="p">Por ejemplo, el primero de cada mes se especifica como <samp class="ph codeph">*/1</samp>.</p>
+<p class="p">Los valores <samp class="ph codeph">dayofWeek</samp> son Lun, Mar, Mié, Jue,
+Vie, Sáb y Dom, y los valores <samp class="ph codeph">dayOfMonth</samp> van del 1 al 31. </p>
+<p class="p">El valor <samp class="ph codeph">month</samp> es un valor no numérico que
+representa los 12 meses: Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dec.</p>
+<p class="p">El valor <samp class="ph codeph">year</samp> consta de los cuatro dígitos del año. Por ejemplo, 2007. </p>
+<p class="p">El valor <samp class="ph codeph">time</samp> es la hora del día en el
+reloj de 24 horas. Por ejemplo, 8:00 se representa como ::8. Los valores
+<samp class="ph codeph">minute</samp> y <samp class="ph codeph">second</samp> son
+enteros que van del 0 al 59.</p>
+<p class="p">La barra inclinada (/) se utiliza para separar los parámetros de fecha, los
+dos puntos dobles (::) se utilizan para separar los parámetros de fecha y los dos puntos
+(:) se utilizan para separar los parámetros de hora del día. El valor booleano resultante
+de toda la norma en que se utiliza el operando <samp class="ph codeph">time</samp> es lo
+que determina la acción de direccionamiento que se toma.</p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">Porcentaje
+</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 "><samp class="ph codeph">percentage$&lt;<em class="ph i">val</em>&gt;</samp></td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">El porcentaje percentage se evalúa en <samp class="ph codeph">true</samp>, un porcentaje fijo del tiempo. <p class="p">Por ejemplo,  <samp class="ph codeph">percentage$50</samp> se evalúa en <samp class="ph codeph">true</samp> de promedio el 50% del tiempo.</p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="12.285714285714286%" headers="d18125e139 "><p class="p">Devolución incremental
+</p>
+</td>
+<td class="entry" valign="top" width="24%" headers="d18125e141 ">
+<samp class="ph codeph">rampup$&lt;<var class="keyword varname">hora de
+inicio</var>&gt;$&lt;<var class="keyword varname">hora de
+finalización</var>&gt;</samp><p class="lines">  </p>
+</td>
+<td class="entry" valign="top" width="63.714285714285715%" headers="d18125e143 ">El
+operando <samp class="ph codeph">rampup</samp> evalúa en <samp class="ph codeph">true</samp> un porcentaje variable del tiempo. 
+Siempre se evalúa en <samp class="ph codeph">false</samp> antes de
+<samp class="ph codeph">&lt;<em class="ph i">hora de inicio</em>&gt;</samp> y en
+<samp class="ph codeph">true</samp> después de
+<samp class="ph codeph">&lt;<em class="ph i">hora de finalización</em>&gt;</samp>.
+A medida que el tiempo pasa de
+<samp class="ph codeph">&lt;<em class="ph i">hora de inicio</em>&gt;</samp> a
+<samp class="ph codeph">&lt;<em class="ph i">hora de finalización</em>&gt;</samp>, se evalúa en
+<samp class="ph codeph">true</samp>, un porcentaje que aumenta de forma lineal. <p class="p">El formato de
+<samp class="ph codeph">&lt;<em class="ph i">hora de inicio</em>&gt;</samp> y
+<samp class="ph codeph">&lt;<em class="ph i">hora de finalización</em>&gt;</samp> es <samp class="ph tt">día/mes/año::hora:min:seg</samp>.</p>
+ donde <samp class="ph codeph">día</samp> es el día del mes,
+<samp class="ph codeph">mes</samp> es uno de los 12 meses: Ene, Feb, Mar, Abr, May,
+Jun, Jul, Ago, Sep, Oct, Nov, Dic, <samp class="ph codeph">año</samp> es el año de
+cuatro dígitos, <samp class="ph codeph">hora</samp> es la hora de dos dígitos del reloj
+de 24 horas, y <samp class="ph codeph">min</samp> y <samp class="ph codeph">seg</samp>
+son valores de 2 dígitos para minuto y segundo, respectivamente.  <p class="p">Por ejemplo,</p>
+<samp class="ph tt"> rampup$01/Jan/2007::08:00:00$01/Jan/2007::17:00:00</samp> empieza de vez en cuando a evaluarse en <samp class="ph codeph">true</samp> a las 8:00 el 1 Ene,
+2007 y siempre se evalúa en <samp class="ph codeph">true</samp> por la hora de finalización de la devolución incremental a las 17:00 del mismo día.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="topic nested1" id="operator"><h2 class="title topictitle2">Operador</h2>
+<div class="body"><p class="shortdesc">En función del operador que elija, especifique un
+valor para la subexpresión que desee crear. Todos los operadores se evalúan en valores
+booleanos. Los operadores no son sensibles a las mayúsculas y minúsculas:
+<samp class="ph codeph">AND</samp> es equivalente a <samp class="ph codeph">AnD</samp>.</p>
+<div class="p"><div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla
+3. Operadores de especificación de rastreo</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="28.28282828282828%" id="d18125e614">
+Operador</th>
+<th class="entry" valign="bottom" width="71.71717171717171%" id="d18125e616">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Equals Ignore Case (EQUALSIGNORECASE)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Operador
+que equivale a ignorar la distinción mayúsculas/minúsculas. Se ignora la distinción
+mayúsculas/minúsculas. <samp class="ph codeph">'ABC' EQUALSIGNORECASE 'abc'</samp> es
+true.  <samp class="ph codeph">('ABC' = 'abc')</samp> es false.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Not Equals (&lt; &gt;)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">El
+operador not equal expresa que el valor del operando no es igual al valor que
+especifique. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">In (IN)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 "><ul class="ul"><li class="li">En
+la <samp class="ph codeph"><var class="keyword varname">serie</var> IN
+<var class="keyword varname">lista de series</var></samp> se evalúa en true si la serie
+a la izquierda coincide exactamente (sensible a las mayúsculas y minúsculas) con una
+serie que se lista a la derecha. Por ejemplo: <ul class="ul"><li class="li"><var class="keyword varname">’adrian’</var> in <samp class="ph codeph">(<var class="keyword varname">'keith'</var>,<var class="keyword varname">'eric'</var>,<var class="keyword varname">'kalyan'</var>,<var class="keyword varname">'david'</var>, <var class="keyword varname">'adrian
+and etc'</var>)</samp> es false.</li>
+<li class="li"><samp class="ph codeph">'adrian'</samp> in
+<samp class="ph codeph">(<var class="keyword varname">'tom'</var>,<var class="keyword varname">'adrian'</var>)</samp> es
+true.</li>
+<li class="li"><var class="keyword varname">’adrian’</var> in
+<samp class="ph codeph">(<var class="keyword varname">'Tom'</var>,<var class="keyword varname">'Adrian'</var>)</samp>
+es false.</li>
+</ul>
+</li>
+<li class="li"><samp class="ph codeph"><var class="keyword varname">entero</var> IN
+<var class="keyword varname">lista de enteros</var></samp> : <ul class="ul"><li class="li"><samp class="ph codeph"><var class="keyword varname">1</var></samp>
+in <samp class="ph codeph">(<var class="keyword varname">1</var>,<var class="keyword varname">2</var>,<var class="keyword varname">3</var>,<var class="keyword varname">4</var>,<var class="keyword varname">5</var>)</samp> es
+true.</li>
+<li class="li"><samp class="ph codeph"><var class="keyword varname">6</var></samp> in
+<samp class="ph codeph">(<var class="keyword varname">1</var>,<var class="keyword varname">2</var>,<var class="keyword varname">3</var>,<var class="keyword varname">4</var>,<var class="keyword varname">5</var>)</samp> es
+false.</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Like (LIKE)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 "><p class="p">
+Expresa el patrón que coincide con los valores de operando de la serie. El valor debe contener el carácter comodín (<samp class="ph codeph">%</samp>)
+en la posición donde se espera que empiece la coincidencia de patrón. </p>
+<div class="p"> Por ejemplo, la expresión: <pre class="pre">host LIKE %blanca</pre>
+coincide con la palabra <samp class="ph tt">blanca</samp> y con cualquier palabra que
+finalice por <samp class="ph tt">blanca</samp>, mientras que la expresión <pre class="pre">host LIKE blanca%</pre>
+coincide con la palabra <samp class="ph tt">blanca</samp> y con cualquier otra palabra
+que empiece por <samp class="ph tt">blanca</samp>.
+La expresión:
+<pre class="pre">host LIKE %blanca%</pre>
+coincide con la palabra <samp class="ph tt">blanca</samp> y con cualquier palabra que
+contenga <samp class="ph tt">blanca</samp>.</div>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Like Ignore Case (LIKEIGNORECASE)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Este
+operador expresa la coincidencia de patrón para los valores de operando de serie.
+Se ignora la distinción mayúsculas/minúsculas. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Is Not Null (IS NOT NULL)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Una validación de la consulta muestra que existe el parámetro requerido.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Concatenate (+)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Este
+operador evalúa <samp class="ph codeph">'abc'+'def'</samp> como
+<samp class="ph codeph">'abcdef'</samp>. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Like In (LIKEIN)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Este
+operador expresa que <samp class="ph codeph"><var class="keyword varname">serie</var>
+likein  (<var class="keyword varname">serie1</var>,
+<var class="keyword varname">serie2</var>,
+<var class="keyword varname">serie3</var>,...)</samp> se evalúa en true si la serie a la
+izquierda de <samp class="ph codeph">likein</samp> coincide con una o varias series
+(<var class="keyword varname">stringN</var>).</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Is Null (IS NULL)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Una validación de la consulta muestra que el
+parámetro requerido no existe. Busca un operando que tenga un valor
+<samp class="ph codeph">NULL</samp>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Equals ( = )</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">El
+operador de igualdad expresa una coincidencia de mayúsculas y minúsculas. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Greater Than (&gt;)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Se
+evalúa en el resultado lógico estándar.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Greater Than or Equals (&gt;=)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Se evalúa
+en el resultado lógico estándar.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Less Than (&lt;)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Se evalúa
+en el resultado lógico estándar.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Less Than or Equals (&lt;=)</span></td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Se evalúa
+en el resultado lógico estándar.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="28.28282828282828%" headers="d18125e614 "><span class="ph uicontrol">Between (BETWEEN)</span> </td>
+<td class="entry" valign="top" width="71.71717171717171%" headers="d18125e616 ">Se
+utiliza con <samp class="ph codeph">AND</samp> para seleccionar un rango
+de valores incluyendo el primer valor (inferior) y el último (superior).
+Conjuntamente, operan en valores de fechas y números. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="topic nested1" id="value"><h2 class="title topictitle2">Valor
+</h2>
+<div class="body"><p class="shortdesc">Dependiendo del valor elegido, escriba un valor para la subexpresión que ha elegido crear.</p>
+</div>
+</div>
+<div class="topic nested1" id="generatesubexpression"><h2 class="title topictitle2">Generar subexpresión</h2>
+<div class="body"><p class="shortdesc">Genera la subexpresión como un resultado del
+operando, el operador y los valores especificados.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="append"><h2 class="title topictitle2">Agregar</h2>
+<div class="body"><p class="shortdesc">Pulse para agregar al recuadro en el panel de
+condiciones. </p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link" href="uwve_implugin.html" title="Utilice esta página para habilitar y configurar Intelligent Management para servidores web Apache o IBM HTTP.">Intelligent Management para plug-ins del servidor web</a></div>
+<div><a class="link" href="uwve_imtracespec.html" title="Utilice esta página para configurar el rastreo para el plug-in de servidor web.">Especificación de rastreo</a></div>
+<div><a class="link" href="uwve_impluginprops.html" title="Utilice esta página para configurar una propiedad de Intelligent Management para el plug-in de servidor web.">Propiedad de plug-in de Intelligent Management</a></div>
+<div><a class="link" href="uwve_impluginpropscol.html" title="Utilice esta página para configurar una célula remota para el plug-in de servidor web de Intelligent Management.">Recopilación de propiedades de Intelligent Management</a></div>
+<div><a class="link" href="uwve_imremotecell.html" title="Utilice esta página para configurar una célula remota para el plug-in de servidor web de Intelligent Management.">Célula remota para el servidor web de Intelligent Management</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: uwve_tracerulebuilder.html</span></body>
+</html>

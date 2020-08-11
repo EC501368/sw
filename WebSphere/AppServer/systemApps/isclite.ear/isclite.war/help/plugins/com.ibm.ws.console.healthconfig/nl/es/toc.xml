@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Políticas de salud" topic="index.html">
+   <topic label="Creación de una política de salud: definir las propiedades generales de la política de salud "
+          href="hc_detail_main_new.html"/>
+   <topic label="Creación de una política de salud: definir las propiedades de condición de salud de la política de salud"
+          href="hc_condition_detail_new.html"/>
+   <topic label="Creación de una política de salud: especificar los miembros a supervisar"
+          href="hc_appservers_detail_new.html"/>
+   <topic label="Colección de acciones personalizadas" href="hc_action_collection.html"/>
+   <topic label="Valores de acciones personalizadas" href="hc_custom_action.html"/>
+   <topic label="Generador de subexpresiones de condición de salud personalizada"
+          href="hc_condition_subex.html"/>
+   <topic label="Colección de políticas de salud" href="hc_collection.html"/>
+   <topic label="Valores de política de salud" href="hc_detail_main.html"/>
+</toc>

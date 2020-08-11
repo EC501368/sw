@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de topología" topic="index.html">
+   <topic label="Añadir un nodo basado en Windows como servicio Windows"
+          href="ae/uagt_rnode_winserv.html"/>
+   <topic label="Agregar valores de nodo gestionado" href="ae/uagt_rnode_add.html"/>
+   <topic label="Recuperar valores de nodo gestionado"
+          href="ae/uagt_replicated_node_add.html"/>
+   <topic label="Valores del servicio de administración" href="ae/uagt_radmin.html"/>
+   <topic label="Valores de clúster de copia de seguridad"
+          href="ae/urun_rwlm_backup.html"/>
+   <topic label="Valores de célula para gestores de despliegue" href="ae/uagt_rcell.html"/>
+   <topic label="Colección de miembros del clúster" href="ae/urun_rwlm_member.html"/>
+   <topic label="Valores de miembro del clúster" href="ae/urun_rwlm_member_inst.html"/>
+   <topic label="Colección de plantillas de miembro de clúster"
+          href="ae/urun_rwlm_member_template.html"/>
+   <topic label="Topología del clúster" href="ae/urun_rwlm_cluster_topology.html"/>
+   <topic label="Creación de un clúster: valores de clúster básicos"
+          href="ae/urun_rwlm_cluster_create1.html"/>
+   <topic label="Creación de un clúster: crear miembros de clúster adicionales"
+          href="ae/urun_rwlm_cluster_create3_v61.html"/>
+   <topic label="Creación de un clúster: en primer lugar, cree un miembro del clúster"
+          href="ae/urun_rwlm_cluster_create2_v61.html"/>
+   <topic label="Creación de un clúster: valores de resumen"
+          href="ae/urun_rwlm_cluster_create3.html"/>
+   <topic label="Colección de servicios personalizados" href="ae/urun_rsvr_services.html"/>
+   <topic label="Valores de servicio personalizado"
+          href="ae/urun_rsvr_services_inst.html"/>
+   <topic label="Valores del gestor de despliegue" href="ae/uagt_rcellmgr.html"/>
+   <topic label="Valores del servicio de rastreo de diagnóstico"
+          href="ae/utrb_traceservice.html"/>
+   <topic label="Valores de dirección de rutina de carga de dominio"
+          href="ae/urun_rwlm_dba.html"/>
+   <topic label="Valores del servicio de sincronización de archivos"
+          href="ae/uagt_rsynchservice.html"/>
+   <topic label="Valores del servicio de transferencia de archivos"
+          href="ae/uagt_rfileservice.html"/>
+   <topic label="Colección SDK Java" href="ae/uagt_installed_sdk.html"/>
+   <topic label="Colección de gestores de trabajo" href="ae/uagt_adminajm.html"/>
+   <topic label="Configuración del gestor de trabajos" href="ae/uagt_adminajm_inst.html"/>
+   <topic label="Valores de nivel de registro" href="ae/utrb_loglevel.html"/>
+   <topic label="Colección de agentes de nodo" href="ae/uagt_rnodeagent.html"/>
+   <topic label="Valores del servidor de agentes de nodo"
+          href="ae/uagt_rnodeagent_inst.html"/>
+   <topic label="Colección de nodos" href="ae/uagt_rnodes.html"/>
+   <topic label="Valores de nodo" href="ae/uagt_rnode_inst.html"/>
+   <topic label="Colección de puertos" href="ae/urun_rendpoint.html"/>
+   <topic label="Valores de puertos" href="ae/urun_rendpoint_inst.html"/>
+   <topic label="Valores de tipo de definición de proceso"
+          href="ae/urun_rconfproc_type.html"/>
+   <topic label="Registrar o anular registro con valores de gestor de trabajo"
+          href="ae/uagt_admina_regunregjmgr.html"/>
+   <topic label="Colección de clústeres de servidores" href="ae/urun_rwlm_cluster.html"/>
+   <topic label="Valores de clúster de servidores" href="ae/urun_rwlm_cluster_svr.html"/>
+   <topic label="Valores de seguridad a nivel de servidor" href="ae/usec_rsecserv.html"/>
+</toc>

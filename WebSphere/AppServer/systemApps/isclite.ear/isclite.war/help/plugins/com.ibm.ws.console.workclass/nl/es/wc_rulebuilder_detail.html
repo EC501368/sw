@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Generador de subexpresiones" />
+<meta name="abstract" content="El generador de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados u operadores lógicos a los que no se les da soporte." />
+<meta name="description" content="El generador de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados u operadores lógicos a los que no se les da soporte." />
+<meta name="DC.Relation" scheme="URI" content="odr_routing_policies.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_service_policies.html" />
+<meta name="DC.Relation" scheme="URI" content="wc_detail_rule.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="wc_rulebuilder_detail" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Generador de subexpresiones</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="wc_rulebuilder_detail">
+<h1 class="title topictitle1">Generador de subexpresiones</h1>
+<div class="body"><p class="shortdesc"> El generador de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis.
+El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados u operadores lógicos a los que no se les da soporte. </p>
+<p class="p">Para ver esta página de la consola administrativa, pulse<span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidores</span> &gt; <span class="ph uicontrol">Direccionadores On Demand</span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_odr</var></span> &gt; <span class="ph uicontrol">Propiedades del direccionador On Demand</span> &gt; <span class="ph uicontrol">Políticas de servicio de clústeres de servidores genéricos</span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_clase_trabajo</var></span> &gt; <span class="ph uicontrol">Añadir regla</span> &gt; <span class="ph uicontrol">Generador de subexpresiones</span></span>.</p>
+<p class="p">Hay que poseer privilegios administrativos de administrador para poder modificar normas con el generador de subexpresiones.</p>
+</div>
+<div class="topic nested1" xml:lang="es" id="selectoperand"><h2 class="title topictitle2">Seleccionar operando</h2>
+<div class="body"><p class="p">Dependiendo del protocolo seleccionado, se mostrarán distintos operandos.
+En la siguiente tabla se indican los nombres de los operandos tal como se muestran en la consola, el operando tal como aparecerá realmente en la expresión, los protocolos válidos para cada operando y la descripción de cada operando.</p>
+<div class="p"><div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 1. Operandos y sus descripciones</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="25%" id="d11747e76">Operando visualizado </th>
+<th class="entry" valign="bottom" width="25%" id="d11747e78">Operando</th>
+<th class="entry" valign="bottom" width="25%" id="d11747e80">Protocolos válidos</th>
+<th class="entry" valign="bottom" width="25%" id="d11747e82">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Nombre de aplicación</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">aplicación</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">IIOP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Nombre de la aplicación que contiene el EJB. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Host de cliente</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">clienthost</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP, IIOP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Nombre de host cliente totalmente calificado. Éste es el valor del nombre del host de mandatos
+de protocolo de Internet (IP). Este operando no da soporte a operadores numéricos  como <samp class="ph tt"> &gt;, &gt;=, &lt;, &lt;=</samp>. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Puerto de cliente</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">clientport</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">IIOP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Nombre del puerto del cliente. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Cliente IPV4</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">clientipv4</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Dirección IP versión 4 del cliente, utilizando el formato de dirección de cuatro puntos:  <em class="ph i"> <samp class="ph codeph">n.n.n.n</samp></em></span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Cliente IPV6</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">clientipv6</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Dirección IP versión 6 de 128 bits del tipo <samp class="ph codeph"><em class="ph i">x:x:x:x:x:x:x:x</em></samp> del sistema cliente. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Nombre de cabecera de cookie</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">cookie$&lt;<em class="ph i">nombre</em>&gt;</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Un nombre de cookie. Por ejemplo, la expresión <samp class="ph tt">cookie$My_Cookie_Name='My_Cookie_Value'</samp> comprueba si una solicitud contiene
+un cookie denominado <em class="ph i">My_Cookie_Name</em> con el valor <em class="ph i">My_Cookie_Value</em>. Para comprobar si falta o no un cookie determinado, utilice una de las siguientes expresiones: </span><ul class="ul"><li class="li">cookie$MyCookieName IS NOT NULL </li>
+<li class="li">cookie$MyCookieName IS NULL</li>
+</ul>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Nombre de módulo EJB</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">ejbmodule</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">IIOP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Nombre del módulo de un EJB. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Nombre de EJB</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">ejbname</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">IIOP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Nombre de un EJB. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Nombre de método EJB</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">ejbmethod</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">IIOP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Nombre de un método dentro del EJB. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">ID de grupo</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">gids$&lt;<em class="ph i">nombre</em>&gt;</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">ID de grupo del remitente de la petición. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Método HTTP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">HTTPMethod</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Método HTTP de la petición. Los valores posibles son POST, GET, PUT y DELETE.</span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Tipo de MIME</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">MIMEType</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Tipo MIME de la petición. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Puerto</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">port</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP, IIOP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Puerto de escucha en que se proporciona el servicio en el host.  </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Protocolo</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">protocol</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Protocolo de comunicaciones que transmite la petición. Los protocolos a los que actualmente se da soporte son HTTP, HTTPS, SOAP y SOAPS. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Nombre de cabecera de solicitud</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">header$&lt;<em class="ph i">nombre</em>&gt;</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><p class="p">Un valor y nombre de cabecera. Por ejemplo, la expresión <samp class="ph tt">header$Host='localhost'</samp> comprueba si una petición contiene la cabecera de host HTTP con un valor de localhost. Para comprobar si falta o no la cabecera de host, utilice una de las siguientes expresiones:</p>
+<p class="p"><samp class="ph codeph">header$Host
+IS NOT NULL  ,<samp class="ph codeph">header$Host IS NULL</samp></samp></p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Nombre de parámetro de consulta de petición</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">queryparm$&lt;<em class="ph i">nombre</em>&gt;</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Nombre de parámetro de consulta que se especifica en el URL de la solicitud. Para cada petición, hay una correlación de una pareja de nombre/valor de parámetros de consulta, si existen. El direccionador On Demand (ODR) utiliza el nombre del parámetro de la consulta de la petición como clave para buscar la correlación del parámetro, y si existe, extrae el valor para evaluar la expresión de la norma. Si la norma coincide, entonces se lleva a cabo la acción especificada. De lo contrario, se utiliza la acción por omisión para la clase de trabajo en que se define la expresión.</span><div class="p">Por ejemplo, la expresión <samp class="ph codeph">queryparm$timezone=EST</samp> comprueba una petición para ver si la petición contiene un parámetro de consulta HTTP con el nombre <samp class="ph codeph">timezone</samp> y un valor <samp class="ph codeph">EST</samp>. Para comprobar si falta o no un parámetro de consulta, utilice uno de los mandatos siguientes: <ul class="ul"><li class="li"><samp class="ph codeph">queryparm$<em class="ph i">timezone</em> IS NOT NULL</samp></li>
+<li class="li"><samp class="ph codeph">queryparm$<em class="ph i">timezone</em> IS NULL</samp></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Roles</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">roles$&lt;<em class="ph i">nombre</em>&gt;</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Rol del remitente de la petición.  </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Host del servidor</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">serverhost</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP, IIOP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Nombre de host totalmente calificado del servidor.
+Este operando no da soporte a operadores numéricos como <samp class="ph tt"> &gt;, &gt;=, &lt;, &lt;=.</samp> </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Servidor IPV4</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">serveripv4</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Dirección IP de la máquina de servidor utilizando el formato de dirección de cuatro puntos n.n.n.n de IPv4.
+</span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Servidor IPV6</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">serveripv6</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">Dirección con formato IPv6 de 128 bits de x:x:x:x:x:x:x:x de la máquina del servidor de acuerdo al RFC 1924. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Hora</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">hora</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP, IIOP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><p class="p">El operando de hora tiene el formato siguiente :</p>
+<div class="p"> 
+ <samp class="ph tt">díaSemana/díaMes/mes/año::hora:minuto:segundo</samp><ul class="ul"><li class="li"><em class="ph i">díaSemana</em>: los valores que se incluyen son Sun, Mon, Tue, Wed, Thu, Fri y Sat.</li>
+<li class="li"><em class="ph i">díaMes</em>: los valores que se incluyen son del 1 al 31.</li>
+<li class="li"><em class="ph i">mes</em>: representación numérica del mes, comenzando con enero como 1 y diciembre como 12. Por ejemplo, el valor numérico de 5 representa el mes de mayo.</li>
+<li class="li"><em class="ph i">año</em>: corresponde al año con un formato numérico de 4 dígitos. Por ejemplo, <em class="ph i">2007</em>.</li>
+<li class="li"><em class="ph i">hora</em>: es la hora del día en formato de reloj de 24 horas.</li>
+<li class="li"><em class="ph i">minutos</em>: son enteros en el intervalo 0 a 59</li>
+<li class="li"><em class="ph i">segundos</em>: son enteros en el intervalo 0 a 59</li>
+</ul>
+</div>
+<div class="p"><div class="note note"><span class="notetitle">Nota:</span> no se admiten omisiones y comodines para el operando <em class="ph i">hora</em> .</div>
+</div>
+<p class="p">La barra inclinada hacia delante (/) se utiliza para separar los parámetros de fecha, los dos puntos dobles (::) se utilizan para separar los parámetros de la fecha y la hora del día y los dos puntos (:) se utilizan para separar los parámetros de la hora del día.
+Observe que es el valor booleano resultante de toda la norma en que se utiliza el operando time es lo que determina la acción de direccionamiento que se toma.</p>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">ID de usuario</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">uid$&lt;<em class="ph i">nombre</em>&gt;</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph">ID de usuario del remitente de la petición.  </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Portal virtual</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">virtualportal</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">HTTP, SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><span class="ph"> El portal virtual es el URL de solicitud menos la raíz de contexto para el módulo web de la aplicación de WebSphere Portal. Si una petición dada coincide con el portal virtual que se define, se lleva a cabo la acción de direccionamiento definida para dicha norma. </span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="25%" headers="d11747e76 ">Expresión XPath</td>
+<td class="entry" valign="top" width="25%" headers="d11747e78 "><samp class="ph codeph">xpathexpr</samp></td>
+<td class="entry" valign="top" width="25%" headers="d11747e80 ">SOAP</td>
+<td class="entry" valign="top" width="25%" headers="d11747e82 "><p class="p">La expresión de la serie de texto XPath tiene un campo necesario que se utiliza para que contenga la expresión de XPath y un campo opcional para definir uno o varios espacios de nombres locales. Si todos los espacios de nombres en la expresión XPath son estándar, el segundo campo puede ser opcional.
+Si hay varios espacios de nombres locales, separe cada uno de ellos con una coma (,). A continuación se muestra un ejemplo de xpathexpr con una definición de espacio de nombres local:</p>
+<p class="p"><samp class="ph codeph">xpathexpr$/soap:Envelope/soap:Body/m:getTimeZone/n:clientId$m\\=http://test.classify.ws.ibm.com,n\\=http://test2.classify.ws.ibm.com
+= \\'1000\\' or operation IS NOT NULL</samp></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es" id="operator"><h2 class="title topictitle2">Operador</h2>
+<div class="body"><div class="p"><ul class="ul"><li class="li"><strong class="ph b">=</strong> El operador de equivalencia expresa una coincidencia sensible a las mayúsculas y minúsculas.</li>
+<li class="li"><strong class="ph b">&lt;&gt;</strong>: el operador distinto que indica que el valor del operando no es igual al valor entrado.</li>
+<li class="li"><strong class="ph b">&gt;</strong>: el operador mayor que se utiliza con los números.</li>
+<li class="li"><strong class="ph b">&gt;= </strong>: el operador mayor que o igual a se utiliza con números.</li>
+<li class="li"><strong class="ph b">&lt; </strong>: el operador menor que se utiliza con números.</li>
+<li class="li"><strong class="ph b">&lt;=</strong> el operador menor que o igual se utiliza con números.</li>
+<li class="li"><strong class="ph b">AND:</strong> para <em class="ph i"><kbd class="ph userinput">xx</kbd></em> AND <em class="ph i"><kbd class="ph userinput">yy</kbd>,</em> expresa
+las coincidencias que contienen <em class="ph i"><kbd class="ph userinput">xx</kbd></em>, <em class="ph i"><kbd class="ph userinput">yy</kbd></em>. </li>
+<li class="li"><strong class="ph b">BETWEEN:</strong> este operador se utiliza con AND para seleccionar un rango de valores
+incluido el primer valor, o inferior, y el último valor, o superior. Juntos, estos operadores se utilizan con números y fechas.</li>
+<li class="li"><strong class="ph b">EXISTS:</strong> este operador booleano comprueba un operando o el resultado de una subexpresión compuesta, por ejemplo, mientras comprueba determinados atributos de elementos de cabecera HTTP.</li>
+<li class="li"><strong class="ph b">IN:</strong> este operador expresa un operando con varios valores en una sola expresión. Por ejemplo, si, para un operando denominado <kbd class="ph userinput">port</kbd>,
+desea expresar que el valor de puerto puede ser cualquier valor o todos los valores de tipo <samp class="ph codeph"> 9080</samp>, <samp class="ph codeph">9090</samp>, <samp class="ph codeph">9091</samp>, el fragmento de la expresión será <kbd class="ph userinput"> port IN (9080,9090,9091)</kbd>.
+El modo de expresar los valores dentro de los paréntesis depende del tipo de datos del
+puerto. Si el puerto es un entero, la sintaxis correcta es especificar los valores sin comillas. Si el puerto es una serie, la sintaxis correcta es <kbd class="ph userinput">port IN (9080,9090,9091)</kbd>.</li>
+<li class="li"><strong class="ph b">IS NULL: </strong>Este operador expresa que una validación de la consulta muestra que el
+parámetro no existe. </li>
+<li class="li"><strong class="ph b">IS NOT NULL: </strong>este operador expresa que una validación de la consulta muestra que existe el parámetro requerido.</li>
+<li class="li"><strong class="ph b">LIKE: </strong>este operador expresa la coincidencia de patrones para los valores de operando de la serie. El valor debe contener como carácter comodín el signo de porcentaje (%) en la posición en la que empieza la coincidencia del patrón. Por ejemplo, la expresión <kbd class="ph userinput">host LIKE %blanca</kbd> coincide con la palabra
+blanca, o con cualquier otra palabra que finalice por blanca, mientras que la expresión <kbd class="ph userinput">host
+LIKE blanca%</kbd> coincide con la palabra blanca o cualquier otra palabra que empiece por
+blanca, y la expresión <kbd class="ph userinput">host LIKE %blanca%</kbd> coincide con la palabra
+blanca o con cualquier palabra que incluya la palabra blanca.</li>
+<li class="li"><strong class="ph b">NOT: </strong>Para NOT <em class="ph i"><kbd class="ph userinput">xx</kbd></em>, este operador expresa las coincidencias
+que no contienen <em class="ph i"><kbd class="ph userinput">xx</kbd></em>.</li>
+<li class="li"><strong class="ph b">OR</strong>: para <em class="ph i"><kbd class="ph userinput">xx</kbd></em> OR <em class="ph i"><kbd class="ph userinput">yy</kbd></em>,
+este operador expresa las coincidencias que contienen o <em class="ph i"><kbd class="ph userinput">xx</kbd></em> o <em class="ph i"><kbd class="ph userinput">yy</kbd></em>. </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="topic nested1" id="value"><h2 class="title topictitle2">Valor</h2>
+<div class="body"><p class="shortdesc">Dependiendo del operador elegido, escriba un valor para la subexpresión que desea crear.</p>
+</div>
+</div>
+<div class="topic nested1" id="buildsubexpression2"><h2 class="title topictitle2">Generar subexpresión</h2>
+<div class="body"><p class="shortdesc">Genera la subexpresión como un resultado del operando, el operador y los valores especificados.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="generatedsubexpression"><h2 class="title topictitle2">Subexpresión generada</h2>
+<div class="body"><p class="shortdesc">Copia y pega esta subexpresión en la norma.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="odr_routing_policies.html" title="Utilice esta página para configurar políticas de direccionamiento para el direccionador On Demand.">Políticas de direccionamiento del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_service_policies.html" title="Utilice esta página para configurar políticas de servicio para el direccionador On Demand.">Políticas de servicio de direccionador On Demand</a></div>
+<div><a class="link help" href="wc_detail_rule.html" title="Utilice esta página para asignar los tipos de solicitud de los módulos de aplicación a las clases de trabajo. Este paso define los protocolos HTTP (Hypertext Transfer Protocol), los EJB (enterprise beans), los servicios web o los buses para la clase de trabajo, que utiliza el direccionador On demand para dar prioridad las políticas de servicio. Las solicitudes soportadas incluyen HTTP, IIOP (Internet InterORB Protocol), SOAP (Simple Object Access Protocol) y JMS (Java Message Service).">Definir normas y pertenencias a una clase de trabajo</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: wc_rulebuilder_detail.html</span></body>
+</html>

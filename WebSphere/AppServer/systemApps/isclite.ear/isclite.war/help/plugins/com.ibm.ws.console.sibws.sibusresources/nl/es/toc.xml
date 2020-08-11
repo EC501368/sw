@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Integración de servicios, recursos de servicios web" topic="index.html">
+   <topic label="Propiedades de conexión [Colección]"
+          href="ae/SIBWSBusConnectionProperty_CollectionForm.html"/>
+   <topic label="Propiedades de conexión [Valores]"
+          href="ae/SIBWSBusConnectionProperty_DetailForm.html"/>
+   <topic label="Escuchas de punto final [Colección]"
+          href="ae/SIBWSEndPointListener_CollectionForm.html"/>
+   <topic label="Escuchas de punto final [Valores]"
+          href="ae/SIBWSEndPointListener_DetailForm.html"/>
+   <topic label="Puertos de entrada [Colección]"
+          href="ae/SIBWSInboundPort_CollectionForm.html"/>
+   <topic label="Puertos de entrada [Valores]" href="ae/SIBWSInboundPort_DetailForm.html"/>
+   <topic label="Servicios de entrada [Colección]"
+          href="ae/SIBWSInboundService_CollectionForm.html"/>
+   <topic label="Servicios de entrada [Valores]"
+          href="ae/SIBWSInboundService_DetailForm.html"/>
+   <topic label="Listas de manejadores JAX-RPC [Colección]"
+          href="ae/JAXRPCHandlerList_CollectionForm.html"/>
+   <topic label="Listas de manejadores JAX-RPC [Valores]"
+          href="ae/JAXRPCHandlerList_DetailForm.html"/>
+   <topic label="Manejadores JAX-RPC [Colección]"
+          href="ae/JAXRPCHandler_CollectionForm.html"/>
+   <topic label="Manejadores JAX-RPC [Valores]" href="ae/JAXRPCHandler_DetailForm.html"/>
+   <topic label="Cabecera JAX-RPC [Colección]" href="ae/JAXRPCHeader_CollectionForm.html"/>
+   <topic label="Cabecera JAX-RPC [Valores]" href="ae/JAXRPCHeader_DetailForm.html"/>
+   <topic label="Listas de manejadores JAX-WS [Colección]"
+          href="ae/JAXWSHandlerList_CollectionForm.html"/>
+   <topic label="Listas de manejadores JAX-WS [Valores]"
+          href="ae/JAXWSHandlerList_DetailForm.html"/>
+   <topic label="Manejadores JAX-WS [Colección]"
+          href="ae/JAXWSHandler_CollectionForm.html"/>
+   <topic label="Manejadores JAX-WS [Valores]" href="ae/JAXWSHandler_DetailForm.html"/>
+   <topic label="Puertos de salida [Colección]"
+          href="ae/SIBWSOutboundPort_CollectionForm.html"/>
+   <topic label="Puertos de salida [Valores]" href="ae/SIBWSOutboundPort_DetailForm.html"/>
+   <topic label="Servicios de salida [Colección]"
+          href="ae/SIBWSOutboundService_CollectionForm.html"/>
+   <topic label="Servicios de salida [Valores]"
+          href="ae/SIBWSOutboundService_DetailForm.html"/>
+   <topic label="Publicar archivos WSDL en archivo ZIP [Valores]"
+          href="ae/SIBWSExportWSDL_DetailForm.html"/>
+   <topic label="Roles de SOAP [Colección]"
+          href="ae/JAXRPCHandlerSOAPRoles_CollectionForm.html"/>
+   <topic label="Roles de SOAP [Valores]"
+          href="ae/JAXRPCHandlerSOAPRoles_DetailForm.html"/>
+   <topic label="Publicación UDDI [Colección]"
+          href="ae/SIBWSUDDIPublication_CollectionForm.html"/>
+   <topic label="Publicación UDDI [Valores]"
+          href="ae/SIBWSUDDIPublication_DetailForm.html"/>
+   <topic label="Referencias de UDDI [Colección]"
+          href="ae/UDDIReference_CollectionForm.html"/>
+   <topic label="Referencias de UDDI [Valores]" href="ae/UDDIReference_DetailForm.html"/>
+</toc>

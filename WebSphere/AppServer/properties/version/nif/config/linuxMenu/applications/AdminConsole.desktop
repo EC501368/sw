@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=${ADMINCONSOLE}
+Comment=${ADMINCONSOLE}
+Categories=WebSphere;AppServer;Profiles;ProfileName;${PROFILENAME}
+Icon=${WASROOT}/properties/version/nif/config/linuxMenu/images/admin_16x16.png
+Exec=${WASROOT}/properties/version/nif/config/script/firefoxLauncher.sh http://${HOSTNAME}:${CONSOLEPORT}/ibm/console
+StartupNotify=true
+Type=Application
+Terminal=false
+X-Desktop-File-Install-Version=0.9
+GenericName[en_US]=

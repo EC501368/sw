@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--DITA to HTML transform for WAS-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Botones de la Consola administrativa</title>
+<link rel="stylesheet" href="was_style_help.css" />
+
+</head>
+<body>
+<a name="rrun_buttons"></a>
+<h2>Botones de la Consola administrativa</h2>
+
+<p>Esta página describe las opciones de botón disponibles en distintas páginas de la
+consola administrativa, en función de las características de producto que se hayan
+habilitado.
+</p>
+
+<ul>
+
+<li>
+<strong>Interrumpir. </strong>Interrumpe la transacción que todavía no está preparada.
+Todas las operaciones completadas por la transacción se deshacen. </li>
+
+<li>
+<strong>Añadir. </strong>Añade el elemento seleccionado o especificado a una lista o
+produce un diálogo para añadir un elemento a una lista. </li>
+
+
+<li>
+<strong>Aplicar. </strong>Guarda los cambios realizados en una página sin salir de la misma. </li>
+
+<li>
+<strong>Atrás. </strong>Muestra la página o el elemento anterior de una secuencia. Debe
+tenerse en cuenta que la consola administrativa no admite el uso de los botones Atrás y
+Adelante de un navegador. El uso de dichos botones puede dar lugar a problemas
+intermitentes. Utilice en su lugar los botones Atrás y Cancelar de la consola
+administrativa. </li>
+
+<li>
+<strong>Examinar. </strong>Abre un diálogo que permite buscar un archivo del sistema.
+</li>
+
+<li>
+<strong>Cancelar. </strong>Sale de la página o del diálogo actual, descartando los
+cambios que no se han guardado. Debe
+tenerse en cuenta que la consola administrativa no admite el uso de los botones Atrás y
+Adelante de un navegador. El uso de dichos botones puede dar lugar a problemas
+intermitentes. Utilice en su lugar el botón Cancelar de los paneles de la consola
+administrativa.</li>
+
+<li>
+<strong>Cambiar. </strong>En el contexto de la seguridad, permite realizar búsquedas en
+el registro de usuarios para localizar un ID de usuario para ejecutar una aplicación. En el contexto
+de las propiedades del contenedor, permite cambiar el origen de datos que utiliza el contenedor. </li>
+
+<li>
+<strong>Borrar. </strong>Borra los cambios y restaura los últimos valores guardados.
+</li>
+
+<li>
+<strong>Borrar selecciones. </strong>Anula la selección de las celdas seleccionadas en
+las tablas de la página tabulada. </li>
+
+<li>
+<strong>Cerrar. </strong>Sale del diálogo. </li>
+
+<li>
+<strong>Comprometer. </strong>Libera todos los bloqueos retenidos por una preparación
+lista y fuerza el compromiso de la transacción. </li>
+
+<li>
+<strong>Copiar. </strong>Crea copias de los servidores de aplicaciones seleccionados. </li>
+
+<li>
+<strong>Crear. </strong>Guarda los cambios realizados en todas las páginas tabuladas en un diálogo y sale
+del diálogo. </li>
+
+<li>
+<strong>Suprimir. </strong>Elimina la instancia seleccionada. </li>
+
+<li>
+<strong>Detalles. </strong>Muestra los detalles de la transacción. </li>
+
+<li>
+<strong>Hecho. </strong>Guarda los cambios realizados en todas las páginas tabuladas en un diálogo y sale
+del diálogo. </li>
+
+<li>
+<strong>Abajo. </strong>Mueve hacia abajo en la lista. </li>
+
+<li>
+<strong>Vuelco. </strong>Activa un vuelco de un servidor de aplicaciones rastreado. </li>
+
+<li>
+<strong>Editar. </strong>Permite editar el elemento seleccionado en una lista o produce un cuadro de diálogo para editar
+el elemento. </li>
+
+<li>
+<strong>Exportar. </strong>Accede a una página para exportar archivos EAR para una aplicación de empresa.
+</li>
+
+<li>
+<strong>Exportar DDL. </strong>Accede a una página para exportar archivos DDL para una aplicación de empresa.
+</li>
+
+<li>
+<strong>Exportar claves. </strong>Exporta claves LTPA a otros dominios. </li>
+
+<li>
+<strong>Filtro. </strong>Produce un cuadro de diálogo para especificar los recursos que deben verse
+en las tablas de esta página tabulada. </li>
+
+<li>
+<strong>Finalizar. </strong>Fuerza la finalización de una transacción, independientemente
+de que el resultado se haya notificado a todas las aplicaciones participantes. </li>
+
+<li>
+<strong>Primero. </strong>Muestra el primer registro de una serie de registros. </li>
+
+
+<li>
+<strong>Generar claves. </strong>Genera claves LTPA nuevas. Cuando se activa la seguridad
+por primera vez con LTPA como mecanismo de autenticación, las claves LTPA
+se generan automáticamente con la contraseña especificada en el panel. Si es necesario
+generar nuevas claves, utilice este botón una vez que se haya reiniciado de nuevo el
+servidor con la seguridad activada.
+Al pulsar este botón, se generan claves que se propagan a todos los servidores activos
+(servidores de aplicaciones, celdas y nodos). Las nuevas claves pueden utilizarse para cifrar
+y descifrar las señales LTPA. Pulse <strong>Guardar</strong> en la barra de tareas
+de la consola para guardar las claves nuevas y la contraseña en el depósito. </li>
+
+<li>
+<strong>Parada inmediata. </strong> Detiene el servidor, pero omite el proceso de
+inactividad normal del servidor que permitiría que las peticiones en curso finalizaran
+antes de concluir todo el proceso del servidor. Esta modalidad de conclusión es más
+rápida que el proceso de parada normal, pero es posible que algunos clientes de
+aplicación reciban excepciones. </li>
+
+<li>
+<strong>Importar claves. </strong>Importa claves LTPA nuevas de otros dominios. Para
+admitir un inicio de sesión único (SSO) en WebSphere en varios dominios (celdas)
+WebSphere, es preciso compartir las claves LTPA y una contraseña entre los dominios. 
+Tras exportar las claves de una de las celdas en un archivo, al pulsar en este botón se
+importan las claves en todos los servidores activos (servidores de aplicaciones, celdas y
+nodos). Las nuevas claves pueden utilizarse para cifrar y descifrar las señales LTPA. Pulse <strong>Guardar</strong> en la barra de tareas
+de la consola para guardar las claves nuevas y la contraseña en el depósito. </li>
+
+<li>
+<strong>Instalar. </strong>Muestra la página Preparación para la instalación de la
+aplicación, que puede utilizarse para desplegar una aplicación o un componente EJB o web
+en un servidor de aplicaciones. </li>
+
+<li>
+<strong>Instalar RAR.</strong>El botón Instalar RAR abre un diálogo que se utiliza para instalar
+un conector JCA y crear un adaptador de recursos para el mismo. </li>
+
+<li>
+<strong>Gestionar transacciones. </strong>Muestra una lista de las transacciones activas que se ejecutan
+en un servidor. Puede finalizar de forma forzada cualquier transacción que haya detenido el proceso porque
+un recuso transaccional no está disponible. </li>
+
+<li>
+<strong>Modificar. </strong>Abre un diálogo que se utiliza para cambiar una especificación. </li>
+
+<li>
+<strong>Mover. </strong>Mueve los servidores de aplicación seleccionados a otra ubicación
+de la celda administrativa. Cuando se le solicite, especifique la ubicación de destino. </li>
+
+<li>
+<strong>Nueva. </strong>Muestra una página que puede utilizar para definir una instancia
+nueva. Por ejemplo, al pulsar <strong>Nueva</strong> en la página Servidores de
+aplicaciones, se muestra una página en la que puede configurar un servidor de
+aplicaciones nuevo. </li>
+
+<li>
+<strong>Siguiente. </strong>Muestra la página, la trama o el elemento siguiente de una secuencia. </li>
+
+<li>
+<strong>Aceptar. </strong>Guarda los cambios y sale de la página. </li>
+
+<li>
+<strong>Ping. </strong>Intenta establecer conexión con los servidores de aplicación seleccionados. </li>
+
+<li>
+<strong>Anterior. </strong>Muestra la página, la trama o el elemento anterior de una secuencia. </li>
+
+<li>
+<strong>Salir. </strong>Sale de un cuadro de diálogo, descartando los cambios que no se han guardado. </li>
+
+<li>
+<strong>Renovar. </strong>Renueva la vista de los datos para las instancias listadas actualmente
+en esta página tabulada. </li>
+
+
+<li>
+<strong>Eliminar. </strong>Suprime el elemento seleccionado. </li>
+
+
+<li>
+<strong>Restablecer. </strong>Borra los cambios de la tabulada o página y restaura
+los últimos valores guardados. </li>
+
+<li>
+<strong>Reiniciar. </strong>Detiene los objetos seleccionados y los inicia de nuevo.
+</li>
+
+
+<li>
+<strong>Recuperar nuevo. </strong>Recupera un registro nuevo. </li>
+
+<li>
+<strong>Guardar. </strong>Guarda en una configuración maestra los cambios realizados en
+la configuración local.
+</li>
+
+<li>
+<strong>Seleccionar. </strong>Para el análisis de recursos, permite seleccionar un ámbito en el que
+supervisar los recursos. </li>
+
+<li>
+<strong>Establecer. </strong>Guarda los cambios en los valores de un diálogo. </li>
+
+<li>
+<strong>Valores. </strong>Muestra un diálogo para editar los valores de los recursos
+relacionados con un servlet.
+</li>
+
+<li>
+<strong>Valores en uso. </strong>Muestra un diálogo en el que se muestran los valores que están en uso.
+</li>
+
+<li>
+<strong>Iniciar. </strong>En el contexto de los servidores de aplicaciones, inicia los
+servidores de aplicaciones seleccionados. En el contexto de recopilación de datos, empieza a recopilar datos
+para las tablas de esta página tabulada. </li>
+
+<li>
+<strong>Detener. </strong>En el contexto de los componentes de servidor como los servidores de aplicaciones,
+detiene los componentes de servidor seleccionados. En el contexto de la recopilación de datos,
+detiene la recopilación de datos para las tablas de una página tabulada. </li>
+
+
+
+
+<li>
+<strong>Desinstalar. </strong>Suprime una aplicación desplegada de un depósito de
+configuración de WebSphere Application Server. También suprime los archivos binarios de
+aplicación del sistema de archivos. </li>
+
+<li>
+<strong>Actualizar. </strong>Sustituye una aplicación desplegada en un servidor por una
+aplicación actualizada. Como parte del proceso de actualización, es posible que deba
+completar los pasos de las páginas Preparación para la instalación de la aplicación
+y Actualizar aplicación. </li>
+
+<li>
+<strong>Actualizar lista de recursos. </strong>Actualiza los datos de una tabla. Descubre y
+añade instancias nuevas en la tabla. </li>
+
+
+
+
+<li>
+<strong>Ver. </strong>Abre un diálogo en un archivo. </li>
+
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores de operaciones de servidor de middleware" />
+<meta name="abstract" content="Esta página sirve para configurar operaciones para servidores de middleware. Puede utilizar las operaciones de servidor para ejecutar archivos ejecutables en los servidores de middleware desde la consola administrativa." />
+<meta name="description" content="Esta página sirve para configurar operaciones para servidores de middleware. Puede utilizar las operaciones de servidor para ejecutar archivos ejecutables en los servidores de middleware desde la consola administrativa." />
+<meta name="DC.Relation" scheme="URI" content="mws_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_srvoperations.html" />
+<meta name="DC.Relation" scheme="URI" content="servertemplate_settings.html" />
+<meta name="DC.Relation" scheme="URI" content="servertemplate_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_viewfile.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_other_detail.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_editor.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_configsrv.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_srvoperations.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2006" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2006" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="serveroperations" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores de operaciones de servidor de middleware</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="serveroperations">
+<h1 class="title topictitle1">Valores de operaciones de servidor de middleware</h1>
+<div class="body"><p class="shortdesc">Esta página sirve para configurar operaciones para servidores de middleware.
+Puede utilizar las operaciones de servidor para ejecutar archivos ejecutables en los servidores de middleware desde la consola administrativa.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Todos los servidores</span> &gt; <span class="ph uicontrol"><var class="keyword varname">servidor_middleware</var></span> &gt; <span class="ph uicontrol">Operaciones de servidor</span> &gt; <span class="ph uicontrol"><var class="keyword varname">operación_servidor</var></span></span> o seleccione<span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidor</span> &gt; <span class="ph uicontrol"><var class="keyword varname">tipo_servidor_middleware</var></span> &gt; <span class="ph uicontrol"><var class="keyword varname">servidor_middleware</var></span> &gt; <span class="ph uicontrol">Operaciones de servidor</span> &gt; <span class="ph uicontrol"><var class="keyword varname">operación_servidor</var></span></span>. </p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="name"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre del servidor.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="executable"><h2 class="title topictitle2">Ejecutable</h2>
+<div class="body"><p class="shortdesc">Nombre del archivo ejecutable. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="executablearguments"><h2 class="title topictitle2">Argumentos ejecutables</h2>
+<div class="body"><p class="shortdesc">Hace referencia a los nombres y los valores de variable como argumentos ejecutables.</p>
+<p class="p">Cada ejecutable debe estar en su propia línea. Cuando el agente de nodo invoca la operación, se inserta el valor para la variable.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="variablename"><h2 class="title topictitle2">Nombre de una variable para hacer referencia a un nombre de usuario en argumentos utilizados en la ejecución</h2>
+<div class="body"><p class="shortdesc">Especifica una variable para hacer referencia a un nombre de usuario.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="username"><h2 class="title topictitle2">Nombre de usuario a sustituir para la variable de nombre de usuario en el momento de la invocación</h2>
+<div class="body"><p class="shortdesc">Especifica un nombre de usuario para almacenar de forma cifrada en la configuración y al que se puede hacer referencia, junto con la contraseña cifrada, como un argumento ejecutable en la operación.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="pwvar"><h2 class="title topictitle2">Nombre de una variable para hacer referencia a una contraseña en argumentos utilizados en la ejecución</h2>
+<div class="body"><p class="shortdesc">Especifica una variable para hacer referencia a una contraseña.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="password"><h2 class="title topictitle2">Contraseña a sustituir para la variable de contraseña en el momento de la invocación</h2>
+<div class="body"><p class="shortdesc"> Especifica una contraseña para almacenar de forma cifrada en la configuración y a la que se puede hacer referencia, junto con el nombre de usuario cifrado, como un argumento ejecutable en la operación.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="workingdirectory"><h2 class="title topictitle2">Directorio de trabajo</h2>
+<div class="body"><p class="shortdesc">Identifica el directorio de trabajo para la operación de servidor. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="supportedos"><h2 class="title topictitle2">SO soportados</h2>
+<div class="body"><p class="shortdesc">Especifica los sistemas operativos asociados con la operación de servidor.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="pidvariable"><h2 class="title topictitle2">Nombre de una variable de entorno que almacena un nombre de archivo PID</h2>
+<div class="body"><p class="shortdesc">Especifica la variable de entorno que almacena el nombre de archivo PID.</p>
+<p class="p">El nombre del archivo PID se almacena en una variable de WebSphere. El nombre del archivo PID especifica la ubicación del archivo PID en que se ejecuta la operación de servidor.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="mws_collection.html" title="Utilice esta página para ver y gestionar servidores de middleware. Los servidores de middleware son servidores genéricos del nivel de middleware que alojan aplicaciones o sus datos.">Colección de servidores de middleware</a></div>
+<div><a class="link help" href="mws_srvoperations.html" title="Esta página permite añadir, editar y suprimir operaciones de servidor.">Operaciones de servidor</a></div>
+<div><a class="link help" href="servertemplate_settings.html" title="Esta página sirve para configurar los valores de una nueva plantilla de servidor que haya creado. Los tipos de servidor que existen para crear una plantilla incluyen a servidor de aplicaciones, genérico, direccionador On Demand, proxy o servidor web. También se pueden crear o añadir plantillas de servidor para un servidor de middleware que ya exista en su entorno como, por ejemplo, PHP, servidor HTTP personalizado o WebSphere Application Server Community Edition.">Valores de plantilla de servidor de middleware</a></div>
+<div><a class="link help" href="servertemplate_collection.html" title="Esta página sirve para crear una nueva plantilla de servidor. Las plantillas de servidor definen valores de configuración al crear servidores de middleware.">Colección de plantillas de servidor de middleware</a></div>
+<div><a class="link help" href="mws_detail_viewfile.html" title="Esta página sirve para ver los archivos de anotaciones cronológicas de los servidores de middleware.">Visor de anotaciones cronológicas</a></div>
+<div><a class="link help" href="mws_other_detail.html" title="Esta página sirve para ver la configuración de los servidores de middleware.">Valores de detalle de servidor de middleware</a></div>
+<div><a class="link help" href="mws_detail_main_new.html" title="Esta página sirve para crear un servidor de middleware. Los servidores de middleware son servidores del nivel de middleware que alojan aplicaciones o sus datos.">Creación de un servidor de middleware</a></div>
+<div><a class="link help" href="mws_detail_editor.html" title="Esta página sirve para editar un archivo de configuración para un servidor de middleware.">Configuración externa</a></div>
+<div><a class="link help" href="mws_detail_configsrv.html" title="Esta página sirve para habilitar o inhabilitar archivos de configuración asociados con un servidor de middleware.">Servicio de configuración externo</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: mws_srvoperations_detail.html</span></body>
+</html>

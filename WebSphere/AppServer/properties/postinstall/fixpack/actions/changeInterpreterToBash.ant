@@ -1,0 +1,53 @@
+<project name="changeInterpreterToBash" default="install" basedir=".">
+
+    <taskdef name="replaceTokenInFile" 
+        classpath="${WAS_HOME}/plugins/com.ibm.ws.runtime.jar" 
+        classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.ReplaceTokenInFileAntTask" />
+
+    <target name="checkLSB">
+        <condition property="hasLSB">
+            <and>
+            <os name="Linux"/>
+            <available file="/etc/lsb-release"/>
+            </and>
+        </condition>
+    </target>
+
+    <target name="checkIsUbuntu" description="Defines isUbuntu to be true if the current OS is Ubuntu"
+            depends="checkLSB" if="hasLSB">
+
+        <loadfile property="lsb.release" srcFile="/etc/lsb-release">
+            <filterchain>
+                <striplinebreaks/>
+            </filterchain>
+        </loadfile> 
+
+        <condition property="isUbuntu">
+            <and>
+            <contains string="${lsb.release}" substring="Ubuntu"/>
+            </and>
+        </condition>
+    </target>
+
+    <target name="changeInterpreterToBash"
+     description="Makes bash interpret all .sh files"
+     if="isUbuntu" depends="checkIsUbuntu">
+
+        <!-- Why not one of the related tasks? None of them preserve file permissions
+             AND take filesets. Don't copy this verbatim on tasks that don't run 
+             exclusively on Linux.
+        -->
+	<apply executable="sed">
+	  <arg value="-i"/>
+	  <arg value="-r"/>
+	  <arg value="-e"/>
+	  <arg value="1 s@#!/bin/sh\s*$@#!/bin/bash@"/>
+	  <fileset dir="${WAS_HOME}/bin" includes="*.sh"/>
+	</apply>
+
+    </target>
+
+    <target name="install" depends="changeInterpreterToBash" />
+    <target name="uninstall"/>
+    
+</project>

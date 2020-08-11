@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS  TYPE="org.eclipse.help.toc"?>
+<toc label="Usuarios y grupos" topic="idmgrtaskusermanage.html">
+   <topic label="Gestión de usuarios" href="idmgrtaskusermanage.html">
+      <topic label="Búsqueda de usuarios" href="idmgrtaskusersearch.html">
+         <topic label="Personalización de los filtros de búsqueda para los usuarios" href="idmgrtaskuserfilter.html"/>
+         <topic label="Cambio de las opciones de visualización para la lista de usuarios" href="idmgrtaskuservuopts.html"/>
+      </topic>
+      <topic label="Creación de usuarios" href="idmgrtaskusercreate.html"/>
+      <topic label="Cambio de la pertenencia a grupos para un usuario" href="idmgrtaskusermembership.html"/>
+      <topic label="Visualización de la información sobre un usuario" href="idmgrtaskuserpropgenvu.html"/>
+      <topic label="Cambio de la información sobre un usuario" href="idmgrtaskuserpropgen.html"/>
+      <topic label="Visualización de los grupos de los que el usuario es miembro" href="idmgrtaskuserpropgrpvu.html"/>
+      <topic label="Adición de un usuario a grupos" href="idmgrtaskuserpropgrp.html"/>
+      <topic label="Eliminación de un usuario de los grupos" href="idmgrtaskuserpropgrprem.html"/>
+      <topic label="Adición de usuarios como miembros de un grupo" href="idmgrtaskmembersadduser.html"/>
+      <topic label="Duplicación de asignaciones de grupo para un usuario" href="idmgrtaskuserdupassign.html"/>
+      <topic label="Supresión de usuarios" href="idmgrtaskuserdelete.html"/>
+   </topic>
+   <topic label="Gestión de grupos" href="idmgrtaskgroupmanage.html">
+      <topic label="Búsqueda de grupos" href="idmgrtaskgroupsearch.html">
+         <topic label="Personalización de los filtros de búsqueda para los grupos" href="idmgrtaskgroupfilter.html"/>
+         <topic label="Cambio de las opciones de visualización para la lista de grupos" href="idmgrtaskgroupvuopts.html"/>
+      </topic>
+      <topic label="Creación de grupos" href="idmgrtaskgroupcreate.html"/>
+      <topic label="Visualización de la información sobre un grupo" href="idmgrtaskgrouppropgenvu.html"/>
+      <topic label="Cambio de la información sobre un grupo" href="idmgrtaskgrouppropgen.html"/>
+      <topic label="Visualización de los grupos de los que el grupo es miembro" href="idmgrtaskgrouppropgrpvu.html"/>
+      <topic label="Adición de un grupo a otros grupos" href="idmgrtaskgrouppropgrp.html"/>
+      <topic label="Eliminación de un grupo de los grupos" href="idmgrtaskgrouppropgrprem.html"/>
+      <topic label="Visualización de la lista de los miembros de un grupo" href="idmgrtaskgrouppropmemvu.html"/>
+      <topic label="Adición de grupos como miembros de un grupo" href="idmgrtaskmembersaddgroup.html"/>
+      <topic label="Eliminación de los miembros de un grupo" href="idmgrtaskmembersremove.html"/>
+      <topic label="Duplicación de asignaciones de grupo para un grupo" href="idmgrtaskgroupdupassign.html"/>
+      <topic label="Supresión de grupos" href="idmgrtaskgroupdelete.html"/>
+   </topic>
+</toc>

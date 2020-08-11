@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Proxy SIP" topic="index.html">
+   <topic label="Dominios externos SIP" href="ae/ujpx_sipextdomain.html"/>
+   <topic label="Colección de dominios externos SIP" href="ae/ujpx_sipextdomaincoll.html"/>
+   <topic label="Valores del proxy SIP" href="ae/ujpx_sipproxysettings.html"/>
+   <topic label="Colección de normas de direccionamiento SIP"
+          href="ae/ujpx_siproutingrules.html"/>
+   <topic label="Detalle de normas de direccionamiento SIP"
+          href="ae/ujpx_siproutingrulesdetail.html"/>
+   <topic label="Orden para establecer las normas de direccionamiento SIP"
+          href="ae/ujpx_siproutingrulessetorder.html"/>
+   <topic label="Colección de condiciones de normas SIP"
+          href="ae/ujpx_siprulecondcoll.html"/>
+   <topic label="Detalle de la condición de la norma SIP"
+          href="ae/ujpx_sipruleconddet.html"/>
+</toc>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Tareas de tiempo de ejecución" topic="index.html">
+   <topic label="Colección de tareas de tiempo de ejecución"
+          href="ae/task_collection.html"/>
+   <topic label="Detalles de la tarea" href="ae/tasktarget_collection.html"/>
+</toc>

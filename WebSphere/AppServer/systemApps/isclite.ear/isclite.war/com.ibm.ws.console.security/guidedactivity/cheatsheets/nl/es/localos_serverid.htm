@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Consejos para configurar un ID y contraseña de servidor de registro de sistema operativo local</title>
+    <link rel="stylesheet" href="../was_style_help.css">
+
+</head>
+    <body style="margin:1em">
+     <h3>Consejos y sugerencias</h3>
+    
+    <p>
+<h4>Consideraciones especiales sobre los ID de servidor</h4>
+El ID de servidor puede ser cualquier usuario válido del registro de usuarios y no es necesario que sea el mismo que el identificador del sistema operativo bajo el que se ejecuta el proceso del servidor de aplicaciones.
+No es necesario que este ID sea root en plataformas UNIX y no es necesario que sea un administrador en plataformas
+Windows. El ID de servidor utilizado por el servidor de aplicaciones tiene su propia identidad para los propósitos siguientes:
+            <Ol>
+            <li>El servidor de aplicaciones correlaciona implícitamente el ID de servidor con el rol de administrador
+para que el servidor de aplicaciones pueda acceder a los datos de configuración importantes e invocar acciones
+privilegiadas en tiempo de ejecución, que requieren el rol de administrador.</li>
+            <li>El servidor de aplicaciones utiliza el ID de servidor y la contraseña para autenticar a otros WebSphere
+Application Servers en un entorno distribuido.</li>
+            </OL>
+
+<h4>ID de servidor frente a identidad de proceso</h4>
+Cada proceso del servidor de aplicaciones también tiene una identidad de proceso que puede ser diferente del ID de
+servidor aquí especificado.
+La identidad de proceso es el ID de usuario bajo el que se ejecuta el proceso del servidor de aplicaciones.<p>
+Por ejemplo, un proceso de servidor necesita ejecutarse bajo la cuenta root para acceder a interfaces de programación
+privilegiadas del sistema operativo cuando utilice un registro de usuarios de sistema operativo local en plataformas
+UNIX.<p>
+Para obtener más información, consulte el artículo del Information Center de WebSphere Application Server
+titulado
+<a HREF="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/tsec_localos.html" TARGET="help">Configuración de registros de usuarios del sistema operativo local</A>.<p>    
+
+<h4>Recomendaciones sobre el uso administrativo del ID de servidor</h4>
+No necesita correlacionar explícitamente el ID de servidor con el rol administrativo en la consola administrativa. Es
+aconsejable no utilizar el ID de servidor para temas administrativos cotidianos.
+Sin embargo, si es muy aconsejable correlacionar al menos otro ID de usuario con el rol administrativo.
+
+    </body>
+</html>

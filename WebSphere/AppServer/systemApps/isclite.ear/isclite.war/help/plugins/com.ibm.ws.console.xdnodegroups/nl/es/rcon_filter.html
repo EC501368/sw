@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--DITA to HTML transform for WAS-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Valores de filtros de la Consola administrativa</title>
+<link rel="stylesheet" href="was_style_help.css" />
+
+</head>
+<body>
+<a name="rrun_filter"></a>
+<h2>Valores de filtros de la Consola administrativa</h2>
+
+<p>Utilice los valores de filtro para especificar cómo filtrar las entradas que se muestran
+en una vista de colección. </p>
+
+<p>Seleccione la columna que debe filtrarse y, luego, especifique los criterios de filtro. </p>
+
+<dl>
+<dt>
+<strong>Columna a filtrar</strong>
+</dt>
+<dd>Utilice la lista desplegable para seleccionar la columna que debe filtrarse. Al aplicar el filtro,
+la tabla de colecciones se modifica consiguientemente. <p>Por ejemplo, seleccione
+<strong>Servidores de aplicaciones</strong> si desea especificar criterios según los que
+se filtrarán los nombres de los servidores de aplicaciones.
+</p>
+</dd>
+<dt>
+<strong>Criterios de filtro</strong>
+</dt>
+<dd>En el campo que aparece junto a la lista desplegable, especifique una serie que deba
+encontrarse en el nombre de una entrada de colección para que dicha entrada pueda
+aparecer en la tabla de colecciones. La serie puede contener los caracteres %, * o ? como
+caracteres comodín. Por ejemplo, escriba <samp>*Ap*</samp> para buscar cualquier servidor de aplicaciones
+cuyo nombre contenga la serie <strong><em>Ap</em></strong>. <p>Utilice el carácter <samp>\</samp>
+delante de cada uno de los caracteres <samp>( ) ^ * % { } \ + $</samp> de modo que el motor de expresiones
+regulares que realice la búsqueda establezca coincidencias correctas según los criterios de búsqueda
+especificados. Por ejemplo, para buscar todos los proveedores JDBC que contienen
+<strong><em>(XA)</em></strong> en el nombre del proveedor, especifique la serie siguiente: </p> 
+<pre>*\(XA\)</pre>
+</dd>
+</dl>
+
+</body>
+</html>

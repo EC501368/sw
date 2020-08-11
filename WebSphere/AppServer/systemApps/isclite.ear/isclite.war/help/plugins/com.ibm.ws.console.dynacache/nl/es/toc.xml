@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Memoria caché dinámica" topic="index.html">
+   <topic label="Valores de ámbito de la consola administrativa"
+          href="ae/rcon_scope.html"/>
+   <topic label="Valores de servicio de memoria caché dinámica"
+          href="ae/udyn_rcachesettings.html"/>
+   <topic label="Valores de grupo de memoria caché externa"
+          href="ae/udyn_rextcachei.html"/>
+   <topic label="Colección de instancias de memoria caché de objetos"
+          href="ae/udyn_cacheinstances.html"/>
+   <topic label="Valores de instancias de memoria caché de objetos"
+          href="ae/udyn_cacheinstancescollection.html"/>
+   <topic label="Colección de instancias de memoria caché de servlet"
+          href="ae/udyn_scacheinstancescollection.html"/>
+   <topic label="Valores de instancias de memoria caché de servlet"
+          href="ae/udyn_scacheinstancesettings.html"/>
+</toc>

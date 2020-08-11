@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores de miembros de un clúster dinámico" />
+<meta name="abstract" content="Utilice esta página para gestionar los miembros de un clúster dinámico." />
+<meta name="description" content="Utilice esta página para gestionar los miembros de un clúster dinámico." />
+<meta name="copyright" content="© Copyright IBM Corporation 2006, 2012" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2006, 2012" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="dc_member_settings" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores de miembros de un clúster dinámico</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="dc_member_settings">
+<h1 class="title topictitle1">Valores de miembros de un clúster dinámico</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para gestionar los miembros de un clúster dinámico.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Clústeres dinámicos</span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_clúster_dinámico</var></span> &gt; <span class="ph uicontrol">Miembros del clúster dinámico</span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_miembro_clúster_dinámico</var></span></span> .</p>
+<p class="p">Hay que poseer privilegios de operador para gestionar los miembros de un clúster dinámico. Lea el centro de información para obtener información sobre roles administrativos y privilegios para gestionar clústeres dinámicos. </p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="dcm_member"><h2 class="title topictitle2">Miembro</h2>
+<div class="body"><p class="p">Especifica el nombre del servidor en el clúster. El nombre del servidor es el nombre del proceso. El nombre debe coincidir con el nombre de objeto del servidor de aplicaciones.</p>
+<p class="p">Tipo de datos: Serie</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="dcm_weight"><h2 class="title topictitle2">Peso
+</h2>
+<div class="body"><p class="p">Especifica la cantidad de trabajo que se dirige al servidor de aplicaciones.  Si el valor del peso del servidor es mayor que los valores de peso asignados a otros servidores en el clúster, el servidor recibe un parte mayor de la carga de trabajo del servidor.</p>
+<div class="p">El peso que se muestra depende de la pestaña en que se está mostrando la información. Si está viendo la pestaña <span class="ph uicontrol">Tiempo de ejecución</span>, se muestra el peso de tiempo de ejecución. Si está viendo la pestaña <span class="ph uicontrol">Configuración</span>, se muestra el peso configurado.<div class="note important"><span class="importanttitle">Importante:</span> Si se habilita, el gestor de carga de trabajo dinámica (DWLM) altera temporalmente todos los valores que se entren. DWLM está habilitado por omisión. Para inhabilitar DWLM, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Clústeres</span> &gt; <span class="ph uicontrol">Clústeres dinámicos</span> &gt; <span class="ph uicontrol"> <var class="keyword varname">nombre_clúster_dinámico</var></span> &gt; <span class="ph uicontrol">Gestión de carga de trabajo dinámica (DWLM)</span></span></div>
+</div>
+<div class="p">En la plataforma z/OS, el peso se utiliza para equilibrar algunos tipos de carga de trabajo, pero otros, los equilibra el sistema z/OS. <ul class="ul"><li class="li"> Para las solicitudes HTTP, se utilizan pesos para distribuir el tráfico HTTP entre el plug-in de servidor web y el controlador que maneja el servidor de aplicaciones en clúster. Asigne un valor de peso mayor al servidor de aplicaciones que está recibiendo el tráfico HTTP.</li>
+<li class="li"> Para llamadas a servicios web, la información se transfiere de un sirviente de un servidor de aplicaciones a un controlador de otro servidor de aplicaciones.
+ El servidor de aplicaciones que recibe la llamada tiene el valor de peso más alto.</li>
+<li class="li"> El peso no afecta a las solicitudes IIOP (Internet Inter-ORB Protocol).
+ Las solicitudes IIOP se distribuyen al servidor de aplicaciones correcto con el distribuidor de sysplex.  </li>
+</ul>
+  </div>
+<p class="p">Tipo de datos: Entero</p>
+<p class="p">Rando: De 0 a 20</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ClusterMember_uniqueId_description"><h2 class="title topictitle2">ID exclusivo
+</h2>
+<div class="body"><p class="shortdesc">Especifica un identificador numérico para el servidor de aplicaciones que es exclusivo dentro del clúster. El ID se utiliza por motivos de afinidad.
+Después de que se establezca una sesión en un miembro concreto del clúster, las solicitudes posteriores que pertenecen a la misma sesión se asignan al miembro de clúster que ha establecido la afinidad de sesiones.</p>
+<p class="p">Tipo de datos: Entero</p>
+<p class="p">Tipo de datos: Hexadecimal
+</p>
+</div>
+</div>
+<div class="related-links">
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: dc_member_settings.html</span></body>
+</html>

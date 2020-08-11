@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="public" name="security" />
+<meta content="index,follow" name="Robots" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Description.abstract" content="" /><meta name="DC.Type" content="topic" /><meta name="DC.Title" content="Valores del proveedor JACC de Tivoli Access Manager" /><meta name="DC.Format" content="XHTML" /><!-- All rights reserved. Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link href="../../../com.ibm.ws.console.core/nl/en/ibmdita.css" type="text/css" rel="stylesheet" />
+<link href="../../../com.ibm.ws.console.core/nl/en/was_style_help.css" type="text/css" rel="stylesheet" />
+<title>Valores del proveedor JACC de Tivoli Access Manager</title>
+</head>
+<body class="field-help" id="usec_TAMauthprovconfig"><a name="usec_TAMauthprovconfig"><!-- --></a>
+
+<h1 class="topictitle1">Valores del proveedor JACC de Tivoli Access Manager</h1><div><p>Utilice esta página para configurar el proveedor JACC de Tivoli
+Access Manager.</p>
+<div class="p">Para ver los valores del proveedor JACC de Tivoli Access Manager,
+realice los pasos siguientes: <ol>
+<li>Pulse <b>Seguridad</b> &gt; <b>Seguridad global</b>. </li>
+
+<li>Bajo Autorización, pulse <b>Proveedores de autorización</b>.</li>
+
+<li>Bajo Elementos relacionados, pulse <b>Proveedor JACC externo</b>.</li>
+
+<li>Bajo Propiedades adicionales, pulse <b>Propiedades de Tivoli Access
+Manager</b>.</li>
+
+</ol>
+</div>
+
+</div><div><p><strong>Configuration tab</strong></p><dl><dt id="configTAMJACCprov_enable_checkbox"><a name="configTAMJACCprov_enable_checkbox"><!-- --></a><b>Habilitar Tivoli Access Manager incorporado</b></dt><dd><div><p>Habilita o inhabilita la configuración de Tivoli Access Manager
+incorporado</p>
+<table class="field-detail" summary="" cellspacing="0" cellpadding="4" border="0">
+<tr>
+<td valign="top" align="left" id="N10101"><b>Valor por omisión:</b></td>
+<td valign="top" align="left" headers="N10101">Inhabilitado</td>
+</tr>
+<tr>
+<td valign="top" align="left" id="N10113"><b>Rango:</b></td>
+<td valign="top" align="left" headers="N10113">Habilitado o Inhabilitado</td>
+</tr>
+</table>
+</div></dd><dt id="configTAMJACCprov_ignoreerrors_checkbox"><a name="configTAMJACCprov_ignoreerrors_checkbox"><!-- --></a><b>Ignorar errores durante la inhabilitación de Tivoli Access Manager
+incorporado</b></dt><dd><div><p>Cuando se selecciona, se ignoran los errores durante la
+inhabilitación de Tivoli Access Manager incorporado. </p>
+<p>Esta opción solo se aplica al volver a configurar Tivoli Access Manager incorporado
+o inhabilitarlo.</p>
+
+<table class="field-detail" summary="" cellspacing="0" cellpadding="4" border="0">
+<tr>
+<td valign="top" align="left" id="N10161"><b>Valor por omisión:</b></td>
+<td valign="top" align="left" headers="N10161">Inhabilitado</td>
+</tr>
+<tr>
+<td valign="top" align="left" id="N10173"><b>Rango:</b></td>
+<td valign="top" align="left" headers="N10173">Habilitado o Inhabilitado</td>
+</tr>
+</table>
+</div></dd><dt id="configTAMJACCprov_portset"><a name="configTAMJACCprov_portset"><!-- --></a><b>Conjunto de puertos de escucha del cliente</b></dt><dd><div><p>Especifique los puertos utilizados como puertos receptores por
+los clientes de Tivoli Access Manager.</p>
+<div class="p">Es necesario que WebSphere Application Server escuche en un puerto
+TCP/IP para las acceder a las actualizaciones de base de datos de
+autorización del servidor de políticas. Más de un proceso puede
+ejecutarse en un nodo/máquina determinado de modo que sea necesaria una
+lista de puertos para que la utilicen los procesos. Si se va a especificar
+un rango de puertos separe los valores más altos y más bajos mediante dos puntos. Los puertos únicos y los rangos de puerto se especifican en
+líneas separadas. Un ejemplo podría tener el siguiente aspecto: <p><tt>7999<br />
+ 9990:9999</tt></p>
+</div>
+
+</div></dd><dt id="conigTAMJACCprov_policy_server"><a name="conigTAMJACCprov_policy_server"><!-- --></a><b>Servidor de políticas</b></dt><dd><div><p>Especifique el nombre, nombre de dominio plenamente cualificado
+o dirección IP del servidor de políticas de Tivoli Access Manager y el
+puerto de conexión.</p>
+<p>Utilice el formato <i>servidor_políticas</i>:<i>puerto</i>. El puerto
+de comunicaciones del servidor de políticas se ha establecido durante el
+tiempo de configuración de Tivoli Access Manager – el valor por omisión es
+7135. </p>
+
+</div></dd><dt id="configTAMJACCprov_auth_server"><a name="configTAMJACCprov_auth_server"><!-- --></a><b>Servidores de autorización</b></dt><dd><div><p>Especifique el nombre, nombre de dominio plenamente cualificado
+o dirección IP del servidor de autorización de Tivoli Access Manager. 
+Utilice el formato <i>servidor_aut</i>:<i>puerto</i>:<i>prioridad</i>. </p>
+<div class="p">El puerto de comunicaciones de autorización se ha establecido durante el tiempo de
+configuración de Tivoli Access Manager – el valor por omisión es 7136. 
+Para especificar más de un servidor de autorización, entre cada servidor
+en una línea nueva. Es útil tener más de un servidor de autorización
+configurado por razones de rendimiento y sustitución por anomalía. El
+valor de prioridad es el orden de uso de servidor de autorización. Por
+ejemplo: <p><tt>servidor1_aut.micompañia.com:7136:1<br />
+servidor2_aut.micompañía.com:7137:2</tt></p>
+Todavía es necesaria una
+prioridad (de 1) al configurar en un sólo servidor de autorización. </div>
+
+</div></dd><dt id="configJACCTAMprov_admin_UID"><a name="configJACCTAMprov_admin_UID"><!-- --></a><b>Nombre del usuario administrador</b></dt><dd><div><p>Entre el ID de usuario de administración de Tivoli Access
+Manager tal como se crea durante el tiempo de configuración de Tivoli
+Access Manager. Generalmente es sec_master.</p></div></dd><dt id="configJACCTAMprov_admin_pw"><a name="configJACCTAMprov_admin_pw"><!-- --></a><b>Contraseña del usuario administrador</b></dt><dd><div><p>Especifique la contraseña de administración de Tivoli Access
+Manager para el ID de usuario especificado en el campo <i>Nombre de
+usuario de administración</i>.</p></div></dd><dt id="configJACCTAMprov_registry_DNsuff"><a name="configJACCTAMprov_registry_DNsuff"><!-- --></a><b>Sufijo del nombre distinguido del registro de usuario</b></dt><dd><div><p>Especifique el sufijo de nombre distinguido para que el
+registro de usuario sea compartido entre Tivoli Access Manager y
+WebSphere. Por ejemplo: <i>organización</i>,c=<i>país</i></p></div></dd><dt id="configJACCTAMprov_sec_domain"><a name="configJACCTAMprov_sec_domain"><!-- --></a><b>Dominio de seguridad</b></dt><dd><div><p>Especifique el nombre del dominio de seguridad de Tivoli Access
+Manager security utilizado para almacenar los grupos y usuarios de
+WebSphere Application Server.</p>
+<p>Especificación del dominio de Tivoli Access Manager es necesaria ya que
+se puede crear más de un dominio de seguridad en Tivoli Access Manager
+cada uno con su propio usuario administrativo. Los usuarios, grupos y
+otros objetos se crean dentro de un dominio determinado y no pueden
+acceder a los recursos de otro dominio. Si un dominio de seguridad no se
+ha establecido durante el tiempo de configuración de Tivoli Access
+Manager, deje el valor como <i>Valor por omisión</i>.</p>
+
+<table class="field-detail" summary="" cellspacing="0" cellpadding="4" border="0">
+<tr>
+<td valign="top" align="left" id="N10328"><b>Valor por omisión:</b></td>
+<td valign="top" align="left" headers="N10328">Valor por omisión</td>
+</tr>
+</table>
+</div></dd><dt id="configJACCTAMprov_admin_user_DN"><a name="configJACCTAMprov_admin_user_DN"><!-- --></a><b>Nombre distinguido del usuario administrador</b></dt><dd><div><p>Especifique el nombre distinguido completo del ID de
+administrador de seguridad de WebSphere. Por ejemplo,
+cn=wasadmin,o=<i>organización</i>,c=<i>país</i></p></div></dd></dl>
+</div><div />
+</body>
+</html>

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=${PROFILENAME}
+Comment=${PROFILENAME}
+Icon=${WASROOT}/properties/version/nif/config/linuxMenu/images/profile_16x16.png
+Type=Directory
+Encoding=UTF-8

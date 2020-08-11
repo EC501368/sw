@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Políticas de servicio de direccionador On Demand" />
+<meta name="abstract" content="Utilice esta página para configurar políticas de servicio para el direccionador On Demand." />
+<meta name="description" content="Utilice esta página para configurar políticas de servicio para el direccionador On Demand." />
+<meta name="DC.Relation" scheme="URI" content="wc_detail_rule.html" />
+<meta name="DC.Relation" scheme="URI" content="wc_rulebuilder_detail.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_routing_policies.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="odr_service_policies" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Políticas de servicio de direccionador on demand</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="odr_service_policies">
+<h1 class="title topictitle1">Políticas de servicio de direccionador on demand</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para configurar políticas de servicio para el direccionador on demand. </p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidor</span> &gt; <span class="ph uicontrol">Direccionadores On Demand</span> &gt; <span class="ph uicontrol"><var class="keyword varname">ODR</var></span> &gt; <span class="ph uicontrol">Propiedades del direccionador On Demand</span> &gt; <span class="ph uicontrol">Políticas de servicio de clústeres de servidores genéricos</span></span>.</p>
+<p class="p">Hay que poseer privilegios administrativos de administrador para poder modificar normas con el generador de subexpresiones.</p>
+<p class="p">Desde esta pestaña puede expandir Clases de trabajo HTTP para ver o gestionar
+las clases de trabajo para peticiones HTTP y lleve a cabo las acciones siguientes: </p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="httpworkclasses"><h2 class="title topictitle2">Clases de trabajo para peticiones HTTP</h2>
+<div class="body"><p class="shortdesc">Expanda esta opción para ver o gestionar las clases de trabajo para peticiones HTTP (Hypertext Transfer
+Protocol).</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="new"><h2 class="title topictitle2">Nueva</h2>
+<div class="body"><p class="shortdesc">Crea una clase de trabajo nueva.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="delete"><h2 class="title topictitle2">Suprimir</h2>
+<div class="body"><p class="shortdesc">Suprime una clase de trabajo.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="edithttppattern"><h2 class="title topictitle2">Editar patrón HTTP</h2>
+<div class="body"><p class="shortdesc">Añade o suprime un tipo de destino de la lista de miembros de clase de trabajo.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="addrule"><h2 class="title topictitle2">Añadir regla</h2>
+<div class="body"><p class="shortdesc">Crea una norma nueva.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="deleterule"><h2 class="title topictitle2">Suprimir regla</h2>
+<div class="body"><p class="shortdesc">Suprime una norma existente.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="moveupmovedown"><h2 class="title topictitle2">Subir, bajar</h2>
+<div class="body"><p class="shortdesc">Da prioridad a las normas en el caso de varias normas. El orden de las normas
+es clave para determinar las coincidencias. Si se produce una coincidencia en la primera norma,
+las normas subsiguientes no se ejecutan.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ifurimatches"><h2 class="title topictitle2">Si la petición URI coincide con</h2>
+<div class="body"><p class="shortdesc">Establece la condición de coincidencia URI (Uniform Resource Identifier) de una norma que ya exista. Escriba el nombre de URI en este campo.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="forvirtualhost"><h2 class="title topictitle2">Para el host virtual</h2>
+<div class="body"><p class="shortdesc">Establece la condición de coincidencia URI de una norma que ya exista. Seleccione un nombre de host. Puede utilizar el carácter comodín asterisco (*) en el campo <span class="ph uicontrol">Si el URI coincide</span>.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="selectaction"><h2 class="title topictitle2">Seleccionar acción</h2>
+<div class="body"><div class="p">Asigna la acción de direccionamiento por omisión a una de las opciones siguientes:<dl class="dl"><dt class="dt dlterm">Permitir direccionamiento a</dt>
+<dd class="dd"> De la lista <span class="ph uicontrol">Seleccionar nombre de clúster de servidores genéricos</span>, seleccione el clúster de servidores genéricos apropiados.</dd>
+<dt class="dt dlterm">Rechazar direccionamiento con código de retorno</dt>
+<dd class="dd">En el campo <span class="ph uicontrol">Entre el código de retorno</span>, escriba el código de retorno HTTP. </dd>
+<dt class="dt dlterm">Redirigir el direccionamiento a</dt>
+<dd class="dd">En el campo <span class="ph uicontrol">Entre URI para redirigir a</span>, escriba el URI.</dd>
+<dt class="dt dlterm">Permitir direccionamiento con afinidad a</dt>
+<dd class="dd">De la lista <span class="ph uicontrol">Seleccionar nombre de clúster de servidores genéricos</span>, seleccione el clúster de servidores genéricos apropiados.</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested2" xml:lang="es-es" id="apply"><h3 class="title topictitle3">Aplicar</h3>
+<div class="body"><p class="shortdesc">Confirma los nuevos valores de la norma. </p>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="wc_detail_rule.html" title="Utilice esta página para asignar los tipos de solicitud de los módulos de aplicación a las clases de trabajo. Este paso define los protocolos HTTP (Hypertext Transfer Protocol), los EJB (enterprise beans), los servicios web o los buses para la clase de trabajo, que utiliza el direccionador On demand para dar prioridad las políticas de servicio. Las solicitudes soportadas incluyen HTTP, IIOP (Internet InterORB Protocol), SOAP (Simple Object Access Protocol) y JMS (Java Message Service).">Definir normas y pertenencias a una clase de trabajo</a></div>
+<div><a class="link help" href="wc_rulebuilder_detail.html" title="El generador de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados u operadores lógicos a los que no se les da soporte.">Utilidad de generación de subexpresiones</a></div>
+<div><a class="link help" href="odr_routing_policies.html" title="Utilice esta página para configurar políticas de direccionamiento para el direccionador On Demand.">Políticas de direccionamiento del direccionador On Demand</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: odr_service_policies.html</span></body>
+</html>

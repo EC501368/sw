@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<cheatsheet title="Utilización del registro de usuarios de sistema operativo local">
+	<intro 
+		href="localos_intro.htm">
+        <description>
+Antes de configurar WebSphere para utilizar el registro de usuarios del sistema operativo local, necesita saber el
+nombre de usuario (ID) y la contraseña que utilizará el servidor de aplicaciones como identidad propia al establecer la
+política de autorización y autenticarse en otros servidores de aplicaciones (por ejemplo, en un entorno WebSphere
+Application Server Network Deployment).
+&lt;br/&gt; &lt;br/&gt;
+Al utilizar el registro de usuarios de sistema operativo local con WebSphere para z/OS, el nombre de usuario y la contraseña no se especifican mediante los recursos administrativos de WebSphere. En su lugar, el nombre de usuario asociado con el servidor se configura mediante los
+recursos administrativos del producto de seguridad de la plataforma. Lea el artículo del Information Center &lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.zseries.doc/info/zseries/ae/csec_localos.html"&gt;Registros de usuarios del sistema operativo local
+&lt;/a&gt; para obtener información sobre la configuración de identidades de servidor en z/OS.
+&lt;br/&gt; &lt;br/&gt;
+Este usuario puede ser cualquier usuario válido del registro de usuarios. En la documentación se hace referencia a este
+usuario como ID de servidor de seguridad, ID de servidor o ID de usuario de servidor de WebSphere Application Server. Consulte &lt;a target="help"
+href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/tsec_localos.html"&gt;Configuración
+de registros de usuarios del sistema operativo local&lt;/a&gt; en el Information Center para obtener más información.
+        </description>
+	</intro>
+	<item
+        href="com.ibm.ws.console.security/guidedactivity/cheatsheets/nl/lang/localos_serverid.htm"
+		title="Entre el nombre de usuario y la contraseña">
+		<action
+			class="com.ibm.ws.console.security.forwardCmd.do?forwardName=LocalOSUserRegistry.config.view&amp;sfname=userRegistries&amp;resourceUri=security.xml&amp;parentRefId=Security_1&amp;perspective=tab.configuration"/>
+		<description>
+Para entrar el ID de usuario y la contraseña del servidor:
+            &lt;ol&gt;
+            &lt;li&gt;&lt;strong&gt; Pulsar para actuar&lt;/strong&gt; carga la página de configuración Registro de usuario de sistema operativo local.&lt;/li&gt;
+            &lt;li&gt;Entre el ID de usuario y la contraseña del servidor&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt; Aceptar&lt;/strong&gt; para enviar los cambios.&lt;/li&gt;
+            &lt;/ol&gt;
+</description>
+	</item>
+
+</cheatsheet>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de seguridad" topic="index.html">
+   <topic label="Colección de historiales de claves activas"
+          href="ae/usec_sslactkeyhist.html"/>
+   <topic label="Valores de autenticación de entrada CSI (Common Secure Interoperability) adicionales"
+          href="ae/usec_csiv2_in_auth.html"/>
+   <topic label="Valores adicionales de autenticación de salida CSI (Common Secure Interoperability)"
+          href="ae/usec_csiv2_out_auth.html"/>
+   <topic label="Valores de Añadir referencia de alias de clave"
+          href="ae/usec_ssladdkeyaliasref.html"/>
+   <topic label="Valores de Añadir certificado de firmante"
+          href="ae/usec_ssladdsignercert.html"/>
+   <topic label="Colección de grupos de autorizaciones administrativas"
+          href="ae/usec_admin_auth_groups_edit.html"/>
+   <topic label="Valores del registro de usuario LDAP (Advanced Lightweight Directory Access Protocol)"
+          href="ae/usec_advldap.html"/>
+   <topic label="Colección de certificados y almacenes de claves de cifrado de auditoría"
+          href="ae/usec_sa_aeksc.html"/>
+   <topic label="Colección de configuración de la fábrica de sucesos de auditoría"
+          href="ae/usec_sa_aef_collection.html"/>
+   <topic label="Valores de la fábrica de sucesos de auditoría"
+          href="ae/usec_sa_aef_detail.html"/>
+   <topic label="Colección de supervisores de auditoría"
+          href="ae/usec_sa_audit_monitor.html"/>
+   <topic label="Valores de notificación de auditoría"
+          href="ae/usec_sa_audit_notification.html"/>
+   <topic label="Valores de configuración del cifrado de registros de auditoría"
+          href="ae/usec_sa_audrecencrypt.html"/>
+   <topic label="Valores del almacén de claves de registro de auditoría"
+          href="ae/usec_sa_ks_detail.html"/>
+   <topic label="Valores de configuración de la firma de registros de auditoría"
+          href="ae/usec_sa_audrecsign.html"/>
+   <topic label="Colección de proveedores de servicios de auditoría"
+          href="ae/usec_sa_asp_collection.html"/>
+   <topic label="Valores del proveedor de servicios de auditoría"
+          href="ae/usec_sa_asp_detail.html"/>
+   <topic label="Valores de memoria caché de autenticación"
+          href="ae/usec_sec_domains_cache.html"/>
+   <topic label="LTPA" href="ae/usec_authmechandexpire.html"/>
+   <topic label="Configuración de cliente de entidad emisora de certificados (CA)"
+          href="ae/usec_7sslsec_ca_detail.html"/>
+   <topic label="Colecciones de configuraciones de clientes de entidad emisora de certificados (CA)"
+          href="ae/usec_7sslsec_ca_collect.html"/>
+   <topic label="Valores de la solicitud de certificado"
+          href="ae/usec_sslcertreqprops.html"/>
+   <topic label="Valores de comunicaciones de entrada CSIv2 (Common Secure Interoperability Versión 2)"
+          href="ae/usec_inbound.html"/>
+   <topic label="Valores de comunicaciones de salida CSIv2 (Common Secure Interoperability Versión 2)"
+          href="ae/usec_outbound.html"/>
+   <topic label="Valores de entrada de configuración de JAAS (Java Authentication and Authorization Service)"
+          href="ae/usec_jaas.html"/>
+   <topic label="Configurar dominios de seguridad" href="ae/usec_sec_domains_edit.html"/>
+   <topic label="Convertir certificados" href="ae/usec_standards_convert.html"/>
+   <topic label="Colección de configuraciones SSL de puntos finales de entrada y salida dinámicos"
+          href="ae/usec_ssldynendconf.html"/>
+   <topic label="Valores de Configuraciones SSL de punto final de salida dinámico"
+          href="ae/usec_sslnewdynendconf.html"/>
+   <topic label="Colección de filtros de tipos de suceso"
+          href="ae/usec_sa_evt_collection.html"/>
+   <topic label="Valores del filtro de tipos de suceso" href="ae/usec_sa_evt_detail.html"/>
+   <topic label="Exportar certificados a un archivo de almacén de claves o un almacén de claves gestionado"
+          href="ae/usec_sslexportcert.html"/>
+   <topic label="Valores de Proveedores de autorización externos"
+          href="ae/usec_jaccprovider.html"/>
+   <topic label="Valores del proveedor JACC (Java Authorization Contract for Containers) externo"
+          href="ae/usec_externaljacc.html"/>
+   <topic label="Nombre de reino externo" href="ae/usec_add_external_realm.html"/>
+   <topic label="Extraer certificado" href="ae/usec_sslextractcert.html"/>
+   <topic label="Extraer solicitud de certificado" href="ae/usec_sslextractcertreq.html"/>
+   <topic label="Extraer certificado de firmante"
+          href="ae/usec_sslextractsignercert.html"/>
+   <topic label="Valores del asistente del repositorio federado"
+          href="ae/usec_federatedreposwiz.html"/>
+   <topic label="Valores de seguridad global" href="ae/usec_secureadminappinfra.html"/>
+   <topic label="Importar certificado de un archivo de claves o un almacén de claves gestionado"
+          href="ae/usec_sslimportcert.html"/>
+   <topic label="Valores de entrada de datos de autenticación del conector Java 2"
+          href="ae/usec_j2cauthdata.html"/>
+   <topic label="Valores de autenticación de Kerberos" href="ae/usec_kerb_auth_mech.html"/>
+   <topic label="Colección de gestores de claves" href="ae/usec_sslkeymgr.html"/>
+   <topic label="Valores de gestores de claves" href="ae/usec_sslkeymgrprops.html"/>
+   <topic label="Colección de grupos de anillos de claves"
+          href="ae/usec_sslkeysetgrps.html"/>
+   <topic label="Valores de grupos de anillos de claves"
+          href="ae/usec_sslnewkeysetgrp.html"/>
+   <topic label="Colección de anillos de claves" href="ae/usec_sslkeysets.html"/>
+   <topic label="Valores del anillo de claves" href="ae/usec_sslnewkeysets.html"/>
+   <topic label="Colección de almacenes de claves y certificados"
+          href="ae/usec_sslkeystore.html"/>
+   <topic label="Firmantes de intercambio de almacenes de claves y certificados"
+          href="ae/usec_sslexchgsigners.html"/>
+   <topic label="Valores del almacén de claves" href="ae/usec_sslnewkeystore.html"/>
+   <topic label="Valores del sistema operativo local" href="ae/usec_localosreg.html"/>
+   <topic label="Valores del asistente del sistema operativo local"
+          href="ae/usec_localosregwiz.html"/>
+   <topic label="Valores de orden del módulo de inicio de sesión de JAAS (Java Authentication and Authorization Service)"
+          href="ae/usec_modorder.html"/>
+   <topic label="Valores del módulo de inicio de sesión de JAAS (Java Authentication and Authorization Service)"
+          href="ae/usec_jaaslogin.html"/>
+   <topic label="Valores de Gestionar caducidad de certificados"
+          href="ae/usec_sslmancertexpir.html"/>
+   <topic label="Gestionar configuraciones de seguridad de punto final"
+          href="ae/usec_sslsecendptcom.html"/>
+   <topic label="Gestionar FIPS" href="ae/usec_manage_fips.html"/>
+   <topic label="Grupo de autorizaciones administrativas nuevo"
+          href="ae/usec_admin_auth_groups_new.html"/>
+   <topic label="Notificaciones" href="ae/usec_sslnotifications.html"/>
+   <topic label="Valores de notificaciones" href="ae/usec_sslnewnotifications.html"/>
+   <topic label="Colección de solicitudes de certificados personales"
+          href="ae/usec_sslperscertreqs.html"/>
+   <topic label="Valores de solicitudes de certificados personales"
+          href="ae/usec_sslnewperscertreqs.html"/>
+   <topic label="Colección de certificados personales" href="ae/usec_sslperscerts.html"/>
+   <topic label="Recopilación de configuración de cookie de sesión programática"
+          href="ae/usec_progcookieconfig.html"/>
+   <topic label="Propiedades del nivel de seguridad de proxy"
+          href="ae/usec_pxycustsetting.html"/>
+   <topic label="Valores QoP (Calidad de protección)" href="ae/usec_sslqualprotect.html"/>
+   <topic label="Recibir certificado de CA" href="ae/usec_sslreceiveCA.html"/>
+   <topic label="Sustituir un certificado" href="ae/usec_sslreplacecert.html"/>
+   <topic label="Recuperar de puerto" href="ae/usec_sslretrievesignercert.html"/>
+   <topic label="Valores de autenticación de señal RSA"
+          href="ae/usec_7rsa_token_auth.html"/>
+   <topic label="Valores de transporte de entrada SAS (Secure Authentication Service)"
+          href="ae/usec_sasinbound.html"/>
+   <topic label="Valores de transporte de salida SAS (Secure Authentication Service)"
+          href="ae/usec_sasoutbound.html"/>
+   <topic label="Detalle de la auditoría de seguridad" href="ae/usec_sa_secauditing.html"/>
+   <topic label="Colección de propiedades personalizadas de seguridad"
+          href="ae/usec_propertycoll.html"/>
+   <topic label="Valores de propiedades personalizadas de seguridad"
+          href="ae/usec_propertysettings.html"/>
+   <topic label="Colección de dominios de seguridad"
+          href="ae/usec_sec_domains_collection.html"/>
+   <topic label="Valores de certificados autofirmados"
+          href="ae/usec_sslnewperscerts.html"/>
+   <topic label="Valores de seguridad a nivel de servidor" href="ae/usec_rsecserv.html"/>
+   <topic label="Colección de certificados de firmante"
+          href="ae/usec_sslsignercerts.html"/>
+   <topic label="Valores del Certificado de firmante"
+          href="ae/usec_sslsignercertprops.html"/>
+   <topic label="Valores de inicio de sesión único" href="ae/usec_sso.html"/>
+   <topic label="Valores del asistente para Especificar extensión de protección"
+          href="ae/usec_extentofprotectwiz.html"/>
+   <topic label="Habilitación de la autenticación web SPNEGO"
+          href="ae/usec_kerb_SPNEGO_config.html"/>
+   <topic label="Valores del filtro de autenticación web SPNEGO"
+          href="ae/usec_kerb_SPNEGO_edit.html"/>
+   <topic label="Gestión de claves y certificados SSL" href="ae/usec_sslseccomconf.html"/>
+   <topic label="Colección de configuraciones SSL" href="ae/usec_sslconfigurations.html"/>
+   <topic label="Valores de configuración de SSL" href="ae/usec_sslconfigprops.html"/>
+   <topic label="Configuraciones SSL para ámbitos seleccionados"
+          href="ae/usec_sslconfigscopes.html"/>
+   <topic label="Canal de entrada SSL" href="ae/usec_transportchannel.html"/>
+   <topic label="Valores del registro personalizado autónomo"
+          href="ae/usec_customreg.html"/>
+   <topic label="Valores del asistente del registro personalizado autónomo"
+          href="ae/usec_customregwiz.html"/>
+   <topic label="Valores del registro LDAP autónomo" href="ae/usec_singleldaprepos.html"/>
+   <topic label="Valores del asistente del registro LDAP autónomo"
+          href="ae/usec_singleldapreposwiz.html"/>
+   <topic label="Valores de entrada de configuración de inicio de sesión del sistema de JAAS (Java Authentication and Authorization Service)"
+          href="ae/usec_sysjaas.html"/>
+   <topic label="Confiar en todos los reinos" href="ae/usec_realm_trust.html"/>
+   <topic label="Valores de Gestores de confianza y de claves"
+          href="ae/usec_ssltrustkeymgrs.html"/>
+   <topic label="Colección de interceptor de asociación de confianza"
+          href="ae/usec_tainterceptor.html"/>
+   <topic label="Valores del interceptor de asociación de confianza"
+          href="ae/usec_tainterceptordetail.html"/>
+   <topic label="Valores de asociación de confianza" href="ae/usec_trust.html"/>
+   <topic label="Colección de gestores de confianza" href="ae/usec_ssltrustmgr.html"/>
+   <topic label="Valores de Gestores de confianza" href="ae/usec_ssltrustmgrprops.html"/>
+   <topic label="Valores de autenticación Web" href="ae/usec_webauth.html"/>
+   <topic label="Valores de anillo de claves SAF grabables"
+          href="ae/usec_7sslwritable_SAF_keyring.html"/>
+   <topic label="Propiedades de autorización SAF de z/OS" href="ae/usec_safpropszos.html"/>
+   <topic label="Valores de SAS de z/OS" href="ae/usec_zsas_transport.html"/>
+   <topic label="Opciones de seguridad de z/OS" href="ae/usec_zos_globalsec.html"/>
+</toc>

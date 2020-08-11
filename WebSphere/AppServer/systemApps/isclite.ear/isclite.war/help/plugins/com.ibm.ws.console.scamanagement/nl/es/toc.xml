@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="SCA (Service Component Architecture)" topic="index.html">
+   <topic label="Colección de activos desplegados conectados"
+          href="ae/usca_wsspsattdepassets.html"/>
+   <topic label="Conectar valores de conjunto de políticas" href="ae/usca_psattach.html"/>
+   <topic label="Valores de servicio de componentes SCA"
+          href="ae/usca_componentsrvc.html"/>
+   <topic label="Valores de unidad de composición" href="ae/urun_rapp_bla_cu_inst.html"/>
+   <topic label="Valores de enlace JMS para compuestos SCA"
+          href="ae/usca_jms_bindings.html"/>
+   <topic label="Correlacionar valores de host virtual para compuestos SCA"
+          href="ae/usca_mapvhost.html"/>
+   <topic label="Proporcionar información de URL de punto final HTTP para compuestos SCA"
+          href="ae/usca_httpendpoint.html"/>
+   <topic label="Colección de enlaces y conjuntos de políticas de referencias para compuestos SCA"
+          href="ae/usca_refs_psbindings.html"/>
+   <topic label="Valores de referencia de componentes SCA"
+          href="ae/usca_componentref.html"/>
+   <topic label="Valores de componentes compuestos SCA" href="ae/usca_compdet.html"/>
+   <topic label="Valores de cliente de servicio SCA"
+          href="ae/usca_refs_psbindings_inst.html"/>
+   <topic label="Valores de proveedor de servicios SCA"
+          href="ae/usca_uwbs_psbindings_inst.html"/>
+   <topic label="Colección de conjuntos de políticas y enlaces de proveedor de servicios para compuestos SCA"
+          href="ae/usca_uwbs_psbindings.html"/>
+   <topic label="Establecer relaciones de unidad de composición Java EE para compuestos SCA"
+          href="ae/usca_javaee_cu_rela.html"/>
+</toc>

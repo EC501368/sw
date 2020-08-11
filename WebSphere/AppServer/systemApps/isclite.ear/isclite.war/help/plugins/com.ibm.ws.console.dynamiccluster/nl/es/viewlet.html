@@ -1,0 +1,22 @@
+<script language="javascript">
+    var features = 'directories=no,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,resizable=yes,titlebar=no';
+	var line1="Las demostraciones de la \"Guía de aprendizaje\" pueden visualizarse en una nueva ventana del navegador para poder maximizar el área visualizable. "
+	var line2="Es probable que en el navegador actual esté activado un \"bloqueo de ventana emergente\" que esté impidiendo que se abra automáticamente la nueva ventana. "
+	var line3="<br<br>Abra la  \"Guía de aprendizaje\" <a href='dynamiccluster_viewlet_swf.html' target='ViewletWindow'>en una nueva ventana</a>."
+	var line4="Las demostraciones de la \"Guía de aprendizaje\" pueden visualizarse en una nueva ventana del navegador para poder maximizar el área visualizable. "
+
+
+    winRef = window.open("dynamiccluster_viewlet_swf.html", "DynamicClusterViewlet", features);
+
+    if (winRef == null) {
+		
+        document.writeln(line1);
+        document.writeln(line2);
+        document.writeln(line3);
+
+    }  else {
+
+        document.writeln(line4);
+
+    }
+</script>

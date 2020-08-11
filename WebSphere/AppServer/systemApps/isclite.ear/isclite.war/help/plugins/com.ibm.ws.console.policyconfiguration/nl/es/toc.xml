@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Configuración de políticas" topic="index.html">
+   <topic label="Definir propiedades generales de la política de servicio
+"
+          href="sc_detail_main_new.html"/>
+   <topic label="Definir propiedades objetivo de la política de servicio "
+          href="sc_goalproperties_new.html"/>
+   <topic label="Definir las pertenencias a la política de servicio" href="sc_membership_new.html"/>
+   <topic label="Definir propiedades generales de las clases de transacción "
+          href="tc_detail_main_new.html"/>
+   <topic label="Política de servicio" href="sc_collection.html"/>
+   <topic label="Visión general de las políticas de servicio" href="servicepolicy_overview.html"/>
+   <topic label="Valores de política de servicio" href="sc_detail_main.html"/>
+   <topic label="Colección de topologías de políticas de servicio " href="service_policy_topology.html"/>
+   <topic label="Clase de transacción
+" href="tc_detail_main.html"/>
+   <topic label="Mover clase de transacción " href="tc_detail_move.html"/>
+</toc>

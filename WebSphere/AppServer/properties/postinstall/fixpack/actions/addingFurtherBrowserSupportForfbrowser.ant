@@ -1,0 +1,101 @@
+<project name="addingFurtherBrowserSupportForfbrowser" default="install" basedir=".">
+	<taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/>
+    
+	<taskdef name="replaceTokenInFile" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.ReplaceTokenInFileAntTask" />
+	
+	<property name="filePath" value="${WAS_HOME}/firststeps/fbrowser.sh" />
+	
+	<target name="detectPlatform" description="Detects the current OS family">
+		
+		<condition property="isCurrentPlatformOS400" value="true">
+            <equals arg1="${os.name}" arg2="OS/400"/>
+        </condition>
+
+        <condition property="isCurrentPlatformZOS" value="true">
+            <os family="z/os"/>
+        </condition>
+		
+        <condition property="isCurrentPlatformWindows" value="true">
+            <os family="windows"/>
+        </condition>
+		
+		<condition property="isCurrentPlatformUnix" value="true">
+         <and>
+            <os family="unix"/>
+            <and>
+                <not>
+                   <isset property="isCurrentPlatformZOS"/>
+                </not>
+                <not>
+                    <isset property="isCurrentPlatformOS400"/>
+                </not>
+            </and>
+        </and>
+       </condition>
+		
+	</target>
+
+	<target name="unixAndFbrowser">
+		<available file="${WAS_HOME}/firststeps/fbrowser.sh" property="fbrowserExists"/>
+		<condition property="continue">
+			<and>
+				<isTrue value="${fbrowserExists}"/>
+				<isTrue value="${isCurrentPlatformUnix}"/>
+			</and>
+		</condition>
+		
+		<wscmtlog>Will it run: ${continue}</wscmtlog>
+		<echo>Will it run: ${continue}</echo>
+
+	</target>
+	
+	<target name="isAlreadyChanged" description="Check if changes have been made to ${filePath}" depends="unixAndFbrowser" if="continue">
+		
+		<wscmtlog>Getting into isAlreadyChanged</wscmtlog>
+		
+		<loadfile property="fbrowser" srcFile="${filePath}" failonerror="true">
+		</loadfile>
+		
+		<condition property="changeNeeded">
+			<not>
+			<contains string="${fbrowser}" substring="*Firefox\ [1-9][0-9].*) return 0;;" casesensitive="true">
+			</contains>
+			</not>
+		</condition>
+		
+		<condition property="removeNeeded">
+			<not>
+				<isset property="changeNeeded" />
+			</not>
+		</condition>
+		
+		<wscmtlog>Need to modify ${filePath}: ${changeNeeded}</wscmtlog>
+		<wscmtlog>Is ${filePath} already modified: ${removeNeeded}</wscmtlog>
+		<echo>Need to modify ${filePath}: ${changeNeeded}</echo>
+		<echo>Is ${filePath} already modified: ${removeNeeded}</echo>
+		
+	</target>
+	
+	<target name="changeUnix" description="Changes ${filePath}" depends="isAlreadyChanged" if="changeNeeded">
+		<wscmtlog>Getting into changeUnix</wscmtlog>
+		<replaceTokenInFile path="${filePath}" token="*Firefox/[1-9].*) return 0;;" value="*Firefox/[1-9].*) return 0;; ${line.separator} *Firefox\ [1-9][0-9].*) return 0;;" property="isReplaced" ignorecase="false" />
+		<wscmtlog>Did ${filePath} get modified : ${isReplaced} </wscmtlog>
+		<echo>Did ${filePath} get modified : ${isReplaced}</echo>
+	</target>
+	
+	<target name="removeChange" description="Remove changes from ${filePath}" depends="isAlreadyChanged" if="removeNeeded">
+		
+		<wscmtlog>Getting into removeChange</wscmtlog>
+		<replaceTokenInFile path="${filePath}" token="*Firefox\ [1-9][0-9].*) return 0;;" value="" property="isRemoved" ignorecase="false" />
+		
+		<wscmtlog>Did ${filePath} get modified:  ${isRemoved}</wscmtlog>
+		<echo>Did ${filePath} get modified:  ${isRemoved}</echo>
+	</target>
+	
+	<target name="install" depends="detectPlatform, changeUnix">
+	</target>
+	
+	<target name="uninstall" depends="detectPlatform, removeChange">
+	</target>
+	
+</project>

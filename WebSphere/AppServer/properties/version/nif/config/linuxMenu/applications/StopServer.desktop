@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=${STOPSERVER}
+Comment=${STOPSERVER}
+Categories=WebSphere;AppServer;Profiles;ProfileName;${PROFILENAME}
+Icon=${WASROOT}/properties/version/nif/config/linuxMenu/images/stop_server16x16.png
+Exec=${PROFILEROOT}/bin/stopServer.sh ${SERVERNAME}
+StartupNotify=true
+Type=Application
+Terminal=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.9

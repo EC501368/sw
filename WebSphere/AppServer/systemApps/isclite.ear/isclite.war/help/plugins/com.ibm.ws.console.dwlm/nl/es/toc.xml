@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de carga de trabajo dinámica (DWLM)" topic="index.html">
+   <topic label="WLM dinámico" href="dwlm_collection.html"/>
+</toc>

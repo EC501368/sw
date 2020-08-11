@@ -1,0 +1,6 @@
+#Properties for AppSrv01-BASE-7e42eb5b-f5b8-418c-b09d-8e224bfdacf2
+#Wed Nov 13 18:12:50 CST 2019
+com.ibm.ws.profile.name=AppSrv01
+com.ibm.ws.profile.type=BASE
+com.ibm.ws.profile.path=/jennex/WebSphere/AppServer/profiles/AppSrv01
+com.ibm.ws.profile.key=AppSrv01-BASE-7e42eb5b-f5b8-418c-b09d-8e224bfdacf2

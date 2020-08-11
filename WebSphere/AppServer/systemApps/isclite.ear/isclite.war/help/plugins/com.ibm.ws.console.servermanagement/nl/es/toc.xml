@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión del servidor" topic="index.html">
+   <topic label="Valores del servicio de administración" href="ae/uagt_radmin.html"/>
+   <topic label="Valores de propiedad del servidor de aplicaciones para un plug-in de servidor web"
+          href="ae/uwsv_plugin_props5.html"/>
+   <topic label="Valores del servidor de aplicaciones" href="ae/urun_rappsvr.html"/>
+   <topic label="Valores de asignación de solicitudes asíncronas" href="ae/uweb_ard.html"/>
+   <topic label="Valores de CEA" href="ae/ucea_cea_settings.html"/>
+   <topic label="Colección de cargadores de clases" href="ae/urun_rclassloader.html"/>
+   <topic label="Valores del cargador de clases" href="ae/urun_rclassloader_inst.html"/>
+   <topic label="Valores de servicio del Visor de cargadores de clases"
+          href="ae/utrb_classload_viewer_service.html"/>
+   <topic label="Valores de cookies" href="ae/uprs_rcookie_settings.html"/>
+   <topic label="Propiedades de mejora dinámica de SQL para métodos finder personalizados"
+          href="ae/udat_sqllock.html"/>
+   <topic label="Colección de propiedades personalizadas" href="ae/urun_rproperty.html"/>
+   <topic label="Valores de propiedades personalizadas"
+          href="ae/urun_rproperty_inst.html"/>
+   <topic label="Colección de servicios personalizados" href="ae/urun_rsvr_services.html"/>
+   <topic label="Valores de servicio personalizado"
+          href="ae/urun_rsvr_services_inst.html"/>
+   <topic label="Valores de base de datos" href="ae/uprs_rdatabase_settings.html"/>
+   <topic label="Detalles del servicio de depuración" href="ae/utrb_debugsvc.html"/>
+   <topic label="Valores de JPA (Java Persistence API) predeterminados"
+          href="ae/uejb_jpasettings.html"/>
+   <topic label="Valores del servicio de rastreo de diagnóstico"
+          href="ae/utrb_traceservice.html"/>
+   <topic label="Valores de entorno distribuido" href="ae/uprs_rpersistence.html"/>
+   <topic label="Valores de métodos asíncronos de EJB"
+          href="ae/uejb_ejbAsynch_settings.html"/>
+   <topic label="Valores de memoria caché de EJB" href="ae/uejb_rcash.html"/>
+   <topic label="Valores de contenedor de EJB" href="ae/uejb_recnt.html"/>
+   <topic label="Valores del servicio de temporizador EJB"
+          href="ae/uejb_timerservice.html"/>
+   <topic label="Colección de aplicaciones empresariales" href="ae/urun_rapp.html"/>
+   <topic label="Valores de aplicación de empresa" href="ae/urun_rapp_inst.html"/>
+   <topic label="Colección de entradas de entorno"
+          href="ae/urun_environment_entries.html"/>
+   <topic label="Valores de entradas de entorno"
+          href="ae/urun_environment_entries_inst.html"/>
+   <topic label="Colección de MBeans de extensión" href="ae/uagt_mbean.html"/>
+   <topic label="Colección de proveedores de MBean de extensión"
+          href="ae/uagt_mbeanprovider.html"/>
+   <topic label="Valores de proveedores de MBean de extensión"
+          href="ae/uagt_mbeanprovider_inst.html"/>
+   <topic label="Valores de MBean de extensión" href="ae/uagt_mbean_inst.html"/>
+   <topic label="Colección de grupos de memoria cachés externas"
+          href="ae/udyn_rextcache.html"/>
+   <topic label="Colección de miembros de grupo de memoria caché externa"
+          href="ae/udyn_rextcachegroupmember.html"/>
+   <topic label="Valores de miembro de grupo de memoria caché externa"
+          href="ae/udyn_rextcachegroupmemberi.html"/>
+   <topic label="Valores de grupo de memoria caché externa"
+          href="ae/udyn_rextcachei.html"/>
+   <topic label="Valores de servidor genérico" href="ae/urun_genericsvr.html"/>
+   <topic label="Propiedades del clúster del plug-in HTTP"
+          href="ae/uwsv_plugin_clusterprops.html"/>
+   <topic label="Colección de transportes HTTP" href="ae/urun_rhttptransport.html"/>
+   <topic label="Valores de transporte HTTP" href="ae/urun_rhttptransport_prop.html"/>
+   <topic label="Valores del registro de servicio de IBM" href="ae/utrb_servicelogs.html"/>
+   <topic label="Conectores de Java Management Extensions (JMX)"
+          href="ae/uagt_rconnector.html"/>
+   <topic label="Valores de las anotaciones cronológicas de la máquina virtual Java (JVM)"
+          href="ae/utrb_jvmlogs.html"/>
+   <topic label="Valores de la máquina virtual Java" href="ae/urun_rconfproc_jvm.html"/>
+   <topic label="Valores de conector JMX" href="ae/uagt_rconnector_inst.html"/>
+   <topic label="Colección de referencias de biblioteca" href="ae/ucws_rlibref.html"/>
+   <topic label="Valores de referencias de biblioteca" href="ae/ucws_rlibref_inst.html"/>
+   <topic label="Valores de puerto de escucha" href="ae/umb_prolp.html"/>
+   <topic label="Valores de rastreo y registro" href="ae/utrb_logtrace.html"/>
+   <topic label="Valores de nivel de registro" href="ae/utrb_loglevel.html"/>
+   <topic label="Valores de réplica de memoria a memoria"
+          href="ae/uprs_rinternal_messaging.html"/>
+   <topic label="Colección de puertos de escucha de mensajes" href="ae/umb_smlp.html"/>
+   <topic label="Servicio de escucha de mensajes" href="ae/umb_prols.html"/>
+   <topic label="Propiedades personalizadas del servicio de escucha de mensajes"
+          href="ae/umb_prolscp.html"/>
+   <topic label="Valores de política de supervisión" href="ae/urun_rmonitorpol.html"/>
+   <topic label="Valores de servidor de nombres" href="ae/unam_rname_server.html"/>
+   <topic label="Procesos nativos" href="ae/urun_rnative_process.html"/>
+   <topic label="Valores de servicio de ORB (Object Request Broker)"
+          href="ae/uorb_rsetg.html"/>
+   <topic label="Valores avanzados de los servicios ORB en la plataforma z/OS"
+          href="ae/uorb_rorb_service.html"/>
+   <topic label="Valores de contenedor de portlet" href="ae/uport_portlet_settings.html"/>
+   <topic label="Colección de puertos" href="ae/urun_rendpoint.html"/>
+   <topic label="Valores de puertos" href="ae/urun_rendpoint_inst.html"/>
+   <topic label="Valores de definición de proceso" href="ae/urun_rconfproc.html"/>
+   <topic label="Valores de tipo de definición de proceso"
+          href="ae/urun_rconfproc_type.html"/>
+   <topic label="Valores de ejecución de proceso" href="ae/urun_rprocexec.html"/>
+   <topic label="Valores de anotaciones cronológicas de proceso"
+          href="ae/urun_rproclog.html"/>
+   <topic label="Valores del servicio de repositorio" href="ae/uagt_radminrepos.html"/>
+   <topic label="Seleccionar un servidor para configurar las anotaciones cronológicas y el rastreo"
+          href="ae/utrb_logserver.html"/>
+   <topic label="Colección de servidores" href="ae/urun_rsvr.html"/>
+   <topic label="Colección de componentes de servidor" href="ae/urun_rsvrcomp.html"/>
+   <topic label="Valores de componentes de servidor" href="ae/urun_rsvrcomp_inst.html"/>
+   <topic label="Valores de la instancia de servidor"
+          href="ae/urun_rserver_instance.html"/>
+   <topic label="Valores de seguridad a nivel de servidor" href="ae/usec_rsecserv.html"/>
+   <topic label="Opciones de plantilla de servidor" href="ae/urun_rsvr_template_new.html"/>
+   <topic label="Colección de plantillas de servidor" href="ae/urun_rsvr_template.html"/>
+   <topic label="Valores de la plantilla de servidor"
+          href="ae/urun_rsvr_template_settings.html"/>
+   <topic label="Valores de gestión de sesiones" href="ae/uprs_rsession_manager.html"/>
+   <topic label="Canal de entrada SSL" href="ae/usec_transportchannel.html"/>
+   <topic label="Valores de Comportamiento de arranque"
+          href="ae/urun_rapp_startup_behavior.html"/>
+   <topic label="Colección de agrupación de hebras" href="ae/uejb_thrdpool.html"/>
+   <topic label="Valores de agrupación de hebras" href="ae/uejb_rthrd.html"/>
+   <topic label="Recursos de transacción" href="ae/ujta_resource.html"/>
+   <topic label="Valores del servicio de transacciones" href="ae/udat_contranserv.html"/>
+   <topic label="Transacciones importadas y preparadas" href="ae/ujta_prepared.html"/>
+   <topic label="Transacciones que necesitan finalización manual"
+          href="ae/ujta_manual.html"/>
+   <topic label="Transacciones reintentando recursos" href="ae/ujta_retry.html"/>
+   <topic label="Transacciones con resultado heurístico" href="ae/ujta_heuristic.html"/>
+   <topic label="Valores de cadena de transporte" href="ae/urun_chain_type.html"/>
+   <topic label="Valores personalizados de parámetros de ajuste"
+          href="ae/uprs_rtuning_custom.html"/>
+   <topic label="Valores de parámetros de ajuste" href="ae/uprs_rtuning_parameters.html"/>
+   <topic label="Valores avanzados del contenedor Web" href="ae/urun_rnqos_tclass.html"/>
+   <topic label="Valores del contenedor Web" href="ae/uweb_rcont.html"/>
+   <topic label="Propiedad Servicio de configuración de plug-in del servidor web"
+          href="ae/uwsv_plugin_props4.html"/>
+   <topic label="Propiedades del plug-in del servidor Web"
+          href="ae/uwsv_plugin_props.html"/>
+</toc>

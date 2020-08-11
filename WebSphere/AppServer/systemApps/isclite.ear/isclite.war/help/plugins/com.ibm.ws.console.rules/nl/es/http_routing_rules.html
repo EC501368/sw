@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Normas HTTP de política de direccionamiento" />
+<meta name="abstract" content="Esta página permite asociar normas HTTP de política de direccionamiento con direccionadores On Demand (ODR) y clústeres ODR." />
+<meta name="description" content="Esta página permite asociar normas HTTP de política de direccionamiento con direccionadores On Demand (ODR) y clústeres ODR." />
+<meta name="DC.Relation" scheme="URI" content="http_rulebuilder_detail.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="http_routing_rules" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Normas HTTP de política de direccionamiento</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="http_routing_rules">
+<h1 class="title topictitle1">Normas HTTP de política de direccionamiento</h1>
+<div class="body"><p class="shortdesc">Esta página permite asociar normas HTTP de política de direccionamiento con direccionadores On Demand (ODR) y clústeres ODR.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidor</span> &gt; <span class="ph uicontrol">Direccionadores On Demand</span> &gt; <span class="ph uicontrol"> <var class="keyword varname">ODR</var></span> &gt; <span class="ph uicontrol">Propiedades del direccionador On Demand</span> &gt; <span class="ph uicontrol">Normas HTTP de política de direccionamiento</span></span>.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Clústeres</span> &gt; <span class="ph uicontrol"> Clústeres de direccionadores On Demand</span> &gt; <span class="ph uicontrol"> <var class="keyword varname">Clúster ODR</var></span> &gt; <span class="ph uicontrol">Propiedades del direccionador On Demand</span> &gt; <span class="ph uicontrol">Normas HTTP de política de direccionamiento</span></span>.</p>
+<p class="p">Hay que poseer privilegios administrativos de administrador para poder modificar normas con el generador de normas.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="addrule"><h2 class="title topictitle2">Añadir</h2>
+<div class="body"><p class="shortdesc">Crea una regla nueva.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="delete"><h2 class="title topictitle2">Suprimir</h2>
+<div class="body"><p class="shortdesc">Suprime una norma.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="moveupmovedown"><h2 class="title topictitle2">Subir, Bajar</h2>
+<div class="body"><p class="shortdesc">Da prioridad a las normas en el caso de varias normas. El orden de las normas
+es clave para determinar las coincidencias. Si se produce una coincidencia en la primera norma,
+las normas subsiguientes no se ejecutan.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="selectaction"><h2 class="title topictitle2">Seleccionar acción</h2>
+<div class="body"><p class="shortdesc">Las acciones hacen referencia a la solicitud HTTP de entrada.</p>
+<div class="p">Asigna la acción de direccionamiento por omisión a una de las opciones siguientes:<dl class="dl"><dt class="dt dlterm">Permitir direccionamiento a</dt>
+<dd class="dd"> Permite direccionamiento a la solicitud HTTP de entrada.</dd>
+<dt class="dt dlterm">Rechazar direccionamiento con código de error</dt>
+<dd class="dd">Rechaza todas las solicitudes HTTP de entrada con el código de error especificado.</dd>
+<dt class="dt dlterm">Permitir direccionamiento con afinidad a</dt>
+<dd class="dd">Permite direccionamiento con afinidad a la solicitud HTTP de entrada.</dd>
+<dt class="dt dlterm">Permitir direccionamiento a servidores en modalidad de mantenimiento</dt>
+<dd class="dd">Direcciona la solicitud a los servidores sin ninguna interrupción.</dd>
+<dt class="dt dlterm">Permitir direccionamiento con afinidad a servidores en modalidad de mantenimiento</dt>
+<dd class="dd">Permite direccionamiento con afinidad sin ninguna interrupción.</dd>
+<dt class="dt dlterm">Redirigir el direccionamiento a</dt>
+<dd class="dd">Redirige la solicitud al URL especificado.</dd>
+<dt class="dt dlterm">Direccionar al recurso local</dt>
+<dd class="dd">Redirige la solicitud al sistema de archivos local del ODR desde el que se proporciona contenido estático.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="specifyby"><h2 class="title topictitle2">Especificado por</h2>
+<div class="body"><p class="shortdesc">Especifica clúster, servidor, módulo.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="selectcellname"><h2 class="title topictitle2">Seleccionar nombre de célula</h2>
+<div class="body"><p class="shortdesc">Especifica la célula.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="multiclusterouting"><h2 class="title topictitle2">Política de direccionamiento con varios clústeres</h2>
+<div class="body"><p class="shortdesc">El campo de política de direccionamiento con varios clústeres se visualiza al seleccionar
+cualquiera de las acciones de permitir. Además, el campo sólo se aplica si hay varios clústeres de destino. Si los clústeres destino de la política se calculan de forma dinámica, el número y el orden de los clústeres de destino se desconocen hasta el tiempo de ejecución.  </p>
+<div class="p">Asigna la política de direccionamiento de varios clústeres con una de las siguientes opciones:<dl class="dl"><dt class="dt dlterm">Sustitución por anomalía</dt>
+<dd class="dd">Encuentra el primer clúster con un servidor disponible y equilibra la carga en dicho clúster. El orden de una lista generada de forma dinámica de clústeres no está definido. </dd>
+<dt class="dt dlterm">Por turno circular con pesos</dt>
+<dd class="dd">Equilibrio de carga por turno circular con pesos. En el caso de retransmisiones UDP, mantiene la afinidad. </dd>
+<dt class="dt dlterm">Solicitud pendiente con el menor peso</dt>
+<dd class="dd">Equilibrio de carga de solicitudes pendientes con el menor peso. En el caso de retransmisiones UDP, mantiene la afinidad. </dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="redirecturl"><h2 class="title topictitle2">URL de redireccionamiento</h2>
+<div class="body"><p class="shortdesc">Este campo se muestra al seleccionar la acción de redireccionar.
+Con esta política de redireccionamiento,
+el ODR redirige la solicitud al URL especificado.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="rejectcode"><h2 class="title topictitle2">Código de rechazo</h2>
+<div class="body"><p class="shortdesc">Esta campo se visualiza al seleccionar la acción de rechazar.
+Esta política de redireccionamiento hace que el ODR rechace la solicitud y devuelve el código de error HTTP especificado. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="localresourcepath"><h2 class="title topictitle2">vía de acceso del recurso local</h2>
+<div class="body"><p class="shortdesc">Este campo se muestra al seleccionar la acción de recurso local. Con esta política de redireccionamiento,
+la solicitud se redirige al sistema de archivos local del ODR desde el que se proporciona contenido estático.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="apply"><h2 class="title topictitle2">Aplicar</h2>
+<div class="body"><p class="shortdesc">Confirma los nuevos valores de la norma.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link build" href="http_rulebuilder_detail.html" title="El generador de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados u operadores lógicos a los que no se les da soporte.">Generador de expresiones de normas HTTP</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: http_routing_rules.html</span></body>
+</html>

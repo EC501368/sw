@@ -1,0 +1,21 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+  <Name>GenericProfiles</Name>
+  <Directory>Profiles.directory</Directory>
+
+  <!-- Stuff in the toplevel -->
+  <Include>
+    <And>
+	<Category>WebSphere</Category>
+        <Category>AppServer</Category>
+        <Category>Profiles</Category>
+        <Not>
+		<Category>ProfileName</Category>
+        </Not>
+    </And>
+  </Include>
+  <!--MENU FOR PROFILE-->
+  <!--<Menu><Name>${PROFILENAME}Profile</Name><MergeFile>${WAS_HOME}/profiles/${PROFILENAME}/properties/linuxMenu/menus/${PROFILENAME}.menu</MergeFile></Menu>-->
+</Menu>

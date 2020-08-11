@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Seguridad de SCA (Service Component Architecture)" topic="index.html">
+   <topic label="Correlacionar roles RunAs con colección de usuarios para compuestos SCA"
+          href="ae/usca_usec_aurunas.html"/>
+   <topic label="Correlacionar roles de seguridad con colección de usuarios o grupos para compuestos SCA"
+          href="ae/usca_usec_tselugrad.html"/>
+</toc>

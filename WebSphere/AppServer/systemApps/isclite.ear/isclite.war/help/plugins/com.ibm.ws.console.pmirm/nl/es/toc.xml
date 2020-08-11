@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Request Metrics" topic="index.html">
+   <topic label="Colección de valores de filtros" href="ae/uprf_rfiltervalues1.html"/>
+   <topic label="Configuración de valores de filtro" href="ae/uprf_rfiltervalues2.html"/>
+   <topic label="Request Metrics" href="ae/uprf_rrequestmetrics.html"/>
+   <topic label="Filtros de Request Metrics" href="ae/uprf_rfilter.html"/>
+   <topic label="Valores de filtro de Request Metrics" href="ae/uprf_rrqfilter.html"/>
+</toc>

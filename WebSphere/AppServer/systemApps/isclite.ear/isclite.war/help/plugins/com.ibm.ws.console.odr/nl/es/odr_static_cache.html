@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Normas de antememoria estática del direccionador On Demand" />
+<meta name="abstract" content="En este tema se enumeran las normas de antememoria estática del direccionador On Demand (ODR). En esta página puede crear, suprimir o modificar una norma de antememoria estática del direccionador On Demand." />
+<meta name="description" content="En este tema se enumeran las normas de antememoria estática del direccionador On Demand (ODR). En esta página puede crear, suprimir o modificar una norma de antememoria estática del direccionador On Demand." />
+<meta name="DC.Relation" scheme="URI" content="uiodr_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_settings.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_cache.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_cacheinstances.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_chain.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_wiz.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="odr_static_cache" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Normas de antememoria estática del direccionador On Demand</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="field-help" id="odr_static_cache">
+<h1 class="title topictitle1">Normas de antememoria estática del direccionador On Demand</h1>
+<div class="body"><p class="shortdesc">En este tema se enumeran las normas de antememoria estática del direccionador On Demand (ODR). En esta página puede crear, suprimir o modificar una norma de antememoria estática del direccionador On Demand.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidores</span> &gt; <span class="ph uicontrol">Direccionadores On Demand</span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_odr</var></span> &gt; <span class="ph uicontrol">Propiedades del direccionador On Demand</span> &gt; <span class="ph uicontrol">Reglas de memoria caché estática</span></span>. </p>
+<p class="p">Hay que poseer privilegios administrativos de configurador o administrador para cambiar los valores de ODR.</p>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="jpxserver_name"><h2 class="title topictitle2">Seleccionar</h2>
+<div class="body"><p class="shortdesc">Seleccione una norma para ver sus detalles.</p>
+<p class="p"></p>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="jpxserver_node"><h2 class="title topictitle2">Grupos URI </h2>
+<div class="body"><p class="shortdesc">Nombre exclusivo de los grupos de URI que forman una colección utilizada como base para direccionar peticiones.</p>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="jpxserver_status"><h2 class="title topictitle2">Inhabilitar la antememoria para este grupo URI</h2>
+<div class="body"><p class="shortdesc">Indica si está habilitada o inhabilitada la colocación en antememoria para este grupo de URI.</p>
+</div>
+</div>
+<div class="topic nested1" id="default"><h2 class="title topictitle2">Caducidad por omisión</h2>
+<div class="body"><p class="p">El valor de caducidad por omisión, en segundos, se utiliza para determinar la validez de una respuesta
+colocada en antememoria cuando las demás cabeceras de respuesta relacionadas con la antememoria de HTTP 1.1 no facilitan ninguna orientación. </p>
+</div>
+</div>
+<div class="topic nested1" id="last"><h2 class="title topictitle2">Último factor modificado</h2>
+<div class="body"><p class="p">El porcentaje de una cabecera que se ha modificado por última vez para una respuesta que determina la validez de una respuesta colocada en antememoria cuando la respuesta no tiene cabeceras de caducidad HTTP explícitas. </p>
+</div>
+</div>
+<div class="topic nested1" id="virtual"><h2 class="title topictitle2">Nombre del sistema principal virtual</h2>
+<div class="body"><p class="p">El nombre del sistema principal virtual, junto con el grupo de URI, define el espacio de direcciones para el que debe realizarse la personalización de la antememoria. </p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="uiodr_collection.html" title="Esta página lista los direccionadores on demand (ODR) de la célula. Un ODR se encuentra en un nodo de Intelligent Management. Un ODR clasifica, otorga prioridades y direcciona tráfico SIP y HTTP en la empresa. En esta página podrá crear, suprimir y detener un ODR. Existe la posibilidad de crear plantillas de servidor.">Colección de direccionadores On Demand</a></div>
+<div><a class="link help" href="odr_settings.html" title="En este tema se describe cómo realizar una configuración avanzada en un direccionador On Demand (ODR). Con los valores de ODR, se puede ajustar el funcionamiento del ODR. En especial, puede configurar las conexiones y las solicitudes al servidor de aplicaciones, habilitar el almacenamiento en antememoria, configurar las solicitudes que se deben rechazar, definir cómo se manejan las respuestas de error y especificar la ubicación de las anotaciones cronológicas del ODR.">Valores del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_cache.html" title="En este tema se describe cómo configurar una norma de antememoria asociada a un grupo de URI para el direccionador On Demand (ODR). HTTP 1.1 define un conjunto de normas para la colocación en antememoria del contenido en los direccionadores ODR. Las normas de antememoria estática permiten alterar temporalmente estas normas por omisión para un espacio de direcciones dado. Para que las normas tengan sentido, debe habilitar la colocación en antememoria en la página de la consola administrativa Servidores &gt; Tipos de servidor &gt; Direccionadores On Demand &gt; nombre_ODR &gt; Propiedades del direccionador On Demand &gt; Valores del direccionador On Demand.">Valores de normas de antememoria estática del direccionador On demand</a></div>
+<div><a class="link help" href="odr_cacheinstances.html" title="Utilice esta página para configurar y gestionar instancias de antememoria de objetos, que además de la antememoria compartida por omisión, pueden almacenar, distribuir y compartir datos de aplicaciones Java EE (Java Platform, Enterprise Edition). Utilice estas instancias de antememoria para proporcionar a las aplicaciones mejor flexibilidad y ajuste de los recursos de antememoria.">Colección de instancias de antememoria de objetos del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_chain.html" title="Utilice esta página para ver o gestionar cadenas de transporte para el direccionador On Demand (ODR). Las cadenas de transporte permiten la comunicación mediante transportes o pilas de protocolo, que generalmente están basados en sockets.">Colección de cadenas de transporte del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_detail_main.html" title="Utilice esta página para modificar los valores de un direccionador On Demand (ODR) que ya exista.">Configuración del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_wiz.html" title="Esta página sirve para crear un nuevo direccionador On Demand.">Crear un nuevo direccionador On Demand</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo:  odr_static_cache.html</span></body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS  TYPE="org.eclipse.help.toc"?>
+<toc label="Conceptos de usuarios y grupos" topic="idmgrconceptuser.html">
+   <topic label="Conceptos de usuarios y grupos">
+      <topic label="Usuarios" href="idmgrconceptuser.html"/>
+      <topic label="Grupos" href="idmgrconceptgroup.html"/>
+      <topic label="Miembros" href="idmgrconceptmember.html"/>
+   </topic>
+</toc>

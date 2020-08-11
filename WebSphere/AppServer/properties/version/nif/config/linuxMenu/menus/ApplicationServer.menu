@@ -1,0 +1,23 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+  <Name>ApplicationServerV7.0</Name>
+  <Directory>AppServer.directory</Directory>
+
+  <!-- Stuff in the toplevel -->
+  <Include>
+    <And>
+	<Category>WebSphere</Category>
+        <Category>AppServer</Category>
+        <Not>
+          <Category>Profiles</Category>
+        </Not>
+    </And>
+  </Include>
+  <Menu>
+     <Name>Profiles</Name>
+     <MergeFile>${WAS_HOME}/properties/Profiles.menu</MergeFile>
+  </Menu>
+</Menu>
+

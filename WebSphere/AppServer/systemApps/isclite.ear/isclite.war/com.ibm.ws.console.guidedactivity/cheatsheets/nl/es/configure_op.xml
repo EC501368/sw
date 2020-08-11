@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet title="Definir políticas para detectar y gestionar condiciones de salud
+">
+
+	<intro href="intro_define_health.htm">
+		<description>Esta actividad guiada sirve para definir políticas de salud para detectar y gestionar condiciones de
+        salud en el entorno. 
+
+        Para obtener más información:
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=twve_odhealth&gt;
+         Definición de la gestión de salud
+        &lt;/A&gt;
+
+
+</description>
+	</intro>
+
+	<item href="" title="Crear políticas para condiciones de salud específicas ">
+		<action class="navigatorCmd.do?forwardName=healthclass.content.main"></action>
+		<description>Existen varias condiciones de salud que el controlador de gestión de salud puede supervisar.  Las condiciones se podrían incluir
+        en cuatro categorías: pérdidas de memoria, "cuelgues" de servidores, reinicios preventivos y reducciones de saturación.
+
+        &lt;br/&gt;&lt;br/&gt; 
+
+        &lt;strong&gt;Sugerencia&lt;/strong&gt; se recomienda crear políticas de alto nivel en modalidad supervisada para así controlar ampliamente
+        las condiciones de salud.  Una vez se ha identificado un problema en una aplicación concreta, los miembros del servidor
+        pueden aplicar en los mismos políticas de salud más específicas en modalidad automática para mantener la disponibilidad
+        hasta que se pueda resolver completamente el problema.
+        &lt;br/&gt;&lt;br/&gt;
+        Para obtener más información:
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=twve_odhealthpolicy"&gt;
+        Creación de una política de salud&lt;/A&gt;
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=rwve"&gt;
+        Gestión de políticas de salud con scripts&lt;/a&gt;
+
+
+
+  
+		</description>
+	</item>
+
+
+	<item href="" title="Configurar el controlador de supervisión de salud">
+		<action class="com.ibm.ws.console.hmm.forwardCmd.do?forwardName=Healthcontroller.config.view"></action>
+
+		<description>
+        Después de definir las políticas de salud, el controlador de supervisión de salud determina la frecuencia
+        con que se verifican las políticas de salud para observar si hay problemas, cuándo y cómo pueden reiniciarse
+        los servidores y en qué intervalos de tiempo los reinicios de servidor están prohibidos.
+        Para obtener más información:
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=twve_odtunehealth"&gt;
+        Supervisión y ajuste de la gestión de salud
+        &lt;/A&gt;
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;A target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=rwve"&gt;
+        Cambio de las configuraciones del controlador de gestión de salud con scripts
+       &lt;/A&gt;
+        </description>
+	</item>
+
+
+<item href="" title="Establecer notificaciones de correo electrónico para tareas de tiempo de ejecución">
+<action class="navigatorCmd.do?forwardName=Notification.config.view"></action>
+		<description>Cuando las políticas de salud funcionan en modalidad supervisada o automática, recibirá notificaciones de
+        tareas de tiempo de ejecución propuestas por el sistema para realizar cambios en la configuración o el entorno de tiempo de ejecución. Para obtener más información:
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+		&lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=twve_xadmemail"&gt;Definición de la notificación por correo electrónico&lt;/A&gt;
+        &lt;br/&gt;
+
+        &lt;A HREF="javascript:showHideSection('commands1')"&gt;
+        &lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="Ampliar o contraer" ID="commands1Img" ALIGN="left" BORDER="0" style="margin-left:-0.2em"/&gt;
+        &lt;/A&gt;Habilitar notificaciones de tareas de correo electrónico con scripts
+        &lt;br/&gt;
+        &lt;div id="commands1" style="margin-left:1em;height:10em;width:90%;display:none;overflow:auto"&gt; 
+
+
+        &lt;i&gt;Asignar el objeto de notificaciones a una variable&lt;/i&gt;&lt;br/&gt;
+        &lt;table id="commands1table" cellpadding="3" cellspacing="0" style="margin-top:0.25em;border:1px solid gray"&gt;
+        &lt;tr&gt;&lt;td class="table-text"&gt;
+        wsadmin&gt;set emailVar [$AdminConfig list EmailNotifications]
+        &lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;
+
+
+        &lt;i&gt;Establecer la propiedad habilitada en "true"&lt;/i&gt;&lt;br/&gt;
+        &lt;table id="commands1table" cellpadding="3" cellspacing="0" style="margin-top:0.25em;border:1px solid gray"&gt;
+        &lt;tr&gt;&lt;td class="table-text"&gt;
+        wsadmin&gt;$AdminConfig modify $emailVar {{enabled true}}
+        &lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+
+	</description>
+</item>
+
+
+<item
+    href=""
+    title="Guardar y sincronizar la configuración">
+    <action
+        class=""/>
+    <description>
+             Pulse &lt;strong&gt;Guardar&lt;/strong&gt; en el mensaje situado en la parte superior del panel de la consola para actualizar la configuración en el depósito maestro.
+    </description>
+</item>
+
+
+
+<item href="" title="Finalización de la tarea y pasos siguientes">
+<action class=""></action>
+		<description>Después de completar las tareas anteriores, el controlador de salud empezará a supervisar el entorno en función
+        de las políticas de salud definidas.  Por tanto, el paso siguiente es 
+
+    &lt;blockquote style="margin-left:0em;margin-top:0.5em;margin-bottom:0.5em"&gt;
+    &lt;IMG SRC="../com.ibm.ws.console.core.guidedactivity/images/start_task.gif" border="0" alt="Iniciar la actividad guiada" align="absmiddle"/&gt;
+    &lt;A TARGET="detail" HREF="../com.ibm.ws.console.xdoperations.forwardCmd.do?forwardName=xdoperations.main"&gt;
+    Ver las visualizaciones disponibles&lt;/A&gt; del entorno
+    &lt;/blockquote&gt;
+
+    &lt;blockquote style="margin-left:0em;margin-top:0.5em;margin-bottom:0em"&gt;
+    &lt;IMG SRC="../com.ibm.ws.console.core.guidedactivity/images/start_task.gif" border="0" alt="Iniciar tarea" align="absmiddle"/&gt;
+    &lt;A TARGET="detail" HREF="../navigatorCmd.do?forwardName=taskmanagement.content.main"&gt;
+    Revisar las tareas de tiempo de ejecución&lt;/A&gt; que los controladores autónomos utilizan para comunicar cambios de sistema propuestos a los administradores cuando las políticas de salud se ejecutan en la modalidad "supervisada".
+    &lt;/blockquote&gt;        
+        
+        </description>
+</item>
+
+
+</cheatsheet>

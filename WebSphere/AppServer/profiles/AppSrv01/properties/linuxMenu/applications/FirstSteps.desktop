@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=First steps
+Comment=First steps
+Categories=WebSphere;AppServer;Profiles;ProfileName;AppSrv01
+Icon=/jennex/WebSphere/AppServer/properties/version/nif/config/linuxMenu/images/firststeps16x16.png
+Exec=/jennex/WebSphere/AppServer/profiles/AppSrv01/firststeps/firststeps.sh
+StartupNotify=true
+Type=Application
+Terminal=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.9

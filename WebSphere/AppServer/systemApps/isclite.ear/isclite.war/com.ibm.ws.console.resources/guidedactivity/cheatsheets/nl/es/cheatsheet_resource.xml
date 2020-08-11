@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<?xml-stylesheet type="text/xsl" href="cheatsheet.xsl"?>
+
+<cheatsheet title="Conectar a una base de datos">
+
+	<intro 
+		href="database_connection_intro.htm">
+        <description>
+            Esta hoja de apuntes ofrece una serie de pasos para configurar el acceso a una base de datos desde una aplicación.  
+            Se asume que el software de base de datos está instalado y configurado.  
+            Después de completar estos pasos, la aplicación podrá acceder a los datos de una base de datos.  
+            &lt;br/&gt;&lt;br/&gt;
+Para continuar, pulse &lt;strong&gt;Iniciar&lt;/strong&gt;.
+         </description>
+	</intro>
+
+	<item
+        href=""
+		title="Configurar las credenciales de acceso seguro a la base de datos">
+		<action
+			class="com.ibm.ws.console.security.forwardCmd.do?forwardName=JAASAuthData.content.main"/>
+		<description>
+En este paso, configure los datos de autenticación con un alias, para poder utilizar las
+credenciales en pasos posteriores al configurar el origen de datos o desplegar la
+aplicación.
+&lt;br/&gt;&lt;br/&gt;
+Los alias de autenticación son opcionales para ciertos tipos de orígenes de datos disponibles en la plataforma z/OS. Si
+utiliza WebSphere Application Server para z/OS, consulte el artículo del Information Center titulado &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-zos&amp;topic=conthidep"&gt;
+Utilización del soporte de identidad de hebra&lt;/A&gt; antes de tomar una decisión sobre la configuración de la seguridad del origen de datos.
+&lt;br/&gt;&lt;br/&gt;
+
+&lt;A HREF="javascript:showHideList('j2cconnectors')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="j2cconnectorsImg" ALIGN="left" BORDER="0"/&gt;
+&lt;/A&gt;
+Puede obtener más información sobre JDBC y los alias de autenticación
+&lt;br/&gt;
+&lt;TABLE id="j2cconnectorsList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+A partir de WebSphere Application Server Versión 5.0, la tecnología JDBC
+se basa en estándares J2C (Java 2 Platform, Enterprise Edition Connector).  
+Los conectores J2C definen cómo los servidores de aplicaciones realizan y reciben las conexiones con los sistemas externos.  
+Para configurar el acceso seguro a sistemas externos que utilicen J2C, debe configurar los datos de autenticación.  
+Los datos de autenticación son normalmente un conjunto de credenciales como nombre de usuario y contraseña, que se utilizan para verificar el permiso de acceso al sistema.
+Se debe crear y asignar un nombre, conocido como alias de autenticación, a cada parte de los datos de autenticación.  
+Una vez configurados los datos de autenticación con un nombre de alias, éste se utiliza siempre que desee conectar utilizando esos datos de autenticación. 
+&lt;br/&gt;&lt;br/&gt;
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+
+&lt;br/&gt;
+
+
+Para crear un nuevo alias de autenticación J2C, siga estos pasos:
+            &lt;ol&gt;
+            &lt;li&gt;Seleccione &lt;strong&gt; Pulsar para actuar&lt;/strong&gt; para cargar el panel Alias de autenticación J2C.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Nuevo&lt;/strong&gt; en el panel Entradas de datos de autenticación de J2C.&lt;/li&gt;
+            &lt;li&gt;Especifique el alias, el ID de usuario, la contraseña y la descripción. Pulse &lt;strong&gt;Aceptar&lt;/strong&gt;. Aparece la lista actualizada de alias de autenticación J2C.&lt;/li&gt;
+            &lt;li&gt;Para que la configuración de alias entre en vigor tendrá que detener e iniciar el servidor.  Esto se realizará más tarde en el paso &lt;strong&gt;Probar la conexión de base de datos&lt;/strong&gt; de la hoja de apuntes.
+            &lt;/ol&gt;
+Para continuar, pulse &lt;strong&gt;Paso siguiente&lt;/strong&gt;.
+            
+        </description>
+	</item>
+
+	<item
+		href="com.ibm.ws.console.resources/guidedactivity/cheatsheets/nl/lang/database_connection_jdbc.htm"
+		title="Configurar un proveedor JDBC">
+		<action
+			class="navigatorCmd.do?forwardName=JDBCProvider.content.main"/>
+		<description>
+Para acceder a una base de datos, antes debe representar el controlador del cliente para el proveedor de la base de datos en WebSphere Application Server, creando un proveedor JDBC.  
+
+&lt;br/&gt;&lt;br/&gt;
+Para crear un nuevo proveedor de JDBC, complete los pasos siguientes:
+            &lt;ol&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar el panel de proveedores de JDBC.&lt;/li&gt;
+                &lt;li&gt;Seleccione un ámbito válido en el desplegable &lt;strong&gt;Ámbito&lt;/strong&gt;.
+                &lt;li&gt;Pulse &lt;strong&gt;Nuevo&lt;/strong&gt; y se visualizará el asistente de nuevo proveedor de JDBC.&lt;/li&gt;
+                &lt;li&gt;Seleccione el tipo de base de datos, el tipo de proveedor, el tipo de implementación y un nombre para el nuevo proveedor de JDBC.&lt;/li&gt;
+                &lt;li&gt;Pulse &lt;strong&gt;Siguiente&lt;/strong&gt; para continuar con el paso siguiente.  &lt;/li&gt;
+                &lt;li&gt;Escriba la información de la classpath de la base de datos para el proveedor de JDBC.&lt;/li&gt;
+                &lt;li&gt;Pulse &lt;strong&gt;Siguiente&lt;/strong&gt; para continuar con el paso siguiente.&lt;/li&gt;
+                &lt;li&gt;Revise la información del proveedor de JDBC que ha especificado y pulse &lt;strong&gt;Finalizar&lt;/strong&gt;.
+            &lt;/ol&gt;
+
+
+
+
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+</description>
+	</item>
+
+          
+          
+          
+          
+          
+          
+	<item
+		title="Configurar variables de WebSphere">
+		<action
+			class="navigatorCmd.do?forwardName=VariableSubstitutionEntry.content.main"/>
+		<description>
+Puede definir una variable de WebSphere Application Server para proporcionar un parámetro para algunos valores del sistema. 
+Después de definir el nombre y el valor de una variable, se utiliza el valor en el lugar del nombre de la variable. 
+Las variables suelen especificar vías de acceso a archivos. Sin embargo, algunos componentes del sistema también soportan el uso de variables.
+&lt;br/&gt;&lt;br/&gt;
+Para crear una nueva variable de WebSphere para el proveedor JDBC, siga estos pasos:
+            &lt;ol&gt;
+                &lt;li&gt;Busque algún &lt;tt&gt;${&lt;i&gt;nombre de variable&lt;/i&gt;}&lt;/tt> utilizado en las propiedades Classpath y Vía de acceso de biblioteca nativa del proveedor JDBC en el panel Detalles.&lt;/li&gt;
+                &lt;li&gt;Seleccione &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar el panel Variables de WebSphere.&lt;/li&gt;
+                &lt;li&gt;Especifique el ámbito de la variable. Declare la nueva variable para la Célula, Clúster, Nodo o Servidor y pulse &lt;strong&gt;Aplicar.&lt;/strong&gt; &lt;/li&gt;
+                &lt;li&gt;En la página Variables de WebSphere, pulse en el &lt;i&gt;nombre_variable&lt;/i&gt; si existe o pulse &lt;strong&gt;Nuevo&lt;/strong&gt; para crearlo.&lt;/li&gt;
+                &lt;li&gt;En el campo &lt;strong&gt;Nombre&lt;/strong&gt;, escriba el &lt;i&gt;nombre_variable&lt;/i&gt; que ha encontrado en Classpath o Vía de acceso de biblioteca nativa del panel de detalles del proveedor JDBC.&lt;/li&gt;
+                &lt;li&gt;En el campo &lt;strong&gt;Valor&lt;/strong&gt;, escriba la vía de acceso de la ubicación a la que deberá señalar la variable de WebSphere para el ámbito especificado.&lt;/li&gt;
+                &lt;li&gt;Pulse &lt;strong&gt;Aceptar&lt;/strong&gt;.  Verifique que la variable aparece en la lista de variables. La consola administrativa no reconoce los errores de escritura. La variable se ignora si se hace referencia a ella de forma incorrecta.&lt;/li&gt;
+                &lt;li&gt;Para que la configuración de las variables entre en vigor tiene que detener e iniciar el servidor.  Esto se realizará más tarde en el paso &lt;strong&gt;Probar la conexión de base de datos&lt;/strong&gt; de la hoja de apuntes.&lt;/li&gt;
+            &lt;/ol&gt;
+
+
+
+
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+</description>
+	</item>          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+	<item
+		href="com.ibm.ws.console.resources/guidedactivity/cheatsheets/nl/lang/database_connection_datasource.htm"
+		title="Configurar un origen de datos">
+		<action
+			class="navigatorCmd.do?forwardName=JDBCProvider.content.main"/>
+		<description>
+Una vez configurado el proveedor de JDBC, debe utilizar un origen de datos para acceder a la base de datos. 
+&lt;br/&gt;&lt;br/&gt;
+Para crear un nuevo origen de daos, siga estos pasos:
+
+            &lt;ol&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Pulse para actuar&lt;/strong&gt; para cargar el panel de proveedores de JDBC.&lt;/li&gt;
+            &lt;li&gt;Pulse el nombre del proveedor de JDBC para el que desea crear un origen de datos.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Orígenes de datos&lt;/strong&gt; en Propiedades adicionales del panel de detalles del proveedor de JDBC.&lt;/li&gt;
+            &lt;li&gt;Para crear un nuevo origen de datos, pulse &lt;strong&gt;Nuevo&lt;/strong&gt; y se visualizará el asistente de nuevo origen de datos.&lt;/li&gt;
+
+            &lt;li&gt;Cuando se le solicite, especifique el nombre del origen de datos y el nombre JNDI&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Siguiente&lt;/strong&gt; para continuar con el paso siguiente.&lt;/li&gt;
+            &lt;li&gt;Escriba las propiedades del origen de datos necesario y elija si el origen de datos nuevo se debería utilizar
+en persistencia gestionada por contenedor.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Siguiente&lt;/strong&gt; para continuar en el paso siguiente.&lt;/li&gt;
+            &lt;li&gt;Seleccione el alias de autenticación a utilizar.
+No es necesario un alias.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Siguiente&lt;/strong&gt; para continuar con el paso siguiente. &lt;/li&gt;             &lt;li&gt;Revise la información del origen de datos que ha especificado y pulse &lt;strong&gt;Finalizar&lt;/strong&gt;.
+            &lt;/ol&gt;
+Para continuar, pulse &lt;strong&gt;Paso siguiente&lt;/strong&gt;.
+		</description>
+	</item>
+
+	<item
+		href=""
+		title="Guardar y sincronizar la configuración">
+		<action
+			class=""/>
+		<description>
+Pulse &lt;strong&gt;Guardar&lt;/strong&gt; en el mensaje de la parte superior del panel de la consola para actualizar la configuración en el repositorio maestro.
+&lt;br/&gt;&lt;br/&gt;Para continuar, pulse &lt;strong&gt;Paso siguiente&lt;/strong&gt;.
+		</description>
+	</item>
+
+
+	<item
+		href="com.ibm.ws.console.resources/guidedactivity/cheatsheets/nl/lang/database_connection_testconnection.htm"
+		title="Probar la conexión de base de datos">
+		<action
+			class="navigatorCmd.do?forwardName=DataSource.content.main"/>
+		<description>
+Una vez definido y guardado un origen de datos, pulse &lt;strong&gt;Pulsar para
+actuar&lt;/strong&gt; para seleccionar el origen de datos que desea probar.  Seleccione el origen de datos y pulse &lt;strong&gt;Conexión de prueba&lt;/strong&gt; en el panel
+Colección de orígenes de datos o Detalles de los orígenes de datos, para verificar
+que los parámetros de definición del origen de datos son correctos. &lt;br/&gt;
+&lt;br/&gt; Si ha creado un nuevo alias de autenticación J2C o variable de
+WebSphere, tendrá que detener e iniciar el servidor antes de continuar. 
+
+&lt;br/&gt;&lt;br/&gt;
+Para obtener más detalles, consulte el artículo del Information Center titulado
+&lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-base-dist&amp;topic=testcon"&gt;
+Prueba de conexiones con la consola administrativa&lt;/A&gt;.
+		</description>
+	</item>
+
+</cheatsheet>

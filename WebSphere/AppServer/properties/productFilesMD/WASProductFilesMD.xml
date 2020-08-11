@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productinfo name="WAS" primarypak="was.primary.pak">
+	
+	<filesystementries>
+	
+		<filesystementry type="directory" includesubfilesystementries="true">
+			<relativepath>uninstall</relativepath>
+		</filesystementry>
+		
+		<filesystementry type="directory" includesubfilesystementries="false">
+			<relativepath>profiles</relativepath>
+		</filesystementry>
+		
+		<filesystementry type="directory" includesubfilesystementries="true">
+			<relativepath>configuration</relativepath>
+		</filesystementry>
+		
+		<filesystementry type="directory" includesubfilesystementries="true">
+			<relativepath>firststeps</relativepath>
+		</filesystementry>
+		
+		<filesystementry type="directory" includesubfilesystementries="true">
+			<relativepath>logs</relativepath>
+		</filesystementry>
+		
+		<filesystementry type="directory" includesubfilesystementries="true">
+			<relativepath>lib/ext</relativepath>
+		</filesystementry>		
+		
+		<filesystementry type="directory" includesubfilesystementries="true">
+			<relativepath>properties/version/nif/backup</relativepath>
+		</filesystementry>	
+
+		<filesystementry type="directory" includesubfilesystementries="true">
+			<relativepath>properties/version/history</relativepath>
+		</filesystementry>
+
+		<filesystementry type="directory" includesubfilesystementries="true">
+			<relativepath>bin</relativepath>
+		</filesystementry>
+		
+		<filesystementry type="directory" includesubfilesystementries="true">
+			<relativepath>properties/fsdb</relativepath>
+		</filesystementry>
+		
+	  <filesystementry type="directory" includesubfilesystementries="true">
+      <relativepath>java/jre/PolicyDirector</relativepath>
+    </filesystementry>
+		
+		<filesystementry type="file">
+			<relativepath>properties/productFilesMD/WASProductFilesMD.xml</relativepath>
+		</filesystementry>		
+
+		<filesystementry type="file">
+			<relativepath>properties/version/nif/componentmaps/componentmap.installconfig.xml</relativepath>
+		</filesystementry>	
+
+		<filesystementry type="file">
+			<relativepath>properties/WSCustomConstants.properies</relativepath>
+		</filesystementry>
+		
+		<filesystementry type="file">
+			<relativepath>properties/Profiles.menu</relativepath>
+		</filesystementry>
+
+		<filesystementry type="file">
+			<relativepath>properties/NIFRegistry.properties</relativepath>
+		</filesystementry>	
+
+		<filesystementry type="file">
+			<relativepath>properties/profileRegistry.xml</relativepath>
+		</filesystementry>
+		
+		<filesystementry type="file">
+			<relativepath>properties/WSCustomConstants.properties</relativepath>
+		</filesystementry>
+		
+	  <filesystementry type="file">
+			<relativepath>properties/cimgr.props</relativepath>
+		</filesystementry>
+		
+	  <filesystementry type="directory" includesubfilesystementries="true">
+      <relativepath>properties/version/_uninst</relativepath>
+    </filesystementry>
+		
+	  <filesystementry type="directory" includesubfilesystementries="true">
+      <relativepath>cimrepos</relativepath>
+    </filesystementry>
+		
+	</filesystementries>
+	
+</productinfo>
+
+
+
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=${PROFILECREATION}
+Comment=${PROFILECREATION}
+Categories=WebSphere${NUMBER};AppServer;
+Icon=${WAS_HOME}/properties/version/nif/config/linuxMenu/images/profile_wiz_16x16.png
+Exec=${WAS_HOME}/bin/ProfileManagement/pmt.sh
+StartupNotify=true
+Type=Application
+Terminal=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.9

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="(C) Copyright IBM Corporation 2004" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Grupos de nodos" />
+<meta name="abstract" content="Utilice esta página para editar grupos de nodos, que son agrupaciones lógicas de nodos definidas por el usuario con una propiedad compartida. Para ver esta página de la consola administrativa, pulse Administración del sistema &gt; Grupos de nodos &gt; seleccione un grupo de nodos existente para editarlo." />
+<meta name="description" content="Utilice esta página para editar grupos de nodos, que son agrupaciones lógicas de nodos definidas por el usuario con una propiedad compartida. Para ver esta página de la consola administrativa, pulse Administración del sistema &gt; Grupos de nodos &gt; seleccione un grupo de nodos existente para editarlo." />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="NodeGroup" />
+<meta name="DC.Language" content="es-es" />
+<!-- All rights reserved. Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href=".\../ibmdita.css" />
+<link rel="stylesheet" type="text/css" href=".\../was_style_help.css" />
+<title>Grupos de nodos</title>
+</head>
+<body class="field-help" id="NodeGroup"><a name="NodeGroup"><!-- --></a>
+
+<h1 class="topictitle1">Grupos de nodos</h1><div><p>Utilice esta página para editar grupos de nodos, que son agrupaciones lógicas
+de nodos definidas por el usuario con una propiedad compartida.  Para ver esta página de
+la consola administrativa, pulse <b>Administración del sistema &gt; Grupos de nodos &gt;
+<i>seleccione un grupo de nodos existente para editarlo</i></b>.</p><p>Esta página se divide en dos pestañas: configuración y topología local. La pestaña de
+configuración permite a un usuario ver los campos previamente configurados y, en algunos
+casos, editar esos campos. La pestaña de topología local permite al usuario ver las
+pertenencias del grupo de nodos. </p>
+<div class="note"><span class="notetitle">Nota: </span>cuando la seguridad está habilitada, algunos campos
+no pueden editarse sin la autorización de seguridad apropiada. </div>
+<p><b>Campos de la pestaña Configuración:</b></p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr id="NodeGroup__name_detail"><td align="left" valign="top" id="d0e23" width="15%"><b>Nombre</b></td><td align="left" valign="top" headers="d0e23" width="85%">El nombre del grupo de nodos es un campo definido por el usuario que debe
+contener caracteres numéricos o alfanuméricos. Este campo sólo es editable al crear nuevos nodos de grupo.</td></tr><tr id="NodeGroup__nummembers_detail"><td align="left" valign="top" id="d0e28"><b>Número de miembros</b></td><td align="left" valign="top" headers="d0e28">Este campo está completamente automatizado y muestra el número de miembros del
+grupo de nodos. Aunque este campo no sea editable, se puede editar de forma
+indirecta añadiendo o eliminando miembros de nodos, utilizando el campo de pertenencia,
+cambiando así el número de miembros.</td></tr><tr id="NodeGroup__description_detail"><td align="left" valign="top" id="d0e33"><b>Descripción</b></td><td align="left" valign="top" headers="d0e33">El campo de descripción es complementario al campo de nombre y lo define el
+usuario. Este campo es opcional, pero se recomienda, especialmente en entornos con varios
+administradores, que este campo incluya información útil. </td></tr><tr id="NodeGroup__membership_detail"><td align="left" valign="top" id="d0e38"><b>Pertenencia</b></td><td align="left" valign="top" id="recommended" headers="d0e38">Este campo se utiliza para añadir o eliminar nodos de un grupo de nodos. Existe una relación restrictiva que sólo permite a un nodo pertenecer a un único grupo de
+nodos, mientras que un grupo de nodos puede contener muchos nodos.<p>El campo de
+pertenencia se edita seleccionado los nodos adecuados; se pueden seleccionar varios nodos
+manteniendo pulsada la tecla CONTROL hasta que todas sus selecciones estén resaltadas, y
+pulsando Añadir o Eliminar para realizar los cambios de pertenencia deseados. Sin la autorización adecuada, la
+pertenencia no es editable si está habilitada la seguridad.</p>
+</td></tr></table><p> Una vez realizados todos los cambios, seleccione el botón <b>Aplicar</b> o <b>Aceptar</b>.</p>
+<p><b>Pestaña de topología local:</b></p>
+<p>La pestaña de topología local representa visualmente la jerarquía de pertenencia para el
+grupo de nodos. La estructura existe de forma que al nivel más alto está el grupo de nodos. Directamente bajo el grupo de nodos está la carpeta de nodos y la carpeta del clústeres
+dinámicos del grupo de nodos. Cada carpeta contiene los respectivos nodos o clústeres dinámicos.</p>
+<p>La topología local no es un campo editable. Cualquier cambio de correlación de nodos
+miembros debe realizarse en la pestaña Configuración, en el campo Pertenencia.</p>
+</div>
+</body>
+</html>

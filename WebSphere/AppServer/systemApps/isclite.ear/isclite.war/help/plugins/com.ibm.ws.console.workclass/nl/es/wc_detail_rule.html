@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Definir normas y pertenencias a una clase de trabajo" />
+<meta name="abstract" content="Utilice esta página para asignar los tipos de solicitud de los módulos de aplicación a las clases de trabajo. Este paso define los protocolos HTTP (Hypertext Transfer Protocol), los EJB (enterprise beans), los servicios web o los buses para la clase de trabajo, que utiliza el direccionador On demand para dar prioridad las políticas de servicio. Las solicitudes soportadas incluyen HTTP, IIOP (Internet InterORB Protocol), SOAP (Simple Object Access Protocol) y JMS (Java Message Service)." />
+<meta name="description" content="Utilice esta página para asignar los tipos de solicitud de los módulos de aplicación a las clases de trabajo. Este paso define los protocolos HTTP (Hypertext Transfer Protocol), los EJB (enterprise beans), los servicios web o los buses para la clase de trabajo, que utiliza el direccionador On demand para dar prioridad las políticas de servicio. Las solicitudes soportadas incluyen HTTP, IIOP (Internet InterORB Protocol), SOAP (Simple Object Access Protocol) y JMS (Java Message Service)." />
+<meta name="DC.Relation" scheme="URI" content="odr_service_policies.html" />
+<meta name="DC.Relation" scheme="URI" content="wc_rulebuilder_detail.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_routing_policies.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="wc_detail_rule" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Definir normas y pertenencias a una clase de trabajo</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="wc_detail_rule">
+<h1 class="title topictitle1">Definir normas y pertenencias a una clase de trabajo</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para asignar los tipos de petición de los módulos de aplicación a las clases de trabajo. Este paso define los protocolos HTTP (Hypertext Transfer Protocol), los EJB (enterprise beans), los servicios Web o los buses para la clase de trabajo, que utiliza el direccionador On demand para dar prioridad las políticas de servicio. Las solicitudes soportadas incluyen HTTP, IIOP (Internet InterORB Protocol), SOAP (Simple Object Access Protocol) y JMS (Java Message Service).</p>
+<p class="p">Para ver esta página, pulse
+<span class="ph menucascade"><span class="ph uicontrol">Aplicaciones</span> &gt;
+<span class="ph uicontrol">Tipos de aplicación</span> &gt;
+<span class="ph uicontrol">Aplicaciones de empresa de WebSphere</span> &gt;
+<span class="ph uicontrol"><var class="keyword varname">nombre_aplicación</var></span>
+&gt; <span class="ph uicontrol">Políticas de servicio o Políticas de direccionamiento</span> &gt;
+<span class="ph uicontrol"><var class="keyword varname">tipo_solicitud</var></span></span>.</p>
+<div class="p"><div class="note note"><span class="notetitle">Nota:</span> Si necesita
+acceder a las políticas de clúster de servidores genéricos, pulse
+<span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt;
+<span class="ph uicontrol">Tipos de servidor</span> &gt; <span class="ph uicontrol">Direccionadores On Demand</span> &gt;
+<span class="ph uicontrol"><var class="keyword varname">nombre_dir_OD</var> </span>
+&gt;  <span class="ph uicontrol"> Propiedades del direccionador On demand</span></span>.
+Pulse <span class="ph uicontrol">Políticas de direccionamiento de clústeres de servidores genéricos</span> o <span class="ph uicontrol">Políticas de servicio de clústeres de servidores genéricos</span>.</div>
+</div>
+<p class="p">Debe que poseer privilegios administrativos para poder modificar las normas
+con el generador de subexpresiones.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="step1"><h2 class="title topictitle2">Paso 1: Definir propiedades generales de la clase de trabajo</h2>
+<div class="body"><dl class="dl"><dt class="dt dlterm">Nombre
+</dt>
+<dd class="dd">Especifica un nombre de la clase de trabajo.<p class="p">El campo
+de nombre no puede contener los caracteres siguientes: <strong class="ph b"><kbd class="ph userinput"> #   \  / , :  ;  "  *  ?  &lt;  &gt;
+|  =  +  &amp;  %  '</kbd></strong> El nombre que se define debe ser exclusivo entre las clases de trabajo. </p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="step2"><h2 class="title topictitle2">Paso 2: Definir pertenencias de clase de trabajo</h2>
+<div class="body"><p class="shortdesc">Utilice el campo de pertenencia para añadir los módulos de aplicaciones a la clase de trabajo. Las asociaciones no están limitadas a ningún módulo. Con esta agrupación común, se puede ensamblar en una clase de trabajo todas las categorías de trabajo y así garantizar que la clase de trabajo recibe la prioridad que ha designado la política de servicio. 
+Los campos varían ligeramente, dependiendo del tipo de solicitud que se utiliza.</p>
+<div class="note attention"><span class="attentiontitle">Atención:</span> El paso únicamente existe para clases de trabajo de aplicaciones.
+Si está utilizando clases de trabajo de servidores genéricos, no realice este paso.</div>
+<dl class="dl"><dt class="dt dlterm">Módulo</dt>
+<dd class="dd">Seleccione el módulo adecuado de la lista. Para clases de trabajo JMS, si
+selecciona un archivo jar enterprise bean de la lista de módulos, un nuevo menú muestra
+desde dónde puede seleccionar un nombre de enterprise bean.</dd>
+<dt class="dt dlterm">EJB</dt>
+<dd class="dd">Utilícelo con solicitudes IIOP. Seleccione el enterprise bean adecuado de la lista. El enterprise bean resultante se muestra en la lista <span class="ph uicontrol">Disponible</span>.
+Utilice la opción de filtro para ver una lista filtrada de los métodos de enterprise
+beans específicos del enterprise bean seleccionado.</dd>
+<dt class="dt dlterm">Servicio Web</dt>
+<dd class="dd">Se utiliza con las solicitudes SOAP. Seleccione el servicio Web adecuado de la lista. El servicio web resultante se muestra en la lista <span class="ph uicontrol">Disponible</span>.</dd>
+<dt class="dt dlterm">Bus</dt>
+<dd class="dd">Se utiliza con las solicitudes JMS. Seleccione el bus adecuado de la lista. El bus resultante se muestra en la lista <span class="ph uicontrol">Disponible</span>.
+Utilice la opción de filtro para
+ver una lista filtrada de los métodos de bus específicos del bus seleccionado.</dd>
+<dt class="dt dlterm">Disponible</dt>
+<dd class="dd">Seleccione el destino de bus, HTTP, EJB o servicio Web de la lista de disponibles. Puede seleccionar varios destinos, si mantiene pulsada la tecla Ctrl para resaltar todas las selecciones y luego pulsa <strong class="ph b">Añadir</strong> para añadir los miembros de destino seleccionados a la clase de trabajo.</dd>
+<dt class="dt dlterm">Miembros de</dt>
+<dd class="dd">En esta lista se muestran todos los módulos contenidos como miembros de la clase de trabajo. Para suprimir un miembro, selecciónelo y pulse <span class="ph uicontrol">Suprimir</span>.</dd>
+<dt class="dt dlterm">Personalizado</dt>
+<dd class="dd"><ul class="ul"><li class="li">HTTP: <span class="ph uicontrol">Patrón HTTP personalizado</span></li>
+<li class="li">EJB: <ul class="ul"><li class="li"><span class="ph uicontrol">Nombre EJB personalizado
+</span></li>
+<li class="li"><span class="ph uicontrol">Método EJB personalizado
+</span></li>
+</ul>
+ </li>
+<li class="li">JMS: <ul class="ul"><li class="li"><span class="ph uicontrol">Nombre de bus personalizado
+</span></li>
+<li class="li"><span class="ph uicontrol">Destino personalizado
+</span></li>
+</ul>
+</li>
+</ul>
+con el formato <samp class="ph codeph">nombre:tipo</samp>, donde <kbd class="ph userinput">nombre</kbd> y <kbd class="ph userinput">tipo</kbd> se sustituyen por los valores adecuados. Pulse <span class="ph uicontrol">Agregar patrón</span> para que el destino personalizado pase a ser un miembro de la clase de
+trabajo. También puede utilizar la opción de comodín <strong class="ph b">(*)</strong>. El campo de patrón
+personalizado permite expresiones regulares, por ejemplo, puede especificar todos los nombres de métodos
+EJB que comiencen por <samp class="ph codeph">get</samp> con un patrón personalizado.</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="step3confirm"><h2 class="title topictitle2">Paso 3: Confirmar la creación de la clase de trabajo</h2>
+<div class="body"><p class="shortdesc">Un resumen de las acciones realizadas muestra los cambios para la creación de la clase de trabajo. </p>
+<p class="p">Pulse <strong class="ph b">Finalizar</strong> para crear la clase de trabajo.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="addrule"><h2 class="title topictitle2">Añadir regla</h2>
+<div class="body"><p class="shortdesc">Abre un panel de normas en que puede crear una. Seleccione una norma existente para editarla, o cree una nueva norma. </p>
+<p class="p">Se pueden ver los atributos siguientes para el tipo de solicitud
+seleccionada:</p>
+<div class="p"><table cellpadding="4" cellspacing="0" summary="" border="0" class="simpletable field-detail"><tr class="sthead"><th valign="bottom" align="left" id="d8033e216" class="stentry">Atributo</th>
+<th valign="bottom" align="left" id="d8033e218" class="stentry">Descripción</th>
+</tr>
+<tr class="strow"><td valign="top" id="d8033e221" headers="d8033e216" class="stentry"><strong>Condición
+</strong></td>
+<td valign="top" headers="d8033e218 d8033e221" class="stentry">Añada una condición, o utilice la utilidad <span class="ph uicontrol">Generar subexpresiones</span> para ayudarle a crear una condición. También puede pulsar sobre una condición de norma que ya exista para cambiarla. Por ejemplo,
+si la norma utiliza un operando de ID de usuario establecido en <kbd class="ph userinput">Fred</kbd>,
+la condición de norma se muestra como <kbd class="ph userinput">uid = 'Fred'</kbd>.</td>
+</tr>
+<tr class="strow"><td valign="top" id="d8033e235" headers="d8033e216" class="stentry"><strong>Seleccionar acción
+</strong></td>
+<td valign="top" headers="d8033e218 d8033e235" class="stentry">Seleccione una de las opciones siguientes: <dl class="dl"><dt class="dt dlterm">Permitir direccionamiento a</dt>
+<dd class="dd"> Desde la lista <span class="ph uicontrol">Seleccionar nombre de edición</span>, seleccione el nombre de edición en que se permite el direccionamiento.</dd>
+<dt class="dt dlterm">Permitir direccionamiento con afinidad a:</dt>
+<dd class="dd">Desde la lista <span class="ph uicontrol">Seleccionar nombre de edición</span>, seleccione el nombre de edición en que se permite el direccionamiento.</dd>
+<dt class="dt dlterm">Redirigir el direccionamiento a</dt>
+<dd class="dd">En el campo <span class="ph uicontrol">Especificar URI para redireccionamiento</span>, escriba
+el URI al que se redirigen las peticiones.</dd>
+<dt class="dt dlterm">Rechazar direccionamiento con código de retorno</dt>
+<dd class="dd">En el campo <span class="ph uicontrol">Entre el código de retorno</span> proporcione el código de retorno rechazo.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="deleterule"><h2 class="title topictitle2">Suprimir regla</h2>
+<div class="body"><p class="shortdesc">Suprime una norma seleccionada existente.</p>
+</div>
+<div class="topic nested2" xml:lang="es-es" id="moveup"><h3 class="title topictitle3">Subir/bajar</h3>
+<div class="body"><p class="shortdesc">Da prioridad a las normas en el caso de varias normas. El orden de las normas
+es clave para determinar las coincidencias. Si se produce una coincidencia en la primera norma,
+las normas subsiguientes no se ejecutan.</p>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="odr_service_policies.html" title="Utilice esta página para configurar políticas de servicio para el direccionador On Demand.">Políticas de servicio de direccionador On Demand</a></div>
+<div><a class="link help" href="wc_rulebuilder_detail.html" title="El generador de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados u operadores lógicos a los que no se les da soporte.">Generador de subexpresiones</a></div>
+<div><a class="link help" href="odr_routing_policies.html" title="Utilice esta página para configurar políticas de direccionamiento para el direccionador On Demand.">Políticas de direccionamiento del direccionador On Demand</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: wc_detail_rule.html</span></body>
+</html>

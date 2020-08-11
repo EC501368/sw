@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+ 
+<!--
+    ******************************************************************************
+    * Translation Notes:
+    *
+    * To translate this XML file, first change the xml:lang variable
+    * in TMSSource to the correct locale for the translation.  Then follow
+    * these simple rules.
+    *
+    * #PCDATA:
+    *
+    * When translating XML, any text between <Tag> and </Tag> entries
+    * should be translated.  For example, "File not found" in the following
+    * phrase:
+    *
+    * <MsgText>File not found</MsgText>...
+    *
+    * The only exception to this rule is the Text between <Copyright> and
+    * </Copyright> tags.
+    *
+    * Attributes:
+    *
+    * Verbage in attributes should not be translated.  For example, the "don't
+    * translate me" phrase in the following should not be changed:
+    *
+    * <MsgText terseText="don't translate me">File not found</MsgText>...
+    *
+    * Comments:
+    *
+    * Verbage in comments should not be translated.  This note is an example
+    * of a comment.  End-users will never see it.
+    *
+    *****************************************************************************
+-->
+<TMSSource name="EventServerMessages" tmsVersion="1.0" xml:lang="es">
+<Copyright>                 Licensed Materials - Property of IBM (C)Copyright IBM
+        Corporation 2004,2005. All Rights Reserved US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</Copyright>
+<!--
+        *********************************************************************
+        * The above copyright notice applies to this XML file as well
+        *  as any other source/text files generated from this file.
+        *********************************************************************
+    -->
+<!-- ============================================================== -->
+<!-- Message creation/maintenance process:                      -->
+<!--                                                            -->
+<!-- In a comment above each message, include                   -->
+<!-- the message number and one of these four status values:    -->
+<!--                                                            -->
+<!-- MSG_WORKING: Development is still working on the message.  -->
+<!--              It is not ready for review by ID.             -->
+<!--                                                            -->
+<!-- MSG_REVIEW_ID: Development has completed work on the       -->
+<!--                message. It is ready to be reviewed by ID.  -->
+<!--                                                            -->
+<!-- MSG_REVIEW_DEV: ID has updated the message.                -->
+<!--                 It is ready to be reviewed by Development. -->
+<!--                                                            -->
+<!-- MSG_COMPLETE: The message has been reviewed by all parties -->
+<!--               and is complete.                             -->
+<!--                                                            -->
+<!-- Also, if Development must update a message that is in the  -->
+<!-- MSG_COMPLETE state, Development must open a defect for ID  -->
+<!-- to review the message again.                               -->
+<!-- ============================================================== -->
+<!-- ================================================================= -->
+<!--  CEIES0003W    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0003W" prefix="yes">
+<MsgText pgmKey="CEIES0003" varFormat="Java">             El servidor de sucesos no ha podido inicializar un destino JMS para un grupo de sucesos porque el destino JMS especificado no se encuentra en JNDI.             <br/> 
+Nombre de grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>
+            <br/>
+            Nombre JNDI de la fábrica de conexiones JMS:
+            <Variable formatSpec="{1}">
+                destination_factory_jndi_name
+            </Variable>
+            <br/>
+            Nombre JNDI del destino JMS:
+            <Variable formatSpec="{2}">destination_jndi_name</Variable>
+            <br/>
+            Contexto:
+            <Variable formatSpec="{3}">context_name</Variable> 
+       </MsgText>
+<Explanation>
+<p>                 El servidor de sucesos no ha podido inicializar un destino JMS para un grupo de sucesos. El servidor de sucesos no utilizará el destino al distribuir notificaciones de sucesos. Este error no impide que el servidor de sucesos publique notificaciones de sucesos a otros destinos JMS asignados al grupo de sucesos. El servidor de sucesos utilizará todos los destinos JMS válidos asignados a un grupo de sucesos al distribuir notificaciones de sucesos para el grupo de sucesos.
+            </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que los nombres JNDI sean correctos para los siguientes recursos:             </p>
+<ul>
+<li>Fábrica de conexiones de tema</li>
+<li>Tema</li>
+<li>Fábrica de conexiones de cola</li>
+<li>Cola</li>
+</ul>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0004E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0004E" prefix="yes">
+<MsgText pgmKey="CEIES0004" varFormat="Java">                         No se ha enviado ninguna notificación de sucesos porque el servidor de sucesos no se ha podido conectar al destino JMS.             <br/>                         Nombre de grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>
+            <br/>
+            Nombre JNDI de la fábrica de conexiones JMS:
+            <Variable formatSpec="{1}">
+                destination_factory_jndi_name
+            </Variable>
+            <br/>
+            Nombre JNDI del destino JMS:
+            <Variable formatSpec="{2}">destination_jndi_name</Variable>         </MsgText>
+<Explanation>
+<p>                                 Antes de enviar notificaciones de sucesos, el servidor de sucesos intenta conectarse a todos los destinos JMS de cada grupo de sucesos que coincida con un suceso. Si durante este proceso una de las conexiones falla, no se envía la notificación de sucesos a ninguno de los grupos de sucesos coincidentes y la transacción se marca para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que la definición del grupo de sucesos contenga un destino JMS válido. Además, asegúrese de que el proveedor de JMS esté funcionando correctamente.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0005E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIES0005E" prefix="yes">
+<MsgText pgmKey="CEIES0005" varFormat="Java">                         El servidor de sucesos no ha podido crear un mensaje JMS para la notificación de sucesos que se está enviando al destino JMS.             <br/>                         Nombre de grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>
+            <br/>
+            Sucesos:
+            <Variable formatSpec="{1}">event_instances</Variable>
+            <br/>
+            Nombre JNDI de la fábrica de conexiones JMS:
+            <Variable formatSpec="{2}">
+                destination_factory_jndi_name
+            </Variable>
+            <br/>
+            Nombre JNDI del destino JMS:
+            <Variable formatSpec="{3}">destination_jndi_name</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesan los sucesos y se marca la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que la definición del grupo de sucesos contenga un destino JMS válido.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0006E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0006E" prefix="yes">
+<MsgText pgmKey="CEIES0006" varFormat="Java">                         El servidor de sucesos no ha podido publicar la notificación de sucesos en el destino JMS.
+            <br/>                         Nombre de grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>
+            <br/>
+            Sucesos:
+            <Variable formatSpec="{1}">event_instances</Variable>
+            <br/>
+            Mensaje JMS:
+            <Variable formatSpec="{2}">event_instance</Variable>
+            <br/>
+            Nombre JNDI de la fábrica de conexiones JMS:
+            <Variable formatSpec="{3}">
+                destination_factory_jndi_name
+            </Variable>
+            <br/>
+            Nombre JNDI del destino JMS:
+            <Variable formatSpec="{4}">destination_jndi_name</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesan los sucesos y se marca la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que la definición del grupo de sucesos contenga un destino JMS válido.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0007W    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0007W" prefix="yes">
+<MsgText pgmKey="CEIES0007" varFormat="Java">                         El servidor de sucesos no ha podido desconectarse del destino JMS.             <br/> 
+            Nombre de grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>
+            <br/>
+            Nombre JNDI de la fábrica de conexiones JMS:
+            <Variable formatSpec="{1}">
+                destination_factory_jndi_name
+            </Variable>
+            <br/>
+            Nombre JNDI del destino JMS:
+            <Variable formatSpec="{2}">destination_jndi_name</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{3}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se realizará la recuperación porque el destino JMS está cerrado.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Si es un problema que se repite, asegúrese de que el proveedor de JMS esté funcionando correctamente.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0008E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIES0008E" prefix="yes">
+<MsgText pgmKey="CEIES0008" varFormat="Java">                         El servidor de sucesos no ha podido almacenar ningún suceso en el almacén de datos porque el ID de instancia global de un suceso ya existe en el almacén de datos.    
+        <br/>                         Mensaje de excepción:
+            <Variable formatSpec="{0}">exception_message</Variable>
+            <br/>
+            Sucesos:
+            <Variable formatSpec="{1}">event_list</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 El ID de instancia global identifica de forma exclusiva el suceso en el almacén de datos. Se presupone que uno de los sucesos pasados es un duplicado de un suceso que ya existe en el almacén de datos. Por lo tanto, no se procesan los sucesos y la transacción actual se marca para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Si es un problema que se repite, examine el origen del suceso para determinar si el origen está creando ID de instancia globales duplicados.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0009E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIES0009E" prefix="yes">
+<MsgText pgmKey="CEIES0009" varFormat="Java">                         El servidor de sucesos no ha podido almacenar ningún suceso en el almacén de datos porque no se ha encontrado el almacén de datos a partir del nombre JNDI especificado.      
+      <br/>                         Nombre JNDI:
+            <Variable formatSpec="{0}">data_store_jndi_name</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{1}">exception_message</Variable>
+            <br/>
+            Sucesos:
+            <Variable formatSpec="{2}">event_list</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesan los sucesos y se marca la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que el almacén de datos exista en el nombre JNDI especificado. Además, consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0010E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0010E" prefix="yes">
+<MsgText pgmKey="CEIES0010" varFormat="Java">                         El servidor de sucesos no ha podido almacenar ningún suceso en el almacén de datos al que hace referencia el nombre JNDI porque el almacén de datos configurado ha generado una excepción.
+            <br/>                         Nombre JNDI:
+            <Variable formatSpec="{0}">data_store_jndi_name</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{1}">exception_message</Variable>
+            <br/>
+            Sucesos:
+            <Variable formatSpec="{2}">event_list</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesan los sucesos y se marca la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0011E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0011E" prefix="yes">
+<MsgText pgmKey="CEIES0011" varFormat="Java">                         El servidor de sucesos no ha podido distribuir una notificación de sucesos.             <br/>            
+            Mensaje de excepción:
+            <Variable formatSpec="{0}">exception_message</Variable>
+            <br/>
+            Sucesos:
+            <Variable formatSpec="{1}">event_list</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesan los sucesos y se marca la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0012E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0012E" prefix="yes">
+<MsgText pgmKey="CEIES0012" varFormat="Java">                         El mensaje JMS no contiene ningún valor en la propiedad de tipo de mensaje JMS.    
+        <br/>                         Mensaje JMS:
+            <Variable formatSpec="{0}">message</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Si es un problema que se repite, examine el origen del suceso para determinar si el origen está creando mensajes JMS que no son válidos.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0013E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0013E" prefix="yes">
+<MsgText pgmKey="CEIES0013" varFormat="Java">                         El mensaje JMS no contiene ningún suceso.             <br/>                         Mensaje JMS:
+            <Variable formatSpec="{0}">message</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Si es un problema que se repite, examine el origen del suceso para determinar si el origen está creando mensajes JMS que no son válidos.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0014W    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0014W" prefix="yes">
+<MsgText pgmKey="CEIES0014" varFormat="Java">                         No se ha procesado el mensaje JMS porque el valor de la propiedad de tipo de mensaje JMS no es válido.             <br/>                         Mensaje JMS:
+            <Variable formatSpec="{0}">message</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Si es un problema que se repite, examine el origen del suceso para determinar si el origen está creando mensajes JMS que no son válidos.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0015E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0015E" prefix="yes">
+<MsgText pgmKey="CEIES0015" varFormat="Java">                         Error al crear un mensaje JMS para un lote de sucesos.             <br/>                         Sucesos:
+            <Variable formatSpec="{0}">event_list</Variable>         </MsgText>
+<Explanation>
+<p>El proveedor de JMS ha generado una excepción cuando el servidor de sucesos intentaba crear un mensaje JMS que contuviera una notificación de sucesos. Todas las notificaciones se detendrán, ya que el servidor de sucesos no ha podido enviar la notificación de un suceso individual. La transacción global se marca para deshacerse; por lo tanto, si se ha habilitado la conservación, los sucesos no se almacenan en el almacén permanente.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0016E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0016E" prefix="yes">
+<MsgText pgmKey="CEIES0016" varFormat="Java">                         El asistente de notificación no ha podido establecer el selector de sucesos porque el selector de sucesos no tiene el formato correcto.             <br/>                         Selector de sucesos:
+            <Variable formatSpec="{0}">event_selector</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{1}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que la aplicación que realiza la llamada esté pasando un selector de sucesos válido.             </p>
+<p>                                 Los selectores de sucesos están especificados por una expresión XPath, que debe tener el formato CommonBaseEvent[...]. Si el selector de sucesos no empieza con CommonBaseEvent o contiene valores no válidos, se rechazará.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0018E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0018E" prefix="yes">
+<MsgText pgmKey="CEIES0018" varFormat="Java">                         El servidor de sucesos no ha podido procesar un lote de sucesos porque no da soporte a la versión de suceso especificada en el suceso.        
+    <br/>                         ID de instancia global:
+            <Variable formatSpec="{0}">global_instance_ID</Variable>
+            <br/>
+            Versión del suceso:
+            <Variable formatSpec="{1}">event_version</Variable>
+            <br/>
+            Versión del servidor de sucesos:
+            <Variable formatSpec="{2}">event_server_version</Variable>
+            <br/>
+            Sucesos:
+            <Variable formatSpec="{3}">event_list</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesan los sucesos y se marca la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Si es un problema que se repite, examine el origen del suceso para determinar la causa del problema.         
+   </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0019E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0019E" prefix="yes">
+<MsgText pgmKey="CEIES0019" varFormat="Java">                         Error en el método de acceso a sucesos <Variable formatSpec="{0}">method</Variable> porque el componente de almacén de datos no está habilitado.         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Si debe habilitarse el almacén de datos, modifique el perfil
+                de servidor de sucesos seleccionando
+                <strong>Habilitar almacén de datos</strong>.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0021E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0021E" prefix="yes">
+<MsgText pgmKey="CEIES0021" varFormat="Java">                         No se ha encontrado el almacén de datos configurado a partir del nombre JNDI especificado.      
+      <br/>                         Nombre JNDI:
+            <Variable formatSpec="{0}">jndi_name</Variable>
+            <br/>
+            Contexto:
+            <Variable formatSpec="{1}">context</Variable> 
+        </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que se haya configurado el nombre JNDI correcto para el almacén de datos. Además, asegúrese de que el almacén de datos se haya desplegado en el nombre JNDI especificado.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0023E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0023E" prefix="yes">
+<MsgText pgmKey="CEIES0023" varFormat="Java">                         El servidor de sucesos no ha podido crear una instancia del almacén de datos configurado porque la versión de suceso del almacén de datos y la versión de suceso del servidor de sucesos no son compatibles.             <br/>                         Versión del almacén de datos:
+            <Variable formatSpec="{0}">datastore_cbe_version</Variable>
+            <br/>
+            Versión del servidor de sucesos:
+            <Variable formatSpec="{1}">eventserver_cbe_version</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 El servidor de sucesos debe utilizar un almacén de datos que dé soporte a la misma versión de suceso.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0024E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0024E" prefix="yes">
+<MsgText pgmKey="CEIES0024" varFormat="Java">                         El servidor de sucesos no ha podido crear una instancia del almacén de datos configurado porque los metadatos de componente no se han podido recuperar del almacén de datos.
+        </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0025E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0025E" prefix="yes">
+<MsgText pgmKey="CEIES0025" varFormat="Java">                         El servidor de sucesos no ha podido crear una instancia del almacén de datos configurado.   
+     </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0026E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0026E" prefix="yes">
+<MsgText pgmKey="CEIES0026" varFormat="Java">                         La configuración del servidor de sucesos no es válida porque el almacén de datos está habilitado, pero el nombre JNDI del almacén de datos es nulo. No se puede habilitar el almacén de datos con un nombre JNDI del almacén de datos nulo.      
+      <br/>                         Nombre JNDI del servidor de sucesos:
+            <Variable formatSpec="{0}">jndi_name</Variable>
+            <br/>
+            Objeto de configuración del servidor de sucesos:
+            <Variable formatSpec="{1}">configuration_object</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Actualice la configuración del perfil de servidor de sucesos para inhabilitar el almacén de datos o para proporcionar un nombre JNDI del almacén de datos válido.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0027E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0027E" prefix="yes">
+<MsgText pgmKey="CEIES0027" varFormat="Java">                         No se ha encontrado el objeto de configuración del servidor de sucesos a partir del nombre JNDI especificado.             <br/>                         Nombre JNDI:
+            <Variable formatSpec="{0}">jndi_name</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Compruebe que el servicio de Common Event Infrastructure se ha iniciado. Además, asegúrese de que el enterprise bean que produce el error tenga una referencia EJB correcta en el descriptor de despliegue al objeto de configuración del servidor de sucesos.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0028E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0028E" prefix="yes">
+<MsgText pgmKey="CEIES0028" varFormat="Java">                         No se ha encontrado el objeto de configuración del servidor de sucesos al acceder a la configuración de la lista de grupos de sucesos en el nombre JNDI especificado.
+            <br/>                         Nombre JNDI:
+            <Variable formatSpec="{0}">jndi_name</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Compruebe que el servicio de Common Event Infrastructure se ha iniciado. Además, asegúrese de que el enterprise bean que produce el error tenga una referencia EJB correcta en el descriptor de despliegue al objeto de configuración del servidor de sucesos.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0029E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0029E" prefix="yes">
+<MsgText pgmKey="CEIES0029" varFormat="Java">                         La referencia obtenida a partir del nombre JNDI especificado no es una referencia a una fábrica de asistentes de notificación.             <br/>                         Nombre JNDI:
+            <Variable formatSpec="{0}">jndi_name</Variable>         </MsgText>
+<Explanation>
+<p>                 Una aplicación ha intentado buscar una fábrica de asistentes de notificación a partir de un espacio de nombres JNDI, pero el objeto encontrado en la ubicación especificada no es una referencia a una fábrica de asistentes de notificación.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0030W    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0030W" prefix="yes">
+<MsgText pgmKey="CEIES0030" varFormat="Java">                         El servidor de sucesos no ha podido descodificar el mensaje JMS porque el mensaje no contiene un tipo de mensaje válido.             <br/>                         Mensaje JMS:
+            <Variable formatSpec="{1}">message</Variable>
+            <br/>
+            Tipo de mensaje:
+            <Variable formatSpec="{0}">message_type</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesará el mensaje y se marcará la transacción actual para deshacerse. Por lo tanto, el mensaje se devolverá al proveedor de JMS para su gestión.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Si es un problema que se repite, compruebe el origen del mensaje para determinar la causa del problema.           
+ </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0031E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0031E" prefix="yes">
+<MsgText pgmKey="CEIES0031" varFormat="Java">                         El servidor de sucesos no ha podido recuperar un suceso del mensaje JMS.             <br/> 
+            Mensaje JMS:
+            <Variable formatSpec="{1}">message</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{0}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesará el suceso y se marcará la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0032E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0032E" prefix="yes">
+<MsgText pgmKey="CEIES0032" varFormat="Java">                         El servidor de sucesos no ha podido procesar un mensaje JMS.             <br/>                         Mensaje de excepción:
+            <Variable formatSpec="{0}">exception_message</Variable>
+            <br/>
+            Mensaje JMS:
+            <Variable formatSpec="{1}">message</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesará el mensaje JMS y se marcará la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0033E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0033E" prefix="yes">
+<MsgText pgmKey="CEIES0033" varFormat="Java">                         El servidor de sucesos no ha podido procesar el mensaje JMS.             <br/>                         Mensaje JMS:
+            <Variable formatSpec="{1}">message</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{0}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesará el mensaje y se marcará la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0034E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0034E" prefix="yes">
+<MsgText pgmKey="CEIES0034" varFormat="Java">                         El servidor de sucesos no ha podido crear una instancia del bus de sucesos porque no se ha encontrado a partir del nombre JNDI especificado.             <br/> 
+            Nombre JNDI:
+            <Variable formatSpec="{0}">jndi_name</Variable>
+            <br/>
+            Contexto:
+            <Variable formatSpec="{1}">context</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que el bean de control de mensajes del bus de sucesos tenga una referencia EJB correcta al bus de sucesos en el descriptor de despliegue.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0035E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0035E" prefix="yes">
+<MsgText pgmKey="CEIES0035" varFormat="Java">                         El servidor de sucesos no ha podido crear una instancia del bus de sucesos.             <br/> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0036E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0036E" prefix="yes">
+<MsgText pgmKey="CEIES0036" varFormat="Java">                         El servidor de sucesos no ha podido crear una instancia del bus de sucesos. El suceso no se conservará ni se publicará en ninguno de los consumidores de mensajes.
+            <br/>                         Suceso:
+            <Variable formatSpec="{2}">event_instance</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{1}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 No se procesará el suceso y se marcará la transacción actual para deshacerse.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0042E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0042E" prefix="yes">
+<MsgText pgmKey="CEIES0042" varFormat="Java">                         El asistente de notificación no ha podido recuperar el destino JMS para el grupo de sucesos especificado porque no se ha encontrado la configuración del grupo de sucesos en JNDI.             <br/>                         Grupo de sucesos:
+            <Variable formatSpec="{0}">event_group</Variable>
+            <br/>
+            Nombre JNDI:
+            <Variable formatSpec="{1}">jndi_name</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Asegúrese de que el grupo de sucesos esté configurado correctamente.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0044E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0044E" prefix="yes">
+<MsgText pgmKey="CEIES0044" varFormat="Java">                         El servidor de sucesos no ha podido crear una instancia de la distribución de sucesos porque no se ha encontrado a partir del nombre JNDI especificado.             <br/> 
+            Nombre JNDI:
+            <Variable formatSpec="{0}">jndi_name</Variable>
+            <br/>
+            Contexto:
+            <Variable formatSpec="{1}">context</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que el bus de sucesos tenga una referencia EJB correcta a la distribución de sucesos en el descriptor de despliegue.  
+          </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0045E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0045E" prefix="yes">
+<MsgText pgmKey="CEIES0045" varFormat="Java">                         El servidor de sucesos no ha podido crear una instancia de la distribución de sucesos.         </MsgText>
+<Explanation>
+<p>                 Consulte el mensaje.              </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0048E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0048E" prefix="yes">
+<MsgText pgmKey="CEIES0048" varFormat="Java">                         El grupo de sucesos no está definido en la lista de grupos de sucesos que la instancia del servidor de sucesos está utilizando.             <br/>                         Grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que el grupo de sucesos esté definido para esta instancia del servidor de sucesos. Además, reinicie el servidor de aplicaciones que está ejecutando la instancia del servidor de sucesos para que se refleje la configuración más reciente.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0050E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0050E" prefix="yes">
+<MsgText pgmKey="CEIES0050" varFormat="Java">                         El servidor de sucesos no ha podido inicializar un grupo de sucesos porque el selector de sucesos del grupo de sucesos no tiene el formato correcto.             <br/> 
+            Nombre de grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>
+            <br/>
+            Selector de sucesos:
+            <Variable formatSpec="{1}">event_selector</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{2}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 El servidor de sucesos seguirá funcionando normalmente, pero no enviará notificaciones de sucesos al grupo de sucesos especificado.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Los selectores de sucesos están especificados por una expresión XPath, que debe tener el formato CommonBaseEvent[...]. Si el selector de sucesos no empieza con CommonBaseEvent o contiene valores no válidos, se rechazará.             </p>
+<p>                                 Corrija el selector de sucesos del grupo de sucesos especificado para que tenga el formato CommonBaseEvent[...]. Además, reinicie el servidor de aplicaciones que está ejecutando la instancia del servidor de sucesos para que se refleje la configuración más reciente.
+            </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0051E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0051E" prefix="yes">
+<MsgText pgmKey="CEIES0051" varFormat="Java">                         El servidor de sucesos ha recibido una excepción al inicializar un grupo de sucesos.      
+      <br/>                         Nombre de grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{1}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 El servidor de sucesos seguirá funcionando normalmente, pero no enviará notificaciones de sucesos al grupo de sucesos especificado.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0052E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0052E" prefix="yes">
+<MsgText pgmKey="CEIES0052" varFormat="Java">                         El servidor de sucesos no ha podido publicar la notificación de sucesos en un destino JMS del grupo de sucesos.             <br/>                         Nombre de grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>
+            <br/>
+            Suceso:
+            <Variable formatSpec="{1}">event_instance</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{2}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 El servidor de sucesos intenta publicar la notificación de sucesos en otros destinos JMS.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0053E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0053E" prefix="yes">
+<MsgText pgmKey="CEIES0053" varFormat="Java">                         El servidor de sucesos no ha podido recuperar un objeto de configuración necesario.             <br/> 
+            Clase de objeto de configuración:
+            <Variable formatSpec="{0}">configuration_classname</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0054E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0054E" prefix="yes">
+<MsgText pgmKey="CEIES0054" varFormat="Java">                         El asistente de notificación ha recibido una excepción al bloquear el servidor de sucesos en JNDI.         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Compruebe que el servicio de Common Event Infrastructure se ha iniciado. Además, consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0056E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0056E" prefix="yes">
+<MsgText pgmKey="CEIES0056" varFormat="Java">                         El asistente de notificación no ha podido localizar el bus de sucesos en JNDI.         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Compruebe que el servicio de Common Event Infrastructure se ha iniciado.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0057E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0057E" prefix="yes">
+<MsgText pgmKey="CEIES0057" varFormat="Java">                         El almacén de datos ha devuelto un número mayor de sucesos que el solicitado en una consulta de sucesos. 
+           <br/>                         Número de sucesos solicitados:
+            <Variable formatSpec="{0}">maximum_number</Variable>
+            <br/>
+            Número de sucesos devueltos:
+            <Variable formatSpec="{1}">number_returned</Variable>
+            <br/>
+            Nombre JNDI:
+            <Variable formatSpec="{2}">data_store_jndi_name</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Póngase en contacto con el proveedor del almacén de datos para corregir el error.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0058E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0058E" prefix="yes">
+<MsgText pgmKey="CEIES0058" varFormat="Java">                         Error en el método de acceso a sucesos eventExists.             <br/>                         Grupo de sucesos:
+            <Variable formatSpec="{0}">event_group</Variable>
+            <br/>
+            Selector de sucesos:
+            <Variable formatSpec="{1}">event_selector</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{2}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0059E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIES0059E" prefix="yes">
+<MsgText pgmKey="CEIES0059" varFormat="Java">                         Error en el método de acceso a sucesos purgeEvents.             <br/>                         Grupo de sucesos:
+            <Variable formatSpec="{0}">event_group</Variable>
+            <br/>
+            Selector de sucesos:
+            <Variable formatSpec="{1}">event_selector</Variable>
+            <br/>
+            Tamaño de transacción:
+            <Variable formatSpec="{2}">transaction_size</Variable>
+            <br/>
+            Número de sucesos depurados:
+            <Variable formatSpec="{3}">number_events_purged</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0060E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0060E" prefix="yes">
+<MsgText pgmKey="CEIES0060" varFormat="Java">                         Error en el método de acceso a sucesos queryEventByGlobalInstanceId.             <br/>                         ID de instancia global:
+            <Variable formatSpec="{0}">global_instance_id</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{1}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0061E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0061E" prefix="yes">
+<MsgText pgmKey="CEIES0061" varFormat="Java">                         Error en el método de acceso a sucesos queryEventsByAssociation.             <br/>                         Tipo de asociación:
+            <Variable formatSpec="{0}">association_type</Variable>
+            <br/>
+            ID de instancia global:
+            <Variable formatSpec="{1}">global_instance_id</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{2}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0062E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0062E" prefix="yes">
+<MsgText pgmKey="CEIES0062" varFormat="Java">                         Error en el método de acceso a sucesos queryEventsByEventGroup.             <br/>                         Grupo de sucesos:
+            <Variable formatSpec="{0}">event_group</Variable>
+            <br/>
+            Selector de sucesos:
+            <Variable formatSpec="{1}">event_selector</Variable>
+            <br/>
+            Orden ascendente:
+            <Variable formatSpec="{2}">ascending_order</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{3}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0063E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0063E" prefix="yes">
+<MsgText pgmKey="CEIES0063" varFormat="Java">                         Error en el método de acceso a sucesos queryEventsByEventGroup.             <br/>                         Grupo de sucesos:
+            <Variable formatSpec="{0}">event_group</Variable>
+            <br/>
+            Selector de sucesos:
+            <Variable formatSpec="{1}">event_selector</Variable>
+            <br/>
+            Orden ascendente:
+            <Variable formatSpec="{2}">ascending_order</Variable>
+            <br/>
+            Número máximo:
+            <Variable formatSpec="{3}">maximum_number</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{4}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0064E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0064E" prefix="yes">
+<MsgText pgmKey="CEIES0064" varFormat="Java">                         El asistente de notificación no ha podido leer la configuración del grupo de sucesos desde el servidor de sucesos.             <br/>                         Grupo de sucesos:
+            <Variable formatSpec="{0}">event_group</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Compruebe que el servicio de Common Event Infrastructure se ha iniciado. Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0065E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0065E" prefix="yes">
+<MsgText pgmKey="CEIES0065" varFormat="Java">                         El asistente de notificación no ha podido leer un suceso a partir del mensaje JMS porque dicho mensaje es desconocido.             <br/>                         Mensaje JMS:
+            <Variable formatSpec="{0}">jms_message</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 El asistente de notificación no procesa el mensaje porque no puede determinar si el mensaje contiene un suceso.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0066E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0066E" prefix="yes">
+<MsgText pgmKey="CEIES0066" varFormat="Java">                         El servidor de sucesos no ha podido inicializar un grupo de sucesos. El nombre JNDI no apunta a una instancia de la clase JMS correcta.             <br/> 
+            Nombre de grupo de sucesos:
+            <Variable formatSpec="{0}">event_group_name</Variable>
+            <br/>
+            Nombre JNDI:
+            <Variable formatSpec="{1}">jndi_name</Variable>
+            <br/>
+            Clase JMS:
+            <Variable formatSpec="{2}">jms_class</Variable> 
+        </MsgText>
+<Explanation>
+<p>                                 El servidor de sucesos no ha podido inicializar un grupo de sucesos para la distribución de sucesos; el servidor de sucesos no utiliza el grupo de sucesos al distribuir notificaciones de sucesos.
+Este error no detiene el proceso de sucesos por parte del servidor de sucesos. El servidor de sucesos utiliza todos los grupos de sucesos válidos al distribuir notificaciones de sucesos.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Asegúrese de que los nombres JNDI sean correctos para los siguientes recursos:             </p>
+<ul>
+<li>Fábrica de conexiones de tema</li>
+<li>Tema</li>
+<li>Fábrica de conexiones de cola</li>
+<li>Cola</li>
+</ul>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0067E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIES0067E" prefix="yes">
+<MsgText pgmKey="CEIES0067" varFormat="Java">                         Se ha producido un error al actualizar el suceso porque los datos configurados no dan soporte a las actualizaciones.             <br/>                         Nombre JNDI del almacén de datos:
+            <Variable formatSpec="{0}">jndi_name</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                                 Actualice el almacén de datos para que dé soporte a las actualizaciones de sucesos.     
+       </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0068E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIES0068E" prefix="yes">
+<MsgText pgmKey="CEIES0068" varFormat="Java">                         Error en el método de acceso a sucesos updateEvents.             <br/>             Solicitudes de cambio de suceso:
+            <Variable formatSpec="{0}">event_change_requests</Variable>
+          <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{1}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0070W    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0070W" prefix="yes">
+<MsgText pgmKey="CEIES0070" varFormat="Java">             Se ha especificado una propiedad pero no era del tipo esperado.  Se ha omitido la propiedad.
+            <br/>             Nombre de propiedad del perfil:
+            <Variable formatSpec="{0}">property_name</Variable>
+            <br/>
+Tipo especificado:
+            <Variable formatSpec="{1}">
+                specified_type
+            </Variable>
+            <br/>
+Tipo esperado:
+            <Variable formatSpec="{2}">
+                expected_type
+            </Variable>         </MsgText>
+<Explanation>
+<p>                 Consulte el mensaje.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Especifique la propiedad con el tipo correcto.          
+  </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0071E    MSG_REVIEW_DEV                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIES0071E" prefix="yes">
+<MsgText pgmKey="CEIES0071" varFormat="Java">El servicio de sucesos no ha podido recuperar sucesos a partir de la serie XML. <br/>Serie XML: <Variable formatSpec="{0}">xml_string</Variable></MsgText>
+<Explanation>
+<p>El servicio de sucesos ha encontrado una excepción al intentar recuperar sucesos a partir de la serie XML recibida. Esto puede indicar que los datos XML no son válidos o están dañados.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el mensaje de excepción para obtener más información sobre la causa del problema. Si es un problema que se repite, examine el origen de la serie de suceso XML para asegurarse de que el origen esté creando código XML válido.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIDS0072E    MSG_REVIEW_DEV                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIES0072E" prefix="yes">
+<MsgText pgmKey="CEIES0072" varFormat="Java">Se han enviado dos sucesos con el identificados de instancia global <Variable formatSpec="{0}">global_id</Variable>.<br/>Primer suceso: <Variable formatSpec="{1}">event1</Variable><br/>Segundo suceso: <Variable
+formatSpec="{2}">event2</Variable></MsgText>
+<Explanation>
+<p>Se han enviado varios sucesos con el mismo identificador de instancia global como parte de un lote. Cada instancia de suceso debe tener un identificador de instancia global exclusivo. Todos los sucesos del lote enviado se han rechazado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Asegúrese de que cada suceso tenga un identificados de instancia global exclusivo y vuelva a enviar el lote.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0073E    MSG_REVIEW_DEV                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIES0073E" prefix="yes">
+<MsgText pgmKey="CEIES0073" varFormat="Java">Error en el método de acceso a sucesos <Variable formatSpec="{0}">method</Variable> porque el componente de almacén de datos no está habilitado para el grupo de sucesos <Variable formatSpec="{1}">method</Variable>.</MsgText>
+<Explanation>
+<p>Se ha intentado realizar una operación de consulta para el grupo de sucesos especificado, pero la permanencia no está habilitada en los valores de configuración de este grupo de sucesos.</p>
+</Explanation>
+<AdminResponse>
+<p>Si se debe dar soporte a las operaciones de consulta, modifique la configuración del grupo de sucesos para habilitar la permanencia. De lo contrario, especifique un grupo de sucesos distinto en la consulta.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0074E    MSG_COMPLETE                                       -->
+<?Pub Caret?>
+<!-- ================================================================= -->
+<Message ID="CEIES0074E" prefix="yes">
+<MsgText pgmKey="CEIES0074" varFormat="Java">No se ha encontrado el objeto de configuración del servicio de sucesos al acceder a la configuración del perfil del almacén de datos en el nombre JNDI especificado.<br/>Nombre JNDI: <Variable formatSpec="{0}">jndi_name</Variable></MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>                Compruebe que el servicio de Common Event Infrastructure se ha iniciado. Además, asegúrese de que el enterprise bean que produce el error tenga una referencia EJB correcta en el descriptor de despliegue al objeto de configuración del servidor de sucesos.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0075I    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0075I" prefix="yes">
+<MsgText pgmKey="CEIES0075I" varFormat="Java">El filtro del selector de sucesos personalizado se ha iniciado de forma satisfactoria. <br/>Clase: <Variable formatSpec="{0}">nombre_clase</Variable></MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>El filtro del selector de sucesos personalizado se ha iniciado de forma satisfactoria. </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIES0076E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIES0076E" prefix="yes">
+<MsgText pgmKey="CEIES0076E" varFormat="Java">El filtro del selector de sucesos personalizados no se ha podido inicializar. <br/>Clase: <Variable formatSpec="{0}">nombre_clase</Variable></MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Verifique si se ha añadido la clase a las propiedades del grupo de sucesos.
+Verifique que el nombre de clase correcto se ha añadido a las propiedades del grupo de sucesos.
+Verifique si la clase se encuentra en la vía de acceso de clases correcta. </p>
+</AdminResponse>
+</Message>
+</TMSSource>
+<?Pub *0000063135?>

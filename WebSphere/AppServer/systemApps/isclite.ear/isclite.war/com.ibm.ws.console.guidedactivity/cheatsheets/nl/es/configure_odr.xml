@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cheatsheet []>
+
+<cheatsheet title="Configuración del direccionador OnDemand
+">
+
+        <intro href="intro_configure_odr.htm">
+        <description>
+Utilice esta actividad guiada para configurar el direccionador On Demand (ODR). 
+El ODR es un sustituto de los servidores de contenido en la empresa, y puede mejorar el funcionamiento general proporcionando servicios como la gestión de cargas de trabajo, el direccionamiento entre células y otros servicios que disminuyen la carga. 
+Antes de iniciar esta actividad, instale y configure el entorno base de WebSphere Network Deployment. &lt;br/&gt;&lt;br/&gt;
+Esta actividad describe cómo configurar una configuración base y una configuración avanzada para el direccionador On Demand (ODR). Consulte &lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/wxdinfo/v6r1/index.jsp?searchWord=odr&amp;tab=search"&gt;Creación y configuración de un ODR&lt;/a&gt; para obtener más información sobre cómo realizar esta tarea.
+Si necesita ayuda al realizar estas tareas, pulse el icono de Ayuda.
+&lt;br/&gt;&lt;br/&gt;
+
+Antes de empezar verifique que tiene disponible un nodo de WebSphere Extended Deployment así como su nombre y ubicación. &lt;br/&gt;        </description>
+        </intro>
+
+
+        <item href="" title="Crear un ODR">
+                <action class="navigatorCmd.do?forwardName=ODR.content.main"/>
+                <description> Utilice esta sección para crear un ODR utilizando una célula WebSphere Extended Deployment. Una vez completada esta sección, el ODR podrá direccionar trabajo a los servidores de Extended Deployment que estén disponibles en la célula.
+&lt;br/&gt;&lt;br/&gt;
+
+&lt;br/&gt;&lt;br/&gt;
+
+Siga estos pasos para crear un nuevo ODR:&lt;ol&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar el panel Direccionador On Demand.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Nuevo&lt;/strong&gt; de forma que aparezca el panel para crear un nuevo ODR. &lt;/li&gt;
+            &lt;li&gt;Complete el panel y seleccione un nodo de WebSphere Extended Deployment que esté disponible. Si se selecciona un nodo que no es de WebSphere Extended Deployment, el ODR no funcionará. &lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Siguiente&lt;/strong&gt; una vez haya completado el panel. &lt;/li&gt;
+           &lt;li&gt;Pulse &lt;strong&gt;Finalizar&lt;/strong&gt; para crear el nuevo ODR. &lt;/li&gt;
+            &lt;/ol&gt;
+
+&lt;br/&gt;&lt;br/&gt;
+
+                </description>
+        </item>
+
+        <item href="" title="Configurar los valores del ODR">
+<action class="navigatorCmd.do?forwardName=ODR.content.main"/>
+                <description>Utilice esta sección para aplicar una configuración más avanzada a la configuración básica del ODR. 
+Utilice los valores del ODR para refinar su comportamiento. En concreto, puede configurar las conexiones y las peticiones para el servidor de aplicaciones, especificar peticiones que se deben rechazar, definir la forma en que se manejarán las respuestas de error y especificar la ubicación de las anotaciones cronológicas del ODR. &lt;br/&gt;&lt;br/&gt;
+No es necesario definir los valores de ODR para que éste funcione.
+&lt;br/&gt;&lt;br/&gt;
+Siga estos pasos para definir los valores de ODR:
+&lt;ol&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar el panel Direccionador On Demand.&lt;/li&gt;
+            &lt;li&gt;Pulse sobre el nombre del ODR que ha creado en la sección anterior. &lt;/li&gt;
+            &lt;li&gt;Desplácese hacia la sección Propiedades de ODR y pulse &lt;strong&gt;Valores de ODR&lt;/strong&gt;.&lt;/li&gt;
+            &lt;li&gt;Complete el panel que aparece. &lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Aplicar&lt;/strong&gt; o &lt;strong&gt;Aceptar&lt;/strong&gt; una vez haya completado el panel. &lt;/li&gt;
+            &lt;/ol&gt;
+&lt;br/&gt;&lt;br/&gt;
+
+                </description>
+        </item>
+
+
+</cheatsheet>

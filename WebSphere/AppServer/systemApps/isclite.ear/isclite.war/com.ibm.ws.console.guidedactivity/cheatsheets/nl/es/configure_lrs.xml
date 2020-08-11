@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cheatsheet.xsl"?>
+<!-- START NON-TRANSLATABLE                                                  -->
+<!--                                                                         -->
+<!--   "http://publib.boulder.ibm.com/infocenter . . . "                     -->
+<!--   &lt;code&gt;&amp;lt;WAS_INSTALL_ROOT&amp;gt; . . . &lt;/code&gt;      -->
+<!--   CreateLRSCHEDTablesCloudscape.ddl                                     -->
+<!--   CreateLRSCHEDTablesDB2.ddl                                            -->
+<!--   default_host                                                          -->
+<!--   "BatchJobSchedulerEJBs"                                               -->
+<!--   "BatchJobSchedulerWebSvcRouter"                                       -->
+<!--                                                                         -->
+<!-- END NON-TRANSLATABLE                                                    -->
+<cheatsheet title="Configuración del planificador de trabajos de Compute Grid">
+    <intro 
+        href="intro_configure_lrs.htm">
+	    <description>
+            Esta actividad guiada le ayuda a configurar el planificador de trabajos para que el entorno Compute Grid aloje trabajos.
+            &lt;br/&gt;
+            &lt;br/&gt;
+            Para obtener más información:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tcgconf"&gt;Configuración del planificador de trabajos&lt;/a&gt; </description>
+    </intro>
+    <item 
+        href="" 
+        title="Elegir el entorno para alojar el planificador de trabajos">
+        <action class=""></action>
+	    <description>
+            Un servidor de aplicaciones o un clúster pueden alojar el planificador de trabajos. Pero únicamente un único servidor de aplicaciones o un clúster pueden alojar el planificador de trabajos en un momento dado.
+            &lt;br/&gt;
+            &lt;br/&gt;
+            &lt;strong&gt;Un host de aplicaciones&lt;/strong&gt; &lt;br/&gt; &lt;dl&gt;
+               &lt;li&gt;
+                  se recomienda en entornos de prueba
+               &lt;/li&gt;
+               &lt;li&gt;
+                  puede utilizar la base por omisión Cloudscape v10.1.x, conocida también como Derby
+               &lt;/li&gt;
+            &lt;/dl&gt;
+            &lt;strong&gt;Un host clúster&lt;/strong&gt;
+            &lt;dl&gt;
+               &lt;li&gt;
+                  se recomienda en entornos de producción o en cualquier entorno en que se necesite un planificador de trabajos escalable y de alta disponibilidad
+               &lt;/li&gt;
+               &lt;li&gt;
+                  requiere una base de datos con capacidad de clúster
+               &lt;/li&gt;
+            &lt;/dl&gt;
+
+            Para alojar el planificador de trabajos en un servidor de aplicaciones utilizando la base de datos Derby por omisión, vaya a
+            &lt;br/&gt;
+            &lt;a href="javascript:showHideStep('section1');showHideStep('section5')"&gt;
+               &lt;IMG SRC="../com.ibm.ws.console.core.guidedactivity/images/skip_task.gif" border="0" alt="" align="absmiddle"/&gt;
+               Configure el planificador de trabajos &lt;/a&gt; &lt;br/&gt;
+            &lt;br/&gt;
+            Para alojar el planificador de trabajos en un clúster, continúe con
+</description>
+    </item>
+    <item 
+            href="" title="Definir un clúster para alojar el planificador de trabajos">
+	    <action class=""></action>
+	    <description>
+            Defina un clúster para alojar la aplicación planificador de trabajos. Para definir un clúster dinámico, utilice la siguiente actividad guiada:
+            &lt;br/&gt;
+            &lt;A TARGET="detail" HREF="/ibm/console/guidedactivity/csframe.jsp?cheatSheetURI=com.ibm.ws.console.guidedactivity/cheatsheets/nl/lang/configure_wdo.xml&amp;cheatSheetPackage=com.ibm.ws.console.guidedactivity/cheatsheets&amp;fromStep=2"&gt;
+            &lt;IMG SRC="/ibm/console/images/cheatsheets/start_task.gif" align="absmiddle" border="0" alt="Pulse para"/&gt;Preparar un entorno para albergar operaciones dinámicas
+            &lt;/A&gt;
+            &lt;br/&gt;
+            &lt;br/&gt;
+            Para obtener más información:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=cbglrexenv"&gt;Creación de un clúster dinámico para alojar el planificador de trabajos&lt;/a&gt;
+        </description>
+    </item>
+    <item 
+       href="" 
+       title="Crear tablas de base de datos para el planificador de trabajos">
+       <description> 
+            Para definir las tablas de base de datos que almacenan información de trabajos, utilice el archivo lenguaje de definición de datos (DLL) proporcionado durante la instalación de Compute Grid.   Los archivos se encuentran en el directorio &lt;code&gt;&amp;lt;RAÍZ_INSTALACIÓN_WAS&amp;gt;/longRunning&lt;/code&gt;.
+            &lt;dl&gt;
+                &lt;li&gt;DB2 - &lt;code&gt;CreateLRSCHEDTablesDB2.ddl;&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;Derby - &lt;code&gt;CreateLRSCHEDTablesDerby.ddl&lt;/code&gt;;&lt;/li&gt;
+            &lt;/dl&gt;
+            Para obtener más información:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgsched"&gt;Configuración de la base de datos del planificador de trabajos&lt;/a&gt;
+        </description>
+    </item>
+    <item 
+       href="" 
+       title="Definir una conexión de base de datos">
+       <action class=""></action>
+       <description> 
+            Defina el proveedor JDBC y el origen de datos para conectarse a la base de datos
+creada en la tarea anterior. 
+            Para realizar esta tarea, utilice la siguiente actividad guiada:
+            &lt;br/&gt;
+            &lt;A TARGET="detail" HREF="../guidedactivity/csframe.jsp?cheatSheetURI=com.ibm.ws.console.resources/guidedactivity/cheatsheets/nl/en/cheatsheet_resource.xml&amp;cheatSheetPackage=com.ibm.ws.console.resources/guidedactivity/cheatsheets&amp;fromStep=4"&gt;
+            &lt;IMG SRC="/ibm/console/images/cheatsheets/start_task.gif" align="absmiddle" border="0" alt="Pulse para"/&gt;Conexión a una base de datos&lt;/A&gt;
+
+            &lt;br/&gt;
+            &lt;br/&gt;
+            &lt;strong&gt;Nota:&lt;/strong&gt; puesto que se debe poder acceder a este origen de datos desde cualquier nodo que pueda albergar el planificador de trabajos y los puntos finales, se debe definir a nivel de célula.
+
+            &lt;br/&gt;&lt;br/&gt;
+            Para obtener más información:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgsched"&gt;Configuración de la base de datos del planificador de trabajos.&lt;/a&gt;
+        </description>
+    </item>
+<!--
+    <item 
+       href="" 
+       title="Persist job information to the database">
+       <action class="navigatorCmd.do?forwardName=gridscheduler.config.view"></action>
+       <description> 
+            In the Grid Scheduler panel, select the data source defined in the previous task so that job information is persisted to the database.
+            For more information:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;            
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgsched"&gt;Setting up the Grid Scheduler database&lt;/a&gt;
+        </description>
+    </item>
+
+	<item 
+           href="" 
+           title="Enable startup beans service on each application server">
+	   <action class="navigatorCmd.do?forwardName=ApplicationServer.content.main"></action>
+	   <description> 
+            All application servers created for the dynamic cluster defined in the previous task must have the startup beans service enabled.
+            The service is accessed through the path:&lt;br/&gt; "Application Servers &gt; {dynamic_cluster_name}_{node_name} &gt; (Container services) Startup beans service".
+            &lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you add nodes to the node group later, you will need to repeat this step for the newly-created application servers.
+            &lt;br/&gt;&lt;br/&gt;
+            For more information:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;            
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgncltr"&gt;Create a dynamic cluster for the execution environment&lt;/a&gt;
+        </description>
+	</item>
+
+    <item 
+       href="" 
+       title="Define host aliases for dynamic cluster member ports">
+       <action class="navigatorCmd.do?forwardName=VirtualHost.content.main"></action>
+       <description>
+            Define virtual host aliases that correspond to the HTTP ports used by the dynamic cluster members. 
+            Review the &lt;code&gt;WC_defaulthost&lt;/code&gt; HTTP port for each dynamic cluster member defined in the prior step, 
+            then add those host-port combinations
+            to the list of host aliases for &lt;code&gt;default_host&lt;/code&gt;.
+            &lt;br/&gt;
+            For more information:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;            
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=was-nd-dist&amp;topic=tcws_plugin_vhost"&gt;Configuring virtual hosts&lt;/a&gt;
+        </description>
+    </item>
+-->
+    <item 
+       href="" 
+       title="Configurar el planificador de trabajos">
+       <action class="navigatorCmd.do?forwardName=gridscheduler.config.view"></action>
+       <description>
+            En el panel de configuración del planificador de trabajos, elija el host y el origen de datos definido en los pasos anteriores.
+            &lt;br/&gt;
+            &lt;br/&gt;
+            Pulse &lt;strong&gt;Aceptar&lt;/strong&gt; para guardar esta configuración.
+            &lt;br/&gt;
+            &lt;br/&gt;
+            Para obtener más información:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tcgconf"&gt;Configuración del planificador de trabajos&lt;/a&gt;
+
+<!-- manual click to perform link-->
+<!--
+            &lt;a href="javascript:loadContent('navigatorCmd.do?forwardName=gridscheduler.config.view');"&gt;
+               &lt;IMG SRC="../com.ibm.ws.console.core.guidedactivity/images/start_task.gif" border="0" alt="" align="absmiddle"/&gt;
+               Click to perform&lt;/a&gt;
+--> 
+        </description>
+    </item>
+    <item
+             href="" 
+             title="Guardar y sincronizar la configuración">
+	     <action class=""/>
+	     <description>
+             Pulse &lt;strong&gt;Guardar&lt;/strong&gt; en el mensaje situado en la parte superior del panel de la consola para actualizar la configuración maestra.
+        </description>
+    </item>
+    <item 
+        href="" 
+        title="Iniciar el host del planificador de trabajos">
+	<action class="navigatorCmd.do?forwardName=ApplicationServer.content.main"></action>
+	<description>
+            Inicie o reinicie el servidor de aplicaciones o el miembro de clúster definido en el paso anterior. El nombre de un servidor de aplicaciones miembro del clúster tiene el formato:
+            &lt;br/&gt;
+            &lt;br/&gt;
+            {nombre_clúster_dinámico}_{nombre_nodo}
+            
+        </description>
+    </item>
+    <item 
+        href="" 
+        title="Finalización de la tarea y pasos siguientes">
+	<action class=""></action>
+	<description>
+             Después de completar los pasos anteriores, el planificador de trabajos está configurado y listo para aceptar trabajos Compute Grid.  
+             &lt;br/&gt;
+             &lt;br/&gt;
+             La siguiente tarea es
+             &lt;blockquote style="margin-left:0em;margin-top:0.5em;margin-bottom:0em"&gt;
+             &lt;IMG SRC="../com.ibm.ws.console.core.guidedactivity/images/start_cheatsheet.gif" border="0" alt="" align="absmiddle"/&gt;
+             &lt;A TARGET="detail" HREF="../guidedactivity/csframe.jsp?cheatSheetURI=com.ibm.ws.console.guidedactivity/cheatsheets/nl/lang/configure_bjee.xml&amp;cheatSheetPackage=com.ibm.ws.console.guidedactivity/cheatsheets"&gt;
+             Desplegar una aplicación de Compute Grid
+             &lt;/A&gt;
+             &lt;/blockquote&gt;
+        </description>
+	</item>
+</cheatsheet>

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=${SAMPLES}
+Comment=${SAMPLES}
+Categories=WebSphere;AppServer;Profiles;ProfileName;${PROFILENAME}
+Icon=${WASROOT}/properties/version/nif/config/linuxMenu/images/samples16x16.png
+Exec=${WASROOT}/properties/version/nif/config/script/firefoxLauncher.sh http://localhost:${SAMPLESPORT}/WSsamples
+StartupNotify=true
+Type=Application
+Terminal=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.9

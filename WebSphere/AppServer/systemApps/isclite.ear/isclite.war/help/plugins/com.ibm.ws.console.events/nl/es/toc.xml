@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Sucesos" topic="index.html">
+   <topic label="Datos de configuración" href="ae/utrb_configdump.html"/>
+   <topic label="Enlace rápido de datos de configuración o selección de servidor"
+          href="ae/utrb_dpconfig.html"/>
+   <topic label="Proveedores de diagnósticos (selección)" href="ae/utrb_dpselect.html"/>
+   <topic label="Detalles del mensaje" href="ae/utrb_cstatus.html"/>
+   <topic label="Sucesos de tiempo de ejecución" href="ae/utrb_rstatus.html"/>
+   <topic label="Enlace rápido de datos de estado o selección de servidor"
+          href="ae/utrb_dpserselects.html"/>
+   <topic label="Enlace rápido de pruebas o selección de servidor"
+          href="ae/utrb_dpserselecttc.html"/>
+</toc>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Registro cronológico de acceso a HTTP" topic="index.html">
+   <topic label="Valores de los registros de errores HTTP, FRA y accesos NCSA"
+          href="ae/utrb_httperrlogs.html"/>
+</toc>

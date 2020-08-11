@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Clústeres dinámicos
+" topic="index.html">
+   <topic label="Colección de clústeres dinámicos" href="dc_collection.html"/>
+   <topic label="Propiedades personalizadas del clúster dinámico" href="dc_customproperty.html"/>
+   <topic label="Colección de miembros de clústeres dinámicos" href="dc_members.html"/>
+   <topic label="Valores de miembros de un clúster dinámico" href="dc_member_settings.html"/>
+   <topic label="Valores del clúster dinámico" href="dc_detail_main.html"/>
+   <topic label="Generador de políticas de pertenencia" href="dc_membership.html"/>
+   <topic label="Paso 1: Seleccionar el tipo de servidor de clúster dinámico" href="dc_wiz_1.html"/>
+   <topic label="Paso 2: Seleccionar un método de pertenencia" href="dc_wiz_2.html"/>
+   <topic label="Paso 3: Definir los miembros del clúster dinámico" href="dc_wiz_3.html"/>
+   <topic label="Paso 4: Seleccionar una plantilla de servidor" href="dc_wiz_4.html"/>
+   <topic label="Paso 5: Configurar las propiedades del clúster dinámico" href="dc_wiz_5.html"/>
+   <topic label="Paso 6: Resumen" href="dc_wiz_6.html"/>
+</toc>

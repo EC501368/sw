@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Integración de servicios, seguridad de servicios web" topic="index.html">
+   <topic label="Actor [Valores]" href="ae/Draft13Actor_DetailForm.html"/>
+   <topic label="Añadir indicación de la hora de creación [Valores]"
+          href="ae/Draft13AddCreatedTimestamp_DetailForm.html"/>
+   <topic label="Añadir indicación de la hora de recepción [Valores]"
+          href="ae/Draft13AddReceivedTimestamp_DetailForm.html"/>
+   <topic label="Confidencialidad [Valores]"
+          href="ae/Draft13Confidentiality_DetailForm.html"/>
+   <topic label="Métodos de autenticación personalizados [Colección]"
+          href="ae/Draft13CustomAuthMethods_CollectionForm.html"/>
+   <topic label="Métodos de autenticación personalizados [Valores]"
+          href="ae/Draft13CustomAuthMethods_DetailForm.html"/>
+   <topic label="Aserción de identidad [Valores]"
+          href="ae/Draft13IDAssertion_DetailForm.html"/>
+   <topic label="Configuración de WS-Security de entrada [Valores]"
+          href="ae/SIBWSSecurityInboundConfigDraft13_DetailForm.html"/>
+   <topic label="Integridad [Valores]" href="ae/Draft13Integrity_DetailForm.html"/>
+   <topic label="Configuración de inicio de sesión [Valores]"
+          href="ae/Draft13InboundLoginConfig_DetailForm.html"/>
+   <topic label="Configuración de inicio de sesión [Valores]"
+          href="ae/Draft13OutboundLoginConfig_DetailForm.html"/>
+   <topic label="Configuración de WS-Security de salida [Valores]"
+          href="ae/SIBWSSecurityOutboundConfigDraft13_DetailForm.html"/>
+   <topic label="Confidencialidad necesaria [Valores]"
+          href="ae/Draft13RequiredConfidentiality_DetailForm.html"/>
+   <topic label="Integridad necesaria [Valores]"
+          href="ae/Draft13RequiredIntegrity_DetailForm.html"/>
+   <topic label="Actor [Valores]" href="ae/RequestGeneratorActor_DetailForm.html"/>
+   <topic label="Actor [Valores]" href="ae/ResponseGeneratorActor_DetailForm.html"/>
+   <topic label="Añadir indicación horaria [Valores]"
+          href="ae/ReqConAddTimestamp_DetailForm.html"/>
+   <topic label="Añadir indicación horaria [Valores]"
+          href="ae/ReqGenAddTimestamp_DetailForm.html"/>
+   <topic label="Añadir indicación horaria [Valores]"
+          href="ae/ResConAddTimestamp_DetailForm.html"/>
+   <topic label="Añadir indicación horaria [Valores]"
+          href="ae/ResGenAddTimestamp_DetailForm.html"/>
+   <topic label="Llamante [Colección]" href="ae/ReqConCaller_CollectionForm.html"/>
+   <topic label="Llamante [Colección]" href="ae/ResConCaller_CollectionForm.html"/>
+   <topic label="Llamante [Valores]" href="ae/ReqConCaller_DetailForm.html"/>
+   <topic label="Llamante [Valores]" href="ae/ResConCaller_DetailForm.html"/>
+   <topic label="Confidencialidad [Colección]"
+          href="ae/ReqGenConfidentiality_CollectionForm.html"/>
+   <topic label="Confidencialidad [Colección]"
+          href="ae/ResGenConfidentiality_CollectionForm.html"/>
+   <topic label="Confidencialidad [Valores]"
+          href="ae/ReqGenConfidentiality_DetailForm.html"/>
+   <topic label="Confidencialidad [Valores]"
+          href="ae/ResGenConfidentiality_DetailForm.html"/>
+   <topic label="Configuración de WS-Security de entrada [Valores]"
+          href="ae/SIBWSSecurityInboundConfig_DetailForm.html"/>
+   <topic label="Integridad [Colección]" href="ae/ReqGenIntegrity_CollectionForm.html"/>
+   <topic label="Integridad [Colección]" href="ae/ResGenIntegrity_CollectionForm.html"/>
+   <topic label="Integridad [Valores]" href="ae/ReqGenIntegrity_DetailForm.html"/>
+   <topic label="Integridad [Valores]" href="ae/ResGenIntegrity_DetailForm.html"/>
+   <topic label="Partes del mensaje [Colección]"
+          href="ae/MessageParts_CollectionForm.html"/>
+   <topic label="Partes del mensaje [Valores]" href="ae/MessageParts_DetailForm.html"/>
+   <topic label="Nonce [Colección]" href="ae/Nonce_CollectionForm.html"/>
+   <topic label="Nonce [Valores]" href="ae/Nonce_DetailForm.html"/>
+   <topic label="Configuración de WS-Security de salida [Valores]"
+          href="ae/SIBWSSecurityOutboundConfig_DetailForm.html"/>
+   <topic label="Colección de Propiedad" href="ae/Property_CollectionForm.html"/>
+   <topic label="Valores de Propiedad" href="ae/Property_DetailForm.html"/>
+   <topic label="Enlace de consumidor de solicitudes [Valores]"
+          href="ae/SIBWSSecurityRequestConsumerBindingConfig_DetailForm.html"/>
+   <topic label="Enlace del generador de solicitudes. [Valores]"
+          href="ae/SIBWSSecurityRequestGeneratorBindingConfig_DetailForm.html"/>
+   <topic label="Receptor de solicitudes [Valores]"
+          href="ae/SIBWSSecurityRequestReceiverBindingConfig_DetailForm.html"/>
+   <topic label="Remitente de solicitudes [Valores]"
+          href="ae/SIBWSSecurityRequestSenderBindingConfig_DetailForm.html"/>
+   <topic label="Confidencialidad necesaria [Colección]"
+          href="ae/ReqConRequiredConfidentiality_CollectionForm.html"/>
+   <topic label="Confidencialidad necesaria [Colección]"
+          href="ae/ResConRequiredConfidentiality_CollectionForm.html"/>
+   <topic label="Confidencialidad necesaria [Valores]"
+          href="ae/ReqConRequiredConfidentiality_DetailForm.html"/>
+   <topic label="Confidencialidad necesaria [Valores]"
+          href="ae/ResConRequiredConfidentiality_DetailForm.html"/>
+   <topic label="Integridad necesaria [Colección]"
+          href="ae/ReqConRequiredIntegrity_CollectionForm.html"/>
+   <topic label="Integridad necesaria [Colección]"
+          href="ae/ResConRequiredIntegrity_CollectionForm.html"/>
+   <topic label="Integridad necesaria [Valores]"
+          href="ae/ReqConRequiredIntegrity_DetailForm.html"/>
+   <topic label="Integridad necesaria [Valores]"
+          href="ae/ResConRequiredIntegrity_DetailForm.html"/>
+   <topic label="Señal de seguridad obligatoria [Colección]"
+          href="ae/ReqConRequiredSecurityToken_CollectionForm.html"/>
+   <topic label="Señal de seguridad obligatoria [Colección]"
+          href="ae/ResConRequiredSecurityToken_CollectionForm.html"/>
+   <topic label="Señal de seguridad obligatoria [Valores]"
+          href="ae/ReqConRequiredSecurityToken_DetailForm.html"/>
+   <topic label="Señal de seguridad obligatoria [Valores]"
+          href="ae/ResConRequiredSecurityToken_DetailForm.html"/>
+   <topic label="Enlace del consumidor de respuestas [Valores]"
+          href="ae/SIBWSSecurityResponseConsumerBindingConfig_DetailForm.html"/>
+   <topic label="Configuración del enlace del generador de respuestas [Valores]"
+          href="ae/SIBWSSecurityResponseGeneratorBindingConfig_DetailForm.html"/>
+   <topic label="Receptor de respuestas [Valores]"
+          href="ae/SIBWSSecurityResponseReceiverBindingConfig_DetailForm.html"/>
+   <topic label="Remitente de respuestas [Valores]"
+          href="ae/SIBWSSecurityResponseSenderBindingConfig_DetailForm.html"/>
+   <topic label="Señal de seguridad [Colección]"
+          href="ae/ResGenSecurityToken_CollectionForm.html"/>
+   <topic label="Señal de seguridad [Colección]"
+          href="ae/ReqGenSecurityToken_CollectionForm.html"/>
+   <topic label="Señal de seguridad [Valores]"
+          href="ae/ReqGenSecurityToken_DetailForm.html"/>
+   <topic label="Señal de seguridad [Valores]"
+          href="ae/ResGenSecurityToken_DetailForm.html"/>
+   <topic label="Indicación de la hora [Colección]"
+          href="ae/Timestamp_CollectionForm.html"/>
+   <topic label="Indicación de la hora [Valores]" href="ae/Timestamp_DetailForm.html"/>
+   <topic label="Método de confianza [Valores]"
+          href="ae/ReqConTrustMethod_DetailForm.html"/>
+   <topic label="Método de confianza [Valores]"
+          href="ae/ResConTrustMethod_DetailForm.html"/>
+   <topic label="Enlaces de WS-Security [Colección]"
+          href="ae/SIBWSSecurityServiceBindings_CollectionForm.html"/>
+   <topic label="Configuraciones de WS-Security [Colección]"
+          href="ae/SIBWSSecurityServiceConfigs_CollectionForm.html"/>
+</toc>

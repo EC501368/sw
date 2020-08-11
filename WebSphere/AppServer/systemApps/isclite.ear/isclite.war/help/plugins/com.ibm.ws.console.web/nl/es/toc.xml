@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="plug-in de servidor web" topic="index.html">
+   <topic label="Valores de propiedad del servidor de aplicaciones para un plug-in de servidor web"
+          href="ae/uwsv_plugin_props5.html"/>
+   <topic label="Directivas globales" href="ae/fh_ihsglobaldir.html"/>
+   <topic label="Propiedades del clúster del plug-in HTTP"
+          href="ae/uwsv_plugin_clusterprops.html"/>
+   <topic label="Gestión del servidor web remoto" href="ae/fh_remotemgmt.html"/>
+   <topic label="Colección de servidores web" href="ae/fh_webservers.html"/>
+   <topic label="Configuración del servidor Web" href="ae/fh_define.html"/>
+   <topic label="Archivo de configuración del servidor web" href="ae/fh_configfile.html"/>
+   <topic label="Propiedades personalizadas del servidor Web"
+          href="ae/fh_customprops.html"/>
+   <topic label="Archivo de anotaciones cronológicas del servidor Web"
+          href="ae/fh_logfile.html"/>
+   <topic label="Propiedades de configuración de la memoria caché de plug-in del servidor web"
+          href="ae/uwsv_plugin_props2.html"/>
+   <topic label="Propiedad Servicio de configuración de plug-in del servidor web"
+          href="ae/uwsv_plugin_props4.html"/>
+   <topic label="Propiedades del plug-in del servidor Web"
+          href="ae/uwsv_plugin_props.html"/>
+   <topic label="Propiedades de optimización de solicitudes y respuestas del plug-in del servidor Web"
+          href="ae/uwsv_plugin_props1.html"/>
+   <topic label="Propiedades de direccionamiento de solicitud del plug-in del servidor Web"
+          href="ae/uwsv_plugin_props3.html"/>
+   <topic label="Colección de host virtuales del servidor web"
+          href="ae/fh_ihsvhostcoll.html"/>
+   <topic label="Detalle de host virtuales del servidor web"
+          href="ae/fh_ihsvhostdet.html"/>
+</toc>

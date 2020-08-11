@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores del direccionador On Demand" />
+<meta name="abstract" content="En este tema se describe cómo realizar una configuración avanzada en un direccionador On Demand (ODR). Con los valores de ODR, se puede ajustar el funcionamiento del ODR. En especial, puede configurar las conexiones y las solicitudes al servidor de aplicaciones, habilitar el almacenamiento en antememoria, configurar las solicitudes que se deben rechazar, definir cómo se manejan las respuestas de error y especificar la ubicación de las anotaciones cronológicas del ODR." />
+<meta name="description" content="En este tema se describe cómo realizar una configuración avanzada en un direccionador On Demand (ODR). Con los valores de ODR, se puede ajustar el funcionamiento del ODR. En especial, puede configurar las conexiones y las solicitudes al servidor de aplicaciones, habilitar el almacenamiento en antememoria, configurar las solicitudes que se deben rechazar, definir cómo se manejan las respuestas de error y especificar la ubicación de las anotaciones cronológicas del ODR." />
+<meta name="DC.Relation" scheme="URI" content="uiodr_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_settings.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_cache.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_cacheinstances.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_chain.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_static_cache.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_wiz.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_cluster_collection.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="odr_settings" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores del direccionador On Demand</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="field-help" id="odr_settings">
+<h1 class="title topictitle1">Valores del direccionador On Demand</h1>
+<div class="body"><p class="shortdesc">En este tema se describe cómo realizar una configuración avanzada en un direccionador On Demand (ODR). Con los valores de ODR, se puede ajustar el funcionamiento del ODR. En especial, puede configurar las conexiones y las peticiones al servidor de aplicaciones, habilitar el almacenamiento en antememoria, configurar las peticiones que se deben rechazar, definir cómo se manejan las respuestas de error y especificar la ubicación de las anotaciones cronológicas del ODR.</p>
+<p class="p">Una vez creado, el servidor ODR detecta el entorno y
+puede direccionar peticiones a WebSphere Application Server. Se puede aplicar una configuración adicional al ODR para satisfacer las
+necesidades de un entorno concreto. No se da soporte a la configuración del ODR en la zona desmilitarizada (DMZ).</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidor</span> &gt; <span class="ph uicontrol">Direccionadores On Demand</span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_odr</var></span> &gt; <span class="ph uicontrol">Propiedades del direccionador On Demand</span> &gt; <span class="ph uicontrol">Valores del direccionador On Demand</span></span>.</p>
+<p class="p">Hay que poseer privilegios administrativos de configurador o administrador para cambiar los valores de ODR.</p>
+<p class="p">En la pestaña Configuración puede editar los valores de campo configurables para el ODR.</p>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="contentsc_description"><h2 class="title topictitle2">Conexión de servidor de contenido</h2>
+<div class="body"><p class="shortdesc">Configure los parámetros de conexión HTTP básicos entre el servidor proxy y los servidores de contenido.</p>
+<dl class="dl"><dt class="dt dlterm">Tiempo de espera de petición de salida</dt>
+<dd class="dd">Número de segundos por omisión que el ODR espera una respuesta antes de que termine el tiempo de espera de una petición para un servidor de contenido.  Asegúrese de que entiende el significado de esta opción cuando cambia el valor. </dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Tiempo de espera excedido de conexión de salida</dt>
+<dd class="dd">Número de milisegundos que el ODR espera para conectarse al servidor. Si se excede este tiempo, el ODR intenta conectarse a un servidor distinto. Si no existen disponibles otros servidores, se excede el tiempo de espera de la solicitud.
+Un valor de 0 indica que el ODR debería utilizar el valor de tiempo de espera excedido del kernel del sistema operativo.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Conexiones de agrupación para servidor de contenido</dt>
+<dd class="dd">La opción de agrupar las conexiones para el servidor es una característica de optimización. Las agrupaciones evitan la necesidad de crear y destruir con frecuencia conexiones
+de sockets con el servidor, al permitir al ODR agrupar estas conexiones y reutilizarlas. El valor predeterminado para el número máximo de conexiones por servidor es 0, que indica que el número de conexiones puede aumentarse según convenga.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Máximo de conexiones por servidor</dt>
+<dd class="dd">Número máximo de conexiones que se agruparan en cualquier servidor de contenido individual. Las propiedades personalizadas de ODR que ajustan las conexiones de servidor de contenido son las siguientes:<ul class="ul"><li class="li">key=http.maxTargetReconnects: número máximo de reconexiones con el mismo servidor de contenido de destino para cada solicitud. El valor predeterminado es 5.</li>
+<li class="li">key=http.maxTargetRetries: número máximo de veces que el ODR intenta seleccionar un nuevo servidor de contenido
+de destino para cada solicitud. El valor por omisión es 5.</li>
+<li class="li">key=http.routing.sendReverseProxyNameInHost: determina si el nombre del ODR se coloca en la cabecera de host para el contenido que no es específico de los servidores de contenido de WebSphere Application Server. Las opciones son <samp class="ph tt">true</samp> o <samp class="ph tt">false</samp> y no son sensibles a las mayúsculas y minúsculas. El valor predeterminado es false.</li>
+<li class="li">key=http.compliance.disable: determina si se hace cumplir la adhesión HTTP V1.1 en las conexiones de servidor de contenido ODR. Las opciones son <samp class="ph tt">true</samp> o <samp class="ph tt">false</samp> y no son sensibles a las mayúsculas y minúsculas. El valor por omisión es false.</li>
+<li class="li">key=http.compliance.via: el valor de la cabecera VIA que se añade a las solicitudes y respuestas para el cumplimiento con HTTP. Si el valor es nulo, no se añade una cabecera VIA. Si el valor es true, se añade un valor VIA por omisión. Si no, se añade el valor VIA de la serie especificada.
+El valor predeterminado es nulo.</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="caching_description"><h2 class="title topictitle2">Colocación en antememoria</h2>
+<div class="body"><p class="shortdesc">El ODR puede configurarse para almacenar en antememoria el contenido de servidores.</p>
+<div class="p">Por omisión, se habilita la colocación en antememoria del contenido. Las propiedades que aparecen
+a continuación sólo se aplican si se habilita la colocación en antememoria:<dl class="dl"><dt class="dt dlterm">Habilitar antememoria</dt>
+<dd class="dd">Habilita la infraestructura de antememoria para el servidor ODR y habilita la colocación en antememoria
+de contenido estático, tal como definen las especificaciones HTTP 1.1.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Nombre de instancia de antememoria</dt>
+<dd class="dd">La instancia de antememoria de objetos de antememoria dinámica, que se configura bajo <span class="ph menucascade"><span class="ph uicontrol">Recursos</span> &gt; <span class="ph uicontrol">Nombre de instancia de memoria caché</span> &gt; <span class="ph uicontrol">Instancias de antememoria de objetos</span></span>, que se utiliza
+para colocar en antememoria todas las respuestas de contenido estático y dinámico. Esta instancia de antememoria de objetos debe configurarse para dar soporte a nuevas interfaces de programas de aplicación (API) de E/S (NIO).</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Colocar en antememoria contenido SSL</dt>
+<dd class="dd">Determina si debe colocarse en antememoria las respuestas de las conexiones SSL del ODR de cliente terminadas por el ODR.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Colocación agresiva en antememoria</dt>
+<dd class="dd">Habilita la colocación en antememoria de las respuestas HTTP que normalmente no se colocarían en antememoria.
+Para obtener la optimización de
+antememoria, pueden quebrantarse las normas de colocación en antememoria definidas por HTTP 1.1.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Contenido dinámico en antememoria</dt>
+<dd class="dd">Determina si se coloca en antememoria el contenido dinámico que genera WebSphere Application Server
+versión 6.02 o posterior. En las versiones de WebSphere Application Server anteriores a la versión 6.02 no se da soporte al contenido dinámico en antememoria generado por servidores de contenido.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">URI de actualización de antememoria</dt>
+<dd class="dd">Al colocar en antememoria el contenido dinámico, es el URI relativo de una aplicación de servidor de contenido instalada que se utiliza para invalidar entradas colocadas en antememoria. </dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="compression"><h2 class="title topictitle2">Política de compresión</h2>
+<div class="body"><p class="shortdesc">Habilita la compresión del cuerpo del mensaje de respuestas HTTP antes de enviarlo al cliente.</p>
+<dl class="dl"><dt class="dt dlterm">sólo gzip</dt>
+<dd class="dd">Comprime la respuesta utilizando el mecanismo de compresión de gzip. La respuesta se comprime únicamente si es aceptable para el cliente en base a la cabecera Accept-Encoding de la solicitud. </dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">sólo deflate</dt>
+<dd class="dd">Comprime la respuesta utilizando el mecanismo de compresión de deflate.
+La respuesta se comprime únicamente si es aceptable para el cliente basándose en la cabecera Accept-Encoding de la solicitud.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">auto</dt>
+<dd class="dd">Utiliza gzip, deflate o no realiza compresión tal como lo determine la preferencia del cliente.</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="pexclus_description"><h2 class="title topictitle2">Exclusiones</h2>
+<div class="body"><p class="shortdesc">El ODR examina cada solicitud de entrada. Puede
+definir ciertos métodos para su exclusión y si el método HTTP solicitado
+coincide con cualquiera de los métodos configurados para la exclusión, el
+ODR rechaza las solicitudes con un error METHOD DISALLOWED. </p>
+<dl class="dl"><dt class="dt dlterm">Métodos HTTP inhabilitados</dt>
+<dd class="dd">Por omisión, los métodos CONNECT, PUT y DELETE están inhabilitados.</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="plog_description"><h2 class="title topictitle2">Registro cronológico</h2>
+<div class="body"><p class="shortdesc">Las solicitudes HTTP se anotan cronológicamente en uno de los tres archivos de anotaciones cronológicas:
+proxy, de antememoria y local. La configuración del archivo de anotaciones cronológicas local no
+está disponible en la consola administrativa, pero está disponible en ${SERVER_LOG_ROOT}local.log. Especifique la ubicación de
+este archivo de anotaciones cronológicas estableciendo la propiedad
+personalizada http.log.localFileName en la ubicación del archivo. El contenido de todos los archivos de anotaciones cronológicas se formatea
+con el formato de archivo de anotaciones cronológicas común de NCSA
+(National Center for Supercomputing Applications). </p>
+<div class="p"><dl class="dl"><dt class="dt dlterm">Habilitar el registro cronológico de acceso</dt>
+<dd class="dd">Seleccione esta opción para habilitar el registro cronológico.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Máximo de las anotaciones cronológicas de acceso</dt>
+<dd class="dd">El tamaño máximo de las anotaciones cronológicas en megabytes (MB). El valor predeterminado es 25 MB.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Anotaciones cronológicas de acceso proxy</dt>
+<dd class="dd">Anota cronológicamente las respuestas que se reciben de servidores remotos.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Anotaciones cronológicas de acceso de antememoria</dt>
+<dd class="dd">Anota cronológicamente las respuestas servidas desde la antememoria local.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Anotaciones cronológicas de acceso locales</dt>
+<dd class="dd">Contiene el nombre de las anotaciones cronológicas locales. El valor <samp class="ph tt">NULL</samp> indica que se utiliza
+el valor por omisión <samp class="ph tt">${SERVER_LOG_ROOT}/local.log</samp>. Anota cronológicamente todas las respuestas
+locales no colocadas en antememoria; por ejemplo, redirige los errores internos. Este contenido no procede de la antememoria del ODR.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="psecurity_description"><h2 class="title topictitle2">Seguridad</h2>
+<div class="body"><p class="shortdesc">Utilice esta sección para configurar las opciones de seguridad.</p>
+<dl class="dl"><dt class="dt dlterm">Proxies de seguridad de confianza</dt>
+<dd class="dd">Algunas topologías tienen otro nivel de direccionamiento habilitado encima del ODR. Por ejemplo, los servidores Web leen solicitudes de entrada para verificar a qué ODR deben direccionarse. Este campo de configuración permite que otros
+intermediarios que no sean el servidor ODR manejen la solicitud indicando explícitamente
+al ODR que confíe en ellos. En este campo utilice un Protocolo Internet o un nombre completo de host.</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="proxyplug_description"><h2 class="title topictitle2">Política de configuración de plug-in de proxy</h2>
+<div class="body"><dl class="dl"><dt class="dt dlterm">Generar configuración de plug-in</dt>
+<dd class="dd">Utilice este parámetro para generar un archivo de configuración del plug-in del ODR que se pueda
+utilizar en un servidor web que se despliegue delante del ODR. El plug-in puede determinar el URI
+que el ODR maneja en nombre del servidor de aplicaciones. El plug-in puede determinar el punto final o
+los límites del ODR, de modo que pueda direccionar correctamente hacia el ODR las solicitudes que reciba. Esta característica es útil para los que prefieren desplegar un servidor web comprobado en la DMZ, la zona
+desmilitarizada, que puede beneficiarse de todas las posibilidades del ODR. Observe que no se da soporte a la configuración del ODR en la zona desmilitarizada (DMZ).<p class="p">Puede definir un nivel en el que generar el plug-in. En el ámbito de célula, el
+ODR genera una configuración de plug-in que incluye todos los URI controlados por todos los ODR de la célula. En el ámbito de nodo, el archivo de configuración de plug-in contiene todos los URI controlados por los ODR que están definidos en el mismo nodo que el ODR que general el plug-in.
+Además, todo el tráfico que direcciona el archivo de configuración del plug-in se direcciona a través sólo de los ODR del mismo nodo que este ODR. En el ámbito de servidor, el archivo de configuración del plug-in contiene todos los URI controlados sólo por el ODR que está generando el plug-in y todo el tráfico que direcciona el archivo de configuración del plug-in es direccionado a través sólo de este
+ODR.</p>
+</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Script de cambio de configuración de plug-in</dt>
+<dd class="dd">Especifica la vía de acceso del script que se ejecuta después de generar la configuración de plug-in de WebSphere Application Server.</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="errpage_description"><h2 class="title topictitle2">Política de página de error personalizada</h2>
+<div class="body"><p class="shortdesc">Utilice este campo para dar soporte al uso de páginas de error personalizadas cuando se produce un error durante el proceso de la solicitud. </p>
+<div class="p">Por omisión no se generan páginas de error personalizadas. Las propiedades que aparecen a continuación permiten utilizar las páginas de
+error personalizadas cuando se producen errores durante el proceso de la solicitud:<dl class="dl"><dt class="dt dlterm">URI de la aplicación de generación de página de error</dt>
+<dd class="dd">Si no se proporciona un URI válido de una aplicación instalada, la política de página de error personalizada
+no manejará solicitudes.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Manejar errores remotos</dt>
+<dd class="dd">Cuando no se selecciona, sólo se manejan los códigos de estado
+de error de respuestas HTTP cuando el ODR genera una respuesta de error. Cuando
+se selecciona, se manejan los códigos de estado de error de respuesta HTTP
+cuando el ODR genera una respuesta de error y cuando un servidor de
+aplicaciones genera una respuesta de error. Se recomienda configurar una aplicación de página de error en la misma máquina física que el ODR.</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Cabeceras a reenviar a la aplicación de página de error</dt>
+<dd class="dd">Especifica valores de cabecera adicionales de la solicitud del cliente para reenviarlos
+a la aplicación de página de error como parámetros de consulta. Los parámetros de consulta
+responseCode y URI siempre se envían a la aplicación de página de error, además de las que ya están configuradas. El parámetro responseCode es el código de estado HTTP que se genera internamente o es devuelto por el servidor de
+contenido. El parámetro URI es el URI de la solicitud del cliente.<div class="p"><strong class="ph b">Ejemplo</strong>: el URI de página de error es <samp class="ph tt">/ErrorPageApp/ErrorPage</samp>, las cabeceras que se van a reenviar
+contienen <samp class="ph tt">Host</samp> y el cliente envía la siguiente solicitud:<pre class="pre">GET  /house/rooms/kitchen.jpg HTTP/1.1
+Host:  homeserver.companyx.com
+La petición da como resultado una respuesta HTTP 404 (local o remota), y el URI de petición para la aplicación de página de error sería:
+/ErrorPageApp/ErrorPage?responseCode=404&amp;uri=/house/rooms/kitchen.jpg&amp;Host= homeserver.companyx.com</pre>
+</div>
+</dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Códigos de estado HTTP que se reconocerán como errores</dt>
+<dd class="dd">Los códigos de estado para los que proporciona una respuesta la política de página de error.
+Si no se especifica un código de estado, se devuelve el contenido original de las respuestas con dicho código de estado.  Si no se especifica ningún código de estado HTTP, se utilizan los valores por omisión, <samp class="ph tt">404</samp> y <samp class="ph tt">5XX</samp>. En lugar de especificar códigos de estado individualmente, se recomienda utilizar el siguiente método
+para representar un rango:<ul class="ul"><li class="li"><samp class="ph tt">5XX:  500-599</samp>  </li>
+<li class="li"><samp class="ph tt">4XX:  400-499</samp></li>
+<li class="li"><samp class="ph tt">3XX:  300-399</samp>  </li>
+<li class="li"><samp class="ph tt">2XX:  200-299</samp> </li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="uiodr_collection.html" title="Esta página lista los direccionadores on demand (ODR) de la célula. Un ODR se encuentra en un nodo de Intelligent Management. Un ODR clasifica, otorga prioridades y direcciona tráfico SIP y HTTP en la empresa. En esta página podrá crear, suprimir y detener un ODR. Existe la posibilidad de crear plantillas de servidor.">Colección de direccionadores On Demand</a></div>
+<div><a class="link help" href="odr_settings.html" title="En este tema se describe cómo realizar una configuración avanzada en un direccionador On Demand (ODR). Con los valores de ODR, se puede ajustar el funcionamiento del ODR. En especial, puede configurar las conexiones y las solicitudes al servidor de aplicaciones, habilitar el almacenamiento en antememoria, configurar las solicitudes que se deben rechazar, definir cómo se manejan las respuestas de error y especificar la ubicación de las anotaciones cronológicas del ODR.">Valores del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_cache.html" title="En este tema se describe cómo configurar una norma de antememoria asociada a un grupo de URI para el direccionador On Demand (ODR). HTTP 1.1 define un conjunto de normas para la colocación en antememoria del contenido en los direccionadores ODR. Las normas de antememoria estática permiten alterar temporalmente estas normas por omisión para un espacio de direcciones dado. Para que las normas tengan sentido, debe habilitar la colocación en antememoria en la página de la consola administrativa Servidores &gt; Tipos de servidor &gt; Direccionadores On Demand &gt; nombre_ODR &gt; Propiedades del direccionador On Demand &gt; Valores del direccionador On Demand.">Valores de normas de antememoria estática del direccionador On demand</a></div>
+<div><a class="link help" href="odr_cacheinstances.html" title="Utilice esta página para configurar y gestionar instancias de antememoria de objetos, que además de la antememoria compartida por omisión, pueden almacenar, distribuir y compartir datos de aplicaciones Java EE (Java Platform, Enterprise Edition). Utilice estas instancias de antememoria para proporcionar a las aplicaciones mejor flexibilidad y ajuste de los recursos de antememoria.">Colección de instancias de antememoria de objetos del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_chain.html" title="Utilice esta página para ver o gestionar cadenas de transporte para el direccionador On Demand (ODR). Las cadenas de transporte permiten la comunicación mediante transportes o pilas de protocolo, que generalmente están basados en sockets.">Colección de cadenas de transporte del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_detail_main.html" title="Utilice esta página para modificar los valores de un direccionador On Demand (ODR) que ya exista.">Configuración del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_static_cache.html" title="En este tema se enumeran las normas de antememoria estática del direccionador On Demand (ODR). En esta página puede crear, suprimir o modificar una norma de antememoria estática del direccionador On Demand.">Normas de antememoria estática del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_wiz.html" title="Esta página sirve para crear un nuevo direccionador On Demand.">Crear un nuevo direccionador On Demand</a></div>
+<div><a class="link help" href="odr_cluster_collection.html" title="Esta página lista los clústeres direccionadores On Demand (ODR) de la célula. Un clúster ODR está formado por un grupo de direccionadores ODR. Desde esta página, puede modificar los valores de configuración de un clúster ODR. Si falla uno de los miembros de un clúster ODR, las solicitudes se direccionarán a los demás miembros del clúster.">Colección de clústeres direccionadores On Demand</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: odr_settings.html</span></body>
+</html>

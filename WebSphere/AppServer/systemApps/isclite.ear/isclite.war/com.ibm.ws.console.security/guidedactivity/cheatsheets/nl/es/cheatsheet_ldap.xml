@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<cheatsheet title="Utilización de un servidor del directorio LDAP como registro de usuarios">
+	<intro 
+		href="ldap_intro.htm">
+        <description>
+La seguridad de WebSphere Application Server admite la implementación de los servidores del directorio LDAP más
+importantes, que pueden actuar como el repositorio de información de usuarios y grupos. Los servidores WebSphere llaman a
+estos servidores de directorios para autenticar un usuario y para otras tareas relacionadas con la seguridad (por
+ejemplo, para obtener información de usuarios y grupos). Este soporte se proporciona utilizando distintos
+filtros de usuario y grupo para obtener la información de usuarios y grupos.
+Estos filtros tienen valores por omisión que puede modificar para ajustarlos a sus
+necesidades. La característica LDAP personalizada le permite utilizar cualquier otro
+servidor LDAP (que no esté en la lista de servidores LDAP soportada por el producto) para
+su registro de usuarios, utilizando los filtros adecuados.
+&lt;br/&gt;
+&lt;br/&gt;
+Para continuar, pulse &lt;strong&gt;Iniciar&lt;/strong&gt;.
+</description>
+	</intro>
+
+	<item
+        href="com.ibm.ws.console.security/guidedactivity/cheatsheets/nl/lang/ldap_tips.htm"
+		title="Especificación del ID de usuario y la contraseña del servidor LDAP">
+		<action
+			class="com.ibm.ws.console.security.forwardCmd.do?forwardName=LDAPUserRegistry.config.view&amp;sfname=userRegistries&amp;resourceUri=security.xml&amp;parentRefId=Security_1&amp;perspective=tab.configuration"/>
+        
+	<description>
+            &lt;ol&gt;
+            &lt;li&gt;Seleccione &lt;strong&gt; Pulsar para actuar&lt;/strong&gt; para cargar el panel Registro de usuario LDAP&lt;/li&gt;
+            &lt;li&gt;Entre un nombre de usuario válido en el campo ID de usuario de servidor. Puede entrar el nombre distinguido (DN) completo del usuario o el nombre abreviado del usuario, tal y como esté definido por Filtro de usuario en en panel Valores avanzados de LDAP. Por ejemplo, para IBM Directory Server entre &lt;strong&gt;cn=WAS admin,o=ibm,c=us&lt;/strong&gt; o &lt;strong&gt;WASadmin&lt;/strong&gt;, donde &lt;strong&gt;WASadmin&lt;/strong&gt; es el ID de usuario.&lt;/li&gt;
+            &lt;li&gt;Entre la contraseña del usuario en el campo Contraseña de usuario de servidor.&lt;/li&gt;
+            &lt;/ol&gt;
+
+            Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+    </description>
+     </item>
+
+
+
+
+    <item
+        href="com.ibm.ws.console.security/guidedactivity/cheatsheets/nl/lang/ldap_tips.htm"
+        title="Especificación del tipo de servidor LDAP">
+        <action
+            class=""/>
+
+    <description>
+    
+                Seleccione qué tipo de servidor LDAP se utiliza en la lista Tipo.
+                            El tipo del servidor LDAP determina los filtros por omisión utilizados por WebSphere Application Server. 
+                            Si se selecciona IBM Directory Server o iPlanet Directory Server, seleccione
+                            también el recuadro de selección del campo Ignorar mayúsculas para autorización más abajo.
+                Para obtener más información sobre cómo utilizar tipos específicos de servidores LDAP, consulte
+                &lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/tsec_tmsad.html"&gt;Utilización de servidores de directorios específicos como servidor LDAP&lt;/a&gt;.
+
+                 &lt;br/&gt;
+                &lt;br/&gt;
+
+                
+
+            Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+    </description>
+     </item>
+
+    <item
+        href="com.ibm.ws.console.security/guidedactivity/cheatsheets/nl/lang/ldap_tips.htm"
+        title="Identificación del servidor LDAP">
+        <action
+            class=""/>
+
+    <description>
+    
+                &lt;ol&gt;
+                &lt;li&gt;Entre el nombre de host plenamente cualificado del servidor LDAP en el campo Host.&lt;/li&gt;
+                &lt;li&gt;Entre el número de puerto del servidor LDAP en el campo Puerto. 
+                            El nombre de host y el número de puerto representan el reino de este servidor LDAP en la célula de WebSphere Application Server. 
+                            &lt;/li&gt;
+                &lt;/ol&gt;
+
+            Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+    </description>
+     </item>
+
+
+
+
+    <item
+        href="com.ibm.ws.console.security/guidedactivity/cheatsheets/nl/lang/ldap_tips.htm"
+        title="Acceso al servidor LDAP">
+        <action
+            class=""/>
+
+    <description>
+
+
+            &lt;ol&gt;
+            &lt;li&gt;Especifique el nombre distinguido (DN) básico en el campo Nombre distinguido básico. 
+                        El DN básico indica el punto de inicio de las búsquedas en este servidor del directorio LDAP. 
+                        Por ejemplo, para un usuario con un DN de &lt;TT&gt;cn=John Doe, ou=Rochester, o=IBM, c=US&lt;/TT&gt;, especifique el DN básico como cualquiera de las opciones siguientes (asumiendo un sufijo c=us):
+                        &lt;TT&gt;ou=Rochester, o=IBM, c=us&lt;/TT&gt; o &lt;TT&gt;o=IBM c=us&lt;/TT&gt; o &lt;TT&gt;c=us&lt;/TT&gt;. 
+                        Este campo puede ser sensible a las mayúsculas y minúsculas. Haga que coincida con las mayúsculas y minúsculas del servidor de directorios. 
+                        Este campo es necesario para todos los directorios LDAP excepto para Domino Directory. 
+                        &lt;/li&gt;
+            &lt;li&gt;Escriba el nombre DN de enlace en el campo Nombre distinguido de enlace, si es necesario. 
+                         El DN de enlace es necesario si no se pueden realizar enlaces anónimos en el servidor LDAP para obtener información de usuario y grupo.
+
+                          Si el servidor LDAP está configurado para utilizar enlaces anónimos, deje este campo en blanco.&lt;/li&gt;
+            &lt;li&gt;Escriba la contraseña correspondiente al DN de enlace en el campo Contraseña de enlace, si es necesario.&lt;/li&gt;
+            &lt;li&gt;Inhabilite el campo Reutilizar conexión sólo si utiliza direccionadores para enviar peticiones a distintos servidores LDAP y si los direccionadores no dan soporte a la afinidad. 
+                         Deje el campo habilitado en las demás situaciones. &lt;/li&gt;
+
+            &lt;li&gt;Pulse &lt;strong&gt;Aceptar&lt;/strong&gt; para enviar los cambios realizados hasta este momento.&lt;/li&gt;
+            &lt;/ol&gt;
+
+    </description>
+	</item>
+
+
+    
+</cheatsheet>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+ 
+<!--
+	******************************************************************************
+	* Translation Notes:
+	*
+	* To translate this XML file, first change the xml:lang variable
+	* in TMSSource to the correct locale for the translation.  Then follow
+	* these simple rules.
+	*
+	* #PCDATA:
+	*
+	* When translating XML, any text between <Tag> and </Tag> entries
+	* should be translated.  For example, "File not found" in the following
+	* phrase:
+	*
+	* <MsgText>File not found</MsgText>... 
+	* 
+	* The only exception to this rule is the Text between <Copyright> and 
+	* </Copyright> tags.
+	* 
+	* Attributes:
+	*
+	* Verbage in attributes should not be translated.  For example, the "don't
+	* translate me" phrase in the following should not be changed:
+	*
+	* <MsgText terseText="don't translate me">File not found</MsgText>... 
+	*
+	* Comments:
+	*
+	* Verbage in comments should not be translated.  This note is an example
+	* of a comment.  End-users will never see it.
+	*
+	*****************************************************************************
+-->
+<TMSSource name="MigrationMessages" tmsVersion="1.0" xml:lang="es">
+<Copyright> 		Licensed Materials - Property of IBM (C)Copyright IBM Corporation
+2004,2005. All Rights Reserved US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</Copyright>
+<!--
+		*********************************************************************
+		* The above copyright notice applies to this XML file as well
+		*  as any other source/text files generated from this file.
+		*********************************************************************
+	-->
+<!-- ============================================================== -->
+<!-- Message creation/maintenance process:                      -->
+<!--                                                            -->
+<!-- In a comment above each message, include                   -->
+<!-- the message number and one of these four status values:    -->
+<!--                                                            -->
+<!-- MSG_WORKING: Development is still working on the message.  -->
+<!--              It is not ready for review by ID.             -->
+<!--                                                            -->
+<!-- MSG_REVIEW_ID: Development has completed work on the       -->
+<!--                message. It is ready to be reviewed by ID.  -->
+<!--                                                            -->
+<!-- MSG_REVIEW_DEV: ID has updated the message.                -->
+<!--                 It is ready to be reviewed by Development. -->
+<!--                                                            -->
+<!-- MSG_COMPLETE: The message has been reviewed by all parties -->
+<!--               and is complete.                             -->
+<!--                                                            -->
+<!-- Also, if Development must update a message that is in the  -->
+<!-- MSG_COMPLETE state, Development must open a defect for ID  -->
+<!-- to review the message again.                               -->
+<!-- ============================================================== -->
+<!-- ================================================================= -->
+<!--  CEIMI0001E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0001E" prefix="yes">
+<MsgText pgmKey="CEIMI0001" varFormat="Java">La herramienta de migración no ha encontrado una referencia al recurso para  el tipo de recurso <Variable formatSpec="{0}">res_type</Variable> en el archivo <Variable formatSpec="{1}">file_name</Variable> del directorio <Variable formatSpec="{2}">dir_name</Variable>.</MsgText>
+<Explanation>
+<p>No se ha encontrado una referencia al recurso necesaria en el archivo de copia de seguridad de configuración especificado. Este recurso es necesario para finalizar la migración de Common
+Event Infrastructure.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Asegúrese de que el proceso previo a la migración mediante la herramienta WASPreUpgrade haya finalizado sin errores.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0002E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0002E" prefix="yes">
+<MsgText pgmKey="CEIMI0002" varFormat="Java">No se ha encontrado un recurso al que hace referencia <Variable formatSpec="{0}">res_ref</Variable> en el archivo <Variable formatSpec="{1}">file_name</Variable> del directorio <Variable
+formatSpec="{2}">dir_name</Variable>.</MsgText>
+<Explanation>
+<p>No se ha encontrado una recurso necesario en el archivo de copia de seguridad de configuración especificado. Este recurso es necesario para finalizar la migración de Common
+Event Infrastructure.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Asegúrese de que el proceso previo a la migración mediante la herramienta WASPreUpgrade haya finalizado sin errores.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0003E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0003E" prefix="yes">
+<MsgText pgmKey="CEIMI0003" varFormat="Java">Se ha producido un error durante la instalación de la aplicación <Variable formatSpec="{0}">appName</Variable>. La aplicación no se ha instalado.</MsgText>
+<Explanation>
+<p>El proceso de migración ha encontrado una excepción al intentar instalar la aplicación especificada.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0004E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0004E" prefix="yes">
+<MsgText pgmKey="CEIMI0004" varFormat="Java">La herramienta de migración no ha podido recuperar la información de despliegue de la aplicación <Variable formatSpec="{0}">appName</Variable>.</MsgText>
+<Explanation>
+<p>La herramienta de migración no ha podido recuperar la información necesaria para el despliegue de la aplicación a partir de la configuración con copia de seguridad que se está migrando.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Asegúrese de que el proceso previo a la migración mediante la herramienta WASPreUpgrade haya finalizado sin errores.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0005E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0005E" prefix="yes">
+<MsgText pgmKey="CEIMI0005" varFormat="Java">Se ha producido un error al actualizar el archivo de propiedades de metadatos de nodo del nodo <Variable formatSpec="{0}">nodeName</Variable>. 
+</MsgText>
+<Explanation>
+<p>El objeto AdminTask ha encontrado una excepción al actualizar la información de funciones del servicio de sucesos en el archivo de propiedades de metadatos de nodo.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+
+<!-- ================================================================= -->
+<!--  CEIMI0006I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0006I" prefix="yes">
+	<MsgText pgmKey="CEIMI0006" varFormat="Java">
+		Iniciando la migración de Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>
+			El proceso de migración de Common Event Infrastructure se ha iniciado.
+		</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0007I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0007I" prefix="yes">
+	<MsgText pgmKey="CEIMI0007" varFormat="Java">
+		Se ha completado la migración de Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>
+			El proceso de migración de Common Event Infrastructure ha finalizado.
+		</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0008I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0008I" prefix="yes">
+	<MsgText pgmKey="CEIMI0008" varFormat="Java">
+		Desplegando Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>
+			El despliegue de Common Event Infrastructure se ha iniciado.
+		</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0009I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0009I" prefix="yes">
+	<MsgText pgmKey="CEIMI0009" varFormat="Java">
+		Se ha completado el despliegue de Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>El despliegue de Common Event Infrastructure ha finalizado.</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0010I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0010I" prefix="yes">
+	<MsgText pgmKey="CEIMI0010" varFormat="Java">
+		Eliminando Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>La eliminación de Common Event Infrastructure se ha iniciado.</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0011I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0011I" prefix="yes">
+	<MsgText pgmKey="CEIMI0011" varFormat="Java">
+		Se ha completado la eliminación de Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>La eliminación de Common Event Infrastructure ha finalizado.</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0012I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0012I" prefix="yes">
+	<MsgText pgmKey="CEIMI0012" varFormat="Java">
+		Instalando Mdb de Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>
+			La instalación del Mdb de Common Event Infrastructure se ha iniciado.
+		</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0013I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0013I" prefix="yes">
+	<MsgText pgmKey="CEIMI0013" varFormat="Java">
+		Se ha completado la instalación del Mdb de Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>
+			La instalación del Mdb de Common Event Infrastructure ha finalizado.
+		</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0014I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0014I" prefix="yes">
+	<MsgText pgmKey="CEIMI0014" varFormat="Java">
+		Eliminando Mdb de Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>La eliminación del Mdb de Common Event Infrastructure se ha iniciado.</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0015I    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0015I" prefix="yes">
+	<MsgText pgmKey="CEIMI0015" varFormat="Java">
+		Se ha completado la eliminación del Mdb de Common Event Infrastructure.
+	</MsgText>
+	<Explanation>
+		<p>La eliminación del Mdb de Common Event Infrastructure ha finalizado.</p>
+	</Explanation>
+	<ProgrammerResponse>
+		<p>Compruebe las anotaciones cronológicas de rastreo para obtener información adicional.</p>
+	</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0016E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIMI0016E" prefix="yes">
+<MsgText pgmKey="CEIMI0016" varFormat="Java">La información de nombre de usuario/contraseña debe proporcionarse cuando se migre con la seguridad habilitada. 
+</MsgText>
+<Explanation>
+<p>La información de nombre de usuario/contraseña debe proporcionarse cuando se migre con la seguridad habilitada.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+</TMSSource>

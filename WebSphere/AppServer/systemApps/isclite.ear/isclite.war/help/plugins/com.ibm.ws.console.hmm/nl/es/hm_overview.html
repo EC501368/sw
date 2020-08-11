@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es-es" xml:lang="es-es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Visión general de la gestión de salud" />
+<meta name="abstract" content="WebSphere Extended Deployment proporciona un subsistema de supervisión y gestión de la salud. Este subsistema supervisa continuamente el funcionamiento de los servidores para detectar la degradación funcional relacionada con el mal funcionamiento del software. El subsistema de gestión de la salud consta de dos elementos principales: las políticas de salud y el controlador de salud. Para acceder a las políticas de salud desde la consola, seleccione Políticas operativas &gt; Políticas de salud. Desde la consola administrativa puede acceder al controlador de salud seleccionando Políticas operativas &gt; Gestores autónomos &gt; Controlador de salud. " />
+<meta name="description" content="WebSphere Extended Deployment proporciona un subsistema de supervisión y gestión de la salud. Este subsistema supervisa continuamente el funcionamiento de los servidores para detectar la degradación funcional relacionada con el mal funcionamiento del software. El subsistema de gestión de la salud consta de dos elementos principales: las políticas de salud y el controlador de salud. Para acceder a las políticas de salud desde la consola, seleccione Políticas operativas &gt; Políticas de salud. Desde la consola administrativa puede acceder al controlador de salud seleccionando Políticas operativas &gt; Gestores autónomos &gt; Controlador de salud. " />
+<meta name="copyright" content="IBM Corporation 2004" />
+<meta name="DC.Rights.Owner" content="IBM Corporation 2004" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="HealthManagement" />
+<meta name="DC.Language" content="es-es" />
+<!-- All rights reserved. Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../ibmdita.css" />
+<link href="../was_style_help.css" type="text/css" rel="stylesheet" />
+<title>Visión general de la gestión de salud</title>
+</head>
+<body id="HealthManagement"><a name="HealthManagement"><!-- --></a>
+
+<h1 class="topictitle1">Visión general de la gestión de salud</h1>
+<div><p>WebSphere Extended Deployment proporciona un subsistema de
+supervisión y gestión de la salud. Este subsistema supervisa continuamente el funcionamiento de los servidores para detectar la degradación funcional
+relacionada con el mal funcionamiento del software.
+El subsistema de gestión de la salud consta de dos elementos
+principales: las políticas de salud y el controlador de salud. Para acceder a las políticas de salud
+desde la consola, seleccione <strong>Políticas operativas &gt; Políticas de salud</strong>. 
+Desde la consola también puede acceder al controlador de salud seleccionando
+<strong>Políticas operativas &gt; Gestores autónomos &gt; Controlador de salud</strong>.</p>
+<p> El usuario crea y define las políticas de salud. Una política de salud define un conjunto de condiciones
+interpretadas por WebSphere Extended Deployment como una degradación de la funcionalidad del servidor. Existen cuatro categorías
+diferentes de condiciones de política de salud. Estas condiciones de política están
+relacionadas con el consumo excesivo de memoria (lo que podría indicar una pérdida de
+memoria), el tiempo de respuesta excesivo (lo que podría indicar un "cuelgue" del
+servidor ), el volumen de trabajo realizado por un servidor y la antigüedad del servidor. 
+Los destinos de las políticas de salud pueden ser un solo servidor, todos los servidores
+de un clúster o todos los servidores de una célula. Adicionalmente, un servidor
+puede ser supervisado simultáneamente por varias políticas de salud. Provisto de un
+conjunto de condiciones en las qué buscar, WebSphere Extended Deployment supervisa
+clústeres dinámicos, servidores de aplicaciones y clústeres hasta que se detecta un
+problema y después se lleva a cabo una acción.</p>
+<p>Los valores del controlador de salud son parámetros globales creados por omisión. Los usuarios pueden
+cambiar estos parámetros globales si es necesario. El controlador de salud actúa sobre las políticas para garantizar
+determinadas condiciones. Por ejemplo, puede inhabilitar o habilitar la gestión de salud utilizando el controlador de
+salud, mientras todavía dispone de varias políticas de salud definidas en el sistema. También puede aplicar límites a la
+frecuencia de reinicios o prohibir totalmente los reinicios durante ciertos periodos.</p>
+<p>El subsistema de gestión de salud supervisa continuamente el estado de los servidores y el trabajo realizado por
+ellos. Estos datos se comparan con las condiciones definidas en la política de salud. Cuando los datos recopilados
+cumplen o superan la condición definida en la política de salud, se considera que la salud del servidor está en
+peligro. </p>
+<p>El subsistema de gestión de salud funciona cuando WebSphere Extended Deployment está en modalidad de operación automática o
+supervisada. Cuando se ejecuta en modalidad automática, el sistema de gestión de salud reinicia un servidor cuando
+detecta un incumplimiento de la política de salud. En modalidad supervisada, el sistema de gestión de salud creará una
+tarea de tiempo de ejecución proponiendo el reinicio de un servidor. El administrador del sistema puede aprobar o
+rechazar las acciones de reinicio propuestas. </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+#Policy Director properties file
+#Wed Nov 13 18:13:07 CST 2019
+pdvar-home=/jennex/WebSphere/AppServer/tivoli/tam/PolicyDirector
+pd-home=/jennex/WebSphere/AppServer/tivoli/tam/PolicyDirector

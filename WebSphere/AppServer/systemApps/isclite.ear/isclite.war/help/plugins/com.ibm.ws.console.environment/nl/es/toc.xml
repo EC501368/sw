@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Configuración del entorno" topic="index.html">
+   <topic label="Valores de ámbito de la consola administrativa"
+          href="ae/rcon_scope.html"/>
+   <topic label="Valores del orden de direccionamiento de aplicaciones"
+          href="ae/ucea_sipapprouter_routeo_settings.html"/>
+   <topic label="Valores del orden de arranque de las aplicaciones"
+          href="ae/ucea_sipapprouter_startupo_settings.html"/>
+   <topic label="Colección de direcciones de rutina de carga"
+          href="ae/unam_rforeigncell_bootstrap.html"/>
+   <topic label="Valores de la dirección de rutina de carga"
+          href="ae/unam_rforeigncell_bootstrap_inst.html"/>
+   <topic label="Colección de cargadores de clases" href="ae/urun_rclassloader.html"/>
+   <topic label="Valores del cargador de clases" href="ae/urun_rclassloader_inst.html"/>
+   <topic label="Valores de enlace de objeto CORBA" href="ae/unam_rcorba_namespace.html"/>
+   <topic label="Colección de reglas del direccionador de aplicaciones predeterminada"
+          href="ae/ucea_dar_rule_collection.html"/>
+   <topic label="Valores de normas del direccionador de aplicaciones predeterminado"
+          href="ae/ucea_dar_rule_detail.html"/>
+   <topic label="Valores de enlace EJB" href="ae/unam_rejb_namespace.html"/>
+   <topic label="Colección de enlaces de célula foránea" href="ae/unam_rforeigncell.html"/>
+   <topic label="Valores de enlace de célula foránea"
+          href="ae/unam_rforeigncell_inst.html"/>
+   <topic label="Colección de alias de host" href="ae/urun_rvhost_alias.html"/>
+   <topic label="Valores del alias de host" href="ae/urun_rvhost_alias_inst.html"/>
+   <topic label="Valores de enlace de búsqueda indirecta"
+          href="ae/unam_rindirectlookup_namespace.html"/>
+   <topic label="Colección de tipos MIME" href="ae/urun_rvhost_mime.html"/>
+   <topic label="Valores de tipos MIME" href="ae/urun_rvhost_mime_inst.html"/>
+   <topic label="Colección de enlace de espacio de nombres"
+          href="ae/unam_rmanage_namespace.html"/>
+   <topic label="Propiedades de instalación del nodo" href="ae/uagt_node_install.html"/>
+   <topic label="Otros valores de propiedades de contexto"
+          href="ae/unam_rindirect_other.html"/>
+   <topic label="Colección de bibliotecas compartidas" href="ae/ucws_rsharedlib.html"/>
+   <topic label="Valores de biblioteca compartida" href="ae/ucws_rsharedlib_inst.html"/>
+   <topic label="Colección de direccionadores de aplicaciones SIP"
+          href="ae/ucea_sipapprouter_collection.html"/>
+   <topic label="Valores del direccionador de aplicaciones SIP"
+          href="ae/ucea_sipapprouter_settings.html"/>
+   <topic label="Valores de Especificar tipo de enlace" href="ae/unam_rbinding_type.html"/>
+   <topic label="Valores de enlace de serie" href="ae/unam_rstring_namespace.html"/>
+   <topic label="Actualizar los valores de configuración del plug-in de servidor web global"
+          href="ae/uwsv_plugin_regen.html"/>
+   <topic label="Colección de hosts virtuales" href="ae/urun_rvhost.html"/>
+   <topic label="Valores del host virtual" href="ae/urun_rdefhost.html"/>
+   <topic label="Colección de variables de WebSphere" href="ae/ucws_rvars.html"/>
+   <topic label="Valores de variables de WebSphere" href="ae/ucws_rvars_inst.html"/>
+   <topic label="Valores del daemon de servicio de ubicación para z/OS"
+          href="ae/uagt_rlocsrvdmn.html"/>
+</toc>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Aplicaciones de middleware" topic="index.html">
+   <topic label="Creación de una nueva aplicación de middleware"
+          href="middlewareapps_detail_new.html"/>
+   <topic label="Definir normas y pertenencias a una clase de trabajo"
+          href="middlewareapps_detail_rule.html"/>
+   <topic label="Instalación de aplicaciones web no gestionadas"
+          href="middlewareapps_detail_unmg.html"/>
+   <topic label="Colección de aplicaciones de middleware"
+          href="middlewareapps_collection.html"/>
+   <topic label="Valores de una aplicación de middleware" href="middlewareapps_detail_main.html"/>
+</toc>

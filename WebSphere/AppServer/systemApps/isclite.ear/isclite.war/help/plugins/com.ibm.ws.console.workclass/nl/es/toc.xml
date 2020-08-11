@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Configuración de clases de trabajo" topic="index.html">
+   <topic label="Definir normas y pertenencias a una clase de trabajo" href="wc_detail_rule.html"/>
+   <topic label="Políticas de direccionamiento del direccionador On Demand" href="odr_routing_policies.html"/>
+   <topic label="Políticas de servicio de direccionador On Demand" href="odr_service_policies.html"/>
+   <topic label="Políticas de direccionamiento
+" href="uwve_osgi_routingpol.html"/>
+   <topic label="Políticas de servicio
+" href="uwve_osgi_servicepol.html"/>
+   <topic label="Generador de subexpresiones
+" href="wc_rulebuilder_detail.html"/>
+</toc>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de trabajos" topic="index.html">
+   <topic label="Buscar recursos de destino" href="ae/uagt_jobmre_find.html"/>
+   <topic label="Buscar destinos" href="ae/uagt_jobmng_find.html"/>
+   <topic label="Colección de grupos de destino" href="ae/uagt_jobmng.html"/>
+   <topic label="Valores del grupo de destino" href="ae/uagt_jobmng_inst.html"/>
+   <topic label="Configuración del gestor de trabajos" href="ae/uagt_jobcfg.html"/>
+   <topic label="Colección de estados de trabajos" href="ae/uagt_jobstat.html"/>
+   <topic label="Valores de los estados de trabajo" href="ae/uagt_jobstat_inst.html"/>
+   <topic label="Colección de historiales de estados de trabajo"
+          href="ae/uagt_jobstat_hist.html"/>
+   <topic label="Nuevos valores de destino" href="ae/uagt_jobmn_new.html"/>
+   <topic label="Propiedades del recurso de destino" href="ae/uagt_jobmre_prop.html"/>
+   <topic label="Colección de recursos de destino" href="ae/uagt_jobmre.html"/>
+   <topic label="Recursos de destino para la colección de destinos"
+          href="ae/uagt_jobmre_inst.html"/>
+   <topic label="Colección de destinos para los resultados de la búsqueda"
+          href="ae/uagt_jobmn.html"/>
+   <topic label="Valores de la propiedad de destino" href="ae/uagt_jobmn_inst.html"/>
+</toc>

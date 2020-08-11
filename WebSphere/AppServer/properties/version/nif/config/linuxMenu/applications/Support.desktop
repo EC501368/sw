@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=${ONLINESUPPORT}
+Comment=${ONLINESUPPORT}
+Categories=WebSphere${NUMBER};AppServer;
+Icon=${WAS_HOME}/properties/version/nif/config/linuxMenu/images/support_16x16.png
+Exec=${WAS_HOME}/properties/version/nif/config/script/firefoxLauncher.sh http://www.ibm.com/software/webservers/appserv/support.html
+StartupNotify=true
+Type=Application
+Terminal=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.9

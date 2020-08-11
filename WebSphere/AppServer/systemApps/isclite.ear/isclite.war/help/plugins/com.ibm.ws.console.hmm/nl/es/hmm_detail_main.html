@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2013" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Parámetros globales del controlador de salud" />
+<meta name="abstract" content="Utilice esta página para modificar los valores globales del controlador de salud, que son parámetros globales que se crean por omisión. El controlador de salud actúa por encima de las políticas de salud para asegurar que se cumplen determinadas condiciones en el entorno. Una política de salud es un criterio de salud específico que se establece. También es posible aplicar límites a la frecuencia de los reinicios o no permitir reinicios en determinadas horas." />
+<meta name="description" content="Utilice esta página para modificar los valores globales del controlador de salud, que son parámetros globales que se crean por omisión. El controlador de salud actúa por encima de las políticas de salud para asegurar que se cumplen determinadas condiciones en el entorno. Una política de salud es un criterio de salud específico que se establece. También es posible aplicar límites a la frecuencia de los reinicios o no permitir reinicios en determinadas horas." />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="hmm_detail_main" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Parámetros globales del controlador de salud</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="hmm_detail_main">
+<h1 class="title topictitle1">Parámetros globales del controlador de salud</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para modificar los valores globales del controlador de salud, que son parámetros globales que se crean por omisión. El controlador de salud actúa por encima de las políticas de salud para asegurar que se cumplen determinadas condiciones en el entorno. Una política de salud es un criterio de salud específico que se establece. También es posible aplicar límites a la frecuencia de los reinicios o no permitir reinicios en determinadas horas.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Gestores autónomos</span> &gt; <span class="ph uicontrol">Controlador de salud</span></span>.</p>
+<p class="p"><span class="ph">Intelligent Management</span> proporciona una supervisión continua de la salud y subsistemas de gestión para detectar si hay una degradación funcional relacionada con un funcionamiento incorrecto del software.</p>
+<p class="p">Esta página se divide en dos pestañas: <span class="ph uicontrol">Configuración</span> y <span class="ph uicontrol">Tiempo de ejecución</span>.
+Con la pestaña Configuración, se pueden ver los campos configurados con anterioridad y, en algunos casos, editar los campos. En la pestaña Tiempo de ejecución, verá los campos que el control de salud está utilizando actualmente, y en algunos casos, podrá cambiarlos. A diferencia de la pestaña de configuración, cuando se cambian los valores en la pestaña de tiempo de ejecución, los cambios van directamente al controlador de salud para cambiar los parámetros que el controlador utiliza en ese momento. Por omisión, los cambios no se almacenan en el repositorio, de forma que se pueden realizar cambios temporales a los parámetros que no serán persistentes.</p>
+<p class="p">Según sea el rol administrativo, existen privilegios específicos permitidos a la hora de configurar el controlador de salud.  En esta lista se muestran los roles administrativos y los privilegios para configurar el controlador de salud:</p>
+<dl class="dl"><dt class="dt dlterm">Supervisor</dt>
+<dd class="dd">Ver la información.</dd>
+<dt class="dt dlterm">Operador</dt>
+<dd class="dd">Ver información en la pestaña de configuración. Cambiar los valores de la pestaña de tiempo de ejecución.</dd>
+<dt class="dt dlterm">Configurador</dt>
+<dd class="dd">Cambiar la configuración pero no los valores de tiempo de ejecución.</dd>
+<dt class="dt dlterm">Administrador</dt>
+<dd class="dd">Tiene todos los privilegios.</dd>
+</dl>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="health_ctl_enable"><h2 class="title topictitle2">Habilitar la supervisión de salud</h2>
+<div class="body"><p class="shortdesc">Especifica si la supervisión de salud está habilitada.</p>
+<p class="p">Cuando está habilitada, el controlador de salud supervisa de forma continua las políticas de salud en el sistema. Cuando esta inhabilitada, no se supervisan las condiciones de salud definidas en las políticas de salud. Se puede, por tanto, inhabilitar el controlador de salud sin quitar las políticas de salud del sistema.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="health_ctl_cycle_length"><h2 class="title topictitle2">Longitud del ciclo de control</h2>
+<div class="body"><p class="shortdesc">Especifica el intervalo de tiempo entre las comprobaciones consecutivas de salud para determinar si se infringe una condición de política de salud. El valor se especifica en minutos y está en el rango de <samp class="ph codeph">1</samp> a <samp class="ph codeph">60</samp> minutos.
+Cuanto mayores son los ciclos de control más se reduce la carga de la supervisión de salud.</p>
+<p class="p">El inconveniente está en que condiciones de salud que ocurran en el periodo no se detectan hasta el siguiente ciclo de control. Por ejemplo, si tiene una política de salud con una condición de carga de trabajo de 10.000 solicitudes asociadas con un servidor de aplicaciones, y el valor especificado es <samp class="ph codeph">60 minutos</samp>, el controlador únicamente comprueba cada 60 minutos si el servidor de aplicaciones dio servicio a 10.000 solicitudes. Si la aplicación dio servicio a 9.999 solicitudes en el momento en que se comprobó, el controlador no lo comprueba de nuevo durante otros 60 minutos. Por lo tanto el servidor podría dar servicio a más de 10.000 solicitudes antes de ser reiniciado.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="health_ctl_max_consec_restarts"><h2 class="title topictitle2">Número máximo de reinicios consecutivos</h2>
+<div class="body"><p class="shortdesc">Especifica el número de intentos para reactivar un servidor de aplicaciones después de tomar la decisión de reiniciarlo. </p>
+<p class="p">Si se excede este valor, se asumirá que la operación es errónea y se inhabilitarán los reinicios para el servidor. El valor debe ser un número entero entre <samp class="ph codeph">1</samp> y <samp class="ph codeph">5</samp>, ambos incluidos.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="health_ctl_restart_timeout"><h2 class="title topictitle2">Tiempo de espera de reinicio</h2>
+<div class="body"><p class="shortdesc">Especifica el tiempo que hay que esperar para que un servidor se detenga antes de comprobar de forma explícita su estado e intentar otro inicio.</p>
+<p class="p">Un reinicio consta de la secuencia de acciones de detener e iniciar servidor.
+Si en un entorno, el tiempo de la acción de iniciar o detener un servidor de aplicaciones es inusualmente alto, se puede establecer este valor de forma que no se exceda el tiempo para la acción de reiniciar. Este valor siempre se especifica en minutos y está en el rango de <samp class="ph codeph">1</samp> minuto a <samp class="ph codeph">60</samp> minutos, especificado con un número entero.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="health_ctl_min_restart_interval"><h2 class="title topictitle2">Intervalo mínimo entre reinicios</h2>
+<div class="body"><p class="shortdesc">Controla el tiempo mínimo que debe pasar entre los reinicios consecutivos de una instancia de servidor de aplicaciones.</p>
+<p class="p">Si se infringe una condición de salud de un servidor de aplicaciones durante este intervalo de tiempo, se establece en un estado pendiente el reinicio. El reinicio ocurrirá cuando pase el intervalo mínimo de reinicios. El valor está en el rango de <samp class="ph codeph">15 minutos </samp> a <samp class="ph codeph">365 días</samp>, ambos inclusive. Un valor de <samp class="ph codeph">0</samp> inhabilita el valor mínimo de reinicios.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="health_ctl_prohibit_restart_times"><h2 class="title topictitle2">Horas de reinicio no permitidas</h2>
+<div class="body"><p class="shortdesc">Especifica las horas y días de la semana en que no está permitido reiniciar una instancia de servidor de aplicaciones. </p>
+<p class="p">La fecha y hora de inicio se especifican seleccionando la hora y minutos en un formato de reloj de 24 horas, y los días de la semana. Se pueden especificar varios bloques horarios si es necesario. Si se especifica una hora de inicio y una hora de finalización, también hay que especificar al menos un día de la semana en que estos intervalos no están permitidos. El bloque horario entre la hora de inicio y la hora de finalización no puede incluir la medianoche. Por ejemplo, si es necesario especificar un bloque horario entre las 22:00 y las 1:00, especifique dos bloques, uno desde las <samp class="ph codeph">22:00</samp> a las <samp class="ph codeph">23:59</samp> y otro entre las <samp class="ph codeph">00:00</samp> a las <samp class="ph codeph">01:00</samp>. Pulse <span class="ph uicontrol">Añadir</span> si desea añadir restricciones horarias adicionales. Si desea eliminar una restricción existente, selecciónela y pulse <span class="ph uicontrol">Eliminar</span>.
+Todas las acciones en relación a las condiciones de salud que no se cumplen no se realizarán hasta que haya transcurrido el intervalo de horas no permitidas.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="health_ctl_save_to_config"><h2 class="title topictitle2">Guardar en la configuración</h2>
+<div class="body"><p class="shortdesc">Guarda los valores del entorno de tiempo de ejecución en la configuración.</p>
+<p class="p">Se pueden realizar cambios y ver la forma en que el sistema reacciona con los valores actualizados. Para guardar de forma permanente los valores, seleccione esta opción en lugar de volver a la pestaña <span class="ph uicontrol">Configuración</span> para entrar de nuevo los mismos valores.</p>
+</div>
+</div>
+<div class="related-links">
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: hmm_detail_main.html</span></body>
+</html>

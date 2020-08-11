@@ -1,0 +1,25 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>IBM WebSphere</Name>
+    <Directory>${WAS_HOME}/profiles/${PROFILENAME}/properties/linuxMenu/directories/WebSphere.directory</Directory>
+    <Menu>
+      <Name>App_Server_Level</Name>
+      <Directory>${WAS_HOME}/profiles/${PROFILENAME}/properties/linuxMenu/directories/AppServer.directory</Directory>
+      
+	<Menu>
+	<Name>Profiles</Name>
+	<Directory>${WAS_HOME}/profiles/${PROFILENAME}/properties/linuxMenu/directories/Profiles.directory</Directory>
+
+           <!--MENU FOR PROFILE-->
+           <!--<Menu><Name>${PROFILENAME}Profile</Name><MergeFile>${WAS_HOME}/profiles/${PROFILENAME}/properties/linuxMenu/menus/${PROFILENAME}.menu</MergeFile></Menu>-->
+
+
+
+	</Menu>
+
+    </Menu>
+  </Menu>
+</Menu>

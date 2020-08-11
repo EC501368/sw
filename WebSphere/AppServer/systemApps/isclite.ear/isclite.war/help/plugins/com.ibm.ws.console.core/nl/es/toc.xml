@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Acerca de la consola" topic="index.html">
+   <topic label="Colección de grupos de autorizaciones administrativas"
+          href="ae/usec_admin_auth_groups_edit.html"/>
+   <topic label="Soporte de navegador de consola de administración"
+          href="ae/uisc_browsers.html"/>
+   <topic label="Botones de la consola de administración" href="ae/rcon_buttons.html"/>
+   <topic label="Características de la página de la consola de administración"
+          href="ae/rcon_pageusage.html"/>
+   <topic label="Valores de preferencias de la consola de administración"
+          href="ae/rcon_preferences.html"/>
+   <topic label="Valores de ámbito de la consola de administración"
+          href="ae/rcon_scope.html"/>
+   <topic label="Roles de grupos administrativos y grupos de servicio de denominación CORBA"
+          href="ae/usec_congroup.html"/>
+   <topic label="Valores de roles de usuario administrativo y valores de usuario del servicio de denominación CORBA"
+          href="ae/usec_conuser.html"/>
+   <topic label="Opciones de soporte bidireccional" href="ae/ucon_bidi.html"/>
+   <topic label="Accesibilidad de la consola" href="ae/uisc_accessbl.html"/>
+   <topic label="Identidad de la consola" href="ae/uisc_consoleid.html"/>
+   <topic label="Diseño de consola" href="ae/uisc_layout.html"/>
+   <topic label="Navegación de consola" href="ae/uisc_navigate.html"/>
+   <topic label="Valores de preferencias de consola" href="ae/ucon_rpref.html"/>
+   <topic label="Inicio de sesión" href="ae/uisc_login.html"/>
+   <topic label="Mis tareas" href="ae/uisc_mytasks.html"/>
+   <topic label="Grupo de autorizaciones administrativas nuevo"
+          href="ae/usec_admin_auth_groups_new.html"/>
+   <topic label="Guardar los cambios en el repositorio maestro"
+          href="ae/ucon_master_config.html"/>
+   <topic label="Bienvenida" href="ae/uisc_welcome.html"/>
+</toc>

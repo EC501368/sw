@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2012-->
+<toc label="Valores de las aplicaciones OSGi" topic="index.html">
+   <topic label="Paneles de la consola administrativa de las aplicaciones OSGi"
+          href="index.html">
+      <topic label="Añadir ampliaciones [Colección]" href="AddExtension_CollectionForm.html"/>
+      <topic label="Añadir ampliaciones [Valores]" href="AddExtension_DetailForm.html"/>
+      <topic label="Infraestructuras OSGi de aplicaciones [Colección]"
+             href="OSGi_console_frameworks.html"/>
+      <topic label="Referencias de recurso de Blueprint [Valores]"
+             href="OSGi_BLA_BlueprintResourceRefs.html"/>
+      <topic label="Memoria caché de paquetes [Colección]"
+             href="BundleCacheManager_CollectionForm.html"/>
+      <topic label="Memoria caché de paquetes [Valores]"
+             href="BundleCacheManager_DetailForm.html"/>
+      <topic label="Detalles de paquete compuesto [Valores]"
+             href="OSGi_console_bundle_details.html"/>
+      <topic label="Paquetes compuestos de infraestructura OSGi [Colección]"
+             href="OSGi_console_framework_bundles.html"/>
+      <topic label="Raíz de contexto para módulos web [Valores]"
+             href="OSGi_BLA_ContextRoot.html"/>
+      <topic label="Nombres JNDI de EJB [Valores]" href="OSGi_BLA_SessionEJBsJNDI.html"/>
+      <topic label="Referencias de destino de mensajes EJB [Valores]"
+             href="OSGi_BLA_EJBMsgDestRefs.html"/>
+      <topic label="Referencias de EJB [Valores]" href="OSGi_BLA_EJB_refs.html"/>
+      <topic label="referencias de recurso de EJB [Valores]"
+             href="OSGi_BLA_EJBResourceRefs.html"/>
+      <topic label="Ampliaciones de esta unidad de composición [Colección]"
+             href="ManageExtensions_CollectionForm.html"/>
+      <topic label="Ampliaciones de esta unidad de composición [Valores]"
+             href="ManageExtensions_DetailForm.html"/>
+      <topic label="Repositorios de paquetes externos [Colección]"
+             href="OBRRepository_CollectionForm.html"/>
+      <topic label="Repositorios de paquetes externos [Valores]"
+             href="OBRRepository_DetailForm.html"/>
+      <topic label="Importe un manifiesto de despliegue en esta aplicación [Valores]"
+             href="DeploymentManifestUpload.html"/>
+      <topic label="Repositorio de paquetes interno [Colección]"
+             href="OBRInternalRepository_CollectionForm.html"/>
+      <topic label="Repositorio de paquetes interno [Valores]"
+             href="OBRInternalRepository_DetailForm.html"/>
+      <topic label="Escuchas para los beans controlados por mensajes [Valores]"
+             href="OSGi_BLA_MDBListeners.html"/>
+      <topic label="Detalles del paquete [Valores]" href="OSGi_console_package_details.html"/>
+      <topic label="Paquetes en paquete compuesto [Colección]"
+             href="OSGi_console_bundle_packages.html"/>
+      <topic label="Paquetes de infraestructura OSGi [Colección]"
+             href="OSGi_console_framework_packages.html"/>
+      <topic label="Actualización de versiones de paquete Vista previa [Valores]"
+             href="PreviewAppContentUpdate_DetailForm.html"/>
+      <topic label="Vista previa de actualización de unidad de composición [Valores]"
+             href="PreviewCUUpgrade_DetailForm.html"/>
+      <topic label="Roles RunAs para usuarios [Colección]" href="OSGi_usec_aurunas.html"/>
+      <topic label="Correlación de roles de seguridad y usuarios o grupos [Valores]"
+             href="OSGi_BLA_usec_tselugrad.html"/>
+      <topic label="Detalles del servicio [Valores]"
+             href="OSGi_console_service_details.html"/>
+      <topic label="Servicios en paquete compuesto [Colección]"
+             href="OSGi_console_bundle_services.html"/>
+      <topic label="Servicios de infraestructura OSGi [Colección]"
+             href="OSGi_console_framework_services.html"/>
+      <topic label="Actualizar versiones del paquete en esta aplicación [Valores]"
+             href="UpdateAppContentVersions_DetailForm.html"/>
+      <topic label="Subir paquete [Valores]" href="OBRInternalRepositoryBundleUpload.html"/>
+      <topic label="Hosts virtuales para módulos web [Valores]"
+             href="OSGi_BLA_VirtualHost.html"/>
+      <topic label="Referencias de destino de mensajes de módulos web [Valores]"
+             href="OSGi_BLA_WebModuleMsgDestRefs.html"/>
+      <topic label="Referencias de recurso de módulo web [Valores]"
+             href="OSGi_BLA_WebModuleResourceRefs.html"/>
+      <topic label="Referencias de recurso de módulo web: Recursos disponibles [Colección]"
+             href="WebModuleAvailableResources_CollectionForm.html"/>
+   </topic>
+</toc>

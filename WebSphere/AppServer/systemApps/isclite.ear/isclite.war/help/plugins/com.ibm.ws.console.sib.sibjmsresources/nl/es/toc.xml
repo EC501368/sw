@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Proveedor de mensajería predeterminado, recursos JMS" topic="index.html">
+   <topic label="Proveedor de mensajería predeterminado [Valores]"
+          href="ae/SIBJMSProvider_DetailForm.html"/>
+   <topic label="Especificación de activación JMS [Valores]"
+          href="ae/SIBJMSActivationSpec_DetailForm.html"/>
+   <topic label="Fábrica de conexiones unificada del proveedor de mensajería predeterminado [Valores]"
+          href="ae/SIBJMSConnectionFactory_DetailForm.html"/>
+   <topic label="Cola del proveedor de mensajería predeterminado [Valores]"
+          href="ae/SIBJMSQueue_DetailForm.html"/>
+   <topic label="Fábrica de conexiones de cola del proveedor de mensajería predeterminado [Valores]"
+          href="ae/SIBJMSQueueConnectionFactory_DetailForm.html"/>
+   <topic label="Tema del proveedor de mensajería predeterminado [Valores]"
+          href="ae/SIBJMSTopic_DetailForm.html"/>
+   <topic label="Fábrica de conexiones de tema del proveedor de mensajería predeterminado [Valores]"
+          href="ae/SIBJMSTopicConnectionFactory_DetailForm.html"/>
+</toc>

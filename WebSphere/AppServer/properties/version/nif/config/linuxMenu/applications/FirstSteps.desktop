@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=${FIRSTSTEPS}
+Comment=${FIRSTSTEPS}
+Categories=WebSphere;AppServer;Profiles;ProfileName;${PROFILENAME}
+Icon=${WASROOT}/properties/version/nif/config/linuxMenu/images/firststeps16x16.png
+Exec=${PROFILEROOT}/firststeps/firststeps.sh
+StartupNotify=true
+Type=Application
+Terminal=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.9

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Agente administrativo" topic="index.html">
+   <topic label="Valores del agente administrativo" href="ae/uagt_adminacfg.html"/>
+   <topic label="Colección de gestores de trabajo" href="ae/uagt_adminajm.html"/>
+   <topic label="Configuración del gestor de trabajos" href="ae/uagt_adminajm_inst.html"/>
+   <topic label="Colección de nodos del agente administrativo"
+          href="ae/uagt_adminarn.html"/>
+   <topic label="Valores de nodos registrados" href="ae/uagt_adminarn_inst.html"/>
+   <topic label="Registrar o anular registro con valores de gestor de trabajo"
+          href="ae/uagt_admina_regunregjmgr.html"/>
+</toc>

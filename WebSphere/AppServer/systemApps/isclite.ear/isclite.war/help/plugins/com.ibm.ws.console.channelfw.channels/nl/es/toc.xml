@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Canales de transporte" topic="index.html">
+   <topic label="Valores de canal de transporte DCS" href="ae/urun_chain_typedcs.html"/>
+   <topic label="Valores de canal de entrada del proxy HTTP"
+          href="ae/ujpx_inbchan_collection.html"/>
+   <topic label="Valores de canal de transporte HTTP" href="ae/urun_chain_typehttp.html"/>
+   <topic label="Valores de canal de transporte HTTP"
+          href="ae/urun_chain_typehttptun.html"/>
+   <topic label="Valores de canal de transporte del servicio ORB"
+          href="ae/urun_chain_typeorb.html"/>
+   <topic label="Valores de canal de entrada de contenedor SIP (Session Initiation Protocol)"
+          href="ae/usip_transportchain.html"/>
+   <topic label="Valores de canal de entrada SIP (Session Initiation Protocol)"
+          href="ae/usip_transportchannel.html"/>
+   <topic label="Detalle del canal de entrada del proxy SIP"
+          href="ae/ujpx_sipinboundchdet.html"/>
+   <topic label="Canal de entrada SSL" href="ae/usec_transportchannel.html"/>
+   <topic label="Valores de canal de transporte TCP" href="ae/urun_chain_typetcp.html"/>
+   <topic label="Valores de canal de entrada UDP (User Datagram Protocol)"
+          href="ae/usip_udpintransport.html"/>
+   <topic label="Valores de canal de transporte de entrada del contenedor Web"
+          href="ae/uweb_chain_wcchannel.html"/>
+</toc>

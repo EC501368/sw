@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Servidores de middleware
+" topic="index.html">
+   <topic label="Creación de un servidor de middleware" href="mws_detail_main_new.html"/>
+   <topic label="Configuración externa" href="mws_detail_editor.html"/>
+   <topic label="Servicio de configuración externo" href="mws_detail_configsrv.html"/>
+   <topic label="Servicio de visor de anotaciones cronológicas externas" href="mws_detail_logsrv.html"/>
+   <topic label="Visor de anotaciones cronológicas" href="mws_detail_viewfile.html"/>
+   <topic label="Colección de servidores de middleware" href="mws_collection.html"/>
+   <topic label="Detalle de operaciones de servidor de middleware"
+          href="mws_srvoperations_detail.html"/>
+   <topic label="Colección de plantillas de servidor de middleware"
+          href="servertemplate_collection.html"/>
+   <topic label="Valores de plantilla de servidor de middleware" href="servertemplate_settings.html"/>
+   <topic label="Valores de detalle del servidor" href="mws_other_detail.html"/>
+   <topic label="Operaciones de servidor
+" href="mws_srvoperations.html"/>
+</toc>

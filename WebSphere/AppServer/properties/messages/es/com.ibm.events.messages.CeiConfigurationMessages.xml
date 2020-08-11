@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+ 
+<!--
+    ******************************************************************************
+    * Translation Notes:
+    *
+    * To translate this XML file, first change the xml:lang variable
+    * in TMSSource to the correct locale for the translation.  Then follow
+    * these simple rules.
+    *
+    * #PCDATA:
+    *
+    * When translating XML, any text between <Tag> and </Tag> entries
+    * should be translated.  For example, "File not found" in the following
+    * phrase:
+    *
+    * <MsgText>File not found</MsgText>... 
+    * 
+    * The only exception to this rule is the Text between <Copyright> and 
+    * </Copyright> tags.
+    * 
+    * Attributes:
+    *
+    * Verbage in attributes should not be translated.  For example, the "don't
+    * translate me" phrase in the following should not be changed:
+    *
+    * <MsgText terseText="don't translate me">File not found</MsgText>... 
+    *
+    * Comments:
+    *
+    * Verbage in comments should not be translated.  This note is an example
+    * of a comment.  End-users will never see it.
+    *
+    *****************************************************************************
+-->
+<TMSSource name="CeiConfigurationMessages" tmsVersion="1.0" xml:lang="es">
+<Copyright>         Licensed Materials - Property of IBM (C)Copyright IBM Corporation 2004, 2005. All Rights Reserved US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</Copyright>
+<!--
+        *********************************************************************
+        * The above copyright notice applies to this XML file as well
+        *  as any other source/text files generated from this file.
+        *********************************************************************
+    -->
+<!-- ============================================================== -->
+<!-- Message creation/maintenance process:                      -->
+<!--                                                            -->
+<!-- In a comment above each message, include                   -->
+<!-- the message number and one of these four status values:    -->
+<!--                                                            -->
+<!-- MSG_WORKING: Development is still working on the message.  -->
+<!--              It is not ready for review by ID.             -->
+<!--                                                            -->
+<!-- MSG_REVIEW_ID: Development has completed work on the       -->
+<!--                message. It is ready to be reviewed by ID.  -->
+<!--                                                            -->
+<!-- MSG_REVIEW_DEV: ID has updated the message.                -->
+<!--                 It is ready to be reviewed by Development. -->
+<!--                                                            -->
+<!-- MSG_COMPLETE: The message has been reviewed by all parties -->
+<!--               and is complete.                             -->
+<!--                                                            -->
+<!-- Also, if Development must update a message that is in the  -->
+<!-- MSG_COMPLETE state, Development must open a defect for ID  -->
+<!-- to review the message again.                               -->
+<!-- ============================================================== -->
+<!-- ================================================================= -->
+<!--  CEIC0001W    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIC0001W" prefix="yes">
+<MsgText pgmKey="CEIC0001" varFormat="Java">                       La lista de perfiles de grupo de sucesos contiene dos perfiles de grupo de sucesos configurados con el mismo nombre de grupo de sucesos.<br/>Nombres de grupo de sucesos:
+           <Variable formatSpec="{0}">nombres_grupo_sucesos</Variable> 
+       </MsgText>
+<Explanation>
+<p>Los nombres de grupo de sucesos deben ser únicos. El primer perfil de grupo de sucesos con nombre de grupo de sucesos duplicado se sobrescribirá.</p>
+</Explanation>
+<AdminResponse>
+<p>Modifique la configuración de la lista de perfiles de grupo de sucesos de forma que cada perfil de grupo de sucesos contenga un nombre de grupo de sucesos que sea exclusivo.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0002E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIC0002E" prefix="yes">
+<MsgText pgmKey="CEIC0002" varFormat="Java">             			  El servicio de Common Event Infrastructure no se ha podido iniciar porque los recursos de Common Event Infrastructure no se han podido enlazar con JNDI.<br/>Mensaje de excepción:
+           <Variable formatSpec="{0}">error_enlace</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte los archivos de registro de Common Event Infrastructure para asegurarse de que el servicio de Common Event Infrastructure se haya instalado correctamente. Además, consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0003E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIC0003E" prefix="yes">
+<MsgText pgmKey="CEIC0003" varFormat="Java">                       El servicio de Common Event Infrastructure no se ha podido iniciar porque un objeto de Common Event Infrastructure no ha podido enlazarse con JNDI.<br/>Tipo de objeto: <Variable formatSpec="{1}">objeto_enlace</Variable><br/>Mensaje de excepción:
+           <Variable formatSpec="{0}">error_objeto_enlace</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte los archivos de registro de Common Event Infrastructure para asegurarse de que la instalación del servicio de Common Event Infrastructure haya finalizado correctamente. Además, consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0004E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIC0004E" prefix="yes">
+<MsgText pgmKey="CEIC0004" varFormat="Java">                         No se ha podido crear el enlace en JNDI para el tipo de objeto: <Variable formatSpec="{1}">objeto_enlace</Variable><br/>Mensaje de excepción: <Variable formatSpec="{0}">excepción_referencia</Variable>       
+ </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte los archivos de registro de Common Event Infrastructure para asegurarse de que la instalación de la aplicación de Common Event Infrastructure haya finalizado correctamente. Además, asegúrese de que los valores de configuración sean correctos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0005W    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEIC0005E" prefix="yes">
+<MsgText pgmKey="CEIC0005" varFormat="Java">No se ha podido crear el objeto de tipo
+        <Variable formatSpec="{1}">objeto_enlace</Variable> que debe enlazarse con JNDI.<br/>Mensaje de excepción: <Variable formatSpec="{0}">excepción_referencia</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte los archivos de registro de Common Event Infrastructure para asegurarse de que la instalación del servicio de Common Event Infrastructure haya finalizado correctamente. Además, asegúrese de que los valores de configuración sean correctos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0006I    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIC0006I" prefix="yes">
+<MsgText pgmKey="CEIC0006" varFormat="Java"> 				  Se ha iniciado el servicio de Common Event Infrastructure.      	</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIC0007E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIC0007E" prefix="yes">
+<MsgText pgmKey="CEIC0007" varFormat="Java"> 				  Se ha producido una excepción al intentar cargar la información de configuración desde la dirección de referencia.
+Mensaje de excepción: <Variable formatSpec="{0}">excepción_referencia</Variable> 
+       </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Asegúrese de que la información de configuración de Common Event Infrastructure está enlazada correctamente a JNDI.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0008E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIC0008E" prefix="yes">
+<MsgText pgmKey="CEIC0008" varFormat="Java"> 				  El objeto encontrado en JNDI era nulo.         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Asegúrese de que la información de configuración de Common Event Infrastructure está enlazada correctamente a JNDI.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0009W    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIC0009W" prefix="yes">
+<MsgText pgmKey="CEIC0009" varFormat="Java"> 				  No se ha encontrado el archivo server-cei.xml en la configuración. Mensaje de excepción:
+		 <Variable formatSpec="{0}">configuration_exception</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte los archivos de registro de Common Event Infrastructure para asegurarse de que la instalación del servicio de Common Event Infrastructure haya finalizado correctamente.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0010W    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIC0010W" prefix="yes">
+<MsgText pgmKey="CEIC0010" varFormat="Java"> 				  El objeto de configuración no era del tipo correcto. Se esperaba EventInfrastructureService, pero se ha encontrado
+		 <Variable formatSpec="{0}">configuration_type</Variable>.         </MsgText>
+<Explanation>
+<p>Es posible que se hayan instalado dos servicios con nombres similares.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte los archivos de registro de Common Event Infrastructure para asegurarse de que la instalación del servicio de Common Event Infrastructure haya finalizado correctamente.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0011E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIC0011E" prefix="yes">
+<MsgText pgmKey="CEIC0011" varFormat="Java"> 				  Se ha producido un error al registrar el MBean <Variable formatSpec="{0}">mbean_type</Variable>.<br/>Mensaje de excepción: <Variable formatSpec="{1}">admin_exception</Variable>
+		        
+ </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte los archivos de registro de Common Event Infrastructure para asegurarse de que la instalación del servicio de Common Event Infrastructure haya finalizado correctamente.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0012W    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIC0012W" prefix="yes">
+<MsgText pgmKey="CEIC0012" varFormat="Java"> 				  La aplicación de Common Event Infrastructure con nombre
+		 <Variable formatSpec="{0}">application_name</Variable> no está presente en el servidor.          </MsgText>
+<Explanation>
+<p>Al habilitar o inhabilitar el servicio de Common Event Infrastructure, se ha intentado habilitar o inhabilitar la aplicación de empresa especificada, pero no se ha encontrado. Los nombres de las aplicaciones de Common Event Infrastructure conocidas están almacenados como propiedades personalizadas en el servicio de Common Event Infrastructure. </p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ajuste el nombre de la aplicación de Common Event Infrastructure o actualice el nombre especificado en las propiedades personalizadas del servicio de Common Event Infrastructure.        </p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0013E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIC0013E" prefix="yes">
+<MsgText pgmKey="CEIC0013" varFormat="Java"> 				  Se ha producido un error al intentar actualizar la aplicación de Common Event Infrastructure. Mensaje de excepción:
+		 <Variable formatSpec="{0}">configuration_exception</Variable>.       
+ </MsgText>
+<Explanation>
+<p>Al habilitar o inhabilitar el servicio de Common Event Infrastructure, se ha producido un error al intentar habilitar o inhabilitar la aplicación de empresa. Consulte el mensaje para obtener más detalles.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte los archivos de registro de Common Event Infrastructure para asegurarse de que la instalación de la aplicación y del servicio de Common Event Infrastructure haya finalizado correctamente.
+       </p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0014E    MSG_REVIEW_DEV                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIC0014E" prefix="yes">
+<MsgText pgmKey="CEIC0014" varFormat="Java">El servicio de sucesos no ha podido registrarse en el gestor de aplicaciones. <br/>Mensaje de excepción:            <Variable
+formatSpec="{0}">application_manager_error</Variable></MsgText>
+<Explanation>
+<p>El servicio de sucesos ha encontrado una excepción al intentar registrarse en el gestor de aplicaciones.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte los archivos de registro de Common Event Infrastructure para asegurarse de que el servicio de Common Event Infrastructure se haya instalado correctamente. Además, consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0015E    MSG_REVIEW_DEV                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIC0015E" prefix="yes">
+<MsgText pgmKey="CEIC0015" varFormat="Java">No se puede iniciar la aplicación <Variable formatSpec="{0}">application_name</Variable> porque el servicio de Common Event Infrastructure no está habilitado.</MsgText>
+<Explanation>
+<p>La aplicación especificada requiere que el servicio de sucesos esté disponible, pero actualmente no está habilitado.</p>
+</Explanation>
+<AdminResponse>
+<p>Utilice el objeto AdminTask para habilitar el servicio de sucesos.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIC0016I    MSG_REVIEW_DEV                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIC0016I" prefix="yes">
+<MsgText pgmKey="CEIC0016" varFormat="Java">Se iniciará la aplicación <Variable formatSpec="{0}">application_name</Variable> porque el servicio de sucesos está habilitado. </MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIC0017E    MSG_REVIEW_DEV                                      -->
+<?Pub Caret?>
+<!-- ================================================================= -->
+<Message ID="CEIC0017E" prefix="yes">
+<MsgText pgmKey="CEIC0017" varFormat="Java">No se puede iniciar la aplicación <Variable formatSpec="{0}">application_name</Variable> porque pertenece a una versión anterior del servicio de sucesos.</MsgText>
+<Explanation>
+<p>Es posible que un clúster contenga miembros que tienen distintas versiones desplegadas del servicio de sucesos de Common Event Infrastructure. En este entorno, sólo se pueden iniciar los miembros que utilizan la versión actual. </p>
+</Explanation>
+<AdminResponse>
+<p>Utilice las herramientas de migración para migrar a la versión actual todos los miembros que tengan versiones anteriores de Common Event Infrastructure.</p>
+</AdminResponse>
+</Message>
+</TMSSource>
+<?Pub *0000016978?>

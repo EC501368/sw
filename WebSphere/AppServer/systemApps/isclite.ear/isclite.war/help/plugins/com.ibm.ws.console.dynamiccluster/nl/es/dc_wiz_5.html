@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Paso 5: Configurar las propiedades del clúster dinámico" />
+<meta name="abstract" content="Define las propiedades para el clúster dinámico." />
+<meta name="description" content="Define las propiedades para el clúster dinámico." />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_1.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_2.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_3.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_4.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_detail_main.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2006" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2006" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="dc_wiz_5" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Paso 5: Configurar las propiedades del clúster dinámico</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="dc_wiz_5">
+<h1 class="title topictitle1">Paso 5: Configurar las propiedades del clúster dinámico</h1>
+<div class="body"><p class="shortdesc">Define las propiedades para el clúster dinámico.</p>
+<p class="p">Para acceder a esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Clústeres</span> &gt; <span class="ph uicontrol">Clústeres dinámicos</span> &gt; <span class="ph uicontrol">Nuevo</span></span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="genTopProcId6"><h2 class="title topictitle2">Número mínimo de instancias de clúster</h2>
+<div class="body"><p class="shortdesc">Especifica el número mínimo de instancias en ejecución para el clúster dinámico. Si un valor mínimo es excesivo, es posible que se produzca una
+degradación del rendimiento.</p>
+<ul class="ul" id="genTopProcId6__d1519e281"><li class="li">Si desea detener instancias cuando no haya actividad, pulse <span class="ph uicontrol">Detener todas las instancias durante periodos de inactividad</span>. Si selecciona esta opción, indique el valor de <span class="ph uicontrol">Tiempo de espera antes de detener instancias</span>
+en minutos.<div class="note restriction"><span class="restrictiontitle">Restricción:</span> si se está direccionando tráfico SIP (Session Initiation
+Protocol) al clúster dinámico, no utilice la opción <span class="ph uicontrol">Si otros clústeres dinámicos necesitan recursos, detener todas las instancias de este clúster en periodos de inactividad</span>. Utilice una de las opciones que mantienen al menos activo un miembro del clúster todo el tiempo.</div>
+</li>
+<li class="li">Si desea que siempre exista una instancia de clúster iniciada, pulse <span class="ph uicontrol">Mantener iniciada una instancia todo el tiempo</span>. Esta es la opción predeterminada.</li>
+<li class="li">Si desea que siempre exista más de una instancia de clúster iniciada, pulse <span class="ph uicontrol">Mantener iniciadas varias instancias todo el tiempo</span>.
+Si se selecciona esta opción, indique el <span class="ph uicontrol">Número de instancias</span> que desea iniciadas todo el tiempo.</li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="genTopProcId7"><h2 class="title topictitle2">Número máximo de instancias de clúster</h2>
+<div class="body"><p class="shortdesc">Especifica el número máximo de instancias de clúster que se pueden iniciar.</p>
+<ul class="ul" id="genTopProcId7__d1519e314"><li class="li">Si desea limitar el número de instancias de clúster, pulse <span class="ph uicontrol">Limitar el número de instancias que pueden iniciarse</span> y especifique el  <span class="ph uicontrol">Número de instancias</span> máximo.</li>
+<li class="li">Si no desea limitar el número de instancias de clúster, pulse <span class="ph uicontrol">No limitar el número de instancias que pueden iniciarse</span>.</li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="genTopProcId8"><h2 class="title topictitle2">Apilamiento vertical de instancias en el nodo</h2>
+<div class="body"><p class="shortdesc">Especifica si se puede iniciar más de una instancia en un único nodo. Al configurar el apilamiento vertical, el controlador de ubicación de aplicaciones puede iniciar más de una instancia del clúster dinámico en el nodo cuando exista una carga de trabajo grande.</p>
+<p class="p" id="genTopProcId8__d1519e334">El apilamiento vertical sirve para mejorar situaciones de cuello de botella entre aplicaciones. Seleccione <span class="ph uicontrol">Permitir iniciar más de una instancia en el mismo nodo</span> y escriba el valor de <span class="ph uicontrol">Número de instancias</span>. El número de instancias es el número de
+servidores de aplicaciones para un clúster que se necesitan para utilizar todas las
+capacidades de un nodo. Además, el número que elija para el apilamiento vertical es
+el número de servidores que se crean automáticamente.</p>
+<p class="p">Si se utiliza el apilamiento vertical con nodos de destino que son de una versión del producto más antigua que la versión del gestor de despliegue, se inhabilita la adición de nuevos miembros en el mismo nodo. El apilamiento vertical únicamente está disponible en servidores de aplicaciones<span class="ph">, servidores de WebSphere Application Server Community Edition</span> y servidores PHP que tengan miembros de clúster que las normas definan automáticamente. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="genTopProcId9"><h2 class="title topictitle2">Preferencias de aislamiento</h2>
+<div class="body"><p class="shortdesc">Especifica si se desea que el clúster dinámico esté en ejecución en los mismos nodos que otras instancias de clústeres dinámicos, o si desea que el clúster dinámico sea el único clúster dinámico en ejecución en el nodo. Esta opción únicamente está disponible si se elige definir de forma automática los miembros del clúster mediante normas. Si se definen los miembros del clúster de forma manual, no se tendrá la opción de habilitar el aislamiento de clúster dinámico.</p>
+<ul class="ul" id="genTopProcId9__d1519e356"><li class="li">Seleccione <span class="ph uicontrol">No hay requisitos de aislamiento</span> si las instancias de clúster en este clúster dinámico se pueden ejecutar en el mismo nodo que otras instancias de clústeres dinámicos distintos. Esta es la opción predeterminada.</li>
+<li class="li">Seleccione <span class="ph uicontrol">Aislamiento estricto</span> si instancias de clúster en este clúster dinámico sólo se pueden ejecutar con otras instancias del mismo clúster dinámico en el mismo nodo.</li>
+<li class="li">Seleccione <span class="ph uicontrol">Asociar con un grupo de aislamiento</span> si la instancia de clúster se puede ejecutar con cualquier otra instancia de un clúster dinámico que esté en el mismo grupo compartido en el mismo nodo. Especifique un valor de <span class="ph uicontrol">Nombre de grupo de aislamiento</span>. Escriba un nombre exclusivo para crear un nuevo grupo de aislamiento para este clúster dinámico.
+Pulse <span class="ph uicontrol">Examinar</span> para seleccionar de una lista de grupos de aislamiento existentes.
+Se muestra una topología de los grupos de aislamiento actuales. Pulse sobre un nombre de un grupo de aislamiento para seleccionarlo. </li>
+</ul>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="dc_wiz_1.html" title="Este paso sirve para especificar el tipo de servidor y el nombre del nuevo clúster dinámico.">Paso 1: Seleccionar el tipo de servidor de clúster dinámico</a></div>
+<div><a class="link help" href="dc_wiz_2.html" title="El método de pertenencia define la forma en que se añaden las instancias de clúster al clúster dinámico. Se puede de crear una política de pertenencia para colocar instancias de clúster en determinados nodos o bien se pueden añadir de forma manual instancias de clúster al clúster dinámico.">Paso 2: Seleccionar un método de pertenencia</a></div>
+<div><a class="link help" href="dc_wiz_3.html" title="Al crear un clúster dinámico se pueden definir sus miembros, o añadirlos a un clúster dinámico que ya exista.">Paso 3: Definir los miembros del clúster dinámico</a></div>
+<div><a class="link help" href="dc_wiz_4.html" title="Seleccione una plantilla de servidor para utilizar como modelo para los servidores para el nuevo clúster dinámico. Se puede seleccionar una plantilla por omisión, o correlacionar un servidor que ya exista.">Paso 4: Seleccionar una plantilla de servidor</a></div>
+<div><a class="link help" href="dc_collection.html" title="Utilice esta página para ver clústeres dinámicos que ya existen. Los miembros de los clústeres dinámicos, o instancias de servidor, residen en un nodo dentro de un grupo de nodos. Los clústeres dinámicos, así como sus grupos de nodos asociados, se utilizan para realizar la ubicación de aplicaciones cuando el entorno se está ejecutando en una modalidad automática.">Colección de clústeres dinámicos</a></div>
+<div><a class="link help" href="dc_detail_main.html" title="Utilice esta página para ver configuraciones de clústeres dinámicos existentes.">Valores del clúster dinámico</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: dc_wiz_5.html</span></body>
+</html>

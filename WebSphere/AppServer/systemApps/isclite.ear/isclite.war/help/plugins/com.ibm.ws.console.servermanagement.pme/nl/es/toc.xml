@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de servidores de empresa" topic="index.html">
+   <topic label="Valores del servicio de sesión de actividad"
+          href="webui_pme/ui/ueac_asssettings.html"/>
+   <topic label="Valores del servicio de perfilado de aplicaciones"
+          href="webui_pme/ui/ueac_appservicesettings.html"/>
+   <topic label="Valores del servicio de compensación"
+          href="webui_pme/ui/ueac_cmpsettings.html"/>
+   <topic label="Valores del servicio de internacionalización"
+          href="webui_pme/ui/ueac_i18nservicesettings.html"/>
+   <topic label="Valores del servicio de agrupaciones de objetos"
+          href="webui_pme/ui/ueac_objpoolservicesettings.html"/>
+   <topic label="Valores del servicio de beans de arranque"
+          href="webui_pme/ui/ueac_startupbeans.html"/>
+   <topic label="Recopilación de partición de área de trabajo"
+          href="webui_pme/ui/ueac_workareapartitioncollection.html"/>
+   <topic label="Valores de la partición de área de trabajo"
+          href="webui_pme/ui/ueac_workareapartitionsettings.html"/>
+   <topic label="Valores del servicio de área de trabajo"
+          href="webui_pme/ui/ueac_workareaservicesettings.html"/>
+</toc>

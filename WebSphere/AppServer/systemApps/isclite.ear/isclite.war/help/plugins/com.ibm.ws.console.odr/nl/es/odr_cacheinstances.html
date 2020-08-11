@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Colección de instancias de antememoria de objetos del direccionador On demand" />
+<meta name="abstract" content="Utilice esta página para configurar y gestionar instancias de memoria caché de objetos que, además de la memoria caché compartida predeterminada, pueden almacenar, distribuir y compartir datos de aplicaciones Java EE (Java Platform, Enterprise Edition). Utilice estas instancias de antememoria para proporcionar a las aplicaciones mejor flexibilidad y ajuste de los recursos de antememoria." />
+<meta name="description" content="Utilice esta página para configurar y gestionar instancias de memoria caché de objetos que, además de la memoria caché compartida predeterminada, pueden almacenar, distribuir y compartir datos de aplicaciones Java EE (Java Platform, Enterprise Edition). Utilice estas instancias de antememoria para proporcionar a las aplicaciones mejor flexibilidad y ajuste de los recursos de antememoria." />
+<meta name="DC.Relation" scheme="URI" content="uiodr_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_settings.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_cache.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_chain.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_static_cache.html" />
+<meta name="DC.Relation" scheme="URI" content="odr_wiz.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2003" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2003" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="udyn_cacheinstances" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Colección de instancias de antememoria de objetos del direccionador On demand</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="field-help" id="udyn_cacheinstances">
+<h1 class="title topictitle1">Colección de instancias de antememoria de objetos del direccionador On demand</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para configurar y gestionar instancias de memoria caché de
+objetos que, además de la memoria caché compartida predeterminada, pueden almacenar,
+distribuir y compartir datos de aplicaciones Java EE (Java Platform, Enterprise Edition). Utilice estas instancias de antememoria para proporcionar a las aplicaciones mejor flexibilidad y ajuste de los recursos de antememoria.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidores</span> &gt; <span class="ph uicontrol">Direccionadores On Demand</span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_ODR</var></span> &gt; <span class="ph uicontrol">Propiedades del direccionador On Demand</span> &gt; <span class="ph uicontrol">Configuración de la instancia de memoria caché del direccionador On-Demand</span></span>.</p>
+<p class="p">Hay que poseer privilegios administrativos de configurador o administrador para cambiar los valores del direccionador On Demand (ODR).</p>
+<p class="p">Utilice la interfaz de programas DistributedObjectCache para acceder a las instancias de
+antememoria. Para obtener más información sobre la interfaz de programación de aplicaciones DistributedObjectCache, consulte
+la documentación de la API.</p>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="CacheInstance_scope"><h2 class="title topictitle2">Ámbito</h2>
+<div class="body"><p class="shortdesc">Especifique el ámbito Célula para ver y configurar las instancias de antememoria que están disponibles
+para todos los servidores dentro de la célula. Especifique el ámbito NODO para ver y configurar las instancias de
+antememoria que están disponibles para todos los servidores dentro de un nodo determinado. Especifique el ámbito SERVIDOR para ver y configurar las
+instancias de antememoria que están disponibles sólo en un servidor determinado.</p>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="name"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre de visualización necesario del recurso.</p>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="jndi_name"><h2 class="title topictitle2">Nombre JNDI</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre de la interfaz JNDI (Java Naming and Directory Interface) para el recurso. Utilice este nombre cuando busque una referencia a esta instancia de antememoria.  Como resultado se devuelve un objeto <samp class="ph tt">DistributedMap</samp>.</p>
+</div>
+</div>
+<div class="topic nested1" id="desx"><h2 class="title topictitle2">Descripción</h2>
+<div class="body"><p class="p">Descripción opcional del recurso.</p>
+</div>
+</div>
+<div class="topic nested1" id="category"><h2 class="title topictitle2">Categoría</h2>
+<div class="body"><p class="p">Una serie de categoría opcional a utilizar cuando se clasifica o agrupa el recurso.</p>
+</div>
+</div>
+<div class="topic nested1 field-help" xml:lang="es-es" id="cache_size"><h2 class="title topictitle2">Tamaño de antememoria</h2>
+<div class="body"><p class="shortdesc">Especifica un número entero positivo para el número máximo de
+entradas que contiene la antememoria. El tamaño de antememoria suele ser en miles.
+El valor predeterminado es 2000.</p>
+<p class="p">El valor mínimo es 100, sin un valor máximo establecido.</p>
+</div>
+</div>
+<div class="topic nested1" id="default"><h2 class="title topictitle2">Prioridad por omisión</h2>
+<div class="body"><p class="p">Especifica la prioridad predeterminada de las entradas de antememoria. Cuando la antememoria está llena, las
+entradas con prioridad más baja se eliminan de la antememoria antes que las entradas con prioridad más alta. Puede cambiar la prioridad de entradas de antememoria individuales mediante el archivo de políticas de antememoria. El valor predeterminado es uno. El rango oscila entre 1 y 255.</p>
+</div>
+</div>
+<div class="topic nested1" id="enable"><h2 class="title topictitle2">Habilitar la descarga de disco</h2>
+<div class="body"><p class="p">Habilite la descarga de disco para especificar que cuando se llene la antememoria, se deberán eliminar entradas
+de la antememoria y guardarse en disco.
+La ubicación es una ubicación de directorio completa utilizada por la función de descarga de disco. </p>
+</div>
+</div>
+<div class="topic nested1" id="location"><h2 class="title topictitle2">Ubicación de descarga de disco</h2>
+<div class="body"><p class="p">Especifica el directorio que se utiliza para la descarga del disco. Este valor se ignora si la descarga de disco está inhabilitada.</p>
+</div>
+</div>
+<div class="topic nested1" id="flush"><h2 class="title topictitle2">Vaciado en disco</h2>
+<div class="body"><p class="p">La opción Vaciado en disco especifica que cuando se detiene el servidor, el contenido de la antememoria
+debe trasladarse al disco. Este valor se ignora si la opción Habilitar la descarga de disco no está seleccionada.</p>
+</div>
+</div>
+<div class="topic nested1" id="use"><h2 class="title topictitle2">Utilizar contexto de receptor</h2>
+<div class="body"><p class="p">Establezca este valor en true para que los sucesos de
+invalidación se envíen a los receptores de invalidación registrados
+mediante el contexto J2EE (Java Platform, Enterprise Edition) del receptor. Si desea utilizar el contexto de la hebra de
+llamante para la devolución de llamada, establezca este valor en false.</p>
+</div>
+</div>
+<div class="topic nested1" id="ID"><h2 class="title topictitle2">Soporte de ID de dependencia</h2>
+<div class="body"><p class="p">Especifica que el servicio de antememoria dinámica admite los ID de dependencia de
+entrada de antememoria. Si no necesita utilizar los ID de dependencia, inhabilite esta
+opción. Los ID de dependencia especifican identificadores de grupo de antememoria adicionales que asocian varias entradas de antememoria con el mismo identificador de grupo en la política de antememoria. </p>
+<p class="p">Es posible que esta opción no esté disponible para instancias de antememoria creadas con una
+versión anterior de WebSphere Application Server. </p>
+</div>
+</div>
+<div class="topic nested1" id="enable1"><h2 class="title topictitle2">Habilitar la duplicación de antememoria</h2>
+<div class="body"><p class="p">Utilice la duplicación de antememoria para habilitar la compartición de los ID de antememoria, entradas de antememoria e invalidaciones de antememoria con otros servidores del mismo dominio de duplicación.  </p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="uiodr_collection.html" title="Esta página lista los direccionadores on demand (ODR) de la célula. Un ODR se encuentra en un nodo de Intelligent Management. Un ODR clasifica, otorga prioridades y direcciona tráfico SIP y HTTP en la empresa. En esta página podrá crear, suprimir y detener un ODR. Existe la posibilidad de crear plantillas de servidor.">Colección de direccionadores On Demand</a></div>
+<div><a class="link help" href="odr_settings.html" title="En este tema se describe cómo realizar una configuración avanzada en un direccionador On Demand (ODR). Con los valores de ODR, se puede ajustar el funcionamiento del ODR. En especial, puede configurar las conexiones y las solicitudes al servidor de aplicaciones, habilitar el almacenamiento en antememoria, configurar las solicitudes que se deben rechazar, definir cómo se manejan las respuestas de error y especificar la ubicación de las anotaciones cronológicas del ODR.">Valores del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_cache.html" title="En este tema se describe cómo configurar una norma de antememoria asociada a un grupo de URI para el direccionador On Demand (ODR). HTTP 1.1 define un conjunto de normas para la colocación en antememoria del contenido en los direccionadores ODR. Las normas de antememoria estática permiten alterar temporalmente estas normas por omisión para un espacio de direcciones dado. Para que las normas tengan sentido, debe habilitar la colocación en antememoria en la página de la consola administrativa Servidores &gt; Tipos de servidor &gt; Direccionadores On Demand &gt; nombre_ODR &gt; Propiedades del direccionador On Demand &gt; Valores del direccionador On Demand.">Valores de normas de antememoria estática del direccionador On demand</a></div>
+<div><a class="link help" href="odr_chain.html" title="Utilice esta página para ver o gestionar cadenas de transporte para el direccionador On Demand (ODR). Las cadenas de transporte permiten la comunicación mediante transportes o pilas de protocolo, que generalmente están basados en sockets.">Colección de cadenas de transporte del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_detail_main.html" title="Utilice esta página para modificar los valores de un direccionador On Demand (ODR) que ya exista.">Configuración del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_static_cache.html" title="En este tema se enumeran las normas de antememoria estática del direccionador On Demand (ODR). En esta página puede crear, suprimir o modificar una norma de antememoria estática del direccionador On Demand.">Normas de antememoria estática del direccionador On Demand</a></div>
+<div><a class="link help" href="odr_wiz.html" title="Esta página sirve para crear un nuevo direccionador On Demand.">Crear un nuevo direccionador On Demand</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: odr_cacheinstances.html</span></body>
+</html>

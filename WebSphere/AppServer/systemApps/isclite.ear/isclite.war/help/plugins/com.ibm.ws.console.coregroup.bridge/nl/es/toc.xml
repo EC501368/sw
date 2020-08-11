@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Puente del grupo principal" topic="index.html">
+   <topic label="Colección de grupos de puntos de acceso"
+          href="ae/urun_ha_cgapgroupcollection.html"/>
+   <topic label="Valores de grupo de puntos de acceso"
+          href="ae/urun_ha_cgapgroupsettings.html"/>
+   <topic label="Colección de interfaces de puente"
+          href="ae/urun_ha_bridgeinterfacecollection.html"/>
+   <topic label="Creación de la interfaz puente"
+          href="ae/urun_ha_bridgeinterfacenew.html"/>
+   <topic label="Valores de la interfaz puente"
+          href="ae/urun_ha_bridgeinterfacesettings.html"/>
+   <topic label="Colección de puntos de acceso de grupo principal"
+          href="ae/urun_ha_cgapcollection.html"/>
+   <topic label="Valores de puntos de acceso de grupo principal"
+          href="ae/urun_ha_cgapsettings.html"/>
+   <topic label="Valores del puente de grupos principales"
+          href="ae/urun_ha_cgbridgesettings.html"/>
+   <topic label="Colección de puntos de acceso de igual"
+          href="ae/urun_ha_peerapcollection.html"/>
+   <topic label="Selección de punto de acceso de igual"
+          href="ae/urun_ha_peerapselect.html"/>
+   <topic label="Valores de puntos de acceso de igual"
+          href="ae/urun_ha_peerapsettings.html"/>
+   <topic label="Colección de grupos principales de igual"
+          href="ae/urun_ha_peercoregroup_collection.html"/>
+   <topic label="Valores de grupo principal de igual"
+          href="ae/urun_ha_peercoregroup_settings.html"/>
+   <topic label="Colección de puertos de igual" href="ae/urun_ha_endpointcollection.html"/>
+   <topic label="Valores de puerto de igual" href="ae/urun_ha_peerendpoint.html"/>
+   <topic label="Colección de grupos de puntos de acceso de túnel"
+          href="ae/urun_ha_tunapgroupcollection.html"/>
+   <topic label="Valores del grupo de puntos de acceso de túnel"
+          href="ae/urun_ha_tunapgroupsettings.html"/>
+   <topic label="Colección de puntos de acceso de igual de túnel"
+          href="ae/urun_ha_tunpeerapcollection.html"/>
+   <topic label="Selección de punto de acceso de igual de túnel"
+          href="ae/urun_ha_tunaccpointselect.html"/>
+   <topic label="Valores del punto de acceso de igual de túnel"
+          href="ae/urun_ha_tunpeerapsettings.html"/>
+   <topic label="Colección de plantillas de túnel"
+          href="ae/urun_ha_tuntemplatecollection.html"/>
+   <topic label="Valores de las plantillas de túnel"
+          href="ae/urun_ha_tuntemplatesettings.html"/>
+</toc>

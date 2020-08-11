@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Especificación de rastreo " />
+<meta name="abstract" content="Utilice esta página para configurar el rastreo para el plug-in de servidor web." />
+<meta name="description" content="Utilice esta página para configurar el rastreo para el plug-in de servidor web." />
+<meta name="DC.Relation" scheme="URI" content="uwve_implugin.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_imremotecell.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_impluginpropscol.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_impluginprops.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2012" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2012" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="imtracespec" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Especificación de rastreo
+</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="ref" id="imtracespec">
+<h1 class="title topictitle1">Especificación de rastreo
+</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para configurar el rastreo
+para el plug-in de servidor web.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse
+<span class="ph menucascade"><span class="ph uicontrol">Servidores </span> &gt;
+<span class="ph uicontrol"> Tipos de servidor </span> &gt;
+<span class="ph uicontrol"> Servidores web &gt;
+</span></span><var class="keyword varname">nombre_servidor_web</var><span class="ph menucascade"><span class="ph uicontrol">
+&gt; Intelligent Management</span> &gt; <span class="ph uicontrol">Especificación de rastreo</span></span>.</p>
+</div>
+<div class="topic nested1" id="control_trace"><h2 class="title topictitle2">Rastreo
+</h2>
+<div class="body"><p class="shortdesc">Establezca la especificación de rastreo e indique
+un nivel de detalle de registro. Expanda el árbol de especificaciones de rastreo y pulse
+una especificación de rastreo para seleccionar un nivel de detalle de registro.
+</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="Valores de rastreo " class="table" rules="all" frame="border" border="1"><span class="desc tabledesc"></span><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d7154e79">Valores</th>
+<th class="entry" valign="bottom" id="d7154e81">Acción resultante </th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">http
+</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de detalle de registro para el rastreo HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">request</span> </td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">traceRuleMatch</span> </td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo <samp class="ph codeph">traceRuleMatch</samp> de
+solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "> <span class="ph uicontrol">process</span> </td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de proceso de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "> <span class="ph uicontrol">plugin</span> </td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de plug-in de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">map</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de correlación de la solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">url</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de correlación del URL de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">editionRules</span> </td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de correlación <samp class="ph codeph">editionRules</samp> de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">select</span> </td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de selección de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">affinity</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de seleccionar afinidad de solicitud
+HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">process</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de seleccionar afinidad de proceso de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">cookie</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de seleccionar afinidad de cookie de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">keep</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de seleccionar afinidad de mantenimiento de solicitud
+HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">break</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de seleccionar afinidad de interrupción de solicitud
+HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">balance</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de seleccionar equilibrio de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">editionRollout</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de seleccionar
+<samp class="ph codeph">editionRollout</samp> de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">process</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de seleccionar proceso de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">response</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">error</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de errores de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">404</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de errores 404 de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">503</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de errores 503 de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">process</span> </td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de proceso de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">plugin</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de plug-in de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">stateChange</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de cambio de estado de HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">control</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">stateChange</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de detalle de registro para el rastreo de control
+<samp class="ph codeph">stateChange</samp>. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">process</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de proceso.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">mapper</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de correlacionador.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">selector</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control del selector.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">json</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de json.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">received</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de json recibidos.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">updated</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de json actualizados.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">sent</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de json enviados.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">ipc</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control ipc.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">error</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de errores. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">invalidAction</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de errores
+<samp class="ph codeph">invalidAction</samp>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">invalidKey</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de errores
+<samp class="ph codeph">invalidKey</samp>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">invalidJSON</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de errores
+<samp class="ph codeph">invalidJSON</samp>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e79 "><span class="ph uicontrol">noConnectorError</span></td>
+<td class="entry" valign="top" headers="d7154e81 ">Pulse para establecer el nivel de
+detalle de registro para el rastreo de control de errores
+<samp class="ph codeph">noConnectorError</samp>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" id="collect_trace"><h2 class="title topictitle2">Recopilar rastreo cuando:
+</h2>
+<p class="shortdesc">Utilice lenguaje HTTP en este campo. El contenido de este campo debe
+coincidir con la opción de condición de rastreo del mandato AdminTask. Pulse
+<span class="ph uicontrol">ayuda de sintaxis</span> para obtener más información sobre
+los tipos de entradas de este campo.</p>
+</div>
+<div class="topic nested1" id="per_reqest_setting"><h2 class="title topictitle2">Establecer
+la especificación de rastreo de solicitud condicional</h2>
+<div class="body"><p class="shortdesc">Establezca la especificación de rastreo de solicitudes condicional y especifique un nivel de detalle de registro. Expanda el árbol de especificaciones de rastreo y pulse una especificación de rastreo para seleccionar un nivel de detalle de rastreo.
+</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="Valores de rastreo de solicitud condicional " class="table" rules="all" frame="border" border="1"><span class="desc tabledesc"></span><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d7154e377">Valores de rastreo de solicitud condicional</th>
+<th class="entry" valign="bottom" id="d7154e379">Acción resultante </th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">http
+</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de registro para el rastreo HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">request</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de registro para el rastreo de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">traceRuleMatch</span> </td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de solicitud HTTP <samp class="ph codeph">traceRuleMatch</samp>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">process </span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de proceso de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">plugin</span> </td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de plug-in de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">map </span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de correlación de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">url</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de correlación del URL de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">editionRules</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro del rastreo de correlación <samp class="ph codeph">editonRules</samp> de
+solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">select</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de selección de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">affinity</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de seleccionar afinidad de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">process</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de seleccionar afinidad de proceso de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">cookie</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de seleccionar afinidad de cookie de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">keep</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de seleccionar afinidad de mantenimiento de solicitud
+HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">break</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de seleccionar afinidad de interrupción de solicitud
+HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">balance</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de seleccionar equilibrio de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">editionRollout</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de seleccionar <samp class="ph codeph">editionRollout</samp> de
+solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">process</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de seleccionar proceso de solicitud HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">response</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">error</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de errores de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">404</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de errores 404 de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">503</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de errores 503 de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">process</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de proceso de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">plugin</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo de plug-in de respuesta HTTP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d7154e377 "><span class="ph uicontrol">stateChange</span></td>
+<td class="entry" valign="top" headers="d7154e379 ">Pulse para establecer el nivel de
+registro para el rastreo <samp class="ph codeph">stateChange</samp> de respuesta HTTP.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="uwve_implugin.html" title="Utilice esta página para habilitar y configurar Intelligent Management para servidores web Apache o IBM HTTP.">Intelligent Management para plug-ins del servidor web</a></div>
+<div><a class="link" href="uwve_imremotecell.html" title="Utilice esta página para configurar una célula remota para el plug-in de servidor web de Intelligent Management.">Célula remota para el servidor web de Intelligent Management</a></div>
+<div><a class="link" href="uwve_impluginpropscol.html" title="Utilice esta página para configurar una célula remota para el plug-in de servidor web de Intelligent Management.">Recopilación de propiedades de Intelligent Management</a></div>
+<div><a class="link" href="uwve_impluginprops.html" title="Utilice esta página para configurar una propiedad de Intelligent Management para el plug-in de servidor web.">Propiedad de plug-in de Intelligent Management</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: uwve_imtracespec.html</span></body>
+</html>

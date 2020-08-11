@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+ 
+<!--
+    ******************************************************************************
+    * Translation Notes:
+    *
+    * To translate this XML file, first change the xml:lang variable
+    * in TMSSource to the correct locale for the translation.  Then follow
+    * these simple rules.
+    *
+    * #PCDATA:
+    *
+    * When translating XML, any text between <Tag> and </Tag> entries
+    * should be translated.  For example, "File not found" in the following
+    * phrase:
+    *
+    * <MsgText>File not found</MsgText>... 
+    * 
+    * The only exception to this rule is the Text between <Copyright> and 
+    * </Copyright> tags.
+    * 
+    * Attributes:
+    *
+    * Verbage in attributes should not be translated.  For example, the "don't
+    * translate me" phrase in the following should not be changed:
+    *
+    * <MsgText terseText="don't translate me">File not found</MsgText>... 
+    *
+    * Comments:
+    *
+    * Verbage in comments should not be translated.  This note is an example
+    * of a comment.  End-users will never see it.
+    *
+    *****************************************************************************
+-->
+<TMSSource name="CliMessages" tmsVersion="1.0" xml:lang="es">
+<Copyright>                 Licensed Materials - Property of IBM (C)Copyright IBM
+        Corporation 2004,2005. All Rights Reserved US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</Copyright>
+<!--
+        *********************************************************************
+        * The above copyright notice applies to this XML file as well
+        *  as any other source/text files generated from this file.
+        *********************************************************************
+    -->
+<!-- ============================================================== -->
+<!-- Message creation/maintenance process:                      -->
+<!--                                                            -->
+<!-- In a comment above each message, include                   -->
+<!-- the message number and one of these four status values:    -->
+<!--                                                            -->
+<!-- MSG_WORKING: Development is still working on the message.  -->
+<!--              It is not ready for review by ID.             -->
+<!--                                                            -->
+<!-- MSG_REVIEW_ID: Development has completed work on the       -->
+<!--                message. It is ready to be reviewed by ID.  -->
+<!--                                                            -->
+<!-- MSG_REVIEW_DEV: ID has updated the message.                -->
+<!--                 It is ready to be reviewed by Development. -->
+<!--                                                            -->
+<!-- MSG_COMPLETE: The message has been reviewed by all parties -->
+<!--               and is complete.                             -->
+<!--                                                            -->
+<!-- Also, if Development must update a message that is in the  -->
+<!-- MSG_COMPLETE state, Development must open a defect for ID  -->
+<!-- to review the message again.                               -->
+<!-- ============================================================== -->
+<!-- ================================================================= -->
+<!--  CEICL0001E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEICL0001E" prefix="yes">
+<MsgText pgmKey="CEICL0001" varFormat="Java">                         El MBean de acceso a sucesos no ha podido buscar y crear una instancia del enterprise bean de acceso a sucesos.             <br/>                         Nombre JNDI:
+            <Variable formatSpec="{0}">jndi_name</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0003E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEICL0003E" prefix="yes">
+<!--
+            ******************************************************************************
+            * Translation Notes:
+            *
+            * Do not translate the word MBean
+            ******************************************************************************
+        -->
+<MsgText pgmKey="CEICL0003" varFormat="Java">                         No se ha encontrado el MBean <Variable formatSpec="{0}">mbean_name</Variable>.         </MsgText>
+<Explanation>
+<p>                                 El mandato ha solicitado el MBean especificado, pero ese MBean
+                no está registrado en el servidor de MBean.             </p>
+</Explanation>
+<AdminResponse>
+<p>                                 Compruebe que el servicio de Common Event Infrastructure se ha iniciado correctamente consultando el archivo de registro del servidor de aplicaciones.      
+      </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0004E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEICL0004E" prefix="yes">
+<MsgText pgmKey="CEICL0004" varFormat="Java">                         No se ha proporcionado una operación válida para realizar.         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<AdminResponse>
+<p>Consulte el mensaje.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0005E  MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEICL0005E" prefix="yes">
+<MsgText pgmKey="CEICL0005" varFormat="Java">             Error en la búsqueda JNDI de una fábrica de emisores.             <br/>                         Nombre JNDI de fábrica de emisores:
+            <Variable formatSpec="{0}">jndi_name</Variable>   
+     </MsgText>
+<Explanation>
+<p>                                 El nombre JNDI de la fábrica de emisores especificado no es correcto, se ha producido un error de configuración o se ha producido un error de JNDI.             </p>
+</Explanation>
+<AdminResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0006E  MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEICL0006E" prefix="yes">
+<MsgText pgmKey="CEICL0006" varFormat="Java">                         No se ha podido analizar el archivo XML.             <br/>                         Archivo XML:
+            <Variable formatSpec="{0}">file_name</Variable>
+            <br/>
+            Excepción:
+            <Variable formatSpec="{1}">exception_class</Variable>
+            <br/>
+            Mensaje de excepción:
+            <Variable formatSpec="{2}">exception_message</Variable> 
+       </MsgText>
+<Explanation>
+<p>                                 El archivo XML especificado contiene un error y, por lo tanto, no se ha podido analizar.             </p>
+</Explanation>
+<ProgrammerResponse>
+<p>Corrija el archivo XML y vuelva a ejecutar el mandato.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0007E  MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEICL0007E" prefix="yes">
+<MsgText pgmKey="CEICL0007" varFormat="Java">                         La opción
+            <Variable formatSpec="{0}">option_name</Variable>
+            no es válida o se ha especificado sin ningún valor.         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con la sintaxis correcta.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0008E  MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEICL0008E" prefix="yes">
+<MsgText pgmKey="CEICL0008" varFormat="Java">                         El valor de la opción especificado no es válido porque no es un número o el número está fuera del rango válido.             <br/>                         Opción:
+            <Variable formatSpec="{0}">option_name</Variable>
+            <br/>
+            Valor:
+            <Variable formatSpec="{1}">value</Variable>
+            <br/>
+            Rango válido:
+            <Variable formatSpec="{2}">valid_range</Variable> 
+       </MsgText>
+<Explanation>
+<p></p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con la sintaxis correcta.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0009E  MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEICL0009E" prefix="yes">
+<MsgText pgmKey="CEICL0009" varFormat="Java">                         No se ha encontrado el archivo XML especificado.             <br/>                         Archivo:
+            <Variable formatSpec="{0}">file_name</Variable>         </MsgText>
+<Explanation>
+<p>El archivo especificado no es un URL o un archivo XML válidos.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo especificando un nombre de archivo XML válido.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL00010E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+<Message ID="CEICL0010E" prefix="yes">
+<MsgText pgmKey="CEICL0010" varFormat="Java">                         El MBean del catálogo de sucesos no ha podido buscar y crear una instancia del enterprise bean del catálogo de sucesos.             <br/>                         Nombre JNDI:
+            <Variable formatSpec="{0}">jndi_name</Variable>         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>                 Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.             </p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0011E  MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEICL0011E" prefix="yes">
+<MsgText pgmKey="CEICL0011" varFormat="Java">                         No se ha especificado la opción <Variable formatSpec="{0}">option_name</Variable> necesaria.         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con la sintaxis correcta.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0012E  MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEICL0012E" prefix="yes">
+<MsgText pgmKey="CEICL0012" varFormat="Java">                         Debe especificarse la opción
+            <Variable formatSpec="{0}">first_option</Variable>
+            o la opción
+            <Variable formatSpec="{1}">second_option</Variable>.         </MsgText>
+<Explanation>
+<p>Consulte el mensaje.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con la sintaxis correcta.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0013E  MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEICL0013E" prefix="yes">
+<MsgText pgmKey="CEICL0013" varFormat="Java">             El tiempo_inicio <Variable formatSpec="{0}">start_time</Variable> de ser un punto en el tiempo anterior al tiempo_fin <Variable formatSpec="{0}">end_time</Variable>.       
+ </MsgText>
+<Explanation>
+<p>Al especificar tanto tiempo_inicio como tiempo_fin, el tiempo_inicio debe representar un punto en el tiempo anterior al punto en el tiempo representado por tiempo_fin. El mandato no se ha ejecutado porque los parámetros no son válidos.             </p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con la sintaxis correcta.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0014E  MSG_REVIEW_DEV                                       -->
+<!-- ================================================================= -->
+<Message ID="CEICL0014E" prefix="yes">
+<MsgText pgmKey="CEICL0014" varFormat="Java">No se ha podido crear el archivo <Variable formatSpec="{0}">file_name</Variable>.             <br/>Excepción: <Variable formatSpec="{1}">exception_class</Variable><br/>Mensaje de excepción: <Variable formatSpec="{2}">exception_message</Variable></MsgText>
+<Explanation>
+<p>El archivo especificado no es un nombre de archivo de salida válido. Es posible que la vía de acceso no sea válida o que el emisor no tenga suficientes privilegios para crear el archivo. </p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo especificando un nombre de archivo y una vía de acceso válidos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0015E  MSG_REVIEW_DEV                                       -->
+<!-- ================================================================= -->
+<Message ID="CEICL0015E" prefix="yes">
+<MsgText pgmKey="CEICL0015" varFormat="Java">Se ha especificado el valor <Variable formatSpec="{0}">option_value</Variable> para la opción <Variable formatSpec="{1}">option_name</Variable>, pero no es un valor de dateTime válido.</MsgText>
+<Explanation>
+<p>Un valor de dateTime tiene el formato SSAA-MM-DDThh:mm:ss, seguido por un indicador opcional del huso horario. El indicador del huso horario puede ser la letra Z para indicar la hora universal coordinada (UTC) o un signo de más (+) o un signo de menos (-) seguido por la diferencia horaria respecto a la hora universal coordinada (UTC) con el formato hh:mm.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con la sintaxis correcta.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEICL0016E  MSG_COMPLETE                                         -->
+<!-- ================================================================= -->
+<Message ID="CEICL0016E" prefix="yes">
+<MsgText pgmKey="CEICL0016E" varFormat="Java">La combinación de parámetros especificada (nombreClúster/nombreServidor/nombreNodo) no es válida.</MsgText>
+<Explanation>
+<p>No se puede especificar un nombre de nodo o de servidor o con un nombre de clúster. Especifique uno de los siguientes nombres:<ul>
+<li>Nombre de clúster</li>
+<li>Nombre de nodo (el valor predeterminado es el nodo configurado por el perfil actual)</li>
+<li>Nombre de nodo y nombre de servidor</li>
+<li>Nombre de servidor</li>
+</ul></p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con los parámetros correctos.</p>
+</ProgrammerResponse>
+</Message>
+</TMSSource>

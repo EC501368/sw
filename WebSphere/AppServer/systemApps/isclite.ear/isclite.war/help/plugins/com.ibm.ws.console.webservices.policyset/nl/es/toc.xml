@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Conjuntos de políticas" topic="index.html">
+   <topic label="Valores de roles de actor" href="ae/uwbs_wsspsbar.html"/>
+   <topic label="Valores de algoritmos" href="ae/uwbs_wsspsal.html"/>
+   <topic label="Colección de conjuntos de políticas de aplicación"
+          href="ae/uwbs_wsspscolv.html"/>
+   <topic label="Valores de conjunto de políticas de aplicación"
+          href="ae/uwbs_wsspsdetv.html"/>
+   <topic label="Valores de políticas de cifrado y firma asimétricos"
+          href="ae/uwbs_wsspsasep.html"/>
+   <topic label="Valores de las señales de autenticación de generador o consumidor"
+          href="ae/uwbs_wsspsbat.html"/>
+   <topic label="Valores del manejador de retorno de llamada para JAX-WS"
+          href="ae/uwbs_wsspsbch.html"/>
+   <topic label="Colección de interlocutores" href="ae/uwbs_wsspsbcalc.html"/>
+   <topic label="Valores del llamante" href="ae/uwbs_wsspsbcald.html"/>
+   <topic label="Valores del almacén de certificados" href="ae/uwbs_wsspsbcs.html"/>
+   <topic label="Copia de valores de enlaces y conjunto de política predeterminada"
+          href="ae/uwbs_wsspscop.html"/>
+   <topic label="Copiar valores de enlace de conjunto de políticas"
+          href="ae/uwbs_wsspscopbind.html"/>
+   <topic label="Creación de valores nuevos de enlaces generales o configuración de valores de enlaces generales existentes"
+          href="ae/uwbs_wsspscreateclientbindssd.html"/>
+   <topic label="Valores de almacén de claves personalizado"
+          href="ae/uwbs_wsspsbcek.html"/>
+   <topic label="Colección de enlaces de conjunto de políticas predeterminados"
+          href="ae/uwbs_wsspsdefbind.html"/>
+   <topic label="Valores de enlaces predeterminados del dominio"
+          href="ae/uwbs_wsspsdomaindefbind.html"/>
+   <topic label="Valores de partes de mensajes cifradas" href="ae/uwbs_wsspsenpa.html"/>
+   <topic label="Exportar valores de enlaces de conjuntos de políticas"
+          href="ae/uwbs_wsspsexpbind.html"/>
+   <topic label="Valores de enlaces de transporte HTTP" href="ae/uwbs_wsspshttpbin.html"/>
+   <topic label="Valores de política de transporte HTTP" href="ae/uwbs_wsspshttp.html"/>
+   <topic label="Importar valores de enlaces de conjunto de políticas"
+          href="ae/uwbs_wsspsimpbind.html"/>
+   <topic label="Importar valores de conjuntos de políticas de una ubicación seleccionada"
+          href="ae/uwbs_wsspsimploc.html"/>
+   <topic label="Importar valores de conjuntos de políticas del repositorio predeterminado"
+          href="ae/uwbs_wsspsimpdefrep.html"/>
+   <topic label="Enlaces de transporte JMS" href="ae/uwbs_wsspsjmstransportbind.html"/>
+   <topic label="Valores de política de transporte JMS" href="ae/uwbs_wsspsjms.html"/>
+   <topic label="Valores de información de claves" href="ae/uwbs_wsspsbki.html"/>
+   <topic label="Claves y certificados" href="ae/uwbs_wsspsbkc.html"/>
+   <topic label="Valores de política principal y de política de programa de arranque"
+          href="ae/uwbs_wsspsmbs.html"/>
+   <topic label="Valores de caducidad de mensajes" href="ae/uwbs_wsspsbme.html"/>
+   <topic label="Valores de protección de parte de mensaje" href="ae/uwbs_wsspsmpp.html"/>
+   <topic label="Valores de políticas aplicadas" href="ae/uwbs_wsspsbinc_papp.html"/>
+   <topic label="Valores de enlaces de conjuntos de políticas"
+          href="ae/uwbs_wsspsbdp.html"/>
+   <topic label="Valores de enlaces de conjunto de políticas de Propiedades personalizadas"
+          href="ae/uwbs_custompropspsbd.html"/>
+   <topic label="Valores de enlaces de conjuntos de políticas para WS-Security"
+          href="ae/uwbs_wsspsbdpws.html"/>
+   <topic label="Valores de compartición de políticas"
+          href="ae/uwbs_wsspsbinp_pshar.html"/>
+   <topic label="Valores de símbolos de protección (generador o consumidor)"
+          href="ae/uwbs_wsspsbpt.html"/>
+   <topic label="Colección de políticas de señal de solicitud o respuesta"
+          href="ae/uwbs_wsspsrtp.html"/>
+   <topic label="Conjuntos de políticas conectadas por búsqueda"
+          href="ae/uwbs_wsspsvap.html"/>
+   <topic label="Valores de enlace predeterminado del servidor"
+          href="ae/uwbs_wsspsappservbind.html"/>
+   <topic label="Enlaces de conjunto de políticas predeterminado de la versión 6.1 del servidor"
+          href="ae/uwbs_wsspsappservbindv61.html"/>
+   <topic label="Colección de enlaces de conjuntos de políticas de cliente o de proveedor de servicios"
+          href="ae/uwbs_wsspsclientbindssd.html"/>
+   <topic label="Valores de partes de mensajes firmadas o cifradas"
+          href="ae/uwbs_wsspsbemp.html"/>
+   <topic label="Valores de enlaces predeterminados de referencia de parte firmada"
+          href="ae/uwbs_wsspssprd.html"/>
+   <topic label="Valores de la parte firmada" href="ae/uwbs_wsspssipa.html"/>
+   <topic label="Valores de política de seguridad de transporte SSL"
+          href="ae/uwbs_wsspssslt.html"/>
+   <topic label="Valores de seguridad de transporte SSL" href="ae/uwbs_wsspsssltbin.html"/>
+   <topic label="Valores de políticas de cifrado y firma simétricos"
+          href="ae/uwbs_wsspsssep.html"/>
+   <topic label="Colección de conjuntos de políticas de sistema"
+          href="ae/uwbs_confwstrustpolicysets.html"/>
+   <topic label="Valores de conjunto de políticas de sistema"
+          href="ae/uwbs_confwstrustpolicysetdetails.html"/>
+   <topic label="Valores de tipo de señal" href="ae/uwbs_wsspstok.html"/>
+   <topic label="Valores de algoritmos de transformación" href="ae/uwbs_wsspstal.html"/>
+   <topic label="Valores del ancla de confianza" href="ae/uwbs_wsspsbtacs.html"/>
+   <topic label="Enlaces de conjunto de políticas predeterminado de la versión 6.1"
+          href="ae/uwbs_wsspsdefbindv61.html"/>
+   <topic label="Enlace de conjunto de políticas de direccionamiento de servicios web"
+          href="ae/uwbs_wsa_binding.html"/>
+   <topic label="Valores de política WS-Addressing" href="ae/uwbs_wsspsadd.html"/>
+   <topic label="Enlace de política WS-ReliableMessaging" href="ae/uwbs_wsspsrmb.html"/>
+   <topic label="Valores de WS-ReliableMessaging" href="ae/uwbs_wsspsrmd.html"/>
+   <topic label="Autenticación y protección de WS-Security" href="ae/uwbs_wsspsbap.html"/>
+   <topic label="Autenticación y protección de WS-Security para enlaces específicos de aplicación"
+          href="ae/uwbs_wsspsbapcustom.html"/>
+   <topic label="Autenticación y protección de WS-Security para enlaces generales"
+          href="ae/uwbs_wsspsbapdef.html"/>
+   <topic label="Valores de política WS-Security" href="ae/uwbs_wsspswssc.html"/>
+   <topic label="Valores de política WS-Transaction" href="ae/uwbs_wsspstran.html"/>
+</toc>

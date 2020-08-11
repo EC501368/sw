@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Consejos para configurar un ID y contraseña de servidor de registro de usuarios LDAP</title>
+    <link rel="stylesheet" href="../was_style_help.css">
+
+</head>
+    <body style="margin:1em">
+    <h3>Consejos y sugerencias</h3>
+<h4>Consideraciones especiales sobre los ID de servidor</h4>
+Para utilizar LDAP (Lightweight Directory Access Protocol) como registro de usuarios, necesita conocer un nombre de
+usuario (ID) válido, la contraseña de usuario, el host y puerto del servidor, el nombre distinguido básico
+(DN) y, si es necesario, el DN de enlace y la contraseña de enlace. Puede elegir cualquier usuario válido en el
+registro de usuarios que se pueda buscar. En algunos servidores LDAP, no pueden buscarse ni utilizarse los usuarios
+administrativos. Por ejemplo, no se puede buscar <TT>cn=root</TT> en SecureWay. En la documentación se hace
+referencia a este usuario como ID de servidor de seguridad, ID de servidor o ID de usuario de servidor de WebSphere
+Application Server. Un usuario que es un ID de servidor significa que tiene privilegios especiales cuando llama a algunos
+métodos internos protegidos. Normalmente, este ID y contraseña se utilizan para iniciar la sesión en la consola
+administrativa después de activar la seguridad. Puede utilizar otros usuarios para iniciar la sesión si dichos usuarios
+forman parte de los roles administrativos.
+<p>
+Si está habilitada la seguridad, este ID de servidor y contraseña se autentican con el registro de usuarios cuando se
+inicia el servidor. Si la autenticación da error, el servidor no se inicia. Es importante que elija un ID y contraseña
+que no caduquen ni cambien con frecuencia. Si es necesario cambiar el ID de usuario y contraseña del servidor del
+producto en el registro de usuarios, asegúrese de que los cambios se realicen cuando todos los servidores del producto
+estén activos y funcionando.
+    <p>
+<h4>Inicio de sesión único entre servidores de aplicaciones de la versión 6.0.x, 5.0.x y 4.0.x.</h4>
+Si utiliza inicio de sesión único entre un servidor WebSphere Application Server versión 5.0.x y un servidor de aplicaciones
+WebSphere Application Server versión 4.0.x, debe especificar un número de puerto de servidor LDAP.
+Debe establecer los números de puerto LDAP con el mismo valor numérico porque en las versiones 6.0.x y 5.0.x de
+WebSphere Application Server el valor por omisión es 0. Para WebSphere Application Server versión 4.0.x, el valor por
+omisión para el puerto no es 0.
+    </body>
+</html>

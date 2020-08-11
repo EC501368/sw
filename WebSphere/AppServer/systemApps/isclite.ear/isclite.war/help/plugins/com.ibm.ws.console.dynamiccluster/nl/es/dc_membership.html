@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2012" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2012" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Generador de políticas de pertenencia" />
+<meta name="abstract" content="El generador de subexpresiones de políticas de pertenencia sirve para crear una expresión que define los miembros del clúster dinámico. La utilidad de generación de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados y operadores lógicos a los que no se les da soporte." />
+<meta name="description" content="El generador de subexpresiones de políticas de pertenencia sirve para crear una expresión que define los miembros del clúster dinámico. La utilidad de generación de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados y operadores lógicos a los que no se les da soporte." />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_1.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_2.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_3.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_4.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_5.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_6.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_members.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_member_settings.html" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="dc_membership" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Generador de políticas de pertenencia</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="dc_membership">
+<h1 class="title topictitle1">Generador de políticas de pertenencia</h1>
+<div class="body"><p class="shortdesc">El generador de subexpresiones de políticas de pertenencia sirve para crear una expresión que define los miembros del clúster dinámico. La utilidad de generación de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados y operadores lógicos a los que no se les da soporte. </p>
+<p class="p">Pulse <span class="ph uicontrol">Generador de subexpresiones</span> para utilizar el generador de políticas de pertenencia. Seleccione las propiedades que desee incluir en su política de pertenencia y, a continuación, pulse <span class="ph uicontrol">Generar subexpresión</span>.
+Aparecerá el valor de subexpresión. Si desea añadir la subexpresión a la política de pertenencia, pulse <span class="ph uicontrol">Agregar</span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="logicaloperator"><h2 class="title topictitle2">Operador lógico</h2>
+<div class="body"><p class="shortdesc">Especifica el operador que se utilizará para agregar esta subexpresión a la subexpresión anterior en la política de pertenencia.</p>
+<dl class="dl"><dt class="dt dlterm">y</dt>
+<dd class="dd">Si desea seleccionar un nodo, las dos subexpresiones que el operador <samp class="ph tt">and</samp> relaciona deben ser ciertas para dicho nodo.</dd>
+<dt class="dt dlterm">or</dt>
+<dd class="dd">Si desea seleccionar un nodo, una de las dos subexpresiones que el operador <samp class="ph tt">or</samp> relaciona deben ser ciertas para dicho nodo.</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="operand"><h2 class="title topictitle2">Operando</h2>
+<div class="body"><p class="shortdesc">Especifica la información de nodo con la que se seleccionan los nodos que aloja el clúster dinámico.</p>
+<dl class="dl"><dt class="dt dlterm">Grupo de nodos</dt>
+<dd class="dd">Especifica el nombre del grupo de nodos. Para definir un grupo de nodos, pulse
+<span class="ph menucascade"><span class="ph uicontrol">Administración del sistema</span>
+ &gt; <span class="ph uicontrol">Grupos de nodos</span></span>. En releases anteriores se utilizaba Grupos de nodos para definir la pertenencia a clústeres dinámicos.
+Utilice el operando de grupo de nodos si definió un grupo de nodos en un release anterior.</dd>
+<dt class="dt dlterm">Nombre del nodo</dt>
+<dd class="dd">Especifica el nombre del nodo.</dd>
+<dt class="dt dlterm">Nombre de host de nodo</dt>
+<dd class="dd">Especifica el nombre de host del nodo.</dd>
+<dt class="dt dlterm">Propiedad de nodo</dt>
+<dd class="dd">Especifica una propiedad definida en el nodo. Para ver las propiedades que están definidas en un nodo, pulse <span class="ph menucascade"><span class="ph uicontrol">Administración
+del sistema</span> &gt; <span class="ph uicontrol"> Nodos de middleware</span>
+ &gt; <span class="ph uicontrol"> <var class="keyword varname">nombre_nodo</var></span> &gt; <span class="ph uicontrol">Propiedades de instalación del nodo</span></span>. Se puede utilizar cualquiera de las propiedades que aparecen listadas en la política de pertenencia. Con un clúster dinámico PHP, especifique una política de pertenencia que requiera que el servidor HTTP Apache y PHP estén instalados en los nodos.</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="appendedvalueequalto"><h2 class="title topictitle2">Valor agregado igual a</h2>
+<div class="body"><p class="shortdesc">Especifica un valor de propiedad personalizado al seleccionar a <span class="ph uicontrol">Propiedad de nodo</span> como operando.</p>
+<p class="p">Para definir una propiedad personalizada de nodo, pulse <span class="ph menucascade"><span class="ph uicontrol">Administración del sistema</span> &gt; <span class="ph uicontrol">Nodos</span> &gt; <span class="ph uicontrol"> <var class="keyword varname">nombre_nodo</var></span>
+ &gt; <span class="ph uicontrol">Propiedades personalizadas</span></span> o<span class="ph menucascade"><span class="ph uicontrol">Administración del sistema</span> &gt; <span class="ph uicontrol">Nodos de middleware</span> &gt; <span class="ph uicontrol"> <var class="keyword varname">nombre_nodo_middleware</var></span>
+ &gt; <span class="ph uicontrol">Propiedades personalizadas</span></span>.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es" id="genTopProcId4"><h2 class="title topictitle2">Operador</h2>
+<div class="body"><div class="p"><ul class="ul"><li class="li"><strong class="ph b">=</strong>: el operador de equivalencia expresa una coincidencia sensible a las mayúsculas y minúsculas.</li>
+<li class="li"><strong class="ph b">&lt;&gt;</strong>: el operador distinto que indica que el valor del operando no es igual al valor entrado.</li>
+<li class="li"><strong class="ph b">&gt;</strong>: el operador mayor que se utiliza con los números.</li>
+<li class="li"><strong class="ph b">&gt;= </strong>: el operador mayor que o igual a se utiliza con números.</li>
+<li class="li"><strong class="ph b">&lt; </strong>: el operador menor que se utiliza con números.</li>
+<li class="li"><strong class="ph b">&lt;=</strong> el operador menor que o igual se utiliza con números.</li>
+<li class="li"><strong class="ph b">AND:</strong> para <em class="ph i"><kbd class="ph userinput">xx</kbd></em> AND <em class="ph i"><kbd class="ph userinput">yy</kbd>,</em> expresa
+las coincidencias que contienen <em class="ph i"><kbd class="ph userinput">xx</kbd></em>, <em class="ph i"><kbd class="ph userinput">yy</kbd></em>. </li>
+<li class="li"><strong class="ph b">BETWEEN:</strong> este operador se utiliza con AND para seleccionar un rango de valores
+incluido el primer valor, o inferior, y el último valor, o superior. Juntos, estos operadores se utilizan con números y fechas.</li>
+<li class="li"><strong class="ph b">EXISTS:</strong> este operador booleano comprueba un operando o el resultado de una subexpresión compuesta, por ejemplo, mientras comprueba determinados atributos de elementos de cabecera HTTP.</li>
+<li class="li"><strong class="ph b">IN:</strong> este operador expresa un operando con varios valores en una sola expresión. Por ejemplo, si, para un operando denominado <kbd class="ph userinput">port</kbd>,
+desea expresar que el valor de puerto puede ser cualquier valor o todos los valores de tipo <samp class="ph codeph"> 9080</samp>, <samp class="ph codeph">9090</samp>, <samp class="ph codeph">9091</samp>, el fragmento de la expresión será <kbd class="ph userinput"> port IN (9080,9090,9091)</kbd>.
+El modo de expresar los valores dentro de los paréntesis depende del tipo de datos del
+puerto. Si el puerto es un entero, la sintaxis correcta es especificar los valores sin comillas. Si el puerto es una serie, la sintaxis correcta es <kbd class="ph userinput">port IN (‘9080’,‘9090’,‘9091’)</kbd>.</li>
+<li class="li"><strong class="ph b">IS NULL: </strong>Este operador expresa que una validación de la consulta muestra que el
+parámetro no existe. </li>
+<li class="li"><strong class="ph b">IS NOT NULL: </strong>este operador expresa que una validación de la consulta muestra que existe el parámetro requerido.</li>
+<li class="li"><strong class="ph b">LIKE: </strong>este operador expresa la coincidencia de patrones para los valores de operando de la serie. El valor debe contener como carácter comodín el signo de porcentaje (%) en la posición en la que empieza la coincidencia del patrón. Por ejemplo, la expresión <kbd class="ph userinput">host LIKE %blanca</kbd> coincide con la palabra
+blanca, o con cualquier otra palabra que finalice por blanca, mientras que la expresión <kbd class="ph userinput">host
+LIKE blanca%</kbd> coincide con la palabra blanca o cualquier otra palabra que empiece por
+blanca, y la expresión <kbd class="ph userinput">host LIKE %blanca%</kbd> coincide con la palabra
+blanca o con cualquier palabra que incluya la palabra blanca.</li>
+<li class="li"><strong class="ph b">NOT: </strong>para NOT <em class="ph i"><kbd class="ph userinput">xx</kbd></em>, este operador expresa las coincidencias
+que no contienen <em class="ph i"><kbd class="ph userinput">xx</kbd></em>.</li>
+<li class="li"><strong class="ph b">OR</strong>: para <em class="ph i"><kbd class="ph userinput">xx</kbd></em> OR <em class="ph i"><kbd class="ph userinput">yy</kbd></em>,
+este operador expresa las coincidencias que contienen o <em class="ph i"><kbd class="ph userinput">xx</kbd></em> o <em class="ph i"><kbd class="ph userinput">yy</kbd></em>. </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="topic nested1" id="genTopProcId5"><h2 class="title topictitle2">Valor</h2>
+<div class="body"><p class="shortdesc">Dependiendo del operador elegido, escriba un valor para la subexpresión que desea crear.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="subexpression"><h2 class="title topictitle2">Subexpresión</h2>
+<div class="body"><p class="shortdesc">Después de pulsar <span class="ph uicontrol">Generar subexpresión</span>, este campo muestra el fragmento de la subexpresión generada en base a las opciones seleccionadas. Pulse <span class="ph uicontrol">Agregar</span> para añadir esta subexpresión a la política de pertenencia.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="membershippolicyexamples"><h2 class="title topictitle2">Ejemplos</h2>
+<div class="body"><p class="shortdesc">Utilice los siguientes ejemplos para crear su propia política de pertenencia.</p>
+<div class="example"><h3 class="title sectiontitle">Políticas de pertenencia de ejemplo</h3><ul class="ul"><li class="li">Para definir la pertenencia de todos los nodos en un grupo de nodos específicos: <pre class="pre">node_nodegroup = 'mi_grupo_nodos'</pre>
+</li>
+<li class="li"> Para definir la pertenencia de todos los nodos en los que se ejecuta Apache.<pre class="pre">node_property$APACHE_2_0 IS NOT NULL</pre>
+</li>
+<li class="li">Para definir la pertenencia de todos los nodos en los que se ejecuta Apache y PHP:<pre class="pre">node_property$APACHE IS NOT NULL and node_property$PHP IS NOT NULL</pre>
+</li>
+<li class="li">Para definir la pertenencia de todos los nodos en los que se ejecuta WebSphere Application Server Community Edition Versión 2.0 o posterior:<pre class="pre">node_property$WASCE_2.0* IS NOT NULL</pre>
+</li>
+<li class="li">Para definir la pertenencia de todos los nodos en los que se ejecuta WebSphere Application Server Community Edition Versión 2.0 únicamente:<pre class="pre">node_property$WASCE_2.0 IS NOT NULL</pre>
+</li>
+<li class="li"> Para definir la pertenencia de todos los nodos que tienen un nombre que es como <samp class="ph tt">mi_nodo</samp>, incluidos <samp class="ph tt">mi_nodo_1</samp>, <samp class="ph tt">mi_nodo_2</samp>, etc.:<pre class="pre">node_name like 'mi_nodo%'</pre>
+</li>
+<li class="li">Para definir la pertenencia de una lista específica de nombres de host:<pre class="pre">node_hostname in ('nodo1.midominio.com','nodo2.midominio.com')</pre>
+ </li>
+</ul>
+<div class="p">Las subexpresiones se pueden agrupar con paréntesis y operadores lógicos <samp class="ph tt">and</samp>, <samp class="ph tt">or</samp> o <samp class="ph tt">not</samp>. En el siguiente ejemplo se define la pertenencia a un nodo como los nodos que no están en el grupo de nodos mi_grupo_nodos y tienen un nombre que es como <samp class="ph tt">mi_nodo</samp>, incluidos <samp class="ph tt">mi_nodo_1</samp>, <samp class="ph tt">mi_nodo_2</samp>, etc.<pre class="pre">not (node_nodegroup='mi_grupo_nodos') and node_name like 'mi_nodo%'</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="dc_wiz_1.html" title="Este paso sirve para especificar el tipo de servidor y el nombre del nuevo clúster dinámico.">Paso 1: Seleccionar el tipo de servidor de clúster dinámico</a></div>
+<div><a class="link help" href="dc_wiz_2.html" title="El método de pertenencia define la forma en que se añaden las instancias de clúster al clúster dinámico. Se puede de crear una política de pertenencia para colocar instancias de clúster en determinados nodos o bien se pueden añadir de forma manual instancias de clúster al clúster dinámico.">Paso 2: Seleccionar un método de pertenencia</a></div>
+<div><a class="link help" href="dc_wiz_3.html" title="Al crear un clúster dinámico se pueden definir sus miembros, o añadirlos a un clúster dinámico que ya exista.">Paso 3: Definir los miembros del clúster dinámico</a></div>
+<div><a class="link help" href="dc_wiz_4.html" title="Seleccione una plantilla de servidor para utilizar como modelo para los servidores para el nuevo clúster dinámico. Se puede seleccionar una plantilla por omisión, o correlacionar un servidor que ya exista.">Paso 4: Seleccionar una plantilla de servidor</a></div>
+<div><a class="link help" href="dc_wiz_5.html" title="Define las propiedades para el clúster dinámico.">Paso 5: Configurar las propiedades del clúster dinámico</a></div>
+<div><a class="link help" href="dc_wiz_6.html" title="Esta página de la consola administrativa sirve para ver y guardar valores al crear un clúster dinámico o añadir miembros de clúster dinámico. Esta página de resumen muestra los cambios de configuración antes de comprometerlos y antes de que se cree el nuevo clúster dinámico o que se añadan miembros de clúster dinámico.">Paso 6: Resumen</a></div>
+<div><a class="link help" href="dc_collection.html" title="Utilice esta página para ver clústeres dinámicos que ya existen. Los miembros de los clústeres dinámicos, o instancias de servidor, residen en un nodo dentro de un grupo de nodos. Los clústeres dinámicos, así como sus grupos de nodos asociados, se utilizan para realizar la ubicación de aplicaciones cuando el entorno se está ejecutando en una modalidad automática.">Colección de clústeres dinámicos</a></div>
+<div><a class="link help" href="dc_detail_main.html" title="Utilice esta página para ver configuraciones de clústeres dinámicos existentes.">Valores del clúster dinámico</a></div>
+<div><a class="link help" href="dc_members.html" title="Utilice esta página para ver, iniciar y detener los miembros de un clúster dinámico.">Colección de miembros de clústeres dinámicos</a></div>
+<div><a class="link help" href="dc_member_settings.html" title="Utilice esta página para gestionar los miembros de un clúster dinámico.">Valores de miembros de un clúster dinámico</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: dc_membership.html</span></body>
+</html>

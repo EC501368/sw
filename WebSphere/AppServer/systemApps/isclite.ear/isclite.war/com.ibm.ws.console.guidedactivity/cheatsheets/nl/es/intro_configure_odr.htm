@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder V6.0.2 para Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="IBM:HPB-Input-Mode" content="mode/flm; pagewidth=750; pageheight=900">
+<TITLE>Visión general de las operaciones dinámicas de WebSphere</TITLE>
+<LINK rel="stylesheet" href="/ibm/console/com.ibm.ws.console.core.guidedactivity/cheatsheets/nl/was_style_help.css" type="text/css">
+
+</HEAD>
+<BODY>
+<p>WebSphere Extended Deployment presenta un nuevo tipo de servidor denominado direccionador On Demand (ODR). 
+El ODR es un tipo especial de servidor que actúa como un proxy, o intermediario, entre las peticiones HTTP y los servidores de aplicaciones que deben procesar dichas peticiones. 
+No se trata de un nuevo concepto, puesto que la mayoría de los usuarios están familiarizados con los servidores proxy y su funcionamiento. 
+Sin embargo, el ODR tiene algunas características que son únicas.
+<p>
+El ODR contiene un componente denominado configuración On Demand (ODC). 
+La configuración On Demand (ODC) intenta obtener de forma automática información sobre todos los servidores de aplicaciones y las aplicaciones de WebSphere Extended Deployment desplegadas en la célula. La configuración On Demand (ODC) configurará de forma dinámica las normas de direccionamiento en tiempo de ejecución para que el ODR pueda direccionar de forma precisa las peticiones HTTP a los servidores de aplicaciones.
+<p>
+Una vez creado, un ODR podrá direccionar de forma efectiva peticiones HTTP a los nodos de WebSphere Extended Deployment.
+<p>
+El ODR tiene la posibilidad adicional de direccionar trabajo a nodos que no son de WebSphere Extended Deployment.
+Esta función permite que una empresa se aproveche de las capacidades exclusivas de direccionamiento que tiene el ODR con nodos que no son de WebSphere.
+El ODR direcciona trabajo a servidores que no son XD de la misma manera, pero con distintas configuraciones. 
+La capacidad dinámica del ODR no se utiliza en su totalidad fuera del entorno XD puesto que la configuración On Demand no es funcional.
+Sin embargo, las opciones de configuración avanzadas amplían las posibilidades del ODR.
+<p>
+Al direccionar trabajo más allá de los nodos de WebSphere Extended Deployment, hay que configurar el ODR con clústeres de servidores genéricos, grupos de URI y normas de direccionamiento.
+<UL>
+  <LI>Los clústeres de servidores genéricos son clústeres lógicos definidos por el usuario de servidores que no son de WebSphere Extended Deployment y a los que el ODR puede direccionar peticiones.
+<LI>Los grupos URI son URI de aplicaciones comunes que mejor definen el contenido que el clúster está sirviendo.
+<LI>Las normas de direccionamiento utilizan criterios de coincidencia específicos que el ODR utiliza como criterio de comparación al direccionar peticiones.
+</UL>
+<p>Los clústeres de servidores genéricos definen los límites, o puntos finales del clúster. El ODR aplica normas de direccionamiento a las peticiones de entrada, que a su vez toman los grupos de URI en el clúster. Las normas de direccionamiento se convierten en el vínculo que relaciona los clústeres de servidores genéricos con los grupos de URI.
+<p>
+En un entorno WebSphere Extended Deployment homogéneo, la función de configuración On Demand del ODR esta automatizada, y crea y actualiza de forma dinámica la tabla de direccionamiento. En un entorno mixto, los clústeres de servidores genéricos, grupos URI y normas de direccionamiento se utilizan para crear rutas estáticas sin el direccionamiento de aplicaciones dinámico ni las funciones de detección de servidores de la configuración On Demand.
+</BODY>
+</HTML>

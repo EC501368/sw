@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores de acciones personalizadas" />
+<meta name="abstract" content="Permite especificar detalles para las acciones personalizada de Java y las que no lo son." />
+<meta name="description" content="Permite especificar detalles para las acciones personalizada de Java y las que no lo son." />
+<meta name="DC.Relation" scheme="URI" content="hc_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_condition_detail_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_appservers_detail_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_condition_subex.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_action_collection.html" />
+<meta name="copyright" content="IBM corporation 2006" />
+<meta name="DC.Rights.Owner" content="IBM corporation 2006" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="hc_custom_action" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores de acciones personalizadas</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="hc_custom_action">
+<h1 class="title topictitle1">Valores de acciones personalizadas</h1>
+<div class="body"><p class="shortdesc">Permite especificar detalles para las acciones personalizada de Java y las que no lo son. </p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Acción personalizada</span> &gt; <span class="ph uicontrol"> <var class="keyword varname">nombre_acción_personalizada</var></span></span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="name"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica un nombre para la acción personalizada.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="javaexecutablelocation"><h2 class="title topictitle2">Ubicación del archivo ejecutable de Java</h2>
+<div class="body"><p class="shortdesc">Especifica la ubicación del archivo ejecutable de Java, por ejemplo <samp class="ph tt">${JAVA_HOME}</samp>.
+Se puede especificar una variable o una vía de acceso. Este campo solo es para acciones Java.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="executabletargettype"><h2 class="title topictitle2">Tipo de destino ejecutable</h2>
+<div class="body"><p class="shortdesc">Especifica el tipo de archivo que se utiliza para el archivo ejecutable de Java. Este campo solo es para acciones Java.</p>
+<p class="p">El destino ejecutable puede ser de uno de los siguientes tipos: </p>
+<ul class="ul"><li class="li">EXECUTABLE_JAR</li>
+<li class="li">JAVA_CLASS</li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="executablefile"><h2 class="title topictitle2">Archivo ejecutable</h2>
+<div class="body"><p class="shortdesc">Especifica el archivo que se ejecuta cuando se incumple la condición de salud.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="executablearguments"><h2 class="title topictitle2">Argumentos ejecutables</h2>
+<div class="body"><p class="shortdesc">Especifica los argumentos que se pasan al archivo ejecutable.</p>
+<p class="p">Por ejemplo, se podría pasar el siguiente argumento:</p>
+<pre class="pre">-server ${WAS_SERVER_NAME}</pre>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="supportedoperatingsystems"><h2 class="title topictitle2">Sistemas operativos soportados</h2>
+<div class="body"><p class="shortdesc">Especifica los sistemas operativos a los que se da soporte con el archivo ejecutable de acción personalizada.</p>
+<ul class="ul"><li class="li">Windows</li>
+<li class="li">Linux</li>
+<li class="li">AIX®</li>
+<li class="li">HP-UX</li>
+<li class="li">Solaris</li>
+<li class="li">OS/400®</li>
+<li class="li">OS/390®</li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="workingdirectory"><h2 class="title topictitle2">Directorio de trabajo</h2>
+<div class="body"><p class="shortdesc">Especifica la ubicación en el sistema de archivos desde donde se invoca el mandato.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link build" href="hc_collection.html" title="Utilice esta página para crear y modificar políticas de salud. Las políticas de salud dan soporte a dos aproximaciones básicas para mantener un entorno saludable: la detección y la prevención.">Colección de políticas de salud</a></div>
+<div><a class="link build" href="hc_detail_main_new.html" title="Utilice esta página para crear políticas de salud, utilizadas para realizar una gran variedad de cálculos basados en salud sobre los clústeres, clústeres dinámicos e instancias de servidores de aplicaciones que se ejecutan en los nodos.">Creación de una política de salud: definir las propiedades generales de la política de salud</a></div>
+<div><a class="link build" href="hc_condition_detail_new.html" title="Utilice esta página para definir el comportamiento específico de la política de salud.">Creación de una política de salud: definir las propiedades de la condición de salud</a></div>
+<div><a class="link build" href="hc_appservers_detail_new.html" title="Utilice esta página para asignar propiedades de pertenencia a políticas de salud.">Creación de una política de salud: especificar los miembros a supervisar</a></div>
+<div><a class="link build" href="hc_condition_subex.html" title="El generador de subexpresiones de condición de salud permite definir una condición de salud personalizada para su política de salud. La utilidad de generación de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de subexpresiones valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados y operadores lógicos a los que no se les da soporte.">Generador de subexpresiones de condición de salud personalizada</a></div>
+<div><a class="link build" href="hc_action_collection.html" title="Por omisión, se puede definir una política de salud para ejecutar cualquiera de las acciones de salud predefinidas, como reiniciar servidores cuando se incumple una política de salud. Configure una acción personalizada cuando desee que el entorno realice una acción distinta a la especificada por omisión.">Colección de acciones personalizadas</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: hc_custom_action.html</span></body>
+</html>

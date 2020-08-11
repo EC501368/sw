@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS  TYPE="org.eclipse.help.toc"?>
+<toc label="Ayuda de IBM Tivoli Composite Application Manager for WebSphere Application Server" topic="overview.html">
+   <topic label="Visión general de IBM Tivoli Composite Application Manager for WebSphere Application Server" href="overview.html">
+      <topic label="Inicio y detención de la supervisión de IBM Tivoli Composite Application Manager for WebSphere Application Server" href="startecam.html"/>
+      <topic label="Habilitación e inhabilitación de IBM Tivoli Composite Application Manager for WebSphere Application Server" href="enableecam.html"/>
+      <topic label="Recopilación de datos de supervisión de IBM Tivoli Composite Application Manager for WebSphere Application Server" href="monitorecam.html"/>
+   </topic>
+</toc>

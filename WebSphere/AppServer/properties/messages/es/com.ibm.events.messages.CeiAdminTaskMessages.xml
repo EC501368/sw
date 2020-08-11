@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arbortext, Inc., 1988-2005, v.4002-->
+ 
+<!--
+    ******************************************************************************
+    * Translation Notes:
+    *
+    * To translate this XML file, first change the xml:lang variable
+    * in TMSSource to the correct locale for the translation.  Then follow
+    * these simple rules.
+    *
+    * #PCDATA:
+    *
+    * When translating XML, any text between <Tag> and </Tag> entries
+    * should be translated.  For example, "File not found" in the following
+    * phrase:
+    *
+    * <MsgText>File not found</MsgText>... 
+    * 
+    * The only exception to this rule is the Text between <Copyright> and 
+    * </Copyright> tags.
+    * 
+    * Attributes:
+    *
+    * Verbage in attributes should not be translated.  For example, the "don't
+    * translate me" phrase in the following should not be changed:
+    *
+    * <MsgText terseText="don't translate me">File not found</MsgText>... 
+    *
+    * Comments:
+    *
+    * Verbage in comments should not be translated.  This note is an example
+    * of a comment.  End-users will never see it.
+    *
+    *****************************************************************************
+-->
+<TMSSource name="AdminTaskMessages" tmsVersion="1.0" xml:lang="es">
+<Copyright>                 Licensed Materials - Property of IBM (C)Copyright IBM
+        Corporation 2004,2005. All Rights Reserved US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</Copyright>
+<!--
+        *********************************************************************
+        * The above copyright notice applies to this XML file as well
+        *  as any other source/text files generated from this file.
+        *********************************************************************
+    -->
+<!-- ============================================================== -->
+<!-- Message creation/maintenance process:                      -->
+<!--                                                            -->
+<!-- In a comment above each message, include                   -->
+<!-- the message number and one of these four status values:    -->
+<!--                                                            -->
+<!-- MSG_WORKING: Development is still working on the message.  -->
+<!--              It is not ready for review by ID.             -->
+<!--                                                            -->
+<!-- MSG_REVIEW_ID: Development has completed work on the       -->
+<!--                message. It is ready to be reviewed by ID.  -->
+<!--                                                            -->
+<!-- MSG_REVIEW_DEV: ID has updated the message.                -->
+<!--                 It is ready to be reviewed by Development. -->
+<!--                                                            -->
+<!-- MSG_COMPLETE: The message has been reviewed by all parties -->
+<!--               and is complete.                             -->
+<!--                                                            -->
+<!-- Also, if Development must update a message that is in the  -->
+<!-- MSG_COMPLETE state, Development must open a defect for ID  -->
+<!-- to review the message again.                               -->
+<!-- ============================================================== -->
+<!-- ================================================================= -->
+<!--  CEIAT0001E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0001E" prefix="yes">
+<MsgText pgmKey="CEIAT0001" varFormat="Java">Se ha producido un error inesperado al procesar el mandato AdminTask.         </MsgText>
+<Explanation>
+<p>El objeto AdminTask ha encontrado una excepción al procesar el mandato de administración.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0002E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0002E" prefix="yes">
+<MsgText pgmKey="CEIAT0002" varFormat="Java">Faltan parámetros necesarios: <Variable
+formatSpec="{0}">parameters_name</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración requiere uno o más parámetros que no se han especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con la sintaxis correcta.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0003E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0003E" prefix="yes">
+<MsgText pgmKey="CEIAT0003" varFormat="Java">Se han encontrado varios objetos de configuración con la misma vía de acceso de configuración <Variable formatSpec="{0}">config_path</Variable>.</MsgText>
+<Explanation>
+<p>Los parámetros del mandato AdminTask no representan una instancia de objeto de destino exclusiva. esta situación puede producirse si existe la misma vía de acceso de configuración en más de un ámbito (servidor o clúster).</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con los parámetros correctos y especifique el ámbito si es necesario.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0004E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0004E" prefix="yes">
+<MsgText pgmKey="CEIAT0004" varFormat="Java">No se ha encontrado ningún objeto de configuración con la vía de acceso de configuración <Variable formatSpec="{0}">config_path</Variable>.</MsgText>
+<Explanation>
+<p>Los parámetros del mandato de administración no representan una instancia de objeto de destino en el ámbito especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con los parámetros correctos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0005E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0005E" prefix="yes">
+<MsgText pgmKey="CEIAT0005" varFormat="Java">Se ha producido un error al resolver el objeto de configuración a partir de la vía de acceso de configuración <Variable formatSpec="{0}">config_path</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al identificar el objeto de destino del mandato de administración.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0006E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0006E" prefix="yes">
+<MsgText pgmKey="CEIAT0006" varFormat="Java">Se ha producido un error al recuperar el valor del atributo del objeto de configuración <Variable formatSpec="{0}">config_obj</Variable>.
+El nombre del atributo es <Variable formatSpec="{1}">attr_name</Variable> (un valor nulo indica que el error se ha producido al recuperar todos los atributos).</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al recuperar uno o más atributos.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0007E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0007E" prefix="yes">
+<MsgText pgmKey="CEIAT0007" varFormat="Java">Se ha producido un error al consultar los datos de configuración del tipo de objeto <Variable formatSpec="{0}">obj_type</Variable> en el ámbito <Variable formatSpec="{1}">scope</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al consultar el repositorio de configuración.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0008E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0008E" prefix="yes">
+<MsgText pgmKey="CEIAT0008" varFormat="Java">Se ha producido un error al consultar el objeto principal del objeto <Variable formatSpec="{0}">obj</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al recuperar el objeto principal de un objeto.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0009E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0009E" prefix="yes">
+<MsgText pgmKey="CEIAT0009" varFormat="Java">Se ha producido un error al suprimir el objeto de configuración <Variable formatSpec="{0}">obj</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al suprimir un objeto.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0010E    MSG_COMPLETE                                     -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0010E" prefix="yes">
+<MsgText pgmKey="CEIAT0010" varFormat="Java">Se ha producido un error al crear el objeto de configuración <Variable formatSpec="{0}">name</Variable> de tipo/plantilla <Variable
+formatSpec="{1}">type_or_template</Variable> con los atributos <Variable formatSpec="{2}">attrs</Variable> dentro del objeto de configuración <Variable formatSpec="{3}">parent</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al crear un objeto.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0011E    MSG_COMPLETE                                      -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0011E" prefix="yes">
+<MsgText pgmKey="CEIAT0011" varFormat="Java">Se ha producido un error al establecer los atributos <Variable formatSpec="{0}">attrs</Variable> del objeto de configuración <Variable formatSpec="{1}">config_obj</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al establecer una lista de parejas de nombre de atributo y valor.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0012E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0012E" prefix="yes">
+<MsgText pgmKey="CEIAT0012" varFormat="Java">Se ha producido un error al consultar el objeto de plantilla de tipo <Variable formatSpec="{0}">template_type</Variable> denominado <Variable formatSpec="{1}">template_name</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al recuperar un objeto de plantilla.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0013E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0013E" prefix="yes">
+<MsgText pgmKey="CEIAT0013" varFormat="Java">Los mandatos de administración del servicio de sucesos no se pueden ejecutar en un nodo federado utilizando la modalidad local.</MsgText>
+<Explanation>
+<p>Los mandatos de administración del servicio de sucesos deben poder realizar cambios en la configuración del sistema. En un nodo federado, se requiere una conexión al gestor de despliegue.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con los parámetros de conexión adecuados.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0014E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0014E" prefix="yes">
+<MsgText pgmKey="CEIAT0014" varFormat="Java">Se ha producido un error al crear la instancia del mandato de administración <Variable formatSpec="{0}">cmd_name</Variable>.</MsgText>
+<Explanation>
+<p>El objeto AdminTask ha encontrado una excepción al crear una instancia del mandato de administración AdminTask especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0015E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0015E" prefix="yes">
+<MsgText pgmKey="CEIAT0015" varFormat="Java">No se ha encontrado la plantilla <Variable formatSpec="{0}">template_name</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask no ha encontrado una plantilla con el nombre especificado en el repositorio de configuración.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con el nombre de plantilla correcto.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0016W    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0016W" prefix="yes">
+<MsgText pgmKey="CEIAT0016" varFormat="Java">Ya existe un objeto de configuración <Variable formatSpec="{0}">object_type</Variable> con el nombre JNDI <Variable formatSpec="{1}">jndi_name</Variable> en el ámbito <Variable formatSpec="{2}">scope</Variable> y no se volverá a crear utilizando los valores predeterminados.</MsgText>
+<Explanation>
+<p>El mandato de administración deployEventService no ha podido finalizar la creación de los recursos del servicio de sucesos porque un recurso ya existente en el repositorio de configuración está utilizando alguno de los nombres JNDI predeterminados.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Asegúrese de que el recurso existente esté utilizando el nombre JNDI correcto. Elimine la configuración parcial del servicio de sucesos mediante el mandato de administración removeEventService y, a continuación, ejecute el mandato de administración deployEventService de nuevo.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0017E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0017E" prefix="yes">
+<MsgText pgmKey="CEIAT0017" varFormat="Java">El servidor <Variable formatSpec="{0}">server_name</Variable> del nodo
+<Variable formatSpec="{1}">node_name</Variable> es miembro del clúster <Variable
+formatSpec="{2}">cluster_name</Variable> y no puede utilizarse como destino de este mandato de administración.</MsgText>
+<Explanation>
+<p>Los mandatos de administración AdminTask del servicio de sucesos no admiten miembros de clúster como objetos de destino.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo especificando un servidor de destino que no sea un miembro de clúster.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0018E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0018E" prefix="yes">
+<MsgText pgmKey="CEIAT0018" varFormat="Java">No se ha podido instalar la aplicación <Variable formatSpec="{0}">application_name</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al instalar la aplicación especificada.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0019E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0019E" prefix="yes">
+<MsgText pgmKey="CEIAT0019" varFormat="Java">No se ha podido eliminar la aplicación <Variable formatSpec="{0}">application_name</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al eliminar la aplicación.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0020E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0020E" prefix="yes">
+<MsgText pgmKey="CEIAT0020" varFormat="Java">El mandato de administración no ha podido comprobar si la aplicación <Variable formatSpec="{0}">application_name</Variable> está instalada.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask ha encontrado una excepción al intentar comprobar si la aplicación especificada está instalada.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0021E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0021E" prefix="yes">
+<MsgText pgmKey="CEIAT0021" varFormat="Java">Se ha producido un error al registrar o eliminar el registro del escucha de notificaciones del objeto AppManagement <Variable formatSpec="{0}">app_mgmt</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado una excepción al registrar o eliminar el registro del escucha de notificaciones del objeto AppManagement.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0022I    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0022I" prefix="yes">
+<MsgText pgmKey="CEIAT0022" varFormat="Java">El mandato de administración <Variable formatSpec="{0}">admin_task_name</Variable> ha finalizado correctamente.</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIAT0023E  MSG_COMPLETE                                         -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0023E" prefix="yes">
+<MsgText pgmKey="CEIAT0023" varFormat="Java">La combinación de parámetros especificada (nombreClúster/nombreServidor/nombreNodo) no es válida.</MsgText>
+<Explanation>
+<p>No se puede especificar un nombre de nodo o de servidor o con un nombre de clúster. Especifique uno de los siguientes nombres:<ul>
+<li>Nombre de clúster</li>
+<li>Nombre de nodo (el valor predeterminado es el nodo configurado por el perfil actual)</li>
+<li>Nombre de nodo y nombre de servidor</li>
+<li>Nombre de servidor</li>
+</ul></p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con los parámetros correctos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0024I    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0024I" prefix="yes">
+<MsgText pgmKey="CEIAT0024" varFormat="Java">El paso <Variable formatSpec="{1}">step_name</Variable> del mandato de administración <Variable formatSpec="{0}">admin_task_name</Variable> ha finalizado correctamente.</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIAT0025E  MSG_COMPLETE                                         -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0025E" prefix="yes">
+<MsgText pgmKey="CEIAT0025" varFormat="Java">Se ha producido un error en el paso <Variable
+formatSpec="{1}">step_name</Variable> del mandato de administración <Variable formatSpec="{0}">admin_task_name</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado una excepción durante la ejecución del paso especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0026W  MSG_COMPLETE                                         -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0026W" prefix="yes">
+<MsgText pgmKey="CEIAT0026" varFormat="Java">El clúster <Variable formatSpec="{0}">cluster_name</Variable> no tiene ningún origen de datos de la base de datos de sucesos configurado en el ámbito del clúster. El servicio de sucesos de este clúster se inhabilitará.          </MsgText>
+<Explanation>
+<p>Se está configurando el servicio de sucesos en el ámbito del clúster, pero no hay ningún origen de datos disponible en este ámbito. Para funcionar correctamente, el servicio de sucesos requiere un origen de datos.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Utilice el mandato de administración adecuado para crear el origen de datos de la base de datos de sucesos y, a continuación, utilice el mandato de administración enableEventService para habilitar el servicio de sucesos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0027W  MSG_COMPLETE                                         -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0027W" prefix="yes">
+<MsgText pgmKey="CEIAT0027" varFormat="Java">El ID de fondo del proveedor de JDBC <Variable formatSpec="{0}">provider_name</Variable>, de tipo <Variable formatSpec="{1}">provider_type</Variable>, no es válido.</MsgText>
+<Explanation>
+<p>El servicio de sucesos ha detectado un proveedor de JDBC para la base de datos de sucesos, pero el proveedor es de un tipo que el servicio de sucesos no admite.
+En su lugar, el servicio de sucesos utilizará la base de datos de sucesos predeterminada.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Utilice los mandatos de administración adecuados para actualizar el proveedor de JDBC.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0028E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0028E" prefix="yes">
+<MsgText pgmKey="CEIAT0028" varFormat="Java">El mandato de administración no ha encontrado ningún objeto de configuración de tipo <Variable formatSpec="{0}">obj_type</Variable> denominado <Variable formatSpec="{1}">obj_name</Variable> en el ámbito <Variable formatSpec="{2}">scope</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración AdminTask no ha encontrado el objeto de configuración JMS especificado en el repositorio de configuración del ámbito especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con los parámetros correctos. Especifique un puerto de escucha válido o una especificación de activación y una fábrica de conexiones válidas.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0029E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0029E" prefix="yes">
+<MsgText pgmKey="CEIAT0029" varFormat="Java">El nombre JNDI especificado para un recurso JMS no coincide con el nombre especificado en el objeto de tipo <Variable formatSpec="{0}">obj_type</Variable> denominado <Variable
+formatSpec="{1}">obj_name</Variable>.<br/> Valor configurado: <Variable formatSpec="{2}">obj_name</Variable><br/> Valor especificado: <Variable formatSpec="{3}">obj_name</Variable></MsgText>
+<Explanation>
+<p>El nombre JNDI de la fábrica de conexiones especificado no coincide con el nombre JNDI de la fábrica de conexiones configurado para el puerto de escucha especificado. Si especifica una fábrica de conexiones junto con un puerto de escucha, el nombre JNDI de la fábrica de conexiones debe ser el mismo que el nombre configurado para el puerto de escucha.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo especificando el nombre JNDI de la fábrica de conexiones correcto u omitiéndolo. Si no especifica ninguna fábrica de conexiones, se utilizará el nombre JNDI configurado para el puerto de escucha.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0030W    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0030W" prefix="yes">
+<MsgText pgmKey="CEIAT0030" varFormat="Java">El mandato de administración no ha podido crear los recursos necesarios para la aplicación del servicio de sucesos <Variable
+formatSpec="{0}">app_name</Variable> desplegada porque no se han especificado los parámetros necesarios para el nombre JNDI de la cola y el nombre JNDI de la fábrica de conexiones.<br/> Nombre JNDI de la cola: <Variable formatSpec="{1}">q_jndi_name</Variable><br/>Nombre JNDI de la fábrica de conexiones de cola: <Variable formatSpec="{2}">qcf_jndi_name</Variable></MsgText>
+<Explanation>
+<p>Para crear la fábrica de emisores predeterminada y los recursos de transmisión JMS para la aplicación del servicio de sucesos desplegada, debe especificar los parámetros necesarios.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con los parámetros correctos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0031E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0031E" prefix="yes">
+<MsgText pgmKey="CEIAT0031" varFormat="Java">No se ha podido habilitar el servicio de sucesos porque no se han encontrado los objetos de configuración del origen de datos necesarios.<br/>Nombre JNDI del origen de datos de sucesos: <Variable formatSpec="{0}">event_jndi_name</Variable><br/>Nombre JNDI del origen de datos del catálogo: <Variable formatSpec="{1}">catalog_jndi_name</Variable><br/>Ámbito: <Variable
+formatSpec="{2}">scope</Variable></MsgText>
+<Explanation>
+<p>El mandato de administración no ha podido habilitar el servicio de sucesos porque los objetos de configuración del origen de datos especificados no existen en el ámbito especificado ni en los ámbitos superiores. El servicio de sucesos no se puede habilitar sin estos recursos.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Vuelva a desplegar la aplicación del servicio de sucesos o vuelva a configurar la base de datos de sucesos de forma que los objetos de configuración del origen de datos estén disponibles en el ámbito correcto. A continuación, habilite el servicio de sucesos.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIMI0032E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0032E" prefix="yes">
+<MsgText pgmKey="CEIAT0032" varFormat="Java">Se ha producido un error al recuperar la propiedad de metadatos de nodo <Variable formatSpec="{0}">propName</Variable> del nodo <Variable formatSpec="{1}">nodeName</Variable>.  </MsgText>
+<Explanation>
+<p>El objeto AdminTask ha encontrado una excepción al recuperar la información de versión del nodo en el archivo de propiedades de metadatos de nodo.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0033E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0033E" prefix="yes">
+<MsgText pgmKey="CEIAT0033" varFormat="Java">Se ha producido un error al actualizar el archivo de propiedades de metadatos de nodo del nodo <Variable formatSpec="{0}">nodeName</Variable>.
+ </MsgText>
+<Explanation>
+<p>El objeto AdminTask ha encontrado una excepción al actualizar la información de funciones del servicio de sucesos en el archivo de propiedades de metadatos de nodo.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0034E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0034E" prefix="yes">
+<MsgText pgmKey="CEIAT0034" varFormat="Java">Se ha detectado una versión de WebSphere Application
+Server incompatible en el nodo <Variable formatSpec="{0}">nodeName</Variable>: <Variable formatSpec="{1}">version</Variable>. </MsgText>
+<Explanation>
+<p>Los mandatos de administración del servicio de sucesos no admiten destinos que utilicen versiones anteriores de WebSphere Application Server.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Especifique un destino distinto para el mandato o migre el sistema de destino a una versión de WebSphere Application Server compatible.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0035E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0035E" prefix="yes">
+<MsgText pgmKey="CEIAT0035" varFormat="Java">Falta el paso de mandato necesario:
+ <Variable formatSpec="{0}">cmd_step</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración especificado requiere un paso de mandato que no se ha especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con la sintaxis correcta.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0036E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0036E" prefix="yes">
+<MsgText pgmKey="CEIAT0036" varFormat="Java">El mandato de administración <Variable
+formatSpec="{0}">cmd_name</Variable> ha fallado porque no hay ningún servicio de sucesos desplegado en el ámbito especificado.</MsgText>
+<Explanation>
+<p>No se puede ejecutar el mandato de administración porque no se ha desplegado ningún servicio de sucesos en el ámbito especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Utilice el mandato de administración deployEventService para desplegar el servicio de sucesos en el ámbito especificado y ejecute el mandato de nuevo.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0037E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0037E" prefix="yes">
+<MsgText pgmKey="CEIAT0037" varFormat="Java">Se ha detectado un tipo de servidor incompatible para el servidor <Variable formatSpec="{0}">serverName</Variable>: <Variable formatSpec="{1}">server_type</Variable>. </MsgText>
+<Explanation>
+<p>Los mandatos de administración del servicio de sucesos no admiten el tipo de servidor de destino especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Ejecute el mandato de nuevo con los parámetros adecuados.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0038E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0038E" prefix="yes">
+<MsgText pgmKey="CEIAT0038" varFormat="Java">No se ha especificado ningún valor para los parámetros siguientes: <Variable formatSpec="{0}">parameter_list</Variable>.</MsgText>
+<Explanation>
+<p>Los parámetros especificados no pueden tener valores vacíos.</p>
+</Explanation>
+<AdminResponse>
+<p>Ejecute el mandato de nuevo especificando <?Pub Caret?>valores para estos parámetros.</p>
+</AdminResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0039E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0039E" prefix="yes">
+<MsgText pgmKey="CEIAT0039" varFormat="Java"><Variable formatSpec="{0}">node_name</Variable> no es un nombre de nodo válido.</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIAT0041E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0041E" prefix="yes">
+<MsgText pgmKey="CEIAT0041" varFormat="Java"><Variable formatSpec="{0}">cluster_name</Variable> no es un nombre de clúster válido.</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIAT0042E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0042E" prefix="yes">
+<MsgText pgmKey="CEIAT0042" varFormat="Java"><Variable formatSpec="{0}">server_name</Variable> no es un nombre de servidor válido.</MsgText>
+<NoHelp/></Message>
+<!-- ================================================================= -->
+<!--  CEIAT0043E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0043E" prefix="yes">
+<MsgText pgmKey="CEIAT0043" varFormat="Java">El mandato de administración no ha podido crear una instancia AppDeploymentController para el archivo EAR <Variable formatSpec="{0}">ear_file_path</Variable>.</MsgText>
+<Explanation>
+<p>El mandato de administración ha encontrado una excepción al intentar crear la instancia AppDeploymentController para el archivo EAR del servicio de sucesos.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0044E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0044E" prefix="yes">
+<MsgText pgmKey="CEIAT0044" varFormat="Java">Se ha producido un error al recuperar la información de datos de tarea para el mandato de administración <Variable formatSpec="{0}">taskName</Variable>.</MsgText>
+<Explanation>
+<p>El objeto AdminTask ha encontrado una excepción al recuperar la información de datos de tarea para el mandato de administración especificado.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0045E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0045E" prefix="yes">
+<MsgText pgmKey="CEIAT0045" varFormat="Java">No hay información de datos disponible de la tarea <Variable formatSpec="{0}">taskName</Variable>.</MsgText>
+<Explanation>
+<p>El objeto AdminTask no ha podido recuperar la información de datos de la tarea especificada.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Compruebe que el proceso de instalación ha finalizado sin errores.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0046E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0046E" prefix="yes">
+<MsgText pgmKey="CEIAT0046" varFormat="Java">Se ha producido un error al guardar la información de datos de tarea para la tarea <Variable formatSpec="{0}">task_name</Variable>. </MsgText>
+<Explanation>
+<p>El objeto AdminTask ha encontrado una excepción al guardar la información de datos de tarea para la tarea especificada.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0047E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0047E" prefix="yes">
+<MsgText pgmKey="CEIAT0047" varFormat="Java">Se ha producido un error al listar las aplicaciones instaladas en el sistema.</MsgText>
+<Explanation>
+<p>El objeto AdminTask ha encontrado una excepción al listar las aplicaciones instaladas en el sistema.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+</ProgrammerResponse>
+</Message>
+<!-- ================================================================= -->
+<!--  CEIAT0048E    MSG_COMPLETE                                       -->
+<!-- ================================================================= -->
+<Message ID="CEIAT0048E" prefix="yes">
+<MsgText pgmKey="CEIAT0048" varFormat="Java">No se puede desplegar la aplicación <Variable
+formatSpec="{0}">appName</Variable> con el enlace: [Nombre de puerto de escucha = <Variable
+formatSpec="{1}">new_listener_port</Variable>, Nombre JNDI de especificación de activación =
+ <Variable formatSpec="{2}">new_activation_spec</Variable>] porque dicha aplicación ya está desplegada utilizando el enlace: [Nombre de puerto de escucha = <Variable formatSpec="{3}">inst_listener_port</Variable>,
+Nombre JNDI de especificación de activación = <Variable formatSpec="{4}">inst_activation_spec</Variable>].</MsgText>
+<Explanation>
+<p>La información de enlace de una aplicación está almacenada en el ámbito de la célula y debe ser la misma para todos los destinos de aplicación.</p>
+</Explanation>
+<ProgrammerResponse>
+<p>Compruebe el nombre y la información de enlace de la aplicación y ejecute el mandato de nuevo con los parámetros correctos.</p>
+</ProgrammerResponse>
+</Message>
+</TMSSource>
+<?Pub *0000039584?>

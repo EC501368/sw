@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS  TYPE="org.eclipse.help.toc"?>
+<toc label="Usuarios y grupos" topic="idmgrusersearch.html">
+   <topic label="Buscar usuarios" href="idmgrusersearch.html"/>
+   <topic label="Creación de un usuario" href="idmgrusercreate.html"/>
+   <topic label="Pertenencia al grupo" href="idmgrgroupmembership.html"/>
+   <topic label="Propiedades del usuario - General" href="idmgruserpropgen.html"/>
+   <topic label="Propiedades del usuario - Grupos" href="idmgruserpropgrp.html"/>
+   <topic label="Añadir un usuario a grupos" href="idmgruseraddtogroups.html"/>
+   <topic label="Duplicar asignaciones de grupo - Usuario" href="idmgruserdupgrpassign.html"/>
+   <topic label="Buscar grupos" href="idmgrgroupsearch.html"/>
+   <topic label="Crear un grupo" href="idmgrgroupcreate.html"/>
+   <topic label="Propiedades del grupo - General" href="idmgrgrouppropgen.html"/>
+   <topic label="Propiedades del grupo - Grupos" href="idmgrgrouppropgrp.html"/>
+   <topic label="Propiedades del grupo - Miembros" href="idmgrgrouppropmem.html"/>
+   <topic label="Añadir grupos a un grupo" href="idmgrgroupaddtogroups.html"/>
+   <topic label="Añadir un grupo a otros grupos" href="idmgrgroupaddtoother.html"/>
+   <topic label="Duplicar asignaciones de grupo - Grupo" href="idmgrgroupdupgrpassign.html"/>
+</toc>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Tecnología de Enterprise JavaBeans" topic="index.html">
+   <topic label="Valores de migración tras error de beans de sesión con estado (aplicaciones)"
+          href="ae/uejb_sfsbfset.html"/>
+   <topic label="Valores de migración tras error de beans de sesión con estado (módulos EJB)"
+          href="ae/uejb_sfsbfset2.html"/>
+</toc>

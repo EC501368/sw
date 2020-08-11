@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cheatsheet.xsl"?>
+
+<!-- START NON-TRANSLATABLE                                                  -->
+<!--                                                                         -->
+<!--   "http://publib.boulder.ibm.com/infocenter . . . "                     -->
+<!--   &lt;code&gt;&amp;lt;WAS_INSTALL_ROOT&amp;gt; . . . &lt;/code&gt;      -->
+<!--   CreateLREETablesDB2.ddl                                               -->
+<!--   CreateLREETablesCloudscape.ddl                                        -->
+<!--   default_host                                                          -->
+<!--   "BatchJobExecutionEnvironmentEJBs"                                    -->
+<!--   "EndpointWebService"                                                  -->
+<!--   SimpleCI.ear                                                          -->
+<!--   PostingsSample.ear                                                    -->
+<!--   MandelbrotCI.ear                                                      -->
+<!--                                                                         -->
+<!-- END NON-TRANSLATABLE                                                    -->
+
+<cheatsheet title="Desplegar una aplicación de Compute Grid">
+
+    <intro 
+        href="intro_configure_lrs.htm">
+        <description>
+            Esta actividad guiada le ayuda a desplegar una aplicación Compute Grid. Para obtener más información:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgrun"&gt;Despliegue de aplicaciones Compute Grid&lt;/a&gt;
+         </description>
+    </intro>
+ 
+    <item 
+        href="" 
+        title="Elegir la base de datos para almacenar la información de los trabajos">
+        <description> 
+            Elija si desea almacenar la información de trabajos en la base de datos Cloudscape (Derby) v10/1.x por omisión o si desea almacenarla en una base de datos que especifique.
+            &lt;br/&gt;
+            &lt;br/&gt;
+Si desea almacenar la información de los trabajos en la base de datos Derby por omisión,vaya a
+            &lt;br/&gt;
+             &lt;a href="javascript:showHideStep('section1');showHideStep('section4')"&gt;
+               &lt;IMG SRC="../com.ibm.ws.console.core.guidedactivity/images/skip_task.gif" border="0" alt="" align="absmiddle"/&gt;
+               Crear un clúster para la aplicación Compute Grid&lt;/a&gt;
+            &lt;br/&gt;
+            &lt;br/&gt;
+Si desea almacenar la información de trabajos en una base de datos distinta, vaya a
+        </description>
+    </item>
+
+    <item 
+        href="" 
+        title="Crear tablas de base de datos para puntos finales Compute Grid">
+        <description> 
+            Para definir las tablas de base de datos que almacenan información de trabajos, utilice el archivo lenguaje de definición de datos (DLL) proporcionado durante la instalación de Compute Grid.   Los archivos se encuentran
+en el directorio &lt;code&gt;&amp;lt;RAÍZ_INSTALACIÓN_WAS&amp;gt;/longRunning&lt;/code&gt;.
+            &lt;dl&gt;
+                &lt;li&gt;DB2 - &lt;code&gt;CreateLREETablesDB2.ddl&lt;/code&gt; &lt;/li&gt;
+                &lt;li&gt;Derby - &lt;code&gt;CreateLREETablesDerby.ddl&lt;/code&gt;&lt;/li&gt;
+            &lt;/dl&gt;
+            Para obtener más información:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a onclick="checkForFocus()" target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgexe"&gt;Creación de una base de datos de punto final&lt;/a&gt;
+        </description>
+    </item>
+
+    <item 
+        href="" 
+        title="Definir una conexión de base de datos">
+        <action class=""></action>
+        <description> 
+            Defina el proveedor JDBC y el origen de datos para conectarse a la base de datos
+creada en la tarea anterior. 
+            Para ejecutar esta tarea, utilice la siguiente actividad guiada:
+            &lt;br/&gt;
+            &lt;A TARGET="detail" HREF="/ibm/console/guidedactivity/csframe.jsp?cheatSheetURI=com.ibm.ws.console.resources/guidedactivity/cheatsheets/nl/lang/cheatsheet_resource.xml&amp;cheatSheetPackage=com.ibm.ws.console.resources/guidedactivity/cheatsheets&amp;fromStep=3"&gt;
+            &lt;IMG SRC="/ibm/console/images/cheatsheets/start_task.gif" align="absmiddle" border="0" alt="Pulse para"/&gt;Conectar con una base de datos&lt;/A&gt;
+            &lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Nota:&lt;/strong&gt; se debe poder acceder a este origen de datos desde cualquier nodo que pueda albergar la aplicación de Compute Grid. Para ello, la recomendación es definir el origen de datos a nivel de célula.
+            &lt;br/&gt;&lt;br/&gt;
+            Para obtener más información:
+                        &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgexe"&gt;Creación de una base de datos de punto final&lt;/a&gt;
+        </description>
+    </item>
+
+    <item
+        href=""
+        title="Crear un clúster para la aplicación Compute Grid">
+        <action class=""></action>
+        <description>
+            Defina un grupo de nodos y un clúster dinámico para albergar la aplicación Compute Grid.
+            Para realizar esta tarea, utilice la siguiente actividad guiada:
+            &lt;A TARGET="detail" HREF="/ibm/console/guidedactivity/csframe.jsp?cheatSheetURI=com.ibm.ws.console.guidedactivity/cheatsheets/nl/lang/configure_wdo.xml&amp;cheatSheetPackage=com.ibm.ws.console.guidedactivity/cheatsheets&amp;fromStep=4"&gt;
+            &lt;IMG SRC="/ibm/console/images/cheatsheets/start_task.gif" align="absmiddle" border="0" alt="Pulse para "/&gt;Preparar un entorno para albergar operaciones dinámicas
+            &lt;/A&gt;.
+            &lt;br/&gt;
+            &lt;br/&gt;
+            Para obtener más información:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tcgendpoint"&gt;Creación de un grupo de nodos y un clúster dinámico para el punto final&lt;/a&gt;
+        </description>
+    </item>
+<!--
+    <item
+        href=""
+        title="Enable startup beans service on each application server">
+        <action class="navigatorCmd.do?forwardName=ApplicationServer.content.main"></action>
+        <description> 
+           All application servers created for the dynamic cluster defined in previous step must have the startup beans service enabled.
+           The service is accessed through the path:&lt;br/&gt; "Application Servers &gt; {dynamic_cluster_name}_{node_name} &gt; (Container services) Startup beans service".
+           &lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you add nodes to the node group later, you will need to repeat this step for the newly-created application servers.
+            &lt;br/&gt;&lt;br/&gt;
+            For more information:
+                        &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgcluster"&gt;Creating a node group and dynamic cluster for the execution environment&lt;/a&gt;
+
+            &lt;br/&gt;
+
+        </description>
+    </item>
+
+    <item
+        href=""
+        title="Define host aliases for dynamic cluster member ports">
+        <action class="navigatorCmd.do?forwardName=VirtualHost.content.main"></action>
+        <description>
+            Define virtual host aliases that correspond to the HTTP ports used by the dynamic cluster members. 
+            Review the &lt;code&gt;WC_defaulthost&lt;/code&gt; HTTP port for each dynamic cluster member defined in the prior step, 
+            then add those host-port combinations
+            to the list of host aliases for &lt;code&gt;default_host&lt;/code&gt;.
+            &lt;br/&gt;
+            For more information:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;            
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=was-nd-dist&amp;topic=tcws_plugin_vhost"&gt;Configuring virtual hosts&lt;/a&gt;
+        </description>
+    </item>
+
+
+    <item
+        href=""
+        title="Install the execution environment">
+        <action class="com.ibm.ws.console.appmanagement.action.forwardCmd.do?forwardName=appmanagement.upload"></action>
+        <description>
+            Install the EAR file 
+            &lt;code&gt;
+            &amp;lt;WAS_INSTALL_ROOT&amp;gt; / installableApps / LREE.EAR
+            &lt;/code&gt; onto the dynamic cluster defined in previous step.
+            &lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use the following options when installing the application:
+            &lt;dl&gt;
+            &lt;li&gt;In panel "Preparing for the application installation", check the box next to "Generate Default Bindings", 
+                select option "Use default virtual host name for Web modules" and leave the "Host name" field as &lt;code&gt;default_host.&lt;/code&gt;
+            &lt;/li&gt;
+            &lt;li&gt;In panel "Select installation options", check "Deploy enterprise beans".&lt;/li&gt;
+            &lt;li&gt;In panel "Map modules to servers", set the servers of both "BatchJobExecutionEnvironmentEJBs" and "EndpointWebService" modules to the dynamic cluster defined in previous step.&lt;/li&gt;
+            &lt;li&gt;In panel "Provide options to perform the EJB Deploy", select the "Deploy EJB option - Database type" and enter "Deploy EJB option - Database schema".&lt;/li&gt;
+            &lt;li&gt;In panel "Provide default data source mapping for modules containing 2.x entity beans", set the JNDI name of EJB module "BatchJobExecutionEnvironmentEJBs" to the JNDI name of the datasource you defined earlier.&lt;/li&gt;
+            &lt;li&gt;After installing the EAR file, view the "Configure LREE webservice" topic in &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgenv"&gt;Installing the execution environment&lt;/a&gt; to configure the LREE webservice.&lt;/li&gt;
+            &lt;/dl&gt;
+            &lt;br/&gt;
+            For more information:
+                        &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgenv"&gt;Installing the execution environment&lt;/a&gt;
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;
+        &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=pix&amp;product=was-nd-dist&amp;topic=txml_callappinstall"&gt;
+        Installing applications with the wsadmin tool&lt;/a&gt;
+
+        </description>
+    </item>
+-->
+    <item
+        href=""
+        title="Instalar la aplicación Compute Grid">
+        <action class="com.ibm.ws.console.appmanagement.action.forwardCmd.do?forwardName=appmanagement.upload"></action>
+        <description>
+            WebSphere Extended Deployment incluye tres aplicaciones de ejemplo en el directorio &lt;code&gt;&amp;lt;RAÍZ_INSTALACIÓN_WAS&amp;gt;/installableApps&lt;/code&gt;: &lt;dl&gt;
+            &lt;li&gt;SimpleCI.ear&lt;/li&gt;
+            &lt;li&gt;PostingsSample.ear&lt;/li&gt;
+            &lt;li&gt;MandelbrotCI.ear&lt;/li&gt;
+            &lt;/dl&gt;
+            &lt;br/&gt;
+            Para obtener más información:
+&lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgrun"&gt;Instalación de la aplicación Compute Grid&lt;/a&gt;
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=pix&amp;product=was-nd-dist&amp;topic=txml_callappinstall"&gt;
+        Instalación de aplicaciones con la herramienta wsadmin&lt;/a&gt;
+
+        </description>
+    </item>
+    <item
+        href=""
+        title="Configurar la conexión de base de datos de puntos finales">
+        <action class=""/>
+        <description>
+            Especifique los nombres JNDI de orígenes de datos y los nombres de esquema para los clústeres y servidores de WebSphere que alojan las aplicaciones grid.
+            &lt;br/&gt;
+            &lt;br/&gt; Pulse &lt;strong&gt;Puntos finales grid de WebSphere&lt;/strong&gt; en el panel de configuración del planificador de trabajos, bajo Propiedades adicionales.
+            Para obtener más información:
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=tbgsched"&gt;Configuración de la conexión de base de datos de punto final&lt;/a&gt;
+        &lt;br/&gt;
+        </description>
+    </item>
+    <item
+        href=""
+        title="Guardar y sincronizar la configuración">
+        <action class=""/>
+        <description>
+             Pulse &lt;strong&gt;Guardar&lt;/strong&gt; en el mensaje situado en la parte superior del panel de la consola para actualizar la configuración en el depósito maestro.
+        </description>
+    </item>
+
+    <item
+        href=""
+        title="Iniciar el punto final">
+        <action class="navigatorCmd.do?forwardName=ApplicationServer.content.main"></action>
+        <description>
+            Inicie el servidor de aplicaciones o el miembro de clúster dinámico definido en la tarea anterior.
+            El nombre del servidor de aplicaciones miembro de clúster tiene el formato:            &lt;br/&gt; &lt;code&gt;{nombre_clúster_dinámico}_{nombre_nodo}&lt;/code&gt;
+        </description>
+    </item>
+<!--
+    <item
+        href=""
+        title="Submit a job">
+        <action class=""></action>
+        <description>
+            &lt;dl&gt; To submit a job:
+                &lt;li&gt;
+                    Prepare the xJCL document which defines the job
+                &lt;/li&gt;
+                &lt;li&gt;
+                    Submit a job using the launchClient command
+                &lt;/li&gt;
+            &lt;/dl&gt;
+            &lt;strong&gt;Note:&lt;/strong&gt; Make sure that the job scheduler host and your Compute Grid application are started on the dynamic cluster where they are deployed.
+            &lt;br/&gt; 
+            &lt;br/&gt; 
+            For more information: 
+            &lt;br/&gt; 
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;
+            &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=xJCL"&gt;
+                Topics related to xJCL
+            &lt;/A&gt;
+            &lt;br/&gt; 
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;
+            &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=jmc_overview"&gt;
+            Job Management Console
+            &lt;br/&gt; 
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Online task documentation" align="absmiddle"/&gt;
+            &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=cbgcommd"&gt;
+            The command line interface
+            &lt;/A&gt;
+        </description>
+    </item>
+-->
+    <item href="" title="Finalización de la tarea y siguientes pasos">
+        <action class=""></action>
+	<description>
+            Después de completar los pasos anteriores, la aplicación Compute Grid está lista para desplegarla.
+            &lt;br/&gt;
+            &lt;br/&gt;
+            Los siguientes pasos sirven para crear y gestionar trabajos desde la consola de gestión de trabajos: &lt;dl&gt;
+                &lt;li&gt;
+                    Prepare el documento xJCL que define el trabajo
+                &lt;/li&gt;
+                &lt;li&gt;
+                    Inicie la consola de gestión de trabajos para someter el trabajo al planificador de trabajos
+                &lt;/li&gt;
+            &lt;/dl&gt;
+
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt; &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=xJCL"&gt;
+                Temas relacionados con xJCL
+            &lt;/A&gt;
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=jmc_overview"&gt;
+            Consola de gestión de trabajos
+            &lt;/A&gt;
+            &lt;br/&gt;
+            &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+            &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=v6r1&amp;product=xd-grid&amp;topic=cbgcommd"&gt;
+            Interfaz de línea de mandatos
+            &lt;/A&gt;
+        </description>
+</item>
+</cheatsheet>

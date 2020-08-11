@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>IBM WebSphere</Name>
+    <Directory>/jennex/WebSphere/AppServer/profiles/AppSrv01/properties/linuxMenu/directories/WebSphere.directory</Directory>
+    <Menu>
+      <Name>IBM WebSphere Application Server V8.5</Name>
+      <Directory>/jennex/WebSphere/AppServer/profiles/AppSrv01/properties/linuxMenu/directories/AppServer.directory</Directory>
+      
+	<Menu>
+	<Name>Profiles</Name>
+	<Directory>/jennex/WebSphere/AppServer/profiles/AppSrv01/properties/linuxMenu/directories/Profiles.directory</Directory>
+
+           <!--MENU FOR PROFILE-->
+<Menu><Name>AppSrv01Profile</Name><MergeFile>/jennex/WebSphere/AppServer/profiles/AppSrv01/properties/linuxMenu/menus/AppSrv01.menu</MergeFile></Menu>
+           <!--<Menu><Name>AppSrv01Profile</Name><MergeFile>/jennex/WebSphere/AppServer/profiles/AppSrv01/properties/linuxMenu/menus/AppSrv01.menu</MergeFile></Menu>-->
+
+
+
+	</Menu>
+
+    </Menu>
+  </Menu>
+</Menu>

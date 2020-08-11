@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<cheatsheet title="Configurar un clúster y permitir que las aplicaciones tengan una
+alta disponibilidad">
+
+	<intro 
+		href="clustering_cheatsheet_intro.html">
+        <description>
+Esta hoja de apuntes ofrece un conjunto de pasos sencillos para crear un clúster de
+servidores y permitir que las aplicaciones del clúster tengan una alta
+disponibilidad. 
+Consulte &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=trun_wlm_cluster"&gt;Creación de clústeres&lt;/a&gt;
+en el Information Center para obtener más información sobre cómo crear y configurar un clúster. Consulte &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=trun_ha_environment
+"&gt;Configuración de un entorno de alta disponibilidad&lt;/a&gt; en el Information Center para obtener más información
+sobre cómo permitir que las aplicaciones tenga una alta disponibilidad.
+&lt;br/&gt;&lt;br/&gt;
+
+Para continuar, pulse &lt;strong&gt;Iniciar&lt;/strong&gt;.
+        </description>
+	</intro>
+
+	<item
+        href=""
+		title="Crear un clúster">
+		<action
+            class="navigatorCmd.do?forwardName=ServerCluster.content.main"/>
+		<description>
+Un clúster es un conjunto de servidores de aplicaciones que se gestionan
+conjuntamente y participan en la gestión de la carga de trabajo.
+Consulte &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=welcclusters
+"&gt;Introducción: Clústeres&lt;/a&gt; en el Information Center para obtener más información sobre clústeres.
+
+
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;A HREF="javascript:showHideList('custom1')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="custom1Img" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+Para crear un nuevo clúster
+&lt;br/&gt;
+&lt;TABLE id="custom1List" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+
+		    &lt;ol&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar la lista de clústeres&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Nuevo&lt;/strong&gt; para iniciar el asistente de creación de clústeres&lt;/li&gt;
+			&lt;/ol&gt;
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+&lt;br/&gt;
+		
+			
+		&lt;strong&gt;Nota&lt;/strong&gt;: esta actividad guiada utiliza la duplicación de memoria a memoria básica para sesiones HTTP.  
+        Asegúrese de seleccionar el recuadro de selección &lt;strong&gt;Duplicación de memoria a memoria de sesiones HTTP&lt;/strong&gt;
+en el asistente de creación del clústeres para crear automáticamente un dominio de duplicación y añadirle los miembros del clúster.
+Si en lugar de eso desea hacer persistentes sesiones en una base de datos, consulte &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=tpercnfp"&gt;Configuración de la persistencia de sesiones de bases de datos&lt;/a&gt; en
+el Information Center para obtener más información. 
+		</description>
+	</item>
+
+<item
+        href=""
+		title="Instalar una aplicación">
+		<action
+			class="com.ibm.ws.console.appmanagement.action.forwardCmd.do?forwardName=appmanagement.upload"/>
+		<description>
+Utilice esta sección para instalar una aplicación utilizando el asistente de
+instalación de aplicaciones.
+
+&lt;br/&gt;
+&lt;br/&gt;
+		
+			
+		&lt;strong&gt;Sugerencia&lt;/strong&gt;: En el paso &lt;strong&gt;Correlacionar módulos con servidores&lt;/strong&gt;,
+la aplicación se asigna por omisión al primer servidor o clúster disponible; asegúrese de que la aplicación
+está correlacionada con el clúster correcto dentro del paso de asistente.
+		</description>
+	</item>
+    
+    
+    <item
+		href=""
+		title="Habilitar la sustitución por anomalía de beans de sesión con estado">
+		<action
+            class="navigatorCmd.do?forwardName=ServerCluster.content.main"/>
+		<description>
+La habilitación de la sustitución por anomalía de beans de sesión con estado es
+relevante para las aplicaciones que se ejecutan en un entorno en clúster. 
+Pueden
+existir varios beans de sesión con estado dentro de una aplicación o un módulo,
+algunos de los cuales o todos pueden habilitarse para la sustitución por anomalía. 
+El establecimiento de la sustitución por anomalía a nivel de servidor, aplicación y
+módulo permite tener distintos niveles de control sobre qué beans están habilitados
+para la sustitución por anomalía y cuáles no.  Para esta actividad guiada, sustitución
+por anomalía de beans de sesión con estado se configurará en el nivel de servidor, que es el valor por omisión.
+
+&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Nota&lt;/strong&gt;: Como la habilitación de la sustitución por anomalía tiene costes de rendimiento y recursos, considere
+alterar temporalmente los valores de nivel de servidor habilitando la sustitución por anomalía en el nivel del módulo o de la aplicación,
+y por tanto proporcionando la sustitución por anomalía sólo para los beans de sesiones de la aplicación o el módulo seleccionado. Consulte &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=cejb_sfsbf
+"&gt;Sustitución por anomalía de beans de sesión con estado para el contenedor de EJB&lt;/a&gt;
+en el Information Center para obtener información sobre cómo determinar cuando alterar temporalmente el valor por omisión.
+Si desea configurar la sustitución por anomalía de beans de sesión con
+estado y persistir sesiones HTTP, debe utilizar la duplicación de memoria a memoria
+en ambas operaciones.
+
+&lt;br/&gt;
+                &lt;br/&gt;
+
+
+&lt;A HREF="javascript:showHideList('custom3')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="custom3Img" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+Establezca la sustitución por anomalía del bean de sesión con estado en el nivel de servidor
+&lt;br/&gt;
+&lt;TABLE id="custom3List" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+
+    &lt;ol&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar la lista de clústeres&lt;/li&gt;
+			&lt;li&gt;Pulse un nombre de clúster para cargar la información del clúster.&lt;/li&gt;
+			&lt;li&gt;Pulse &lt;strong&gt;Miembros del clúster&lt;/strong&gt; bajo Propiedades adicionales para cargar la lista de miembros del clúster&lt;/li&gt;
+			&lt;li&gt;Pulse un nombre de miembro del clúster para cargar la información del miembro del clúster.&lt;/li&gt;
+			&lt;li&gt;Pulse &lt;strong&gt;Contenedor EJB&lt;/strong&gt; en la sección Valores del contenedor de EJB de Valores de contenedor para cargar la información de contenedor EJB&lt;/li&gt;
+
+			&lt;li&gt;Pulse &lt;strong&gt;Duplicación de memoria a memoria&lt;/strong&gt;&lt;/li&gt;
+
+			&lt;li&gt;En la lista de selección &lt;strong&gt;Dominio de duplicación&lt;/strong&gt;, seleccione el dominio que tenga el mismo nombre que el clúster creado anteriormente.&lt;/li&gt;
+			&lt;li&gt;Pulse &lt;strong&gt;Aceptar&lt;/strong&gt; para volver al detalle &lt;strong&gt;Contenedor EJB&lt;/strong&gt;.&lt;/li&gt;
+			&lt;li&gt;Verifique que &lt;strong&gt;Habilitar la sustitución por anomalía del bean de sesión con estado utilizando duplicación de memoria a memoria&lt;/strong&gt; está seleccionado.&lt;/li&gt;
+    		&lt;li&gt;Repita los pasos de 4 a 9 para cada miembro del clúster&lt;/li&gt;
+	&lt;/ol&gt;
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;br/&gt;
+
+			
+			
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+</description>
+	</item>
+
+	<item
+		href=""
+		title="Editar pesos de miembros del clúster">
+		<action
+            class="navigatorCmd.do?forwardName=ServerCluster.content.main"/>
+		<description>
+En las plataformas distribuidas, la asignación de pesos a los miembros del clúster
+permite equilibrar la carga de trabajo en el clúster. Los pesos se deben basar en la
+capacidad de hardware y el número de procesos en ejecución. 
+Consulte &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=crun_srvgrp
+"&gt;Clústeres y gestión de cargas&lt;/a&gt; en el Information Center para obtener más información sobre los procedimientos recomendados.
+&lt;br/&gt;
+&lt;br/&gt;
+Si el valor de peso del servidor es mayor que los valores de peso asignados a
+los otros servidores del clúster, dicho servidor recibe una carga de trabajo mayor. Puede tomar un valor entre 0 y 20. Entre cero para indicar que no desea que las
+peticiones se dirijan a este servidor de aplicaciones a menos que sea el único
+servidor disponible para recibir peticiones.
+
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;A HREF="javascript:showHideList('custom6')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="custom6Img" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+Para establecer pesos de miembros:
+&lt;br/&gt;
+&lt;TABLE id="custom6List" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+
+		&lt;ol&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Pulse para actuar&lt;/strong&gt; para cargar la lista de clústeres&lt;/li&gt;
+            &lt;li&gt;Seleccione un clúster&lt;/li&gt;
+			&lt;li&gt;Seleccione &lt;strong&gt;Miembros del clúster&lt;/strong&gt;, bajo Propiedades adicionales para cargar la lista de miembros del clúster&lt;/li&gt;
+			&lt;li&gt;Actualice los pesos de la lista de miembros del clúster y pulse &lt;strong&gt;Actualizar&lt;/strong&gt;&lt;/li&gt;
+			&lt;/ol&gt;
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+            
+		</description>
+	</item>
+
+	</cheatsheet>

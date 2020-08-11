@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Operaciones en tiempo de ejecución" topic="index.html">
+   <topic label="Informes de aplicaciones" href="xdop_app_reporting.html"/>
+   <topic label="Tareas activas de aplicación" href="xdop_app_tasks.html"/>
+   <topic label="Pestaña operaciones de aplicaciones" href="xdop_app_operations.html"/>
+   <topic label="Ubicación de aplicaciones" href="xdop_app_placement.html"/>
+   <topic label="Gestión de solicitudes de aplicación" href="xdop_app_request.html"/>
+   <topic label="Resumen de aplicaciones" href="xdop_runsum_app.html"/>
+   <topic label="Resumen del entorno en tiempo de ejecución de Estabilidad de Componentes: Componentes principales"
+          href="xdop_runsum_corecomp.html"/>
+   <topic label="Resumen del entorno en tiempo de ejecución de Estabilidad de Componentes: Grupos principales"
+          href="xdop_runsum_coregroups.html"/>
+   <topic label="Resumen del entorno en tiempo de ejecución de Estabilidad de Componentes: Nodos " href="xdop_runsum_node.html"/>
+   <topic label="Resumen del entorno en tiempo de ejecución de Component stability: Direccionadores On Demand"
+          href="xdop_runsum_odr.html"/>
+   <topic label="Resumen de destino de despliegue" href="xdop_runsum_dt.html"/>
+   <topic label="Tareas activas de clúster" href="xdop_dc_tasks.html"/>
+   <topic label="Pestaña de operaciones de clúster" href="xdop_dc_operations.html"/>
+   <topic label="Informes de clúster" href="xdop_dc_reporting.html"/>
+   <topic label="Gestión de solicitudes de clúster dinámico" href="xdop_dc_request.html"/>
+   <topic label="Ubicación de servidores de clúster" href="xdop_dc_placement.html"/>
+   <topic label="Panel de instrumentos de operaciones" href="xdop_dashboard.html"/>
+   <topic label="Resumen de informes" href="xdop_reports.html"/>
+   <topic label="Tareas activas de servidor" href="xdop_srv_tasks.html"/>
+   <topic label="Asignación de servidor" href="xdop_srv_colocation.html"/>
+   <topic label="Pestaña operaciones de servidor" href="xdop_srv_operations.html"/>
+   <topic label="Informes de servidor" href="xdop_srv_reporting.html"/>
+   <topic label="Gestión de solicitudes de servidor" href="xdop_srv_request.html"/>
+   <topic label="Informes de política de servicio" href="xdop_srvplcy_reporting.html"/>
+   <topic label="Resumen de política de servicio" href="xdop_runsum_sp.html"/>
+</toc>

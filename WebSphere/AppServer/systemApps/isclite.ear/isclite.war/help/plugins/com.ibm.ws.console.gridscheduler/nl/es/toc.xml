@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Planificador de trabajos" topic="index.html">
+   <topic label="Colección de propiedades personalizadas del planificador de trabajos"
+          href="ae/rgrid_bgs_property_collection.html"/>
+   <topic label="Valores de propiedades personalizadas del planificador de trabajos"
+          href="ae/rgrid_bgs_property_detail.html"/>
+   <topic label="Configuración del planificador de trabajos"
+          href="ae/rgrid_bgs_collection.html"/>
+   <topic label="Puntos finales de trabajos de larga duración de WebSphere"
+          href="ae/rgrid_bgs_endpoints.html"/>
+</toc>

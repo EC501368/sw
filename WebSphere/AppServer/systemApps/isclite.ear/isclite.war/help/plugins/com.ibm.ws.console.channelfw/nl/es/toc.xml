@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Valores de infraestructura de canales" topic="index.html">
+   <topic label="Colección de cadenas de transporte" href="ae/urun_chain.html"/>
+   <topic label="Valores de cadena de transporte" href="ae/urun_chain_type.html"/>
+</toc>

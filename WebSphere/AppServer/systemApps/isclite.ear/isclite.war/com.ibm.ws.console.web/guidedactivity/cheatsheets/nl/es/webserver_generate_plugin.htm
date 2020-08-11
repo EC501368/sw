@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Consejos para propagar los archivos de configuración del plug-in del servidor Web</title>
+    <link rel="stylesheet" href="/ibm/console/com.ibm.ws.console.core.guidedactivity/cheatsheets/nl/was_style_help.css">
+
+</head>
+    <body style="margin:1em">
+    <h3>
+Consejos y sugerencias</h3>
+    <p>
+<h4>Generar un archivo de configuración del plug-in puede llevar su tiempo</h4>
+Volver a generar el archivo de configuración del plug-in para un servidor Web puede tardar en completarse.
+Después de regenerar el archivo de configuración del plug-in, todos los objetos de la célula administrativa utilizan
+sus valores más recientes, a los que puede acceder el servidor Web.<p>
+El proceso de regeneración del plug-in, tanto si se activa manualmente como si se produce de forma automática, requiere
+entre 30 y 60 segundos para completarse cuando el servidor de aplicaciones está en la misma máquina física o nodo que
+el servidor Web. En otros casos, necesita más tiempo.<p>
+El retardo es importante porque determina la rapidez con que la nueva configuración del plug-in entra en vigor.
+Por ejemplo, si añade una nueva vía de acceso de servicio para un servlet y regenera la configuración del plug-in, el
+proceso de regeneración necesita 40 segundos. Después del proceso de regeneración, un usuario podrá acceder al servlet
+mediante la nueva vía de acceso de servicio.
+ 
+ </body>
+</html>

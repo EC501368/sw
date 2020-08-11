@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Integración de servicios web" topic="index.html">
+   <topic label="Correlaciones de puertos preferidas" href="ae/uwbs_preferredport.html"/>
+   <topic label="Proporcionar información de URL de punto final HTTP"
+          href="ae/uwbs_providehttp.html"/>
+   <topic label="Proporcionar información de URL de punto final JMS y EJB"
+          href="ae/uwbs_providejms.html"/>
+   <topic label="Publicar valores de archivos comprimidos WSDL"
+          href="ae/uwbs_publishwsdl.html"/>
+   <topic label="Enlaces del cliente de servicios web" href="ae/uwbs_client.html"/>
+   <topic label="Información del puerto del cliente de servicios web"
+          href="ae/uwbs_portattribute.html"/>
+   <topic label="Ámbito de implementación de los servicios web"
+          href="ae/uwbs_server.html"/>
+</toc>

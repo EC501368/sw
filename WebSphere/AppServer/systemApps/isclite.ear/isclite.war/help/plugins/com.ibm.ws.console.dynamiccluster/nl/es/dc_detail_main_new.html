@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es-es" xml:lang="es-es">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="public" name="security" />
+<meta content="index,follow" name="Robots" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta content="topic" name="DC.Type" />
+<meta name="DC.Title" content="Creación de un clúster dinámico" />
+<meta name="abstract" content="Utilice esta página para crear clústeres dinámicos." />
+<meta name="description" content="Utilice esta página para crear clústeres dinámicos." />
+<meta scheme="URI" name="DC.Relation" content="dc_detail_main.html" />
+<meta scheme="URI" name="DC.Relation" content="dc_collection.html" />
+<meta scheme="URI" name="DC.Relation" content="dc_members.html" />
+<meta scheme="URI" name="DC.Relation" content="dc_member_settings.html" />
+<meta scheme="URI" name="DC.Relation" content="dc_customproperty.html" />
+<meta name="copyright" content="IBM Corporation 2004, 2006" />
+<meta name="DC.Rights.Owner" content="IBM Corporation 2004, 2006" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="DynamicCluster" name="DC.Identifier" />
+<meta content="es-es" name="DC.Language" />
+<!-- All rights reserved. Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link href="/ibm/help/topic/com.ibm.ws.console.core/ibmdita.css" type="text/css" rel="stylesheet" />
+<link href="/ibm/help/topic/com.ibm.ws.console.core/swg_info_common.css" type="text/css" rel="stylesheet" />
+<link href="/ibm/help/topic/com.ibm.ws.console.core/monospace.css" type="text/css" rel="stylesheet" disabled="" />
+<title>Creación de un clúster dinámico</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body id="DynamicCluster"><a name="DynamicCluster"><!-- --></a>
+<h1 class="topictitle1">Creación de un clúster dinámico</h1>
+<div><p>Utilice esta página para crear clústeres dinámicos.</p>
+
+<p>Pulse <strong>Servidores &gt; Clústeres dinámicos &gt; Nuevo</strong> para ver esta página de la consola administrativa. </p>
+
+<p>Es necesario poseer privilegios de configurador para crear clústeres dinámicos. Consulte la sección de referencia en el centro de información para obtener información sobre otros roles administrativos y privilegios. </p>
+
+</div>
+<dl><dt class="dlterm" xml:lang="es-es" id="dynamicclustername"><a name="dynamicclustername"><!-- --></a>Paso 1: Entrar información del clúster dinámico</dt><dd class="ddexpand" xml:lang="es-es" id="dynamicclustername"><a name="dynamicclustername"><!-- --></a><div>
+<dl>
+<dt class="dlterm">Nombre de clúster dinámico
+</dt>
+
+<dd>Especifica un nombre para el clúster dinámico que sea único en la célula. <p>El campo
+de nombre no puede contener los caracteres siguientes: <strong><kbd class="userinput"> #   \  / , :  ;  "  *  ?  &lt;  &gt;  |  =  +  &amp;  %  '</kbd></strong> .
+El nombre definido debe ser exclusivo entre clústeres dinámicos y no puede comenzar por un punto <strong>(<kbd class="userinput">.</kbd>)</strong> o un espacio. Un espacio no genera un error, pero los espacios al principio o al final se eliminan automáticamente. </p>
+</dd>
+
+
+<dt class="dlterm">Correlacionar con un grupo de nodos
+</dt>
+
+<dd>Especifica un grupo de nodos para vincular al clúster dinámico. <p>Este grupo de nodos debe tener al menos un nodo de miembro que esté en la misma versión de producto que el gestor de despliegue. </p>
+<p>Selecciónelo de cualquiera de los grupos de nodos disponibles.
+Si no especifica uno, se selecciona un grupo de nodos por omisión para el clúster dinámico. Un grupo de nodos y un clúster dinámico tienen una relación estrecha. El grupo de nodos es una afiliación de nodos
+definida por el usuario que comparte una propiedad común. Un clúster dinámico es una
+clúster de servidores dentro de un grupo de nodos, cuyos miembros, o instancias de
+servidor, residen en un nodo de un grupo de nodos y son los objetivos de despliegue de
+las aplicaciones.</p>
+</dd>
+
+
+<dt class="dlterm">Preferencia local habilitada</dt>
+
+<dd>Para habilitar o inhabilitar la optimización del direccionamiento con ámbito de nodo, seleccione el recuadro de selección <strong>Preferencia local habilitada</strong>. El valor por omisión es habilitado, que indica que, si es posible, las peticiones de EJB (Enterprise JavaBeans) se direccionan al nodo cliente. Si habilita esta función, el rendimiento mejora porque las peticiones del cliente se envían a enterprise beans locales. </dd>
+
+
+<dt class="dlterm">Crear un dominio de duplicación para este clúster</dt>
+
+<dd>Especifica que se crea un dominio de duplicación para el clúster dinámico.
+El nombre del domino de duplicación se establece en el nombre del clúster dinámico que utiliza este dominio. </dd>
+
+</dl>
+
+</div>
+</dd><dt class="dlterm" xml:lang="es-es" id="step2"><a name="step2"><!-- --></a>Paso 2: Seleccionar una plantilla del clúster dinámico</dt><dd class="ddexpand" xml:lang="es-es" id="step2"><a name="step2"><!-- --></a><div><p>Seleccione una plantilla de servidor de aplicaciones para utilizarla como modelo para los servidores para el nuevo clúster dinámico. Se puede seleccionar una plantilla por omisión, o correlacionar un servidor de aplicaciones que ya exista. </p>
+
+<ul>
+<li>Seleccione <strong>Plantilla de servidor de aplicaciones por omisión</strong> para utilizarla como modelo para los servidores para el clúster dinámico a partir de una plantilla de servidor definida. Seleccione una plantilla de servidor de la lista. </li>
+
+<li>Seleccione <strong>Servidor de aplicaciones existente</strong> para utilizarlo como modelo para los servidores para el clúster dinámico a partir de un servidor de aplicaciones existente. Seleccione un servidor de aplicaciones de la lista. </li>
+
+</ul>
+
+<p>Las plantillas que se muestran corresponden a la plataforma y versión de producto del gestor de despliegue que esté utilizando. </p>
+
+</div>
+</dd><dt class="dlterm" xml:lang="es-es" id="step3"><a name="step3"><!-- --></a>Paso 3: Especificar propiedades específicas del clúster dinámico</dt><dd class="ddexpand" xml:lang="es-es" id="step3"><a name="step3"><!-- --></a><div><p>Especifique estas propiedades para definir el comportamiento del clúster dinámico. </p>
+
+<dl>
+<dt class="dlterm">Número mínimo de instancias de clúster
+</dt>
+
+<dd><p>Especifica el número mínimo de instancias en ejecución para el clúster dinámico.
+Si un valor mínimo es excesivo, es posible que se produzca una
+degradación del rendimiento. </p>
+<ul>
+<li>Seleccione <strong>Detener todas las instancias iniciadas durante periodos de inactividad</strong> para detener las instancias de clúster cuando haya poca actividad en el clúster dinámico
+Escriba el valor de <strong>Tiempo de espera antes de detener instancias</strong>
+en minutos. Esta es la opción por omisión. </li>
+
+<li>Seleccione <strong>Mantener iniciada una instancia todo el tiempo</strong> para mantener una instancia del clúster iniciada todo el tiempo. </li>
+
+<li>Seleccione <strong>Mantener iniciadas varias instancias todo el tiempo</strong> para tener un determinado número de instancias del clúster iniciadas todo el tiempo. Escriba el valor de <strong>Número de instancias</strong> que desee tener iniciadas. </li>
+
+</ul>
+</dd>
+
+
+<dt class="dlterm">Número máximo de instancias de clúster
+</dt>
+
+<dd>Especifica el número máximo de instancias de clúster que se pueden iniciar.<ul>
+<li>Seleccione <strong>Limitar número de instancias que pueden iniciarse</strong> para limitar el número de instancias de clúster. Escriba el máximo de <strong>Número de instancias</strong>. </li>
+
+<li>Seleccione <strong>No limitar el número de instancias que pueden iniciarse</strong> si no desea limitar el número de instancias de clúster que se pueden iniciar. </li>
+
+</ul>
+</dd>
+
+
+<dt class="dlterm">Apilamiento vertical de instancias en el nodo</dt>
+
+<dd>Especifica el número máximo de instancias de clúster que se pueden iniciar.<p>El apilamiento vertical sirve para mejorar situaciones de cuello de botella entre aplicaciones. Seleccione <strong>Permitir iniciar más de una instancia en el mismo nodo</strong> y escriba el valor de <strong>Número de instancias</strong>. El número de instancias es el número de
+servidores de aplicaciones para un clúster que se necesitan para utilizar todas las
+capacidades de un nodo. Además, el número que elija para el apilamiento vertical es
+el número de servidores que se crean automáticamente.
+</p>
+<p>Si se utiliza el apilamiento vertical con nodos de destino que son de una versión del producto más antigua que la versión del gestor de despliegue, se inhabilita la adición de nuevos miembros en el mismo nodo. </p>
+</dd>
+
+
+<dt class="dlterm">Preferencias de aislamiento
+</dt>
+
+<dd>Especifica una preferencia de aislamiento para el clúster dinámico. Una preferencia de aislamiento especifica si se desea que el clúster dinámico esté en ejecución en los mismos nodos que otras instancias de clústeres dinámicos, o si desea que el clúster dinámico sea el único clúster dinámico en ejecución en el nodo.
+<ul>
+<li>Seleccione <strong>No hay requisitos de aislamiento</strong> si las instancias de clúster en este clúster dinámico se pueden ejecutar en el mismo nodo que otras instancias de clústeres dinámicos distintos. Esta es la opción por omisión. </li>
+
+<li>Seleccione <strong>Aislamiento estricto</strong> si instancias de clúster en este clúster dinámico sólo se pueden ejecutar con otras instancias del mismo clúster dinámico en el mismo nodo. </li>
+
+<li>Seleccione <strong>Asociar con un grupo de aislamiento</strong> si la instancia de clúster se puede ejecutar con cualquier otra instancia de un clúster dinámico que esté en el mismo grupo compartido en el mismo nodo. Especifique un valor de <strong>Nombre de grupo de aislamiento</strong>. Escriba un nombre exclusivo para crear un nuevo grupo de aislamiento para este clúster dinámico. Pulse <strong>Examinar</strong> para seleccionar de una lista de grupos de aislamiento existentes.
+Se muestra una topología de los grupos de aislamiento actuales. Pulse sobre un nombre de un grupo de aislamiento para seleccionarlo. </li>
+
+</ul>
+</dd>
+
+</dl>
+
+</div>
+</dd><dt class="dlterm" xml:lang="es-es" id="step4confirm"><a name="step4confirm"><!-- --></a>Paso 4: Confirmar un nuevo clúster dinámico</dt><dd class="ddexpand" xml:lang="es-es" id="step4confirm"><a name="step4confirm"><!-- --></a><div><p>Un resumen de las acciones realizadas muestra los cambios para la creación del clúster dinámico. Pulse <strong>Finalizar</strong> para crear el clúster dinámico. </p>
+</div>
+</dd></dl>
+<br /><br /><hr align="left" /><div>
+<div class="relinfo"><strong>Información relacionada</strong><br />
+<div><a class="field-help" href="dc_detail_main.html">Valores de clúster dinámico</a></div>
+<div><a class="field-help" href="dc_collection.html">Colección de clústeres dinámicos</a></div>
+<div><a class="field-help" href="dc_members.html">Colección de miembros de clúster dinámico </a></div>
+<div><a class="field-help" href="dc_member_settings.html">Valores de miembros de un clúster dinámico</a></div>
+<div><a class="field-help" href="dc_customproperty.html">Propiedades personalizadas del clúster dinámico</a></div>
+</div>
+</div>
+<br /><span class="stealth">dc_detail_main_new</span></body>
+</html>

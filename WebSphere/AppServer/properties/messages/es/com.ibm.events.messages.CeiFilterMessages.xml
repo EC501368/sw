@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!--
+******************************************************************************
+* Translation Notes:
+*
+* To translate this XML file, first change the xml:lang variable
+* in TMSSource to the correct locale for the translation.  Then follow
+* these simple rules.
+*
+* #PCDATA:
+*
+* When translating XML, any text between <Tag> and </Tag> entries
+* should be translated.  For example, "File not found" in the following
+* phrase:
+*
+* <MsgText>File not found</MsgText>... 
+* 
+* The only exception to this rule is the Text between <Copyright> and 
+* </Copyright> tags.
+* 
+* Attributes:
+*
+* Verbage in attributes should not be translated.  For example, the "don't
+* translate me" phrase in the following should not be changed:
+*
+* <MsgText terseText="don't translate me">File not found</MsgText>... 
+*
+* Comments:
+*
+* Verbage in comments should not be translated.  This note is an example
+* of a comment.  End-users will never see it.
+*
+*****************************************************************************
+-->
+<TMSSource name="EmitterMessages" tmsVersion="1.0" xml:lang="es">
+
+
+<Copyright>
+Licensed Materials - Property of IBM (C)Copyright IBM Corporation 2003.
+All Rights Reserved US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</Copyright>
+
+<!--
+  *********************************************************************
+  * The above copyright notice applies to this XML file as well
+  *  as any other source/text files generated from this file.
+  *********************************************************************
+-->
+
+<!-- ============================================================== -->
+    <!-- Message creation/maintenance process:                      -->
+    <!--                                                            -->
+    <!-- In a comment above each message, include                   -->
+    <!-- the message number and one of these four status values:    -->
+    <!--                                                            -->
+    <!-- MSG_WORKING: Development is still working on the message.  -->
+    <!--              It is not ready for review by ID.             -->
+    <!--                                                            -->
+    <!-- MSG_REVIEW_ID: Development has completed work on the       -->
+    <!--                message. It is ready to be reviewed by ID.  -->
+    <!--                                                            -->
+    <!-- MSG_REVIEW_DEV: ID has updated the message.                -->
+    <!--                 It is ready to be reviewed by Development. -->
+    <!--                                                            -->
+    <!-- MSG_COMPLETE: The message has been reviewed by all parties -->
+    <!--               and is complete.                             -->
+    <!--                                                            -->
+    <!-- Also, if Development must update a message that is in the  -->
+    <!-- MSG_COMPLETE state, Development must open a defect for ID  -->
+    <!-- to review the message again.                               -->
+<!-- ============================================================== --> 
+
+
+
+<!-- ================================================================= -->
+    <!--  CEIEF0001E    MSG_COMPLETE                                                                           -->
+<!-- ================================================================= -->
+  <Message ID="CEIEF0001E" prefix="yes"> 
+	 <MsgText pgmKey="CEIEF0001" varFormat="Java">
+	 La fábrica de filtros predeterminada no puede crear ninguna instancia de filtro.</MsgText> 
+	 <Explanation> 
+		<p>Este error indica un error interno.</p> 
+	 </Explanation> 
+  <AdminResponse><p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p></AdminResponse></Message>
+
+<!-- ================================================================= -->
+    <!--  CEIEF0002E    MSG_COMPLETE                                                                           -->
+<!-- ================================================================= -->
+  <Message ID="CEIEF0002E" prefix="yes"> 
+	 <MsgText pgmKey="CEIEF0002" varFormat="Java">El filtro no ha podido procesar el suceso.<br/>Suceso: <Variable formatSpec="{0}">event</Variable><br/>Filtro: <Variable formatSpec="{1}">filter</Variable></MsgText> 
+	 <Explanation> 
+		<p>Consulte el mensaje.</p> 
+	 </Explanation> 
+  <AdminResponse><p>Asegúrese de que la sintaxis del filtro sea válida y de que todos los campos especificados estén definidos. Consulte el mensaje de excepción para obtener información adicional.</p></AdminResponse></Message>
+  
+<!-- ================================================================= -->
+    <!--  CEIEF0003E    MSG_COMPLETE                                                                           -->
+<!-- ================================================================= -->
+  <Message ID="CEIEF0003E" prefix="yes"> 
+	 <MsgText pgmKey="CEIEF0003" varFormat="Java">No se ha podido eliminar una regla de filto del conector de filtro predeterminado porque no se ha encontrado la regla de filtro <Variable formatSpec="{0}">rule_ID</Variable>. </MsgText> 
+	 <Explanation> 
+		<p>Este error indica un problema con el emisor.</p> 
+	 </Explanation> 
+  <AdminResponse><p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p></AdminResponse></Message>  
+
+<!-- ================================================================= -->
+    <!--  CEIEF0004E    MSG_COMPLETE                                                                           -->
+<!-- ================================================================= -->
+  <Message ID="CEIEF0004E" prefix="yes"> 
+	 <MsgText pgmKey="CEIEF0004" varFormat="Java">No se ha podido instalar la regla de filtro <Variable formatSpec="{0}">rule_ID</Variable> en el conector de filtro predeterminado.</MsgText> 
+	 <Explanation> 
+		<p>Consulte el mensaje.</p> 
+	 </Explanation> 
+  <AdminResponse><p>Asegúrese de que la especificación de filtro para el filtro predeterminado sea válida.</p></AdminResponse></Message>  
+ 
+</TMSSource>
+
+

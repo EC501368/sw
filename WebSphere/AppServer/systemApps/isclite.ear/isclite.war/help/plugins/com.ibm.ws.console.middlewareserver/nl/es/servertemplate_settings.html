@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores de plantilla de servidor de middleware" />
+<meta name="abstract" content="Esta página sirve para configurar los valores de una nueva plantilla de servidor que haya creado. Los tipos de servidor que existen para crear una plantilla incluyen a servidor de aplicaciones, genérico, direccionador On Demand, proxy o servidor web. También se pueden crear o añadir plantillas de servidor para un servidor de middleware que ya exista en su entorno como, por ejemplo, PHP, Apache Tomcat, BEA WebLogic Server, JBoss, servidor HTTP personalizado, servidor de perfiles Liberty, WebSphere Application Server Community Edition o External WebSphere Application Server." />
+<meta name="description" content="Esta página sirve para configurar los valores de una nueva plantilla de servidor que haya creado. Los tipos de servidor que existen para crear una plantilla incluyen a servidor de aplicaciones, genérico, direccionador On Demand, proxy o servidor web. También se pueden crear o añadir plantillas de servidor para un servidor de middleware que ya exista en su entorno como, por ejemplo, PHP, Apache Tomcat, BEA WebLogic Server, JBoss, servidor HTTP personalizado, servidor de perfiles Liberty, WebSphere Application Server Community Edition o External WebSphere Application Server." />
+<meta name="DC.Relation" scheme="URI" content="mws_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_other_detail.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_viewfile.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_editor.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_logsrv.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_configsrv.html" />
+<meta name="DC.Relation" scheme="URI" content="servertemplate_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_srvoperations.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_srvoperations_detail.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="servertemplate_settings" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores de plantilla de servidor de middleware</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="servertemplate_settings">
+<h1 class="title topictitle1">Valores de plantilla de servidor de middleware</h1>
+<div class="body"><p class="shortdesc">Esta página sirve para configurar los valores de una nueva plantilla de servidor que haya creado. Los tipos de servidor que existen para crear una plantilla incluyen a servidor de aplicaciones, genérico, direccionador On Demand, proxy o servidor web.
+También se pueden crear o añadir plantillas de servidor para un servidor de middleware que ya exista en su entorno como, por ejemplo, PHP, Apache Tomcat, BEA WebLogic Server, JBoss, servidor HTTP personalizado, servidor de perfiles Liberty, WebSphere® Application Server Community Edition o External WebSphere Application Server.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Todos los servidores</span> &gt; <span class="ph uicontrol">Plantillas</span> &gt; <span class="ph uicontrol">Nueva</span></span> o seleccione <span class="ph menucascade"><span class="ph uicontrol">Servidores</span></span>,
+seleccione un tipo de servidor middleware específico en <span class="ph uicontrol">Tipos de servidor</span> y pulse <span class="ph menucascade"><span class="ph uicontrol">Plantillas</span> &gt; <span class="ph uicontrol">Nueva</span></span>.</p>
+<p class="p">Si desea editar una plantilla del servidor PHP, consulte la sección Configuración externa para obtener más información.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="server_type"><h2 class="title topictitle2">Paso 1: Seleccionar un servidor existente</h2>
+<div class="body"><p class="shortdesc">Seleccione un servidor que ya exista a partir del cual cree una plantilla de servidor.</p>
+<p class="p">Habilite el recuadro de selección <span class="ph uicontrol">Seleccionar</span> y pulse <span class="ph uicontrol">Aceptar</span>.
+Si pulsa <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Todos los servidores</span> &gt; <span class="ph uicontrol">Plantillas</span> &gt; <span class="ph uicontrol">Nueva</span></span>, deberá seleccionar en primer lugar el tipo de servidor en la lista.
+En el caso de servidores de WebSphere Application Server Community
+Edition, se puede seleccionar de forma opcional la ubicación del entorno de tiempo de ejecución del servidor que se utiliza para crear el servidor.</p>
+<div class="p">Los tipos de servidor que hay disponibles para elegir son:<ul class="ul"><li class="li">WebSphere Application Server</li>
+<li class="li">Servidor de perfiles Liberty</li>
+<li class="li">servidor proxy de WebSphere</li>
+<li class="li">Direccionador On Demand</li>
+<li class="li">Servidor PHP</li>
+<li class="li">Servidor WebSphere Application Server Community Edition</li>
+<li class="li">Servidor genérico</li>
+<li class="li">Servidor WebSphere MQ</li>
+<li class="li">Servidor web</li>
+<li class="li">Servidor Apache Tomcat</li>
+<li class="li">Servidor BEA WebLogic</li>
+<li class="li">Servidor JBoss</li>
+<li class="li">Servidor de aplicaciones de WebSphere externo</li>
+<li class="li">Servidor Apache</li>
+<li class="li">Servidor HTTP personalizado</li>
+</ul>
+</div>
+<p class="p">Pulse <span class="ph uicontrol">Aceptar</span> para continuar definiendo valores o pulse <span class="ph uicontrol">Cancelar</span>.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="custom_props"><h2 class="title topictitle2">Paso 2: Especificar propiedades específicas de la plantilla</h2>
+<div class="body"><p class="shortdesc">Especifique el nombre y una descripción de la plantilla de servidor.</p>
+<p class="p">Pulse <span class="ph uicontrol">Aceptar</span> después de escribir el nombre y una descripción para volver a la página principal que muestra el nombre, la plataforma, la versión y la descripción de la plantilla de servidor que acaba de crear. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="save"><h2 class="title topictitle2">Paso 3: Guardar o descartar los cambios</h2>
+<div class="body"><p class="p">Seleccione <span class="ph uicontrol">Guardar</span> para guardar los cambios directamente en la configuración maestra, o bien pulse <span class="ph uicontrol">Revisar</span> para ver un resumen de los cambios antes de guardarlos o descartarlos.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="mws_collection.html" title="Utilice esta página para ver y gestionar servidores de middleware. Los servidores de middleware son servidores genéricos del nivel de middleware que alojan aplicaciones o sus datos.">Colección de servidores de middleware</a></div>
+<div><a class="link help" href="mws_detail_main_new.html" title="Esta página sirve para crear un servidor de middleware. Los servidores de middleware son servidores del nivel de middleware que alojan aplicaciones o sus datos.">Creación de un servidor de middleware</a></div>
+<div><a class="link help" href="mws_other_detail.html" title="Esta página sirve para ver la configuración de los servidores de middleware.">Valores de detalle de servidor de middleware</a></div>
+<div><a class="link help" href="mws_detail_viewfile.html" title="Esta página sirve para ver los archivos de anotaciones cronológicas de los servidores de middleware.">Visor de anotaciones cronológicas</a></div>
+<div><a class="link help" href="mws_detail_editor.html" title="Esta página sirve para editar un archivo de configuración para un servidor de middleware.">Configuración externa</a></div>
+<div><a class="link help" href="mws_detail_logsrv.html" title="Esta página sirve para acceder a los archivos de anotaciones cronológicas de los servidores de middleware.">Servicio de anotaciones cronológicas externas</a></div>
+<div><a class="link help" href="mws_detail_configsrv.html" title="Esta página sirve para habilitar o inhabilitar archivos de configuración asociados con un servidor de middleware.">Servicio de configuración externo</a></div>
+<div><a class="link help" href="servertemplate_collection.html" title="Esta página sirve para crear una nueva plantilla de servidor. Las plantillas de servidor definen valores de configuración al crear servidores de middleware.">Colección de plantillas de servidor de middleware</a></div>
+<div><a class="link help" href="mws_srvoperations.html" title="Esta página permite añadir, editar y suprimir operaciones de servidor.">Operaciones de servidor</a></div>
+<div><a class="link help" href="mws_srvoperations_detail.html" title="Esta página sirve para configurar operaciones para servidores de middleware. Puede utilizar las operaciones de servidor para ejecutar archivos ejecutables en los servidores de middleware desde la consola administrativa.">Valores de operaciones de servidor de middleware</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: servertemplate_settings.html</span></body>
+</html>

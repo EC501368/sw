@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2012" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2012" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores del controlador de ubicación de aplicaciones" />
+<meta name="abstract" content="Utilice esta página para definir los valores que controlan la ubicación de las aplicaciones. Se puede habilitar el controlador de ubicación autónomo, definir con qué frecuencia se darán cambios de ubicación y controlar el comportamiento del controlador de ubicación cuando opere en la modalidad supervisada." />
+<meta name="description" content="Utilice esta página para definir los valores que controlan la ubicación de las aplicaciones. Se puede habilitar el controlador de ubicación autónomo, definir con qué frecuencia se darán cambios de ubicación y controlar el comportamiento del controlador de ubicación cuando opere en la modalidad supervisada." />
+<meta name="DC.Relation" scheme="URI" content="placement_custom.html" />
+<meta name="DC.Relation" scheme="URI" content="arfm.html" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="apc" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores del controlador de ubicación de aplicaciones</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="apc">
+<h1 class="title topictitle1">Valores del controlador de ubicación de aplicaciones</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para definir los valores que controlan la ubicación de las aplicaciones. Se puede habilitar el controlador de ubicación autónomo, definir con qué frecuencia se darán cambios de ubicación y controlar el comportamiento del controlador de ubicación cuando opere en la modalidad supervisada.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Gestores autónomos</span> &gt; <span class="ph uicontrol">Controlador de ubicación de aplicaciones</span></span>.</p>
+<p class="p">Esta página describe los campos de la pestaña Configuración y de la pestaña Tiempo de ejecución. La pestaña Configuración sirve para configurar los valores que serán persistentes.
+La pestaña Tiempo de ejecución permite modificar parámetros que están activos mientras lo está el controlador de ubicación de aplicaciones. Si se inhabilita y a continuación se vuelve a habilitar el controlador de ubicación de aplicaciones, se utilizan los valores de configuración en lugar de los valores configurados en la pestaña Tiempo de ejecución.</p>
+<p class="p">Según sea el rol administrativo, existen privilegios específicos permitidos a la hora de configurar el controlador de ubicación autónomo.  En la siguiente lista se muestran los roles administrativos y los privilegios para configurar el controlador de ubicación autónomo:</p>
+<dl class="dl"><dt class="dt dlterm">Supervisor</dt>
+<dd class="dd">Ver la información.</dd>
+<dt class="dt dlterm">Operador</dt>
+<dd class="dd">Ver información en la pestaña de configuración. Cambiar los valores de la pestaña de tiempo de ejecución.</dd>
+<dt class="dt dlterm">Configurador</dt>
+<dd class="dd">Cambiar la configuración pero no los valores de tiempo de ejecución.</dd>
+<dt class="dt dlterm">Administrador</dt>
+<dd class="dd">Tiene todos los privilegios.</dd>
+</dl>
+<p class="p"><strong class="ph b">Habilitar seguridad</strong>. Cuando la seguridad está habilitada, algunos campos no se pueden editar sin la autorización de seguridad adecuada.</p>
+</div>
+<div class="topic nested1 help" xml:lang="es-es" id="app_placement_controller_enable"><h2 class="title topictitle2">Habilitar</h2>
+<div class="body"><p class="shortdesc">Habilita e inhabilita el controlador de ubicación de aplicaciones.</p>
+<p class="p">Si se inhabilita el controlador de ubicación de aplicaciones, inhabilita de forma efectiva todas las operaciones autónomas de los clústeres dinámicos. Una vez está inhabilitada la ubicación de aplicaciones, no se producirán cambios dinámicos en relación al tamaño y ubicación de aplicaciones en el clúster dinámico. Esta acción equivale a convertir todos los clústeres dinámicos en clústeres estáticos.</p>
+</div>
+</div>
+<div class="topic nested1 help" xml:lang="es-es" id="app_placement_controller_approval_timeout"><h2 class="title topictitle2">Tiempo de espera de aprobación</h2>
+<div class="body"><p class="shortdesc">Controla cuánto tiempo está una tarea de tiempo ejecución en la cola esperando la aprobación o desaprobación antes de que dicha tarea caduque de forma automática.</p>
+<p class="p">Cuando un entorno operativo se configura para que se ejecute en una modalidad supervisada, el controlador de ubicación de aplicaciones crea tareas, pero espera la aprobación antes de realizar cualquier cambio. El controlador de ubicación de aplicaciones trata a las tareas de tiempo de ejecución que han excedido su tiempo de espera como tareas que el usuario ha rechazado. Los valores de tiempo aceptable están entre <samp class="ph codeph">1</samp> y <samp class="ph codeph">60</samp> minutos.</p>
+<p class="p">Para ver todas las tareas de tiempo de ejecución que ha creado la modalidad operativa supervisada, pulse <span class="ph menucascade"><span class="ph uicontrol">Administración del sistema</span> &gt; <span class="ph uicontrol">Gestión de tareas</span> &gt; <span class="ph uicontrol">Tareas de tiempo de ejecución</span></span>. Defina la notificación de correo electrónico si no desea supervisar la cola de tareas de tiempo de ejecución. Para crear un perfil de notificación de correo electrónico, pulse <span class="ph menucascade"><span class="ph uicontrol">Administración del sistema</span> &gt; <span class="ph uicontrol">Gestión de tareas</span> &gt; <span class="ph uicontrol">Notificaciones</span></span>.</p>
+</div>
+</div>
+<div class="topic nested1 help" xml:lang="es-es" id="app_placement_controller_server_op_timeout"><h2 class="title topictitle2">Tiempo de espera de operación del servidor</h2>
+<div class="body"><p class="shortdesc">Especifica el tiempo que espera el controlador de ubicación de aplicaciones para que se complete una operación de iniciar o detener antes que se considere errónea.</p>
+<p class="p">Los valores de tiempo aceptables están entre <samp class="ph codeph">1</samp> y <samp class="ph codeph">60 minutos</samp>. Establezca este valor para predecir el peor caso en relación al tiempo que se necesita para iniciar o detener un servidor.</p>
+</div>
+</div>
+<div class="topic nested1 help" xml:lang="es-es" id="app_placement_controller_minimum_time"><h2 class="title topictitle2">Tiempo mínimo entre cambios de ubicación</h2>
+<div class="body"><p class="shortdesc">Especifica el tiempo que espera el controlador de ubicación de aplicaciones antes de iniciar un nuevo lote de cambios.</p>
+<p class="p">En algunos casos, el controlador de ubicación de aplicaciones espera a que se hayan completado sus últimos cambios o a que se exceda un tiempo de espera. Los valores aceptables están dentro del rango de <samp class="ph codeph">1 minuto</samp> a <samp class="ph codeph">24 horas</samp>. Al establecer este valor, considere la sobrecarga que se asocia con el inicio y la detención de los servidores. Se pueden tardar varios minutos en iniciar o detener servidores e introducir una carga adicional a los nodos.</p>
+<p class="p">La configuración de los controladores de ubicación para reajustar la ubicación de las aplicaciones causa muy a menudo una sobrecarga añadida en la que se pierde la ganancia de rendimiento que se habría ganado originalmente reajustando el tamaño de los clústeres dinámicos. Por ejemplo, si se tarda <samp class="ph codeph">1</samp> minuto en iniciar un servidor y el valor para el tiempo mínimo entre cambios de ubicación es de <samp class="ph codeph">20</samp> minutos, los cambios de ubicación afectan al rendimiento alrededor del 5%.</p>
+<p class="p">Hay que definir el parámetro para que sea al menos de 20 a 30 veces mayor que el tiempo necesario para iniciar un servidor. Un valor mayor de varias horas evita que los cambios de ubicación de aplicaciones se produzcan más de una vez cada día.</p>
+</div>
+</div>
+<div class="topic nested1 help" xml:lang="es-es" id="app_placement_controller_save_repository"><h2 class="title topictitle2">Guardar en el repositorio</h2>
+<div class="body"><p class="shortdesc">Los campos en la pestaña Tiempo de ejecución son idénticos a los de la pestaña Configuración.</p>
+<p class="p">Pulse el recuadro de selección <span class="ph uicontrol">Guardar en el depósito</span> para realizar los cambios en la pestaña Tiempo de ejecución y para guardar los valores en la configuración.
+De lo contrario, los cambios que se realizan en la pestaña Tiempo de ejecución no son persistentes, y únicamente existen mientras está activo el controlador de ubicación de aplicaciones.</p>
+<p class="p">Pulse <span class="ph uicontrol">Aplicar</span> o <span class="ph uicontrol">Aceptar</span> cuando haya realizado todos los cambios.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="placement_custom.html" title="Utilice esta página para visualizar y gestionar una lista de parejas de datos arbitrarias de nombre-valor, donde el nombre es una clave de propiedad y el valor es un valor de serie de texto que se puede utilizar para establecer las propiedades internas de configuración del sistema. El definir una nueva propiedad permite configurar un valor más allá de lo que está disponible en la consola administrativa.">Propiedades personalizadas del controlador de ubicación de aplicaciones</a></div>
+<div><a class="link help" href="arfm.html" title="Utilice este panel para configurar el gestor de flujo de solicitudes autónomo (ARFM). El gestor de flujo de solicitudes autónomo (ARFM) gestiona los mensajes entrantes para las aplicaciones y determina si los servidores de middleware pueden darles servicio y cuándo pueden hacerlo. Estas acciones de gestión tienen lugar en direccionadores On Demand para el tráfico SIP (Session Initiation Protocol) y HTTP y en los servidores de aplicaciones para los mensajes JMS (Java Message Service) e IIOP (Inter-ORB Protocol).">Gestor de flujo de solicitudes autónomo</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: apc.html</span></body>
+</html>

@@ -1,0 +1,30 @@
+2019.11.14 00:13:07.752 ----- PROGRAM DEBUG8 jutil PDCmdParser PDCmdParser parse() main Entering parse method with inputs: ([]argv=[Ljava.lang.String;@d580f572) and a hashtable for it to fill
+
+2019.11.14 00:13:07.756 ----- PROGRAM DEBUG8 jutil PDCmdParser PDCmdParser parse() main Adding default command line options (help, operations, usage, and response file) to Hashtable
+
+2019.11.14 00:13:07.756 ----- PROGRAM DEBUG8 jutil PDCmdParser PDCmdParser parse() main Go through argument list and check to see if they specified help, operations, or usage.
+
+2019.11.14 00:13:07.756 ----- PROGRAM DEBUG8 jutil PDCmdParser PDCmdParser parse() main Check to see if response file was listed.
+
+2019.11.14 00:13:07.756 ----- PROGRAM DEBUG8 jutil PDCmdParser PDCmdParser parse() main Exiting parse() method.
+
+2019.11.14 00:13:07.759 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg config() main Entering method: config() with arguments (jvmHome=/jennex/WebSphere/AppServer/java/jre) (pdHome=/jennex/WebSphere/AppServer/tivoli/tam/PolicyDirector)
+
+2019.11.14 00:13:07.759 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg config() main Retrieving files and directories using PDPath.getPath()
+
+2019.11.14 00:13:07.761 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg config() main Creating and editing pdjrte_paths file.
+
+2019.11.14 00:13:07.761 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg config() main The file, /jennex/WebSphere/AppServer/tivoli/tam/PolicyDirector/etc/pdjrte_paths, does not exist.  Creating new one.
+
+2019.11.14 00:13:07.762 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg config() main Creating the PD.properties file.
+
+2019.11.14 00:13:07.762 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg config() main The file, /jennex/WebSphere/AppServer/tivoli/tam/PolicyDirector/PD.properties, exists.  Renaming it to /jennex/WebSphere/AppServer/tivoli/tam/PolicyDirector/PD.properties.old and recreating.
+
+2019.11.14 00:13:07.771 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg config() main Copying /jennex/WebSphere/AppServer/tivoli/tam/PolicyDirector/etc/PDJLog.properties.template to /jennex/WebSphere/AppServer/tivoli/tam/PolicyDirector/PDJLog.properties.
+
+2019.11.14 00:13:07.773 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg config() main Exiting method.
+
+2019.11.14 00:13:07.774 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg isJvmPathListed() main The file, {0}, exists.  Checking to see if this JRE is configured.
+
+2019.11.14 00:13:07.776 ----- PROGRAM NOTICE bcf pdjrte tracing PDJrteCfg config() main Adding /jennex/WebSphere/AppServer/java/jre to pdjrte_paths file.
+

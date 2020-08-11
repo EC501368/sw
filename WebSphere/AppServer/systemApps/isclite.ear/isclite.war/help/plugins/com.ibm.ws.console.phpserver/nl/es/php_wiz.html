@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Creación de un nuevo servidor PHP" />
+<meta name="abstract" content="Esta página sirve para crear servidores PHP (PHP Hypertext Preprocessor). Los servidores PHP están definidos como un servidor Apache con el módulo mod_php. La configuración de servidores PHP permite gestionar aplicaciones PHP en el mismo entorno administrativo que las aplicaciones Java EE (Java Platform, Enterprise Edition)." />
+<meta name="description" content="Esta página sirve para crear servidores PHP (PHP Hypertext Preprocessor). Los servidores PHP están definidos como un servidor Apache con el módulo mod_php. La configuración de servidores PHP permite gestionar aplicaciones PHP en el mismo entorno administrativo que las aplicaciones Java EE (Java Platform, Enterprise Edition)." />
+<meta name="copyright" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="php_wiz" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Creación de un nuevo servidor PHP</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="php_wiz">
+<h1 class="title topictitle1">Creación de un nuevo servidor PHP</h1>
+<div class="body"><p class="shortdesc">Esta página sirve para crear servidores PHP (PHP Hypertext Preprocessor). Los servidores PHP están definidos como un servidor Apache con el módulo mod_php. La configuración de servidores PHP permite gestionar aplicaciones PHP en el mismo entorno administrativo que las aplicaciones Java EE (Java Platform, Enterprise Edition).</p>
+<div class="p">Puede acceder a esta página de la consola administrativa de
+varias formas: <ul class="ul"><li class="li">Pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Todos los servidores</span> &gt; <span class="ph uicontrol">Nuevo</span></span>. Seleccione <span class="ph uicontrol">Crear una nueva instancia de servidor</span> y elija el tipo <span class="ph uicontrol">Servidor PHP</span>.</li>
+<li class="li">Pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores
+</span> &gt; <span class="ph uicontrol">Servidor nuevo</span></span>. Seleccione <span class="ph uicontrol">Crear una nueva instancia de servidor</span> y elija el tipo <span class="ph uicontrol">Servidor PHP</span>.</li>
+<li class="li">Pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidores</span> &gt; <span class="ph uicontrol">Servidores PHP</span> &gt; <span class="ph uicontrol">Nuevo</span></span>. </li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="step1selectanode"><h2 class="title topictitle2">Paso 1: Seleccionar un nodo</h2>
+<div class="body"><p class="shortdesc"></p>
+<dl class="dl"><dt class="dt dlterm">Seleccione un nodo.</dt>
+<dd class="dd">Elija el nodo en que desee ejecutar el servidor PHP. </dd>
+</dl>
+<dl class="dl"><dt class="dt dlterm">Nombre de servidor</dt>
+<dd class="dd">Especifica un nombre para el servidor PHP que es exclusivo en el nodo.<p class="p">El campo
+de nombre no puede contener los caracteres siguientes: <strong class="ph b"><kbd class="ph userinput"> #   \  / , :  ;  "  *  ?  &lt;  &gt;  |  =  +  &amp;  %  '</kbd></strong> .
+El nombre definido debe ser exclusivo entre grupos de servidores y no puede comenzar por un punto <strong class="ph b">(<kbd class="ph userinput">.</kbd>)</strong> ni por un espacio. Un espacio no genera un error, pero los espacios al principio o al final se eliminan automáticamente. </p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="step2selectanapacheruntime"><h2 class="title topictitle2">Paso 2: Seleccionar un entorno de ejecución Apache</h2>
+<div class="body"><p class="shortdesc">Elija un entorno de tiempo ejecución Apache para su servidor PHP.</p>
+<p class="p">La página muestra los entornos de tiempo de ejecución Apache válidos en el nodo seleccionado, incluidas la versión y la vía de acceso de instalación.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="step3selectaphpruntime"><h2 class="title topictitle2">Paso 3: Seleccionar un entorno de tiempo de ejecución PHP</h2>
+<div class="body"><p class="shortdesc">Elija una versión de entorno de tiempo ejecución PHP para su servidor PHP.</p>
+<p class="p">La página muestra los entornos de tiempo de ejecución PHP válidos en el nodo seleccionado, incluidas la versión y la vía de acceso de instalación.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="step4selectaphptemplate"><h2 class="title topictitle2">Paso 4: Seleccionar una plantilla PHP</h2>
+<div class="body"><p class="shortdesc">Seleccione una plantilla de servidor para utilizar como modelo para el nuevo servidor PHP. Se puede seleccionar una plantilla, o correlacionarlo un servidor que ya exista.</p>
+<ul class="ul"><li class="li">    Seleccione <span class="ph uicontrol">Crear el servidor
+PHP utilizando una plantilla de servidor PHP</span> para crear el servidor PHP a partir
+de una plantilla de servidor PHP definida. Seleccione una plantilla de servidor de la lista.</li>
+<li class="li">Seleccione <span class="ph uicontrol">Crear el servidor PHP utilizando un
+servidor PHP existente</span> para crear el servidor PHP después de un servidor PHP
+existente.
+Seleccione un servidor de la lista.</li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="step5confirmnewphpserver"><h2 class="title topictitle2">Paso 5: Confirmar nuevo servidor PHP</h2>
+<div class="body"><p class="shortdesc">Muestra un resumen de las acciones para crear el servidor PHP.
+Pulse <span class="ph uicontrol">Finalizar</span> para crear el servidor PHP. </p>
+</div>
+</div>
+<div class="related-links">
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: php_wiz.html</span></body>
+</html>

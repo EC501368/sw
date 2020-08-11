@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores de aplicación de empresa" />
+<meta name="abstract" content="Utilice esta página para configurar una aplicación de empresa. " />
+<meta name="description" content="Utilice esta página para configurar una aplicación de empresa. " />
+<meta name="DC.Relation" scheme="URI" content="udat_nestjcaconfac.dita" />
+<meta name="DC.Relation" scheme="URI" content="uejb_rimod.dita" />
+<meta name="DC.Relation" scheme="URI" content="ucws_rlibref.dita" />
+<meta name="DC.Relation" scheme="URI" content="uprs_rsession_manager.dita" />
+<meta name="DC.Relation" scheme="URI" content="urun_rtargetmap.dita" />
+<meta name="DC.Relation" scheme="URI" content="ucws_rvars.dita" />
+<meta name="DC.Relation" scheme="URI" content="crun_classload.dita" />
+<meta name="DC.Relation" scheme="URI" content="crun_entapp.dita" />
+<meta name="DC.Relation" scheme="URI" content="crun_app_moduleversion.dita" />
+<meta name="DC.Relation" scheme="URI" content="rcfg_objectnames.dita" />
+<meta name="DC.Relation" scheme="URI" content="trun_appl.dita" />
+<meta name="copyright" content="IBM Corporation 2005" type="primary" />
+<meta name="DC.Rights.Owner" content="IBM Corporation 2005" type="primary" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="urun_rapp_inst" />
+<meta name="DC.Language" content="es-es" />
+<!-- All rights reserved. Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link href="../was_style_help.css" type="text/css" rel="stylesheet" />
+<title>Valores de aplicación de empresa</title>
+</head>
+<body class="field-help" id="urun_rapp_inst"><a name="urun_rapp_inst"><!-- --></a>
+
+<h1 class="topictitle1">Valores de aplicación de empresa</h1>
+<div><p>Utilice esta página para configurar una aplicación de empresa. </p>
+<p>Para ver esta página de la consola administrativa, pulse <b>Aplicaciones &gt;
+Aplicaciones de empresa &gt; </b><i>nombre_aplicación</i>.</p>
+</div>
+<div><p><b class="relconceptshd">Conceptos relacionados</b><br />
+<a href="crun_classload.html" title="">crun_classload.html</a><br />
+<a href="crun_entapp.html" title="">crun_entapp.html</a><br />
+<a href="crun_app_moduleversion.html" title="">crun_app_moduleversion.html</a><br />
+</p>
+<p><b class="reltaskshd">Tareas relacionadas</b><br />
+<a href="trun_appl.html" title="">trun_appl.html</a><br />
+</p>
+<p><b class="relrefhd">Referencia relacionada</b><br />
+<a class="help" href="udat_nestjcaconfac.html" title="">udat_nestjcaconfac.html</a><br />
+<a class="help" href="uejb_rimod.html" title="">uejb_rimod.html</a><br />
+<a class="help" href="ucws_rlibref.html" title="">ucws_rlibref.html</a><br />
+<a href="uprs_rsession_manager.html" title="">uprs_rsession_manager.html</a><br />
+<a class="help" href="urun_rtargetmap.html" title="">urun_rtargetmap.html</a><br />
+<a href="ucws_rvars.html" title="">ucws_rvars.html</a><br />
+<a href="rcfg_objectnames.html" title="">rcfg_objectnames.html</a><br />
+</p>
+</div><div class="field-help" id="ApplicationDeployment_name_description"><a name="ApplicationDeployment_name_description"><!-- --></a><h2 class="topictitle2">Nombre</h2>
+<div><p>Especifica un nombre lógico para la aplicación. Un nombre de aplicación debe
+ser único dentro de una celda y no puede contener ningún carácter no permitido. </p>
+<p>Un nombre de aplicación no puede empezar por un punto (<tt>.</tt>), no puede contener
+espacios iniciales ni finales, y no puede contener los caracteres siguientes: </p>
+
+<div class="skipspace"><table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all"><thead align="left"><tr><th colspan="3" valign="top" id="d0e72">Caracteres no permitidos</th>
+</tr>
+</thead>
+<tbody><tr><td valign="top" headers="d0e72 "><b>/</b>   barra inclinada</td>
+<td valign="top" headers="d0e72 "><b>$</b>    signo del dólar</td>
+<td valign="top" headers="d0e72 "><b>'</b>    comilla simple</td>
+</tr>
+<tr><td valign="top" headers="d0e72 "><b>\</b>   barra invertida</td>
+<td valign="top" headers="d0e72 "><b>=</b>    signo igual</td>
+<td valign="top" headers="d0e72 "><b>"</b>   comilla doble</td>
+</tr>
+<tr><td valign="top" headers="d0e72 "><b>*</b>  asterisco</td>
+<td valign="top" headers="d0e72 "><b>%</b>  porcentaje</td>
+<td valign="top" headers="d0e72 "><b>|</b>     barra vertical</td>
+</tr>
+<tr><td valign="top" headers="d0e72 "><b>,</b>   coma</td>
+<td valign="top" headers="d0e72 "><b>+</b>    sibno más</td>
+<td valign="top" headers="d0e72 "><b>&lt;</b>   corchete angular izquierdo</td>
+</tr>
+<tr><td valign="top" headers="d0e72 "><b>:</b>   dos puntos</td>
+<td valign="top" headers="d0e72 "><b>@</b>  arroba</td>
+<td valign="top" headers="d0e72 "><b></b>   corchete angular derecho</td>
+</tr>
+<tr><td valign="top" headers="d0e72 "><b>;</b>   punto y coma</td>
+<td valign="top" headers="d0e72 "><b>#</b>    almohadilla</td>
+<td valign="top" headers="d0e72 "><b>&amp;</b>  ampersand (signo Y)</td>
+</tr>
+<tr><td valign="top" headers="d0e72 "><b>?</b>  interrogante</td>
+<td colspan="2" valign="top" headers="d0e72 "><b>]]&gt;</b> No existe ningún nombre específico
+para esta combinación de caracteres</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e163" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e163" width="66.66666666666667%">Serie</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_binariesURL_description"><a name="ApplicationDeployment_binariesURL_description"><!-- --></a><h2 class="topictitle2">Binarios de aplicación</h2>
+<div><p>Especifica el directorio en el que se instalará el archivo EAR
+de la aplicación. Este valor <b>Binarios de aplicación</b> es el mismo que el del campo
+<b>Directorio de instalación de la aplicación</b> de los asistentes de instalación y
+actualización de la aplicación. </p>
+<p>El valor por omisión es el valor de <tt>APP_INSTALL_ROOT/<i>nombre_celda</i></tt>,
+donde la variable <tt>APP_INSTALL_ROOT</tt> es <tt><i>raíz_instalación</i>/installedApps</tt>;
+por ejemplo, <tt>C:\WebSphere\AppServer\profiles\<i>nombre_perfil</i>\installedApps\<i>nombre_celda</i></tt>.</p>
+<p>Puede especificar una vía de acceso absoluta o utilizar una variable pathmap como <tt>${MY_APPS}</tt>.
+Puede utilizar una variable pathmap en cualquier instalación<span>, aunque  es
+especialmente necesaria cuando se instala una aplicación en un clúster con miembros de
+nodos heterogéneos ya que, en dichos casos, es posible que no existe una única forma de
+especificar una vía de acceso absoluta</span>. La variable pathmap también puede contener
+una variable <tt>${CELL}</tt> de WebSphere Application Server, que denota el nombre de la
+celda actual; por ejemplo, <tt>${MY_APP}/${CELL}</tt>.</p>
+<p>Puede definir variables de WebSphere Application Server en la página Variables de WebSphere
+de la consola administrativa, a la que puede acceder pulsando <b>Entorno
+&gt; Variables de WebSphere</b>.</p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e227" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e227" width="66.66666666666667%">Serie</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e232"><b>Unidades</b></td>
+<td align="left" valign="top" headers="d0e232">Nombre de vía de acceso completa</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_useMetadataFromBinaries_description"><a name="ApplicationDeployment_useMetadataFromBinaries_description"><!-- --></a><h2 class="topictitle2">Utilizar metadatos de binarios</h2>
+<div><p>Especifica si el servidor de aplicaciones utiliza descriptores de enlaces, de
+extensiones y de despliegue localizados en el documento de despliegue de la aplicación,
+archivo <tt>deployment.xml</tt> (por omisión), o los que se encuentran en el archivo
+EAR (enterprise application resource). </p>
+<p>El valor de <b>Utilizar metadatos de binarios</b> es el mismo que el del campo
+<b>Utilizar configuración binaria</b> de los asistentes de instalación y actualización de
+aplicaciones. Seleccione este valor para las aplicaciones instaladas únicamente en
+destinos de despliegue 6.x. </p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e259" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e259" width="66.66666666666667%">Booleano</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e264"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e264">false</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_enableDistribution_description"><a name="ApplicationDeployment_enableDistribution_description"><!-- --></a><h2 class="topictitle2">Habilitar distribución</h2>
+<div><p>Especifica si WebSphere Application Server expande o suprime archivos binarios de
+aplicación en el destino de instalación. Por omisión, la distribución de aplicaciones
+está habilitada. Los archivos binarios de aplicación para las aplicaciones instaladas se
+expanden al directorio especificado. Los archivos binarios también se suprimen cuando se
+desinstalan y guardan los cambios en la configuración. Si inhabilita esta opción, debe
+garantizar que los archivos binarios de la aplicación se expanden correctamente en los
+directorios de destino de todos los nodos en los que se ejecuta la aplicación. </p>
+<div class="important"><span class="importanttitle">Importante: </span>si inhabilita esta
+opción y no copia y expande los archivos binarios de la aplicación en los nodos, una
+operación posterior de guardado de la configuración<span> o una sincronización
+manual</span> no eliminará los archivos binarios de la aplicación. </div>
+<p>Este valor de <b>Habilitar distribución</b> es el mismo que el del campo <b>Distribuir
+aplicación</b> de los asistentes de instalación y actualización de la aplicación. </p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e293" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e293" width="66.66666666666667%">Booleano</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e298"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e298">true</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_validation_description"><a name="ApplicationDeployment_validation_description"><!-- --></a><h2 class="topictitle2">Validación</h2>
+<div><p>Indica si WebSphere Application Server examina las referencias de aplicación
+especificadas durante la instalación o actualización de la aplicación y, si se habilita
+la validación, advierte a los usuarios sobre las referencias incorrectas o genera un
+error en la operación. </p>
+<p>Generalmente, una aplicación hace referencia a los recursos utilizando orígenes de
+datos para beans de persistencia gestiona por contenedor (CMP) o utilizando referencias
+de recursos o referencias de entorno de recursos definidas en los descriptores de
+despliegue. La operación de validación comprueba si el recurso al que hace referencia la
+aplicación está definido en el ámbito del destino de despliegue de dicha aplicación.
+</p>
+<p>El recurso puede definirse en el servidor, su nodo, celda o clúster si el servidor
+pertenece a un clúster. Seleccione <b>desactivado</b> para no validar recursos, <b>aviso</b> para
+mensajes de advertencia sobre referencias de recursos incorrectas, o <b>error</b> para
+detener las operaciones que fallan como consecuencia de referencias de recursos
+incorrectas. </p>
+<p>Este valor de <b>Validación</b> es el mismo que el del campo <b>Validar entrada
+desactivada/aviso/error</b> de lo asistentes de instalación y actualización de la
+aplicación. </p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e335" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e335" width="66.66666666666667%">Serie</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e340"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e340">aviso</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_classloaderMode_description"><a name="ApplicationDeployment_classloaderMode_description"><!-- --></a><h2 class="topictitle2">Modalidad de cargador de clases</h2>
+<div><p>Especifica si el cargador de clases realiza primero búsquedas en el cargador de
+clases padre o en el cargador de clases de la aplicación para cargar una clase. El
+estándar para los cargadores de clases del kit de desarrollo y cargadores de clases de
+WebSphere Application Server es <tt>Padre primero</tt>. Al especificar <tt>Padre
+primero</tt>, la aplicación puede reemplazar las clases contenidas en el cargador de
+clases padre, pero esta acción puede dar lugar a una excepción ClassCastException o a
+errores LinkageErrors si se ha combinado el uso de clases reemplazadas y clases no
+reemplazadas. </p>
+<p>Las opciones son <tt>Padre primero</tt> y <tt>Padre último</tt>. Por omisión
+se realiza la búsqueda en el cargador de clases padre antes de realizar
+búsquedas en el cargador de clases de la aplicación para cargar una clase. </p>
+<p>Para que la aplicación pueda utilizar la configuración por omisión de Jakarta
+Commons Logging en WebSphere Application Server, establezca esta modalidad de cargador de
+clases de la aplicación en <tt>Padre primero</tt>. Para que la aplicación pueda
+reemplazar la configuración por omisión de Jakarta Commons Logging en WebSphere
+Application Server, la aplicación debe proporcionar la configuración en un formato
+admitido por Jakarta Commons Logging y esta modalidad de cargador de clases debe estar
+establecida en <tt>Primero padre</tt>. Asimismo, para reemplazar la configuración
+por omisión, debe establecer la modalidad de cargador de clases para cada módulo web
+de la aplicación de modo que se cargue el valor de fábrica de registrador correcto. </p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e378" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e378" width="66.66666666666667%">Serie</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e383"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e383">Primero padre</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_warClassloaderPolicy_description"><a name="ApplicationDeployment_warClassloaderPolicy_description"><!-- --></a><h2 class="topictitle2">Política de cargador de clases WAR</h2>
+<div><p>Especifica si debe utilizares un único cargador de clases para cargar todos los
+archivos WAR de esta aplicación o si debe utilizarse un cargador de clases distinto para
+cada archivo WAR. </p>
+<p>Las opciones son <tt>Aplicación</tt> y <tt>Módulo</tt>. Por omisión se
+utiliza un cargador de clases distinto para cargar cada archivo WAR. </p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e407" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e407" width="66.66666666666667%">Serie</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e412"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e412">Módulo</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_enableClassReloading"><a name="ApplicationDeployment_enableClassReloading"><!-- --></a><h2 class="topictitle2">Habilitar recarga de clases</h2>
+<div><p>Especifica si se habilita la recarga de clases cuando se actualizan archivos
+de aplicación. </p>
+<p>Para módulos EJB o cualquier módulo que no sea web, al seleccionar <b>Habilitar
+recarga de clases</b> se establece reloadEnabled en <tt>true</tt> en el archivo
+<tt>deployment.xml</tt> de la aplicación. Si una definición de clase de la aplicación
+cambia, el tiempo de ejecución del servidor de aplicaciones se detiene y se inicia la
+aplicación para cargar las clases de aplicación. </p>
+<p>Para los módulos web como los servlets y los archivos JSP (JavaServer Page), un contenedor web
+sólo recarga un módulo web si la extensión reloadingEnabled de IBM
+está establecida en <tt>true</tt> en el archivo <tt>ibm-web-ext.xmi</tt>. Puede
+establecer la extensión reloadingEnabled en <tt>true</tt> al editar los descriptores de
+despliegue ampliados del módulo en una herramienta de ensamblaje. </p>
+<p>Para habilitar la recarga de un módulo web, si también desea recargarlos módulos EJB
+y módulos no web habilitados: </p>
+<ol><li>Establezca la extensión de IBM reloadingEnabled en el archivo <tt>ibm-web-ext.xmi</tt> en
+<tt>true</tt>.</li>
+<li>Seleccione la propiedad <b>Habilitar recarga de clases</b>. </li>
+<li>Establezca la propiedad <b>Intervalo de recarga</b>en un valor mayor que cero
+(por ejemplo, de 1 a 2147483647).</li>
+</ol>
+<p>Para habilitar la recarga de un único módulo Web y no habilitar la recarga de módulos
+EJB ni módulos que no sean web: </p>
+<ol><li>Establezca la extensión de IBM reloadingEnabled en el archivo <tt>ibm-web-ext.xmi</tt> en
+<tt>true</tt>.</li>
+<li>Establezca el atributo de intervalo de recarga de extensiones de IBM en el archivo <tt>ibm-web-ext.xmi</tt>
+en un valor mayor que cero (por ejemplo, de 1 a 2147483647).</li>
+<li>No seleccione la propiedad <b>Habilitar recarga de clases</b>. </li>
+</ol>
+<p>Para inhabilitar la recarga de un módulo web, establezca la extensión de IBM
+reloadingEnabled en el archivo <tt>ibm-web-ext.xmi</tt> en <tt>false</tt>. O bien, si el módulo web
+tiene la extensión de IBM reloadingEnabled en el archivo <tt>ibm-web-ext.xmi</tt>
+establecida en <tt>true</tt>, para inhabilitar la recarga, utilice la consola administrativa: </p>
+<ol><li>Seleccione la propiedad <b>Habilitar recarga de clases</b>. </li>
+<li>Establezca la propiedad <b>Intervalo de recarga</b> en cero (0).</li>
+</ol>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e517" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e517" width="66.66666666666667%">Booleano</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e522"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e522">false</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_reloadInterval"><a name="ApplicationDeployment_reloadInterval"><!-- --></a><h2 class="topictitle2">Intervalo de recarga</h2>
+<div><p>Especifica el número de segundos durante los que se debe explorar el sistema de
+archivos de la aplicación para archivos actualizados. El valor por omisión es el valor
+del atributo del intervalo de recarga del archivo de la extensión de IBM
+(<tt>META-INF/ibm-application-ext.xmi</tt>) del archivo EAR. </p>
+<p>El valor de <b>Intervalo de recarga</b> es el mismo que el del campo <b>Intervalo de
+recarga en segundos</b> de los asistentes de instalación y actualización de la
+aplicación. </p>
+<p>Para habilitar la recarga, especifique un valor mayor que cero (por ejemplo, de 1
+a 2147483647). Para inhabilitar la recarga, especifique cero (0).</p>
+<p>El intervalo de recarga especificado aquí reemplaza el valor especificado en las
+extensiones de IBM para cada módulo que no sea web en el archivo EAR (que, a su vez,
+reemplaza el intervalo de recarga especificado en las extensiones de IBM para la
+aplicación en el archivo EAR). El atributo del intervalo de recarga sólo es efectivo si se habilita
+la recarga de clases. </p>
+<p>El rango oscila entre 0 y 2147483647.</p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e555" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e555" width="66.66666666666667%">Entero</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e560"><b>Unidades</b></td>
+<td align="left" valign="top" headers="d0e560">Segundos</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e565"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e565">3</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_startingWeight_description"><a name="ApplicationDeployment_startingWeight_description"><!-- --></a><h2 class="topictitle2">Peso inicial</h2>
+<div><p>Especifica el orden en el que se inician las aplicaciones al iniciar el servidor.
+La primera aplicación que se inicia es la que tiene el peso inicial más bajo.
+</p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e581" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e581" width="66.66666666666667%">Entero</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e586"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e586">1</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e591"><b>Rango</b></td>
+<td align="left" valign="top" headers="d0e591">De 0 a 2147483647</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_backgroundApplication"><a name="ApplicationDeployment_backgroundApplication"><!-- --></a><h2 class="topictitle2">Aplicación en segundo plano</h2>
+<div><p>Especifica si la aplicación debe inicializarse por completo antes de que se
+inicie el servidor. </p>
+<p>El valor por omisión de <tt>false</tt> indica que el arranque del servidor no finalizará
+hasta que se inicie la aplicación. </p>
+<p>El valor <tt>true</tt> indica a WebSphere Application Server que la aplicación puede
+iniciarse en una hebra de fondo y, por consiguiente, es posible que el arranque del
+servidor continúe sin esperar a que se inicie la aplicación. Por lo tanto, es posible que la aplicación
+no esté preparada para su uso cuando se inicie el servidor de aplicaciones. </p>
+<p>Este valor sólo se aplica si la aplicación se ejecuta en un servidor de aplicaciones
+de la versión 6. </p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e619" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e619" width="66.66666666666667%">Booleano</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e624"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e624">false</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="field-help" id="ApplicationDeployment_createMBeansForResource"><a name="ApplicationDeployment_createMBeansForResource"><!-- --></a><h2 class="topictitle2">Crear MBeans para recursos</h2>
+<div><p>Especifica si deben crearse archivos MBean para distintos recursos (como servlets
+o archivos JSP) en una aplicación cuando ésta se inicia.
+Por omisión se crean archivos MBean. </p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e640" width="33.333333333333336%"><b>Tipo de datos</b></td>
+<td align="left" valign="top" headers="d0e640" width="66.66666666666667%">Booleano</td>
+</tr>
+<tr><td align="left" valign="top" id="d0e645"><b>Predeterminado</b></td>
+<td align="left" valign="top" headers="d0e645">true</td>
+</tr>
+</table>
+<p><b>Pestaña Políticas de servicio</b></p>
+<p>A continuación se indican atributos que pueden verse en las políticas de servicio:</p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e656" width="33.333333333333336%"><b>Clases de trabajo HTTP</b></td>
+<td align="left" valign="top" headers="d0e656" width="66.66666666666667%">Expanda esta opción para ver o administrar las clases de trabajo para las peticiones HTTP. </td>
+</tr>
+<tr><td align="left" valign="top" id="d0e661"><b>Clases de trabajo SOAP</b></td>
+<td align="left" valign="top" headers="d0e661">Expanda esta opción para ver o administrar
+las clases de trabajo para las peticiones SOAP. </td>
+</tr>
+</table>
+<div class="p">Desde esta pestaña puede hacer lo siguiente: <ul><li>Pulse <b>Ver
+topología de políticas de servicio</b> para ver la política de servicio y las clases de
+trabajo en una jerarquía de árbol. </li>
+<li>Gestione las clases de trabajo seleccionándolas para un tipo de petición determinado
+y pulse <b>Nuevo</b> o <b>Suprimir</b>, o expanda la clase de trabajo existente y pulse
+<b>Editar patrón HTTP</b> para añadir o eliminar un URI para la lista de miembros de
+clases de trabajo. </li>
+<li>Gestione las condiciones de las normas: <ul><li>Para generar una norma nueva, pulse
+<b>Añadir norma</b>.  Una vez que haya añadido una norma, podrá editarla en el panel de
+detalles de la norma.
+</li>
+<li>Para eliminar una norma existente, pulse <b>Suprimir norma</b>. </li>
+<li>Para trabajar con una norma existente, especifíquela en el campo <b>Si</b> y clasifíquela
+en la clase de transacción apropiada. </li>
+<li>Para dar prioridad a las normas en el caso de varias normas para una clase de
+trabajo, pulse <b>Subir</b> o <b>Bajar</b>. El orden de las normas
+es clave para determinar las coincidencias. Si se produce una coincidencia en la primera norma,
+las normas subsiguientes no se ejecutan. </li>
+<li>Para una clase de trabajo sin formas, asigne el URI a una clase de transacción de la
+lista.
+</li>
+</ul>
+</li>
+<li>Pulse <b>Aplicar</b> o <b>Aceptar</b> para confirmar los valores de la nueva norma. </li>
+</ul>
+</div>
+<p><b>Pestaña Políticas de direccionamiento</b></p>
+<p>A continuación se indican atributos que pueden verse en las políticas de direccionamiento: </p>
+<table cellpadding="4" cellspacing="0" summary="" class="field-detail" border="0"><tr><td align="left" valign="top" id="d0e727" width="33.333333333333336%"><b>Clases de trabajo HTTP</b></td>
+<td align="left" valign="top" headers="d0e727" width="66.66666666666667%">Expanda esta opción para ver o administrar las clases de trabajo para las peticiones HTTP. </td>
+</tr>
+<tr><td align="left" valign="top" id="d0e732"><b>Clases de trabajo SOAP</b></td>
+<td align="left" valign="top" headers="d0e732">Expanda esta opción para ver o administrar
+las clases de trabajo para las peticiones SOAP. </td>
+</tr>
+</table>
+<div class="p">Desde esta pestaña puede hacer lo siguiente: <ul><li>Pulse <b>Ver
+topología de políticas de direccionamiento</b> para ver la política de direccionamiento y las clases de
+trabajo en una jerarquía de árbol. </li>
+<li>Gestione las clases de trabajo seleccionándolas para un tipo de petición determinado
+y pulse <b>Nuevo</b> o <b>Suprimir</b>, o expanda la clase de trabajo existente y pulse
+<b>Editar patrón HTTP</b> para añadir o eliminar un URI para la lista de miembros de
+clases de trabajo. </li>
+<li>Gestione las condiciones de las normas: <ul><li>Para generar una norma nueva, pulse
+<b>Añadir norma</b>.  Una vez que haya añadido una norma, podrá editarla en el panel de
+detalles de la norma.
+</li>
+<li>Para eliminar una norma existente, pulse <b>Suprimir norma</b>. </li>
+<li>Para dar prioridad a las normas en el caso de varias normas para una clase de
+trabajo, pulse <b>Subir</b> o <b>Bajar</b>. El orden de las normas
+es clave para determinar las coincidencias. Si se produce una coincidencia en la primera norma,
+las normas subsiguientes no se ejecutan. </li>
+<li>Tras editar cada norma nueva, pulse <b>Aplicar</b> para dicha norma. </li>
+<li>Para una clase de trabajo sin normas, asigne la clase a una de las clases de
+transacción siguientes:
+<ul><li><b>Permitir direccionamiento a</b>: en la lista <b>Seleccionar aquí el nombre de
+edición</b>, seleccione el nombre de edición. </li>
+<li><b>Rechazar direccionamiento con código de retorno</b>: en la lista <b>Seleccionar
+aquí el nombre de edición</b>, seleccione el nombre de edición y, en el campo
+<b>Especificar el código de retorno</b>, escriba el código de retorno. </li>
+<li><b>Redireccionar direccionamiento a</b>: en la lista <b>Seleccionar aquí el nombre de
+edición</b>, seleccione el nombre de edición y, en el campo <b>Especificar URI para
+redireccionamiento</b>, escriba el URI. </li>
+<li><b>Permitir con direccionamiento de afinidad de cliente a</b>: en la lista <b>Seleccionar aquí
+el nombre de edición</b>, seleccione el nombre de edición. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pulse <b>Aplicar</b> o <b>Aceptar</b> para confirmar los valores de la nueva norma. </li>
+</ul>
+</div>
+</div>
+</div>
+
+</body>
+</html>

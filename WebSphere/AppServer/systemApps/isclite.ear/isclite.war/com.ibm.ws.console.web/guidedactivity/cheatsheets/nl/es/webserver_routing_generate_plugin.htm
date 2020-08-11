@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Plug-in</title>
+    <link rel="stylesheet" href="/ibm/console/com.ibm.ws.console.core.guidedactivity/cheatsheets/nl/was_style_help.css">
+
+</head>
+    <body style="margin:1em">
+    <p>
+     <STRONG>Consejos y sugerencias</STRONG>
+    </p>
+    
+    <p>
+      <ul>
+          <li>En el caso de los cortafuegos, el cortafuegos del puerto administrativo debe tener abierto el mismo
+puerto para permitir que pase el archivo del plug-in.</li>   
+	      <li>La regeneración del plug-in requiere 60 segundos para completarse cuando el servidor de aplicaciones está en
+la misma máquina física o nodo que el servidor Web. En este caso, la duración del proceso de regeneración es la misma,
+tanto si el proceso se activa manualmente como si se produce automáticamente. En otros casos, el proceso necesita más
+tiempo.</li>
+          <li>Por omisión, las versiones del archivo <tt>plugin-cfg.xml</tt> que están en funcionamiento o activas
+residen en el directorio <tt>WAS_HOME/AppServer/config/cells/plugin-cfg.xml</tt>. </li>
+          <li>Regenere la configuración del plug-in después, por ejemplo, de instalar o eliminar una aplicación de
+empresa, de añadir o eliminar servlets y correlaciones de una aplicación concreta, o de cambiar la configuración del
+plug-in, de un host virtual o de un transporte. Si no regenera el plug-in después de incorporar una nueva
+aplicación podría aparecer un error <tt>404 Archivo no encontrado</tt> cuando intente acceder a la nueva aplicación Web.</li>
+          <li>La regeneración de la configuración del plug-in puede escribir encima de cambios de configuración
+manuales que desea conservar. Antes de realizar esta tarea, conozca las consecuencias que se describen en el artículo
+del Information Center titulado <a href="http://wasinfo.raleigh.ibm.com">Configuración de un plug-in del servidor
+Web para comunicarse con un servidor de aplicaciones que se ejecute en una plataforma distribuida.</a></li>
+        </ul>
+    </body>
+</html>

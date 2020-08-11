@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Intelligent Management para plug-ins del servidor web" topic="index.html">
+   <topic label="Propiedad de plug-in de Intelligent Management
+" href="uwve_impluginprops.html"/>
+   <topic label="Recopilación de propiedades de Intelligent Management"
+          href="uwve_impluginpropscol.html"/>
+   <topic label="Valores del generador de subexpresiones" href="uwve_tracerulebuilder.html"/>
+   <topic label="Especificación de rastreo
+" href="uwve_imtracespec.html"/>
+   <topic label="Intelligent Management para plug-ins del servidor web"
+          href="uwve_implugin.html"/>
+   <topic label="Célula remota para el servidor web de Intelligent Management"
+          href="uwve_imremotecell.html"/>
+</toc>

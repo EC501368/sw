@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Descriptores de middleware" topic="index.html">
+   <topic label="Colección de descriptores de middleware" href="des_collection.html"/>
+   <topic label="Detalles de descriptores de middleware" href="des_detail.html"/>
+   <topic label="Valores de detalles de descriptores de versiones" href="des_other_detail.html"/>
+</toc>

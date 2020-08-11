@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Dispositivos Datapower" topic="index.html">
+   <topic label="Colección de dispositivos" href="ae/udpw_device.html"/>
+   <topic label="Valores del gestor de dispositivos" href="ae/udpw_manager_detail.html"/>
+   <topic label="Valores de dispositivos" href="ae/udpw_devicedit_detail.html"/>
+   <topic label="Valores de canal de transporte del gestor de dispositivos DataPower"
+          href="ae/udpw_chain_typedpm.html"/>
+   <topic label="Colección de historiales de dominio" href="ae/udpw_mandomhist.html"/>
+   <topic label="Información detallada del historial de dominios"
+          href="ae/udpw_mandomhist_detail.html"/>
+   <topic label="Editar pertenencia para un conjunto gestionado"
+          href="ae/udpw_managedsetedit.html"/>
+   <topic label="Colección de firmware" href="ae/udpw_firmware.html"/>
+   <topic label="Valores de firmware" href="ae/udpw_firmware_detail.html"/>
+   <topic label="Valores del dominio gestionado" href="ae/udpw_mandom_detail.html"/>
+   <topic label="Colección de conjuntos gestionados para un dispositivo DataPower"
+          href="ae/udpw_managedset.html"/>
+   <topic label="Valores del firmware de conjunto gestionado"
+          href="ae/udpw_managedset_firmware_change.html"/>
+   <topic label="Valores del conjunto gestionado" href="ae/udpw_managedset_detail.html"/>
+   <topic label="Nuevos valores de dispositivos para el dispositivo DataPower"
+          href="ae/udpw_device_detail.html"/>
+   <topic label="Valores de versión de firmware nueva"
+          href="ae/udpw_firmwaredit_detail.html"/>
+   <topic label="Colección de historiales de valores para un gestor de dispositivos DataPower"
+          href="ae/udpw_setverhist.html"/>
+   <topic label="Colección de versiones de valores" href="ae/udpw_setverhist_detail.html"/>
+   <topic label="Colección de tareas del gestor de dispositivos DataPower"
+          href="ae/udpw_tasks.html"/>
+</toc>

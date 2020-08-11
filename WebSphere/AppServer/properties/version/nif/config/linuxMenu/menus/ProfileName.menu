@@ -1,0 +1,21 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+  <Name>${PROFILENAME}</Name>
+  <AppDir>${PROFILEROOT}/properties/linuxMenu/applications/</AppDir>
+  <DirectoryDir>${PROFILEROOT}/properties/linuxMenu/directories/</DirectoryDir>
+  <Directory>${PROFILENAME}.directory</Directory>
+
+  <!-- Stuff in the toplevel -->
+  <Include>
+    <And>
+	<Category>WebSphere</Category>
+        <Category>AppServer</Category>
+        <Category>Profiles</Category>
+        <Category>ProfileName</Category>
+	  <Category>${PROFILENAME}</Category>
+    </And>
+  </Include>
+</Menu>
+

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Colección de nodos de middleware" />
+<meta name="abstract" content="Los nodos de middleware incluyen a todos los nodos de su configuración. Estos nodos pueden incluir nodos que tienen instalada una versión del producto nodos que están ejecutando otros tipos de servidores. " />
+<meta name="description" content="Los nodos de middleware incluyen a todos los nodos de su configuración. Estos nodos pueden incluir nodos que tienen instalada una versión del producto nodos que están ejecutando otros tipos de servidores. " />
+<meta name="DC.Relation" scheme="URI" content="mwnode_detail.html" />
+<meta name="DC.Relation" scheme="URI" content="mwnode_authen.html" />
+<meta name="copyright" content="IBM corporation 2006, 2012" />
+<meta name="DC.Rights.Owner" content="IBM corporation 2006, 2012" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="mwnode_collection" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Colección de nodos de middleware</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="mwnode_collection">
+<h1 class="title topictitle1">Colección de nodos de middleware</h1>
+<div class="body"><p class="shortdesc">Los nodos de middleware incluyen a todos los nodos de su configuración.
+Estos nodos pueden incluir nodos que tienen instalada una versión del producto nodos que están ejecutando otros tipos de servidores. </p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Administración del sistema</span> &gt; <span class="ph uicontrol">Nodos de middleware</span></span>.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 1. Acciones de nodos de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d799e30">Acción</th>
+<th class="entry" valign="bottom" id="d799e32">Qué puede realizar con la acción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d799e30 ">Seleccione una acción administrativa y pulse el botón <span class="ph uicontrol">Realizar</span>.</td>
+<td class="entry" valign="top" headers="d799e32 ">Realizar acciones administrativas:<dl class="dl"><dt class="dt dlterm">Añadir un nodo</dt>
+<dd class="dd">Añade un nodo al entorno administrativo.</dd>
+<dt class="dt dlterm">Eliminar un nodo</dt>
+<dd class="dd">Suprime los nodos seleccionados. Si no se elimina el nodo con esta acción, utilice la acción <span class="ph uicontrol">Suprimir un nodo</span>.</dd>
+<dt class="dt dlterm">Suprimir un nodo</dt>
+<dd class="dd">Fuerza la eliminación de un nodo que no se ha eliminado correctamente de la célula en el depósito maestro. La acción <span class="ph uicontrol">Eliminar un nodo</span> es más adecuada que la acción <span class="ph uicontrol">Suprimir un nodo</span> para suprimir un nodo de la configuración. </dd>
+<dt class="dt dlterm">Sincronizar un nodo</dt>
+<dd class="dd">Solicita el realizar la operación de sincronización de nodo con el algoritmo de optimización de sincronización normal. Esta operación es rápida, pero quizás no corrija problemas de ediciones de archivo manuales que se realizan en el nodo. Es posible que la configuración de la célula y el nodo sigan sin estar sincronizadas después de haber realizado esta operación.</dd>
+<dt class="dt dlterm">Sincronización completa</dt>
+<dd class="dd">Borra todos los valores de optimización de sincronización y realiza una sincronización de configuración, de forma que hay una coincidencia entre la configuración de la célula y el nodo después de realizar esta operación. Esta operación puede tardar más que la operación <span class="ph uicontrol">Sincronizar</span>.</dd>
+</dl>
+</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d799e30 ">Selección una acción operativa y pulse el botón <span class="ph uicontrol">Ejecutar</span>.</td>
+<td class="entry" char="." valign="top" headers="d799e32 ">Realizar estas acciones operativas en los nodos de middleware que seleccione:<dl class="dl"><dt class="dt dlterm">Detener agente</dt>
+<dd class="dd">Detiene el proceso del agente en los nodos seleccionados. El estado de estos nodos debe ser <strong class="ph b">Iniciado</strong>.</dd>
+<dt class="dt dlterm">Iniciar agente</dt>
+<dd class="dd">Inicia el proceso del agente en los nodos seleccionados.</dd>
+<dt class="dt dlterm">Reiniciar agente</dt>
+<dd class="dd">Reinicia el proceso del agente en los nodos seleccionados.</dd>
+<dt class="dt dlterm">Reiniciar todos los servidores</dt>
+<dd class="dd">Reinicia todos los servidores que hay en los nodos seleccionados.</dd>
+<dt class="dt dlterm">Ejecutar descubrimiento</dt>
+<dd class="dd">Fuerza la ejecución de todos los sensores. Los sensores pueden descubrir entornos de tiempo de ejecución Apache<span class="ph">
+WebSphere® Application Server Community Edition,</span> y PHP.</dd>
+</dl>
+</td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d799e30 ">Seleccione una modalidad y pulse <span class="ph uicontrol">Establecer modalidad</span>.</td>
+<td class="entry" char="." valign="top" headers="d799e32 ">Cuando se establece la modalidad de mantenimiento, existe la posibilidad de realizar diagnósticos, mantenimiento o ajustes en el nodo sin interrumpir el tráfico de entrada al servidor en un entorno de producción.<dl class="dl"><dt class="dt dlterm">Mantenimiento</dt>
+<dd class="dd">Coloca en la modalidad de mantenimiento después de que se haya dado servicio a las solicitudes que restan en el nodo.</dd>
+<dt class="dt dlterm">Detención inmediata de mantenimiento</dt>
+<dd class="dd">Coloca al nodo en la modalidad de mantenimiento sin dar servido a las solicitudes que restan en el nodo.</dd>
+<dt class="dt dlterm">Normal</dt>
+<dd class="dd">Saca al nodo de la modalidad de mantenimiento, de forma que los servidores en el nodo pueden comenzar a dar servicio a las solicitudes provenientes del direccionador On Demand.</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="name"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica un nombre para un nodo que es exclusivo dentro de la célula.
+ </p>
+<p class="p">Un nodo se corresponde con un sistema físico con una dirección IP distinta de host. Normalmente, el nombre de nodo es el mismo que el nombre de host del sistema.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="version"><h2 class="title topictitle2">Versión</h2>
+<div class="body"><p class="shortdesc">Especifica la versión del producto del nodo. </p>
+<div class="p"> La versión del producto corresponde a una versión de WebSphere Application Server. <div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 2. Versiones del producto del nodo</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d799e186">Valor de versión</th>
+<th class="entry" valign="bottom" id="d799e188">Nombre de producto</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d799e186 ">Base</td>
+<td class="entry" valign="top" headers="d799e188 "><span class="ph">WebSphere Application
+Server</span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d799e186 ">Express®</td>
+<td class="entry" valign="top" headers="d799e188 "><span class="ph">WebSphere Application Server Express</span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d799e186 ">ND</td>
+<td class="entry" valign="top" headers="d799e188 "><span class="ph">WebSphere Application
+Server Network Deployment</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="synchronization"><h2 class="title topictitle2">Sincronización</h2>
+<div class="body"><p class="shortdesc">Especifica si los archivos de configuración en este nodo de middleware están sincronizados con el gestor de despliegue.</p>
+<p class="p">Si desea sincronizar nodos, seleccione los nodos que desee sincronizar.
+Elija la opción <span class="ph uicontrol">Sincronizar</span> o <span class="ph uicontrol">Sincronización completa</span> de las acciones administrativas y, a continuación pulse <span class="ph uicontrol">Realizar</span>.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="cols" frame="border" border="1"><caption><span class="tablecap">Tabla 3. Sincronización del nodo de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="5.821917808219178%" id="d799e244">Icono</th>
+<th class="entry" valign="bottom" width="23.972602739726025%" id="d799e246">Acción</th>
+<th class="entry" valign="bottom" width="70.2054794520548%" id="d799e248">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="5.821917808219178%" headers="d799e244 "><img class="image" src="images/synch.gif" alt="Sincronizado" /></td>
+<td class="entry" valign="top" width="23.972602739726025%" headers="d799e246 ">Sincronizado</td>
+<td class="entry" valign="top" width="70.2054794520548%" headers="d799e248 ">Los archivos de configuración en este nodo están sincronizados con el gestor de despliegue.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.821917808219178%" headers="d799e244 "><img class="image" src="images/not_synch.gif" alt="No sincronizado" /></td>
+<td class="entry" valign="top" width="23.972602739726025%" headers="d799e246 ">No sincronizado</td>
+<td class="entry" valign="top" width="70.2054794520548%" headers="d799e248 ">Los archivos de configuración en este nodo no están sincronizados con el gestor de despliegue y están obsoletos. Efectúe una operación de sincronización para obtener los últimos cambios de configuración en el nodo.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.821917808219178%" headers="d799e244 "><img class="image" src="images/unknown.gif" alt="desconocido" /></td>
+<td class="entry" valign="top" width="23.972602739726025%" headers="d799e246 ">Desconocida</td>
+<td class="entry" valign="top" width="70.2054794520548%" headers="d799e248 ">No se puede determinar el estado del archivo de configuración porque no se puede acceder al agente de nodo para este nodo.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="5.821917808219178%" headers="d799e244 "><img class="image" src="images/unavail.gif" alt="not aplicable" /></td>
+<td class="entry" valign="top" width="23.972602739726025%" headers="d799e246 ">No aplicable</td>
+<td class="entry" valign="top" width="70.2054794520548%" headers="d799e248 ">La columna de estado es No aplicable a este nodo porque se trata de un nodo no gestionado.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="status"><h2 class="title topictitle2">Estado</h2>
+<div class="body"><p class="shortdesc">Indica el estado del agente que está en ejecución en el nodo. </p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="cols" frame="border" border="1"><caption><span class="tablecap">Tabla 4. Estado del nodo de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="6.143344709897611%" id="d799e294">Icono</th>
+<th class="entry" valign="bottom" width="23.890784982935152%" id="d799e296">Acción</th>
+<th class="entry" valign="bottom" width="69.96587030716724%" id="d799e298">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="6.143344709897611%" headers="d799e294 "><img class="image" src="images/running.gif" alt="Iniciado" /></td>
+<td class="entry" valign="top" width="23.890784982935152%" headers="d799e296 ">Iniciado</td>
+<td class="entry" valign="top" width="69.96587030716724%" headers="d799e298 ">El nodo está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.143344709897611%" headers="d799e294 "><img class="image" src="images/stop.gif" alt="Detenido" /></td>
+<td class="entry" valign="top" width="23.890784982935152%" headers="d799e296 ">Detenido</td>
+<td class="entry" valign="top" width="69.96587030716724%" headers="d799e298 ">El nodo no está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.143344709897611%" headers="d799e294 "><img class="image" src="images/unknown.gif" alt="desconocido" /></td>
+<td class="entry" valign="top" width="23.890784982935152%" headers="d799e296 ">Desconocida</td>
+<td class="entry" valign="top" width="69.96587030716724%" headers="d799e298 ">El estado del nodo no está disponible.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.143344709897611%" headers="d799e294 "><img class="image" src="images/unavail.gif" alt="not aplicable" /></td>
+<td class="entry" valign="top" width="23.890784982935152%" headers="d799e296 ">No aplicable</td>
+<td class="entry" valign="top" width="69.96587030716724%" headers="d799e298 ">El estado del nodo es No aplicable porque no se ha informado del mismo al gestor de despliegue.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="mode"><h2 class="title topictitle2">Modalidad de mantenimiento</h2>
+<div class="body"><p class="shortdesc">Especifica el estado de la modalidad de mantenimiento del nodo.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 5. Modalidad de mantenimiento de nodos de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" align="left" valign="bottom" width="6.143344709897611%" id="d799e344">Icono</th>
+<th class="entry" align="left" valign="bottom" width="23.890784982935152%" id="d799e346">Acción</th>
+<th class="entry" align="left" valign="bottom" width="69.96587030716724%" id="d799e348">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry norowborder" align="left" valign="top" width="6.143344709897611%" headers="d799e344 "><img class="image" src="images/maint_mode.gif" alt="modalidad de mantenimiento" /></td>
+<td class="entry norowborder" align="left" valign="top" width="23.890784982935152%" headers="d799e346 ">Modalidad de mantenimiento</td>
+<td class="entry norowborder" align="left" valign="top" width="69.96587030716724%" headers="d799e348 ">El nodo está en modalidad de mantenimiento y, por tanto, ya no está dando servicio a las solicitudes, de forma que es posible realizar acciones administrativas en este nodo. Mientras está en esta modalidad, se puede iniciar o detener el nodo. Cuando el nodo está iniciado y en la modalidad de mantenimiento, el direccionador On Demand no direcciona tráfico SIP o HTTP al nodo.</td>
+</tr>
+<tr class="row"><td class="entry" align="left" valign="top" width="6.143344709897611%" headers="d799e344 "></td>
+<td class="entry" align="left" valign="top" width="23.890784982935152%" headers="d799e346 ">Modalidad normal</td>
+<td class="entry" align="left" valign="top" width="69.96587030716724%" headers="d799e348 ">El nodo está dando servicio a solicitudes. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="mwnode_detail.html" title="Esta página sirve para definir o cambiar la configuración de un nodo de middleware.">Valores de nodo de middleware</a></div>
+<div><a class="link help" href="mwnode_authen.html" title="Si desea iniciar un nodo es necesario proporcionar un nombre de usuario y una contraseña para el nodo.">Autenticación</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: mwnode_collection.html</span></body>
+</html>

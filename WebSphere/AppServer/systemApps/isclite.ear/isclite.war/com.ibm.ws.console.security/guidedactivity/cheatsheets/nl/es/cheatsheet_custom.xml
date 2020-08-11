@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<cheatsheet title="Configurar un registro de usuarios personalizado">
+
+	<intro 
+		href="custom_serverid.htm">
+        <description>
+Un registro de usuarios personalizado es un registro de usuarios implementado por el
+cliente que implementa la interfaz Java UserRegistry, tal como la proporciona el
+producto. Un registro de usuarios implementado por el cliente puede dar soporte
+prácticamente a cualquier tipo de un repositorio de cuentas, desde una base de datos
+relacional, un archivo plano, etc. El registro de usuarios personalizado proporciona una flexibilidad considerable para
+adaptar la seguridad del producto a diversos entornos en los que ya exista alguna forma de registro de usuarios,
+distinta de LDAP (Lightweight Directory Access Protocol) o sistema operativo local (LocalOS), en el entorno operativo.
+        </description>
+	</intro>
+
+
+
+	<item
+        href=""
+		title="Entre el nombre de usuario y la contraseña">
+		<action
+			class="com.ibm.ws.console.security.forwardCmd.do?forwardName=CustomUserRegistry.config.view&amp;sfname=userRegistries&amp;resourceUri=security.xml&amp;parentRefId=Security_1&amp;perspective=tab.configuration"/>
+		<description>
+Para entrar el ID de usuario y la contraseña del servidor:
+            &lt;ol&gt;
+            &lt;li&gt;&lt;strong&gt; Pulsar para actuar&lt;/strong&gt; carga la página de configuración Registro de usuario personalizado.&lt;/li&gt;
+            &lt;li&gt;Entre el ID de usuario y la contraseña del servidor&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt; Aceptar&lt;/strong&gt; para enviar los cambios.&lt;/li&gt;
+            &lt;/ol&gt;
+
+            Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+        </description>
+	</item>
+
+    <item
+    href=""
+    title="Entre el nombre de clase del registro de usuarios personalizado">
+    <action
+        class=""/>
+    <description>
+   
+
+            &lt;ol&gt;
+            &lt;li&gt;Entre el nombre completo del archivo de la clase de implementación en el campo Nombre de clase del registro personalizado como nombre de archivo separado por un punto. 
+            Para asegurar que el archivo de clase está en la classpath de WebSphere Application Server, la ubicación sugerida de la clase del registro personalizado es el directorio ${INSTALL_ROOT}/lib/ext. 
+            &lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Aceptar&lt;/strong&gt; para enviar los cambios.&lt;/li&gt;
+            &lt;/ol&gt;
+
+
+
+    </description>
+</item>
+
+</cheatsheet>

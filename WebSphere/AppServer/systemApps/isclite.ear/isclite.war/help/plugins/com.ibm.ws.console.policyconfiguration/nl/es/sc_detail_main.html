@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es" lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores de política de servicio" />
+<meta name="abstract" content="Utilice esta página para cambiar las políticas de servicio o las clases de transacción existentes, con las que se crea conjuntamente una política operativa." />
+<meta name="Description" content="Utilice esta página para cambiar las políticas de servicio o las clases de transacción existentes, con las que se crea conjuntamente una política operativa." />
+<meta name="DC.Relation" scheme="URI" content="servicepolicy_overview.html" />
+<meta name="DC.Relation" scheme="URI" content="sc_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="sc_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="sc_goalproperties_new.html" />
+<meta name="DC.Relation" scheme="URI" content="sc_membership_new.html" />
+<meta name="DC.Relation" scheme="URI" content="service_policy_topology.html" />
+<meta name="DC.Relation" scheme="URI" content="tc_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="tc_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="tc_detail_move.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Date" scheme="iso8601" content="2014-08-10" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="ServiceClass" />
+<meta name="DC.Language" content="es-es" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<title>Valores de política de servicio</title>
+</head>
+<body role="main" class="help" id="ServiceClass">
+<h1 class="title topictitle1">Valores de política de servicio</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para cambiar las políticas de servicio o las clases de transacción existentes, con las que se crea conjuntamente una política operativa.  </p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Políticas de servicio</span> &gt; <span class="ph uicontrol"><var class="keyword varname">política_servicio</var></span></span>.</p>
+<p class="p">Hay que poseer privilegios administrativos de configurador o administrador para crear, modificar o eliminar clases de transacción y políticas de servicio.</p>
+</div>
+<div class="related-links"><div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="servicepolicy_overview.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="sc_collection.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="sc_detail_main_new.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="sc_goalproperties_new.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="sc_membership_new.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="service_policy_topology.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="tc_detail_main.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="tc_detail_main_new.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="tc_detail_move.html">**** MISSING FILE ****</a></div>
+</div>
+</div><div class="topic nested1" xml:lang="es-es" id="name"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">El nombre de la clase de política de servicio es un campo definido por el usuario que debe contener caracteres numéricos o alfanuméricos. Utilice nombres de políticas de servicio coherentes y con sentido, por ejemplo, PLATINUM, GOLD, SILVER y BRONZE.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="description"><h2 class="title topictitle2">Descripción</h2>
+<div class="body"><p class="shortdesc">El campo de descripción complementa
+el campo de nombre y lo define el usuario. Este campo es opcional, pero en entornos con varios administradores del sistema, es mejor completarlo con información que sea de utilidad.
+Por ejemplo, un campo de descripción de una política PLATINUM podría incluir el texto, <samp class="ph codeph">La política de servicio
+PLATINUM se reserva para el trabajo de prioridad más alta</samp>.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="goaltype"><h2 class="title topictitle2">Tipo de objetivo</h2>
+<div class="body"><p class="shortdesc">Este campo se puede seleccionar y puede ser uno de los cuatro valores siguientes:</p>
+<ul class="ul"><li class="li"><span class="ph uicontrol">Tiempo de respuesta medio</span>: Indica el trabajo de alta prioridad. Este campo se utiliza con el valor del objetivo e importancia para limitar el tiempo que se mantiene el trabajo en la cola.</li>
+<li class="li"><span class="ph uicontrol">Tiempo de respuesta percentil</span>: Este es el porcentaje de las peticiones que se manejan en un período de tiempo específico. Este campo se utiliza con el porcentaje de objetivo para definir el porcentaje de peticiones por segundos o milisegundos. </li>
+<li class="li"><span class="ph uicontrol">Discrecional</span>: El valor por omisión para el tipo de objetivo. El valor Discrecional indica que el trabajo no tiene una prioridad alta y lo puede planificar el direccionador On Demand basándose en la carga de trabajo que existe en la cola.</li>
+<li class="li"><span class="ph uicontrol">Importancia</span>
+Cuando el sistema está soportando mucha carga, el valor de importancia determina el trabajo de aplicación que puede tolerar mejor una disminución del rendimiento. Cuando mayor sea la importancia, menor tolerancia tendrá el trabajo asociado con dicha política de servicio a los bajones en el rendimiento. 
+Para el ejemplo PLATINUM: seleccione Máxima como importancia. No establezca todas las políticas en el nivel de importancia más elevado salvo que desee que todas las políticas se degraden en la misma proporción cuando se sobrecargue el sistema.</li>
+</ul>
+<div class="p"><div class="note note"><span class="notetitle">Nota:</span> Si
+la propiedad personalizada de la célula
+<span class="keyword parmname parmname">disableResponseTimeGoals</span>=<span class="keyword cmdname">true</span>,
+se mostrará un tipo de objetivo <var class="keyword varname">importance</var>
+para los tipos de objetivo de política de servicio. Este tipo de objetivo se utiliza para establecer que sólo se utilizará
+el aspecto <var class="keyword varname">importance</var> de la política de servicio.</div>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="goalvalue"><h2 class="title topictitle2">Valor de objetivo</h2>
+<div class="body"><p class="shortdesc">Establezca este valor en el tiempo máximo permitido para completar el trabajo.
+Por ejemplo, el trabajo PLATINUM no debe superar los dos segundos. El valor del campo objetivo no está disponible cuando el tipo de objetivo es discrecional.</p>
+<p class="p">Si se está utilizando un objetivo de tiempo de respuesta para tráfico SIP (Session Initiation Protocol), el valor del objetivo debe estar debajo de 500 ms.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="goalpercentile"><h2 class="title topictitle2">Percentil de objetivo</h2>
+<div class="body"><p class="shortdesc">Especifica el porcentaje de peticiones que se han de manejar en un período de tiempo específico. El valor del percentil objetivo puede ser un número entero de <samp class="ph codeph">1</samp> a <samp class="ph codeph">99</samp> inclusive. Este campo está disponible cuando el tipo de objetivo es el tiempo de respuesta percentil.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="importance"><h2 class="title topictitle2">Importancia</h2>
+<div class="body"><p class="shortdesc">Indica un nivel de importancia. El valor de importancia no está disponible cuando el tipo de objetivo es discrecional. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="monitorforpersistentpolicyviolations"><h2 class="title topictitle2">Supervisar las violaciones de política persistentes</h2>
+<div class="body"><p class="shortdesc">Se necesitan distintos valores dependiendo del tipo de objetivo de política de servicio:</p>
+<ul class="ul"><li class="li">Vista de tiempo de respuesta medio<ul class="ul"><li class="li"><span class="ph uicontrol">Valor del objetivo</span>: Un entero que indica los milisegundos, segundos o minutos del valor del objetivo. Los valores aceptables van de <samp class="ph codeph">0</samp> a <samp class="ph codeph">300000</samp> milisegundos, de <samp class="ph codeph">0</samp> a <samp class="ph codeph">300</samp> segundos y de <samp class="ph codeph">0</samp> a <samp class="ph codeph">2147483647</samp> minutos.</li>
+<li class="li"><span class="ph uicontrol">Valor de periodo de tiempo</span>: Un entero que indica los milisegundos, segundos o minutos
+después de los cuales se considerará incumplido el valor objetivo. Este valor puede ser de <samp class="ph codeph">0</samp> a <samp class="ph codeph">1</samp> día, inclusive.</li>
+</ul>
+</li>
+<li class="li">Vista de tiempo de respuesta percentil<ul class="ul"><li class="li"><span class="ph uicontrol">Percentil objetivo</span>: Un entero que indica el porcentaje de solicitudes bajo el valor de objetivo que se han de supervisar.
+Este valor puede ser de <samp class="ph codeph">0</samp> a <samp class="ph codeph">100</samp> inclusive. </li>
+<li class="li"><span class="ph uicontrol">Valor de periodo de tiempo</span>: Un entero que indica los milisegundos, segundos o minutos después de los cuales se considerará incumplido el valor objetivo. Este valor puede ser de <samp class="ph codeph">0</samp> a <samp class="ph codeph">1</samp> día, inclusive.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="somebs"><h2 class="title topictitle2">Pertenencia</h2>
+<div class="body"><div class="p">Especifica una asociación entre las clases de transacción y la respectiva política de servicio. Cada política de transacción puede estar contenida <em class="ph i">sólo en una</em> política de servicio. Se pueden realizar las siguientes acciones: <dl class="dl"><dt class="dt dlterm">Nueva</dt>
+<dd class="dd">Crea nuevas clases de transacciones que, a continuación, pueden convertirse en miembros de una política de servicio nueva o existente.</dd>
+<dt class="dt dlterm">Eliminar</dt>
+<dd class="dd">Si selecciona una política de transacción del campo de pertenencia y pulsa <span class="ph uicontrol">Eliminar</span>, puede suprimir la asociación entre una política de transacción y una política de servicio. Esta acción suprime la política de transacción al mismo tiempo.</dd>
+<dt class="dt dlterm">Modificar</dt>
+<dd class="dd">Cambia una política de transacción existente. Para editar una política de transacción, en primer lugar
+debe seleccionar la política de transacción que desea editar y pulsar <span class="ph uicontrol">Modificar</span>.</dd>
+<dt class="dt dlterm">Mover</dt>
+<dd class="dd">Mueve las clases de transacciones de una política de servicio a otra.
+Debido a que una clase de transacción no puede existir fuera de una asociación de política de servicio, la única opción que queda para mover es la de eliminar si no ya no desea que una clase de transacción y una política de servicio continúen afiliadas. Para mover una clase de transacción, seleccione la política que desee asociar a otra política de servicio y pulse <span class="ph uicontrol">Mover</span>.</dd>
+</dl>
+</div>
+</div>
+</div>
+</body>
+</html>

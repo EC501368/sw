@@ -1,0 +1,76 @@
+<!-- ***************************************************************************
+Licensed Materials - Property of IBM
+
+5724-I63, 5724-H88, 5724-H89, 5655-N02, 5724-J08
+ 
+Copyright IBM Corp. 2015 All Rights Reserved.
+
+US Government Users Restricted Rights - Use, duplication or
+disclosure restricted by GSA ADP Schedule Contract with
+IBM Corp.
+***************************************************************************  -->
+
+<!-- PI29464 boyangfu initial check-in  --> 
+<project name="fbrowserAddFirefoxVersionSupport" default="install" basedir="."> 
+
+<taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/> 
+<taskdef name="replaceTokenInFile" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.ReplaceTokenInFileAntTask" 
+	classpath="${WAS_HOME}/plugins/com.ibm.ws.runtime.jar" />
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+<!-- Description              --> 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->   
+<!-- if OS is Linux, replace the version check string 	--> 
+<!-- in fbrowser.sh so that versions 1.7+ is supported 	-->
+<!-- prior to this it was only 1.7-9.99 				-->
+
+<property name="fullFilePath" value="${WAS_HOME}/properties/version/install/firststeps/fbrowser.sh"/>
+<property name="mozillaOld" value="Mozilla\ [2-9].[0-9]*) return 0;;"/>
+<property name="mozillaNew" value="Mozilla\ [2-9].[0-9]*) return 0;;${line.separator}Mozilla\ [1-9][0-9].[0-9]*) return 0;;${line.separator}Mozilla\ [1-9][0-9]*.[0-9]*) return 0;;"/>
+<property name="firefoxOld" value="*Firefox/[1-9].*) return 0;;"/>
+<property name="firefoxNew" value="*Firefox/[1-9].*) return 0;;${line.separator}*Firefox\ [1-9][0-9].[0-9]*) return 0;;${line.separator}*Firefox\ [1-9][0-9]*.[0-9]*) return 0;;"/>
+
+<target name="replaceFbrowserVersionCheckStrings" description="Adds support for newer versions of firefox in WAS_HOME\properties\version\install\firststeps\fbrowser.sh">
+	<wscmtlog>*** Replacing firefox and mozilla version check strings ***</wscmtlog>
+	<replaceTokenInFile path="${fullFilePath}" token="${mozillaOld}" value="${mozillaNew}" property="isReplaced" ignorecase="false" />
+	<replaceTokenInFile path="${fullFilePath}" token="${firefoxOld}" value="${firefoxNew}" property="isReplaced2" ignorecase="false" />
+	<wscmtlog>*** Did version check strings in ${fullFilePath} get modified?: ${isReplaced} and ${isReplaced2} ***</wscmtlog>
+</target>
+
+<target name="isUnix" description="Determines whether the current OS is Unix">
+	<condition property="unixOSFound" value="true">
+		<os family="unix"/>
+	</condition>
+</target>
+
+<!-- 
+***************************************************************************
+TARGET: logStartupProperties
+Log startup properties
+***************************************************************************
+-->
+<target name="logStartupProperties" description="Log properties passed to script" depends="isUnix" if="unixOSFound">
+	<tstamp>
+		<format property="timestamp" pattern="MM/dd/yyyy hh:mm aa" />
+	</tstamp>
+	<wscmtlog>*** Task to perform: Add support for newer firefox versions in ${fullFilePath} ***</wscmtlog>
+	<antcall target="replaceFbrowserVersionCheckStrings" />
+</target>
+
+<!-- 
+***************************************************************************
+TARGET: callPostinst
+***************************************************************************
+-->
+<target name="install" description="Calls postinst with various parameters" depends="logStartupProperties" />
+
+<!-- 
+***************************************************************************
+TARGET: callPostinstUninstall
+***************************************************************************
+-->
+<target name="uninstall" description="No uninstall action"> 
+
+</target> 
+
+</project>

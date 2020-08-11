@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Repositorio de punto de comprobación" topic="index.html">
+   <topic label="Valores del punto de comprobación" href="ae/uwve_selectchkp.html"/>
+   <topic label="Valores del servicio de repositorio ampliado"
+          href="ae/uwve_extrepserv.html"/>
+   <topic label="Valores del nuevo punto de comprobación de repositorio"
+          href="ae/uwve_newrepchkp.html"/>
+   <topic label="Colección de punto de comprobación de repositorio"
+          href="ae/uwve_repchkp.html"/>
+</toc>

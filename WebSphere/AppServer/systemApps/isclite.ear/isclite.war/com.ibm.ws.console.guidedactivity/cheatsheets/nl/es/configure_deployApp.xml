@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cheatsheet title="Desplegar una aplicación con niveles de servicio definidos
+">
+
+	<intro href="intro_configure_deployApp.htm">
+        <description>Esta actividad sirve para desplegar una aplicación con niveles de servicio definidos en el entorno que alberga WebSphere Extended Deployment.
+        Para obtener más información:
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=twve_odappdeploydc"&gt;
+        Despliegue de aplicaciones en clústeres dinámicos.&lt;/A&gt;
+
+</description>
+	</intro>
+
+
+	<item href="" title="Instalar una aplicación">
+<action class="com.ibm.ws.console.appmanagement.action.forwardCmd.do?forwardName=appmanagement.upload"></action>
+		<description>
+Utilice esta sección para instalar una aplicación mediante el asistente de instalación de aplicaciones.
+
+        &lt;br/&gt;&lt;br/&gt;
+
+        &lt;strong&gt;Sugerencia:&lt;/strong&gt; En el paso para &lt;strong&gt;Correlacionar módulos con servidores&lt;/strong&gt;,
+por omisión la aplicación se dirige al primer servidor y clúster disponible. Si es necesario, asegúrese de modificar el destino hacia el clúster dinámico correcto dentro del paso del asistente.
+&lt;br/&gt;&lt;br/&gt;
+
+        Para obtener más información:
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=twve_odappdeploydc"&gt;Despliegue de aplicaciones en clústeres dinámicos.&lt;/A&gt;
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=txml_callappinstall"&gt;
+        Instalación de aplicaciones con la herramienta wsadmin&lt;/a&gt;
+	</description>
+	</item>
+
+
+	<item href="" title="Definir niveles de servicio con políticas de servicio">
+<action class="com.ibm.ws.console.policyconfiguration.forwardCmd.do?forwardName=serviceclass.content.main"></action>
+		<description>
+        Utilice esta sección para definir políticas de servicio que están asociadas a las clases
+de trabajo de la aplicación a través de clases de transacción. 
+        El ODR utiliza una política de servicio
+para aplicar niveles de servicio a solicitudes de entrada, principalmente a través de la ubicación de aplicaciones y la prioridad de solicitudes. 
+
+        &lt;br/&gt;
+        &lt;br/&gt;
+        &lt;strong&gt;Sugerencia:&lt;/strong&gt; se crea una clase de transacción predeterminada con cada nueva política de servicio con un nombre del tipo "Default_TC_{nombre de política de servicio}". 
+        Las clases de transacción adicionales sólo son necesarias si desea ver métricas más detalladas en los diagramas.
+
+        &lt;br/&gt;
+        &lt;br/&gt;
+        Para obtener más información:
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=twve_odrpolicy"&gt;
+        Definición de una política de servicio
+        &lt;/A&gt;
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=rwve_xmlservicepolicy"&gt;
+        Definición de una política de servicio con scripts
+        &lt;/A&gt;
+
+       </description>
+</item>
+
+<item href="" title="Clasificar las peticiones de aplicaciones con las clases de trabajo de política de servicio">
+<action class="navigatorCmd.do?forwardName=ApplicationDeployment.content.main"></action>
+		<description>Clasifique las peticiones de aplicaciones con las clases de trabajo en la pestaña &lt;strong&gt;Políticas de servicio&lt;/strong&gt; para una aplicación. 
+        Las clases de trabajo contienen patrones de URI (o patrones JMS, EJB o servicios web) y normas condicionales para asociar solicitudes a clases de transacción. Luego, las clases de transacción se
+        asocian a las políticas de servicio. 
+
+&lt;br/&gt;&lt;br/&gt;
+
+       &lt;strong&gt;Sugerencia&lt;/strong&gt; Antes de guardar los cambios realizados en las clases de trabajo o de salir de la página de clases de trabajo, valide los cambios
+        con el botón &lt;strong&gt;Aceptar&lt;/strong&gt; o &lt;strong&gt;Aplicar&lt;/strong&gt; situados en la parte superior de la página. 
+
+&lt;br/&gt;&lt;br/&gt;
+
+
+        Para obtener más información:
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/topic.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;A target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=twve_odrpolicy"&gt;
+        Definición de una política de servicio.&lt;/A&gt;
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Documentación de tareas en línea align="absmiddle"/&gt;
+        &lt;a target="help" HREF="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=rwve"&gt;
+        Gestión de clases de trabajo con scripts.&lt;/a&gt;
+</description>
+</item>
+
+<item
+    href=""
+    title="Guardar y sincronizar la configuración">
+    <action
+        class=""/>
+    <description>
+             Pulse &lt;strong&gt;Guardar&lt;/strong&gt; en el mensaje situado en la parte superior del panel de la consola para actualizar la configuración en el depósito maestro.
+    </description>
+</item>
+
+<item href="" title="Iniciar la aplicación">
+<action class="navigatorCmd.do?forwardName=ApplicationDeployment.content.main"></action>
+		<description>Inicie la aplicación que se ha instalado en la tarea anterior.
+        Para obtener más información:
+        &lt;br/&gt;
+        &lt;IMG SRC="../com.ibm.ws.console.guidedactivity/images/command_prompt.gif" border="0" alt="Documentación de tareas en línea" align="absmiddle"/&gt;
+        &lt;a target="help" href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&amp;product=was-nd-dist&amp;topic=txml_startapplication"&gt;
+        Inicio de aplicaciones con scripts&lt;/a&gt;
+
+        </description>
+</item>
+
+
+<item href="" title="Finalización de la tarea y pasos siguientes">
+<action class=""></action>
+		<description>Una vez que han terminado las tareas anteriores, la aplicación está lista para procesar peticiones. Los pasos siguientes son
+
+    &lt;blockquote style="margin-left:0.5em;margin-top:0.5em;margin-bottom:0.5em"&gt;
+    &lt;IMG SRC="../com.ibm.ws.console.core.guidedactivity/images/start_task.gif" border="0" alt="" align="absmiddle"/&gt;
+    &lt;A TARGET="detail" HREF="../com.ibm.ws.console.xdoperations.forwardCmd.do?forwardName=xdoperations.main"&gt;Ver las visualizaciones disponibles&lt;/A&gt; del entorno de operaciones dinámicas,&lt;/blockquote&gt;
+
+    &lt;blockquote style="margin-left:0.5em;margin-top:0.5em;margin-bottom:0.5em"&gt;
+    &lt;IMG SRC="../com.ibm.ws.console.core.guidedactivity/images/start_task.gif" border="0" alt="" align="absmiddle"/&gt;
+    &lt;A TARGET="detail" HREF="../navigatorCmd.do?forwardName=taskmanagement.content.main"&gt;Revisar las tareas de
+    tiempo de ejecución&lt;/A&gt; que los controladores autónomos utilizan para comunicar a los administradores los
+    cambios propuestos por el sistema si los clústeres dinámicos se ejecutan en modalidad "supervisada".
+    &lt;/blockquote&gt;
+
+        </description>
+</item>
+
+</cheatsheet>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de identidades" topic="index.html">
+   <topic label="Valores de la contraseña de usuario administrativo"
+          href="ae/uwim_adminuserpwdsettings.html"/>
+   <topic label="Detalles del repositorio personalizado para los repositorios federados"
+          href="ae/uwim_rep_custom_detail.html"/>
+   <topic label="Colección de atributos de miembro de grupo dinámico"
+          href="ae/uwim_ldapdyngroupmemcollection.html"/>
+   <topic label="Valores de atributos de miembro de grupo dinámico"
+          href="ae/uwim_ldapdyngroupmemsettings.html"/>
+   <topic label="Valores del Repositorio de correlación de entradas"
+          href="ae/uwim_federationdbsettings.html"/>
+   <topic label="Añadir valores de repositorio federado"
+          href="ae/uwim_rep_file_detail.html"/>
+   <topic label="Valores de definición de atributos de grupos"
+          href="ae/uwim_ldapgroupdefsettings.html"/>
+   <topic label="Colección de Tipos de entidades LDAP"
+          href="ae/uwim_ldapentitytypecollection.html"/>
+   <topic label="Valores de tipos de entidades LDAP"
+          href="ae/uwim_ldapentitytypesettings.html"/>
+   <topic label="Valores de rendimiento LDAP" href="ae/uwim_ldapperfsettings.html"/>
+   <topic label="Valores de la Configuración del repositorio LDAP"
+          href="ae/uwim_ldapreposettings.html"/>
+   <topic label="Colección de atributos LDAP (Lightweight Directory Access Protocol)"
+          href="ae/uwim_ldapattributescollection.html"/>
+   <topic label="Lista de Gestionar repositorios"
+          href="ae/uwim_repoconfigcollection.html"/>
+   <topic label="Colección de atributos de miembro de grupo"
+          href="ae/uwim_ldapgroupmemcollection.html"/>
+   <topic label="Valores de atributos de miembro de grupo"
+          href="ae/uwim_ldapgroupmemsettings.html"/>
+   <topic label="Valores del Repositorio de extensiones de propiedades"
+          href="ae/uwim_lookasidedbsettings.html"/>
+   <topic label="Valores de Configuración del reino" href="ae/uwim_realmsettings.html"/>
+   <topic label="Valores de Referencia de repositorio"
+          href="ae/uwim_reporefsettings.html"/>
+   <topic label="Colección de Tipos de entidad soportados"
+          href="ae/uwim_entitytypecollection.html"/>
+   <topic label="Valores de Tipos de entidad soportados"
+          href="ae/uwim_entitytypesettings.html"/>
+   <topic label="Correlación de atributos de usuario para repositorios federados"
+          href="ae/uwim_rep_attrib_mapping.html"/>
+</toc>

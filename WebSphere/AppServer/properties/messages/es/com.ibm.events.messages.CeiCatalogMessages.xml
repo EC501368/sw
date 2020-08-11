@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+
+<!--
+    ******************************************************************************
+    * Translation Notes:
+    *
+    * To translate this XML file, first change the xml:lang variable
+    * in TMSSource to the correct locale for the translation.  Then follow
+    * these simple rules.
+    *
+    * #PCDATA:
+    *
+    * When translating XML, any text between <Tag> and </Tag> entries
+    * should be translated.  For example, "File not found" in the following
+    * phrase:
+    *
+    * <MsgText>File not found</MsgText>... 
+    * 
+    * The only exception to this rule is the Text between <Copyright> and 
+    * </Copyright> tags.
+    * 
+    * Attributes:
+    *
+    * Verbage in attributes should not be translated.  For example, the "don't
+    * translate me" phrase in the following should not be changed:
+    *
+    * <MsgText terseText="don't translate me">File not found</MsgText>... 
+    *
+    * Comments:
+    *
+    * Verbage in comments should not be translated.  This note is an example
+    * of a comment.  End-users will never see it.
+    *
+    *****************************************************************************
+-->
+<TMSSource name="CeiCatalogMessages" tmsVersion="1.0" xml:lang="es">
+
+
+    <Copyright>
+Licensed Materials - Property of IBM (C)Copyright IBM Corporation 2004, 2005. All Rights Reserved US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</Copyright>
+
+    <!--
+        *********************************************************************
+        * The above copyright notice applies to this XML file as well
+        *  as any other source/text files generated from this file.
+        *********************************************************************
+    -->
+
+    <!-- ============================================================== -->
+    <!-- Message creation/maintenance process:                      -->
+    <!--                                                            -->
+    <!-- In a comment above each message, include                   -->
+    <!-- the message number and one of these four status values:    -->
+    <!--                                                            -->
+    <!-- MSG_WORKING: Development is still working on the message.  -->
+    <!--              It is not ready for review by ID.             -->
+    <!--                                                            -->
+    <!-- MSG_REVIEW_ID: Development has completed work on the       -->
+    <!--                message. It is ready to be reviewed by ID.  -->
+    <!--                                                            -->
+    <!-- MSG_REVIEW_DEV: ID has updated the message.                -->
+    <!--                 It is ready to be reviewed by Development. -->
+    <!--                                                            -->
+    <!-- MSG_COMPLETE: The message has been reviewed by all parties -->
+    <!--               and is complete.                             -->
+    <!--                                                            -->
+    <!-- Also, if Development must update a message that is in the  -->
+    <!-- MSG_COMPLETE state, Development must open a defect for ID  -->
+    <!-- to review the message again.                               -->
+    <!-- ============================================================== -->
+
+
+    <!-- ================================================================= -->
+    <!--  CEICA0001E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0001E" prefix="yes">
+        <MsgText pgmKey="CEICA0001" varFormat="Java">
+            El valor del parámetro
+            <Variable formatSpec="{0}">parameter_name</Variable>
+            no puede ser nulo para el objeto
+            <Variable formatSpec="{1}">object_name</Variable>.
+        </MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación y proporcione un valor para el parámetro especificado.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0002E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0002E" prefix="yes">
+        <MsgText pgmKey="CEICA0002" varFormat="Java">
+            El valor del parámetro
+            <Variable formatSpec="{0}">parameter_name</Variable>
+            no es válido porque el valor está establecido en un serie vacía para el objeto
+            <Variable formatSpec="{1}">object_name</Variable>.
+        </MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación y proporcione un valor para el parámetro especificado.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0003E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0003E" prefix="yes">
+        <MsgText pgmKey="CEICA0003" varFormat="Java">
+            El valor de un elemento de la matriz de series especificado no es válido porque es nulo.
+            <br/>
+            Tipo de objeto:
+            <Variable formatSpec="{0}">object_type</Variable>
+            <br/>
+            Nombre de objeto:
+            <Variable formatSpec="{1}">object_name</Variable>
+            <br/>
+            Nombre de parámetro:
+            <Variable formatSpec="{2}">parameter_name</Variable>
+            <br/>
+            Índice:
+            <Variable formatSpec="{3}">index</Variable>
+        </MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación y proporcione un valor para el elemento.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0004E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0004E" prefix="yes">
+        <MsgText pgmKey="CEICA0004" varFormat="Java">
+            El valor de un parámetro no es válido porque excede el número máximo de caracteres.
+            <br/>
+            Nombre de propiedad:
+            <Variable formatSpec="{0}">property_name</Variable>
+            <br/>
+            Parámetro:
+            <Variable formatSpec="{1}">parameter_name</Variable>
+            <br/>
+            Número máximo de caracteres:
+            <Variable formatSpec="{2}">maximum_length</Variable>
+            <br/>
+            Valor:
+            <Variable formatSpec="{3}">value</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                El número de caracteres que pueden utilizarse para el valor del parámetro especificado está restringido porque, o bien corresponde a un campo de la especificación de Common Base Event que tiene una longitud máxima, o bien el campo de la base de datos en el que se almacena el valor tiene un tamaño limitado.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación y proporcione un valor para el parámetro especificado que no exceda el número máximo de caracteres.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0005E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0005E" prefix="yes">
+        <MsgText pgmKey="CEICA0005" varFormat="Java">
+            El elemento de la matriz de series no es válido porque excede el número máximo de caracteres.
+            <br/>
+            Nombre de propiedad:
+            <Variable formatSpec="{0}">property_name</Variable>
+            <br/>
+            Nombre de parámetro:
+            <Variable formatSpec="{1}">parameter_name</Variable>
+            <br/>
+            Índice:
+            <Variable formatSpec="{2}">index</Variable>
+            <br/>
+            Número máximo de caracteres:
+            <Variable formatSpec="{3}">maximum_length</Variable>
+            <br/>
+            Valor:
+            <Variable formatSpec="{4}">value</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                El número de caracteres que pueden utilizarse para el valor del elemento está restringido porque, o bien corresponde a un campo de la especificación de Common Base Event que tiene una longitud máxima, o bien el campo de la base de datos en el que se almacena el valor tiene un tamaño limitado.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación y proporcione un valor para el elemento que no exceda el número máximo de caracteres.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0006E    MSG_COMPLETE                                       -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0006E" prefix="yes">
+        <MsgText pgmKey="CEICA0006" varFormat="Java">
+            La definición de suceso
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            no puede ser principal de ella misma.
+        </MsgText>
+        <Explanation>
+            <p>
+                Las definiciones de suceso están organizadas en forma de jerarquía, según la cual una definición de suceso puede ser principal de cualquier número de otras definiciones de suceso. El nombre de una definición de suceso no puede utilizarse como nombre de su principal.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación y proporcione un valor válido para el parámetro parentName.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0007E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0007E" prefix="yes">
+        <MsgText pgmKey="CEICA0007" varFormat="Java">
+            El valor
+            <Variable formatSpec="{0}">value</Variable>
+            del parámetro
+            <Variable formatSpec="{1}">parameter_name</Variable>
+            no es válido porque es un número negativo.
+        </MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación y proporcione un valor para el parámetro especificado que sea mayor que o igual a cero.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0008E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0008E" prefix="yes">
+        <MsgText pgmKey="CEICA0008" varFormat="Java">
+            La definición de suceso ya describe el elemento de datos ampliados.
+            <br/>
+            Nombre de definición de suceso:
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{1}">
+                extended_data_element_name
+            </Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                Una definición de suceso puede describir un número determinado de elementos de datos ampliados. Cada uno de estos elementos de datos ampliados debe tener un nombre exclusivo.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>Realice una de las siguientes acciones:</p>
+            <ul>
+                <li>
+                    Vuelva a crear la descripción del elemento de datos ampliados utilizando un nombre distinto. A continuación, agréguela a la definición de suceso.
+                </li>
+                <li>
+                    Vuelva a crear la definición de suceso sin la descripción del elemento de datos ampliados original. A continuación, agregue la nueva descripción del elemento de datos ampliados a la definición de suceso.
+                </li>
+            </ul>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0009E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0009E" prefix="yes">
+        <MsgText pgmKey="CEICA0009" varFormat="Java">
+            La descripción del elemento de datos ampliados ya describe el elemento de datos ampliados secundario especificado.
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{0}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Nombre de elemento de datos ampliados secundario:
+            <Variable formatSpec="{1}">
+                child_extended_data_element_name
+            </Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                La descripción de un elemento de datos ampliados puede contener un número determinado de descripciones de elementos de datos ampliados secundarios. Cada descripción de los elementos de datos ampliados inmediatamente secundarios debe tener un nombre exclusivo.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>Realice una de las siguientes acciones:</p>
+            <ul>
+                <li>
+                    Vuelva a crear el elemento de datos ampliados secundario utilizando un nombre distinto. A continuación, agréguelo a la descripción de elemento de datos ampliados.
+                </li>
+                <li>
+                    Vuelva a crear la definición de suceso sin la descripción del elemento de datos ampliados secundario original. A continuación, agregue la nueva descripción del elemento de datos ampliados secundario a la descripción del elemento de datos ampliados.
+                </li>
+            </ul>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0010E    MSG_COMPLETE                                       -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0010E" prefix="yes">
+        <MsgText pgmKey="CEICA0010" varFormat="Java">
+            La definición de suceso ya describe la propiedad especificada.
+            <br/>
+            Nombre de definición de suceso:
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            <br/>
+            Nombre de propiedad:
+            <Variable formatSpec="{1}">property_name</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                Una definición de suceso puede describir un número determinado de propiedades.
+Cada una de estas propiedades debe tener un nombre exclusivo.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>Realice una de las siguientes acciones:</p>
+            <ul>
+                <li>
+                    Vuelva a crear la descripción de la propiedad utilizando un nombre distinto. A continuación, agréguela a la definición de suceso.
+                </li>
+                <li>
+                    Vuelva a crear la definición de suceso sin la descripción de la propiedad original. A continuación, agregue la nueva descripción de la propiedad a la definición de suceso.
+                </li>
+            </ul>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0011E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0011E" prefix="yes">
+        <MsgText pgmKey="CEICA0011" varFormat="Java">
+            El valor especificado para el parámetro de tipo no es válido.
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{0}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Tipo:
+            <Variable formatSpec="{1}">
+                extended_data_element_type_integer
+            </Variable>
+        </MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación y proporcione un valor válido para el parámetro de tipo. Los valores válidos para el tipo de elemento de datos ampliados se describen en la documentación de la clase
+                org.eclipse.hyades.logging.events.cbe.ExtendedDataElement.
+            </p>
+        </AdminResponse>
+    </Message>
+
+
+    <!-- ================================================================= -->
+    <!--  CEICA0013E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0013E" prefix="yes">
+        <MsgText pgmKey="CEICA0013" varFormat="Java">
+            No se pueden establecer valores de serie predeterminados para un elemento de datos ampliados de tipo hexBinary. Si es necesario, utilice el método setDefaultHexValue para establecer un valor hexadecimal predeterminado.
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{0}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Tipo:
+            <Variable formatSpec="{1}">
+                extended_data_element_type_integer
+            </Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                La mayoría de tipos de elementos de datos ampliados pueden tener un número determinado de valores de serie predeterminados. Sin embargo, el tipo hexBinary sólo puede tener un único valor hexadecimal predeterminado.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>Consulte el mensaje.</p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0014E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0014E" prefix="yes">
+        <MsgText pgmKey="CEICA0014" varFormat="Java">
+            No se puede establecer un valor hexadecimal predeterminado para un elemento de datos ampliados que no sea de tipo hexBinary. Si es necesario, utilice el método setDefaultValues para establecer los valores de serie predeterminados.
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{0}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Tipo:
+            <Variable formatSpec="{1}">
+                extended_data_element_type_integer
+            </Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                hexBinary es el único tipo de elemento de datos ampliados que puede tener un valor hexadecimal predeterminado. La mayoría del resto de tipos puede tener un número determinado de valores de serie predeterminados.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>Consulte el mensaje.</p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0015E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0015E" prefix="yes">
+        <MsgText pgmKey="CEICA0015" varFormat="Java">
+            No se pueden establecer valores predeterminados para un elemento de datos ampliados de tipo noValue.
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{0}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Tipo:
+            <Variable formatSpec="{1}">
+                extended_data_element_type_integer
+            </Variable>
+        </MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                No utilice el método setDefaultValues para un elemento de datos ampliados de tipo noValue.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0016E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0016E" prefix="yes">
+        <!--
+            ******************************************************************************
+            * Translation Notes:
+            *
+            * Do not translate the following words:
+            * string
+            * float
+            * byte
+            * setDefaultValues
+            ******************************************************************************
+        -->
+        <MsgText pgmKey="CEICA0016" varFormat="Java">
+            Solamente se puede establecer un único valor predeterminado para el elemento de datos ampliados porque es de un tipo de valor único, como string, float, o byte.
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{0}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Tipo:
+            <Variable formatSpec="{1}">
+                extended_data_element_type_integer
+            </Variable>
+        </MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Utilice un único valor en la llamada al método setDefaultValues.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0017E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0017E" prefix="yes">
+        <MsgText pgmKey="CEICA0017" varFormat="Java">
+            El valor hexadecimal predeterminado especificado en el parámetro excede el número máximo de bytes.
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{0}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Número de bytes:
+            <Variable formatSpec="{1}">value_length</Variable><br/>
+            Número máximo de bytes:
+            <Variable formatSpec="{2}">maximum_length</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                El valor del valor hexadecimal predeterminado está limitado debido a una restricción del campo de base de datos en el que se almacena el valor.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación y proporcione un valor que no exceda el número máximo de bytes.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0018E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0018E" prefix="yes">
+        <!--
+            ******************************************************************************
+            * Translation Notes:
+            *
+            * Do not translate the following words:
+            * minOccurs
+            * maxOccurs
+            ******************************************************************************
+        -->
+        <MsgText pgmKey="CEICA0018" varFormat="Java">
+            El valor especificado para el parámetro minOccurs es mayor que el valor actual del parámetro maxOccurs.
+            <br/>
+Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{0}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Parámetro minOccurs:
+            <Variable formatSpec="{1}">integer</Variable>
+            <br/>
+            Parámetro maxOccurs:
+            <Variable formatSpec="{2}">integer</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                El número mínimo de veces que puede ocurrir un elemento de datos ampliados debe ser menor que o igual al número máximo de veces.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Establezca primero el valor del parámetro maxOccurs o especifique un valor más pequeño para el parámetro minOccurs.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0019E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0019E" prefix="yes">
+        <!--
+            ******************************************************************************
+            * Translation Notes:
+            *
+            * Do not translate the following words:
+            * minOccurs
+            * maxOccurs
+            ******************************************************************************
+        -->
+        <MsgText pgmKey="CEICA0019" varFormat="Java">
+            El valor especificado para el parámetro maxOccurs es menor que el valor actual del parámetro minOccurs.
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{0}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Parámetro maxOccurs:
+            <Variable formatSpec="{1}">integer</Variable>
+            <br/>
+            Parámetro minOccurs:
+            <Variable formatSpec="{2}">integer</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                El número mínimo de veces que puede ocurrir un elemento de datos ampliados debe ser menor que o igual al número máximo de veces.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Establezca primero el parámetro minOccurs o especifique un valor más alto para el parámetro maxOccurs.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0020E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0020E" prefix="yes">
+        <!--
+            ******************************************************************************
+            * Translation Notes:
+            *
+            * Do not translate the following words:
+            * setPermittedValues
+            ******************************************************************************
+        -->
+        <MsgText pgmKey="CEICA0020" varFormat="Java">
+            No se pueden establecer valores permitidos para una propiedad cuando ya tiene establecido un valor máximo o mínimo.
+            <br/>
+            Nombre de propiedad:
+            <Variable formatSpec="{0}">property_name</Variable>
+            <br/>
+            Valor mínimo:
+            <Variable formatSpec="{1}">minimum_value</Variable>
+            <br/>
+            Valor máximo:
+            <Variable formatSpec="{2}">maximum_value</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                Una descripción de propiedad no puede tener valores permitidos si ya tiene un valor mínimo o máximo. Asimismo, una descripción de propiedad no puede tener un valor mínimo o máximo si ya tiene valores permitidos.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación sin utilizar el método setPermittedValues.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0021E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0021E" prefix="yes">
+        <!--
+            ******************************************************************************
+            * Translation Notes:
+            *
+            * Do not translate the following words:
+            * setMinimumValue
+            * setMaximumValue
+            ******************************************************************************
+        -->
+        <MsgText pgmKey="CEICA0021" varFormat="Java">
+            No se puede establecer un valor mínimo o máximo para una propiedad cuando ya tiene establecidos valores permitidos.
+            <br/>
+            Nombre de propiedad:
+            <Variable formatSpec="{0}">property_name</Variable>
+            <br/>
+            Parámetro:
+            <Variable formatSpec="{1}">parameter_name</Variable>
+            <br/>
+            Valores permitidos:
+            <Variable formatSpec="{2}">permitted_values</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+Una descripción de propiedad no puede tener un valor mínimo o máximo si ya tiene valores permitidos. Asimismo, una descripción de propiedad no puede tener valores permitidos si ya tiene un valor mínimo o máximo.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Repita la operación sin utilizar el método setMinimumValue o setMaximumValue.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0022E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0022E" prefix="yes">
+        <MsgText pgmKey="CEICA0022" varFormat="Java">
+            No se ha encontrado la definición de suceso
+            <Variable formatSpec="{0}">event_definition_name</Variable>.
+        </MsgText>
+        <Explanation>
+            <p>
+                El catálogo de sucesos no contiene una definición de suceso con el nombre especificado.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>Compruebe que el nombre que está utilizando es correcto.</p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0023E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0023E" prefix="yes">
+        <MsgText pgmKey="CEICA0023" varFormat="Java">
+            No se ha agregado la definición de suceso
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            porque ya existe una definición de suceso con el mismo nombre.
+        </MsgText>
+        <Explanation>
+            <p>
+                Cada una de las definiciones de suceso del catálogo de sucesos debe tener un nombre exclusivo. Al agregar una definición de suceso, puede sustituir una definición de suceso ya existente.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>Consulte el mensaje.</p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0024E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0024E" prefix="yes">
+        <MsgText pgmKey="CEICA0024" varFormat="Java">
+            No se ha agregado la definición de suceso porque tiene un principal distinto del de la definición de suceso a la que está sustituyendo.
+            <br/>
+            Nombre de definición de suceso:
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            <br/>
+            Nombre del principal:
+            <Variable formatSpec="{1}">parent_event_definition_name</Variable>
+            <br/>
+            Nombre del principal de la definición de suceso ya existente:
+            <Variable formatSpec="{2}">existing_parent_event_definition_name</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                Al sustituir una definición de suceso en el catálogo de sucesos, la nueva definición de suceso y la definición ya existente deben tener el mismo principal. Es decir, las definiciones de sucesos deben ocupar la mismo posición en la jerarquía de definiciones de suceso.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Vuelva a crear la definición de suceso utilizando el nombre de principal de la definición de suceso ya existente. A continuación, agregue la definición de suceso al catálogo de sucesos.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0025E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0025E" prefix="yes">
+        <MsgText pgmKey="CEICA0025" varFormat="Java">
+            No se ha agregado la definición de suceso
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            al catálogo de sucesos porque se trata de una definición raíz y ya existe una definición raíz.
+        </MsgText>
+        <Explanation>
+            <p>
+                El catálogo de sucesos sólo puede contener una definición raíz.
+Al agregar una definición de suceso, puede sustituir una definición de suceso ya existente.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>Consulte el mensaje.</p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0026E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0026E" prefix="yes">
+        <MsgText pgmKey="CEICA0026" varFormat="Java">
+            No se ha agregado la definición de suceso
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            al catálogo de sucesos porque su definición de suceso principal, <Variable formatSpec="{1}">
+                parent_event_definition_name</Variable>, no existe.
+        </MsgText>
+        <Explanation>
+            <p>
+                El catálogo de sucesos no contiene una definición de suceso para el nombre de principal especificado.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+Compruebe que el nombre de la definición principal que está utilizando es correcto.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0027E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0027E" prefix="yes">
+        <MsgText pgmKey="CEICA0027" varFormat="Java">
+            No se ha agregado la definición al catálogo de sucesos porque contiene un elemento de datos ampliados de un tipo distinto del de su definición de suceso predecesora.
+            <br/>
+            Nombre de definición de suceso:
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{1}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Tipo:
+            <Variable formatSpec="{2}">
+                extended_data_element_type
+            </Variable>
+            <br/>
+            Nombre de definición de suceso predecesora:
+            <Variable formatSpec="{3}">event_definition_name</Variable>
+            <br/>
+            Tipo de definición de suceso predecesora:
+            <Variable formatSpec="{4}">
+                extended_data_element_type
+            </Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                Las reglas de herencia de definiciones de suceso controlan la herencia de las descripciones de elementos de datos ampliados de una definición de suceso predecesora. Estas reglas se describen en la documentación de la clase com.ibm.events.catalog.EventDefinition de la API del catálogo de sucesos. Una definición de suceso no puede cambiar el tipo de una descripción de elemento de datos ampliados que hereda.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Vuelva a crear la definición de suceso omitiendo la descripción del elemento de datos ampliados, o bien estableciendo el mismo tipo que el de la definición de suceso predecesora. A continuación, agregue la definición de suceso al catálogo de sucesos.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0028E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0028E" prefix="yes">
+        <MsgText pgmKey="CEICA0028" varFormat="Java">
+            No se ha agregado la definición de suceso porque la definición de suceso predecesora requiere la propiedad.
+            <br/>
+            Nombre de definición de suceso:
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            <br/>
+            Nombre de definición de suceso predecesora:
+            <Variable formatSpec="{1}">event_definition_name</Variable>
+            <br/>
+            Nombre de propiedad:
+            <Variable formatSpec="{2}">property_name</Variable>
+
+        </MsgText>
+        <Explanation>
+            <p>
+                Las reglas de herencia de definiciones de suceso controlan la herencia de las descripciones de propiedades de una definición de suceso predecesora. Estas reglas se describen en la documentación de la clase com.ibm.events.catalog.EventDefinition de la API del catálogo de sucesos. Una definición de suceso no puede cambiar el valor <code>required</code> de true a false de una propiedad que hereda.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Vuelva a crear la definición de suceso omitiendo la descripción de propiedad, o bien estableciendo su valor <code>required</code> en true. A continuación, agregue la definición de suceso al catálogo de sucesos.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0029E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0029E" prefix="yes">
+        <MsgText pgmKey="CEICA0029" varFormat="Java">
+            No se ha sustituido la definición de suceso porque contiene un elemento de datos ampliados de un tipo diferente que el de una definición de suceso descendiente.
+            <br/>
+            Nombre de definición de suceso:
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            <br/>
+            Nombre de elemento de datos ampliados:
+            <Variable formatSpec="{1}">
+                extended_data_element_name
+            </Variable>
+            <br/>
+            Tipo:
+            <Variable formatSpec="{2}">
+                extended_data_element_type
+            </Variable>
+            <br/>
+            Nombre de definición de suceso descendiente:
+            <Variable formatSpec="{3}">event_definition_name</Variable>
+            <br/>
+            Nombre de tipo de definición de suceso descendiente:
+            <Variable formatSpec="{4}">
+                extended_data_element_type
+            </Variable>.
+        </MsgText>
+        <Explanation>
+            <p>
+                Las reglas de herencia de definiciones de suceso controlan la herencia de las descripciones de elementos de datos ampliados de una definición de suceso predecesora. Estas reglas se describen en la documentación de la clase com.ibm.events.catalog.EventDefinition de la API del catálogo de sucesos. Una definición de suceso no puede cambiar el tipo de una descripción de elemento de datos ampliados que hereda.
+La sustitución de la definición de suceso haría que una definición de suceso descendiente infringiera esta regla.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Vuelva a crear la definición de suceso omitiendo la descripción del elemento de datos ampliados, o bien estableciendo el mismo tipo que el de la definición de suceso descendiente, o bien suprima la definición de suceso descendiente del catálogo de sucesos. A continuación, agregue la definición de suceso al catálogo de sucesos.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0030E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0030E" prefix="yes">
+        <MsgText pgmKey="CEICA0030" varFormat="Java">
+            No se ha sustituido la definición de suceso porque el valor necesario de una descripción de propiedad no es el mismo que el valor necesario de una definición de suceso descendiente.
+            <br/>
+            Nombre de definición de suceso:
+            <Variable formatSpec="{0}">event_definition_name</Variable>
+            <br/>
+            Nombre de propiedad:
+            <Variable formatSpec="{1}">property_name</Variable>
+            <br/>
+            Valor necesario:
+            <Variable formatSpec="{2}">required</Variable>
+            <br/>
+            Nombre de definición de suceso descendiente:
+            <Variable formatSpec="{3}">event_definition_name</Variable>
+            <br/>
+            Valor necesario del descendiente:
+            <Variable formatSpec="{4}">descendant_required</Variable>
+        </MsgText>
+        <Explanation>
+            <p>
+                Las reglas de herencia de definiciones de suceso controlan la herencia de las descripciones de propiedades de una definición de suceso predecesora. Estas reglas se describen en la documentación de la clase com.ibm.events.catalog.EventDefinition de la API del catálogo de sucesos. Una definición de suceso no puede cambiar el valor <code>required</code> de una propiedad que hereda.
+La sustitución de la definición de suceso haría que una definición de suceso descendiente infringiera esta regla.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Vuelva a crear la definición de suceso omitiendo la descripción de propiedad, o bien estableciendo su valor <code>required</code> en false, o bien suprima la definición de suceso descendiente del catálogo de sucesos. A continuación, agregue la definición de suceso al catálogo de sucesos.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0031E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0031E" prefix="yes">
+        <MsgText pgmKey="CEICA0031" varFormat="Java">
+         No se ha encontrado el archivo <Variable formatSpec="{0}">file_name</Variable> en la vía de acceso de clases (classpath).
+        </MsgText>
+        <Explanation>
+            <p>
+                El catálogo de sucesos esperaba encontrar un archivo en uno de los directorios incluidos en la vía de acceso de clases (classpath), pero el archivo no existe. Se trata de un archivo interno de Common Event Infrastructure. Esto puede indicar un problema en el sistema de archivos o un error en la instalación de la aplicación de Common Event Infrastructure.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Compruebe que la aplicación de Common Event Infrastructure está instalada correctamente.
+            </p>
+        </AdminResponse>
+    </Message>
+
+
+    <!-- ================================================================= -->
+    <!--  CEICA0034E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0034E" prefix="yes">
+        <MsgText pgmKey="CEICA0034" varFormat="Java">
+            El documento XML no es válido porque no cumple el esquema XML eventdefinition.xsd.
+            <br/>
+            Mensajes del análisis:
+            <Variable formatSpec="{0}">parse_error_messages</Variable>
+        </MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>Corrija el documento XML y repita la operación.</p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0035E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0035E" prefix="yes">
+        <MsgText pgmKey="CEICA0035" varFormat="Java">
+            Se ha producido un error al serializar un documento de Document Object Model en un documento XML.
+        </MsgText>
+        <Explanation>
+            <p>
+Esto puede indicar un error en la instalación de la aplicación de Common Event Infrastructure.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Para obtener más información sobre la causa del error, consulte el mensaje de excepción. Si es necesario, compruebe que la aplicación de Common Event Infrastructure está instalada correctamente.
+            </p>
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0036E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0036E" prefix="yes">
+        <MsgText pgmKey="CEICA0036" varFormat="Java">
+            Se ha producido un error al aplicar la hoja de estilos XSLT <Variable formatSpec="{0}">stylesheet_filename</Variable>
+            a un documento de Document Object Model.
+        </MsgText>
+        <Explanation>
+            <p>
+Este problema puede indicar un error en la instalación de la aplicación de Common Event Infrastructure.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Para obtener más información sobre la causa del problema, consulte el mensaje de excepción. Si es necesario, compruebe que la aplicación de Common Event Infrastructure está instalada correctamente.
+            </p>
+
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0037E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0037E" prefix="yes">
+        <MsgText pgmKey="CEICA0037" varFormat="Java">
+            No se ha podido crear la instancia del enterprise bean
+            <Variable formatSpec="{0}">bean_name</Variable>.
+        </MsgText>
+        <Explanation>
+            <p>
+                Se ha producido un error al llamar al método create en el directorio inicial remoto o local del enterprise bean especificado.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Para obtener más información sobre la causa del problema, consulte el mensaje de excepción. Si es necesario, compruebe que la aplicación de Common Event Infrastructure está instalada correctamente y que el servidor de Common Event Infrastructure está funcionando correctamente.
+            </p>
+
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0038E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0038E" prefix="yes">
+        <MsgText pgmKey="CEICA0038" varFormat="Java">
+            No se ha podido eliminar la instancia del enterprise bean
+            <Variable formatSpec="{0}">bean_name</Variable>.
+        </MsgText>
+        <Explanation>
+            <p>
+                Se ha producido un error al llamar al método remove en el directorio inicial local de EJB del EJB especificado.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Para obtener más información sobre la causa del problema, consulte el mensaje de excepción. Si es necesario, compruebe que la aplicación de Common Event Infrastructure está instalada correctamente y que el servidor de Common Event Infrastructure está funcionando correctamente.
+            </p>
+
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0039E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0039E" prefix="yes">
+        <MsgText pgmKey="CEICA0039" varFormat="Java">
+            Se ha producido un error en una llamada que utiliza un método de búsqueda para encontrar una instancia del enterprise bean.
+            <br/>
+            Nombre del método de búsqueda:
+            <Variable formatSpec="{0}">method_name</Variable>
+            <br/>
+            Nombre de enterprise bean:
+            <Variable formatSpec="{1}">bean_name</Variable>
+
+        </MsgText>
+        <Explanation>
+            <p>
+                Se ha producido un error al llamar al método de búsqueda en el directorio inicial local de EJB del enterprise bean especificado.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Para obtener más información sobre la causa del problema, consulte el mensaje de excepción. Si es necesario, compruebe que la aplicación de Common Event Infrastructure está instalada correctamente y que el servidor de Common Event Infrastructure está funcionando correctamente.
+            </p>
+
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0040E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0040E" prefix="yes">
+        <MsgText pgmKey="CEICA0040" varFormat="Java">
+            Error en la búsqueda del nombre JNDI.
+            <br/>
+            Nombre JNDI:
+            <Variable formatSpec="{0}">jndi_name</Variable>
+            <br/>
+            Nombre de clase:
+            <Variable formatSpec="{1}">class_name</Variable>
+
+        </MsgText>
+        <Explanation>
+            <p>
+                Es posible que el servicio JNDI no esté en ejecución o no sea accesible.
+            </p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Para obtener más información sobre la causa del problema, consulte el mensaje de excepción. Si es necesario, compruebe que la aplicación de Common Event Infrastructure está instalada correctamente y que el servidor de Common Event Infrastructure está funcionando correctamente.
+            </p>
+
+        </AdminResponse>
+    </Message>
+
+    <!-- ================================================================= -->
+    <!--  CEICA0041E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0041E" prefix="yes">
+        <MsgText pgmKey="CEICA0041" varFormat="Java">
+            Se ha producido un error en el análisis del archivo XML <Variable formatSpec="{0}">file_name</Variable> debido a un error de E/S al procesar el archivo.</MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>
+                Compruebe que el archivo especificado existe y que el servidor de Common Event Infrastructure puede acceder a él.
+            </p>
+        </AdminResponse>
+    </Message>
+    <!-- ================================================================= -->
+    <!--  CEICA0042E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0042E" prefix="yes">
+        <MsgText pgmKey="CEICA0042" varFormat="Java">
+            Se ha producido un error en el análisis del archivo XML <Variable formatSpec="{0}">file</Variable> debido a una excepción durante el análisis.
+            </MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+        </AdminResponse>
+    </Message>
+    <!-- ================================================================= -->
+    <!--  CEICA0043E    MSG_COMPLETE                                        -->
+    <!-- ================================================================= -->
+    <Message ID="CEICA0043E" prefix="yes">
+        <MsgText pgmKey="CEICA0043" varFormat="Java">
+            No se ha podido procesar el archivo XML porque no se ha podido crear una instancia de javax.xml.parsers.DocumentBuilder.</MsgText>
+        <Explanation>
+            <p>Consulte el mensaje.</p>
+        </Explanation>
+        <AdminResponse>
+            <p>Consulte el mensaje de excepción para obtener información adicional sobre la causa del problema.</p>
+        </AdminResponse>
+    </Message>
+</TMSSource>
+
+

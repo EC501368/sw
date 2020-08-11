@@ -1,0 +1,63 @@
+<project name="os400fp" default="install" basedir=".">
+
+    <taskdef name="wscmtlog" classname="com.ibm.ws.install.configmanager.actionengine.ant.utils.AntTaskToLogToConfigManagersLogFiles"/> 
+
+
+    <target name="install" depends="os400fp" />
+    <target name="uninstall" />
+
+    <target name="detectOS400"
+		description="Detects if this is OS/400">
+		<condition property="isOS400" value="true">
+			<equals arg1="${os.name}" arg2="OS/400"/>
+		</condition>
+		<wscmtlog> Detected current OS family to be: ${os.name}</wscmtlog>
+    </target>
+
+    <target name="setProps" if="isOS400"
+		description="Sets properties">
+
+		<!-- If PLUGIN_HOME is passed in, set PROD_ROOT to it else use WAS_HOME -->
+        <condition property="PROD_ROOT" value="${PLUGIN_HOME}">
+           <isset property="PLUGIN_HOME"/>
+        </condition>
+        <property name="PROD_ROOT" value="${WAS_HOME}"/>
+
+    </target>
+
+    <target name="updateQueryWASInstalls" if="isOS400"
+		description="update PROD_ROOT/bin/queryWasInstalls script">
+
+        <wscmtlog>Product Root is: ${PROD_ROOT}</wscmtlog>
+
+        <replaceregexp file="${PROD_ROOT}/bin/queryWASinstalls"
+            match="${line.separator}JAVA_HOME=/QOpenSys/QIBM/ProdData/JavaVM/jdk626/32bit"
+            replace="${line.separator}if [ &quot;${QSH_VERSION:0:4}&quot; = &quot;V7R3&quot; ] ; then${line.separator}   JAVA_HOME=/QOpenSys/QIBM/ProdData/JavaVM/jdk70/32bit${line.separator}else${line.separator}   JAVA_HOME=/QOpenSys/QIBM/ProdData/JavaVM/jdk626/32bit${line.separator}fi"
+	    flags="s"/>
+
+        <exec executable="/usr/bin/chown">
+           <arg value="QSYS"/>
+           <arg value="${PROD_ROOT}/bin/queryWASinstalls"/>
+        </exec>	
+
+        <replaceregexp file="/QIBM/WAS/bin/queryWASinstalls"
+            match="${line.separator}JAVA_HOME=/QOpenSys/QIBM/ProdData/JavaVM/jdk626/32bit"
+            replace="${line.separator}if [ &quot;${QSH_VERSION:0:4}&quot; = &quot;V7R3&quot; ] ; then${line.separator}   JAVA_HOME=/QOpenSys/QIBM/ProdData/JavaVM/jdk70/32bit${line.separator}else${line.separator}   JAVA_HOME=/QOpenSys/QIBM/ProdData/JavaVM/jdk626/32bit${line.separator}fi"
+	    flags="s"/>
+
+        <exec executable="/usr/bin/chown">
+           <arg value="QSYS"/>
+           <arg value="/QIBM/WAS/bin/queryWASinstalls"/>
+        </exec>	
+
+    </target>
+
+    <target name="os400fp"
+		description="Invoke script to handle post FP install config actions"
+		depends="detectOS400,
+			setProps,
+			updateQueryWASInstalls">
+
+    </target>
+      
+</project>

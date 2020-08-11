@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Performance Monitoring Infrastructure" topic="index.html">
+   <topic label="Nivel de supervisión personalizado"
+          href="ae/uprf_pmicustomsettings.html"/>
+   <topic label="Colección de PMI (Infraestructura de supervisión del rendimiento)"
+          href="ae/uprf_pmicollection.html"/>
+   <topic label="Valores de PMI (Infraestructura de supervisión del rendimiento)"
+          href="ae/uprf_rmonitorsettings.html"/>
+</toc>

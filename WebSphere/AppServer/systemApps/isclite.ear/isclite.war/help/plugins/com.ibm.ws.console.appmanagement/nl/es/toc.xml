@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de aplicaciones" topic="index.html">
+   <topic label="Valores binarios de la aplicación" href="ae/urun_rapp_appbin.html"/>
+   <topic label="Colección de perfiles de aplicación"
+          href="webui_pme/ui/ueac_appprofile.html"/>
+   <topic label="Valores de perfil de aplicación"
+          href="webui_pme/ui/ueac_appprofilesettings.html"/>
+   <topic label="Valores del servicio de perfilado de aplicaciones"
+          href="webui_pme/ui/ueac_appservicesettings.html"/>
+   <topic label="Recursos del ámbito de la aplicación" href="ae/udat_resscope.html"/>
+   <topic label="Recursos disponibles" href="ae/udat_availres.html"/>
+   <topic label="Enlazar valores de empresa EJB" href="ae/uejb_bindejbbusiness.html"/>
+   <topic label="Enlazar escuchas para los beans controlados por mensajes"
+          href="ae/urun_rapp_bindmdb.html"/>
+   <topic label="Valores de Carga de clases y detección de actualizaciones"
+          href="ae/urun_rapp_classload.html"/>
+   <topic label="Valores de la propiedades de un módulo de cliente"
+          href="ae/urun_app_client_deploy_mode.html"/>
+   <topic label="Valores del módulo de cliente" href="ae/urun_app_client.html"/>
+   <topic label="Valores de Raíz de contexto para los módulos web"
+          href="ae/uweb_contextroot.html"/>
+   <topic label="Corregir el uso de la Identidad del sistema"
+          href="ae/usec_correctsystemid.html"/>
+   <topic label="Visualizar los valores de ID de compilación de módulo"
+          href="ae/urun_rapp_module_build.html"/>
+   <topic label="Descargar grupo de perfiles SQLJ" href="ae/udat_sqljprofdown.html"/>
+   <topic label="Nombres JNDI de EJB para beans" href="ae/uejb_provjndi.html"/>
+   <topic label="Valores de módulo EJB" href="ae/uejb_remod.html"/>
+   <topic label="Referencias de EJB" href="ae/uejb_mapejbref.html"/>
+   <topic label="Valores del servicio de temporizador EJB"
+          href="ae/uejb_timerservice.html"/>
+   <topic label="Comprobar que todos los métodos 1.x no protegidos tengan el nivel correcto de protección"
+          href="ae/usec_tmethods.html"/>
+   <topic label="Comprobar que todos los métodos 2.x no protegidos tengan el nivel correcto de protección"
+          href="ae/usec_tmethods2.html"/>
+   <topic label="Colección de aplicaciones empresariales" href="ae/urun_rapp.html"/>
+   <topic label="Valores de aplicación de empresa" href="ae/urun_rapp_inst.html"/>
+   <topic label="Valores de las entradas de entorno para aplicaciones"
+          href="ae/urun_app_enventryapp.html"/>
+   <topic label="Entradas de entorno para los valores de módulos de cliente"
+          href="ae/urun_app_enventryclient.html"/>
+   <topic label="Valores de entradas de entorno para módulos EJB"
+          href="ae/uejb_enventrejb.html"/>
+   <topic label="Valores de Entradas de entorno para los módulos web"
+          href="ae/uweb_enventrweb.html"/>
+   <topic label="Propiedades de origen de datos ampliado"
+          href="ae/udat_extendeddsprops.html"/>
+   <topic label="Valores de despliegue global" href="ae/urun_app_global_deployment.html"/>
+   <topic label="Valores de Parámetros de inicialización de los servlets"
+          href="ae/uweb_initservletparms.html"/>
+   <topic label="Habilitación de autenticación JASPI para las aplicaciones"
+          href="ae/usec_app_jaspprovide.html"/>
+   <topic label="Valores de opciones JSP y JSF" href="ae/uweb_jspreload.html"/>
+   <topic label="Colección de referencias de biblioteca" href="ae/ucws_rlibref.html"/>
+   <topic label="Valores de referencias de biblioteca" href="ae/ucws_rlibref_inst.html"/>
+   <topic label="Buscar usuarios" href="ae/usec_rmapuser.html"/>
+   <topic label="Valores de Gestionar módulos" href="ae/urun_rapp_mapmodules.html"/>
+   <topic label="Correlacionar orígenes de datos para todos los beans CMP 1.x"
+          href="ae/udat_map1xcmp.html"/>
+   <topic label="Correlacionar orígenes de datos para todos los beans CMP 2.x"
+          href="ae/udat_mapdds2xcmp.html"/>
+   <topic label="Valores para correlacionar orígenes de datos para todos los beans CMP 2.x"
+          href="ae/udat_map2xcmp.html"/>
+   <topic label="Correlacionar orígenes de datos para módulos que contienen beans de entidad 1.x"
+          href="ae/udat_mapdds1xcmp.html"/>
+   <topic label="Propiedades de correlación para una configuración de inicio de sesión personalizada o para una configuración de conexión de confianza"
+          href="ae/usec_mapproperty.html"/>
+   <topic label="Valores de Referencia de destinos de mensajes"
+          href="ae/urun_app_msgdestref.html"/>
+   <topic label="Valores de Metadatos para módulos"
+          href="ae/urun_rapp_metadata_lockdd.html"/>
+   <topic label="Valores de Preparación para el enlace de instalación de aplicación"
+          href="ae/urun_rapp_instw_gendefbind.html"/>
+   <topic label="Valores de Preparación para la instalación de la aplicación"
+          href="ae/urun_rapp_instw.html"/>
+   <topic label="Valores de preparación para la actualización de la aplicación"
+          href="ae/urun_rapp_update.html"/>
+   <topic label="Proporcionar nombres JNDI para objetos JCA"
+          href="ae/urun_app_jcaobjs.html"/>
+   <topic label="Proporcionar opciones para compilar los valores de páginas JavaServer"
+          href="ae/uweb_jspcompile.html"/>
+   <topic label="Proporcionar opciones para especificar las opciones de despliegue de EJB"
+          href="ae/urun_rapp_ejbdeploy.html"/>
+   <topic label="Proporcionar opciones para efectuar el despliegue de los servicios web"
+          href="ae/uwbs_wsdeploy.html"/>
+   <topic label="Valores de propiedad del asignador remoto"
+          href="ae/uweb_dsincludes.html"/>
+   <topic label="Referencias de entorno de recursos" href="ae/udat_maprer.html"/>
+   <topic label="Referencias de recursos" href="ae/udat_maprrr.html"/>
+   <topic label="Revisar resultados" href="ae/udat_sqljprofresults.html"/>
+   <topic label="Correlación de roles de seguridad y usuarios o grupos"
+          href="ae/usec_tselugrad.html"/>
+   <topic label="Seleccionar la configuración del ID del programa de fondo actual"
+          href="ae/urun_app_current_backend_id.html"/>
+   <topic label="Valores de Seleccionar las opciones de instalación"
+          href="ae/urun_rapp_installoptions.html"/>
+   <topic label="Valores de correlación y referencias de bibliotecas compartidas"
+          href="ae/ucws_rsharedlib_map.html"/>
+   <topic label="Relaciones de biblioteca compartida y valores de correlación"
+          href="ae/urun_rapp_bla_sharedlib_map.html"/>
+   <topic label="Valores de perfiles SQLJ y archivos de enlace pureQuery"
+          href="ae/udat_sqljprof.html"/>
+   <topic label="Valores de Comportamiento de arranque"
+          href="ae/urun_rapp_startup_behavior.html"/>
+   <topic label="Valores de migración tras error de beans de sesión con estado (aplicaciones)"
+          href="ae/uejb_sfsbfset.html"/>
+   <topic label="Valores de migración tras error de beans de sesión con estado (módulos EJB)"
+          href="ae/uejb_sfsbfset2.html"/>
+   <topic label="Estado de la aplicación específica del destino"
+          href="ae/urun_rtargetmap.html"/>
+   <topic label="Colección de tareas" href="webui_pme/ui/ueac_task.html"/>
+   <topic label="Valores de tareas" href="webui_pme/ui/ueac_tasksettings.html"/>
+   <topic label="Colección de roles RunAs de usuario" href="ae/usec_aurunas.html"/>
+   <topic label="Valores de Hosts virtuales" href="ae/urun_rapp_mapvhosts.html"/>
+   <topic label="Valores de despliegue del módulo Web" href="ae/uweb_rwar.html"/>
+   <topic label="Valores del daemon de servicio de ubicación para z/OS"
+          href="ae/uagt_rlocsrvdmn.html"/>
+</toc>

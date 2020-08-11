@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es" lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2014" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2014" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Definir propiedades generales de la política de servicio" />
+<meta name="abstract" content="Utilice esta página para crear políticas de servicio, que son los componentes básicos de una política operativa, de acuerdo con las directrices que se incluyen." />
+<meta name="Description" content="Utilice esta página para crear políticas de servicio, que son los componentes básicos de una política operativa, de acuerdo con las directrices que se incluyen." />
+<meta name="DC.Relation" scheme="URI" content="servicepolicy_overview.html" />
+<meta name="DC.Relation" scheme="URI" content="sc_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="sc_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="sc_goalproperties_new.html" />
+<meta name="DC.Relation" scheme="URI" content="sc_membership_new.html" />
+<meta name="DC.Relation" scheme="URI" content="service_policy_topology.html" />
+<meta name="DC.Relation" scheme="URI" content="tc_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="tc_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="tc_detail_move.html" />
+<meta name="DC.Date" scheme="iso8601" content="2014-08-10" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="sc_detail_main_new" />
+<meta name="DC.Language" content="es-es" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<title>Definir propiedades generales de la política de servicio</title>
+</head>
+<body role="main" class="help" id="sc_detail_main_new">
+<h1 class="title topictitle1">Definir propiedades generales de la política de servicio </h1>
+<div class="body"><p class="shortdesc">Utilice esta página para crear políticas de servicio, que son los componentes básicos de una política operativa, de acuerdo con las directrices que se incluyen. </p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Políticas de servicio</span> &gt; <span class="ph uicontrol">Nueva</span></span>.</p>
+<p class="p">Hay que poseer privilegios administrativos de configurador o administrador para crear, modificar o eliminar clases de transacción y políticas de servicio.</p>
+</div>
+<div class="related-links"><div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="servicepolicy_overview.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="sc_collection.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="sc_detail_main.html" title="Utilice esta página para cambiar las políticas de servicio o las clases de transacción existentes, con las que se crea conjuntamente una política operativa.">Valores de política de servicio</a></div>
+<div><a class="link help" href="sc_goalproperties_new.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="sc_membership_new.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="service_policy_topology.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="tc_detail_main.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="tc_detail_main_new.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="tc_detail_move.html">**** MISSING FILE ****</a></div>
+</div>
+</div><div class="topic nested1" xml:lang="es-es" id="title"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">El campo de nombre es obligatorio y lo define el usuario.
+El campo
+de nombre no puede contener los caracteres siguientes: <strong class="ph b"><kbd class="ph userinput"> \ / , : ; "
+* ? &lt; &gt; | = + &amp; % ' #</kbd></strong> El nombre debe ser exclusivo entre las políticas de salud de una célula y no
+puede empezar por un punto <strong class="ph b"><kbd class="ph userinput">.</kbd></strong> ni por un
+espacio. Un espacio no genera un error, pero los espacios al principio o al final se eliminan automáticamente. Cree nombres de políticas de servicio con sentido que se usen de forma coherente. Por ejemplo, PLATINUM, GOLD, SILVER y BRONZE son nombres de política de servicio adecuados.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="description"><h2 class="title topictitle2">Descripción</h2>
+<div class="body"><p class="shortdesc">El campo de descripción es complementario al campo de nombre y lo define el
+usuario. Este campo es opcional, pero en entornos con varios administradores, es mejor completarlo con información que sea de utilidad. Por ejemplo, un campo de descripción de la política PLATINUM podría incluir el texto, <span class="q">"La política de servicio
+PLATINUM se reserva para el trabajo de prioridad más alta."</span></p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="goaltype"><h2 class="title topictitle2">Tipo de objetivo</h2>
+<div class="body"><p class="shortdesc">Este campo se puede seleccionar y puede ser uno de los cuatro valores siguientes:</p>
+<ul class="ul"><li class="li"><span class="ph uicontrol">Tiempo de respuesta medio</span>: Indica el trabajo de alta prioridad. Este campo se utiliza con el valor del objetivo e importancia para limitar el tiempo que se mantiene el trabajo en la cola.</li>
+<li class="li"><span class="ph uicontrol">Tiempo de respuesta percentil</span>: Este es el porcentaje de las peticiones que se manejan en un período de tiempo específico. Este campo se utiliza con el porcentaje de objetivo para definir el porcentaje de peticiones por segundos o milisegundos. </li>
+<li class="li"><span class="ph uicontrol">Discrecional</span>: El valor por omisión para el tipo de objetivo. El valor Discrecional indica que el trabajo no tiene una prioridad alta y lo puede planificar el direccionador On Demand basándose en la carga de trabajo que existe en la cola.</li>
+<li class="li"><span class="ph uicontrol">Importancia</span>
+Cuando el sistema está soportando mucha carga, el valor de importancia determina el trabajo de aplicación que puede tolerar mejor una disminución del rendimiento. Cuando mayor sea la importancia, menor tolerancia tendrá el trabajo asociado con dicha política de servicio a los bajones en el rendimiento. 
+Para el ejemplo PLATINUM: seleccione Máxima como importancia.
+No establezca todas las políticas en el nivel de importancia más elevado salvo que desee que todas las políticas se degraden en la misma proporción cuando se sobrecargue el sistema.</li>
+</ul>
+<div class="p"><div class="note note"><span class="notetitle">Nota:</span> Si
+la propiedad personalizada de la célula
+<span class="keyword parmname parmname">disableResponseTimeGoals</span>=<span class="keyword cmdname">true</span>,
+se mostrará un tipo de objetivo <var class="keyword varname">importance</var>
+para los tipos de objetivo de política de servicio. Este tipo de objetivo se utiliza para establecer que sólo se utilizará
+el aspecto <var class="keyword varname">importance</var> de la política de servicio.</div>
+</div>
+</div>
+</div>
+</body>
+</html>

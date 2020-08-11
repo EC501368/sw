@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Gestor de instalación centralizada" topic="">
+<topic label="Instalaciones disponibles" href="cimgravailable.html"/>
+<topic label="Asistente de instalación" href="cimgravailable_detail_install.html"/>
+<topic label="Asistente de desinstalación" href="cimgravailable_detail_uninstall.html"/>
+<topic label="Añadir o eliminar paquetes" href="cimgrinstallpkg_collection.html"/>
+<topic label="Detalles del paquete de instalación" href="cimgrinstallpkg_detail_main.html"/>
+<topic label="Descriptores de descarga" href="cimgrinstallpkg_detail_descriptor.html"/>
+<topic label="Descarga de archivos" href="cimgrinstallpkg_detail_ifix.html"/>
+<topic label="Instalaciones en progreso" href="cimgrprogress.html"/>
+<topic label="Historial de instalaciones" href="cimgrhistory_collection.html"/>
+<topic label="Detalles de finalización" href="cimgrhistory_detail.html"/>
+<topic label="Destinos de instalación" href="cimgrinstalltarget_collection.html"/>
+<topic label="Valores de destino de instalación" href="cimgrinstalltarget_detail.html"/>
+<topic label="Asistente de clave pública SSH " href="cimgrinstalltarget_sshwizard.html"/>
+</toc>

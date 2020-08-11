@@ -1,0 +1,5 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1    11/14/19 9:34:34:576 CST    11/14/19 9:34:34:576 CST java.awt.HeadlessException com.ibm.ws.ssl.core.WSX509TrustManager.checkServerTrusted 462 /jennex/WebSphere/AppServer/profiles/AppSrv01/logs/ffdc/ffdc.2586460041123841308.txt
+------+------+---------------------------+---------------------------+---------------------------

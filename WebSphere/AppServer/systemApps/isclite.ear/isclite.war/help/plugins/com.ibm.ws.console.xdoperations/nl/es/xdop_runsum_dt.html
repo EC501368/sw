@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Resumen de destino de despliegue" />
+<meta name="abstract" content="Esta página de la consola administrativa muestra un resumen operativo de todos los destinos de despliegue que se están ejecutando en su entorno. Entre los destinos de despliegue se incluyen servidores de aplicaciones, servidores de middleware, clústeres y clústeres dinámicos. Esta página permite visualizar la capacidad que los destinos están consumiendo en relación al resto de ellos, el estado operativo de los destinos de despliegue, las políticas de servidor en que se clasifican los destinos de despliegue y las aplicaciones más activas en los destinos de despliegue." />
+<meta name="description" content="Esta página de la consola administrativa muestra un resumen operativo de todos los destinos de despliegue que se están ejecutando en su entorno. Entre los destinos de despliegue se incluyen servidores de aplicaciones, servidores de middleware, clústeres y clústeres dinámicos. Esta página permite visualizar la capacidad que los destinos están consumiendo en relación al resto de ellos, el estado operativo de los destinos de despliegue, las políticas de servidor en que se clasifican los destinos de despliegue y las aplicaciones más activas en los destinos de despliegue." />
+<meta name="DC.Relation" scheme="URI" content="xdop_reports.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_runsum_app.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_runsum_corecomp.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_runsum_node.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_runsum_odr.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_dc_operations.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_dc_request.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_dc_placement.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_dc_tasks.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_dc_reporting.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_app_operations.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_app_request.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_app_placement.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_app_tasks.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_app_reporting.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_srv_operations.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_srv_reporting.html" />
+<meta name="DC.Relation" scheme="URI" content="xdop_srvplcy_reporting.html" />
+<meta name="copyright" content="IBM corporation 2007" />
+<meta name="DC.Rights.Owner" content="IBM corporation 2007" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="xdop_runsum_dt" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Resumen de destino de despliegue</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="field-help" id="xdop_runsum_dt">
+<h1 class="title topictitle1">Resumen de destino de despliegue</h1>
+<div class="body"><p class="shortdesc">Esta página de la consola administrativa muestra un resumen operativo de todos los destinos de despliegue que se están ejecutando en su entorno.
+Entre los destinos de despliegue se incluyen servidores de aplicaciones, servidores de middleware, clústeres y clústeres dinámicos. Esta página permite visualizar la capacidad que los destinos están consumiendo en relación al resto de ellos, el estado operativo de los destinos de despliegue, las políticas de servidor en que se clasifican los destinos de despliegue y las aplicaciones más activas en los destinos de despliegue.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Operaciones en tiempo de ejecución</span> &gt; <span class="ph uicontrol">Destinos de despliegue</span></span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="deploymenttargetsummarychart"><h2 class="title topictitle2">Diagrama de resumen de destino de despliegue</h2>
+<div class="body"><p class="shortdesc">El diagrama muestra el tiempo de respuesta medio de los destinos de despliegue que están en ejecución. </p>
+<div class="p">Por omisión, el número máximo de conjuntos de datos que se visualiza es 5. <div class="note note"><span class="notetitle">Nota:</span> si la aplicación no tiene carga en la célula de WebSphere, el diagrama de resumen estará vacío.
+Se trata del comportamiento esperado. Para ver datos en el diagrama hay que comenzar a ejecutar carga con las aplicaciones.</div>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="deploymenttargetsummarytable"><h2 class="title topictitle2">Tabla de resumen de destino de despliegue</h2>
+<div class="body"><p class="shortdesc">La tabla de resumen de destino de despliegue muestra información sobre los destinos de despliegue que se están ejecutando en su entorno. </p>
+<p class="p">Pulse <span class="ph uicontrol">Preferencias</span> para cambiar el número de filas que se muestran de forma inicial en la tabla de datos de los destinos de despliegue. Puede especificar el <span class="ph uicontrol">Número máximo de filas</span> para mostrarlo en la tabla. Cualquier otro dato adicional se mostrará en las páginas siguientes.
+Seleccione el recuadro de selección <span class="ph uicontrol">Conservar criterios de filtro</span> para conservar el último criterio de filtro que se haya entrado. Al volver a la página, el criterio de filtro conservado controlará la colección de aplicaciones que se muestra en la tabla. Utilice el icono de filtro compuesto
+<img class="image" src="images/filter.gif" alt="icono de filtro" /> para filtrar la información que se muestra en la tabla.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="deploymenttarget"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre del destino de despliegue. Pulse sobre el nombre para visualizar los valores de configuración.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="cell"><h2 class="title topictitle2">Célula</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre de la célula.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="type"><h2 class="title topictitle2">Tipo</h2>
+<div class="body"><p class="shortdesc">Especifica el tipo de destino de despliegue. Los tipos que se incluyen son: clúster, clúster dinámico y servidor de aplicaciones. </p>
+<p class="p"></p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="status"><h2 class="title topictitle2">Estado</h2>
+<div class="body"><p class="shortdesc">Indica si el destino de despliegue está iniciado, detenido o si no está disponible.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="status__statustable" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 1. Estado de destino de despliegue</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="6.293706293706294%" id="d44275e184">Icono</th>
+<th class="entry" valign="bottom" width="21.328671328671327%" id="d44275e186">Acción</th>
+<th class="entry" valign="bottom" width="72.37762237762237%" id="d44275e188">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry norowborder" valign="top" width="6.293706293706294%" headers="d44275e184 "><img class="image" src="images/part_start.gif" alt="Inicio parcial" /></td>
+<td class="entry norowborder" valign="top" width="21.328671328671327%" headers="d44275e186 ">Se está ejecutando parcialmente</td>
+<td class="entry norowborder" valign="top" width="72.37762237762237%" headers="d44275e188 ">El destino de despliegue está en el proceso de cambiar de un estado de <em class="ph i">Detenido</em> a un estado de <em class="ph i">Iniciado</em>.
+Se está comenzando a ejecutar el servidor pero todavía no lo está haciendo en su totalidad.</td>
+</tr>
+<tr class="row"><td class="entry cell-norowborder" valign="top" width="6.293706293706294%" headers="d44275e184 "><img class="image" src="images/running.gif" alt="Iniciado" /></td>
+<td class="entry cell-norowborder" valign="top" width="21.328671328671327%" headers="d44275e186 ">Iniciado</td>
+<td class="entry norowborder" valign="top" width="72.37762237762237%" headers="d44275e188 ">El destino de despliegue está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry norowborder" valign="top" width="6.293706293706294%" headers="d44275e184 "><img class="image" src="images/part_stop.gif" alt="Parada parcial" /></td>
+<td class="entry norowborder" valign="top" width="21.328671328671327%" headers="d44275e186 ">Detenido parcialmente</td>
+<td class="entry norowborder" valign="top" width="72.37762237762237%" headers="d44275e188 ">El destino de despliegue está en el proceso de cambiar de un estado de <em class="ph i">Iniciado</em> a un estado de <em class="ph i">Detenido</em>. </td>
+</tr>
+<tr class="row"><td class="entry cell-norowborder" valign="top" width="6.293706293706294%" headers="d44275e184 "><img class="image" src="images/stop.gif" alt="Detenido" /></td>
+<td class="entry cell-norowborder" valign="top" width="21.328671328671327%" headers="d44275e186 ">Detenido</td>
+<td class="entry norowborder" valign="top" width="72.37762237762237%" headers="d44275e188 ">El destino de despliegue no está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.293706293706294%" headers="d44275e184 "><img class="image" src="images/unavail.gif" alt="No disponible" /></td>
+<td class="entry" valign="top" width="21.328671328671327%" headers="d44275e186 ">Desconocida</td>
+<td class="entry" valign="top" width="72.37762237762237%" headers="d44275e188 ">No se puede determinar el estado del destino de despliegue. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="stability"><h2 class="title topictitle2">Estabilidad</h2>
+<div class="body"><p class="shortdesc">Especifica el estado operativo del destino de despliegue.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="stability__stabilitytable" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 2. Estabilidad del destino de despliegue</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="6.872852233676976%" id="d44275e253">Icono</th>
+<th class="entry" valign="bottom" width="21.649484536082475%" id="d44275e255">Acción</th>
+<th class="entry" valign="bottom" width="71.47766323024055%" id="d44275e257">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry cell-norowborder" valign="top" width="6.872852233676976%" headers="d44275e253 "><img class="image" src="images/stable.gif" alt="Estable" /></td>
+<td class="entry cell-norowborder" valign="top" width="21.649484536082475%" headers="d44275e255 ">Estable</td>
+<td class="entry norowborder" valign="top" width="71.47766323024055%" headers="d44275e257 ">El destino de despliegue está operativo y sin problemas.</td>
+</tr>
+<tr class="row"><td class="entry cell-norowborder" valign="top" width="6.872852233676976%" headers="d44275e253 "><img class="image" src="images/questionable.gif" alt="Cuestionable" /></td>
+<td class="entry cell-norowborder" valign="top" width="21.649484536082475%" headers="d44275e255 ">Cuestionable</td>
+<td class="entry norowborder" valign="top" width="71.47766323024055%" headers="d44275e257 ">El destino de despliegue tiene algunos problemas, pero sigue operativo.</td>
+</tr>
+<tr class="row"><td class="entry cell-norowborder" valign="top" width="6.872852233676976%" headers="d44275e253 "><img class="image" src="images/unstable.gif" alt="Inestable" /></td>
+<td class="entry cell-norowborder" valign="top" width="21.649484536082475%" headers="d44275e255 ">Inestable</td>
+<td class="entry norowborder" valign="top" width="71.47766323024055%" headers="d44275e257 ">El destino de despliegue tiene graves problemas.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.872852233676976%" headers="d44275e253 "><img class="image" src="images/unknown.gif" alt="Desconocido" /></td>
+<td class="entry" valign="top" width="21.649484536082475%" headers="d44275e255 ">Desconocida</td>
+<td class="entry" valign="top" width="71.47766323024055%" headers="d44275e257 ">No se puede informar sobre la estabilidad del destino de despliegue.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="livesessions"><h2 class="title topictitle2">Sesiones reales</h2>
+<div class="body"><p class="shortdesc">Especifique el número de sesiones locales que están almacenadas actualmente en la memoria caché. Se puede controlar la estadística, por ejemplo, cuando se pone el servidor en la modalidad de mantenimiento para completar la operación de inmovilización.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="weight"><h2 class="title topictitle2">Peso</h2>
+<div class="body"><p class="shortdesc">Especifica el peso de direccionamiento asignado a los destinos de despliegue del servidor. Si el destino de despliegue es un clúster, el valor de peso no se visualiza.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="activeservicepolicyassociations"><h2 class="title topictitle2">Asociaciones de políticas de servicio activas</h2>
+<div class="body"><p class="shortdesc">Muestra la lista de las asociaciones de la política de servicio que están activas, incluido todo el trabajo que se direcciona para dicho destino de despliegue concreto desde que se inició el direccionador On Demand (ODR).</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="topapplications"><h2 class="title topictitle2">Principales aplicaciones</h2>
+<div class="body"><p class="shortdesc">Muestra las cinco aplicaciones que están consumiendo más potencia en el destino de despliegue. </p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="xdop_reports.html" title="Puede utilizar diagramas personalizados para determinar si se están cumpliendo los objetivos empresariales y de rendimiento. Se puede realizar un seguimiento de estadísticas como la disponibilidad, el tiempo de respuesta, el tráfico y el rendimiento de distintos componentes de su entorno como, por ejemplo, las políticas de servicio, las aplicaciones, los servidores, los clústeres dinámicos y los nodos.">Resumen de informes</a></div>
+<div><a class="link help" href="xdop_runsum_app.html" title="Esta página de la consola administrativa muestra un resumen operativo de todas las aplicaciones iniciadas de su entorno, incluido el estado, la estabilidad y las asociaciones de política de servicio activas.">Resumen de aplicaciones</a></div>
+<div><a class="link help" href="xdop_runsum_corecomp.html" title="Esta página permite examinar la información en tiempo ejecución de todos los componentes principales de su entorno. Permite mostrar valores de componentes principales, el ámbito, el estado de la estabilidad y la ubicación en que se ejecuta cada componente.">Resumen del entorno en tiempo de ejecución de estabilidad del componente: componentes principales</a></div>
+<div><a class="link help" href="xdop_runsum_node.html" title="Esta página permite revisar la información en tiempo ejecución de todos los  nodos en su entorno. En esta información se incluye la estabilidad, el tipo de agente, la versión del producto, la utilización de CPU y el estado de la modalidad de mantenimiento del nodo.">Resumen del entorno en tiempo de ejecución de estabilidad del componente: nodos</a></div>
+<div><a class="link help" href="xdop_runsum_odr.html" title="Esta página muestra información de tiempo ejecución de todos los direccionadores On Demand (ODR) de su entorno. Esta información de tiempo de ejecución incluye el nodo en que está en ejecución el ODR, el estado de estabilidad del ODR y el rendimiento medio.">Resumen del entorno en tiempo de ejecución de estabilidad del componente: direccionadores On Demand</a></div>
+<div><a class="link help" href="xdop_dc_operations.html" title="Esta página sirve para ver el estado general del entorno del clúster estático o dinámico, centrándose en información como el estado del clúster, la información de gestión de solicitudes, la ubicación de miembros y la información sobre tareas.">Pestaña de operaciones de clúster</a></div>
+<div><a class="link help" href="xdop_dc_request.html" title="Esta página sirve para ver el estado actual de los clústeres en el entorno.">Gestión de solicitudes de clúster dinámico</a></div>
+<div><a class="link help" href="xdop_dc_placement.html" title="Esta página sirve para ver los nodos en que los miembros del clúster están colocados de forma activa, la estabilidad de los miembros del clúster, el peso de los miembros del clúster, las asociaciones de políticas de servicio activas y las principales aplicaciones que se ejecutan en los miembros del clúster.">Ubicación de servidores de clúster</a></div>
+<div><a class="link help" href="xdop_dc_tasks.html" title="Esta página sirve para ver las tareas activas en tiempo de ejecución para un clúster en el entorno. Para que aparezcan tareas en la lista, los objetos de destino de la tarea deben incluir el clúster o uno de sus miembros de clúster.">Tareas activas de clúster</a></div>
+<div><a class="link help" href="xdop_dc_reporting.html" title="Los diagramas personalizados permiten mostrar si se están cumpliendo los objetivos. Para darse cuenta de los beneficios de utilizar este entorno virtualizado, es importante saber el rendimiento que presentan los clústeres dinámicos. La creación de diagramas dinámicos proporciona una perspectiva visual de este rendimiento. De forma específica, hay disponibles estadísticas como la disponibilidad, el tiempo de respuesta, el tráfico y el rendimiento. Se proporciona una amplia gama de opciones a partir de las cuales se pueden crear distintos diagramas.">Informes de clúster</a></div>
+<div><a class="link help" href="xdop_app_operations.html" title="Esta página sirve para ver la actividad de las aplicaciones que se está dando actualmente en el entorno, centrándose en información como, por ejemplo, el estado de las aplicaciones, la información de gestión de solicitudes, la ubicación de miembros y la información de tareas.">Pestaña operaciones de aplicaciones</a></div>
+<div><a class="link help" href="xdop_app_request.html" title="Esta pestaña muestra a los direccionadores On Demand (ODR) direccionando a la aplicación, y el trabajo que se ha clasificado para políticas de servicio específicas desde que se inició el ODR.">Gestión de solicitudes de aplicación</a></div>
+<div><a class="link help" href="xdop_app_placement.html" title="Esta página permite ver todas las instancias de las aplicaciones que están en ejecución. También se puede ver información sobre los servidores en los que está en ejecución la aplicación, incluidos el nombre del clúster, la estabilidad, el nombre de la edición y los módulos de la aplicación activa.">Ubicación de aplicaciones</a></div>
+<div><a class="link help" href="xdop_app_tasks.html" title="Esta página sirve para ver todas las tareas de tiempo de ejecución que están activas para una aplicación. Las tareas de tiempo de ejecución las generan los componentes de tiempo de ejecución para mejorar el estado operativo del entorno en general. Cuando se genera una tarea, se proporciona información para que pueda aceptar o rechazar el plan de acción sugerido.">Tareas activas de aplicación</a></div>
+<div><a class="link help" href="xdop_app_reporting.html" title="Los diagramas personalizados permiten mostrar si se están cumpliendo los objetivos. Para darse cuenta de los beneficios de utilizar este entorno virtualizado, es importante saber el rendimiento que presentan las aplicaciones. La creación de diagramas dinámicos proporciona una perspectiva visual de este rendimiento. De forma específica, hay disponibles estadísticas como la disponibilidad, el tiempo de respuesta, el tráfico y el rendimiento. Se proporciona una amplia gama de opciones a partir de las cuales se pueden crear distintos diagramas.">Informes de aplicación</a></div>
+<div><a class="link help" href="xdop_srv_operations.html" title="Esta página sirve para ver el estado global del entorno del servidor.">Pestaña operaciones de servidor</a></div>
+<div><a class="link help" href="xdop_srv_reporting.html" title="Los diagramas personalizados permiten mostrar si se están cumpliendo los objetivos. Para darse cuenta de los beneficios de utilizar este entorno virtualizado, es importante saber el rendimiento que presentan los servidores. La creación de diagramas dinámicos proporciona una perspectiva visual de este rendimiento. De forma específica, hay disponibles estadísticas como la disponibilidad, el tiempo de respuesta, el tráfico y el rendimiento. Se proporciona una amplia gama de opciones a partir de las cuales se pueden crear distintos diagramas.">Informes de servidor</a></div>
+<div><a class="link help" href="xdop_srvplcy_reporting.html" title="Los diagramas personalizados permiten mostrar si se están cumpliendo los objetivos. Para darse cuenta de los beneficios de utilizar este entorno virtualizado, es importante saber cómo se están comportando las políticas de servicio. La creación de diagramas dinámicos proporciona una perspectiva visual de este rendimiento. De forma específica, hay disponibles estadísticas como la disponibilidad, el tiempo de respuesta, el tráfico y el rendimiento. Se proporciona una amplia gama de opciones a partir de las cuales se pueden crear distintos diagramas.">Informes de política de servicio</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: xdop_app_tasks.html</span></body>
+</html>

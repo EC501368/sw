@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es" lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Colección de servidores de middleware" />
+<meta name="abstract" content="Utilice esta página para ver y gestionar servidores de middleware. Los servidores de middleware son servidores genéricos del nivel de middleware que alojan aplicaciones o sus datos." />
+<meta name="Description" content="Utilice esta página para ver y gestionar servidores de middleware. Los servidores de middleware son servidores genéricos del nivel de middleware que alojan aplicaciones o sus datos." />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_other_detail.html" />
+<meta name="DC.Relation" scheme="URI" content="servertemplate_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="servertemplate_settings.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_srvoperations.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_srvoperations_detail.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_configsrv.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_editor.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_logsrv.html" />
+<meta name="DC.Relation" scheme="URI" content="mws_detail_viewfile.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2007" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2007" />
+<meta name="DC.Date" scheme="iso8601" content="2013-11-08" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="mws_collection" />
+<meta name="DC.Language" content="es-es" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<title>Colección de servidores de middleware</title>
+</head>
+<body role="main" id="mws_collection">
+<h1 class="title topictitle1">Colección de servidores de middleware</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para ver y gestionar servidores de middleware.
+Los servidores de middleware son servidores genéricos en el nivel de middleware que alojan aplicaciones o sus datos. </p>
+<p class="p">Utilice esta página para crear nuevos servidores de middleware, plantillas de servidor de middleware o suprimir servidores de middleware que ya existan.</p>
+<div class="p"> Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Todos los servidores</span></span> o seleccione<span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Tipos de servidor</span></span> y luego seleccione un tipo específico de servidor de middleware. Utilice el icono de filtro compuesto <img class="image" src="images/filter.gif" alt="icono de filtro" /> para formar vistas de colecciones específicas según un tipo. <div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 1. Botones de servidor de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d66e38">Botón</th>
+<th class="entry" valign="bottom" id="d66e40">Acción resultante</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" char="." valign="top" headers="d66e38 "><span class="ph uicontrol">Nueva
+</span></td>
+<td class="entry" char="." valign="top" headers="d66e40 ">Abre un asistente que ayuda a crear un servidor de middleware. Los tipos de servidor incluyen servidor de aplicaciones, genérico, direccionador On Demand, proxy o servidor web. Cada tipo de servidor tiene un asistente exclusivo. También se puede añadir un servidor que ya exista en su entorno que no ejecute WebSphere®, tal como un servidor PHP, un servidor HTTP personalizado, un servidor WebSphere Application Server Community Edition o un servidor de perfiles Liberty.</td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d66e38 "><span class="ph uicontrol">Suprimir
+</span></td>
+<td class="entry" char="." valign="top" headers="d66e40 ">Elimina el servidor. </td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d66e38 "><span class="ph uicontrol">Plantillas</span></td>
+<td class="entry" char="." valign="top" headers="d66e40 ">Abre la lista de plantillas de servidor que hay definidas.
+Las plantillas de servidor son copias de datos de configuración que sirven como punto de partida para crear servidores. Las plantillas se pueden crear o editar si ya existen.</td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d66e38 "><span class="ph uicontrol">Iniciar
+</span></td>
+<td class="entry" char="." valign="top" headers="d66e40 ">Inicia uno o más servidores que seleccione. Habilite el recuadro de selección <span class="ph uicontrol">Seleccionar</span> para cada servidor de middleware que desee iniciar y, a continuación, pulse <span class="ph uicontrol">Iniciar</span>. </td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d66e38 "><span class="ph uicontrol">Detener
+</span></td>
+<td class="entry" char="." valign="top" headers="d66e40 ">Detiene uno o más servidores que seleccione. Habilite el recuadro de selección <span class="ph uicontrol">Seleccionar</span> para cada servidor de middleware que desee detener y, a continuación, pulse <span class="ph uicontrol">Detener</span>.</td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d66e38 "><span class="ph uicontrol">Terminar</span></td>
+<td class="entry" char="." valign="top" headers="d66e40 ">Termina de forma inmediata un servidor. </td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d66e38 "><span class="ph uicontrol">Someter acción
+</span></td>
+<td class="entry" char="." valign="top" headers="d66e40 ">Ejecuta la lista de acciones para un servidor web en la columna de acciones. </td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d66e38 "><span class="ph uicontrol">Establecer modalidad
+</span></td>
+<td class="entry" char="." valign="top" headers="d66e40 ">Establece la modalidad de mantenimiento en los servidores seleccionados. Elija una modalidad de mantenimiento y pulse <span class="ph uicontrol">Seleccionar modalidad</span>.
+Cuando se establece la modalidad de mantenimiento, existe la posibilidad de realizar diagnósticos, mantenimiento o ajustes en el servidor sin interrumpir el tráfico de entrada al servidor en un entorno de producción.<dl class="dl"><dt class="dt dlterm">Modalidad de mantenimiento</dt>
+<dd class="dd">Da servicio a las solicitudes que quedan en el servidor. Todas las solicitudes que tengan una sesión abierta en el servidor se direccionan al servidor hasta que la sesión finaliza o excede el tiempo de espera. Una vez que todas las solicitudes se han completado, el servidor se coloca en
+modalidad de mantenimiento. Todas las nuevas solicitudes se direccionan a servidores que no están en modalidad de mantenimiento.</dd>
+<dt class="dt dlterm">Modalidad de mantenimiento - interrumpir afinidad</dt>
+<dd class="dd">Coloca a los servidores seleccionados en la modalidad de mantenimiento, pero interrumpe la afinidad de solicitudes SIP y HTTP para los servidores.</dd>
+<dt class="dt dlterm">Detención de mantenimiento - detención inmediata</dt>
+<dd class="dd">Coloca inmediatamente el servidor en modalidad de mantenimiento, sin atender las solicitudes que quedan en el servidor.</dd>
+<dt class="dt dlterm">Normal</dt>
+<dd class="dd">Inhabilita la modalidad de mantenimiento en los servidores seleccionados.</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="related-links"><div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="mws_detail_main_new.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="mws_other_detail.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="servertemplate_collection.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="servertemplate_settings.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="mws_srvoperations.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="mws_srvoperations_detail.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="mws_detail_configsrv.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="mws_detail_editor.html">**** MISSING FILE ****</a></div>
+<div><a class="link help" href="mws_detail_logsrv.html">**** MISSING FILE ****</a></div>
+<div><a class="link" href="mws_detail_viewfile.html">**** MISSING FILE ****</a></div>
+</div>
+</div><div class="topic nested1" xml:lang="es-es" id="name"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica un nombre para el servidor de middleware. El nombre de un servidor de middleware debe ser exclusivo en la célula.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="node"><h2 class="title topictitle2">Nodo</h2>
+<div class="body"><p class="shortdesc">Nodo en que está el servidor de middleware. </p>
+<p class="p">Las acciones en el menú desplegable dependen del tipo de servidor.
+Por ejemplo, <span class="ph uicontrol">Generar y propagar plugin</span> únicamente es válido en servidores web.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="clustername"><h2 class="title topictitle2">Nombre de clúster</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre del clúster al que pertenece el servidor. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="status"><h2 class="title topictitle2">Estado</h2>
+<div class="body"><p class="shortdesc">Indica si el servidor de middleware está iniciado, detenido o si no está disponible.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="cols" frame="border" border="1"><caption><span class="tablecap">Tabla 2. Estado del servidor de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="6.071428571428571%" id="d66e202">Icono</th>
+<th class="entry" valign="bottom" width="22.857142857142858%" id="d66e204">Acción</th>
+<th class="entry" valign="bottom" width="71.07142857142857%" id="d66e206">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d66e202 "><img class="image" src="images/running.gif" alt="Iniciado" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d66e204 ">Iniciado</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d66e206 ">El servidor está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d66e202 "><img class="image" src="images/part_start.gif" alt="Inicio parcial" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d66e204 ">Parcialmente iniciada</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d66e206 ">El servidor está en el proceso de cambiar de un estado de <span class="ph uicontrol">Detenido</span> a un estado de <span class="ph uicontrol">Iniciado</span>. Se está comenzando a ejecutar el servidor pero todavía no lo está haciendo en su totalidad.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d66e202 "><img class="image" src="images/stop.gif" alt="Detenido" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d66e204 ">Detenido</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d66e206 ">El servidor no está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d66e202 "><img class="image" src="images/part_stop.gif" alt="Parada parcial" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d66e204 ">Parada parcial</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d66e206 ">El servidor está en el proceso de cambiar de un estado de <span class="ph uicontrol">Iniciado</span> a un estado de <span class="ph uicontrol">Detenido</span>. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d66e202 "><img class="image" src="images/unavail.gif" alt="No disponible" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d66e204 ">No disponible</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d66e206 ">No se puede determinar el estado.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d66e202 "><img class="image" src="images/unknown.gif" alt="Desconocido" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d66e204 ">No aplicable</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d66e206 ">El servidor no proporciona información sobre si está en ejecución.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="mode"><h2 class="title topictitle2">Modalidad de mantenimiento</h2>
+<div class="body"><p class="shortdesc">Especifica el estado de la modalidad de mantenimiento del servidor.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 3. Estado de la modalidad de mantenimiento del servidor de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" align="left" valign="bottom" width="6.143344709897611%" id="d66e278">Icono</th>
+<th class="entry" align="left" valign="bottom" width="23.890784982935152%" id="d66e280">Acción</th>
+<th class="entry" align="left" valign="bottom" width="69.96587030716724%" id="d66e282">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry norowborder" align="left" valign="top" width="6.143344709897611%" headers="d66e278 "><img class="image" src="images/maint_mode.gif" alt="modalidad de mantenimiento" /></td>
+<td class="entry norowborder" align="left" valign="top" width="23.890784982935152%" headers="d66e280 ">Modalidad de mantenimiento</td>
+<td class="entry norowborder" align="left" valign="top" width="69.96587030716724%" headers="d66e282 ">El servidor está en modalidad de mantenimiento y, por tanto, ya no está dando servicio a las solicitudes, de forma que es posible realizar acciones administrativas en este servidor. Mientras está en esta modalidad, se puede iniciar o detener el servidor. Cuando el nodo está iniciado y en la modalidad de mantenimiento, el direccionador On Demand no direcciona tráfico SIP o HTTP al servidor.</td>
+</tr>
+<tr class="row"><td class="entry" align="left" valign="top" width="6.143344709897611%" headers="d66e278 "></td>
+<td class="entry" align="left" valign="top" width="23.890784982935152%" headers="d66e280 ">Modalidad normal</td>
+<td class="entry" align="left" valign="top" width="69.96587030716724%" headers="d66e282 ">El servidor está dando servicio a solicitudes. </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="version"><h2 class="title topictitle2">Versión</h2>
+<div class="body"><p class="shortdesc">Especifica el número de versión de WebSphere Network Deployment. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="type"><h2 class="title topictitle2">Tipo</h2>
+<div class="body"><p class="shortdesc">Especifica el tipo de servidor de middleware. Las opciones incluyen
+servidor de aplicaciones, servidor genérico,
+direccionador On Demand, servidor proxy, servidor apache y servidor web. Entre
+los otros tipos de servidor se incluyen los servidores PHP, Apache Tomcat, BEA
+Weblogic, JBoss, WebSphere Application Server Community Edition, servidores de
+aplicaciones WebSphere externos, servidores de perfiles Liberty, servidores WebSphere MQ y HTTP
+personalizado.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="action"><h2 class="title topictitle2">Acción</h2>
+<div class="body"><p class="shortdesc">Especifica la acción específica a realizar en el servidor de middleware seleccionado.</p>
+<div class="p">Se pueden realizar las siguientes acciones: <div class="note note"><span class="notetitle">Nota:</span> no están disponibles acciones para otros tipos de servidor. Las acciones sólo están disponibles para los servidores web.</div>
+</div>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Tabla 4. Acciones del servidor de middleware</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d66e338">Acción</th>
+<th class="entry" valign="bottom" id="d66e340">Tipo de servidor</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" char="." valign="top" headers="d66e338 ">Generar plug-in</td>
+<td class="entry" char="." valign="top" headers="d66e340 ">Web</td>
+</tr>
+<tr class="row"><td class="entry" char="." valign="top" headers="d66e338 ">Propagar plug-in</td>
+<td class="entry" char="." valign="top" headers="d66e340 ">Web</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

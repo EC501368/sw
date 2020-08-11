@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de recursos" topic="index.html">
+   <topic label="Colección de Especificación de activación"
+          href="ae/JMSActivationSpec_CollectionForm.html"/>
+   <topic label="Valores de ámbito de la consola administrativa"
+          href="ae/rcon_scope.html"/>
+   <topic label="Propiedades avanzadas del adaptador de recursos"
+          href="ae/udat_advresaddet.html"/>
+   <topic label="Colección de fábricas de conexiones CMP" href="ae/udat_cmpconnfac.html"/>
+   <topic label="Valores de fábrica de conexiones CMP" href="ae/udat_cmpconnfacdet.html"/>
+   <topic label="Colección de Fábrica de conexiones"
+          href="ae/JMSConnectionFactory_CollectionForm.html"/>
+   <topic label="Valores de la agrupación de conexiones (Versión 4)"
+          href="ae/udat_was4poolset.html"/>
+   <topic label="Valores avanzados de agrupación de conexiones"
+          href="ae/udat_conpooladv.html"/>
+   <topic label="Valores de agrupación de conexiones" href="ae/udat_conpoolset.html"/>
+   <topic label="Propiedades de mejora dinámica de SQL para métodos finder personalizados"
+          href="ae/udat_sqllock.html"/>
+   <topic label="Colección de propiedades personalizadas (Versión 4)"
+          href="ae/udat_was4cust.html"/>
+   <topic label="Valores de propiedades personalizadas (Versión 4)"
+          href="ae/udat_was4custdet.html"/>
+   <topic label="Valores de propiedades personalizadas" href="ae/udat_customdet.html"/>
+   <topic label="Colección de orígenes de datos (WebSphere Application Server V4)"
+          href="ae/udat_was4datsor.html"/>
+   <topic label="Valores de Origen de datos (WebSphere Application Server Versión 4)"
+          href="ae/udat_was4datsordet.html"/>
+   <topic label="Colección de orígenes de datos" href="ae/udat_jdbcdatasor.html"/>
+   <topic label="Valores de orígenes de datos" href="ae/udat_jdbcdatsordet.html"/>
+   <topic label="Nombres JNDI de EJB para beans" href="ae/uejb_provjndi.html"/>
+   <topic label="Referencias de EJB" href="ae/uejb_mapejbref.html"/>
+   <topic label="Instalar RAR" href="ae/udat_crtresadp.html"/>
+   <topic label="Colección de especificaciones de activación J2C"
+          href="ae/udat_actspec.html"/>
+   <topic label="Valores de especificación de activación J2C"
+          href="ae/udat_actspecdet.html"/>
+   <topic label="Colección de objetos administrados J2C" href="ae/udat_admobj.html"/>
+   <topic label="Valores de objetos administrados J2C" href="ae/udat_admobjdet.html"/>
+   <topic label="Colección de fábricas de conexiones de J2C"
+          href="ae/udat_j2cconnfac.html"/>
+   <topic label="Valores de fábricas de conexiones de J2C"
+          href="ae/udat_j2cconnfacdet.html"/>
+   <topic label="Valores avanzados de la fábrica de conexiones de J2C"
+          href="ae/udat_j2cconnfacadv.html"/>
+   <topic label="Colección de propiedades personalizadas del proveedor de recursos Java EE o de la fábrica de conexiones"
+          href="ae/udat_customprop.html"/>
+   <topic label="Gestión del ciclo de vida de JCA" href="ae/udat_jcalifecycle.html"/>
+   <topic label="Colección de Proveedores de JDBC" href="ae/udat_manjdbcprov.html"/>
+   <topic label="Valores del proveedor de JDBC" href="ae/udat_manjdbcprodet.html"/>
+   <topic label="Resumen del proveedor de JDBC" href="ae/udat_minreq.html"/>
+   <topic label="Colección de Proveedores de JMS" href="ae/umj_sjmsp.html"/>
+   <topic label="Valores del proveedor de JMS" href="ae/umj_pjmsw.html"/>
+   <topic label="Panel de selección de proveedor de recursos JMS"
+          href="ae/JMSProviders_SelectionForm.html"/>
+   <topic label="Colección de proveedores de correo" href="ae/umai_rjmp.html"/>
+   <topic label="Proveedores de servicios de correo y sesiones de correo"
+          href="ae/umai_cjmp.html"/>
+   <topic label="Valores del proveedor de correo" href="ae/umai_rjmpn.html"/>
+   <topic label="Colección sesiones de correo" href="ae/umai_rjms.html"/>
+   <topic label="Valores de configuración de sesiones de correo"
+          href="ae/umai_rjmsi.html"/>
+   <topic label="Gestionar puntos finales de mensajes" href="ae/udat_manendpt.html"/>
+   <topic label="Alias de correlación-configuración"
+          href="ae/udat_mapresauthdomains.html"/>
+   <topic label="Proveedor de entorno de recursos" href="ae/uree_resenvpronew.html"/>
+   <topic label="Colección de proveedores de protocolo" href="ae/umai_rprot.html"/>
+   <topic label="Valores de proveedores de protocolos" href="ae/umai_rprov.html"/>
+   <topic label="Colección de Cola" href="ae/JMSQueue_CollectionForm.html"/>
+   <topic label="Colección de Fábrica de conexiones de cola"
+          href="ae/JMSQueueConnectionFactory_CollectionForm.html"/>
+   <topic label="Colección de referenciables" href="ae/uree_referenceables.html"/>
+   <topic label="Valores referenciables" href="ae/uree_referenceablesdet.html"/>
+   <topic label="Propiedades del adaptador de recursos"
+          href="ae/umj_pjmswmq_raprops.html"/>
+   <topic label="Colección de adaptadores de recursos" href="ae/udat_manresad.html"/>
+   <topic label="Valores del adaptador de recursos" href="ae/udat_manresaddet.html"/>
+   <topic label="Colección de entradas de entorno de recursos"
+          href="ae/uree_resenvent.html"/>
+   <topic label="Valores de entrada de entorno de recursos"
+          href="ae/udat_resenventent1.html"/>
+   <topic label="Colección de proveedores de entorno de recursos"
+          href="ae/uree_resenvprov.html"/>
+   <topic label="Valores del proveedor de entorno de recursos"
+          href="ae/udat_resenvprovdet.html"/>
+   <topic label="Seleccionar un alias de autenticación J2C"
+          href="ae/udat_j2cresauthdomains.html"/>
+   <topic label="Valores de agrupación de sesiones" href="ae/umj_sesspoolset.html"/>
+   <topic label="Valores de fábrica de conexiones JMS de otros fabricantes"
+          href="ae/umj_pjcfp.html"/>
+   <topic label="Valores de destino de JMS de otros fabricantes" href="ae/umj_pjdsp.html"/>
+   <topic label="Colección de Tema" href="ae/JMSTopic_CollectionForm.html"/>
+   <topic label="Colección de Fábrica de conexiones de tema"
+          href="ae/JMSTopicConnectionFactory_CollectionForm.html"/>
+   <topic label="Colección de configuraciones de URL" href="ae/ujtc_rurls.html"/>
+   <topic label="Valores de configuración de URL" href="ae/ujtc_rurlsi.html"/>
+   <topic label="Colección de proveedores de URL" href="ae/ujtc_ruurp.html"/>
+   <topic label="Valores del proveedor de URL" href="ae/ujtc_ruurl.html"/>
+   <topic label="Propiedades de origen de datos de WebSphere Application Server"
+          href="ae/udat_jdbcdatasorprops.html"/>
+   <topic label="Propiedades avanzadas de la especificación de activación del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pasm_advprops.html"/>
+   <topic label="Propiedades del intermediario de especificación de activación del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pasm_brokersettings.html"/>
+   <topic label="Propiedades del transporte de cliente de la especificación de activación del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pasm_cls.html"/>
+   <topic label="Valores de especificación de activación de proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pasm.html"/>
+   <topic label="Propiedades avanzadas de la fábrica de conexiones del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pjcfm_advprops.html"/>
+   <topic label="Propiedades del intermediario de la fábrica de conexiones del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pjcfm_brokersettings.html"/>
+   <topic label="Valores de transporte de cliente de fábrica de conexiones de proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_ClientTransportProps.html"/>
+   <topic label="Valores de propiedades avanzadas de cola y tema de proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_MQQueueAdvancedProps.html"/>
+   <topic label="Propiedades avanzadas de la fábrica de conexiones de cola del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pqcfm_advprops.html"/>
+   <topic label="Valores de la fábrica de conexiones de cola del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pqcfm.html"/>
+   <topic label="Valores de cola de proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pqdsm.html"/>
+   <topic label="Propiedades avanzadas de la fábrica de conexiones de tema del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_ptcfm_advprops.html"/>
+   <topic label="Valores de la fábrica de conexiones de tema del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_ptcfm.html"/>
+   <topic label="Valores de tema de proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_ptdsm.html"/>
+   <topic label="Valores de la fábrica de conexiones del proveedor de mensajería de WebSphere MQ"
+          href="ae/umj_pjcfm.html"/>
+   <topic label="Propiedades de conexiones de colas WebSphere MQ"
+          href="ae/umj_pqdsm_conn.html"/>
+   <topic label="Valores de propiedades personalizadas de recursos de WebSphere MQ"
+          href="ae/umj_customprops.html"/>
+   <topic label="Valores del adaptador de recursos relacionales de WebSphere"
+          href="ae/udat_wsrrad.html"/>
+</toc>

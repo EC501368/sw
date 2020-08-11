@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+    <date>2019-11-13T03:49:07</date>
+    <millis>1573681747451</millis>
+    <sequence>4</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.Launcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.Launcher</class>
+    <method>fillInCommandLineArguments</method>
+    <thread>0</thread>
+    <message>Incoming arguments are: -WS_CMT_ACTION_REGISTRY, /opt/IBM/WebSphere/AppServer/properties/postinstall/deltaActionRegistry.xml, -WS_CMT_EXTENSION, com.ibm.ws.postinstall.cmext.ConfigManagerExtension, -WS_PI_ACTION_REGISTRY_EXTENSION, /opt/IBM/WebSphere/AppServer/properties/postinstall/registryExtension.xml, -actionTarget, install, -WS_CMT_CONF_DIR, /opt/IBM/WebSphere/AppServer/properties/postinstall/, -permissionsProcessing, false</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:07</date>
+    <millis>1573681747485</millis>
+    <sequence>5</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.PlatformConstants</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.PlatformConstants</class>
+    <method>getCurrentPlatform</method>
+    <thread>0</thread>
+    <message>Current platform was detected as Linux</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:07</date>
+    <millis>1573681747495</millis>
+    <sequence>6</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of WS_CMT_EXTRINSICS could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:07</date>
+    <millis>1573681747495</millis>
+    <sequence>7</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: WS_CMT_EXTRINSICS, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:07</date>
+    <millis>1573681747528</millis>
+    <sequence>8</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of WS_CMT_EXTENSION_LIB could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:07</date>
+    <millis>1573681747528</millis>
+    <sequence>9</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: WS_CMT_EXTENSION_LIB, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748455</millis>
+    <sequence>10</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of omitAction could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748464</millis>
+    <sequence>11</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: omitAction, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748464</millis>
+    <sequence>12</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of omitAction1 could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748464</millis>
+    <sequence>13</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: omitAction1, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748465</millis>
+    <sequence>14</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of PRE_IJC_LIB could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748465</millis>
+    <sequence>15</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: PRE_IJC_LIB, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748486</millis>
+    <sequence>16</sequence>
+    <logger>com.ibm.ws.install.configmanager.utils.FileUtils</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.utils.FileUtils</class>
+    <method>getAllFilesInThisDirectory</method>
+    <thread>0</thread>
+    <message>/opt/IBM/WebSphere/AppServer/properties/postinstall/lib is not a directory, returning an empty list</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748488</millis>
+    <sequence>17</sequence>
+    <logger>com.ibm.ws.install.configmanager.utils.FileUtils</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.utils.FileUtils</class>
+    <method>getAllFilesInThisDirectoryMatchingThisPatternIgnoreCase</method>
+    <thread>0</thread>
+    <message>List of files in /opt/IBM/WebSphere/AppServer/properties/postinstall/lib matching the pattern ^.*\.jar$ is: {  }</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748488</millis>
+    <sequence>18</sequence>
+    <logger>com.ibm.ws.install.configmanager.utils.ClassPathModifier</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.utils.ClassPathModifier</class>
+    <method>addAllJARsInDirectoryToClassPath</method>
+    <thread>0</thread>
+    <message>ListJAR files in found in /opt/IBM/WebSphere/AppServer/properties/postinstall/lib is: {  }</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748502</millis>
+    <sequence>19</sequence>
+    <logger>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.osutils.ProcessEnvironment</class>
+    <method>getEnvironmentVariableValue</method>
+    <thread>0</thread>
+    <message>Value of POST_IJC_LIB could not be extracted from the process environment, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748503</millis>
+    <sequence>20</sequence>
+    <logger>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.launcher.ArgumentValueFetcher</class>
+    <method>getArgumentValue</method>
+    <thread>0</thread>
+    <message>Could not resolve this argument: POST_IJC_LIB, returning null</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748503</millis>
+    <sequence>21</sequence>
+    <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+    <method>executeActions</method>
+    <thread>0</thread>
+    <message>List of all actions found in the repository: []</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748521</millis>
+    <sequence>22</sequence>
+    <logger>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.postinstall.cmext.ConfigManagerExtension</class>
+    <method>preprocessing</method>
+    <thread>0</thread>
+    <message>WAS_HOME =  /opt/IBM/WebSphere/AppServer</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748587</millis>
+    <sequence>23</sequence>
+    <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+    <method>launch</method>
+    <thread>0</thread>
+    <message>No errors were encountered while executing the repository actions</message>
+</record>
+<record>
+    <date>2019-11-13T03:49:08</date>
+    <millis>1573681748605</millis>
+    <sequence>24</sequence>
+    <logger>com.ibm.ws.install.configmanager.ConfigManager</logger>
+    <level>INFO</level>
+    <class>com.ibm.ws.install.configmanager.ConfigManager</class>
+    <method>launch</method>
+    <thread>0</thread>
+    <message>Returning with return code: INSTCONFSUCCESS</message>
+</record>
+</log>

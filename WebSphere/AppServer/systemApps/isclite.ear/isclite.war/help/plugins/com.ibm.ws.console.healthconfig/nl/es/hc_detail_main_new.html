@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2012" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2012" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Creación de una política de salud: definir las propiedades generales de la política de salud" />
+<meta name="abstract" content="Utilice esta página para crear políticas de salud, utilizadas para realizar una gran variedad de cálculos basados en salud sobre los clústeres, clústeres dinámicos e instancias de servidores de aplicaciones que se ejecutan en los nodos." />
+<meta name="description" content="Utilice esta página para crear políticas de salud, utilizadas para realizar una gran variedad de cálculos basados en salud sobre los clústeres, clústeres dinámicos e instancias de servidores de aplicaciones que se ejecutan en los nodos." />
+<meta name="DC.Relation" scheme="URI" content="hc_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_condition_detail_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_appservers_detail_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_action_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_custom_action.html" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="hc_detail_main_new" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Creación de una política de salud: definir las propiedades generales de la política de salud</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="hc_detail_main_new">
+<h1 class="title topictitle1">Creación de una política de salud: definir las propiedades generales de la política de salud </h1>
+<div class="body"><p class="shortdesc">Utilice esta página para crear políticas de salud, utilizadas para realizar una gran variedad de cálculos
+basados en salud sobre los clústeres, clústeres dinámicos e instancias de servidores de aplicaciones que se ejecutan en
+los nodos. </p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Políticas de salud</span> &gt; <span class="ph uicontrol">Nueva</span></span>. </p>
+<p class="p">Los privilegios en relación a las políticas de salud dependen del rol administrativo del usuario.  Los roles incluyen los del supervisor, el operador, el configurador y el administrador.  Si está utilizando un rol de operador o supervisor, sólo puede ver la información de la política de salud.  Si está utilizando un rol de configurador o administrador, tiene todos los privilegios de configuración en relación a las políticas de salud.</p>
+<p class="p">Cuando haya completado todos los campos necesarios, pulse <span class="ph uicontrol">Siguiente</span> para continuar.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="genTopProcId2"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre de una política de salud. El nombre de la política de salud es necesario y debe ser único entre todas las políticas de salud de la célula.</p>
+<p class="p">El nombre no puede empezar con un punto (<strong class="ph b"><kbd class="ph userinput">.</kbd></strong>)
+ni con un espacio. Un espacio no genera un error, pero los espacios al principio o al final se eliminan automáticamente. Es conveniente utilizar nombres de política de salud con sentido y de forma coherente. Por ejemplo, las políticas de salud basadas en antigüedad se podrían indicar denominando las políticas <kbd class="ph userinput">ANTIGÜEDAD_20DÍAS</kbd>, <kbd class="ph userinput">ANTIGÜEDAD_15DÍAS</kbd>.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="genTopProcId3"><h2 class="title topictitle2">Descripción</h2>
+<div class="body"><p class="shortdesc">Especifica una descripción adicional de la política de salud.
+La descripción es opcional. La descripción se puede editar al crear o editar la política de salud. Considere utilizar la descripción opcional cuando utilice muchas políticas de salud o cuando varios administradores gestionen el mismo conjunto de políticas de salud.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="existinghealthcondition"><h2 class="title topictitle2">Condición de salud predefinida</h2>
+<div class="body"><p class="shortdesc">La condición de salud define la política específica que se implementa. Las condiciones de salud predefinidas son aquellas que se proporcionan con <span class="ph">Intelligent Management</span>.</p>
+<p class="p">Algunas políticas se basan en la prevención y otras se basan en la detección.
+Las políticas que se basan en la prevención se utilizan para evitar condiciones que podrían dar lugar a problemas, mientras que las políticas basadas en la detección se utilizan para identificar condiciones existentes y resolverlas. Estas políticas se pueden utilizar para realizar una gran variedad de cálculos basados en la salud de los clústeres,
+clústeres dinámicos e instancias de servidores de aplicaciones que se ejecutan en los
+nodos. En el caso de los clústeres dinámicos, independientemente de la política de salud que esté
+utilizando siempre permanecen en ejecución un número mínimo de instancias de clúster dinámico.</p>
+<ul class="ul"><li class="li">Cuando la <span class="ph uicontrol">condición basada en antigüedad</span> infringe el valor de antigüedad definido por el usuario, se ejecutan las acciones de salud asociadas.
+ Al reiniciarlos se borran todos los datos adquiridos de la memoria y antememoria. Si se selecciona una política de condición basada en la antigüedad, hay que definir el criterio de antigüedad.
+Todos los tipos de servidor dan soporte a la condición basada en la antigüedad.</li>
+<li class="li">La política de <span class="ph uicontrol">tiempo de espera de petición excesivo</span> realiza un seguimiento de la memoria que se utiliza para tiempos de espera de petición. Cuando el porcentaje de tiempos de espera excedidos infringen la condición,
+se ejecutan las acciones de salud asociadas. Si selecciona una condición de tiempo de espera de solicitud excesivo, hay que establecer el umbral de porcentaje memoria utilizada. Todos los tipos de servidores dan soporte a la condición de tiempo de espera de petición excedido.<div class="note restriction"><span class="restrictiontitle">Restricción:</span> el tiempo de espera de solicitud excedido no se aplica al tráfico IIOP (Internet Inter-ORB) ni a JMS (Java Message Service).</div>
+</li>
+<li class="li">La política de <span class="ph uicontrol">condición de tiempo de respuesta excesivo</span> efectúa un seguimiento de las solicitudes y el tiempo que tardan en completarse.
+Al seleccionar la política de tiempo de respuesta excesivo, hay que definir un umbral de tiempo de respuesta.
+Si en un intervalo de tiempo específico el promedio del tiempo de respuesta de las
+solicitudes supera el valor del umbral, se activa la política de salud. Todos los tipos de servidores dan soporte a la condición de tiempo de respuesta excesivo.</li>
+<li class="li">La política de <span class="ph uicontrol">condición de memoria: uso de memoria excesivo</span> realiza un seguimiento de la utilización de memoria por parte de un miembro. Cuando la utilización de memoria excede un porcentaje del tamaño del almacenamiento dinámico durante un tiempo especificado, se ejecutan las acciones de salud. Si selecciona la política de uso de memoria excesivo, hay que definir la memoria utilizada y el umbral de tiempo por encima de la memoria definida. Únicamente los servidores de aplicaciones que se ejecutan en nodos en los que se ejecuta WebSphere Application
+Server o WebSphere Application Server Community Edition dan soporte a la condición de uso de memoria excesivo. No se puede definir la condición de uso de memoria excesivo con otros tipos de servidor de middleware.</li>
+<li class="li">La política <span class="ph uicontrol">condición de memoria: pérdida de memoria</span> busca las tendencias coherentes en sentido descendente en la memoria libre que está disponible para un servidor en la pila Java.
+El valor del nivel de detección determina cuándo se detectan estas tendencias.
+ Si selecciona la condición de memoria: política de pérdida de memoria, hay que definir un nivel de detección. Este valor de nivel de detección más lento es el que necesita más datos históricos. Los valores de nivel de detección normal y más rápido precisan la misma cantidad de datos históricos, sin embargo, el valor de más rápido realiza el análisis antes que el almacenamiento dinámico Java se haya ampliado a su tamaño configurado máximo. De esta forma se proporciona la posibilidad de una detección más temprana, pero con una mayor propensión a falsos positivos. Cuando se incumple esta condición, se ejecutan las acciones de salud. No se da soporte a la condición de pérdida de memoria con otros tipos de servidor de middleware.</li>
+<li class="li">La política de <span class="ph uicontrol">condición de reducción de saturación</span> realiza un seguimiento de solicitudes en situación de atasco. Las acciones asociadas con esta política de salud se ejecutan cuando se alcanza el nivel de detección especificado. La detección de reducción de saturación se basa en la detección de puntos de cambio en los datos de una serie temporal específica. Las métricas que se utilizan para detectar reducción de saturación son tiempos de respuestas y pesos de gestor de carga de trabajo de despliegue que se observan para el servidor. La condición de reducción de saturación únicamente se aplica a células y clústeres dinámicos. Si se selecciona la política de reducción de saturación, también hay que seleccionar el nivel de detección. <p class="p">Para detectar puntos de cambio, el controlador de salud calcula una media izquierda y una media derecha para un punto específico. Para un punto, la media izquierda consiste en valor medio de <em class="ph i">N</em> nuestras que han llegado antes que esta muestra, y la media derecha es el valor medio de <em class="ph i">N</em> muestras, incluido el punto actual, que llegan más tarde. La diferencia entre los valores de la media izquierda y la derecha se almacena y compara con otras diferencias en un conjunto de valores de <em class="ph i">N</em> elementos para determinar si esta diferencia es un máximo local. Si esta diferencia es una diferencia máxima, entonces el punto al que corresponde esta diferencia, es declarado como <em class="ph i">punto de cambio</em>. Las dos métricas que se utilizan para detectar reducción de saturación son la de tiempo de respuesta y la de pesos del gestor de carga de trabajo dinámica que se supervisan para el servidor. </p>
+Todos los tipos de servidor dan soporte a la condición de reducción de saturación.<div class="note restriction"><span class="restrictiontitle">Restricción:</span> la condición de reducción de saturación no se aplica al tráfico IIOP ni a JMS.</div>
+</li>
+<li class="li">La política de <span class="ph uicontrol">condición de carga de trabajo</span> ejecuta las acciones de salud asociadas, cuando se ha dado servicio a un número determinado de peticiones definido por el usuario. Si se selecciona la política de carga de trabajo, hay que definir el criterio solicitudes totales. Todos los tipos de servidor dan soporte a la condición de carga de trabajo.</li>
+<li class="li">La política de <span class="ph uicontrol">condición de porcentaje de recogida de basura</span> supervisa una JVM (Java Virtual Machine) o conjunto de JVM para determinar si está empleando más del porcentaje especificado de tiempo en la recogida de basura durante el periodo de muestreo. Dado que la recogida de basura aumenta el uso del procesador, esta política puede informarle de si el bajo rendimiento es resultado del tiempo empleado en la recogida de basura.</li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="customhealthcondition"><h2 class="title topictitle2">Condición de salud personalizada</h2>
+<div class="body"><p class="shortdesc">Existe la posibilidad de definir condiciones de salud si las condiciones de salud existentes no se adecuan a sus necesidades. Las condiciones de salud personalizadas se pueden verificar en relación a métricas de su entorno.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link build" href="hc_collection.html" title="Utilice esta página para crear y modificar políticas de salud. Las políticas de salud dan soporte a dos aproximaciones básicas para mantener un entorno saludable: la detección y la prevención.">Colección de políticas de salud</a></div>
+<div><a class="link build" href="hc_detail_main.html" title="Utilice esta página para modificar políticas de salud que ya existen. Las políticas de salud permiten mantener un entorno saludable mediante la utilización de metodologías de detección y prevención.">Valores de política de salud</a></div>
+<div><a class="link build" href="hc_condition_detail_new.html" title="Utilice esta página para definir el comportamiento específico de la política de salud.">Creación de una política de salud: definir las propiedades de la condición de salud</a></div>
+<div><a class="link build" href="hc_appservers_detail_new.html" title="Utilice esta página para asignar propiedades de pertenencia a políticas de salud.">Creación de una política de salud: especificar los miembros a supervisar</a></div>
+<div><a class="link build" href="hc_action_collection.html" title="Por omisión, se puede definir una política de salud para ejecutar cualquiera de las acciones de salud predefinidas, como reiniciar servidores cuando se incumple una política de salud. Configure una acción personalizada cuando desee que el entorno realice una acción distinta a la especificada por omisión.">Colección de acciones personalizadas</a></div>
+<div><a class="link build" href="hc_custom_action.html" title="Permite especificar detalles para las acciones personalizada de Java y las que no lo son.">Valores de acciones personalizadas</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: hc_detail_main_new.html</span></body>
+</html>

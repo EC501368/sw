@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Colección de miembros de clústeres dinámicos" />
+<meta name="abstract" content="Utilice esta página para ver, iniciar y detener los miembros de un clúster dinámico." />
+<meta name="description" content="Utilice esta página para ver, iniciar y detener los miembros de un clúster dinámico." />
+<meta name="DC.Relation" scheme="URI" content="dc_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_membership.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_1.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_2.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_3.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_4.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_5.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_wiz_6.html" />
+<meta name="DC.Relation" scheme="URI" content="dc_member_settings.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2004" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="dc_members" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Colección de miembros de clústeres dinámicos</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" id="dc_members">
+<h1 class="title topictitle1">Colección de miembros de clústeres dinámicos</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para ver, iniciar y detener los miembros de un clúster dinámico.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Clústeres</span> &gt; <span class="ph uicontrol">Clústeres dinámicos</span> &gt; <span class="ph uicontrol"> <var class="keyword varname">nombre_clúster_dinámico</var></span> &gt; <span class="ph uicontrol">Miembros del clúster dinámico</span></span>.</p>
+<p class="p">Es necesario poseer privilegios de operador para ver, iniciar y detener miembros de un clúster dinámico.</p>
+<p class="p">Para iniciar o detener un miembro, selecciónelo y pulse <span class="ph uicontrol">Iniciar</span> o <span class="ph uicontrol">Detener</span>.</p>
+<p class="p">Si elige definir de forma manual los miembros del clúster dinámico, puede añadirlos o eliminarlos. Pulse <span class="ph uicontrol">Añadir</span> o <span class="ph uicontrol">Eliminar</span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="name"><h2 class="title topictitle2">Nombre de miembro</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre del miembro del clúster dinámico.</p>
+<p class="p">El sistema proporciona de forma automática un nombre para un miembro del clúster dinámico. El sistema utiliza la siguiente nomenclatura: <samp class="ph tt">&lt;</samp><em class="ph i"><samp class="ph tt">nombre_clúster_dinámico</samp></em><samp class="ph tt">&gt;_&lt;</samp><em class="ph i"><samp class="ph tt">nombre_nodo</samp></em><samp class="ph tt">&gt;</samp>. </p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="node"><h2 class="title topictitle2">Nodo</h2>
+<div class="body"><p class="shortdesc">Especifica el nodo en que está en ejecución el miembro del clúster dinámico. Al crear un clúster dinámico, se crea un miembro del clúster dinámico de forma automática en un nodo de forma que se ajuste a la política de pertenencia creada.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="version"><h2 class="title topictitle2">Versión</h2>
+<div class="body"><p class="shortdesc">Especifica la versión del producto WebSphere Application Server o WebSphere Extended Deployment que se ejecuta el miembro de clúster.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="configuredweight"><h2 class="title topictitle2">Peso configurado</h2>
+<div class="body"><p class="shortdesc">Especifica el peso actualmente configurado para el miembro del clúster. El peso determina la cantidad de trabajo que se dirige al servidor de aplicaciones. Si el valor del peso del servidor es mayor que los valores de peso asignados a otros servidores en el clúster, el servidor recibe un parte mayor de la carga de trabajo del clúster.</p>
+<p class="p">Para cambiar el peso configurado de un miembro de clúster, especifique un nuevo peso y, a continuación, pulse <span class="ph uicontrol">Actualizar</span>, o pulse en el nombre del miembro del clúster. </p>
+<div class="note important" id="configuredweight__weight"><span class="importanttitle">Importante:</span> Si se habilita, el gestor de carga de trabajo dinámica (DWLM) altera temporalmente todos los valores que se entren. DWLM está habilitado por omisión. Para inhabilitar DWLM, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Clústeres</span> &gt; <span class="ph uicontrol">Clústeres dinámicos</span> &gt; <span class="ph uicontrol"> <var class="keyword varname">nombre_clúster_dinámico</var></span> &gt; <span class="ph uicontrol">Gestión de carga de trabajo dinámica (DWLM)</span></span></div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="runtimeweight"><h2 class="title topictitle2">Peso de tiempo de ejecución</h2>
+<div class="body"><p class="shortdesc">Especifica la carga de trabajo proporcional que actualmente se dirige al miembro del clúster respecto al peso configurado para dicho miembro de clúster. Si desea cambiar la proporción, especifique un nuevo peso y pulse <span class="ph uicontrol">Actualizar</span>.</p>
+<div class="note important"><span class="importanttitle">Importante:</span> Si se habilita, el gestor de carga de trabajo dinámica (DWLM) altera temporalmente todos los valores que se entren. DWLM está habilitado por omisión. Para inhabilitar DWLM, pulse <span class="ph menucascade"><span class="ph uicontrol">Servidores</span> &gt; <span class="ph uicontrol">Clústeres</span> &gt; <span class="ph uicontrol">Clústeres dinámicos</span> &gt; <span class="ph uicontrol"> <var class="keyword varname">nombre_clúster_dinámico</var></span> &gt; <span class="ph uicontrol">Gestión de carga de trabajo dinámica (DWLM)</span></span></div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="status"><h2 class="title topictitle2">Estado</h2>
+<div class="body"><p class="shortdesc">Especifica el estado actual del miembro del clúster. Mantenga pulsado el ratón sobre el gráfico para determinar el significado del gráfico de estado.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="cols" frame="border" border="1"><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" width="6.071428571428571%" id="d9503e200">Icono</th>
+<th class="entry" valign="bottom" width="22.857142857142858%" id="d9503e202">Estado</th>
+<th class="entry" valign="bottom" width="71.07142857142857%" id="d9503e204">Descripción</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d9503e200 "><img class="image" src="images/running.gif" alt="Iniciado" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d9503e202 ">Iniciado</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d9503e204 ">El servidor está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d9503e200 "><img class="image" src="images/part_start.gif" alt="Inicio parcial" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d9503e202 ">Parcialmente iniciado</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d9503e204 ">El servidor está en el proceso de cambiar de un estado de <em class="ph i">Detenido</em> a un estado de <em class="ph i">Iniciado</em>. Se está comenzando a ejecutar el servidor pero todavía no lo está haciendo en su totalidad.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d9503e200 "><img class="image" src="images/stop.gif" alt="Detenido" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d9503e202 ">Detenido</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d9503e204 ">El servidor no está en ejecución.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d9503e200 "><img class="image" src="images/part_stop.gif" alt="Parada parcial" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d9503e202 ">Parada parcial</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d9503e204 ">El servidor está en el proceso de cambiar de un estado de <em class="ph i">Iniciado</em> a un estado de <em class="ph i">Detenido</em>. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d9503e200 "><img class="image" src="images/unavail.gif" alt="No disponible" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d9503e202 ">No disponible</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d9503e204 ">No se puede determinar el estado.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="6.071428571428571%" headers="d9503e200 "><img class="image" src="images/unknown.gif" alt="Desconocido" /></td>
+<td class="entry" valign="top" width="22.857142857142858%" headers="d9503e202 ">No aplicable</td>
+<td class="entry" valign="top" width="71.07142857142857%" headers="d9503e204 ">El servidor no proporciona información sobre si está en ejecución.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="dc_collection.html" title="Utilice esta página para ver clústeres dinámicos que ya existen. Los miembros de los clústeres dinámicos, o instancias de servidor, residen en un nodo dentro de un grupo de nodos. Los clústeres dinámicos, así como sus grupos de nodos asociados, se utilizan para realizar la ubicación de aplicaciones cuando el entorno se está ejecutando en una modalidad automática.">Colección de clústeres dinámicos</a></div>
+<div><a class="link help" href="dc_detail_main.html" title="Utilice esta página para ver configuraciones de clústeres dinámicos existentes.">Valores del clúster dinámico</a></div>
+<div><a class="link help" href="dc_membership.html" title="El generador de subexpresiones de políticas de pertenencia sirve para crear una expresión que define los miembros del clúster dinámico. La utilidad de generación de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de normas valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados y operadores lógicos a los que no se les da soporte.">Generador de políticas de pertenencia</a></div>
+<div><a class="link help" href="dc_wiz_1.html" title="Este paso sirve para especificar el tipo de servidor y el nombre del nuevo clúster dinámico.">Paso 1: Seleccionar el tipo de servidor de clúster dinámico</a></div>
+<div><a class="link help" href="dc_wiz_2.html" title="El método de pertenencia define la forma en que se añaden las instancias de clúster al clúster dinámico. Se puede de crear una política de pertenencia para colocar instancias de clúster en determinados nodos o bien se pueden añadir de forma manual instancias de clúster al clúster dinámico.">Paso 2: Seleccionar un método de pertenencia</a></div>
+<div><a class="link help" href="dc_wiz_3.html" title="Al crear un clúster dinámico se pueden definir sus miembros, o añadirlos a un clúster dinámico que ya exista.">Paso 3: Definir los miembros del clúster dinámico</a></div>
+<div><a class="link help" href="dc_wiz_4.html" title="Seleccione una plantilla de servidor para utilizar como modelo para los servidores para el nuevo clúster dinámico. Se puede seleccionar una plantilla por omisión, o correlacionar un servidor que ya exista.">Paso 4: Seleccionar una plantilla de servidor</a></div>
+<div><a class="link help" href="dc_wiz_5.html" title="Define las propiedades para el clúster dinámico.">Paso 5: Configurar las propiedades del clúster dinámico</a></div>
+<div><a class="link help" href="dc_wiz_6.html" title="Esta página de la consola administrativa sirve para ver y guardar valores al crear un clúster dinámico o añadir miembros de clúster dinámico. Esta página de resumen muestra los cambios de configuración antes de comprometerlos y antes de que se cree el nuevo clúster dinámico o que se añadan miembros de clúster dinámico.">Paso 6: Resumen</a></div>
+<div><a class="link help" href="dc_member_settings.html" title="Utilice esta página para gestionar los miembros de un clúster dinámico.">Valores de miembros de un clúster dinámico</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: dc_members.html</span></body>
+</html>

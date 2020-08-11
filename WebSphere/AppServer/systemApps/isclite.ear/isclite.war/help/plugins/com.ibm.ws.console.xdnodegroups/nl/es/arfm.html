@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2014" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2014" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores del gestor de flujo de solicitudes autónomo" />
+<meta name="abstract" content="Utilice este panel para configurar el gestor de flujo de solicitudes autónomo (ARFM). El gestor de flujo de solicitudes autónomo (ARFM) gestiona los mensajes entrantes para las aplicaciones: determina si los servidores de middleware pueden darles servicio y cuándo pueden hacerlo. Para tráfico HTTP y SIP (Session Initiation Protocol), las acciones de gestión tienen lugar en los direccionadores On Demand. Para mensajes JMS (Java Message Service) e IIOP (Inter-ORB Protocol), las acciones de gestión tienen lugar en los servidores de aplicaciones." />
+<meta name="description" content="Utilice este panel para configurar el gestor de flujo de solicitudes autónomo (ARFM). El gestor de flujo de solicitudes autónomo (ARFM) gestiona los mensajes entrantes para las aplicaciones: determina si los servidores de middleware pueden darles servicio y cuándo pueden hacerlo. Para tráfico HTTP y SIP (Session Initiation Protocol), las acciones de gestión tienen lugar en los direccionadores On Demand. Para mensajes JMS (Java Message Service) e IIOP (Inter-ORB Protocol), las acciones de gestión tienen lugar en los servidores de aplicaciones." />
+<meta name="DC.Relation" scheme="URI" content="apc.html" />
+<meta name="DC.Relation" scheme="URI" content="placement_custom.html" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="arfm" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores del gestor de flujo de solicitudes autónomo</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="arfm">
+<h1 class="title topictitle1">Valores del gestor de flujo de solicitudes autónomo</h1>
+<div class="body"><p class="shortdesc">Utilice este panel para configurar el gestor de flujo de solicitudes autónomo (ARFM). El gestor de flujo de solicitudes autónomo (ARFM) gestiona los mensajes entrantes para las aplicaciones: determina si los servidores de middleware pueden darles servicio y cuándo pueden hacerlo. Para tráfico HTTP y SIP (Session Initiation Protocol), las acciones de gestión tienen lugar en los direccionadores On Demand.
+Para mensajes JMS (Java Message Service) e IIOP (Inter-ORB Protocol), las acciones de gestión tienen lugar en los servidores de aplicaciones.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Gestores autónomos</span> &gt; <span class="ph uicontrol">Gestor de flujo de solicitudes autónomo</span></span>.</p>
+<p class="p">El gestor de flujo de solicitudes autónomo (ARFM) está formado por dos elementos: un controlador y una pasarela. Un controlador y una colección de pasarelas en los direccionadores On demand (ODR) implementan la funcionalidad de ARFM para cada célula. Las pasarelas interceptan y colocan en cola las solicitudes entrantes, mientras que el controlador proporciona señales de control, o indicaciones, a las pasarelas y al controlador de ubicación. Los dos componentes trabajan de forma conjunta para dar prioridades a las solicitudes entrantes.</p>
+<p class="p"><img src="./images/ng_v8553.gif" alt="[8.5.5.3 o posterior]" /> Para gestionar el tráfico HTTP, puede utilizar un algoritmo basado en nodos. Para habilitar el ARFM basado en nodos, establezca la propiedad personalizada de célula <samp class="ph codeph">arfmQueueMode</samp>.
+Con el ARFM basado en nodos, las colas y la protección contra sobrecargas de CPU se realiza a nivel de nodo.  No hay ningún otro controlador ni pasarela implicada.</p>
+<p class="p">Según sea el rol administrativo, existen privilegios específicos
+permitidos a la hora de configurar el gestor de flujo de peticiones autónomo.
+ En esta lista se muestran los roles administrativos y los privilegios para configurar el gestor de flujo de solicitudes autónomo:</p>
+<dl class="dl"><dt class="dt dlterm">Supervisor
+</dt>
+<dd class="dd">Ver la información.</dd>
+<dt class="dt dlterm">Operador
+</dt>
+<dd class="dd">Ver información en la pestaña de configuración. </dd>
+<dt class="dt dlterm">Configurador</dt>
+<dd class="dd">Puede cambiar la configuración.</dd>
+<dt class="dt dlterm">Administrador</dt>
+<dd class="dd">Tiene todos los privilegios.</dd>
+</dl>
+<p class="p"><span class="ph uicontrol">Habilitar seguridad</span>. Cuando la seguridad está habilitada, algunos campos no se pueden editar sin la autorización de seguridad adecuada.</p>
+</div>
+<div class="topic nested1 help" xml:lang="es-es" id="arfm_agg_period"><h2 class="title topictitle2">Periodo de agregación
+</h2>
+<div class="body"><p class="shortdesc">Cada pasarela ARFM difunde estadísticas agregadas de forma periódica y es en este campo donde se especifica este periodo. El valor predeterminado es de 5 segundos.</p>
+<p class="p"><img src="./images/ng_v8553.gif" alt="[8.5.5.3 o posterior]" /> Esta propiedad no se aplica a ARFM basado en nodos.</p>
+<div class="p">La pasarela proporciona informes para las siguientes estadísticas:<ul class="ul"><li class="li">Los diagramas de tiempo de ejecución en la consola administrativa de WebSphere.</li>
+<li class="li">El funcionamiento de los controladores ARFM.</li>
+<li class="li">El funcionamiento del controlador de ubicación de aplicaciones.</li>
+</ul>
+</div>
+<p class="p">Cuando se establece el periodo de agregación, hay que establecer
+un valor lo suficientemente elevado como para dar soporte a la recopilación de
+un número suficiente de muestras de rendimiento.
+Las pasarelas recopilan muestras de cada solicitud. Para crear una buena medición estadística, se necesitan algunos centenares de muestras. Por ejemplo, las solicitudes asociadas a una clase de servicio se ejecutan en 250 milisegundos y, de promedio, 10 solicitudes se ejecutan de forma concurrente. El valor de concurrencia se calcula de forma automática, basándose en el tamaño del clúster y en los recursos del entorno. El valor de concurrencia se puede ver en los paneles de visualización bajo <span class="ph uicontrol">Operaciones de tiempo de ejecución</span> en la consola administrativa.</p>
+<p class="p">Como resultado, la clase de servicio maneja alrededor de 40 solicitudes por segundo.
+Si se establece un valor de periodo de agregación de 15 segundos, se dará lugar a la recopilación de 600 muestras en cada periodo de agregación. 
+Las métricas que un grupo de 600 muestras proporcionan son útiles y fiables.</p>
+<p class="p">Si se establece un valor de periodo de agregación demasiado bajo dará lugar métricas de rendimiento poco fiables. 
+Las métricas de rendimiento que se obtienen de menos muestras son menos fiables
+que las de un número de muestras mayor. Puesto que el controlador ARFM se activa cuando se crean nuevas estadísticas, si se establece un valor de periodo de agregación demasiado grande se dará con una menor frecuencia el recálculo de los valores de control. 
+Por lo tanto, el producto responderá más lentamente ante cambios súbitos en
+los patrones e intensidad de tráfico.</p>
+</div>
+</div>
+<div class="topic nested1 help" xml:lang="es-es" id="arfm_control_cycle_length_min"><h2 class="title topictitle2">Longitud mínima del ciclo de control
+</h2>
+<div class="body"><p class="shortdesc">Define con qué frecuencia se activa el controlador ARFM. El valor predeterminado es de 59 segundos.</p>
+<p class="p"><img src="./images/ng_v8553.gif" alt="[8.5.5.3 o posterior]" /> Esta propiedad no se aplica a ARFM basado en nodos.</p>
+<p class="p">La activación del controlador es el proceso de evaluar la entrada
+y crear unos nuevos valores de control como resultado de las entradas
+recibidas. El proceso de activación de un controlador ARFM comienza cuando se
+reciben nuevas estadísticas de una de sus pasarelas, y el tiempo transcurrido
+desde la última activación es mayor o igual a la longitud mínima de ciclo de
+control, o si el controlador no se ha activado nunca.</p>
+</div>
+</div>
+<div class="topic nested1 help" xml:lang="es-es" id="arfm_smoothing_window"><h2 class="title topictitle2">Ventana de suavizado
+</h2>
+<div class="body"><p class="shortdesc">Define la sensibilidad de la reacción del controlador ARFM frente a las estadísticas de entrada de las pasarelas, permitiendo la concatenación de las estadísticas de las pasarelas. El valor por omisión es <samp class="ph codeph">12</samp>.</p>
+<p class="p"><img src="./images/ng_v8553.gif" alt="[8.5.5.3 o posterior]" /> Esta propiedad no se aplica a ARFM basado en nodos.</p>
+<p class="p">El controlador ARFM de cualquier pasarela utiliza un promedio de ejecución de algunos de los últimos informes de estadísticas provenientes de dicha pasarela. La ventana de suavizado controla el número de informes que se han de combinar. Un valor bajo para la ventana de suavizado hace que el controlador sea más sensible y da soporte a una reacción más rápida. Sin embargo, un valor bajo también da lugar a una reacción más sensible frente al ruido o a las anomalías en los datos.</p>
+<p class="p">El producto de la ventana de suavizado y el periodo de agregación es aproximadamente el mismo que la longitud del ciclo de control real, que a veces es algo mayor que la longitud mínima de ciclo de control configurada.</p>
+</div>
+</div>
+<div class="topic nested1 help" xml:lang="es-es" id="arfm_max_queue_length"><h2 class="title topictitle2">Longitud máxima de cola
+</h2>
+<div class="body"><p class="shortdesc">Relaciona la longitud de cada cola ARFM con el número máximo de solicitudes que se pueden mantener en la cola. </p>
+<p class="p">ARFM tiene una cola independiente por cada combinación de direccionadores On Demand, grupos de nodos, clases de servicio y destinos de despliegue. Cuando llega una solicitud y la cola está llena, se rechaza la solicitud.
+Un parámetro bajo en este campo incrementa la posibilidad de que se rechace una solicitud debido a un incremento rápido e intenso del tráfico, mientas que un parámetro elevado permite que las solicitudes permanezcan más tiempo en las colas. 
+Las solicitudes en cola utilizan memoria. El valor predeterminado es <samp class="ph codeph">1000</samp>, pero es mejor comprobar este valor para determinar el que mejor se adapta a su entorno.</p>
+<p class="p"><img src="./images/ng_v8553.gif" alt="[8.5.5.3 o posterior]" /> El ARFM basado en nodos tiene una cola independiente para cada nodo y cada clúster.  Esta propiedad hace referencia al número total de solicitudes en cola permitidas.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="memoryoverloadprotectionmaximumpercentageofthewebsphereapplicationserver"><h2 class="title topictitle2">Protección de sobrecarga de memoria: porcentaje máximo del tamaño de la pila de almacenamiento dinámico de WebSphere Application Server a utilizar</h2>
+<div class="body"><p class="shortdesc">Especifica el porcentaje máximo del tamaño del almacenamiento dinámico que se puede utilizar para cada servidor de aplicaciones. Esta propiedad se aplica a los mensajes HTTP y SIP (Session Initiation
+Protocol). El valor predeterminado es <kbd class="ph userinput">100%</kbd>.</p>
+<p class="p"></p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="cpuoverloadprotectionmaximumpercentageofmiddlewarenodecputo"><h2 class="title topictitle2">
+Utilización máxima de CPU</h2>
+<div class="body"><p class="shortdesc">Especifica el porcentaje máximo de utilización de CPU para los nodos de middleware. El ARFM considera el clúster en su totalidad cuando se calcula el uso de CPU. 
+Cuando la utilización de la CPU supera este porcentaje, se considera que el clúster está
+sobrecargado. El ARFM considera el clúster en su totalidad cuando se calcula el uso de CPU. El valor predeterminado es <kbd class="ph userinput">90%</kbd>.</p>
+<p class="p"><img src="./images/ng_v8553.gif" alt="[8.5.5.3 o posterior]" /> El ARFM basado en nodos considera el uso de la CPU en base a nodo por nodo.  Cuando la utilización de la CPU supera el porcentaje de uso máximo, se considera que el nodo está
+sobrecargado. El valor predeterminado es <kbd class="ph userinput">90%</kbd>.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="rejectionpolicy"><h2 class="title topictitle2">Política de rechazo</h2>
+<div class="body"><p class="shortdesc">Una política de rechazo evita que se sobrecargue una CPU al rechazar mensajes SIP y HTTP que no son parte de sesiones o diálogos que ya existen.</p>
+<div class="p"><ul class="ul"><li class="li"><span class="ph uicontrol">No rechazar mensajes entrantes, permitir en cola todos los mensajes independientemente de la posibilidad de exceder el tiempo de espera o incumplir el umbral de tiempo de respuesta de su objetivo de política de servicio</span>.
+Esta opción tiene un valor de umbral de rechazo de <kbd class="ph userinput">-1</kbd>. Este valor es el valor por omisión.</li>
+<li class="li"><span class="ph uicontrol">Rechazar mensajes entrantes que no son parte de sesiones o diálogos que ya existan si el tiempo de respuesta precedido para el mensaje excede el umbral del tiempo de respuesta de sus políticas de servicio.</span> Esta opción tiene un valor de umbral de rechazo de <kbd class="ph userinput">0 %</kbd>.</li>
+<li class="li"><span class="ph uicontrol">Rechazar mensajes entrantes que no son parte de sesiones o diálogos que ya existan si el tiempo de respuesta precedido para el mensaje excede el umbral del tiempo de respuesta de sus políticas de servicio por más del siguiente porcentaje. </span> Especifique para esta opción un valor de <span class="ph uicontrol">Umbral de rechazo</span> como porcentaje. 
+Por ejemplo, el valor predeterminado de <kbd class="ph userinput">400 %</kbd>
+significa que un mensaje con un umbral de tiempo de respuesta de política de
+servicio de 500 ms se rechaza si el pronóstico para su tiempo de respuesta
+supera los 2,5 segundos.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="apc.html" title="Utilice esta página para definir los valores que controlan la ubicación de las aplicaciones. Se puede habilitar el controlador de ubicación autónomo, definir con qué frecuencia se darán cambios de ubicación y controlar el comportamiento del controlador de ubicación cuando opere en la modalidad supervisada.">Valores del controlador de ubicación de aplicaciones</a></div>
+<div><a class="link help" href="placement_custom.html" title="Utilice esta página para visualizar y gestionar una lista de parejas de datos arbitrarias de nombre-valor, donde el nombre es una clave de propiedad y el valor es un valor de serie de texto que se puede utilizar para establecer las propiedades internas de configuración del sistema. El definir una nueva propiedad permite configurar un valor más allá del valor disponible en la consola administrativa.">Propiedades personalizadas del controlador de ubicación de aplicaciones</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: arfm.html</span></body>
+</html>

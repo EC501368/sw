@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestión de servidores proxy HTTP" topic="index.html">
+   <topic label="Valores de correlación de clúster de servidores de aplicaciones"
+          href="ae/ujpx_appservclustmap_detail.html"/>
+   <topic label="Valores de acciones de colocación en memoria caché"
+          href="ae/ujpx_cacheaction_detail.html"/>
+   <topic label="Creación de un clúster proxy: valores básicos de clúster proxy"
+          href="ae/ujpx_proxycluster_create1.html"/>
+   <topic label="Creación de un clúster proxy: crear miembros de clúster adicionales"
+          href="ae/ujpx_proxycluster_create3.html"/>
+   <topic label="Creación de un clúster proxy: crear el primer miembro de clúster proxy"
+          href="ae/ujpx_proxycluster_create2.html"/>
+   <topic label="Creación de clúster proxy: valores de resumen"
+          href="ae/ujpx_proxycluster_create4.html"/>
+   <topic label="Valores de política de asesor personalizado"
+          href="ae/ujpx_custadv_detail.html"/>
+   <topic label="Colección de asesores personalizados" href="ae/ujpx_custadv.html"/>
+   <topic label="Denegación de valores de protección de servicio"
+          href="ae/usec_dos_pxy.html"/>
+   <topic label="Valores de correlación de clúster de servidores genéricos"
+          href="ae/ujpx_genservclustmap_detail.html"/>
+   <topic label="Miembros del clúster de servidores genérico"
+          href="ae/ujpx_generic_ports.html"/>
+   <topic label="Colección de puertos del clúster de servidores genérico"
+          href="ae/ujpx_gen_ports_collection.html"/>
+   <topic label="Valores de acción de direccionamiento del clúster de servidores genéricos"
+          href="ae/ujpx_genservrouteaction_detail.html"/>
+   <topic label="Colección de clústeres de servidores genéricos"
+          href="ae/ujpx_generic_collection.html"/>
+   <topic label="Configuración de los clústeres de servidores genéricos"
+          href="ae/ujpx_generic.html"/>
+   <topic label="Valores de acción de compresión HTTP"
+          href="ae/ujpx_httpcompaction_detail.html"/>
+   <topic label="Valores de acción de cabecera HTTP"
+          href="ae/ujpx_httpheaderaction_detail.html"/>
+   <topic label="Colección de acciones de proxy" href="ae/ujpx_action.html"/>
+   <topic label="Valores de miembros de clúster proxy"
+          href="ae/ujpx_proxycluster_member_settings.html"/>
+   <topic label="Colección de plantillas de miembro de clúster proxy"
+          href="ae/ujpx_proxycluster_member_template.html"/>
+   <topic label="Valores de plantillas de miembro de clúster proxy"
+          href="ae/ujpx_proxycluster_member_template_settings.html"/>
+   <topic label="Colección de expresiones de regla de proxy" href="ae/ujpx_rulexp.html"/>
+   <topic label="Valores de expresión de regla de proxy"
+          href="ae/ujpx_rulexp_detail.html"/>
+   <topic label="Colección de clústeres de servidores proxy"
+          href="ae/ujpx_proxycluster.html"/>
+   <topic label="Colección de miembros de clúster de servidores proxy"
+          href="ae/ujpx_proxycluster_member.html"/>
+   <topic label="Valores de clústeres de servidor proxy"
+          href="ae/ujpx_proxycluster_settings.html"/>
+   <topic label="Colección de servidores proxy" href="ae/ujpx_collection.html"/>
+   <topic label="Configuración del servidor proxy" href="ae/ujpx_detail_main.html"/>
+   <topic label="Valores del servidor proxy" href="ae/ujpx_proxy.html"/>
+   <topic label="Colección de hosts virtuales de proxy" href="ae/ujpx_virthost.html"/>
+   <topic label="Valores del host virtual de proxy" href="ae/ujpx_virthost_detail.html"/>
+   <topic label="Detalles de valores de host virtual de proxy"
+          href="ae/ujpx_proxy_virthost_settings_detail.html"/>
+   <topic label="Valores de acciones de reescritura"
+          href="ae/ujpx_rewriteaction_detail.html"/>
+   <topic label="Reescritura de colección de reglas"
+          href="ae/ujpx_rewrite_collection.html"/>
+   <topic label="Configuración de las reglas de reescritura" href="ae/ujpx_rewrite.html"/>
+   <topic label="Valores de acción de direccionamiento"
+          href="ae/ujpx_routeaction_detail.html"/>
+   <topic label="Reglas de direccionamiento" href="ae/ujpx_routing_collection.html"/>
+   <topic label="Configuración de las reglas de direccionamiento"
+          href="ae/ujpx_routing.html"/>
+   <topic label="Valores de correlación de clúster de servidores de aplicaciones autónomos"
+          href="ae/ujpx_stloneappservclustmap_detail.html"/>
+   <topic label="Colección de reglas de memoria caché estática"
+          href="ae/ujpx_cache_collection.html"/>
+   <topic label="Valores de reglas de memoria caché estática" href="ae/ujpx_cache.html"/>
+   <topic label="Valores de correlación de hora" href="ae/ujpx_timemap_detail.html"/>
+   <topic label="Configuración del grupo URI" href="ae/ujpx_uri.html"/>
+   <topic label="Grupos URI" href="ae/ujpx_uri_collection.html"/>
+   <topic label="Valores de configuración del servidor proxy de módulos web"
+          href="ae/uweb_proxyconfig.html"/>
+</toc>

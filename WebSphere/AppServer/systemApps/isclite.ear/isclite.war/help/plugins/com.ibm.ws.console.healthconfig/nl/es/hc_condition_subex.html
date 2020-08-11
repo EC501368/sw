@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2012" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2012" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Generador de subexpresiones de condición de salud personalizada" />
+<meta name="abstract" content="El generador de subexpresiones de condición de salud permite definir una condición de salud personalizada para su política de salud. La utilidad de generación de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR, NOT, así como la agrupación con paréntesis. El generador de subexpresiones valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados y operadores lógicos a los que no se les da soporte." />
+<meta name="description" content="El generador de subexpresiones de condición de salud permite definir una condición de salud personalizada para su política de salud. La utilidad de generación de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR y NOT así como la agrupación con paréntesis. El generador de subexpresiones valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados y operadores lógicos a los que no se les da soporte." />
+<meta name="DC.Relation" scheme="URI" content="hc_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_detail_main.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_detail_main_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_condition_detail_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_appservers_detail_new.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_action_collection.html" />
+<meta name="DC.Relation" scheme="URI" content="hc_custom_action.html" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="hc_condition_subex" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Generador de subexpresiones de condición de salud personalizada</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="hc_condition_subex">
+<h1 class="title topictitle1">Generador de subexpresiones de condición de salud personalizada</h1>
+<div class="body"><p class="shortdesc">El generador de subexpresiones de condición de salud permite definir una condición de salud personalizada para su política de salud. La utilidad de generación de subexpresiones sirve para generar condiciones complejas de normas utilizando AND, OR, NOT, así como la agrupación con paréntesis. El generador de subexpresiones valida la norma al aplicar los cambios y avisa si hay paréntesis desemparejados y operadores lógicos a los que no se les da soporte. </p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Políticas de salud</span> &gt; <span class="ph uicontrol">Nueva</span></span>. Si se elige una condición de salud personalizada, se muestra el campo <span class="ph uicontrol">Ejecutar el plan de reacción cuando</span>. Pulse <span class="ph uicontrol">Generador de subexpresiones</span> para generar la condición de salud personalizada.</p>
+<p class="p">Seleccione las propiedades que desee incluir en su condición de salud y, a continuación, pulse <span class="ph uicontrol">Generar subexpresión</span>.
+Aparecerá el valor de subexpresión. Si desea añadir la subexpresión a la condición de salud personalizada, pulse <span class="ph uicontrol">Agregar</span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="logicaloperator"><h2 class="title topictitle2">Operador lógico</h2>
+<div class="body"><p class="shortdesc">Especifica el operador que se utilizará para agregar esta subexpresión a la subexpresión anterior en la condición de salud personalizada.</p>
+<dl class="dl"><dt class="dt dlterm">y</dt>
+<dd class="dd">Ambas subexpresiones que el operador <samp class="ph tt">and</samp> relaciona deben ser ciertas para que se tengan en cuenta las acciones para la política de salud.</dd>
+<dt class="dt dlterm">or</dt>
+<dd class="dd">Si desea seleccionar una política de salud, una de las dos subexpresiones que el operador <samp class="ph tt">or</samp> relaciona deben ser ciertas para que se tengan en cuenta las acciones para la política de salud.</dd>
+</dl>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="operand"><h2 class="title topictitle2">Operando</h2>
+<div class="body"><p class="shortdesc"></p>
+<ul class="ul"><li class="li"><strong class="ph b">Métrica PMI: desde inicio servidor</strong> y <strong class="ph b">Métrica PMI: desde último intervalo</strong><p class="p">El operando <strong class="ph b">Métrica PMI: desde inicio servidor</strong> utiliza un número medio de los valores recogidos desde el momento en que se inició el servidor.</p>
+<p class="p">El operando <strong class="ph b">Métrica de PMI: desde el último intervalo</strong> utiliza una media de los valores informados durante el último intervalo. El intervalo corresponde a la longitud del ciclo del controlador de salud.</p>
+<p class="p">Ambos operandos PMI tienen los siguientes módulos PMI:</p>
+<ul class="ul"><li class="li"><strong class="ph b">Módulo de agrupación de conexiones (JDBC)</strong>: <span class="ph">estas métricas únicamente se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server.</span> El módulo de agrupación de conexiones tiene las siguientes métricas:<ul class="ul"><li class="li"><strong class="ph b">Anomalías</strong>: especifica el número de tiempos de espera de conexión excedidos en la agrupación.</li>
+<li class="li"><strong class="ph b">Número de creaciones</strong>: especifica el número total de conexiones que se han creado.</li>
+<li class="li"><strong class="ph b">Porcentaje utilizado</strong>: especifica el porcentaje medio de la agrupación que está en uso. Este valor se basa en el número total de conexiones configuradas en la agrupación de conexiones, no en el número actual de conexiones.</li>
+<li class="li"><strong class="ph b">Descartes de antememoria de sentencias preparadas</strong>: especifica el número de sentencias que se descartan debido a que la antememoria está llena.</li>
+<li class="li"><strong class="ph b">Número de destrucciones</strong>: especifica el número total de conexiones que se han cerrado.</li>
+<li class="li"><strong class="ph b">Tamaño de agrupación</strong>: especifica el tamaño de la agrupación de conexiones.</li>
+<li class="li"><strong class="ph b">Número de manejadores de conexión</strong>: especifica el número de objetos de conexión que se descartan debido a que la antememoria está llena.</li>
+<li class="li"><strong class="ph b">Esperas concurrentes</strong>: especifica el número medio de hebras que están esperando una conexión al mismo tiempo.</li>
+<li class="li"><strong class="ph b">Número de conexiones gestionadas</strong>: especifica el número de objetos ManagedConnection que están en uso para una agrupación de conexiones en concreto. Esta métrica únicamente se aplica a orígenes de datos de la versión 5.</li>
+<li class="li"><strong class="ph b">Porcentaje con máximo</strong>: especifica el porcentaje medio del tiempo en que todas las conexiones están en uso.</li>
+<li class="li"><strong class="ph b">Tiempo de JDBC (milisegundos)</strong>: especifica el tiempo medio, en milisegundos, que se utiliza ejecutando llamadas JDBC (Java Database Connectivity). Este valor incluye el tiempo que se utiliza en la base de datos, la red y el controlador JDBC. Esta métrica únicamente se aplica a orígenes de datos de la versión 5.</li>
+<li class="li"><strong class="ph b">Tiempo medio de utilización (milisegundos)</strong>: especifica el tiempo medio en milisegundos en que se utiliza una conexión. El valor es el tiempo que transcurre desde que se asigna la conexión hasta que se devuelve.
+Este valor incluye el tiempo de operación de JDBC.</li>
+<li class="li"><strong class="ph b">Número de devoluciones</strong>: especifica el número total de conexiones que se devuelven a la agrupación.</li>
+<li class="li"><strong class="ph b">Tamaño de agrupación libre</strong>: especifica el número de conexiones libres en la agrupación.</li>
+<li class="li"><strong class="ph b">Número de asignaciones</strong>: especifica el número de conexiones asignadas.</li>
+<li class="li"><strong class="ph b">Tiempo medio de espera (milisegundos)</strong>:  especifica el tiempo medio de espera en milisegundos. </li>
+</ul>
+</li>
+<li class="li"><strong class="ph b">Módulo del sistema</strong>: <span class="ph" id="operand__was-nonwas">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span> El módulo de sistema tiene las siguientes métricas:<ul class="ul"><li class="li"><strong class="ph b">Utilización de CPU: desde inicio servidor</strong>: especifica la utilización media de la CPU desde que se inició el servidor.</li>
+<li class="li"><strong class="ph b">Utilización de CPU: último intervalo</strong>: especifica la utilización media de la CPU desde la última consulta.</li>
+<li class="li"><strong class="ph b">Memoria libre (MB)</strong>: especifica una instantánea de la memoria libre en kbytes.</li>
+</ul>
+</li>
+<li class="li"><strong class="ph b">Módulo de proceso (para otros servidores)</strong>: <span class="ph">estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span> El módulo de proceso tiene las siguientes métricas:<ul class="ul"><li class="li"><strong class="ph b">Memoria residente de proceso (KB)</strong>: especifica la memoria residente de proceso en Kbytes.</li>
+<li class="li"><strong class="ph b">Utilización de CPU de proceso: desde inicio servidor</strong>: especifica la utilización de la CPU de proceso desde que se inició el servidor.</li>
+<li class="li"><strong class="ph b">Utilización de CPU de proceso: último intervalo</strong>: especifica la utilización de la CPU de proceso en el último intervalo.</li>
+<li class="li"><strong class="ph b">Memoria total de proceso (KB)</strong>: especifica la memoria total de proceso en Kbytes.</li>
+</ul>
+</li>
+<li class="li"><strong class="ph b">Módulo EJB</strong>: <span class="ph">estas métricas únicamente se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server.</span> El módulo EJB tiene las siguientes métricas:<ul class="ul"><li class="li"><strong class="ph b">Media de métodos activos simultáneos</strong>: especifica el número medio de métodos que están activos al mismo tiempo.</li>
+<li class="li"><strong class="ph b">Total llamadas de método</strong>: especifica el número de llamadas a métodos remotos del bean.</li>
+<li class="li"><strong class="ph b">Submódulo de métodos: cargas de método</strong>: especifica la carga de método en el submódulo de métodos.</li>
+<li class="li"><strong class="ph b">Almacenamientos</strong>: especifica el número de veces que los datos del bean se almacenaron en el almacenamiento persistente.</li>
+<li class="li"><strong class="ph b">Número de mensajes</strong>: especifica el número de mensajes entregados al método onMessage del bean. Este número de mensajes se aplica a los beans controlados por mensajes.</li>
+<li class="li"><strong class="ph b">Media de beans activos simultáneos</strong>: especifica la media de beans que están activos al mismo tiempo.</li>
+<li class="li"><strong class="ph b">Eliminaciones</strong>: especifica el número de veces que se eliminaron los beans.</li>
+<li class="li"><strong class="ph b">Devoluciones a agrupación</strong>: especifica el número de llamadas que están devolviendo un objeto a la agrupación.</li>
+<li class="li"><strong class="ph b">En estado pasivo</strong>: especifica el número de veces que los beans se colocaron en el estado pasivo.</li>
+<li class="li"><strong class="ph b">Obtenciones desde agrupación</strong>: especifica el número de llamadas que están recuperando un objeto desde la agrupación.</li>
+<li class="li"><strong class="ph b">Drenajes desde agrupación</strong>: especifica el número de veces que el daemon encontró desocupada la agrupación e intentó limpiarla.</li>
+<li class="li"><strong class="ph b">En estado de listo</strong>: especifica el número de instancias de bean que están en el estado de listo.</li>
+<li class="li"><strong class="ph b">Tiempo medio de creación (milisegundos)</strong>: especifica el tiempo medio, en milisegundos, para ejecutar una llamada de creación de bean. Este tiempo incluye el tiempo para cargar el bean.</li>
+<li class="li"><strong class="ph b">Devoluciones descartadas</strong>: especifica el número de veces que el objeto devuelto se descartó porque la agrupación estaba llena.</li>
+<li class="li"><strong class="ph b">Activaciones</strong>: especifica el número de veces que se activaron los beans. </li>
+<li class="li"><strong class="ph b">Utilización sesión de servidor (porcentaje)</strong>: especifica el porcentaje que se está utilizando la agrupación ServerSession. Esta métrica se aplica a beans controlados por mensajes.</li>
+<li class="li"><strong class="ph b">Cargas</strong>: especifica el número de veces en que se cargaron los datos de bean desde el almacenamiento persistente.</li>
+<li class="li"><strong class="ph b">Número mensajes retirados</strong>: especifica el número de mensajes retirados que no se pudieron entregar al método onMessage del bean. Esta métrica se aplica a beans controlados por mensajes.</li>
+<li class="li"><strong class="ph b">Submódulo de métodos: tiempo de respuesta de método (milisegundos)</strong>: especifica el tiempo de respuesta de método, en milisegundos.</li>
+<li class="li"><strong class="ph b">Número en estado pasivo</strong>: especifica el número de beans que están en un estado pasivo. </li>
+<li class="li"><strong class="ph b">Tamaño agrupación</strong>: especifica el número medio de objetos que se encuentran en la agrupación.</li>
+<li class="li"><strong class="ph b">Tiempo de carga (milisegundos)</strong>: especifica el tiempo medio en milisegundos para cargar los datos de bean desde el almacenamiento persistente.</li>
+<li class="li"><strong class="ph b">Tiempo medio de eliminación (milisegundos)</strong>: especifica el tiempo medio, en milisegundos, para ejecutar una llamada beanRemove. Este tiempo incluye el tiempo en la base de datos.</li>
+<li class="li"><strong class="ph b">Obtenciones encontradas</strong>: especifica el número de veces en que una llamada de recuperación encontró un objeto disponible en la agrupación.</li>
+<li class="li"><strong class="ph b">Tiempo de activación</strong>: especifica el tiempo medio, en milisegundos, para activar un objeto de bean.</li>
+<li class="li"><strong class="ph b">Tamaño medio de drenaje</strong>: especifica el número medio de objetos que se descartaron en cada drenaje.</li>
+<li class="li"><strong class="ph b">Submódulo de métodos: llamadas de método</strong>: especifica el número de llamadas de método.</li>
+<li class="li"><strong class="ph b">Destrucciones</strong>: especifica el número de veces en que se destruyeron los beans.</li>
+<li class="li"><strong class="ph b">Tiempo medio de espera de sesión de servidor (milisegundos)</strong>: especifica el tiempo medio, en milisegundos, que se necesita para obtener una sesión de servidor desde la agrupación. Esta métrica se aplica a beans controlados por mensajes.</li>
+<li class="li"><strong class="ph b">Creaciones</strong>: especifica el número de veces que se crearon los beans.</li>
+<li class="li"><strong class="ph b">Tiempo medio de respuesta de método (milisegundos)</strong>: especifica el tiempo de respuesta medio, en milisegundos, que transcurre para llamadas de método remotas en el bean.</li>
+<li class="li"><strong class="ph b">Instancias</strong>: especifica el número de veces que se crearon instancias de bean.</li>
+<li class="li"><strong class="ph b">Tiempo de almacenaje (milisegundos)</strong>: especifica el tiempo, en milisegundos, para almacenar los datos de bean en el almacenamiento persistente.</li>
+<li class="li"><strong class="ph b">Tiempo de estado pasivo (milisegundos)</strong>: especifica el tiempo medio, en milisegundos, para que un objeto de bean se coloque en el estado pasivo.</li>
+</ul>
+</li>
+<li class="li"><strong class="ph b">Módulo de aplicación web:</strong> <span class="ph">Estas métricas únicamente se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server.</span> Los módulos de aplicación web tienen las siguientes métricas:<ul class="ul"><li class="li"><strong class="ph b">Número de errores</strong>: especifica el número total de veces que se recibió un error desde archivos JSP (JavaServer Pages) o servlets.</li>
+<li class="li"><strong class="ph b">Total de solicitudes</strong>: especifica el número total de solicitudes que un servlet procesó.</li>
+<li class="li"><strong class="ph b">Tiempo de respuesta (milisegundos)</strong>: especifica el tiempo medio de respuesta, en milisegundos, en que se finalizan las solicitudes de servlet.</li>
+<li class="li"><strong class="ph b">Solicitudes simultáneas</strong>: especifica el número de solicitudes que se están procesando en este momento.</li>
+<li class="li"><strong class="ph b">Número de recargas</strong>: especifica el número de servlets que se han recargado.</li>
+<li class="li"><strong class="ph b">Número de servlets cargados</strong>: especifica el número de servlets que se han cargado.</li>
+</ul>
+</li>
+<li class="li"><strong class="ph b">Módulo de tiempo de ejecución de JVM: </strong><span class="ph">estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span> Los módulos JVM (Java
+Virtual Machine) tienen las siguientes métricas:<ul class="ul"><li class="li"><strong class="ph b">Memoria libre (KB)</strong>: especifica la memoria libre, en Kbytes, en el entorno de tiempo de ejecución de JVM.</li>
+<li class="li"><strong class="ph b">Tiempo de actividad (segundos)</strong>: especifica la cantidad de tiempo, en segundos, en que JVM ha estado en ejecución.</li>
+<li class="li"><strong class="ph b">Total memoria (KB)</strong>: especifica el total de memoria, en Kbytes, en el entorno de tiempo de ejecución de JVM.</li>
+<li class="li"><strong class="ph b">Memoria utilizada (KB)</strong>: especifica la cantidad de memoria utilizada, en Kbytes, en el entorno de tiempo de ejecución de JVM.</li>
+</ul>
+</li>
+<li class="li"><strong class="ph b">Módulo de agrupación de hebras: </strong><span class="ph">estas métricas únicamente se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server. </span> Los módulos de agrupación de hebras tienen las siguientes métricas:<ul class="ul"><li class="li"><strong class="ph b">Número de detenciones de hebra</strong>: especifica el número de hebras que se han declarado como detenidas.</li>
+<li class="li"><strong class="ph b">Porcentaje con máximo</strong>: especifica el porcentaje medio del tiempo en que todas las hebras están en uso.</li>
+<li class="li"><strong class="ph b">Tiempo medio activo (milisegundos)</strong>: especifica el tiempo medio en milisegundos en que las hebras están en un estado activo.</li>
+<li class="li"><strong class="ph b">Destrucciones de hebra</strong>: especifica el número total de hebras que se han destruido.</li>
+<li class="li"><strong class="ph b">Tamaño agrupación</strong>: especifica el número medio de hebras que hay en una agrupación.</li>
+<li class="li"><strong class="ph b">Creaciones de hebra</strong>: especifica el número total de hebras que se han creado.</li>
+<li class="li"><strong class="ph b">Hebras colgadas simultáneamente</strong>: especifica el número de hebras detenidas de forma simultánea.</li>
+<li class="li"><strong class="ph b">Número de detenciones de hebra borradas</strong>: especifica el número de hebras detenidas que se han borrado.</li>
+<li class="li"><strong class="ph b">Hebras activas</strong>: especifica el número de hebras que están activas de forma concurrente.</li>
+</ul>
+</li>
+</ul>
+<div class="p"><strong class="ph b">Formato de subexpresión para Métrica PMI: desde inicio servidor:</strong><pre class="pre">PMIMetric_FromServerStart$nombreMódulo$nombreMétrica operador valorLongL (con sufijo "L")</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo:</strong> <pre class="pre">PMIMetric_FromServerStart$systemModule$cpuUtilization  &gt;  90L</pre>
+</div>
+<div class="p"><strong class="ph b">Formato de subexpresión para Métrica PMI: último intervalo notificado:</strong><pre class="pre">PMIMetric_FromLastInterval$nombreMódulo$nombreMétrica operador valorLongL (con sufijo "L")</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo:</strong> <pre class="pre">PMIMetric_FromLastInterval$webAppModule$responseTime  &gt; 200L</pre>
+</div>
+</li>
+<li class="li"><strong class="ph b">Métrica de nivel de servidor ODR: desde inicio servidor
+</strong><div class="p">Se puede utilizar un subconjunto de las métricas de nivel de servidor que publica el direccionador On Demand (ODR).
+Estas métricas se acumulan y se recopilan a partir del momento en que se inicia el servidor. <dl class="dl"><dt class="dt dlterm">Nombre de métrica</dt>
+<dd class="dd"><p class="p">Se pueden utilizar las siguientes métricas de nivel de servidor.</p>
+<ul class="ul"><li class="li"><strong class="ph b">Salidas</strong>: Especifica el número de solicitudes asignadas desde la cola al servidor durante el intervalo en que se informa.  Se considera que una solicitud únicamente se asigna una vez, incluso si se produce un error con en el primer servidor y se vuelve a intentar en otro momento.  El siguiente suceso después de asignar es devolver. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Tiempo de respuesta (milisegundos)</strong>:  especifica un tiempo de respuesta medio para las solicitudes. Para calcular esta media, calcula la suma de los tiempos de respuesta de las solicitudes que se devolvieron desde el servidor al cliente durante el intervalo en que se informa. La unidad de la suma es milisegundos. Divide la suma por el valor de la métrica serviced para obtener el tiempo de respuesta medio.  El tiempo de respuesta de una solicitud es la suma del tiempo de espera y el tiempo de servicio de dicha solicitud. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Solicitudes en ejecución actualmente</strong>: especifica el número de solicitudes que están  ejecución al final del intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__serviceTime"><strong class="ph b">Tiempo de servicio (milisegundos)</strong>: especifica el tiempo medio de servicio de las solicitudes. Para calcular esta media, calcula la suma de cada tiempo de servicio de solicitud de las solicitudes que se devolvieron al servidor durante el intervalo en que se informa. La unidad de la suma es milisegundos.  Lo divide por el valor de la métrica serviced en el mismo intervalo para obtener la media.  El tiempo de servicio de una solicitud es el tiempo desde que se asigna hasta que se devuelve. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Tiempo de espera (milisegundos)</strong>: especifica el tiempo medio de espera para las solicitudes. Para calcular esta media, calcula la suma del tiempo que cada solicitud está en espera en la cola durante el intervalo en que se informa. La unidad de la suma es milisegundos.  Divide la suma por el número de salidas para obtener el tiempo de espera medio.  Las solicitudes eliminadas no contribuyen a esta suma. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Errores</strong>: especifica el número de solicitudes que se han devuelto desde el servidor con un indicador de error durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Con servicio</strong>: especifica el número de solicitudes que se han devuelto desde el servidor al cliente durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Con tiempo de espera excedido</strong>: especifica el número de solicitudes que se han devuelto debido a un tiempo de espera de servicio excedido durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="p"><strong class="ph b">Formato de subexpresión: </strong><pre class="pre">ODRServerMetric_FromServerStart$nombreMétrica operador valorLongL (con sufijo "L")</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo:</strong> <pre class="pre">ODRServerMetric_FromServerStart$errors  &gt; 100L</pre>
+</div>
+</li>
+<li class="li"><strong class="ph b">Métrica de nivel de servidor ODR: último intervalo notificado
+</strong><div class="p">Se puede utilizar el mismo conjunto de métricas que con el operando de Métrica de nivel de servidor ODR: desde inicio servidor. Esté operando utiliza una media de los valores recopilados del último intervalo. El intervalo corresponde a la longitud del ciclo del controlador de salud.<ul class="ul"><li class="li"><strong class="ph b">Salidas</strong>: Especifica el número de solicitudes asignadas desde la cola al servidor durante el intervalo en que se informa.  Se considera que una solicitud únicamente se asigna una vez, incluso si se produce un error con en el primer servidor y se vuelve a intentar en otro momento.  El siguiente suceso después de asignar es devolver. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Tiempo de respuesta (milisegundos)</strong>:  especifica un tiempo de respuesta medio para las solicitudes. Para calcular esta media, calcula la suma de los tiempos de respuesta de las solicitudes que se devolvieron desde el servidor al cliente durante el intervalo en que se informa. La unidad de la suma es milisegundos. Divide la suma por el valor de la métrica serviced para obtener el tiempo de respuesta medio.  El tiempo de respuesta de una solicitud es la suma del tiempo de espera y el tiempo de servicio de dicha solicitud. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Solicitudes en ejecución actualmente</strong>: especifica el número de solicitudes que están  ejecución al final del intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Tiempo de servicio (milisegundos)</strong>: especifica el tiempo medio de servicio de las solicitudes. Para calcular esta media, calcula la suma de cada tiempo de servicio de solicitud de las solicitudes que se devolvieron al servidor durante el intervalo en que se informa. La unidad de la suma es milisegundos.  Lo divide por el valor de la métrica serviced en el mismo intervalo para obtener la media.  El tiempo de servicio de una solicitud es el tiempo desde que se asigna hasta que se devuelve. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Tiempo de espera (milisegundos)</strong>: especifica el tiempo medio de espera para las solicitudes. Para calcular esta media, calcula la suma del tiempo que cada solicitud está en espera en la cola durante el intervalo en que se informa. La unidad de la suma es milisegundos.  Divide la suma por el número de salidas para obtener el tiempo de espera medio.  Las solicitudes eliminadas no contribuyen a esta suma. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Errores</strong>: especifica el número de solicitudes que se han devuelto desde el servidor con un indicador de error durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Con servicio</strong>: especifica el número de solicitudes que se han devuelto desde el servidor al cliente durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Con tiempo de espera excedido</strong>: especifica el número de solicitudes que se han devuelto debido a un tiempo de espera de servicio excedido durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+</ul>
+</div>
+<div class="p"><strong class="ph b">Formato de subexpresión: </strong><pre class="pre">ODRServerMetric_FromLastInterval$nombreMétrica operador valorLongL (con el sufijo "L")</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo:</strong> <pre class="pre">ODRServerMetric_FromLastInterval$serviced  &gt; 10000L</pre>
+</div>
+</li>
+<li class="li"><strong class="ph b">Métrica de nivel de célula ODR: desde inicio ODR
+</strong><p class="p">Se puede utilizar un subconjunto de métricas a nivel de célula que publica el direccionador On Demand (ODR). Estas métricas se acumulan y se recopilan a partir del momento en que se inicia el servidor. Se puede utilizar el siguiente conjunto de métricas: </p>
+<ul class="ul"><li class="li" id="operand__departs"><strong class="ph b">Salidas</strong>: Especifica el número de solicitudes asignadas desde la cola al servidor durante el intervalo en que se informa.  Se considera que una solicitud únicamente se asigna una vez, incluso si se produce un error con en el primer servidor y se vuelve a intentar en otro momento.  El siguiente suceso después de asignar es devolver. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__responseTime"><strong class="ph b">Tiempo de respuesta (milisegundos)</strong>:  especifica un tiempo de respuesta medio para las solicitudes. Para calcular esta media, calcula la suma de los tiempos de respuesta de las solicitudes que se devolvieron desde el servidor al cliente durante el intervalo en que se informa. La unidad de la suma es milisegundos. Divide la suma por el valor de la métrica serviced para obtener el tiempo de respuesta medio.  El tiempo de respuesta de una solicitud es la suma del tiempo de espera y el tiempo de servicio de dicha solicitud. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__currentQueueLength"><strong class="ph b">Longitud actual de cola</strong>: especifica la longitud de la cola al final del intervalo en que se informa.</li>
+<li class="li"><strong class="ph b">Tiempo de servicio (milisegundos)
+</strong></li>
+<li class="li" id="operand__errors"><strong class="ph b">Errores</strong>: especifica el número de solicitudes que se han devuelto desde el servidor con un indicador de error durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__avgqueuelength"><strong class="ph b">Longitud media de cola</strong>: especifica la longitud media de la cola. Para calcular esta media, calcula la suma de las longitudes de cola que se notifican en cada llegada de solicitud antes de la inserción, y divide la suma por el número de llegadas. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__serviced"><strong class="ph b">Con servicio</strong>: especifica el número de solicitudes que se han devuelto desde el servidor al cliente durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__timeouts"><strong class="ph b">Con tiempo de espera excedido</strong>: especifica el número de solicitudes que se han devuelto debido a un tiempo de espera de servicio excedido durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__currentlyexecuting"><strong class="ph b">Solicitudes en ejecución actualmente</strong>: especifica el número de solicitudes que están  ejecución al final del intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__arrivals"><strong class="ph b">Llegadas</strong>: especifica el número de solicitudes que han llegado durante el intervalo en que se informa. El suceso siguiente, si hay, después de la llegada es asignar o eliminar. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__queueoverflowdrops"><strong class="ph b">Eliminaciones de desbordamiento de cola</strong>: especifica el número de peticiones que fueron aceptadas inicialmente en la cola en algún momento y después, en algún otro momento durante el intervalo en que se informa, fueron rechazadas de la cola. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__queuedrops"><strong class="ph b">Eliminaciones de cola</strong>: especifica el número de solicitudes que fueron aceptadas inicialmente en la cola en algún momento y que después fueron rechazadas de la cola en algún otro momento durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__delayed"><strong class="ph b">Retardados</strong>: especifica el número de solicitudes que han llegado durante el intervalo en que se informa y no fueron inmediatamente asignadas ni eliminadas. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li" id="operand__waitTime"><strong class="ph b">Tiempo de espera (milisegundos)</strong>: especifica el tiempo medio de espera para las solicitudes. Para calcular esta media, calcula la suma del tiempo que cada solicitud está en espera en la cola durante el intervalo en que se informa. La unidad de la suma es milisegundos.  Divide la suma por el número de salidas para obtener el tiempo de espera medio.  Las solicitudes eliminadas no contribuyen a esta suma. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+</ul>
+<div class="p"><strong class="ph b">Formato de subexpresión: </strong><pre class="pre">ODRCellMetric_FromServerStart$nombreMétrica operador valorLongL (con el sufijo "L")</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo:</strong> <pre class="pre">ODRCellMetric_FromServerStart$arrivals  &gt; 10000L</pre>
+</div>
+</li>
+<li class="li"><strong class="ph b">Métrica de nivel de célula ODR: último intervalo notificado
+</strong><div class="p">Se puede utilizar el mismo conjunto de métricas que con el operando de Métrica de nivel de célula ODR: desde inicio ODR. Esté operando utiliza una media de los valores recopilados del último intervalo. El intervalo corresponde a la longitud del ciclo del controlador de salud.<ul class="ul"><li class="li"><strong class="ph b">Salidas</strong>: Especifica el número de solicitudes asignadas desde la cola al servidor durante el intervalo en que se informa.  Se considera que una solicitud únicamente se asigna una vez, incluso si se produce un error con en el primer servidor y se vuelve a intentar en otro momento.  El siguiente suceso después de asignar es devolver. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Tiempo de respuesta (milisegundos)</strong>:  especifica un tiempo de respuesta medio para las solicitudes. Para calcular esta media, calcula la suma de los tiempos de respuesta de las solicitudes que se devolvieron desde el servidor al cliente durante el intervalo en que se informa. La unidad de la suma es milisegundos. Divide la suma por el valor de la métrica serviced para obtener el tiempo de respuesta medio.  El tiempo de respuesta de una solicitud es la suma del tiempo de espera y el tiempo de servicio de dicha solicitud. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Longitud actual de cola</strong>: especifica la longitud de la cola al final del intervalo en que se informa.</li>
+<li class="li"><strong class="ph b">Tiempo de servicio (milisegundos)</strong>: especifica el tiempo medio de servicio de las solicitudes. Para calcular esta media, calcula la suma de cada tiempo de servicio de solicitud de las solicitudes que se devolvieron al servidor durante el intervalo en que se informa. La unidad de la suma es milisegundos.  Lo divide por el valor de la métrica serviced en el mismo intervalo para obtener la media.  El tiempo de servicio de una solicitud es el tiempo desde que se asigna hasta que se devuelve. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Errores</strong>: especifica el número de solicitudes que se han devuelto desde el servidor con un indicador de error durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Longitud media de cola</strong>: especifica la longitud media de la cola. Para calcular esta media, calcula la suma de las longitudes de cola que se notifican en cada llegada de solicitud antes de la inserción, y divide la suma por el número de llegadas. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Con servicio</strong>: especifica el número de solicitudes que se han devuelto desde el servidor al cliente durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Con tiempo de espera excedido</strong>: especifica el número de solicitudes que se han devuelto debido a un tiempo de espera de servicio excedido durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Solicitudes en ejecución actualmente</strong>: especifica el número de solicitudes que están  ejecución al final del intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Llegadas</strong>: especifica el número de solicitudes que han llegado durante el intervalo en que se informa. El suceso siguiente, si hay, después de la llegada es asignar o eliminar. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Eliminaciones de desbordamiento de cola</strong>: especifica el número de peticiones que fueron aceptadas inicialmente en la cola en algún momento y después, en algún otro momento durante el intervalo en que se informa, fueron rechazadas de la cola. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Eliminaciones de cola</strong>: especifica el número de solicitudes que fueron aceptadas inicialmente en la cola en algún momento y que después fueron rechazadas de la cola en algún otro momento durante el intervalo en que se informa. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Retardados</strong>: especifica el número de solicitudes que han llegado durante el intervalo en que se informa y no fueron inmediatamente asignadas ni eliminadas. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+<li class="li"><strong class="ph b">Tiempo de espera (milisegundos)</strong>: especifica el tiempo medio de espera para las solicitudes. Para calcular esta media, calcula la suma del tiempo que cada solicitud está en espera en la cola durante el intervalo en que se informa. La unidad de la suma es milisegundos.  Divide la suma por el número de salidas para obtener el tiempo de espera medio.  Las solicitudes eliminadas no contribuyen a esta suma. <span class="ph">Estas métricas se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server u otros servidores de middleware con el agente de nodo. </span></li>
+</ul>
+</div>
+<div class="p"><strong class="ph b">Formato de subexpresión: </strong><pre class="pre">ODRCellMetric_FromLastInterval$nombreMétrica operador valorLongL (con el sufijo "L")</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo:</strong> <pre class="pre">ODRCellMetric_FromLastInterval$timeouts  &gt; 100L</pre>
+</div>
+</li>
+<li class="li"><strong class="ph b">Métrica de operación de MBean: tipo devuelto long</strong> y <strong class="ph b">Métrica de operación de MBean: tipo devuelto string</strong><p class="p">Para operandos de métricas de operación de beans gestionados (MBean), se debe especificar una serie de texto de consulta de nombre de objeto y el nombre del método del MBean.
+<span class="ph">Estas métricas únicamente se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server.</span></p>
+<dl class="dl"><dt class="dt dlterm"><a name="operand__objectnameqs"><!-- --></a><strong class="ph b">Serie de texto de consulta de nombre de objeto</strong></dt>
+<dd class="dd">Al crear la serie de texto de consulta de nombre de objeto, todos los caracteres especiales se deben codificar con el carácter barra invertida. El programa de fondo espera que la serie de texto de consulta del nombre de objeto esté en un formato en que todos los caracteres especiales se hayan codificado de forma apropiada.<p class="p">El valor que se entra para la serie de texto de consulta de nombre de objeto debe especificar las series de texto <samp class="ph tt">process=&lt;nombre_proceso&gt;</samp> y <samp class="ph tt">node=&lt;nombre_nodo&gt;</samp> o bien ninguna de ellas.
+Si se especifica <samp class="ph tt">process=&lt;nombre_proceso&gt;</samp> y <samp class="ph tt">node=&lt;nombre_nodo&gt;</samp>, el programa del fondo crea un sensor singleton MBeanSensor que detecta el MBean concreto en un servidor y nodo. Si no se especifica ninguno, el programa de fondo añade el nombre del servidor actual como nombre de proceso y el nombre del nodo actual como nombre de nodo, creando un sensor MBeanSensor por cada servidor al que se le aplique la política de salud. Si únicamente se especifica <samp class="ph tt">process=&lt;nombre_proceso&gt;</samp> o únicamente se especifica <samp class="ph tt">node=&lt;nombre_nodo&gt;</samp>, se producirá un error.</p>
+</dd>
+<dt class="dt dlterm">Nombre de método de MBean</dt>
+<dd class="dd">Especifica el nombre del método del MBean a invocar.</dd>
+</dl>
+<div class="p"><strong class="ph b">Métricas largas de formato de subexpresión: </strong><pre class="pre">MBeanOperationMetric_TypeLong$serieConsultaobjectName$nombreMétodo operador valorLongL (con sufijo "L")</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo de métricas largas:</strong> <pre class="pre">MBeanOperationMetric_TypeLong$WebSphere\:\*\,type\=HealthConditionLanguageInitializer\,node\=hipods3\,process\=nodeagent$getNumberOfOperands  &gt; 10L</pre>
+</div>
+<div class="p"><strong class="ph b">Formato de subexpresión para métricas String: </strong><pre class="pre">MBeanOperationMetric_TypeString$serieConsultaobjectName$nombreMétodo operador valorSerie</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo de métricas de serie: </strong> <pre class="pre">MBeanOperationMetric_TypeString$WebSphere\:\*\,type\=HealthConditionLanguageInitializer\,node\=hipods3\,process\=nodeagent$getOperands  = 't'</pre>
+</div>
+</li>
+<li class="li"><strong class="ph b">Métrica de atributo de MBean: tipo devuelto long</strong> y <strong class="ph b">Métrica de atributo de MBean: tipo devuelto string</strong><div class="p">Las métricas de atributo de MBean se utilizan para consultar un atributo de un MBean en lugar de invocar a un método del MBean. El operando toma la serie de consulta del nombre de objeto y el nombre del atributo como entradas. <span class="ph" id="operand__wasonly">Estas métricas únicamente se pueden utilizar en servidores en los que se ejecuta WebSphere Application Server. </span><dl class="dl"><dt class="dt dlterm"><strong class="ph b">Serie de texto de consulta de nombre de objeto</strong></dt>
+<dd class="dd">Al crear la serie de texto de consulta de nombre de objeto, todos los caracteres especiales se deben codificar con el carácter barra invertida. El programa de fondo espera que la serie de texto de consulta del nombre de objeto esté en un formato en que todos los caracteres especiales se hayan codificado de forma apropiada.<p class="p">El valor que se entra para la serie de texto de consulta de nombre de objeto debe especificar las series de texto <samp class="ph tt">process=&lt;nombre_proceso&gt;</samp> y <samp class="ph tt">node=&lt;nombre_nodo&gt;</samp> o bien ninguna de ellas.
+Si se especifica <samp class="ph tt">process=&lt;nombre_proceso&gt;</samp> y <samp class="ph tt">node=&lt;nombre_nodo&gt;</samp>, el programa del fondo crea un sensor singleton MBeanSensor que detecta el MBean concreto en un servidor y nodo. Si no se especifica ninguno, el programa de fondo añade el nombre del servidor actual como nombre de proceso y el nombre del nodo actual como nombre de nodo, creando un sensor MBeanSensor por cada servidor al que se le aplique la política de salud. Si únicamente se especifica <samp class="ph tt">process=&lt;nombre_proceso&gt;</samp> o únicamente se especifica <samp class="ph tt">node=&lt;nombre_nodo&gt;</samp>, se producirá un error.</p>
+</dd>
+<dt class="dt dlterm">Nombre de atributo</dt>
+<dd class="dd">Especifica el atributo que se consulta en el MBean.</dd>
+</dl>
+</div>
+<div class="p"><strong class="ph b">Formato de subexpresiones para métricas largas: </strong><pre class="pre">MBeanAttributeMetric_TypeLong$objectNameQueryString$attributeName operator LongValue</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo de métricas largas:</strong> <pre class="pre">MBeanAttributeMetric_TypeLong$WebSphere\:\*\,type\=HealthConditionLanguageInitializer\,node\=hipods3\,process\=nodeagent$NumberOfOperands &gt; 10L</pre>
+</div>
+<div class="p"><strong class="ph b">Formato de subexpresión para métricas String: </strong><pre class="pre">MBeanAttributeMetric_TypeString$SerieobjectNameQuery$nombreAtributo operador valorString</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo de métricas de serie: </strong> <pre class="pre">MBeanAttributeMetric_TypeString$WebSphere\:\*\,type\=HealthConditionLanguageInitializer\,node\=hipods3\,process\=nodeagent$OperatorList  =  'test'</pre>
+</div>
+</li>
+<li class="li"><strong class="ph b">Métrica de código de retorno de URL
+</strong><p class="p">Con este operando, puede hacer ping a cualquier vía de acceso relativa (URI) en el servidor que es el destino de esta política.
+El valor devuelto se utiliza en la expresión de condición para la política de salud personalizada.</p>
+<dl class="dl"><dt class="dt dlterm">Número de puerto de URL</dt>
+<dd class="dd">Especifique el número de puerto para realizar el ping.</dd>
+<dt class="dt dlterm">Vía de acceso relativa de URL</dt>
+<dd class="dd">Especifique el URL para realizar el ping. Todos los caracteres especiales en la serie se deben codificar con un carácter de barra invertida (<samp class="ph tt">\</samp>).</dd>
+<dt class="dt dlterm">Protocolo</dt>
+<dd class="dd">Especifica el protocolo a utilizar. Por ejemplo: <kbd class="ph userinput">http://</kbd> o <kbd class="ph userinput">https://</kbd> </dd>
+<dt class="dt dlterm">Valor</dt>
+<dd class="dd">Especifica un entero corresponde al código de retorno del ping.</dd>
+</dl>
+<p class="p"> Este operando se puede utilizar para hacer ping a cualquier URL de propósito general seleccionando el direccionador On Demand (ODR) como el destino de la política de salud y estableciendo las normas de direccionamiento apropiadas en el ODR. </p>
+<p class="p">Este operando sirve para seleccionar miembros que ejecutan WebSphere Application Server o bien que ejecutan otro software de middleware con el agente de nodo.</p>
+<div class="p"><strong class="ph b">Formato de subexpresión: </strong><pre class="pre">URLReturnCodeMetric$númeroPuerto$víaAccesoRelativa operador valorInt</pre>
+</div>
+<div class="p"><strong class="ph b">Ejemplo:</strong> <pre class="pre">URLReturnCodeMetric$9060$ibm\/console\/login\.do = 200</pre>
+El sensor de URL devuelve <samp class="ph tt">0</samp> si no es posible acceder al sitio web: <pre class="pre">URLReturnCodeMetric$9060$ibm\/console\/login\.do = 0  </pre>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="operator"><h2 class="title topictitle2">Operador</h2>
+<div class="body"><div class="p"><ul class="ul"><li class="li"><strong class="ph b">Igual a (=)</strong>: el operador de igualdad expresa una coincidencia sensible a las mayúsculas y minúsculas.</li>
+<li class="li"><strong class="ph b">Distinto (&lt;&gt;)</strong>: el operador distinto indica que el valor del operando no es igual al valor entrado.</li>
+<li class="li"><strong class="ph b">Mayor que (&gt;)</strong>: el operador mayor que se utiliza con los números.</li>
+<li class="li"><strong class="ph b">Mayor que o igual (&gt;=)</strong>: el operador mayor que o igual a se utiliza con números.</li>
+<li class="li"><strong class="ph b">Menor que (&lt;) </strong>: el operador menor que se utiliza con números.</li>
+<li class="li"><strong class="ph b">Menor que o igual (&lt;=)</strong>: el operador menor que o igual a se utiliza con números.</li>
+<li class="li"><strong class="ph b">Entre (BETWEEN)</strong>: el valor debe estar entre el <strong class="ph b">Límite inferior</strong> y <strong class="ph b">Límite superior</strong> que se especifiquen.</li>
+<li class="li"><strong class="ph b">En (IN)</strong>: el valor debe estar en una lista de valores. Se pueden escribir valores y añadirlos a la lista.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="topic nested1" id="genTopProcId8"><h2 class="title topictitle2">Valor</h2>
+<div class="body"><p class="shortdesc">Dependiendo del operador elegido, escriba un valor para la subexpresión que desea crear.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="subexpression"><h2 class="title topictitle2">Subexpresión</h2>
+<div class="body"><p class="shortdesc">Después de pulsar <span class="ph uicontrol">Generar subexpresión</span>, este campo muestra el fragmento de la subexpresión generada en base a las opciones seleccionadas. Si desea añadir la subexpresión a la condición de salud personalizada, pulse <span class="ph uicontrol">Agregar</span>.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link build" href="hc_collection.html" title="Utilice esta página para crear y modificar políticas de salud. Las políticas de salud dan soporte a dos aproximaciones básicas para mantener un entorno saludable: la detección y la prevención.">Colección de políticas de salud</a></div>
+<div><a class="link build" href="hc_detail_main.html" title="Utilice esta página para modificar políticas de salud que ya existen. Las políticas de salud permiten mantener un entorno saludable mediante la utilización de metodologías de detección y prevención.">Valores de política de salud</a></div>
+<div><a class="link build" href="hc_detail_main_new.html" title="Utilice esta página para crear políticas de salud, utilizadas para realizar una gran variedad de cálculos basados en salud sobre los clústeres, clústeres dinámicos e instancias de servidores de aplicaciones que se ejecutan en los nodos.">Creación de una política de salud: definir las propiedades generales de la política de salud</a></div>
+<div><a class="link build" href="hc_appservers_detail_new.html" title="Utilice esta página para asignar propiedades de pertenencia a políticas de salud.">Creación de una política de salud: especificar los miembros a supervisar</a></div>
+<div><a class="link build" href="hc_action_collection.html" title="Por omisión, se puede definir una política de salud para ejecutar cualquiera de las acciones de salud predefinidas, como reiniciar servidores cuando se incumple una política de salud. Configure una acción personalizada cuando desee que el entorno realice una acción distinta a la especificada por omisión.">Colección de acciones personalizadas</a></div>
+<div><a class="link build" href="hc_custom_action.html" title="Permite especificar detalles para las acciones personalizada de Java y las que no lo son.">Valores de acciones personalizadas</a></div>
+<div><a class="link build" href="hc_condition_detail_new.html" title="Utilice esta página para definir el comportamiento específico de la política de salud.">Creación de una política de salud: definir las propiedades de la condición de salud</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: hc_condition_subex.html</span></body>
+</html>

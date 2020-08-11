@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=${STARTSERVER}
+Comment=${STARTSERVER}
+Categories=WebSphere;AppServer;Profiles;ProfileName;${PROFILENAME}
+Icon=${WASROOT}/properties/version/nif/config/linuxMenu/images/start_server16x16.png
+Exec=${PROFILEROOT}/bin/startServer.sh adminagent
+StartupNotify=true
+Type=Application
+Terminal=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.9

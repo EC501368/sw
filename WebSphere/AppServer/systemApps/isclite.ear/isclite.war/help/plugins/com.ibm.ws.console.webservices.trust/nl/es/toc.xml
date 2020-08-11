@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Servicio WS-Trust (Web Services Trust)" topic="index.html">
+   <topic label="Valores de memoria caché de seguridad"
+          href="ae/uwbs_confwstrustcacheclient.html"/>
+   <topic label="Colección de conexiones de servicio de confianza"
+          href="ae/uwbs_confwstrustpsattach.html"/>
+   <topic label="Valores de conexiones de servicio de confianza"
+          href="ae/uwbs_confwstrustpsattachdetails.html"/>
+   <topic label="Colección de destinos de servicio de confianza"
+          href="ae/uwbs_confwstrusttargets.html"/>
+   <topic label="Valores de destinos de servicio de confianza"
+          href="ae/uwbs_confwstrusttargetendptdetails.html"/>
+   <topic label="Colección de proveedores de señales de servicio de confianza"
+          href="ae/uwbs_confwstrusttokens.html"/>
+   <topic label="Valores del proveedor de señales de servicio de confianza"
+          href="ae/uwbs_confwstrusttokendetails.html"/>
+   <topic label="Valores de tiempo de ejecución de actualización de servicios web"
+          href="ae/uwbs_confwstrustupdateruntime.html"/>
+</toc>

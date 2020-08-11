@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Gestores autónomos" topic="index.html">
+   <topic label="Añadir y eliminar valor " href="uwve_elasticity_addremove.html"/>
+   <topic label="Propiedades personalizadas del controlador de ubicación de aplicaciones"
+          href="placement_custom.html"/>
+   <topic label="Valores del controlador de ubicación de aplicaciones" href="apc.html"/>
+   <topic label="Valores del gestor de flujo de peticiones autónomo" href="arfm.html"/>
+   <topic label="Colección de acciones personalizadas de elasticidad "
+          href="uwve_elasticity_custact.html"/>
+   <topic label="Valores de acciones personalizadas de elasticidad, sin utilizar Java "
+          href="uwve_elasticity_custact_nonjava_detail.html"/>
+   <topic label="Valores de acciones personalizadas de elasticidad, utilizando Java "
+          href="uwve_elasticity_custact_java_detail.html"/>
+   <topic label="Colección de operaciones de elasticidad " href="uwve_elasticity_ops.html"/>
+</toc>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores de acciones personalizadas de elasticidad, utilizando Java" />
+<meta name="abstract" content="Utilice esta página para modificar acciones Java definidas por el usuario que se pueden realizar con operaciones de elasticidad. Las operaciones de elasticidad permiten añadir o eliminar dinámicamente nodos de la célula para aumentar o disminuir los recursos del sistema." />
+<meta name="description" content="Utilice esta página para modificar acciones Java definidas por el usuario que se pueden realizar con operaciones de elasticidad. Las operaciones de elasticidad permiten añadir o eliminar dinámicamente nodos de la célula para aumentar o disminuir los recursos del sistema." />
+<meta name="DC.subject" content="personalizadas de elasticidad, acciones" />
+<meta name="keywords" content="personalizadas de elasticidad, acciones" />
+<meta name="DC.Relation" scheme="URI" content="uwve_elasticity_addremove.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_elasticity_ops.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_elasticity_custact.html" />
+<meta name="DC.Relation" scheme="URI" content="uwve_elasticity_custact_nonjava_detail.html" />
+<meta name="copyright" content="© Copyright IBM Corporation 2012" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2012" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="uwve_elasticity_custact_java_detail" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores de acciones personalizadas de elasticidad, utilizando Java</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="ref" id="uwve_elasticity_custact_java_detail">
+<h1 class="title topictitle1">Valores de acciones personalizadas de elasticidad, utilizando Java</h1>
+<div class="body"><p class="shortdesc">Utilice esta página para modificar acciones Java definidas por el usuario que se pueden realizar con operaciones de elasticidad. Las operaciones de elasticidad permiten añadir o eliminar dinámicamente nodos de la célula para aumentar o disminuir los recursos del sistema.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Políticas operativas</span> &gt; <span class="ph uicontrol">Gestores autónomos</span> &gt; <span class="ph uicontrol">Controlador de ubicación de aplicaciones</span> &gt; <span class="ph uicontrol">Acciones personalizadas de elasticidad</span> &gt; <span class="ph uicontrol"><var class="keyword varname">nombre_acción</var></span></span>.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_name"><h2 class="title topictitle2">Nombre</h2>
+<div class="body"><p class="shortdesc">Especifica el nombre de la acción personalizada de elasticidad.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_locjexec"><h2 class="title topictitle2">Ubicación del directorio ejecutable de Java </h2>
+<div class="body"><p class="shortdesc">Especifica la ubicación del directorio ejecutable Java en el servidor.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_exectarget"><h2 class="title topictitle2">Tipo de destino ejecutable</h2>
+<div class="body"><p class="shortdesc">Especifica si el programa ejecutable es una clase Java o un archivo jar.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_exec"><h2 class="title topictitle2">Ejecutable</h2>
+<div class="body"><p class="shortdesc">Especifica el ejecutable del programa que realiza la acción personalizada de elasticidad.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_arg"><h2 class="title topictitle2">Argumentos ejecutables</h2>
+<div class="body"><p class="shortdesc">Especifica los argumentos que el ejecutable del programa debe ejecutar.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_varusername"><h2 class="title topictitle2">Nombre de una variable para hacer referencia a un nombre de usuario en argumentos utilizados en la ejecución </h2>
+<div class="body"><p class="shortdesc">Especifica el nombre de una variable que puede utilizar para hacer referencia a un nombre de usuario en los argumentos para el programa ejecutable.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_subusername"><h2 class="title topictitle2">Nombre de usuario a sustituir para la variable de nombre de usuario en el momento de la invocación </h2>
+<div class="body"><p class="shortdesc">Especifica el nombre de usuario que puede sustituir para la variable que se utiliza para hacer referencia a un nombre de usuario.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_varref"><h2 class="title topictitle2">Nombre de una variable para hacer referencia a una contraseña en argumentos utilizados en la ejecución </h2>
+<div class="body"><p class="shortdesc">Especifica el nombre de una variable que puede utilizar para hacer referencia a una contraseña en los argumentos para el programa ejecutable.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_pwd"><h2 class="title topictitle2">Contraseña a sustituir para la variable de contraseña en el momento de la invocación </h2>
+<div class="body"><p class="shortdesc">Especifica la contraseña que puede sustituir por la variable que se utiliza para hacer referencia a una contraseña.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_supportos"><h2 class="title topictitle2">SO soportados</h2>
+<div class="body"><p class="shortdesc">Especifica los sistemas operativos a los que se aplica la acción.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_ev"><h2 class="title topictitle2">Nombre de una variable de entorno que almacena un nombre de archivo PID </h2>
+<div class="body"><p class="shortdesc">Opcionalmente especifica el nombre de la variable de entorno que contiene la vía totalmente calificada para un archivo. El archivo contiene el ID de proceso para la operación que se está ejecutando. Si se especifica ninguna variable de entorno, la operación se ejecutará en primer plano.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="ecadj_apply"><h2 class="title topictitle2">Aplicar</h2>
+<div class="body"><p class="shortdesc">Confirma los nuevos valores. </p>
+<p class="p">Pulse <span class="ph uicontrol">Aplicar</span> para confirmar los cambios.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="relinfo"><strong>Información relacionada</strong>:<br />
+<div><a class="link help" href="uwve_elasticity_addremove.html" title="Utilice esta página para definir acciones para las operaciones de elasticidad de adición y eliminación. Asegúrese de que las acciones personalizadas de elasticidad se crean antes de definir las acciones de las operaciones de elasticidad de adición y eliminación.">Valor de adición y eliminación</a></div>
+<div><a class="link help" href="uwve_elasticity_ops.html" title="Utilice esta página para seleccionar las operaciones de elasticidad de adición y eliminación. Las operaciones de elasticidad le permiten añadir o eliminar nodos de forma dinámica en la célula para aumentar o reducir los recursos del sistema.">Colección de operaciones de elasticidad</a></div>
+<div><a class="link help" href="uwve_elasticity_custact.html" title="Utilice esta página para gestionar las acciones definidas por el usuario que pueden realizarse con operaciones de elasticidad. Las operaciones de elasticidad le permiten añadir o eliminar nodos de forma dinámica en la célula para aumentar o reducir los recursos del sistema.">Colección de acciones personalizadas de elasticidad</a></div>
+<div><a class="link help" href="uwve_elasticity_custact_nonjava_detail.html" title="Utilice esta página para modificar las acciones definidas por el usuario que no utilizan Java y que pueden realizarse con operaciones de elasticidad. Las operaciones de elasticidad le permiten añadir o eliminar nodos de forma dinámica en la célula para aumentar o reducir los recursos del sistema.">Valores de acciones personalizadas de elasticidad, no utilizando Java</a></div>
+</div>
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: uwve_elasticity_custact_java_detail.html</span></body>
+</html>

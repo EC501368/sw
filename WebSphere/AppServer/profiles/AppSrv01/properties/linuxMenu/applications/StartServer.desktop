@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Start the server
+Comment=Start the server
+Categories=WebSphere;AppServer;Profiles;ProfileName;AppSrv01
+Icon=/jennex/WebSphere/AppServer/properties/version/nif/config/linuxMenu/images/start_server16x16.png
+Exec=/jennex/WebSphere/AppServer/profiles/AppSrv01/bin/startServer.sh server1
+StartupNotify=true
+Type=Application
+Terminal=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.9

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Valores del servicio de datos de visualización" />
+<meta name="abstract" content="Esta página sirve para configurar los datos históricos de registro de anotaciones cronológicas, con el propósito de crear informes sobre datos históricos, para calcular cuentas de cargo o para planificar la capacidad." />
+<meta name="description" content="Esta página sirve para configurar los datos históricos de registro de anotaciones cronológicas, con el propósito de crear informes sobre datos históricos, para calcular cuentas de cargo o para planificar la capacidad." />
+<meta name="copyright" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2005" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="visualization_data_main" />
+<meta name="DC.Language" content="es-es" />
+<!-- Licensed Materials Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="./swg_info_common.css" />
+<title>Valores del servicio de datos de visualización</title>
+<style type="text/css">
+        span.stealth { visibility:hidden; }
+   </style></head>
+<body role="main" class="help" id="visualization_data_main">
+<h1 class="title topictitle1">Valores del servicio de datos de visualización</h1>
+<div class="body"><p class="shortdesc">Esta página sirve para configurar los datos históricos de registro de anotaciones cronológicas, con el propósito de crear informes sobre datos históricos, para calcular cuentas de cargo o para planificar la capacidad.</p>
+<p class="p">Para ver esta página de la consola administrativa, pulse <span class="ph menucascade"><span class="ph uicontrol">Administración del sistema</span> &gt; <span class="ph uicontrol">Servicio de datos de visualización</span></span>.</p>
+<p class="p"> Si está utilizando un rol de operador o supervisor, sólo puede ver la información del servicio de datos de visualización. Si se posee un rol de configurador, se puede cambiar la configuración. Si posee un rol de administrador, posee todos los privilegios para el servicio de datos de visualización.</p>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="enablelog"><h2 class="title topictitle2">Habilitar registro</h2>
+<div class="body"><p class="shortdesc">Seleccione esta opción para iniciar el registro de anotación cronológica de datos históricos.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="timestampformat"><h2 class="title topictitle2">Formato de la indicación de la hora</h2>
+<div class="body"><p class="shortdesc">Específica el patrón de fecha y hora que se utilizará al registrar datos de visualización. </p>
+<p class="p">Utilice la clase Java SimpleDateFormat para dar formato su indicación de fecha y hora. Por ejemplo, para la salida de indicación de fecha y hora <samp class="ph tt">12.06.2006 5:26:30:978 PM PDT</samp>, utilice el siguiente valor de formato de indicación de fecha y hora: </p>
+<pre class="pre">MM.dd.yyyy hh:mm:ss:SSS aaa z</pre>
+<p class="p">Consulte la documentación de la API para obtener más información sobre la clase Java SimpleDateFormat.</p>
+<p class="p">Si está utilizando IBM Tivoli Usage and Accounting Manager, utilice un formato que separa la fecha y la hora en campos distintos.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="maximumfilesize"><h2 class="title topictitle2">Tamaño máximo de archivo</h2>
+<div class="body"><p class="shortdesc">Escriba un número entero para indicar el
+tamaño máximo de archivo de registro.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="maximumnumberofhistoricalfiles"><h2 class="title topictitle2">Número máximo de archivos históricos</h2>
+<div class="body"><p class="shortdesc">Especifica un valor entero que indica el número máximo de archivos de anotaciones cronológicas que se pueden generar.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="filename"><h2 class="title topictitle2">Nombre de archivo</h2>
+<div class="body"><p class="shortdesc">Especifica la vía de acceso en la que se
+generarán los archivos de registro.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="datalogwriteinterval"><h2 class="title topictitle2">Intervalo de escritura de las anotaciones de datos</h2>
+<div class="body"><p class="shortdesc">Especifica el tiempo entre la escritura de dato en los archivos de anotaciones cronológicas en segundos, minutos, horas o días. El intervalo de escritura en las anotaciones cronológicas de datos es un número entero entre <samp class="ph tt">1</samp> y <samp class="ph tt">2147483647</samp>.</p>
+</div>
+</div>
+<div class="topic nested1" xml:lang="es-es" id="datatransformeraction"><h2 class="title topictitle2">Acción del transformador de datos</h2>
+<div class="body"><p class="shortdesc">Especifica la forma en que manejar los puntos adicionales que se reciben dentro del intervalo de escritura de anotaciones cronológicas de datos. </p>
+<p class="p">Por ejemplo, si el intervalo de escritura es de un minuto, y los datos se reciben cada 15 segundos, quiere decir que en el intervalo se reciben cuatro puntos de datos.
+Para descartar los tres primeros puntos de datos y escribir únicamente el punto de datos en el intervalo de un minuto en las anotaciones cronológicas, seleccione <span class="ph uicontrol">Omitir</span>.
+Para obtener la media de los cuatro puntos de datos al final del intervalo y escribir la media en las anotaciones cronológicas, seleccione <span class="ph uicontrol">Promedio</span>.</p>
+</div>
+</div>
+<div class="related-links">
+</div>
+<hr align="left" /><br /><span class="runningfooter">Nombre de archivo: visualization_data_main.html</span></body>
+</html>

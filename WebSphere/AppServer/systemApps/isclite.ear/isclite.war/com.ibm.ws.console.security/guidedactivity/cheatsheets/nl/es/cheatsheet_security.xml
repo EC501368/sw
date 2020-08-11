@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<cheatsheet title="Habilitar la seguridad global">
+
+	<intro 
+		href="security_cheatsheet_intro.htm">
+        <description>
+Esta hoja de apuntes ofrece un conjunto de pasos sencillos para habilitar la seguridad administrativa básica.
+Después de completar la hoja de apuntes, necesitará un ID de usuario y una contraseña para iniciar la
+sesión en la Consola administrativa.
+Consulte &lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/tsec_plan.html"&gt;Planificación de la seguridad del entorno&lt;/a&gt;
+en el Information Center para obtener más información sobre seguridad.
+&lt;br/&gt;&lt;br/&gt;
+
+Para continuar, pulse &lt;strong&gt;Iniciar&lt;/strong&gt;.
+        </description>
+	</intro>
+
+	<item
+        href=""
+		title="Configurar un registro de usuarios">
+		<description>
+El registro de usuarios almacena los nombres de usuario y grupo a efectos de autenticación y autorización.
+Los servidores de aplicaciones se conectarán con el registro de usuarios para recopilar la información relacionada con
+el usuario al crear las credenciales, que se utilizan a su vez para representar al usuario durante la autorización (por
+ejemplo, cuando se inicia la sesión en una aplicación para comprobar las contraseñas).
+Consulte &lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.nd.doc/info/ae/ae/csec_registries.html
+"&gt;Registros de usuarios&lt;/a&gt; en el Information Center para obtener más información. 
+
+&lt;br/&gt;&lt;br/&gt;Seleccione el tipo de registro de usuarios que piensa utilizar
+y pulse &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para saber cómo
+configurarlo.
+Cuando haya completado la configuración del registro de usuarios, regresará aquí para continuar con algunos pasos adicionales:
+
+&lt;dl&gt;
+
+	&lt;li&gt;
+
+     Local OS
+&lt;br/&gt;
+&lt;A HREF="javascript:showHideList('localos')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="localosImg" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+Puede obtener más información sobre los registros de usuarios del sistema operativo
+local &lt;br/&gt;
+&lt;TABLE id="localosList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+Los registros de usuarios del sistema operativo local son registros de usuarios
+que forman parte del sistema operativo subyacente en el que se ejecutan los
+servidores de aplicaciones.
+Los registros de usuarios del sistema operativo local siempre están disponibles, y
+normalmente constituyen la forma más sencilla de configurar usuarios, porque ya los ha configurado para poder iniciar la sesión en su máquina. Puede utilizar el registro de usuarios del sistema operativo local para configuraciones básicas de una sola máquina y un solo servidor de aplicaciones.
+Consulte &lt;a target="help"
+href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/tsec_localos.html"&gt;Configuración
+de registros de usuarios del sistema operativo local&lt;/a&gt; en el Information Center para obtener más información.
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+
+&lt;A TARGET="detail"
+HREF="../guidedactivity/csframe.jsp?cheatSheetURI=com.ibm.ws.console.security/guidedactivity/cheatsheets/nl/es/cheatsheet_localos.xml&amp;cheatSheetPackage=com.ibm.ws.console.security/guidedactivity/cheatsheets&amp;fromStep=1"&gt;Pulsar
+para actuar&lt;/A&gt;
+&lt;/li&gt;
+&lt;/dl&gt;
+
+&lt;dl&gt;
+	
+	&lt;li&gt;
+	
+	LDAP
+&lt;br/&gt;
+&lt;A HREF="javascript:showHideList('ldap')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="ldapImg" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+Puede obtener más información sobre los registros de usuarios LDAP
+&lt;br/&gt;
+&lt;TABLE id="ldapList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+    Otro tipo de registro de usuarios utilizado con frecuencia es un servidor
+de directorios accesible mediante LDAP (Lightweight Directory Access Protocol).  
+Al trabajar con varios servidores, como en el caso de los clústeres y sistemas de alta disponibilidad, así como con varias
+máquinas, quizá encuentre limitaciones al utilizar el registro de usuarios del sistema operativo local para una sola
+máquina y necesite pasar a un servidor de directorios que utilice LDAP para almacenar la información de usuarios y
+grupos.
+    Consulte &lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/tsec_ldap.html"&gt;Configuración de los registros de usuarios de LDAP (Lightweight Directory Access Protocol)&lt;/a&gt;
+en el Information Center para obtener más información.
+
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+
+&lt;A TARGET="detail"
+HREF="../guidedactivity/csframe.jsp?cheatSheetURI=com.ibm.ws.console.security/guidedactivity/cheatsheets/nl/es/cheatsheet_ldap.xml&amp;cheatSheetPackage=com.ibm.ws.console.security/guidedactivity/cheatsheets&amp;fromStep=1"&gt;
+Pulsar para actuar&lt;/A&gt;
+&lt;/li&gt;
+&lt;/dl&gt;
+
+&lt;dl&gt;
+	&lt;li&gt;
+Registro personalizado
+&lt;br/&gt;
+&lt;A HREF="javascript:showHideList('custom')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="customImg" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;
+Puede obtener más información sobre los registros de usuarios personalizados
+&lt;br/&gt;
+&lt;TABLE id="customList" style="font-size:100%;margin-left:1em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+      Una tercera opción para los registros de usuario es un registro de usuarios
+que no pertenece a los registros de usuarios de sistema operativo soportados por
+WebSphere y no es un registro de usuarios compatible con LDAP.
+      La conexión a estos tipos de registros de usuarios es una opción avanzada aunque soportada, y necesita desarrollo de software para llevarla a cabo. 
+    Consulte &lt;a target="help"
+href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/usec_tdaman.html"&gt;Configuración de registros de usuarios personalizados&lt;/a&gt;
+en el Information Center para obtener más información.
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+
+
+&lt;A TARGET="detail"
+HREF="../guidedactivity/csframe.jsp?cheatSheetURI=com.ibm.ws.console.security/guidedactivity/cheatsheets/nl/es/cheatsheet_custom.xml&amp;cheatSheetPackage=com.ibm.ws.console.security/guidedactivity/cheatsheets&amp;fromStep=1"&gt;Pulsar
+para actuar&lt;/A&gt;
+&lt;/li&gt;
+&lt;/dl&gt;
+
+            Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+</description>
+	</item>
+<item
+		href=""
+		title="Configurar un mecanismo de autenticación">
+		<action
+        class="com.ibm.ws.console.security.forwardCmd.do?forwardName=LTPA.config.view&amp;sfname=authMechanisms&amp;resourceUri=security.xml&amp;parentRefId=Security_1&amp;perspective=tab.configuration"/>
+		<description>
+La autenticación es el proceso de establecer si un cliente es válido en un contexto concreto. Un cliente puede ser un usuario final, una máquina o una aplicación.
+&lt;br/&gt;&lt;br/&gt;
+Se admiten varios tipos de mecanismos de autenticación en WebSphere v6.0;
+sin embargo, este paso sólo describirá el uso de los mecanismos de autenticación más comunes,
+
+&lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/usec_rltpa.html"&gt;LTPA (Lightweight Third Party Authentication)&lt;/a&gt;. 
+
+
+
+Puede utilizar
+&lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/rsec_swam.html"&gt;SWAM (Simple WebSphere Authentication Mechanism)&lt;/a&gt;
+si está dentro de un entorno de un solo servidor. No es necesario configurar SWAM, por lo que puede continuar con el paso siguiente.
+
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;A HREF="javascript:showHideList('ltpa')"&gt;
+&lt;IMG SRC="/ibm/console/images/arrow_collapsed.gif" ALT="" ID="ltpaImg" ALIGN="left" BORDER="0" style="margin-left:-0.25em"/&gt;
+&lt;/A&gt;Puede obtener más información sobre LTPA
+&lt;br/&gt;
+&lt;TABLE id="ltpaList" style="font-size:100%;margin-left:0em;display:none"&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+LTPA está diseñado para entornos distribuidos, con varios servidores de aplicaciones y máquinas.
+Se ofrece para el producto Network Deployment, pero se recomienda para todos los entornos.
+    Consulte
+    &lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/tsec_authentication.html"&gt;Configuración de mecanismos de autenticación&lt;/a&gt;
+en el Information Center para obtener más información.
+
+
+
+
+
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/li&gt;
+&lt;/dl&gt;
+
+
+
+&lt;br/&gt;
+Para configurar LTPA estableciendo las contraseñas de generación de claves y generar las claves LTPA:
+&lt;ol&gt;
+&lt;li&gt;Seleccione &lt;strong&gt;Pulsar para actuar&lt;/strong&gt; para cargar el panel de configuración de LTPA&lt;/li&gt;
+&lt;li&gt;Especifique una contraseña y confírmela en los campos de contraseña. Esta
+contraseña se utiliza para cifrar y descifrar las claves LTPA al exportarlas e
+importarlas. &lt;strong&gt;Importante:&lt;/strong&gt; Recuerde esta contraseña, porque
+necesita especificarla siempre que se exporten claves desde esta célula a otra
+célula.&lt;/li&gt; &lt;li&gt;Especifique un valor entero positivo en el campo Tiempo de
+espera. Este valor de tiempo de espera hace referencia al tiempo en minutos que es válida una señal LTPA.
+La señal contiene este tiempo de caducidad, de forma que cualquier servidor que reciba la señal puede verificar que ésta es válida antes de continuar. Cuando caduca la señal, se
+solicita al usuario que inicie la sesión. El valor óptimo de este campo depende de su configuración.
+&lt;/li&gt;
+&lt;li&gt;Pulse &lt;strong&gt;Aplicar&lt;/strong&gt; o &lt;strong&gt;Aceptar&lt;/strong&gt;. La
+configuración LTPA ya está establecida. No genere las claves LTPA en este paso porque se generan automáticamente más tarde.
+&lt;/li&gt;
+
+&lt;/ol&gt;
+
+
+
+            Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+        </description>
+	</item>
+	<item
+		href=""
+		title="Validar valores de seguridad">
+		<action
+            class="navigatorCmd.do?forwardName=Security.config.view"/>
+		<description>
+Para validar los valores de seguridad
+            &lt;ol&gt;
+            &lt;li&gt;Seleccione &lt;strong&gt; Pulsar para actuar&lt;/strong&gt;
+para cargar el panel Seguridad global&lt;/li&gt;
+            &lt;li&gt;Seleccione los recuadros junto a &lt;strong&gt;Habilitar
+seguridad global&lt;/strong&gt; y &lt;strong&gt;Forzar la seguridad de Java
+2&lt;/strong&gt; si estos recuadros no se han seleccionado.&lt;/li&gt;
+            &lt;li&gt;Especifique el registro de usuarios que configuró en la lista
+Registro de usuario activo.&lt;/li&gt;
+            &lt;li&gt;Especifique el mecanismo de autenticación que configuró en la
+lista Mecanismo de autenticación activo.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Aplicar&lt;/strong&gt; en el panel Seguridad global para validar los cambios de configuración realizados hasta ahora. 
+            Corrija cualquier problema que indiquen los mensajes de validación. Consulte
+            &lt;A target="help" HREF="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/rtrb_secconfigprobs.html"&gt;
+                        Errores al intentar configurar o habilitar la seguridad
+            &lt;/A&gt; para obtener más información sobre la resolución de problemas de seguridad.
+
+            &lt;/li&gt;
+            &lt;/ol&gt;
+Para continuar, pulse &lt;strong&gt;Paso siguiente&lt;/strong&gt;.
+		</description>
+	</item>
+
+	<item
+		href=""
+		title="Guardar y sincronizar la configuración">
+		<action
+			class=""/>
+		<description>
+Pulse &lt;strong&gt;Guardar&lt;/strong&gt; en el mensaje de la parte superior del panel de la consola para actualizar la configuración en el repositorio maestro.
+&lt;br/&gt;&lt;br/&gt;Para continuar, pulse &lt;strong&gt;Paso siguiente&lt;/strong&gt;.
+		</description>
+	</item>
+    
+    
+    <item
+		href=""
+		title="Correlacionar usuarios con roles administrativos">
+		<action
+			class="navigatorCmd.do?forwardName=console.users.main"/>
+		<description>
+Una vez habilitada la seguridad, necesita autorizar el acceso de los usuarios a la consola. Esto se hace correlacionando usuarios individuales
+con roles administrativos o correlacionando grupos de usuarios con roles administrativos.
+&lt;br/&gt;
+&lt;br/&gt;
+En WebSphere para z/OS, puede correlacionar los usuarios con roles administrativos mediante WebSphere o mediante el producto de seguridad de la plataforma. 
+Lea el artículo del Information Center &lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.zseries.doc/info/zseries/ae/tsec_tasroles.html"&gt;Asignación de usuarios y grupos a roles&lt;/a&gt; para obtener información sobre la correlación de usuario con roles en z/OS.
+&lt;br/&gt;
+&lt;br/&gt;
+En este paso, puede asignar usuarios a uno de los cuatro roles predefinidos distintos, dependiendo del nivel de acceso que desee para cada usuario.
+Si ya tiene grupos de usuarios definidos en el registro de usuarios, pulse &lt;strong&gt;Paso siguiente&lt;/strong&gt; para asignar correlaciones de roles a los grupos administrativos en lugar de a usuarios individuales.
+&lt;br/&gt;
+&lt;br/&gt;
+Es muy recomendable que correlacione al menos un ID de usuario con el rol de administrador y una buena costumbre es no utilizar el ID de servidor para las actividades administrativas cotidianas. 
+            &lt;ol&gt;
+            &lt;li&gt;Seleccione &lt;strong&gt; Pulsar para actuar&lt;/strong&gt; para cargar el panel Usuarios de consola.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt; Añadir&lt;/strong&gt; y especifique el ID de usuario y la contraseña.&lt;/li&gt;
+            &lt;li&gt;Seleccione uno o más roles administrativos para el nuevo usuario.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Aplicar&lt;/strong&gt; para guardar el nuevo usuario en su espacio de trabajo.&lt;/li&gt;
+            &lt;/ol&gt;
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+</description>
+	</item>
+
+    <item
+		href=""
+		title="Correlacionar grupos con roles administrativos">
+		<action
+			class="navigatorCmd.do?forwardName=console.groups.main"/>
+		<description>
+También puede asignar grupos de usuarios a uno de los cuatro roles administrativos predefinidos, en función del nivel de acceso que desee para cada usuario.
+&lt;ol&gt;
+            &lt;li&gt;Seleccione &lt;strong&gt; Pulsar para actuar&lt;/strong&gt; para cargar el panel Grupos de consola.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt; Añadir&lt;/strong&gt; y especifique el nombre de un grupo ya definido en el registro de usuarios.&lt;/li&gt;
+            &lt;li&gt;Seleccione uno o más roles administrativos para el nuevo grupo.&lt;/li&gt;
+            &lt;li&gt;Pulse &lt;strong&gt;Aplicar&lt;/strong&gt; para guardar el nuevo grupo en su espacio de trabajo.&lt;/li&gt;
+            &lt;/ol&gt;
+Para continuar, pulse &lt;strong&gt; Paso siguiente&lt;/strong&gt;.
+</description>
+	</item>
+
+	<item
+		href=""
+		title="Guardar y sincronizar la configuración">
+		<action
+			class=""/>
+		<description>
+Pulse &lt;strong&gt;Guardar&lt;/strong&gt; en el mensaje de la parte superior del panel de la consola para actualizar la configuración en el repositorio maestro.
+&lt;br/&gt;&lt;br/&gt;Para continuar, pulse &lt;strong&gt;Paso siguiente&lt;/strong&gt;.
+		</description>
+	</item>
+
+
+	<item
+		href=""
+		title="Reiniciar los servidores y verificar que la seguridad está habilitada"
+        class="navigatorCmd.do?forwardName=WebServer.content.main">
+		<description>
+Para que la seguridad sea efectiva en un entorno con un solo servidor, debe realizar lo siguiente:
+&lt;ol&gt;
+&lt;li&gt;Detenga el servidor de aplicaciones y reinícielo.&lt;/li&gt;
+&lt;li&gt;A continuación, puede abrir la consola administrativa en un navegador escribiendo su url, &lt;TT&gt;http://{host}:{puerto administrativo}/ibm/console&lt;/TT&gt;.&lt;/li&gt;
+&lt;li&gt;Al iniciarse la consola, se le pedirá un ID de usuario y una contraseña.&lt;/li&gt;
+&lt;li&gt;Utilice una de las contraseñas que especificó como administrador en el paso, Correlacionar usuarios con roles administrativos.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br/&gt;
+Si está en un entorno con varios nodos, debe realizar las acciones siguientes:
+&lt;ol&gt;
+&lt;li&gt;Pulse Administración del sistema > Nodos para mostrar el panel Colección de nodos.&lt;/li&gt;
+&lt;li&gt;Pulse Resincronización completa para enviar la nueva configuración a los agentes de nodo.&lt;/li&gt;
+&lt;li&gt;Detenga el Gestor de despliegue pulsando Administración del sistema > Gestor de despliegue > Detener.&lt;/li&gt;
+&lt;li&gt;Reinicie el Gestor de despliegue con el mandato &lt;TT&gt;startManager&lt;/TT&gt;.&lt;/li&gt;
+&lt;li&gt;Inicie la sesión con su ID de usuario y su contraseña. Utilice una de las contraseñas que especificó como administrador en el paso Correlacionar usuarios con roles administrativos.&lt;/li&gt;
+&lt;li&gt;Reinicie todos los agentes de nodo y servidores de aplicaciones pulsando Administración del sistema > Agentes de nodo > Reiniciar todos los servidores del nodo.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+Si se producen problemas con la seguridad habilitada, consulte &lt;a target="help" href="http://publib.boulder.ibm.com/infocenter/ws60help/index.jsp?topic=/com.ibm.websphere.base.doc/info/aes/ae/tsec_trouble.html"&gt;Resolución de problemas de configuraciones de seguridad&lt;/a&gt;
+en el Information Center para obtener más información.
+
+
+
+		</description>
+ 	</item>
+
+
+
+
+
+</cheatsheet>

@@ -1,1 +1,0 @@
-({"CALL_NOTIFICATION":"Chamar Notificação","COLLABORATION_WINDOW":"Janela de Colaboração","SHOW_COLLABORATION_WINDOW":"Mostrar Janela de Colaboração"})

@@ -1,1 +1,0 @@
-({"COLLABORATION_WINDOW":"Okno pracy grupowej","SHOW_COLLABORATION_WINDOW":"Pokaż okno pracy grupowej","COBROWSE":"Przeglądaj grupowo"})

@@ -1,1 +1,0 @@
-({"COLLABORATION_WINDOW":"Okno pracy grupowej","SHOW_COLLABORATION_WINDOW":"Pokaż okno pracy grupowej","CLICK_TO_CALL":"Kliknij, aby połączyć"})

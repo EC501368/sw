@@ -1,1 +1,0 @@
-({"CALL_NOTIFICATION":"Oznámení volání","COLLABORATION_WINDOW":"Okno spolupráce","SHOW_COLLABORATION_WINDOW":"Zobrazit okno spolupráce"})

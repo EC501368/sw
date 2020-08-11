@@ -1,1 +1,0 @@
-({"CALL_NOTIFICATION":"呼び出し通知","COLLABORATION_WINDOW":"コラボレーション・ウィンドウ","SHOW_COLLABORATION_WINDOW":"コラボレーション・ウィンドウの表示"})

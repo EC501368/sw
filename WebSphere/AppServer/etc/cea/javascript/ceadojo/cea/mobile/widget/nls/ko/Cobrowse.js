@@ -1,1 +1,0 @@
-({"COLLABORATION_WINDOW":"협업 창","SHOW_COLLABORATION_WINDOW":"협업 창 표시","COBROWSE":"협동 찾아보기"})

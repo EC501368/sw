@@ -1,1 +1,0 @@
-({"COLLABORATION_WINDOW":"Fenêtre de collaboration","SHOW_COLLABORATION_WINDOW":"Afficher la fenêtre de collaboration","COBROWSE":"Co-explorer"})

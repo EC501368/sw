@@ -1,10 +1,10 @@
 #!/bin/sh
 # @(#) 1.21 CFG/ws/code/profile.templates/src/bin/setupCmdLine.sh, WAS.config.base, WASX.CFG 5/8/06 13:29:35 [8/3/06 15:11:05]
 
-WAS_USER_SCRIPT="/jennex/WebSphere/AppServer/profiles/AppSrv01/bin/setupCmdLine.sh"
+WAS_USER_SCRIPT="/var/lib/jenkins/jobs/PRUEBA-WS/workspace/WebSphere/AppServer/profiles/AppSrv01/bin/setupCmdLine.sh"
 export WAS_USER_SCRIPT
-USER_INSTALL_ROOT="/jennex/WebSphere/AppServer/profiles/AppSrv01"
-WAS_HOME="/jennex/WebSphere/AppServer"
+USER_INSTALL_ROOT="/var/lib/jenkins/jobs/PRUEBA-WS/workspace/WebSphere/AppServer/profiles/AppSrv01"
+WAS_HOME="/var/lib/jenkins/jobs/PRUEBA-WS/workspace/WebSphere/AppServer"
 #JAVA_HOME="$WAS_HOME"/java
 # Assign JAVA_HOME via pluggable sdk architecture
 . `dirname ${WAS_USER_SCRIPT}`/sdk/_setupSdk.sh
